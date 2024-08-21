@@ -1,0 +1,19 @@
+a .jstree-icon{
+    background:black;
+    color:black;
+}
+
+.tree,
+.tree ul,
+.tree li.last{
+    background-color: #666 !important;
+    background: red;
+}
+#results_container{
+    background: blue;
+    color:blue;
+}
+
+.jstree_display{
+    background: blue;
+}

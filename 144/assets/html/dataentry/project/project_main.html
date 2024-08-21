@@ -1,0 +1,79 @@
+<span class="hidden current_page" id="project_main"></span>
+
+<div class="borderless form_row">
+  <div class="small field_container">
+    <label for="PROJECT_ID"><u>Project ID</u></label>
+    <input type="text" id="PROJECT_ID" readonly>
+  </div>
+  <div class="large field_container">
+    <label for="PROJECT_TITLE"><u>Project Name</u></label>
+    <input type="text" id="PROJECT_TITLE">
+  </div>
+  </div>
+
+ <div class="borderless form_row">
+  <div class="small date field_container">
+    <label for="PROJECT_DATE">Date</label>
+    <input type="text" id="PROJECT_DATE">
+  </div>
+
+  <div class="small field_container">
+    <label for="PROJECT_STATUS">Status</label>
+    <select id="PROJECT_STATUS">
+      <option></option>
+      <option>Active</option>
+      <option>Closed</option>
+    </select>
+  </div>
+
+  <div class="medium validated_table field_container">
+    <label for="PROJECT_CONTACT">Entered By</label>
+    <input type="text" id="PROJECT_CONTACT" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+  </div>
+  </div>
+
+ <div class="borderless form_row">
+  <div class="full field_container">
+    <label for="PROJECT_DESC">Project Description</label>
+    <textarea id="PROJECT_DESC"></textarea>
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Funder" id="PROJ_FUNDER_GRP">
+  <div class="borderless form_row">
+    <div class="full people_validated_field org_validated_field field_container" data-map-people="proj_funder" data-map-org="proj_org_funder"> <!-- RL-20211231 -->
+      <label for="PROJECT_FUNDER">Funder</label>
+      <input type="text" id="PROJECT_FUNDER" readonly>
+      <input type="hidden" id="PROJ_FUNDER_ID">
+    </div>
+  </div>
+</fieldset>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="PROJECT_URL">URL</label>
+    <input type="text" id="PROJECT_URL">
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="PROJECT_LABEL">Project Label</label>
+    <textarea id="PROJECT_LABEL"></textarea>
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Objects Attached to Project" id="PROJECT_ITEM_GRP">
+  <div class="form_row">
+    <div class="small m2a_validated_field field_container" data-map="project_objects">
+      <label for="PROJ_ACCESS_NO">Accession Number</label>
+      <input type="text" id="PROJ_ACCESS_NO" readonly>
+    </div>
+
+    <div class="large field_container">
+      <label for="PROJ_LEGAL_TITLE">Title</label>
+      <input type="text" id="PROJ_LEGAL_TITLE" readonly>
+    </div>
+  </div>
+
+</fieldset>

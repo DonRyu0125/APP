@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMS - Properties Database</title>
+
+    <!-- include virtual="/mylang/assets/html/template/stylesheets.html" -->
+    <!-- include virtual="/mylang/assets/html/template/header_scripts.html" -->
+  </head>
+  <body data-database="properties" class="validated_record">
+    <header>
+      <!-- include virtual="/mylang/assets/html/template/header.html" -->
+    </header>
+
+    <section id="body">
+      <div class="container">
+        <!-- include virtual="/mylang/assets/html/template/db/propval_db_actions_nav.html" -->
+
+        <section id="data_entry_forms">
+          <div id="primary_data_entry_form">
+            <nav id="worksheet_nav">
+              <ul id="primary_worksheet_nav">
+                <li><a href="/mylang/assets/html/dataentry/properties/prop_main.html" data-form="prop">Property Main</a></li>
+                <li><a href="/mylang/assets/html/dataentry/properties/propinspect_main.html" data-form="propinspect">Inspections</a></li>
+                <li><a href="/mylang/assets/html/dataentry/properties/proprepair_main.html" data-form="proprepair">Repairs</a></li>
+                <li><a href="/mylang/assets/html/dataentry/properties/propmedia_main.html" data-form="propmedia">Media</a></li>
+                <li><a href="/mylang/assets/html/dataentry/properties/pincident_main.html" data-form="pincident">Incident</a></li>
+                <li><a href="/mylang/assets/html/dataentry/properties/pother_main.html" data-form="pother">Documentation</a></li>
+                <li><a href="/mylang/assets/html/dataentry/properties/emergency_main.html" data-form="emergency">Emergency Contacts</a></li>
+                <li><a href="/mylang/assets/html/dataentry/properties/features_main.html" data-form="features">Features</a></li>
+              </ul>
+
+              <nav id="secondary_worksheet_nav">
+                <ul id="prop">
+                  <li><a href="/mylang/assets/html/dataentry/properties/prop_main.html" data-form="main">New Property</a></li>
+                </ul>
+
+                <ul id="propinspect">
+                  <li><a href="/mylang/assets/html/dataentry/properties/propinspect_main.html" data-form="main">Inspections</a></li>
+                  <li><a href="/mylang/assets/html/dataentry/properties/propinspect_pest.html" data-form="pest">Pests</a></li>
+                </ul>
+
+                <ul id="proprepair">
+                  <li><a href="/mylang/assets/html/dataentry/properties/proprepair_main.html" data-form="main">Repairs</a></li>
+                </ul>
+
+                <ul id="propmedia">
+                  <li><a href="/mylang/assets/html/dataentry/properties/propmedia_main.html" data-form="main">Media</a></li>
+                </ul>
+
+                <ul id="pincident">
+                  <li><a href="/mylang/assets/html/dataentry/properties/pincident_main.html" data-form="main">Incident</a></li>
+               </ul>
+
+                <ul id="pother">
+                  <li><a href="/mylang/assets/html/dataentry/properties/pother_main.html" data-form="main">Documentation</a></li>
+                </ul>
+
+                <ul id="emergency">
+                  <li><a href="/mylang/assets/html/dataentry/properties/emergency_main.html" data-form="main">Emergency Contact(s)</a></li>
+                </ul>
+
+                <ul id="features">
+                  <li><a href="/mylang/assets/html/dataentry/properties/features_main.html" data-form="main">Features</a></li>
+                </ul>
+              </nav>
+            </nav>
+
+            <div id="data_entry_form">
+              <!-- include virtual="/mylang/assets/html/dataentry/properties/prop_main.html" -->
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <footer>
+      <!-- include virtual="/mylang/assets/html/template/footer.html" -->
+    </footer>
+
+    <xml id="validated_record" style="display: none;">
+      ^XML_TREE^
+    </xml>
+
+    <div id="notices">^WIN_INFO^</div>
+
+    <!-- include virtual="/mylang/assets/html/template/db/prop_base_scripts.html" -->
+    <!-- include virtual="/mylang/assets/html/template/core_dataentry_scripts.html" -->
+    <script src="/mylang/assets/js/dataentry/frontend/properties.js"></script>
+  </body>
+</html>

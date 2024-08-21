@@ -1,0 +1,135 @@
+<span class="hidden current_page" id="oral_media"></span>
+
+<fieldset class="repeating_group" data-group-title="Media Details" id="OH_RECORD_GRP">
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="OH_REC_MEDIA">Recorded Media</label>
+      <select id="OH_REC_MEDIA">
+	  <option></option>
+	  <option>DVCAM-L</option>
+	  <option>DVCPRO-M</option>
+	  <option>MiniDV</option>
+	  <option>PFD</option>
+	  <option>CD-Audio</option>
+	  <option>CD-ROM</option>
+	</select>
+    </div>
+
+	<div class="small field_container">
+      <label for="OH_MODIFICATION">Modification</label>
+      <select id="OH_MODIFICATION">
+	  <option></option>
+	  <option>Image modified</option>
+	  <option>Audio modified</option>
+	  <option>Audio and Image modified</option>
+	</select>
+	</div>
+	
+	<div class="small date field_container">
+      <label for="OH_REC_DATE">Date</label>
+      <input type="text" id="OH_REC_DATE">
+	</div>
+	
+	<div class="small field_container">
+      <label for="OH_REC_COPY">Copy</label>
+      <select id="OH_REC_COPY">
+	  <option></option>
+	  <option>Yes</option>
+	  <option>No</option>
+	</select>
+	</div>
+	</div>
+	  
+  <div class="form_row contains_browse">
+    <div class="small field_container">
+      <label for="OH_ACCESS_COPY">Access Copy Exists</label>
+	  <select id="OH_ACCESS_COPY">
+	  <option></option>
+	  <option>Yes</option>
+	  <option>No</option>
+	</select>
+	</div>
+	
+	<div class="small field_container">
+        <label for="OH_REC_STATUS">Status</label>
+        <input type="text" id="OH_REC_STATUS">
+      </div>
+
+      <div class="medium people_validated_field field_container" data-map="recorded_individual">
+        <label for="OH_RECORDED_BY">Individual</label>
+        <input type="text" id="OH_RECORDED_BY" readonly>
+        <input type="hidden" id="OH_RECORD_BY_ID">
+	</div>
+	</div>
+
+  <div class="borderless form_row">
+    <div class="full audio file_attachment field_container">
+      <label for="OH_REC_FILE">Audio</label>
+      <input type="text" id="OH_REC_FILE">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="OH_EQUIP_NOTE">Notes</label>
+        <textarea id="OH_EQUIP_NOTE"></textarea>
+      </div>
+    </div>
+</fieldset>		
+
+
+<fieldset class="repeating_group" data-group-title="Transcription Information" id="OH_TRANSCRIPT_GR">
+  <fieldset class="repeating_group" data-group-title="Transcriber" id="OH_TRNSCRIBE_GRP">
+  <div class="borderless form_row">
+    <div class="medium people_validated_field field_container" data-map="transcribe_individual">
+      <label for="OH_TRANSCRIBER">Name</label>
+      <input type="text" id="OH_TRANSCRIBER" readonly>
+      <input type="hidden" id="OH_TRNSCRIBER_ID">
+    </div>
+     <div class="small field_container">
+        <label for="OH_TRANS_ACT">Activity</label>
+        <input type="text" id="OH_TRANS_ACT">
+      </div>
+	 <div class="small field_container">
+        <label for="OH_TRANS_DATE">Activity Date</label>
+        <input type="text" id="OH_TRANS_DATE">
+      </div>
+    </div>
+  </fieldset>
+  
+  <fieldset class="repeating_group" data-group-title="Transcript Status" id="OH_TRANSTAT_GRP">
+  <div class="borderless form_row">
+     <div class="medium field_container">
+        <label for="OH_TRANS_STATUS">Status</label>
+        <input type="text" id="OH_TRANS_STATUS">
+      </div>
+	 <div class="medium field_container">
+        <label for="OH_STATUS_DATE">Date</label>
+        <input type="text" id="OH_STATUS_DATE">
+      </div>
+    </div>
+  </fieldset>
+  
+<div class="borderless form_row">
+     <div class="small field_container">
+        <label for="OH_TRANS_PAGES">Pages</label>
+        <input type="text" id="OH_TRANS_PAGES">
+      </div>
+      </div>
+	  
+<div class="borderless form_row">	  
+<div class="full text file_attachment field_container">
+      <label for="OH_TRANSCRIPT">Notes Path</label>
+      <input type="text" id="OH_TRANSCRIPT" readonly>
+    </div>
+	</div>
+	
+<div class="borderless form_row">	
+	      <div class="full field_container">
+        <label for="OH_TRANS_NOTES">Notes</label>
+        <input type="text" id="OH_TRANS_NOTES">
+	</div>
+	</div>
+</fieldset>
+
+

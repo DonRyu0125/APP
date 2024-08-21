@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMS - Service Desk</title>
+
+    <!-- include virtual="/mylang/assets/html/template/stylesheets.html" -->
+    <!-- include virtual="/mylang/assets/html/template/header_scripts.html" -->
+  </head>
+  <body data-database="servicedesk" data-popup="Y">
+    <section id="body">
+      <nav id="database_selection" style="font-size: 1.50rem">
+        <div>User Request</div>
+      </nav>
+
+      <div class="container">
+        <!-- include virtual="/mylang/assets/html/template/db/servicedesk_db_actions_nav.html" -->
+        <section id="data_entry_forms">
+          <div id="universal_record_information">
+            <div class="column">
+              <div class="field_container">
+                <label for="REQ_ORDER_NUM"><u>Order No.</u></label>
+                <input type="text" id="REQ_ORDER_NUM" readonly>
+              </div>
+              <div class="select_container field_container">
+                <label for="REC_STATUS"><u>Record Status</u></label>
+                <select id="REC_STATUS">
+                  <option>Active</option>
+                  <option>Assigned</option>
+                  <option>Close</option>
+                  <option>Complete</option>
+                  <option>Deleted</option>
+                  <option>Open</option>
+                  <option>Pending</option>
+                  <option>Processing</option>
+                  <option>Received</option>
+                  <option>Request</option>
+                  <option>Release</option>
+                </select>
+              </div>
+              <div class="field_container">
+                <label for="REQ_ORDER_TYPE">Last Order</label>
+                <input type="text" id="REQ_ORDER_TYPE" readonly>
+              </div>
+              <div class="field_container">
+                <label for="REQ_ENQUIRY_ID"><u>Inquiry ID</u></label>
+                <input type="text" id="REQ_ENQUIRY_ID" readonly>
+              </div>
+            </div>
+           <div class="column">
+              <div class="select_container field_container">
+                <label for="REQ_TOPIC"><u>Topic</u></label>
+                <select id="REQ_TOPIC" class="mandatory_check lookup_exit show_optional_data_exit generate_field_exit"
+                  data-mandatory="$$"
+                  data-lookup="LOOKUP_USER_GROUP,LOOKUP_TOPIC,LOOKUP_USER_GRP,REQ_USER_GROUP"
+                  data-toggle-section="General Information=general|Accessing Collection Items=access_items|Finding Collection Items=find_items|Obtaining Reproductions=reproduction|Retrieval Services=retrieval|Art Collection Inquiries=art_inquiries|Donations - Art=art_donation|Educational Resources and Workshops=education|Loans - Digitization=loan_digitization|Tours and Events=tour_event|Exhibits=exhibits|Website Technical Issues=website|Corrections to Descriptions=collect_desc|Loans - Exhibition=loan_exhibition|Donations - Archival and Library=donation_arch_lib|Other=other"
+                  data-generate1="'REQ_TOPIC = ''Donations - Art'' + REQ_TOPIC = ''Donations - Archival and Library''',REQ_ADD_RECORD,'Y'"
+                  data-generate2="'REQ_TOPIC = ''Donations - Art'' + REQ_TOPIC = ''Donations - Archival and Library''',REQ_DB_NAME,'ACCESSION'"
+                  data-generate3="'REQ_TOPIC ''Obtaining Reproductions'' + REQ_TOPIC ''Loans - Digitization''',REQ_FREE,'N'"
+                  data-generate4="'REQ_TOPIC <> ''Obtaining Reproductions'' * REQ_TOPIC <> ''Loans - Digitization''',REQ_FREE,'Y'"
+                  data-generate5="'REQ_TOPIC ''Obtaining Reproductions'' + REQ_TOPIC ''Loans - Digitization''',REQ_REPRO,'Y'"
+                  data-generate6="'REQ_TOPIC <> ''Obtaining Reproductions'' * REQ_TOPIC <> ''Loans - Digitization''',REQ_REPRO,'N'"
+                >
+                  <option selected>General Information</option>
+                  <option>Accessing Collection Items</option>
+                  <option>Finding Collection Items</option>
+                  <option>Obtaining Reproductions</option>
+                  <option>Retrieval Services</option>
+                  <option>Art Collection Inquiries</option>
+                  <option>Donations - Art</option>
+                  <option>Educational Resources and Workshops</option>
+                  <option>Loans - Digitization</option>
+                  <option>Tours and Events</option>
+                  <option>Exhibits</option>
+                  <option>Website Technical Issues</option>
+                  <option>Corrections to Descriptions</option>
+                  <option>Loans - Exhibition</option>
+                  <option>Donations - Archival and Library</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="select_container field_container">
+                <label for="METHOD_REQUEST"><u>Method</u></label>
+                <select id="METHOD_REQUEST">
+                  <option></option>
+                  <option>Email</option>
+                  <option>Fax</option>
+                  <option>In person</option>
+                  <option>Mail</option>
+                  <option>Phone</option>
+                  <option>Web</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="select_container field_container">
+                <label for="REQ_AONE_STATUS">AOne Status</label>
+                <select id="REQ_AONE_STATUS" class="generate_field_exit"
+                  data-generate1="'REQ_AONE_STATUS !-',REQ_REJ_REASON,''"
+                  data-generate2="'REQ_AONE_STATUS !-',REQ_ORDER_TYPE,''"
+                  data-generate3="'REQ_AONE_STATUS !-',REQ_ORDER_SEQ,''"
+                >
+                  <option></option>
+                  <option>In progress</option>
+                  <option>Not accepted</option>
+                  <option>In transit</option>
+                  <option>Completed</option>
+                  <option>Received</option>
+                  <option>Rejected</option>
+                  <option>Undelivered</option>
+                </select>
+              </div>
+            </div>
+            <div class="column">
+              <div class="select_container field_container">
+                <label for="REQ_USER_GROUP"><u>User Group</u></label>
+                <select id="REQ_USER_GROUP" class="gen_set_cond_help"
+                  data-main="USER_GRP_NAME"
+                  data-help="STAFF_LIST"
+                  data-display="HANDLED_BY"
+                  data-table="AIMS_USER_GROUP"
+                >
+                  <option>Archival Descriptions</option>
+                  <option>Archival Donations</option>
+                  <option>Archival Loans</option>
+                  <option>Archivists</option>
+                  <option>Art</option>
+                  <option>Customer Service</option>
+                  <option>Education Programming</option>
+                  <option>Digitization</option>
+                  <option>Reception</option>
+                  <option>Outreach</option>
+                  <option>Website</option>
+                </select>
+              </div>
+              <div class="select_container field_container">
+                <label for="HANDLED_BY"><u>Assigned To</u></label>
+                <select id="HANDLED_BY">
+                  <option></option>
+                </select>
+              </div>
+              <div class="field_container">
+                <label for="REQ_REJ_REASON">Reject Reason</label>
+                <input type="text" id="REQ_REJ_REASON" readonly>
+              </div>
+            </div>
+
+            <div class="universal_row">
+              <div class="full field_container">
+                <label for="REQ_TITLE"><i><u>Title</u></i></label>
+                <input type="text" id="REQ_TITLE">
+              </div>
+            </div>
+          </div>
+
+          <div id="primary_data_entry_form">
+            <nav id="worksheet_nav">
+              <ul id="primary_worksheet_nav">
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/servicedesk/servicedesk_main.html" data-form="main" class="active">Main</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/servicedesk/servicedesk_queue.html" data-form="queue">Queue</a></li>
+              </ul>
+
+              <nav id="secondary_worksheet_nav">
+              </nav>
+            </nav>
+
+            <div id="data_entry_form">
+              <!-- include virtual="/mylang/assets/html/dataentry/servicedesk/servicedesk_main.html" -->
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- call record wrapup user routine -->
+      <input type="hidden" class="wrapup_user_exit"
+       data-exit="wrapupRequest"
+    />
+<!-- #if global(READONLY_RECORD) = Y -->
+    <xml id="MY_XML" style="display: none;" data-readonly="Y">
+<!-- #else -->
+    <xml id="MY_XML" style="display: none;">
+<!-- #endif -->
+      ^XML_TREE^-(REQ_JSON_STRING)
+    </xml>
+
+    <div id="notices">^WIN_INFO^</div>
+
+    <!-- include virtual="/mylang/assets/html/template/db/servicedesk_base_scripts.html" -->
+    <!-- include virtual="/mylang/assets/html/template/core_dataentry_scripts.html" -->
+    <script src="/mylang/assets/js/dataentry/record_databases/servicedesk.js"></script>
+    <script src="/mylang/assets/js/dataentry/frontend/servicedesk_util.js"></script>
+    <script src="/mylang/assets/js/dataentry/frontend/servicedesk.js"></script>
+  </body>
+</html>

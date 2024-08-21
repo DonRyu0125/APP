@@ -1,0 +1,524 @@
+<span class="hidden current_page" id="container_main"></span>
+
+<div class="data-section" id="physical_item" style="display: block;">
+  <div class="borderless form_row">
+    <div class="smallmed repeating_field field_container">
+      <label for="CON_REF_CODE">Reference Code</label>
+      <input type="text" id="CON_REF_CODE">
+    </div>
+    <div class="smallmed field_container">
+      <label for="CON_LAST_WORK_NO">Last Work Order ID</label>
+      <input type="text" id="CON_LAST_WORK_NO" readonly>
+    </div>
+    <div class="smallmed field_container">
+      <label for="CON_TRANSFER_ID">Transfer Number</label>
+      <input type="text" id="CON_TRANSFER_ID">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="smallmed field_container">
+      <label for="CONTAINER_NO">Container Number</label>
+      <input type="text" id="CONTAINER_NO">
+    </div>
+    <div class="smallmed field_container">
+      <label for="CONTAINER_TYPE">Container Type</u></label>
+      <select id="CONTAINER_TYPE">
+        <option></option>
+      </select>
+    </div>
+    <div class="smallmed field_container">
+      <label for="CON_REC_MEIDA">Record Media</label>
+      <select id="CON_REC_MEIDA">
+        <option></option>
+      </select>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="smallmed field_container">
+      <label for="CON_SCHEDULE">Schedule Number</label>
+      <input type="text" id="CON_SCHEDULE">
+    </div>
+    <div class="smallmed field_container">
+      <label for="CON_MINISTRY_COD">Ministry Code</label>
+      <input type="text" id="CON_MINISTRY_COD">
+    </div>
+    <div class="smallmed field_container">
+      <label for="CON_CHARGEBACK">Ministry/PB Recovery</label>
+       <select id="CON_CHARGEBACK">
+         <option></option>
+         <option>AgriCorp.</option>
+         <option>Agriculture, Food and Rural Affairs</option>
+         <option>Alcohol & Gaming Commission </option>
+         <option>Attorney General</option>
+         <option>Auditor General of Ontario</option>
+         <option>Board of Funeral Services</option>
+         <option>Cabinet Office</option>
+         <option>Champlain Local Health Integration Network (LHIN) </option>
+         <option>Children and Youth Services </option>
+         <option>Citizenship, Immigration and International Trade</option>
+         <option>Community and Social Services </option>
+         <option>Economic Development, Employment and Infrastructure </option>
+         <option>Education</option>
+         <option>e-Health Ontario</option>
+         <option>Elections Ontario</option>
+         <option>Energy</option>
+         <option>Environment and Climate Change</option>
+         <option>Finance </option>
+         <option>Financial Services Commission of Ontario</option>
+         <option>Government and Consumer Services</option>
+         <option>Health and Long-term Care</option>
+         <option>Indigenous Affairs </option>
+         <option>Intergovernmental Affairs</option>
+         <option>Labour</option>
+         <option>Landlord & Tenant Board</option>
+         <option>Licence Appeal Tribunal</option>
+         <option>Metrolinx</option>
+         <option>Municipal Affairs and Housing </option>
+         <option>Natural Resources and Forestry </option>
+         <option>Northern Development and Mines</option>
+         <option>Office of the Legislative Assembly </option>
+         <option>Office of the Ombudsman</option>
+         <option>Office of the Premier</option>
+         <option>Ontario Clean Water Agency</option>
+         <option>Ontario Educational Communications Authority (TVO)</option>
+         <option>Ontario Energy Board </option>
+         <option>Ontario Financing Authority </option>
+         <option>Ontario Information & Privacy Commission</option>
+         <option>Ontario Infrastructure & Lands Commission </option>
+         <option>Ontario Northland</option>
+         <option>Ontario Pension Board </option>
+         <option>Ontario Racing Commission </option>
+         <option>Ontario Securities Commission </option>
+         <option>Public Health Ontario</option>
+         <option>Research and Innovation </option>
+         <option>Senior Affairs</option>
+         <option>Seniors and Accessibility </option>
+         <option>Social Benefits Tribunal</option>
+         <option>Status of Women Affairs</option>
+         <option>The Solicitor General (former MCSCS)</option>
+         <option>Toronto Community Housing Corporation</option>
+         <option>Training, Colleges and Universities </option>
+         <option>Transportation</option>
+         <option>Heritage, Sport, Tourism and Culture Industries</option>
+         <option>Treasury Board Secretariat</option>
+         <option>Workers Safety & Insurance Appeals Board (WSIB)</</option>
+       </select>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="smallmed field_container">
+      <label for="CON_ACC_DATE">Accession Date</label>
+      <input type="text" id="CON_ACC_DATE">
+    </div>
+    <div class="smallmed field_container">
+      <label for="CON_ORDER_DATE">Date Ordered</label>
+      <input type="text" id="CON_ORDER_DATE">
+    </div>
+    <div class="smallmed field_container">
+      <label for="CON_AONE_LOC">AONE Location</label>
+      <select id="CON_AONE_LOC" class="mandatory_check copy_field_exit" data-copy="CON_HOME_LOC" data-mandatory="CON_HOME_LOC !- * CON_AONE_LOC !-">
+        <option></option>
+        <option>OFFSITESTD</option>
+        <option>OFFSITECOOL</option>
+        <option>OFFSITECOLD</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="smallmed field_container">
+      <label for="CON_SMD">SMD</label>
+      <select id="CON_SMD">
+        <option></option>
+	  </select>
+    </div>
+    <div class="smallmed field_container">
+      <label for="CON_ACCUR_STATUS">Accrual Item Status</label>
+      <input type="text" id="CON_ACCUR_STATUS">
+    </div>
+    <div class="smallmed field_container">
+      <label for="CON_RC_LOC">RC Location</label>
+      <input type="text" id="CON_RC_LOC">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <label for="CON_DEPT">Department</label>
+      <input type="text" id="CON_DEPT">
+    </div>
+    <div class="small field_container">
+      <label for="CON_HOME_LOC">Home Location</label>
+      <input type="text" id="CON_HOME_LOC" class="mandatory_check copy_field_exit" data-mandatory="CON_AONE_LOC !- * CON_HOME_LOC !-" data-copy="CON_AONE_LOC" data-valid="OFFSITESTD|OFFSITECOOL|OFFSITECOLD">
+    </div>
+    <div class="small field_container">
+      <label for="CON_CURRENT_LOC">Current Location</label>
+      <input type="text" id="CON_CURRENT_LOC">
+    </div>
+    <div class="small field_container">
+      <label for="CON_LAST_LOC">Last Location</label>
+      <input type="text" id="CON_LAST_LOC">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <label for="CON_TEMPBOXNO">Temporary Box Number</label>
+      <input type="text" id="CON_TEMPBOXNO">
+    </div>
+
+    <div class="small field_container">
+      <label for="CON_LISTING">Listing</label>
+      <select id="CON_LISTING">
+        <option></option>
+        <option>Y</option>
+        <option>N</option>
+      </select>
+    </div>
+
+    <div class="small field_container">
+      <label for="CON_DISASTER">Disaster Priority</label>
+      <input type="text" id="CON_DISASTER">
+    </div>
+  </div>
+
+        <!--  <div class="borderless form_row">
+    <div class="medium form_button field_container" style="font-size: 1rem; margin-top: 3px;">
+      <a href="#" class="toggle_data_section" data-section="conservation_details"><i class="fa fa-refresh"></i>Conservation Details</a>
+    </div>
+
+    <div class="medium form_button field_container" style="font-size: 1rem; margin-top: 3px;">
+      <a href="#" class="toggle_data_section" data-section="access_details"><i class="fa fa-refresh"></i>Access Details</a>
+    </div>
+  </div>
+
+  <div id="conservation_details" style="display: none;">-->
+
+
+<!-- KN-2022-05-18 added -->
+<fieldset class="repeating_group" data-group-title="Access Restrictions" id="CON_RESTRICT_GRP">
+  <div class="form_row">
+    <div class="full restrictions_validated_field field_container" data-map="con_access_restrictions">
+      <label for="CON_RESTRICT_COD">Restriction</label>
+      <input type="text" id="CON_RESTRICT_COD">
+      <input type="hidden" id="CON_RESTRICT_ID">
+    </div>
+  </div>
+</fieldset>
+
+
+    <fieldset class="logical_group">
+      <legend><span>Conservation Information</legend>
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <label for="CON_MOULD">Mould</label>
+       <select id="CON_MOULD">
+         <option></option>
+         <option>Y</option>
+       </select>
+    </div>
+    <div class="small field_container">
+      <label for="CON_DETERIORATE">Deterioration</label>
+      <select id="CON_DETERIORATE">
+        <option></option>
+        <option>Y</option>
+      </select>
+    </div>
+
+      <div class="small field_container" style="padding-left: 25px;">
+        <label for="CON_CONSERV_HOLD">Conservation Hold</label>
+         <select id="CON_CONSERV_HOLD">
+           <option></option>
+           <option>Y</option>
+         </select>
+      </div>
+	  
+      <div class="small field_container" style="padding-left: 25px;">
+        <label for="CON_CONSERV_FLAG">Conservation Flag</label>
+         <select id="CON_CONSERV_FLAG">
+           <option></option>
+           <option>Y</option>
+         </select>
+      </div>
+      </div>
+	  
+    <div class="borderless form_row">
+      <div class="large field_container">
+        <label for="CON_CONSERV_STA">Conservation Status</label>
+        <select id="CON_CONSERV_STA">
+           <option></option>
+           <option>Original Accessible</option>
+           <option>Original Accessible - Use reference copy</option>
+           <option>Original Accessible - Treatment required for reproduction</option>
+           <option>Original Closed - Use reference copy</option>
+           <option>Original Closed - Treatment required</option>
+           <option>Original Closed - Mould</option>
+           <option>Original Closed - Mould remediated</option>
+           <option>Original Closed - Deaccession recommended</option>
+         </select>
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="CON_CONSERV_NOTE">Conservation Note</label>
+        <textarea id="CON_CONSERV_NOTE"></textarea>
+      </div>
+    </div>
+</fieldset>
+
+<!--   <div id="access_details" style="display: none;">-->
+    <fieldset class="logical_group">
+      <legend><span>Access Details</legend>
+    <div class="borderless form_row">
+      <div class="small date date_time field_container" style="padding-left: 25px;">
+        <label for="CON_EXPIRY_DATE1">Expiry Date 1</label>
+        <input type="text" id="CON_EXPIRY_DATE1">
+      </div>
+      <div class="small date field_container">
+        <label for="CON_EXPIRY_DATE2">Expiry Date 2</label>
+        <input type="text" id="CON_EXPIRY_DATE2">
+      </div>
+      <div class="small date field_container">
+        <label for="CON_EFFECT_DATE">Effective Date</label>
+        <input type="text" id="CON_EFFECT_DATE">
+      </div>
+      <div class="small date field_container">
+        <label for="CON_FROM_DATE">From Date</label>
+        <input type="text" id="CON_FROM_DATE">
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="small field_container">
+        <label for="CON_RETRIEVE_DAT">Retrieve Date</label>
+        <input type="text" id="CON_RETRIEVE_DAT">
+      </div>
+      <div class="small field_container">
+        <label for="CON_RET_COUNT">Retrieved Count</label>
+        <input type="text" id="CON_RET_COUNT">
+      </div>
+      <div class="small field_container">
+        <label for="CON_PERIOD_CNT">Period Count</label>
+        <input type="text" id="CON_PERIOD_CNT">
+      </div>
+      <div class="small date field_container">
+        <label for="CON_TO_DATE">To Date</label>
+        <input type="text" id="CON_TO_DATE">
+      </div>
+    </div>
+</fieldset>
+
+<div class="data-section" id="digital_item" style="display: none;">
+  <fieldset class="logical_group">
+    <legend><span>Digital Item</legend>
+
+    <div class="form_row borderless">
+      <div class="full text file_attachment field_container" data-tdr-map="container-tdr">
+        <label for="TDR_ACCESS">Access Path</label>
+        <input type="text" id="TDR_ACCESS" readonly>
+      </div>
+    </div>
+
+    <div class="form_row borderless">
+      <div class="medium field_container">
+        <label for="DIGITAL_EXTENT">Size</label>
+        <input type="text" id="DIGITAL_EXTENT">
+      </div>
+
+      <div class="medium field_container">
+        <label for="DIGITAL_UNIT">Unit</label>
+        <input type="text" id="DIGITAL_UNIT">
+      </div>
+    </div>
+
+    <fieldset class="logical_group">
+      <legend><span>TDR</legend>
+
+      <div class="form_row borderless">
+        <div class="large field_container">
+          <label for="TDR_AST_NAME">Asset Name</label>
+          <input type="text" id="TDR_AST_NAME" readonly>
+        </div>
+        <div class="small field_container">
+          <label for="TDR_MIME_TYP">Type</label>
+          <input type="text" id="TDR_MIME_TYP" readonly>
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="TDR_CAPTION">Caption</label>
+          <input type="text" id="TDR_CAPTION" readonly>
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="TDR_OCR">OCR TDR Path</label>
+          <input type="text" id="TDR_OCR" readonly>
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+       <div class="full field_container">
+          <label for="TDR_THUMB">Thumbnail TDR Path</label>
+          <input type="text" id="TDR_THUMB" readonly>
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="TDR_PRESER">Preservation Path</label>
+          <input type="text" id="TDR_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="TDR_ORIGIN">Original TDR Path</label>
+          <input type="text" id="TDR_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="TDR_OTHER">Other TDR Path</label>
+          <input type="text" id="TDR_OTHER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="TDR_MEDIA">TDR Media</label>
+          <textarea id="TDR_MEDIA"></textarea>
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="TDR_DETAILS">TDR Details</label>
+          <textarea id="TDR_DETAILS"></textarea>
+        </div>
+      </div>
+    </fieldset>
+  </fieldset>
+</div>
+
+<fieldset class="logical_group">
+  <legend><span>Container Items</legend>
+  <div class="form_row borderless">
+    <div class="full text file_attachment field_container" data-tdr-map="container-finding-aid">
+      <label for="BOXLIST_LINK">Finding Aid List</label>
+      <input type="text" id="BOXLIST_LINK" readonly>
+    </div>
+  </div>
+
+  <div style="width: 100%; text-align: center;"><span style="font-size: 1rem;">and / or</span></div>
+
+  <fieldset class="repeating_group" data-group-title="Item Information" id="BOX_ITEMS">
+    <div class="borderless form_row">
+      <div class="small field_container">
+        <label for="BOX_ITEM_ID">File/Folder Number</label>
+        <input type="text" id="BOX_ITEM_ID">
+      </div>
+      <div class="large field_container">
+        <label for="BOX_ITEM_DETAILS">Item Details</label>
+        <textarea id="BOX_ITEM_DETAILS"></textarea>
+      </div>
+    </div>
+  </fieldset>
+</fieldset>
+
+
+<fieldset class="logical_group">
+  <legend>Approval</legend>
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <label for="CON_STATUS">Status</label>
+      <input type="text" ID="CON_STATUS" readonly>
+    </div>
+    <div class="small form_button field_container" style="font-size: 1rem; margin-top: 3px;" id="APPROVED_BUTTON">
+      <a href="#" onclick="approveContainer($(this));"><i class="fa fa-check"></i> Approved</a>
+    </div>
+    <div class="small field_container">
+      <label for="CON_APPROVED_BY">Approved By</label>
+      <input type="text" id="CON_APPROVED_BY">
+    </div>
+    <div class="small field_container">
+      <label for="CON_APPROVED_ON">Approved On</label>
+      <input type="text" id="CON_APPROVED_ON" readonly>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <label for="CON_PERMOUT_ACTN">Type</label>
+      <select id="CON_PERMOUT_ACTN" class="permout_value">
+        <option></option>
+        <option>Perm out</option>
+        <option>Perm out and destroy</option>
+        <option>Perm out and return</option>
+      </select>
+    </div>
+    <div class="small form_button field_container" style="font-size: 1rem; margin-top: 3px;" id="DESTROYED_BUTTON">
+      <a href="#" onclick="destroyContainer($(this));"><i class="fa fa-check"></i> Permanent out</a>
+    </div>
+    <div class="small field_container">
+      <label for="CON_DESTROYED_BY">Perm-out By</label>
+      <input type="text" id="CON_DESTROYED_BY" readonly>
+    </div>
+    <div class="small field_container">
+      <label for="CON_DESTROYED_ON">Perm-out On</label>
+      <input type="text" id="CON_DESTROYED_ON" readonly>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Actions taken on record</legend>
+
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <label for="CON_CREATOR">Created by</label>
+      <input type="text" id="CON_CREATOR" readonly>
+    </div>
+    <div class="small field_container">
+      <label for="CON_RECDATE">Created On</label>
+      <input type="text" id="CON_RECDATE" readonly>
+    </div>
+    <div class="small field_container">
+      <label for="CON_MOD_BY">Modified By</label>
+      <input type="text" id="CON_MOD_BY" readonly>
+    </div>
+    <div class="small field_container">
+      <label for="CON_MOD_DATE">Modified On</label>
+      <input type="text" id="CON_MOD_DATE" readonly>
+    </div>
+  </div>
+</fieldset>
+
+<!-- call initalization user routine -->
+<input type="hidden" class="init_call_exit show_optional_data_exit protect_field_exit"
+  data-protect1="'CON_APPROVE_DONE Y',APPROVED_BUTTON"
+  data-protect2="'CON_PERMOUT_DONE Y',DESTROYED_BUTTON"
+  data-source_value="DIGITAL_CHECK"
+>
+
+
+<!-- call initalization user routine -->
+<input type="hidden" class="init_call_exit gen_set_cond_help" 
+  data-source="CON_ITEM_TYPE" 
+  data-table="AIMS_CONTAINER_VAL" 
+  data-main="AIM_ITEM_TYPE" 
+  data-help="AIMS_CNTNR_TYPE" 
+  data-display="CONTAINER_TYPE" 
+  data-help2="AIMS_RMEDIA_TYPE" 
+  data-display2="CON_REC_MEIDA" 
+  data-help3="AIMS_SMD"
+  data-display3="CON_SMD"
+ >
+

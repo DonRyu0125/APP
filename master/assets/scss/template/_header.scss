@@ -1,0 +1,56 @@
+header {
+  background: $base;
+  color: #fff;
+
+  .container { @include gridle_vertical_align(); }
+
+  #logo {
+    @include gridle(4);
+    @include gridle_vertical_align();
+    @include gridle_container();
+
+    a {
+      @include gridle(3);
+    }
+
+    p {
+      @include gridle(8);
+    }
+  }
+
+  #user_actions {
+    @include gridle_push(4);
+    @include gridle(4);
+    text-align: right;
+    list-style-type: none;
+    font-size: 0.8rem;
+
+    i {
+      display: inline-block;
+      margin-right: 0.25rem;
+    }
+
+    li {
+      margin: 0;
+      border-radius: $roundness;
+      display: inline-block;
+      text-align: center;
+
+      a {
+        @include transition(all 0.5s);
+        display: inline-block;
+        padding: 0.35rem 0.5rem;
+        border-radius: $roundness;
+        background: $light;
+        color: $base;
+        border: 1px solid darken($light, 20%);
+        text-decoration: none;
+
+        &:hover {
+          background: darken($light, 10%);
+          color: lighten(desaturate($base, 25%), 10%);
+        }
+      }
+    }
+  }
+}

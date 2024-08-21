@@ -1,0 +1,97 @@
+<span class="hidden current_page" id="production_inscriptions"></span>
+
+<fieldset class="repeating_group" data-group-title="Inscriptions / Legend Information" id="INSCRIPTIONS_GRP">
+  <div class="form_row">
+    <div class="full repeating_field field_container">
+      <label for="INSC_CONTENT">Inscription Texts</label>
+      <input type="text" id="INSC_CONTENT">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="INSC_DESCRIPTION">Text Description</label>
+      <input type="text" id="INSC_DESCRIPTION">
+    </div>
+
+    <div class="medium field_container">
+      <label for="INSC_DESCRIPT">Inscription Description</label>
+      <input type="text" id="INSC_DESCRIPT">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="medium validated_table field_container">
+      <label for="INSC_TYPE">Inscription Type</label>
+      <input type="text" id="INSC_TYPE" data-val-database="INSC_TYPE_VAL" data-val-field="LOOKUP_FIELD" readonly>
+    </div>
+
+    <div class="medium validated_table field_container">
+      <label for="INSC_METHOD">Inscription Method</label>
+      <input type="text" id="INSC_METHOD" data-val-database="INSC_METHOD_VAL" data-val-field="LOOKUP_FIELD" readonly>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium validated_table field_container">
+      <label for="INSC_POSITION">Inscription Position</label>
+      <input type="text" id="INSC_POSITION" data-val-database="INSC_POSITION_VAL" data-val-field="LOOKUP_FIELD" readonly>
+    </div>
+
+    <div class="medium date field_container">
+      <label for="INSC_DATE">Inscription Date</label>
+      <input type="text" id="INSC_DATE">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="INSC_POS_NOTES">Position Notes</label>
+      <textarea id="INSC_POS_NOTES"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="INSC_CARDBOX">Inscription Notes</label>
+      <textarea id="INSC_CARDBOX"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full repeating_field field_container">
+      <label for="INSC_SIGNATURE">Signature</label>
+      <input type="text" id="INSC_SIGNATURE">
+    </div>
+  </div>
+
+  <fieldset class="repeating_group" data-group-title="Inscription Conditions" id="INSC_COND_GRP">
+    <div class="borderless form_row">
+      <div class="small field_container">
+        <label for="INSC_CONDITION">Condition</label>
+        <select id="INSC_CONDITION">
+          <option></option>
+          <option>Excellent</option>
+          <option>Excellent/Good</option>
+          <option>Good</option>
+          <option>Good/Fair</option>
+          <option>Fair</option>
+          <option>Fair/Poor</option>
+          <option>Poor</option>
+          <option>Poor/Unacceptable</option>
+          <option>Unacceptable</option>
+        </select>
+      </div>
+
+      <div class="small field_container">
+        <label for="INSC_COMPLETE">Completeness</label>
+        <input type="text" id="INSC_COMPLETE">
+      </div>
+
+      <div class="medium repeating_field field_container">
+        <label for="INSC_MATERIAL_EN">Material</label>
+        <input type="text" id="INSC_MATERIAL_EN">
+      </div>
+    </div>
+  </fieldset>
+</fieldset>

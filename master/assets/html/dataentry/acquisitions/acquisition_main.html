@@ -1,0 +1,360 @@
+<span class="hidden current_page" id="acquisition_main"></span>
+
+<div class="form_row">
+    <div class="full field_container">
+      <label for="REGISTRAT_DESC"><u>Summary/Description of objects</u></label>
+      <textarea id="REGISTRAT_DESC"></textarea>
+    </div>
+  </div>
+
+<div class="form_row contains_browse">
+  <div class="small validated_table field_container">
+    <label for="REG_ENTERED_BY">Entered By</label>
+    <input type="text" id="REG_ENTERED_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+  </div>
+    <div class="small date field_container">
+    <label for="DATE_OF_BIRTH">Entered Date</label>
+    <input type="text" id="DATE_OF_BIRTH" readonly>
+  </div>
+    <div class="small field_container">
+        <label for="ACQ_ITEM_COUNT">Quantity</label>
+        <input type="number" id="ACQ_ITEM_COUNT">
+  </div>
+  </div>
+
+<div class="form_row">
+  <div class="small field_container">
+    <label for="REG_LEGAL_STATUS">Initial Legal Status</label>
+    <select id="REG_LEGAL_STATUS">
+      <option></option>
+      <option>Asset</option>
+      <option>In custody</option>
+      <option>Non-asset</option>
+      <option>Unknown</option>
+	  </select>
+  </div>
+
+  <div class="small date field_container">
+    <label for="INIT_LEGAL_DATE">Arrival Date</label>
+    <input type="text" id="INIT_LEGAL_DATE" readonly>
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Source" id="SOURCE">
+  <div class="form_row contains_browse">
+    <div class="medium org_validated_field field_container" data-map="rsource_organization">
+      <label for="SOURCE_ORG_NAME"><u>Organization</u></label>
+      <input type="text" id="SOURCE_ORG_NAME" readonly>
+      <input type="hidden" id="SOURCE_ORG_ID">
+    </div>
+
+    <div class="medium field_container">
+      <label for="SOURCE_ROLE">Role</label>
+      <select id="SOURCE_ROLE">
+        <option></option>
+        <option>Borrower</option>
+        <option>Conservator</option>
+        <option>Consultant</option>
+        <option>Dealer</option>
+        <option>Dealers</option>
+        <option>Donor</option>
+        <option>Employer</option>
+        <option>Executor</option>
+        <option>Government Official</option>
+        <option>Lender</option>
+        <option>Other</option>
+        <option>Owner</option>
+        <option>Power of Attorney</option>
+        <option>Researchers</option>
+        <option>Testator</option>
+        <option>Vendor</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form_row contains_browse">
+    <div class="medium people_validated_field field_container" data-map="rsource_individual">
+      <label for="SOURCE_FULLNAME2"><u>Individual</u></label>
+      <input type="text" id="SOURCE_FULLNAME2" readonly>
+      <input type="hidden" id="SOURCE_NAME_ID">
+    </div>
+
+    <div class="medium repeating_field field_container">
+      <label for="SOURCE_ALIAS">Alias</label>
+      <input type="text" id="SOURCE_ALIAS" readonly>
+    </div>
+  </div>
+
+  <fieldset class="logical_group">
+    <legend>Address Details</legend>
+
+    <div class="form_row">
+      <div class="small field_container">
+        <label for="SOURCE_ADD_1">Suite#/PO Box</label>
+        <input type="text" id="SOURCE_ADD_1" readonly>
+      </div>
+
+      <div class="large field_container">
+        <label for="SOURCE_ADD_2">Street</label>
+        <input type="text" id="SOURCE_ADD_2"readonly>
+      </div>
+    </div>
+
+    <div class="form_row">
+      <div class="small field_container">
+        <label for="SOURCE_CITY">City</label>
+        <input type="text" id="SOURCE_CITY" readonly>
+      </div>
+      <div class="small field_container">
+        <label for="SOURCE_STATE">Province/State</label>
+        <input type="text" id="SOURCE_STATE" readonly>
+      </div>
+      <div class="small field_container">
+        <label for="SOURCE_COUNTRY">Country</label>
+        <input type="text" id="SOURCE_COUNTRY" readonly>
+      </div>
+      <div class="small field_container">
+        <label for="SOURCE_ZIP">ZIP/Postal Code</label>
+        <input type="text" id="SOURCE_ZIP" readonly>
+      </div>
+    </div>
+
+    <div class="form_row">
+      <div class="medium field_container">
+        <label for="SOURCE_PHONE_1">Primary Phone</label>
+        <input type="text" id="SOURCE_PHONE_1" readonly>
+      </div>
+
+      <div class="small field_container">
+        <label for="SOURCE_PHONE_2">Secondary Phone</label>
+        <input type="text" id="SOURCE_PHONE_2" readonly>
+      </div>
+
+      <div class="small field_container">
+        <label for="SOURCE_FAX">Fax</label>
+        <input type="text" id="SOURCE_FAX" readonly>
+      </div>
+    </div>
+
+    <div class="form_row borderless">
+      <div class="medium field_container">
+        <label for="SOURCE_URL">URL</label>
+        <input type="text" id="SOURCE_URL" readonly>
+      </div>
+
+      <div class="medium field_container">
+        <label for="SOURCE_EMAIL">E-mail Address</label>
+        <input type="text" id="SOURCE_EMAIL" readonly>
+      </div>
+    </div> 
+  </fieldset>
+
+  <fieldset class="repeating_group" data-group-title="Source Contact" id="SOURCE_CONTACT">
+    <div class="form_row contains_browse">
+      <div class="medium people_validated_field field_container" data-map="rsource_contact">
+        <label for="SC_FULLNAME">Individual</label>
+        <input type="text" id="SC_FULLNAME" readonly>
+        <input type="hidden" id="SC_ID">
+      </div>
+
+      <div class="medium repeating_field field_container">
+        <label for="SRCE_CON_ALIAS">Alias</label>
+        <input type="text" id="SRCE_CON_ALIAS" readonly>
+      </div>
+    </div>
+
+    <div class="form_row borderless">
+      <div class="full field_container">
+        <label for="SOURCE_NOTES">Notes</label>
+        <textarea id="SOURCE_NOTES"></textarea>
+      </div>
+    </div>
+  </fieldset>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Object Information</legend>
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="R_RELEVANCE_NOTE">Importance</label>
+      <textarea id="R_RELEVANCE_NOTE"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="R_CONSERVE_REQUI">Condition</label>
+      <textarea id="R_CONSERVE_REQUI"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full validated_table field_container">
+      <label for="R_CONS_ASSESS_BY">Entered By</label>
+      <input type="text" id="R_CONS_ASSESS_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="R_UTILIZATION">Use</label>
+      <textarea id="R_UTILIZATION"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="R_COLLECT_OBJECT">Collection Objectives</label> <textarea id="R_COLLECT_OBJECT"></textarea>
+    </div>
+  </div>
+  
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="R_RECOMMENDATION">Recommendaton</label>
+      <textarea id="R_RECOMMENDATION"></textarea>
+    </div>
+  </div>
+  
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="R_JUSTIFICATION">Justification</label>
+      <textarea id="R_JUSTIFICATION"></textarea>
+    </div>
+  </div>
+
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Decision Processes</legend>
+  <div class="form_row borderless">
+    <div class="medium validated_table field_container">
+      <label for="R_PRESENTED_BY">Principal</label>
+      <input type="text" id="R_PRESENTED_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div> 
+  
+     <div class="medium field_container">
+      <label for="R_ACQ_COMMITE_AC">Recommendation</label>
+      <select id="R_ACQ_COMMITE_AC">
+        <option></option>
+        <option>Accept</option>
+        <option>Decline</option>
+        <option>Defer</option>
+        <option>Negotiate</option>
+        <option>Bid at Auction</option>
+        <option>Purchase</option>
+        <option>Selective Acquisition</option>
+        <option>Selective Retention</option>
+		</select>
+    </div>
+  </div>
+
+  <div class="form_row borderless"> 
+    <div class="small date field_container">
+      <label for="R_DATE_BOARD_MEE">Decision Date</label>
+      <input type="text" id="R_DATE_BOARD_MEE" readonly>
+    </div>
+	
+     <div class="small field_container">
+      <label for="REG_VALUE_TYPE">Value</label>
+      <select id="REG_VALUE_TYPE">
+        <option></option>
+        <option>Receipt Value</option>
+        <option>Gift Value</option>
+        <option>Bequest Value</option>
+        <option>Donation Value</option>
+        <option>Purchase Amount</option>
+        <option>Incoming Value</option>
+        <option>Trade Value</option>
+        </select>
+	    </div>
+
+     <div class="small field_container">
+      <label for="REG_VALUE">$$</label>
+      <input type="text" id="REG_VALUE">
+    </div>
+    </div>
+
+<fieldset class="logical_group">
+  <legend>Board/Acquisition Commitee</legend>
+  <div class="form_row borderless">
+     <div class="small field_container">
+      <label for="R_ACQ_BOARD_CMTT">Approval Required</label>
+      <select id="R_ACQ_BOARD_CMTT">
+        <option></option>
+        <option>Yes</option>
+        <option>No</option>
+        </select>
+	    </div>
+
+	<div class="small field_container">
+      <label for="R_ACQ_BRD_DECISI">Decision</label>
+      <select id="R_ACQ_BRD_DECISI">
+        <option></option>
+        <option>Approved</option>
+        <option>Declined</option>
+        <option>Awaiting funding</option>
+        <option>Referred</option>
+		</select>
+	    </div>
+	
+    <div class="small date field_container">
+      <label for="R_ACQ_DATE">Date</label>
+      <input type="text" id="R_ACQ_DATE" readonly>
+    </div>
+	</div>
+  </fieldset>
+
+  <div class="form_row borderless">
+    <div class="medium validated_table field_container">
+      <label for="R_ACCESSIONED_BY">Accessioned By</label>
+      <input type="text" id="R_ACCESSIONED_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+  
+    <div class="small date field_container">
+      <label for="R_ACCESSION_DATE">Accession Date</label>
+      <input type="text" id="R_ACCESSION_DATE" readonly>
+    </div>
+	
+	<div class="small field_container">
+      <label for="R_NEW_LEG_STATU">New Legal Status</label>
+      <select id="R_NEW_LEG_STATU">
+        <option></option>
+        <option>Accessioned</option>
+        <option>Acquisition Proposal</option>
+        <option>Cancelled Proposal</option>
+        <option>De-accessioned</option>
+        <option>Handling Object or Prop</option>
+        <option>Missing</option>
+        <option>Returned to Lender</option>
+        <option>Unknown</option>
+		</select>
+	    </div> 
+	    </div> 
+  <div class="form_row borderless">	
+    <div class="full field_container">
+      <label for="R_CREDIT_LINE">Credit Line</label>
+      <input type="text" id="R_CREDIT_LINE">
+    </div>
+  </div>
+ </fieldset>
+ 
+<fieldset class="repeating_group" data-group-title="Acquisition Notepad" id="R_REG_NOTEPAD">
+  <div class="form_row">
+    <div class="large validated_table field_container">
+      <label for="R_REGISTRAR_NAME">Name</label>
+      <input type="text" id="R_REGISTRAR_NAME" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+
+    <div class="small date field_container">
+      <label for="R_REG_NOTE_DATE">Date</label>
+      <input type="text" id="R_REG_NOTE_DATE">
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="R_REGISTRAR_NOTE">Note</label>
+      <textarea id="R_REGISTRAR_NOTE"></textarea>
+    </div>
+  </div>
+</fieldset> 

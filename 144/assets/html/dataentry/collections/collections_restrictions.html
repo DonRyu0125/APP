@@ -1,0 +1,65 @@
+<span class="hidden current_page" id="collection_restrictions"></span>
+
+<fieldset class="repeating_group" data-group-title="Object Restrictions" id="RESTRICTION_GRP">
+  <div class="form_row">
+    <div class="full restrictions_validated_field field_container" data-map="object_restrictions">
+      <label for="REST_DETAILS">Restriction</label>
+      <input type="text" id="REST_DETAILS" readonly>
+      <input type="hidden" id="CAT_REST_ID">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="RESTRICT_CAT">Restriction Category</label>
+      <input type="text" id="RESTRICT_CAT" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="REST_STATUS">Status</label>
+      <select id="REST_STATUS">
+        <option></option>
+        <option>Active</option>
+        <option>Inactive</option>
+      </select>
+    </div>
+
+    <div class="small field_container">
+      <label for="RESTRICT_FLAG">Red Flag</label>
+      <select id="RESTRICT_FLAG">  
+        <option></option>
+        <option value="X">Yes</option>
+        <option value="">No</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="small validated_table field_container">
+      <label for="REST_ASSIGN_BY">Assigned By</label>
+      <input type="text" id="REST_ASSIGN_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+
+    <div class="small date field_container">
+      <label for="REST_ASSIGN_ON">Start Date</label>
+      <input type="text" id="REST_ASSIGN_ON">
+    </div>
+
+    <div class="small field_container">
+      <label for="REST_TERM">Term</label>
+      <input type="text" id="REST_TERM">
+    </div>
+
+    <div class="small date field_container">
+      <label for="REST_EXPIRY">End Date</label>
+      <input type="text" id="REST_EXPIRY">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="RESTRICT_NOTE">Comments</label>
+      <textarea id="RESTRICT_NOTE"></textarea>
+    </div>
+  </div>
+</fieldset>

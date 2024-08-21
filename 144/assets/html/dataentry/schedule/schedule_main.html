@@ -1,0 +1,309 @@
+<span class="hidden current_page" id="main"></span>
+
+<div>
+   <div class="full form_button field_container">
+     <a href="#" onclick="hide_show_div('active_schedule');" style=" border-radius: 5px 5px 0 0;"><i class="fa fa-arrows-alt"></i>Active Record Schedule</a>
+   </div>
+</div>
+
+<div id="active_schedule" class="show_as_is" style="display:block;">
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <label for="SCHEDULE_NO">Schedule No.</label>
+      <input type="text" id="SCHEDULE_NO" readonly>
+    </div>
+    <div class="large field_container">
+       <label for="SCHEDULE_NAME">Record Schedule Name</label>
+       <input type="text" id="SCHEDULE_NAME" readonly>
+    </div>
+  </div>
+
+  <fieldset class="repeating_group" data-group-title="Record Series" id="RECSERIES">
+    <div class="borderless form_row">
+      <div class="small field_container">
+        <label for="RECSERIES_ID">Record Series ID</label>
+        <input type="text" id="RECSERIES_ID" readonly>
+      </div>
+
+      <div class="large field_container">
+        <label for="RECSERIES_TITLE">Record Series Title</label>
+        <input type="text" id="RECSERIES_TITLE" readonly>
+      </div>
+    </div>
+  </fieldset>
+
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <label for="ADOPTED_DATE">Adopted Date</label>
+      <input type="text" id="ADOPTED_DATE" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="EFFECTIVE_DATE">Effective Date</label>
+      <input type="text" id="EFFECTIVE_DATE" readonly>
+    </div>
+
+    <div class="small field_container">
+       <label for="RECSERIES_CUTOFF">Record Schedule Cutoff</label>
+       <input type="text" id="RECSERIES_CUTOFF" readonly>
+    </div>
+
+    <div class="small field_container">
+       <label for="TOTAL_RETENTION">Total Retention</label>
+       <input type="text" id="TOTAL_RETENTION" readonly>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+       <label for="FINAL_DISPOSITN">Final Disposition</label>
+       <input type="text" id="FINAL_DISPOSITN" readonly>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+       <label for="RECSERIES_DESC">Record Series Description</label>
+       <textarea id="RECSERIES_DESC" readonly></textarea>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="medium field_container">
+       <label for="RETENT_SRC">Retention at SRC</label>
+       <input type="text" id="RETENT_SRC" readonly>
+    </div>
+
+    <div class="medium field_container">
+       <label for="RETENT_ORGAGENCY">Retention at Org. Agency</label>
+       <input type="text" id="RETENT_ORGAGENCY" readonly>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+       <label for="COMMENTS">Comments</label>
+       <textarea id="COMMENTS" readonly></textarea>
+    </div>
+  </div>
+  <div class="borderless form_row">
+    <div class="full field_container">
+       <label for="SPECIAL_INSTRUCT">Instructions</label>
+       <textarea id="SPECIAL_INSTRUCT" readonly></textarea>
+    </div>
+  </div>
+</div>
+
+<div>
+   <div class="full form_button field_container">
+     <a href="#" onclick="hide_show_div('proposed_schedule');" style=" border-radius: 5px 5px 0 0;"><i class="fa fa-arrows-alt"></i>Record Schedule Actions</a>
+   </div>
+</div>
+
+<div id="proposed_schedule" class="show_as_is" style="display:none;">
+  <fieldset class="repeating_group" data-group-title="Proposed Record Schedule" id="PROPOSED_SCHED">
+    <div class="borderless form_row">
+      <div class="medium field_container">
+        <label for="P_SCHED_ACTION">Action Type</label>
+        <select id="P_SCHED_ACTION" class="mandatory_check show_optional_data_exit"
+          data-mandatory="$$"
+          data-toggle-section="transfer_agreement=Transfer Agreement">
+          <option>Addition</option>
+          <option>Adoption</option>
+          <option>Deletion</option>
+          <option>Revision</option>
+          <option>Discontinuation</option>
+          <option>Transfer Agreement</option>
+        </select>
+        <input type="hidden" class="group_call_exit generate_field_exit protect_field_exit set_default_shcedule_no"
+           data-generate1="'P_SCHED_ACTION !- * SCHEDULE_NO !-',P_SCHED_ACTION,'Addition'"
+           data-generate2="'P_SCHED_ACTION !- * SCHEDULE_NO !+',P_SCHED_ACTION,'Revision'"
+           data-protect1="'CREATION_DATE !+',P_SCHEDULE_NO"
+         />
+      </div>
+      <div class="medium form_button field_container" style="margin-top: 4px;">
+        <a href="#" class="duplicate_occ_exit" id="dup_schedule"><i class="fa fa-clone"></i> Duplicate</a>
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="small field_container">
+        <label for="P_SCHEDULE_NO">Schedule No.</label>
+        <input type="text" id="P_SCHEDULE_NO" class="group_mandatory_check unique_key_check" data-mandatory="$$">
+      </div>
+      <div class="large field_container">
+         <label for="P_SCHED_NAME">Record Schedule Name</label>
+         <input type="text" id="P_SCHED_NAME" class="group_mandatory_check" data-mandatory="$$">
+      </div>
+    </div>
+
+    <fieldset class="repeating_group" data-group-title="Record Series" id="P_RECSERIES">
+      <div class="borderless form_row">
+        <div class="small recseries_validated_field field_container" data-map="sch_recseries">
+          <label for="P_RECSERIES_ID">Record Series ID</label>
+          <input type="text" id="P_RECSERIES_ID" readonly>
+        </div>
+
+        <div class="large field_container">
+          <label for="P_RECSERIES_TIT">Record Series Title</label>
+          <input type="text" id="P_RECSERIES_TIT" readonly>
+        </div>
+      </div>
+    </fieldset>
+
+    <div class="borderless form_row">
+      <div class="small date field_container">
+        <label for="P_ADOPTED_DATE">Adopted Date</label>
+        <input type="text" id="P_ADOPTED_DATE">
+      </div>
+
+      <div class="small date field_container">
+        <label for="P_EFFECTIVE_DATE">Effective Date</label>
+        <input type="text" id="P_EFFECTIVE_DATE">
+      </div>
+
+      <div class="small field_container">
+         <label for="P_RECSERIES_CUTF">Record Schedule Cutoff</label>
+         <input type="text" id="P_RECSERIES_CUTF">
+      </div>
+
+      <div class="small field_container">
+         <label for="P_TOTAL_RETENT">Total Retention</label>
+         <input type="text" id="P_TOTAL_RETENT">
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="full field_container">
+         <label for="P_FINAL_DISPOST">Final Disposition</label>
+         <input type="text" id="P_FINAL_DISPOST">
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="full field_container">
+         <label for="P_RECSERIES_DESC">Record Series Description</label>
+         <textarea id="P_RECSERIES_DESC"></textarea>
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="medium field_container">
+         <label for="P_RETENT_SRC">Retention at SRC</label>
+         <input type="text" id="P_RETENT_SRC">
+      </div>
+
+      <div class="medium field_container">
+         <label for="P_RETENT_ORGAGY">Retention at Org. Agency</label>
+         <input type="text" id="P_RETENT_ORGAGY">
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="full field_container">
+         <label for="P_COMMENTS">Comments</label>
+         <textarea id="P_COMMENTS"></textarea>
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="full field_container">
+         <label for="P_SPECIAL_INSTRU">Instructions</label>
+         <textarea id="P_SPECIAL_INSTRU"></textarea>
+      </div>
+    </div>
+
+    <div id="transfer_agreement" class="data-section" style="display: none;">
+      <fieldset class="logical_group">
+        <legend>Transfer Agreement</legend>
+        <div class="borderless form_row">
+          <div class="full field_container">
+            <label for="P_TR_PUB_BODY">Transferring Public Body</label>
+            <input type="text" id="P_TR_PUB_BODY">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="full field_container">
+            <label for="P_RC_PUB_BODY">Receiving Public Body</label>
+            <input type="text" id="P_RC_PUB_BODY">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="full field_container">
+            <label for="P_TR_REASON">Reason for Transfer</label>
+            <textarea id="P_TR_REASON"></textarea>
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="medium form_button field_container" id="print_agreement">
+            <a href="#" onclick="printTransferAgreement($(this));" id="print_button"><i class="fa fa-print"></i>Print Transfer Agreement</a>
+            <input type="hidden" class="group_call_exit toggle_print_button" />
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+<!-- #if GLOBAL(MWI_ACCESS_TOKEN) = "PUBLIC BODY" -->
+    <div class="borderless form_row">
+      <fieldset class="logcial_group">
+        <legend>Request Submission</legend>
+        <div class="borderless form_row">
+          <div class="small field_container">
+             <label for="P_REQ_UNIT_TITLE">Requestor Title</label>
+             <input type='text' id="P_REQ_UNIT_TITLE">
+          </div>
+          <div class="large field_container">
+            <label for="P_REQ_UNIT_NAME">Requestor Name</label>
+            <input type='text' id="P_REQ_UNIT_NAME">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="small form_button field_container" id="P_APPROVE_REQUEST">
+            <a href="#" onclick="toggleScheduleRequest($(this));"><i class="fa fa-check"></i> Request for Approval</a>
+          </div>
+          <div class="small field_container">
+             <label for="P_REQ_APPROVE">Approval Status</label>
+             <input type='text' id="P_REQ_APPROVE" readonly>
+          </div>
+          <div class="small field_container">
+            <label for="P_REQ_APPROVE_BY">Requested By</label>
+            <input type='text' id="P_REQ_APPROVE_BY" readonly>
+          </div>
+          <div class="small field_container">
+            <label for="P_REQ_APPROVE_ON">Requested On</label>
+            <input type='text' id="P_REQ_APPROVE_ON" readonly>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+<!-- #else -->
+
+    <div class="borderless form_row">
+      <div class="small form_button field_container" id="APPROVED_BUTTON" style="margin-top: 4px;">
+        <a href="#" onclick="approveRecordSchedule($(this));" id="approval"><i class="fa fa-check"></i> Approve or Set Active</a>
+      </div>
+      <div class="small field_container">
+        <label for="SCHEDULE_STATUS"><u>Status</u></label>
+        <select id="SCHEDULE_STATUS" class="toggle_status_button">
+          <option></option>
+          <option>Active</option>
+          <option>Non Active</option>
+          <option>Under Negotiation</option>
+        </select>
+        <input type="hidden" class="group_call_exit setup_status_button" />
+      </div>
+      <div class="small field_container">
+        <label for="SCH_APPROVED_BY">Approved By</label>
+        <input type="text" id="SCH_APPROVED_BY" readonly>
+      </div>
+      <div class="small field_container">
+        <label for="SCH_APPROVED_ON">Approved On</label>
+        <input type="text" id="SCH_APPROVED_ON" readonly>
+      </div>
+    </div>
+
+<!-- #endif -->
+
+  </fieldset>
+</div>
+

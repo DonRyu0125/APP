@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMS - Cultural Assets Managment System - Accession Database</title>
+
+    <!-- include virtual="/mylang/assets/html/template/stylesheets.html" -->
+    <!-- include virtual="/mylang/assets/html/template/header_scripts.html" -->
+  </head>
+  <body data-database="accession">
+    <header>
+      <!-- include virtual="/mylang/assets/html/template/header.html" -->
+    </header>
+
+    <section id="body">
+      <!-- include virtual="/mylang/assets/html/template/db_selection_nav.html" -->
+
+      <div class="container">
+        <!-- include virtual="/mylang/assets/html/template/db/acc_db_actions_nav.html" -->
+
+     <section id="data_entry_forms">
+          <div id="primary_data_entry_form">
+            <nav id="worksheet_nav">
+              <ul id="primary_worksheet_nav">
+                <li><a href="/mylang/assets/html/dataentry/accession/accession_main.html" data-form="accession" class="active">Main</a></li>
+                <li><a href="/mylang/assets/html/dataentry/accession/appraisal_main.html" data-form="appraisal">Appraisal</a></li>
+                <li><a href="/mylang/assets/html/dataentry/accession/processing_main.html" data-form="processing">Processing</a></li>
+                <li><a href="/mylang/assets/html/dataentry/accession/insurance_main.html" data-form="insurance">Insurance</a></li>
+                <li><a href="/mylang/assets/html/dataentry/accession/deaccession_main.html" data-form="deaccession">Deaccession</a></li>
+              </ul>
+
+              <nav id="secondary_worksheet_nav">
+                <ul id="accession">
+                  <li><a href="/mylang/assets/html/dataentry/accession/accession_main.html" data-form="main">Main</a></li>
+                  <li><a href="/mylang/assets/html/dataentry/accession/accession_restrictions.html" data-form="restrictions"><i class="fa fa-warning fa-lg"></i>Restrictions</a></li>
+                </ul>
+
+                <ul id="appraisal">
+                  <li><a href="/mylang/assets/html/dataentry/accession/appraisal_main.html" data-form="main">Appraisal</a></li>
+                  <li><a href="/mylang/assets/html/dataentry/accession/accession_restrictions.html" data-form="restrictions"><i class="fa fa-warning fa-lg"></i>Restrictions</a></li>
+                </ul>
+
+                <ul id="processing">
+                  <li><a href="/mylang/assets/html/dataentry/accession/processing_main.html" data-form="main">Processing</a></li>
+                  <li><a href="/mylang/assets/html/dataentry/accession/accession_restrictions.html" data-form="restrictions"><i class="fa fa-warning fa-lg"></i>Restrictions</a></li></ul>
+
+                <ul id="insurance">
+                  <li><a href="/mylang/assets/html/dataentry/accession/insurance_main.html" data-form="main">main</a></li>
+                  <li><a href="/mylang/assets/html/dataentry/accession/accession_restrictions.html" data-form="restrictions"><i class="fa fa-warning fa-lg"></i>Restrictions</a></li>
+                </ul>
+
+                <ul id="deaccession">
+                  <li><a href="/mylang/assets/html/dataentry/accession/deaccession_main.html" data-form="main">Deaccession</a></li>
+                  <li><a href="/mylang/assets/html/dataentry/accession/accession_restrictions.html" data-form="restrictions"><i class="fa fa-warning fa-lg"></i>Restrictions</a></li>
+                </ul>
+              </nav>
+            </nav>
+
+            <div id="data_entry_form">
+              <!-- include virtual="/mylang/assets/html/dataentry/accession/accession_main.html" -->
+
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <footer>
+        <!-- include virtual="/mylang/assets/html/template/footer.html" -->
+    </footer>
+
+    <xml id="MY_XML" style="display: none;">
+      ^XML_TREE^
+    </xml>
+
+    <div id="notices">^WIN_INFO^</div>
+
+    <!-- include virtual="/mylang/assets/html/template/db/acc_base_scripts.html" -->
+    <!-- include virtual="/mylang/assets/html/template/core_dataentry_scripts.html" -->
+    <script src="/mylang/assets/js/dataentry/record_databases/accession.js"></script>
+    <script src="/mylang/assets/js/dataentry/frontend/accession.js"></script>
+  </body>
+</html>

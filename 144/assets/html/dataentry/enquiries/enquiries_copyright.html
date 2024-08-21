@@ -1,0 +1,311 @@
+<span class="hidden current_page" id="copyright"></span>
+
+<fieldset class="logical_group">
+  <legend>Copyright Services</legend>
+  <fieldset class="repeating_group" data-group-title="License Requirements" id="EN_LEGAL_GRP">
+    <div class="form_row">
+      <div class="small field_container">
+        <label for="EN_LICENCE_REQ">License Type</label>
+        <select id="EN_LICENCE_REQ">
+          <option></option>
+          <option>Data Protection</option>
+          <option>Firearms</option>
+          <option>Vehicle</option>
+        </select>
+      </div>
+
+      <div class="small field_container">
+        <label for="EN_LICENCE_NO">Number/ID</label>
+        <input type="text" id="EN_LICENCE_NO">
+      </div>
+
+      <div class="small date field_container">
+        <label for="EN_REQ_RENEWAL">Renewal Date</label>
+        <input type="text" id="EN_REQ_RENEWAL">
+      </div>
+    </div>
+
+    <div class="form_row">
+      <div class="small date field_container">
+        <label for="EN_REQ_DATE_FROM">From</label>
+        <input type="text" id="EN_REQ_DATE_FROM">
+      </div>
+
+      <div class="small date field_container">
+        <label for="EN_REQ_DATE_TO">To</label>
+        <input type="text" id="EN_REQ_DATE_TO">
+      </div>
+
+      <div class="small field_container">
+        <label for="EN_REQ_LENGTH">Term</label>
+        <input type="text" id="EN_REQ_LENGTH">
+      </div>
+    </div>
+
+    <div class="form_row">
+      <div class="full field_container">
+        <label for="EN_LICENCE_REQUI">Requirement</label>
+        <textarea id="EN_LICENCE_REQUI"></textarea>
+      </div>
+    </div>
+
+    <fieldset class="repeating_group" data-group-title="Enquiry License Textual" id="EN_LICTX_GRP">
+      <div class="form_row borderless">
+        <div class="full text file_attachment field_container">
+          <label for="EN_LICTX_ACCESS">Text/Access Path</label>
+          <input type="text" id="EN_LICTX_ACCESS">
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="EN_LICTX_CAPTION">Caption</label>
+          <textarea id="EN_LICTX_CAPTION"></textarea>
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="large field_container">
+          <label for="EN_LICTX_TYPE">Type</label>
+          <input type="text" id="EN_LICTX_TYPE">
+        </div>
+      </div>
+
+      <fieldset class="logical_group">
+        <legend>Trusted Digital Repository (TDR) Details</legend>
+
+        <div class="form_row">
+          <div class="full field_container">
+            <label for="EN_LICTX_AST_NAM">Asset Name</label>
+            <input type="text" id="EN_LICTX_AST_NAM" readonly>
+          </div>
+        </div>
+
+        <div class="form_row borderless">
+          <div class="full field_container">
+            <label for="EN_LICTX_OCR">TDR OCR</label>
+            <input type="text" id="EN_LICTX_OCR" readonly>
+          </div>
+        </div>
+
+       <div class="form_row">
+         <div class="full field_container">
+            <label for="EN_LICTX_THUMB">TDR Thumb</label>
+            <input type="text" id="EN_LICTX_THUMB">
+          </div>
+        </div>
+
+        <div class="form_row">
+          <div class="full field_container">
+            <label for="EN_LICTX_PRESER">TDR Preservation</label>
+            <input type="text" id="EN_LICTX_PRESER" readonly>
+          </div>
+        </div>
+
+        <div class="form_row">
+          <div class="full field_container">
+            <label for="EN_LICTX_ORIGIN">TDR Original</label>
+            <input type="text" id="EN_LICTX_ORIGIN" readonly>
+          </div>
+        </div>
+
+        <div class="form_row">
+          <div class="full field_container">
+            <label for="EN_LICTX_OTHER">TDR Other</label>
+            <input type="text" id="EN_LICTX_OTHER" readonly>
+          </div>
+        </div>
+      </fieldset>
+    </fieldset>
+  </fieldset>
+
+  <fieldset class="repeating_group" data-group-title="Copyright Information" id="EN_COPYRIGHT_INF">
+    <div class="form_row">
+      <div class="medium field_container">
+        <label for="EN_COPYRIGHT_LEN">Term</label>
+        <input type="text" id="EN_COPYRIGHT_LEN">
+      </div>
+
+      <div class="small date field_container">
+        <label for="EN_COPYRIGHT_FRO">From</label>
+        <input type="text" id="EN_COPYRIGHT_FRO">
+      </div>
+
+      <div class="small date field_container">
+        <label for="EN_COPYRIGHT_UNT">To</label>
+        <input type="text" id="EN_COPYRIGHT_UNT">
+      </div>
+    </div>
+
+    <fieldset class="repeating_group" data-group-title="Copyright Owner" id="EN_CPYRI_OWN_GRP">
+      <div class="form_row borderless">
+        <div class="medium people_validated_field field_container" data-map="copyright_owner_individual">
+          <label for="EN_CPYRI_OWN_IND">Individual</label>
+          <input type="text" id="EN_CPYRI_OWN_IND" readonly>
+          <input type="hidden" id="EN_CPYRI_OI_ID">
+        </div>
+
+        <div class="medium org_validated_field field_container" data-map="copyright_owner_org">
+          <label for="EN_CPYRI_OWN_ORG">Organization</label>
+          <input type="text" id="EN_CPYRI_OWN_ORG" readonly>
+          <input type="hidden" id="EN_CPYRI_OO_ID">
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset class="repeating_group" data-group-title="Copyright Beneficiary" id="EN_CPYRI_BEN_GRP">
+      <div class="form_row borderless">
+        <div class="medium people_validated_field field_container" data-map="copyright_beneficiary_individual">
+          <label for="EN_CPYRI_BEN_IND">Individual</label>
+          <input type="text" id="EN_CPYRI_BEN_IND" readonly>
+          <input type="hidden" id="EN_CPYRI_BP_ID">
+        </div>
+
+        <div class="medium org_validated_field field_container" data-map="copyright_beneficiary_org">
+          <label for="EN_CPYRI_BEN_ORG">Organization</label>
+          <input type="text" id="EN_CPYRI_BEN_ORG" readonly>
+          <input type="hidden" id="EN_CPYRI_BO_ID">
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset class="repeating_group" data-group-title="Copyright Administrator" id="EN_CPYRI_ADM_GRP">
+      <div class="form_row borderless">
+        <div class="medium people_validated_field field_container" data-map="copyright_admin_individual">
+          <label for="EN_CPYRI_ADM_IND">Individual</label>
+          <input type="text" id="EN_CPYRI_ADM_IND" readonly>
+          <input type="hidden" id="EN_CPYRI_AI_ID">
+        </div>
+
+        <div class="medium org_validated_field field_container" data-map="copyright_admin_org">
+          <label for="EN_CPYRI_ADM_ORG">Organization</label>
+          <input type="text" id="EN_CPYRI_ADM_ORG" readonly>
+          <input type="hidden" id="EN_CPYRI_AO_ID">
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset class="repeating_group" data-group-title="Legal Heirs" id="EN_LEG_HEIRS_GRP">
+      <div class="form_row borderless">
+        <div class="medium people_validated_field field_container" data-map="legal_heirs_individual">
+          <label for="EN_LEG_HR_IND">Individual</label>
+          <input type="text" id="EN_LEG_HR_IND" readonly>
+          <input type="hidden" id="EN_LEG_IN_ID">
+        </div>
+
+        <div class="medium org_validated_field field_container" data-map="legal_heirs_org">
+          <label for="EN_LEG_HR_ORG">Organization</label>
+          <input type="text" id="EN_LEG_HR_ORG" readonly>
+          <input type="hidden" id="EN_LEG_ORG_ID">
+        </div>
+      </div>
+    </fieldset>
+
+    <div class="form_row">
+      <div class="full field_container">
+        <label for="EN_CPYRI_CREDIT">Copyright Credit</label>
+        <textarea id="EN_CPYRI_CREDIT"></textarea>
+      </div>
+    </div>
+
+    <div class="form_row borderless">
+      <div class="medium field_container">
+        <label for="EN_CPYRI_LEVEL">Copyright Level</label>
+        <select id="EN_CPYRI_LEVEL">
+          <option></option>
+          <option>Owner identified and contacted</option>
+          <option>All Rights retained by Owner</option>
+          <option>Copyright assigned to Institution</option>
+          <option>Cleared for all museum purposes</option>
+          <option>Rights managed by Institution</option>
+          <option>Rights owned by Institution</option>
+        </select>
+      </div>
+
+      <div class="medium field_container">
+        <label for="EN_THIRD_PARTY">Release owner data to third parties?</label>
+        <select id="EN_THIRD_PARTY">
+          <option></option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form_row borderless">
+      <div class="full field_container">
+        <label for="EN_CPYRI_NOTES">Copyright Notes</label>
+        <textarea id="EN_CPYRI_NOTES"></textarea>
+      </div>
+    </div>
+
+    <fieldset class="repeating_group" data-group-title="Enquiry Copyright Textual" id="EN_COPTX_GRP">
+      <div class="form_row borderless">
+        <div class="full text file_attachment field_container">
+          <label for="EN_COPTX_ACCESS">Text/Access Path</label>
+          <input type="text" id="EN_COPTX_ACCESS">
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="EN_COPTX_CAPTION">Caption</label>
+          <textarea id="EN_COPTX_CAPTION"></textarea>
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="large field_container">
+          <label for="EN_COPTX_TYPE">Type</label>
+          <input type="text" id="EN_COPTX_TYPE">
+        </div>
+      </div>
+
+      <fieldset class="logical_group">
+        <legend>Trusted Digital Repository (TDR) Details</legend>
+
+        <div class="form_row">
+          <div class="full field_container">
+            <label for="EN_COPTX_AST_NAME">Asset Name</label>
+            <input type="text" id="EN_COPTX_AST_NAME" readonly>
+          </div>
+        </div>
+
+        <div class="form_row borderless">
+          <div class="full field_container">
+            <label for="EN_COPTX_OCR">TDR OCR</label>
+            <input type="text" id="EN_COPTX_OCR" readonly>
+          </div>
+        </div>
+
+        <div class="form_row">
+          <div class="full field_container">
+            <label for="EN_COPTX_THUMB">TDR Thumb</label>
+            <input type="text" id="EN_COPTX_THUMB">
+          </div>
+        </div>
+
+        <div class="form_row">
+          <div class="full field_container">
+            <label for="EN_COPTX_PRESER">TDR Preservation</label>
+            <input type="text" id="EN_COPTX_PRESER" readonly>
+          </div>
+        </div>
+
+        <div class="form_row">
+          <div class="full field_container">
+            <label for="EN_COPTX_ORIGIN">TDR Original</label>
+            <input type="text" id="EN_COPTX_ORIGIN" readonly>
+          </div>
+        </div>
+
+        <div class="form_row">
+          <div class="full field_container">
+            <label for="EN_COPTX_OTHER">TDR Other</label>
+            <input type="text" id="EN_COPTX_OTHER" readonly>
+          </div>
+        </div>
+      </fieldset>
+    </fieldset>
+  </fieldset>
+</fieldset>

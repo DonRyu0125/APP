@@ -1,0 +1,101 @@
+<span class="hidden current_page" id="pother_main"></span>
+
+
+<fieldset class="repeating_group" data-group-title="Preferred Contact(s)" id="PD_PREF_MAINT_GR">
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="FEATURE">Property Feature</label>
+      <input type="text" id="FEATURE">
+    </div>
+  </div>
+
+  <fieldset class="repeating_group" data-group-title="Contact(s)" id="PD_PREF_GRP">
+    <div class="form_row contains_browse">
+      <div class="full org_validated_field people_validated_field field_container" data-map-people="prop_pref" data-map-org="prop_org_pref"> <!-- RL-20211231 -->
+        <label for="PD_PREF_NAME">Name</label>
+        <input type="text" id="PD_PREF_NAME" readonly>
+        <input type="hidden" id="PD_PREF_NAME_ID">
+      </div>
+    </div>
+
+    <div class="form_row">
+     <div class="small field_container">
+      <label for="PD_PREF_PHONE">Telephone</label>
+      <input type="text" id="PD_PREF_PHONE">
+    </div>
+
+    <div class="small field_container">
+      <label for="PD_PREF_PHONE2">Cell</label>
+      <input type="text" id="PD_PREF_PHONE2">
+    </div>
+
+    <div class="small field_container">
+      <label for="PD_PREF_PHONE3">Other Number</label>
+      <input type="text" id="PD_PREF_PHONE3">
+    </div>
+  </div>
+
+    <div class="borderless form_row">
+      <div class="full field_container">
+      <label for="PD_PREF_NOTE">Note</label>
+      <textarea id="PD_PREF_NOTE"></textarea>
+    </div>
+    </div>
+  </fieldset>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Warranty detail(s)" id="PD_WARRANTIES_GR">
+    <div class="form_row">
+     <div class="medium field_container">
+      <label for="PD_WARRANTY">Warranty</label>
+      <input type="text" id="PD_WARRANTY">
+    </div>
+
+    <div class="small date field_container">
+      <label for="PD_WARRANTY_STAR">Start Date</label>
+      <input type="text" id="PD_WARRANTY_STAR">
+    </div>
+
+    <div class="small date field_container">
+      <label for="PD_WARRANTY_END">End Date</label>
+      <input type="text" id="PD_WARRANTY_END">
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="PD_WARRANTY_NOTE">Note</label>
+        <textarea id="PD_WARRANTY_NOTE"></textarea>
+      </div>
+   </div>
+
+   <div class="borderless form_row">
+    <div class="full text file_attachment field_container">
+        <label for="PD_WARRANTY_PATH">Document</label>
+        <input type="text" id="PD_WARRANTY_PATH" readonly>
+       </div>
+      </div>
+    </fieldset>
+
+  <fieldset class="repeating_group" data-group-title="Structure Report(s)" id="HIST_STRUCTURE_G">
+    <div class="form_row">
+      <div class="small field_container">
+        <label for="H_REPORT_YEAR">Year</label>
+        <input type="text" id="H_REPORT_YEAR">
+    </div>
+  </div>
+
+   <div class="borderless form_row">
+      <div class="full text file_attachment field_container">
+        <label for="H_REPORT">Document</label>
+        <input type="text" id="H_REPORT" readonly>
+    </div>
+  </div>
+
+    <div class="borderless form_row">
+     <div class="full field_container">
+      <label for="H_STRUCTURE_NOTE">Note</label>
+      <textarea id="H_STRUCTURE_NOTE"></textarea>
+    </div>
+   </div>
+  </fieldset>

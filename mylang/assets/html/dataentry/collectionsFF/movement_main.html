@@ -1,0 +1,214 @@
+<span class="hidden current_page" id="movement_main"></span>
+
+<div class="form_row">
+    <div class="medium location_validated_field field_container" data-map="permanent_location">
+      <label for="PERM_LOCATION">Permanent Location</label>
+      <input type="text" id="PERM_LOCATION" readonly>
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Current Location Information" id="CURRENT_LOC_INFO">
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="CURATORS_CODE">Location</label>
+      <input type="text" id="CURATORS_CODE" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="BUS_UNIT">Organizational Unit</label>
+      <input type="text" id="BUS_UNIT" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="MOVEMENT_AUTHOR">Authorizer</label>
+      <input type="text" id="MOVEMENT_AUTHOR" readonly>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="BUILDING">Building</label>
+      <input type="text" id="BUILDING" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="FLOOR">Area / Floor</label>
+      <input type="text" id="FLOOR" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="ROOM">Room</label>
+      <input type="text" id="ROOM" readonly>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="RACK_UNIT">Rack / Unit</label>
+      <input type="text" id="RACK_UNIT" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="SHELF">Shelf / Drawer</label>
+      <input type="text" id="SHELF" readonly>
+    </div>
+
+    <div class="medium field_container">
+      <label for="LOCATION_CONTACT">Contact Details</label>
+      <input type="text" id="LOCATION_CONTACT" readonly>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="LOCATION_TYPE">Location Type</label>
+      <input type="text" id="LOCATION_TYPE" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="POSITION">Position</label>
+      <input type="text" id="POSITION" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="LOC_ACCESS">Access</label>
+      <input type="text" id="LOC_ACCESS" readonly>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="LOCATION_DATE">Move Date</label>
+      <input type="text" id="LOCATION_DATE" readonly>
+    </div>
+
+    <!-- RL-2020-12-21 -->
+    <div class="small field_container">
+      <label for="MOVEMENT_REF_NUM">Move Ref. No</label>
+      <input type="text" id="MOVEMENT_REF_NUM" readonly>
+    </div>
+
+    <div class="medium field_container">
+      <label for="MOVEMENT_CONTACT">Move Contact</label>
+      <input type="text" id="MOVEMENT_CONTACT" readonly>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="MOVEMENT_NOTE">Notes</label>
+      <textarea id="MOVEMENT_NOTE"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Planned Movements" id="PLANNED_LOC_GRP">
+  <div class="form_row">
+    <div class="medium location_validated_field field_container" data-map="planned_movement">
+      <label for="PLND_CUR_CODE">Location</label>
+      <input type="text" id="PLND_CUR_CODE" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="PLND_BUS_UNIT">Organizational Unit</label>
+      <input type="text" id="PLND_BUS_UNIT" readonly>
+    </div>
+
+    <div class="small validated_table field_container">
+      <label for="PLND_MOVE_AUTHOR">Authorizer</label>
+      <input type="text" id="PLND_MOVE_AUTHOR" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="PLND_BLDG">Building</label>
+      <input type="text" id="PLND_BLDG" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="PLND_FLOOR">Area / Floor</label>
+      <input type="text" id="PLND_FLOOR" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="PLND_ROOM">Room</label>
+      <input type="text" id="PLND_ROOM" readonly>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="PLND_RACK_UNIT">Rack / Unit</label>
+      <input type="text" id="PLND_RACK_UNIT" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="PLND_SHELF">Shelf / Drawer</label>
+      <input type="text" id="PLND_SHELF" readonly>
+    </div>
+
+    <div class="medium field_container">
+      <label for="PLND_LOC_CONTACT">Contact Details</label>
+      <input type="text" id="PLND_LOC_CONTACT" readonly>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="PLND_LOC_TYPE">Location Type</label>
+      <input type="text" id="PLND_LOC_TYPE" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="PLND_POSITION">Position</label>
+      <input type="text" id="PLND_POSITION" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="PLND_ACCESS">Access</label>
+      <input type="text" id="PLND_ACCESS" readonly>
+    </div>
+  </div>
+
+  <!-- RL-2020-12-21 -->
+  <div class="form_row">
+    <div class="small date field_container">
+      <label for="PLAND_REMOV_DATE">Assigned On</label>
+      <input type="text" id="PLAND_REMOV_DATE" onchange="setMovementRefNo(this,'PLND_MOV_REF_NO');">
+    </div>
+
+    <div class="small field_container">
+      <label for="PLND_MOV_REF_NO">Planned Move Ref. No</label>
+      <input type="text" id="PLND_MOV_REF_NO" readonly>
+    </div>
+
+    <div class="medium validated_table field_container">
+      <label for="PLND_MOV_CONCT">Move Contact</label>
+      <input type="text" id="PLND_MOV_CONCT" data-val-database="VAL_USER" data-val-field="EXPANSION">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="PLND_MOV_NOTE">Notes</label>
+      <textarea id="PLND_MOV_NOTE"></textarea>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full movement_control field_container">
+      <label for="MOVED_FLAG" class="tooltipstered">
+<!-- #if global(mwi_access_token) <> "user2" -->
+        <ul class="movement_chrome">
+          <li><a href="#" class="cancel_move" title="Cancel Planned Move"><i class="fa fa-remove fa-lg">&nbsp;Cancel Planned Move</i></a></li>
+          &nbsp;
+          <li><a href="#" class="perform_move" title="Carry Out Planned Move"><i class="fa a fa-truck fa-lg">&nbsp;Move to Current Location</i></a></li>
+        </ul>
+<!-- #endif -->
+        Status
+      </label>
+      <input type="text" id="MOVED_FLAG" readonly>
+    </div>
+  </div>
+</fieldset>

@@ -1,0 +1,62 @@
+<span class="hidden current_page" id="education_main"></span>
+
+<div class="form_row">
+  <div class="small field_container">
+    <label for="EDU_CRS_ID"><u>Course No.</u></label>
+    <input type="text" id="EDU_CRS_ID" readonly>
+  </div>
+
+      <div class="large field_container">
+        <label for="EDU_CRS_NAME">Course Name</label>
+        <input type="text" id="EDU_CRS_NAME">
+      </div>
+    </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="EDU_TOPIC_ID">Topic</label>
+      <input type="text" id="EDU_TOPIC_ID">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+    <label for="EDU_OUTLINE">Course Outline</label>
+    <textarea id="EDU_OUTLINE"></textarea>
+    </div>
+  </div>
+ 
+  <div class="form_row">
+    <div class="medium repeating_field field_container">
+      <label for="EDU_PREREQUISITE">Prerequisities</label>
+      <input type="text" id="EDU_PREREQUISITE">
+    </div>
+  </div>
+
+  <fieldset class="repeating_group" data-group-title="Required Text/Material" id="EDU_REQ_TEXT_GRP">
+    <div class="form_row">
+      <div class="small field_container">
+        <label for="EDU_REQ_TEXT_AN">Text/Material ID</label>
+        <input type="text" id="EDU_REQ_TEXT_AN">
+      </div>
+
+      <div class="large field_container">
+        <label for="EDU_REQ_TEXT">Text/Material</label>
+        <input type="text" id="EDU_REQ_TEXT">
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="repeating_group" data-group-title="Recommended Text/Material" id="EDU_REC_TEXT_GRP">
+    <div class="form_row">
+      <div class="small field_container">
+        <label for="EDU_REC_TEXT_AN">Text/Material ID</label>
+        <input type="text" id="EDU_REC_TEXT_AN">
+      </div>
+
+      <div class="large field_container">
+        <label for="EDU_REC_TEXT">Text/Material</label>
+        <input type="text" id="EDU_REC_TEXT">
+      </div>
+    </div>
+  </fieldset>

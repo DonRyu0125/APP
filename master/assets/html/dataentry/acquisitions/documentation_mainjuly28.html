@@ -1,0 +1,91 @@
+<span class="hidden current_page" id="documentation_main"></span>
+<ul class="document_menu">
+  <li><a class="add" title="Add Component"><i class="fa fa-file-o"></i></a></li>
+  <li><a class="edit" title="Edit Component"><i class="fa fa-edit"></i></a></li>
+  <li><a class="delete" title="Delete Component"><i class="fa fa-trash-o"></i></a></li>
+</ul>
+
+<table class="reg_doc">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Type</th>
+      <th>Date Sent</th>
+	  <th>Date Received</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td colspan="4">No Documents Found</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<div style="display:none;">
+  <div id="document_data_entry">
+    <nav class="document_actions">
+      <ul>
+        <li class="dba_save_cost"><a title="Save Record"><i class="fa fa-floppy-o"></i></a></li>
+        <li class="dba_cancel"><a title="Cancel Edits"><i class="fa fa-ban"></i></a></li>
+        <li class="dba_print"><a title="Print"><i class="fa fa-print"></i></a></li>
+      </ul>
+      <hr>
+    </nav>
+    <div>
+      <fieldset class="logical_group">
+        <legend>Document Details</legend>
+
+        <div class="form_row">
+          <div class="small field_container">
+            <label for="regdoc_reg_doc_type">Type</label>
+            <select id="regdoc_reg_doc_type">
+			  <option></option>
+			  <option>Order</option>
+			  <option>Reproduction</option>
+			  <option>Service</option>
+			</select>
+          </div>
+ 	  
+          <div class="large field_container">
+            <label for="regdoc_reg_doc_path">Path</label>
+            <input type="text" id="regdoc_reg_doc_path">
+          </div>
+		</div>
+
+		<div class="form_row borderless">		        
+		<div class="large field_container">
+            <label for="regdoc_reg_doc_ocr">OCR</label>
+            <input type="text" id="regdoc_reg_doc_ocr">
+          </div>
+		</div>
+		
+        <div class="form_row borderless">		  
+		  <div class="small field_container">
+            <label for="regdoc_reg_doc_sent">Sent</label>
+            <input type="text" id="regdoc_reg_doc_sent">
+          </div>
+		  
+		 <div class="small field_container">
+            <label for="regdoc_reg_doc_received">Received</label>
+            <input type="text" id="regdoc_reg_doc_received">
+          </div> 
+		  
+		 <div class="small field_container">
+            <label for="regdoc_reg_doc_number">Number</label>
+            <input type="text" id="regdoc_reg_doc_number">
+          </div>
+		  </div>
+
+        <div class="form_row borderless">
+          <div class="full field_container">
+            <label for="regdoc_reg_doc_notes">Notes</label>
+            <textarea id="regdoc_reg_doc_notes"></textarea>
+            <input type="hidden" id="regdoc_occurrence">
+          </div>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,195 @@
+<span class="hidden current_page" id="access_main"></span>
+
+<fieldset class="repeating_group" data-group-title="Availability of Other Formats" id="AVAILABILITY">
+  <div class="borderless form_row">
+    <div class="large validated_table field_container">
+      <label for="OTHER_FORMATS">Format</label>
+      <input type="text" id="OTHER_FORMATS" data-val-database="OTHER_FORMATS_AUTHORITY" data-val-field="LOOKUP_FIELD" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="CALL_NO">Call No.</label>
+      <input type="text" id="CALL_NO">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Other Codes" id="OTHER_CODES_GRP">
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="OTHER_CODES">Other Code</label>
+      <input type="text" id="OTHER_CODES">
+    </div>
+  </div>
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="OTHER_CODES_NOTE">Note</label>
+      <textarea id="OTHER_CODES_NOTE"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+
+<!-- KN-2022-08-17 added-->
+<div class="form_row">
+  <div class="full repeating_field field_container">
+    <label for="ASSOCIATED_MAT">Associated Materials</label>
+    <textarea id="ASSOCIATED_MAT"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full repeating_field field_container">
+    <label for="REFERENCE_REF">Bibliographic References</label>
+    <textarea id="REFERENCE_REF"></textarea>
+  </div>
+</div>
+
+
+<fieldset class="repeating_group" data-group-title="Finding Aid" id="A_FINTX_REF_GRP">
+  <div class="form_row borderless">
+    <div class="full text file_attachment field_container">
+      <label for="A_FINTX_ACCESS">Finding Aid Link</label>
+      <input type="text" id="A_FINTX_ACCESS">
+      </div>
+    </div>
+
+	
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="A_FINTX_CAPTION">Finding Aid Note</label>
+      <textarea id="A_FINTX_CAPTION"></textarea>
+      <input type="hidden" id="A_FINTX_THUMB">
+      <input type="hidden" id="A_FINTX_OCR">
+      <input type="hidden" id="A_FINTX_PRESER">
+  </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full url_field field_container">
+      <label for="A_FINTX_OTHER">Finding Aid URL</label>
+      <input type="text" id="A_FINTX_OTHER">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Geographic Access Point" id="INDEXGEO_GRP">
+  <div class="borderless form_row">
+    <div class="medium sites_validated_field field_container" data-map="geo_access">
+      <label for="INDEXGEO">Geographic Access</label>
+      <input type="text" id="INDEXGEO" readonly>
+      <input type="hidden" id="GEO_ID">
+    </div>
+    </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Other Names" id="INDEXNAME_GRP">
+  <div class="form_row">
+    <div class="full org_validated_field people_validated_field field_container"
+      data-map-people="name_access" data-map-org="name_org_access">
+      <label for="INDEXNAME">Name</label>
+      <input type="text" id="INDEXNAME" readonly>
+      <input type="hidden" id="NAME_ID">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Names as Subjects" id="INDEXSUB_GRP">
+  <div class="form_row">
+    <div class="full org_validated_field people_validated_field field_container" data-map-people="name_subject" data-map-org="name_org_subject"> <!-- RL-20211231 -->
+      <label for="INDEXSUB">Name</label>
+      <input type="text" id="INDEXSUB" readonly>
+      <input type="hidden" id="SUB_ID">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Provenance" id="INDEXPROV_GRP">
+  <div class="form_row">
+    <div class="full org_validated_field people_validated_field field_container" data-map-people="name_prov"  data-map-org="name_org_prov">  <!-- RL-20211231 -->
+      <label for="INDEXPROV">Name</label>
+      <input type="text" id="INDEXPROV" readonly>
+      <input type="hidden" id="PROV_ID">
+    </div>
+  </div>
+</fieldset>
+
+<div class="form_row">
+  <div class="medium validated_table repeating_field field_container">
+    <label for="SUBJECT">Subject</label>
+    <input type="text" id="SUBJECT" data-val-database="SSAM" data-val-field="Heading" readonly>
+  </div>
+  </div>
+  
+  
+  
+<!-- KN - 2022-08-09 Crowdsource group commented out on request from client to
+
+<fieldset class="repeating_group" data-group-title="Crowdsource Information" id="CROWD_GROUP">
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="CROWD_ID">ID</label>
+      <input type="text" id="CROWD_ID">
+    </div>
+
+    <div class="small date field_container">
+      <label for="CROWD_DATE">Date</label>
+      <input type="text" id="CROWD_DATE">
+    </div>
+
+    <div class="small field_container">
+      <label for="CROWD_TIME">Time</label>
+      <input type="text" id="CROWD_TIME">
+    </div>
+   </div>
+
+  <div class="form_row">
+    <div class="large people_validated_field field_container" data-map="crwd_source">
+      <label for="CROWD_SOURCE">Source</label>
+      <input type="text" id="CROWD_SOURCE" readonly>
+      <input type="hidden" id="CROWD_SOURCE_ID">
+    </div>
+
+    <div class="small field_container">
+      <label for="CROWD_SRC_TYPE">Source Type</label>
+      <select id="CROWD_SRC_TYPE">
+        <option></option>
+        <option>Anonymous</option>
+        <option>Patron</option>
+        <option>Other-Government</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="CROWD_TYPE">Type</label>
+      <select id="CROWD_TYPE">
+        <option></option>
+        <option>Comment</option>
+        <option>Correction</option>
+        <option>Addition</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <div class="medium field_container">
+      <label for="CROWD_STATUS">Status</label>
+      <select id="CROWD_STATUS">
+        <option></option>
+        <option>Approved</option>
+        <option>Pending</option>
+        <option>Deferred</option>
+        <option>Ignored</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="CROWD_COMMENT">Comment/Correction/Addition</label>
+      <textarea id="CROWD_COMMENT"></textarea>
+    </div>
+  </div>
+</fieldset>
+ -->

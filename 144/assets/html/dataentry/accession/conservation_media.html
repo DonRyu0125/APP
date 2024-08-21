@@ -1,0 +1,301 @@
+<span class="hidden current_page" id="conservation_media"></span>
+
+<fieldset class="repeating_group" data-group-title="Examination / Treatment Details" id="AC_CONSERVE_INFO">
+<fieldset class="repeating_group has_image_holder" data-group-title="Accession Conservation Image" id="AC_CNIM_REF_GRP">
+  <div class="form_row borderless">
+      <div class="large image file_attachment field_container">
+        <label for="AC_CNIM_ACCESS">Image Path/Thumbnail</label>
+        <input type="text" id="AC_CNIM_ACCESS" readonly>
+      </div>
+      <div>
+        <!-- RL-2020-11-10  image holder -->
+         <img class="field_img" src="/144/assets/img/image-placeholder.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="AC_CNIM_CAPTION">Caption</label>
+      <textarea id="AC_CNIM_CAPTION"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="medium validated_table field_container">
+       <label for="AC_CNIM_TYPE">Image Type</label>
+       <input type="text" id="AC_CNIM_TYPE" data-val-database="IMAGE_TYPE_VAL" data-val-field="LOOKUP_FIELD" readonly>
+    </div>
+  </div>
+
+  <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_CNIM_AST_NAME">Asset Name</label>
+          <input type="text" id="AC_CNIM_AST_NAME" readonly>
+        </div>
+      </div>
+
+     <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_CNIM_THUMB">TDR Thumb</label>
+          <input type="text" id="AC_CNIM_THUMB">
+        </div>
+      </div>
+
+        <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="AC_CNIM_OCR">TDR OCR</label>
+          <input type="text" id="AC_CNIM_OCR" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_CNIM_PRESER">TDR Preservation</label>
+          <input type="text" id="AC_CNIM_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_CNIM_ORIGIN">TDR Original</label>
+          <input type="text" id="AC_CNIM_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_CNIM_OTHER">TDR Other</label>
+          <input type="text" id="AC_CNIM_OTHER" readonly>
+        </div>
+      </div>
+  </fieldset>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Accession Conservation Video" id="AC_CNVD_REF_GRP">
+  <div class="form_row borderless">
+    <div class="full video file_attachment field_container">
+      <label for="AC_CNVD_ACCESS">Video or Access Path</label>
+      <input type="text" id="AC_CNVD_ACCESS">
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="AC_CNVD_CAPTION">Caption</label>
+      <textarea id="AC_CNVD_CAPTION"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="medium location_validated_field field_container" data-map="acon_video_location">
+      <label for="AC_CNVD_LOC_ID">Location</label>
+      <input type="text" id="AC_CNVD_LOC_ID" readonly>
+    </div>
+  </div>
+
+  <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_CNVD_AST_NAME">Asset Name</label>
+          <input type="text" id="AC_CNVD_AST_NAME" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_CNVD_OCR">TDR OCR</label>
+          <input type="text" id="AC_CNVD_OCR" readonly>
+        </div>
+      </div>
+
+     <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_CNVD_THUMB">TDR Thumb</label>
+          <input type="text" id="AC_CNVD_THUMB">
+        </div>
+      </div>
+
+     <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_CNVD_PRESER">TDR Preservation</label>
+          <input type="text" id="AC_CNVD_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="M_VD_ORIGIN">TDR Original</label>
+          <input type="text" id="M_VD_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_CNVD_ORIGIN">TDR Other</label>
+          <input type="text" id="AC_CNVD_ORIGIN" readonly>
+        </div>
+      </div>
+  </fieldset>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Accession Conservation Audio" id="AC_CNAD_REF_GRP">
+  <div class="form_row borderless">
+    <div class="full audio file_attachment field_container">
+      <label for="AC_CNAD_ACCESS">Audio/Access Path</label>
+      <input type="text" id="AC_CNAD_ACCESS">
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="AC_CNAD_CAPTION">Caption</label>
+      <textarea id="AC_CNAD_CAPTION"></textarea>
+    </div>
+  </div>
+
+   <div class="form_row borderless">
+    <div class="medium location_validated_field field_container" data-map="acon_audio_location">
+      <label for="AC_CNAD_LOC_ID">Location</label>
+      <input type="text" id="AC_CNAD_LOC_ID" readonly>
+    </div>
+   </div>
+
+  <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_CNAD_AST_NAME">Asset Name</label>
+          <input type="text" id="AC_CNAD_AST_NAME" readonly>
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="AC_CNAD_OCR">TDR OCR</label>
+          <input type="text" id="AC_CNAD_OCR" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_CNAD_THUMB">TDR Thumb</label>
+          <input type="text" id="AC_CNAD_THUMB">
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_CNAD_PRESER">TDR Preservation</label>
+          <input type="text" id="AC_CNAD_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_CNAD_ORIGIN">TDR Original</label>
+          <input type="text" id="AC_CNAD_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_CNAD_OTHER">TDR Other</label>
+          <input type="text" id="AC_CNAD_OTHER" readonly>
+        </div>
+      </div>
+  </fieldset>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Accession Conservation Textual" id="AC_CNTX_REF_GRP">
+  <div class="form_row borderless">
+    <div class="full text file_attachment field_container">
+      <label for="AC_CNTX_ACCESS">Text/Access Path</label>
+      <input type="text" id="AC_CNTX_ACCESS">
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="AC_CNTX_CAPTION">Caption</label>
+      <textarea id="AC_CNTX_CAPTION"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="large field_container">
+      <label for="AC_CNTX_TYPE">Type</label>
+      <input type="text" id="AC_CNTX_TYPE">
+    </div>
+  </div>
+
+
+  <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_CNTX_AST_NAME">Asset Name</label>
+          <input type="text" id="AC_CNTX_AST_NAME" readonly>
+        </div>
+      </div>
+
+        <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="AC_CNTX_OCR">TDR OCR</label>
+          <input type="text" id="AC_CNTX_OCR" readonly>
+        </div>
+      </div>
+
+     <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_CNTX_THUMB">TDR Thumb</label>
+          <input type="text" id="AC_CNTX_THUMB">
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_CNTX_PRESER">TDR Preservation</label>
+          <input type="text" id="AC_CNTX_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_CNTX_ORIGIN">TDR Original</label>
+          <input type="text" id="AC_CNTX_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_CNTX_OTHER">TDR Other</label>
+          <input type="text" id="AC_CNTX_OTHER" readonly>
+        </div>
+      </div>
+  </fieldset>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="URL" id="AC_CONSER_WEB_GP">
+  <div class="borderless form_row">
+    <div class="full url_field field_container">
+      <label for="AC_CONSER_WEB_PA">Web Path</label>
+      <input type="text" id="AC_CONSER_WEB_PA">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="AC_CONSER_WEB_NO">Note</label>
+      <textarea id="AC_CONSER_WEB_NO"></textarea>
+    </div>
+  </div>
+</fieldset>
+</fieldset>

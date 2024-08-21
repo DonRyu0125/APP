@@ -1,0 +1,598 @@
+<span class="hidden current_page" id="item"></span>
+<div class="form_row borderless">
+  <div class="smallmed field_container">
+    <label for="PUBLICATION_YEAR">Publication year</label>
+    <input type="text" id="PUBLICATION_YEAR" maxLength="4">
+  </div>
+  <div class="smallmed field_container">
+    <label for="RESTRICTEDFOR">Age Category</label>
+    <select id="RESTRICTEDFOR">
+      <option></option>
+      <option>Juvenile</option>
+      <option>Young Adult</option>
+    </select>
+  </div>
+  <div class="smallmed field_container">
+    <label for="FREQUENCY">Frequency</label>
+    <select id="FREQUENCY">
+      <option></option>
+      <option>DW</option>
+      <option>DA</option>
+      <option>DX1</option>
+      <option>DX2</option>
+      <option>DX3</option>
+      <option>DX4</option>
+      <option>DX5</option>
+      <option>DX6</option>
+      <option>DX7</option>
+      <option>SSO</option>
+      <option>WE</option>
+      <option>2W</option>
+      <option>SM</option>
+      <option>MO</option>
+      <option>11A</option>
+      <option>10A</option>
+      <option>9A</option>
+      <option>8A</option>
+      <option>7A</option>
+      <option>BM</option>
+      <option>5A</option>
+      <option>QU</option>
+      <option>3A</option>
+      <option>2A</option>
+      <option>AN</option>
+      <option>BI</option>
+      <option>IRR</option>
+    </select>
+  </div>
+</div>
+
+
+<fieldset class="repeating_group has_image_holder" data-group-title="Item" id="ITEM_INFO">
+  <div class="form_row borderless">
+    <div class="smallmed form_button field_container">
+      <a href="#" class="duplicate_occ_exit" id="dup_item"><i class="fa fa-clone"></i> Duplicate</a>
+    </div>
+    <div class="smallmed field_container">
+      <a href="#" class="simple_button" id="print_label"><i class="fa fa-print"></i> Print spine label</a>
+    </div>
+  </div>
+
+
+  <div class="form_row borderless">
+    <div class="smallmed2 validated_table field_container">
+      <label for="ITEM_CALL_NUMBER">Call number</label>
+      <input type="text" id="ITEM_CALL_NUMBER" data-val-database="CATALOGUE" data-val-field="ITEM_CALL_NUMBER">
+    </div>
+
+    <div class="smallmed field_container">
+      <label for="COPY_NUMBER">Copy number</label>
+      <input type="text" id="COPY_NUMBER">
+    </div>	
+  </div>
+
+  <div class="form_row borderless">
+    <div class="smallmed field_container">
+      <label for="VOLUME_ID">Volume/issue</label>
+      <input type="text" id="VOLUME_ID">
+    </div>
+    <div class="smallmed field_container">
+      <div class="smallmed field_container no_left_pad">
+        <label for="BARCODE">Barcode</label>
+        <input type="text" id="BARCODE" maxLength="16">
+      </div>
+      </div>
+    <div class="smallmed field_container">
+      <label for="BARCODE_DATE">Bar Code Date</label>
+      <input type="text" id="BARCODE_DATE">
+  </div>
+</div>
+
+<div class="form_row borderless">
+     <div class="medium field_container">
+      <label for="LOCATION">Location</label>
+      <select id="LOCATION">
+        <option></option>
+        <option>Library Stacks</option>
+        <option>Library Reference</option>
+        <option>Librarian’s Office</option>
+        <option>Book Oversize</option>
+        <option>Map Cabinet 1 – Library</option>
+        <option>Pamphlet Oversize</option>
+        <option>Period Oversize</option>
+        <option>Archivist of Ontario Office</option>
+        <option>Archivist of Ontario Display</option>
+        <option>Main Reading Rm Reference</option>
+        <option>Main Reading Rm Microfilm Area</option>
+        <option>Main Reading Rm Genealogy Shelves</option>
+        <option>Main Reading Rm Atlas Stand</option>
+        <option>Self Service Microfilm</option>
+        <option>Sound and Moving Images</option>
+        <option>Special Collections Reading Rm</option>
+        <option>Special Collections Office</option>
+        <option>Fiche Cabinet 2 Drwr 1 Library</option>
+        <option>Fiche Cabinet 1 Drwr 1 Library</option>
+        <option>Fiche Cabinet 1 Drwr 2 Library</option>
+        <option>Fiche Binder Lib. Stacks</option>
+        <option>DSPC Office</option>
+        <option>5th floor Office Area</option>
+        <option>4th floor Office Area</option>
+        <option>Access/FOI Unit</option>
+        <option>Reception Desk 3rd floor</option>
+        <option>Pol/Leg Archivist</option>
+        <option>Cartogr Archivist</option>
+        <option>Health/Social Archivist</option>
+        <option>Municipal Archivist</option>
+        <option>Photo Archivist</option>
+        <option>Architectural Archivist</option>
+        <option>Newspaper Archivist</option>
+        <option>Electronic Records PC Office</option>
+        <option>Education Records Archivist</option>
+        <option>Art Collection Office</option>
+        <option>Immigration Records Office</option>
+        <option>Interloan Office</option>
+        <option>Customer Serv Leader Office</option>
+        <option>Customer Serv Office Area</option>
+        <option>Info Services Office Area</option>
+        <option>Netops</option>
+        <option>Library Atlas Stand</option>
+        <option>Special Collections Reference Range 20/9</option>
+        <option>Main Reading Rm Ref Desk</option>
+        <option>Map Cabinet 1 Drwr 1 Library</option>
+        <option>Map Cabinet 1 Drwr 2 Library</option>
+        <option>Map Cabinet 1 Drwr 3 Library</option>
+        <option>Map Cabinet 2 – Library</option>
+        <option>George Spragge Classroom</option>
+        <option>Outreach Unit</option>
+        <option>Record Keeping Support Unit Library Stacks Reference</option>
+        <option>Library Microfiche Cabinets</option>
+        <option>Reading Room Reference</option>
+        <option>Library Media Cabinet</option>
+        <option>Preservation Services</option>
+        <option>Voters Oversize</option>
+        <option>CDM</option>
+        <option>Mould Isolation</option>
+      </select>
+     </div>
+    <div class="medium field_container">
+      <label for="CIRC_TYPE">Circ. Type</label>
+      <select id="CIRC_TYPE">
+        <option></option>
+        <option>Restricted</option>
+        <option>Preserv</option>
+      </select>
+     </div>
+  </div>
+	 
+	 
+<fieldset class="repeating_group" data-group-title="Item Status" id="ITEM_STATUS_GRP">
+  <div class="form_row">
+    <div class="full restrictions_validated_field field_container" data-map="item_restrictions">
+      <label for="ITEM_STATUS_N">Item Status</label>
+      <input type="text" id="ITEM_STATUS_N" readonly>
+      <input type="hidden" id="ITEM_STATUS_ID">
+    </div>
+  </div>
+</fieldset>
+
+ <div class="form_row borderless">
+    <div class="smallmed collectioncode_validated_field field_container" data-map="collect_code">
+      <label for="I_COLLECT_CODE">Material type</label>
+      <input type="text" id="I_COLLECT_CODE" readonly>
+      <input type="hidden" id="COLLECTION_CODE">
+    </div>
+    <div class="smallmed field_container">
+      <label for="OLD_ACCESS_NUMB">Old Accession Number</label>
+      <input type="text" id="OLD_ACCESS_NUMB">
+    </div>
+    <div class="smallmed field_container">
+      <label for="LABEL_TYPE">Label Type</label>
+      <select id="LABEL_TYPE">
+        <option></option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="smallmed field_container">
+      <label for="MEDIA_TYPE">Loan type</label>
+      <input type="text" id="MEDIA_TYPE" readonly>
+    </div>
+    <div class="smallmed field_container">
+      <label for="HOLDING_CENTRE">Branch location</label>
+      <select id="HOLDING_CENTRE">
+        <option></option>
+        <option>Main</option>
+        <option>Interlibrary loan</option>
+      </select>
+    </div>
+    <div class="smallmed field_container">
+      <label for="ITEM_NON_CIRC">Non-circulated</label>
+      <input type="checkbox" id="ITEM_NON_CIRC">
+    </div>	
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="PUBLIC_NOTE">Public Note</label>
+      <textarea id="PUBLIC_NOTE"></textarea>
+    </div>
+  </div>
+
+<fieldset class="repeating_group has_image_holder" data-group-title="Book Cover" id="L_IM_REF_GRP">
+  <div class="form_row borderless">
+      <div class="large image file_attachment field_container">
+        <label for="L_IM_ACCESS">Image Access</label>
+        <input type="text" id="L_IM_ACCESS" readonly>
+      </div>
+      <div>
+        <!-- RL-2020-11-10  image holder -->
+         <img class="field_img" src="/mylang/assets/img/image-placeholder.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="L_IM_CAPTION">Caption</label>
+      <textarea id="L_IM_CAPTION"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="medium field_container">
+      <label for="L_IM_OPAC">Web Ready</label>
+      <select id="L_IM_OPAC">
+        <option></option>
+        <option>Ready</option>
+        <option>Review</option>
+        <option>Restrict</option>
+      </select>
+    </div>
+
+    <div class="medium field_container">
+       <label for="L_IM_TYPE">Image Type</label>
+      <input type="text" id="L_IM_TYPE">
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="L_IM_CREDIT">Image credit line</label>
+      <textarea id="L_IM_CREDIT"></textarea>
+    </div>
+  </div>
+
+  <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="L_IM_AST_NAME">Asset Name</label>
+          <input type="text" id="L_IM_AST_NAME" readonly>
+        </div>
+      </div>
+
+        <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="L_IM_OCR">TDR OCR</label>
+          <input type="text" id="L_IM_OCR" readonly>
+        </div>
+      </div>
+
+    <div class="form_row">
+        <div class="full field_container">
+          <label for="L_IM_THUMB">TDR Thumbnail</label>
+          <input type="text" id="L_IM_THUMB">
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="L_IM_PRESER">TDR Preservation</label>
+          <input type="text" id="L_IM_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="L_IM_ORIGIN">TDR Original</label>
+          <input type="text" id="L_IM_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="L_IM_OTHER">TDR Other</label>
+          <input type="text" id="L_IM_OTHER" readonly>
+        </div>
+      </div>
+  </fieldset>
+</fieldset>
+
+  <fieldset class="repeating_group" data-group-title="Edoc" id="L_TX_REF_GRP">
+    <div class="form_row borderless">
+      <div class="full text file_attachment field_container">
+        <label for="L_TX_ACCESS">Access Path</label>
+        <input type="text" id="L_TX_ACCESS">
+        </div>
+      </div>
+
+    <div class="form_row borderless">
+      <div class="full field_container">
+        <label for="L_TX_CAPTION">Caption</label>
+        <textarea id="L_TX_CAPTION"></textarea>
+      </div>
+    </div>
+
+    <div class="form_row borderless">
+      <div class="small field_container">
+        <label for="L_TX_OPAC">Web Ready</label>
+        <select id="L_TX_OPAC">
+          <option></option>
+          <option>Ready</option>
+          <option>Review</option>
+          <option>Restrict</option>
+        </select>
+      </div>
+
+      <div class="small field_container">
+        <label for="L_TX_TYPE">Type</label>
+        <input type="text" id="L_TX_TYPE">
+      </div>
+    </div>
+
+    <fieldset class="logical_group">
+      <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="L_TX_AST_NAME">Asset Name</label>
+          <input type="text" id="L_TX_AST_NAME" readonly>
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="L_TX_OCR">TDR OCR</label>
+          <input type="text" id="L_TX_OCR" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="L_TX_THUMB">TDR Thumb</label>
+          <input type="text" id="L_TX_THUMB">
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="L_TX_PRESER">TDR Preservation</label>
+          <input type="text" id="L_TX_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="L_TX_ORIGIN">TDR Original</label>
+          <input type="text" id="L_TX_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="L_TX_OTHER">TDR Other</label>
+          <input type="text" id="L_TX_OTHER" readonly>
+        </div>
+      </div>
+    </fieldset>
+  </fieldset>
+</fieldset>
+
+
+  <div class="form_row borderless">
+    <div class="full form_button field_container">
+       <a href="#" onclick="hide_show_div('acquis_info');"><i class="fa fa-refresh"></i>Click to hide/show acquisition information</a>
+    </div>
+  </div>
+  <div id="acquis_info" class="show_as_is" style="display:none;">
+<fieldset class="logical_group">
+  <legend><b>ACQUISITIONS INFORMATION</b></legend>
+  <div class="form_row borderless">
+    <div class="smallmed field_container">
+      <label for="I_ACQUIS_STATUS">Acquisition Status</label>
+      <select id="I_ACQUIS_STATUS">
+        <option></option>
+        <option>Preliminary</option>
+        <option>Order Sent</option>
+        <option>Completed</option>
+        <option>Delay</option>
+        <option>Claimed1</option>
+        <option>Claimed2</option>
+        <option>Recd in part</option>
+        <option>Recd no Invoice</option>
+        <option>Recd not paid</option>
+        <option>Renew</option>
+        <option>Renew Sent</option>
+        <option>Renewed</option>
+        <option>Cancelled</option>
+        <option>Cancel</option>
+    </select>
+    </div>
+    <div class="smallmed field_container">
+      <label for="ITEM_ORDER_ID">Order ID</label>
+      <input type="text" id="ITEM_ORDER_ID">
+    </div>
+    <div class="smallmed date field_container">
+      <label for="ITEM_ORDER_DATE">Order Date</label>
+      <input type="text" id="ITEM_ORDER_DATE">
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="smallmed field_container">
+      <label for="ITEM_SOURCE">Item Source</label>
+      <input type="text" id="ITEM_SOURCE">
+    </div>
+    <div class="smallmed field_container">
+      <label for="ITEM_PRICE">Item Price</label>
+      <input type="number" id="ITEM_PRICE" step="0.01">
+    </div>
+    <div class="smallmed date field_container">
+      <label for="ITEM_RECEIV_DATE">Date Received</label>
+      <input type="text" id="ITEM_RECEIV_DATE">
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="smallmed field_container">
+      <label for="ITEM_ACQUIS">Acquisition Type</label>
+      <select id="ITEM_ACQUIS">
+        <option></option>
+        <option>MONOFREE</option>
+        <option>DONATION TAX</option>
+        <option>DONATION LETTER</option>
+        <option>SERIAL FREE</option>
+        <option>TRANSFER</option>
+        <option>PRINT FROM INTERNET</option>
+        <option>SPECIAL 2014</option>
+      </select>
+    </div>
+    <div class="smallmed2 field_container">
+      <label for="STAFF_REQUESTING">Staff Req</label>
+      <input type="text" id="STAFF_REQUESTING">
+    </div>
+  </div>
+
+  </div>
+
+
+
+  <div class="form_row borderless">
+    <div class="full form_button field_container">
+       <a href="#" onclick="hide_show_div('circ_info');"><i class="fa fa-refresh"></i>Click to hide/show circulation information and blocked message</a>
+    </div>
+  </div>
+
+  <div id="circ_info" class="show_as_is" style="display:none;">
+    <div class="form_row borderless pad_left">
+      <div class="smallmed field_container">
+        <label for="ALERT_TYPE">Alert type</label>
+        <input type="text" id="ALERT_TYPE" maxLength="2">
+      </div>
+      <div class="smallmed field_container">
+        <label for="MAG_MEDIA">Magnetic media</label>
+        <select id="MAG_MEDIA">
+          <option></option>
+          <option>Y</option>
+          <option>N</option>
+          <option>U</option>
+        </select>
+      </div>
+      <div class="smallmed field_container">
+         <label for="SECURITY_MARKER">Security marker</label>
+        <select id="SECURITY_MARKER">
+          <option></option>
+          <option>00</option>
+          <option>01</option>
+          <option>02</option>
+          <option>03</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form_row borderless">
+      <div class="smallmed field_container">
+        <label for="SENSITIZE">Sensitized item</label>
+        <select id="SENSITIZE">
+          <option></option>
+          <option>Y</option>
+          <option>N</option>
+          <option>U</option>
+        </select>
+      </div>
+      <div class="smallmed field_container">
+        <label for="SECURITY">Security inhibit</label>
+        <select id="SECURITY">
+          <option></option>
+          <option>Y</option>
+          <option>N</option>
+        </select>
+      </div>
+      <div class="smallmed field_container">
+        <label for="CHECKOUT_FEE_TYP">Fee type</label>
+        <select id="CHECKOUT_FEE_TYP">
+          <option></option>
+          <option>01</option>
+          <option>02</option>
+          <option>03</option>
+          <option>04</option>
+          <option>05</option>
+          <option>06</option>
+          <option>07</option>
+          <option>08</option>
+          <option>09</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form_row borderless">
+      <div class="smallmed field_container">
+        <label for="CHECKOUT_FEE">Fee amount</label>
+        <input type="number" id="CHECKOUT_FEE">
+      </div>
+      <div class="smallmed2 field_container">
+        <label for="SORT_BIN">Sort bin</label>
+        <input type="text" id="SORT_BIN">
+      </div>
+    </div>
+
+    <div class="form_row borderless">
+      <div class="smallmed field_container">
+        <label for="CURRENT_LOC">Current location</label>
+        <select id="CURRENT_LOC">
+          <option></option>
+          <option>Main</option>
+          <option>Interlibrary</option>
+        </select>
+      </div>
+      <div class="smallmed field_container">
+        <label for="PICKUP_LOCATION">Pickup location</label>
+        <select id="PICKUP_LOCATION">
+          <option></option>
+          <option>Main</option>
+          <option>Interlibrary</option>
+        </select>
+      </div>
+      <div class="smallmed field_container">
+        <label for="DEST_LOCATION">Destination location</label>
+        <select id="DEST_LOCATION">
+          <option></option>
+          <option>Main</option>
+          <option>Interlibrary</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form_row borderless">
+      <div class="full field_container">
+        <label for="BLOCKED_MESSAGE">Blocked message</label>
+        <textarea id="BLOCKED_MESSAGE"></textarea>
+      </div>
+    </div>
+
+    <div class="form_row borderless">
+      <div class="full field_container">
+        <label for="ITEM_PROPERTY">Description</label>
+        <textarea id="ITEM_PROPERTY"></textarea>
+      </div>
+    </div>
+
+  </div>
+
+</fieldset>

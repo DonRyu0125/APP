@@ -1,0 +1,160 @@
+<span class="hidden current_page" id="people_other"></span>
+
+
+<fieldset class="repeating_group" data-group-title="Reference" id="REFERENCE">
+  <div class="form_row borderless">
+    <div class="medium field_container">
+      <label for="PERSON_REFERENCE">Reference</label>
+      <input type="text" id="PERSON_REFERENCE">
+    </div>
+
+    <div class="medium field_container">
+      <label for="PERSON_REF_REF">Type</label>
+      <input type="text" id="PERSON_REF_REF">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Related Person" id="RELATED_PER_GRP">
+  <div class="form_row borderless">
+    <div class="large people_validated_field field_container" data-map="related_person">
+      <label for="REL_PER_NAME">Name</label>
+      <input type="text" id="REL_PER_NAME" readonly>
+      <input type="hidden" id="REL_PER_ID">
+    </div>  
+	</div>
+    
+<fieldset class="repeating_group" data-group-title="Relationship" id="RELATION_GRP">
+  <div class="form_row borderless">
+    <div class="medium relship_validated_field field_container" data-map="relationship">
+      <label for="RELATIONSHIP_ENG">English</label>
+      <input type="text" id="RELATIONSHIP_ENG" readonly>
+    </div>
+	
+	<div class="medium field_container">
+      <label for="RELATIONSHIP_FRE">French</label>
+      <input type="text" id="RELATIONSHIP_FRE" readonly>
+    </div>
+	</div>
+</fieldset>
+	
+  <div class="form_row">
+  <div class="full field_container">
+    <label for="REL_PER_NOTES">Notes</label>
+    <textarea id="REL_PER_NOTES"></textarea>
+  </div>
+</div>
+</fieldset>
+
+<fieldset class="repeating_group has_image_holder" data-group-title="Person Image" id="PER_IM_REF_GRP">
+  <div class="form_row borderless">
+      <div class="large image file_attachment field_container">
+        <label for="PER_IM_ACCESS">Image Access</label>
+        <input type="text" id="PER_IM_ACCESS" readonly>
+      </div>
+      <div>
+        <!-- RL-2020-11-10  image holder  and KN 2022-03-29 image clicked added.-->
+         <a href="#" class="image_clicked"><img class="field_img" src="/m3online/assets/img/image-placeholder.png">
+      </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="PER_IM_CAPTION">Caption</label>
+      <textarea id="PER_IM_CAPTION"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="medium field_container">
+      <label for="PER_IM_OPAC">Web Ready</label>
+      <select id="PER_IM_OPAC">
+        <option></option>
+        <option>Restrict</option>
+        <option>Review</option>
+        <option>Ready</option>
+      </select>
+    </div>
+
+    <div class="medium validated_table field_container">
+       <label for="PER_IM_TYPE">Image Type</label>
+       <input type="text" id="PER_IM_TYPE" data-val-database="IMAGE_TYPE_VAL" data-val-field="LOOKUP_FIELD" readonly>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="PER_IM_CREDIT">Image credit line</label>
+      <textarea id="PER_IM_CREDIT"></textarea>
+    </div>
+  </div>
+
+  <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="PER_IM_AST_NAME">Asset Name</label>
+          <input type="text" id="PER_IM_AST_NAME" readonly>
+        </div>
+      </div>
+
+        <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="PER_IM_OCR">TDR OCR</label>
+          <input type="text" id="PER_IM_OCR" readonly>
+        </div>
+      </div>
+
+    <div class="form_row">
+        <div class="full field_container">
+          <label for="PER_IM_THUMB">TDR Thumbnail</label>
+          <input type="text" id="PER_IM_THUMB">
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="PER_IM_PRESER">TDR Preservation</label>
+          <input type="text" id="PER_IM_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="PER_IM_ORIGIN">TDR Original</label>
+          <input type="text" id="PER_IM_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="PER_IM_OTHER">TDR Other</label>
+          <input type="text" id="PER_IM_OTHER" readonly>
+        </div>
+      </div>
+  </fieldset>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Life Event(s)" id="LIFE_EVENT_GRP">
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="LIFE_EVENT">Event</label>
+      <input type="text" id="LIFE_EVENT">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="LIFE_EVNT_START">From</label>
+      <input type="text" id="LIFE_EVNT_START">
+    </div>
+	
+  <div class="medium field_container">
+      <label for="LIFE_EVNT_END">To</label>
+      <input type="text" id="LIFE_EVNT_END">
+    </div>
+  </div>
+</fieldset>
+	
+	

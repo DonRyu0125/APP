@@ -1,0 +1,157 @@
+<span class="hidden current_page" id="correspondence"></span>
+
+<fieldset class="logical_group">
+  <legend>Inquiry Status</legend>
+
+  <div class="borderless form_row">
+    <div class="medium field_container">
+      <span class="title_text">Entered On / By</span>
+    </div>
+    <div class="medium field_container">
+      <span class="title_text">Due On</span>
+    </div>
+  </div>
+  <div class="borderless form_row">
+    <div class="medium field_container">
+      <input type="text" id="ENQ_CREATE_DATE" readonly>
+    </div>
+    <div class="medium date field_container">
+      <input type="text" id="ENQ_DUE_DATE">
+    </div>
+  </div>
+  <div class="borderless form_row">
+    <div class="medium field_container">
+      <input type="text" id="E_REQUESTOR_NAME" readonly>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Client Information</legend>
+  <div class="borderless form_row">
+    <div class="small client_validated_field field_container" data-map="enq_client_object">
+      <label for="ENQ_PATRON_ID">Client ID</label>
+      <input type="text" id="ENQ_PATRON_ID" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="AOR_CARD_NO">Former AOR Card No.</label>
+      <input type="text" id="AOR_CARD_NO">
+    </div>
+
+    <div class="medium field_container">
+      <label for="ENQ_PATRON_NAME">Client Name</label>
+      <input type="text" id="ENQ_PATRON_NAME" class="mandatory_check" data-mandatory="$$">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <label for="ENQ_PATRON_EMAIL">Client Email</label>
+      <input type="text" id="ENQ_PATRON_EMAIL" class="mandatory_check" data-mandatory="ENQ_PATRON_ID !- * ENQ_TELEPHONE !-">
+    </div>
+    <div class="small field_container">
+      <label for="ENQ_TELEPHONE">Telephone</label>
+      <input type="text" id="ENQ_TELEPHONE" class="mandatory_check" data-mandatory="ENQ_PATRON_ID !- * ENQ_PATRON_EMAIL !-">
+    </div>
+
+    <div class="medium field_container">
+      <label for="ENQ_AFFILIATE">Client Affiliation</label>
+      <input type="text" id="ENQ_AFFILIATE">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Correspondence History</legend>
+
+  <fieldset class="repeating_group" data-group-title="Correspondences" id="CORRESPOND_GRP">
+    <div class="borderless form_row">
+      <div class="small date field_container">
+        <label for="CORRESPOND_DATE">Date</label>
+        <input type="text" id="CORRESPOND_DATE">
+      </div>
+      <div class="small field_container">
+        <label for="CORRESPOND_TYPE">Type</label>
+        <select id="CORRESPOND_TYPE" class="group_call_exit correspond_type_exit">
+          <option>Incoming</option>
+          <option>Outgoing</option>
+        </select>
+      </div>
+      <div class="medium validated_table field_container">
+        <label for="CORRESPOND_WHO">Staff ID</label>
+        <input type="text" id="CORRESPOND_WHO" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="CORRESPOND_SUBJ">Subject</label>
+        <input type="text" id="CORRESPOND_SUBJ">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="full validated_table field_container">
+        <label for="ENQ_EM_TMPL">Select Pre-defined Email Template</label>
+        <input type="text" id="ENQ_EM_TMPL" class="lookup_exit load_template_text"
+          data-val-database="LOOKUP_EMAIL_TEMPLATE" data-val-field="EM_TEMPLATE_NAME"
+          data-lookup="LOOKUP_EMAIL_TEMPLATE,EM_TEMPLATE_NAME,EM_LOOKUP_PATH,ENQ_EM_TMPL_PATH"
+        >
+        <input type="hidden" id="ENQ_EM_TMPL_PATH">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <span class="title_text">or Message Text</span>
+        <div id="MESSAGE_TEXT" class="richText" contenteditable="true"></div>
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="small field_container">
+        <a href="#" id="SEND_EMAIL" onclick="sendEmailMessage('MESSAGE_TEXT');" class="simple_button"><i class="fa fa-paper-plane"></i> Send</a>
+        <input type="hidden" id="CORRESPOND_SENT">
+      </div>
+    </div>
+    <fieldset class="repeating_group" data-group-title="Attachments" id="LINK_GROUP">
+      <div class="borderless form_row">
+        <div class="large image file_attachment field_container">
+          <label for="LINK_PATH">Path</label>
+          <input type="text" id="LINK_PATH">
+        </div>
+        <div class="small field_container">
+          <label for="LINK_TYPE">Type</label>
+          <select id="LINK_TYPE">
+            <option>Document</option>
+            <option>Image</option>
+            <option>Audio</option>
+            <option>View</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+    </fieldset>
+
+    <!- RL-20220601 -->
+    <!-- call group initalization user routine -->
+    <input type="hidden" class="group_call_exit correspondence_default"
+    />
+  </fieldset>
+</fieldset>
+
+
+
+<!-- call initalization user routine -->
+<input type="hidden" class="init_call_exit show_optional_tab_exit gen_set_cond_help go_to_occurrence"
+   data-source_value="ENQ_TOPIC"
+   data-main="USER_GRP_NAME"
+   data-help="STAFF_LIST"
+   data-display="ENQ_HANDLED_BY"
+   data-table="AIMS_USER_GROUP"
+   data-source="ENQ_USER_GROUP"
+   data-target="CORRESPOND_GRP"
+   data-goto="last"
+/>
+
+<!-- call record wrapup user routine -->
+<input type="hidden" class="wrapup_user_exit"
+  data-exit="wrapupEnquiries"
+/>

@@ -1,0 +1,87 @@
+<span class="hidden current_page" id="objectitems_main"></span>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="LO_ID">ID</label>
+    <input type="text" id="LO_ID" readonly>
+  </div>
+</div>
+
+
+  <fieldset class="repeating_group" data-group-title="Loan / Exhibition Objects" id="LOAN_OUT_ITEMS">
+  <fieldset class="logical_group">
+  <legend>Step Three: Assign Objects To Loan / Exhibition</legend>
+    <div class="form_row">
+      <div class="small container_validated_field m2a_validated_field lib_validated_field m3_validated_field field_container no_view_link"
+         data-map-m2a="description_to_loans"
+         data-map-m3="collections_to_loans"
+         data-map-container="container_to_loans"
+         data-map-lib="library_to_loans"
+      >
+        <label for="ITEM_ACC_NO">Item ID</label>
+        <input type="text" id="ITEM_ACC_NO" readonly>
+      </div>
+      <div class="small field_container">
+        <label for="ITEM_DB_NAME">Item Database</label>
+        <input type="text" id="ITEM_DB_NAME" readonly>
+      </div>
+
+      <div class="medium field_container">
+        <label for="ITEM_DISCIPLINE">Collection</label>
+        <input type="text" id="ITEM_DISCIPLINE" readonly>
+      </div>
+    </div>
+
+    <div class="form_row">
+      <div class="full field_container">
+        <label for="ITEM_LEGAL_TITLE">TItle</label>
+        <input type="text" id="ITEM_LEGAL_TITLE" readonly>
+      </div>
+    </div>
+
+  <fieldset class="logical_group">
+  <legend>Item Display Details</legend>
+      <div class="form_row">
+     <div class="small field_container">
+       <label for="EXHIB_SPACE_ID">Space ID</label>
+           <input type="text" id="EXHIB_SPACE_ID">
+         </div>
+
+     <div class="small field_container">
+       <label for="EXIBIT_OBJ_SPACE">Space Required</label>
+           <input type="text" id="EXIBIT_OBJ_SPACE">
+         </div>
+
+         <div class="small field_container">
+           <label for="DISPLAY">Display</label>
+           <select id="DISPLAY">
+            <option></option>
+            <option>Case</option>
+            <option>Wall</option>
+      <option>Support</option>
+      <option>Other</option>
+           </select>
+    </div>
+
+    <div class="small field_container">
+       <label for="EXHIB_SPACE_COL">Mat Color</label>
+           <input type="text" id="EXHIB_SPACE_COL">
+         </div>
+     </div>
+
+   <div class="borderless form_row">
+    <div class="full field_container">
+    <label for="EXHIB_DSPLY_SECU">Security Requirements</label>
+    <textarea id="EXHIB_DSPLY_SECU"></textarea>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="EXHIB_DSPLY_NTE">Note</label>
+      <textarea id="EXHIB_DSPLY_NTE"></textarea>
+    </div>
+  </div>
+</fieldset>
+</fieldset>
+</fieldset>

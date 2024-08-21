@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMS - Email Template Database</title>
+
+    <!-- include virtual="/mylang/assets/html/template/stylesheets.html" -->
+    <!-- include virtual="/mylang/assets/html/template/header_scripts.html" -->
+  </head>
+  <body data-database="lookup_email_template" data-popup="Y">
+    <header>
+      <!-- include virtual="/mylang/assets/html/template/header.html" -->
+    </header>
+
+    <section id="body">
+      <!-- include virtual="/mylang/assets/html/template/db_selection_nav.html" -->
+
+      <div class="container">
+        <!-- include virtual="/mylang/assets/html/template/db/email_template_db_actions_nav.html" -->
+
+        <section id="data_entry_forms">
+          <div id="primary_data_entry_form">
+            <nav id="worksheet_nav">
+              <nav id="secondary_worksheet_nav">
+                <ul id="lookup_email_template">
+                  <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/email_template/email_template_main.html" data-form="main">Email Template Main</a></li>
+                 </ul>
+              </nav>
+             </nav>
+
+
+            <div id="data_entry_form">
+              <!-- include virtual="/mylang/assets/html/dataentry/email_template/email_template_main.html" -->
+            </div>
+          </div>
+        </section>
+      </div>
+      </div>
+    </section>
+
+    <footer>
+      <!-- include virtual="/mylang/assets/html/template/footer.html" -->
+    </footer>
+
+    <xml id="MY_XML" style="display: none;">
+      ^XML_TREE^
+    </xml>
+
+    <div id="notices">^WIN_INFO^</div>
+
+    <!-- include virtual="/mylang/assets/html/template/db/email_template_base_scripts.html" -->
+    <!-- include virtual="/mylang/assets/html/template/core_dataentry_scripts.html" -->
+    <script src="/mylang/assets/js/dataentry/record_databases/email_template.js"></script>
+    <script src="/mylang/assets/js/dataentry/frontend/email_template.js"></script>
+  </body>
+</html>

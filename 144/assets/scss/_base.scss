@@ -1,0 +1,77 @@
+@import 'normalize';
+@import 'grid-settings';
+@import 'bourbon/bourbon';
+//@import 'font-awesome-compass';
+//@import 'font-awesome';
+@import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('http://fonts.googleapis.com/css?family=Ubuntu:400,700');
+
+// Variables:
+$container_width: 960px;
+$roundness: 5px;
+$base: #002a54;
+$light: #e3e7ec;
+$punch_color: #005738;
+
+// Mixins:
+@mixin container() {
+  max-width: $container_width;
+  margin: 0 auto;
+}
+
+::-webkit-input-placeholder {
+  color: darken($light, 25%);
+}
+
+::-moz-placeholder {
+  color: darken($light, 25%);  
+}
+
+:-ms-input-placeholder {  
+  color: darken($light, 25%);  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background: $light;
+}
+
+body {
+  min-width: 1000px;
+
+  &.valtable_det_rep {
+    min-width: 500px;
+  }
+}
+
+a { cursor: pointer; }
+
+.container {
+  @include gridle_container();
+  @include container();
+}
+
+.hidden { display: none; }
+
+.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+
+  &:hover {
+    opacity: 0.4;
+  }
+}
+
+hr {
+  height: 1px;
+  width: 50%;
+  margin: 0.25rem auto;
+  border: 0;
+  background: darken($light, 5%);
+}

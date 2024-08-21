@@ -1,0 +1,170 @@
+<span class="hidden current_page" id="details"></span>
+
+<fieldset class="repeating_group" data-group-title="Other Number" id="S_OTHER_NUM_GRP">
+  <div class="borderless form_row">
+    <div class="medium field_container">
+      <label for="S_OTHER_NUM">Other Number</label>
+      <input type="text" id="S_OTHER_NUM">
+    </div>
+    <div class="medium field_container">
+      <label for="S_OTHER_NUM_TYPE">Other Number Type</label>
+      <input type="text" id="S_OTHER_NUM_TYPE">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Features" id="PLACE_FEATUR_GRP">
+  <div class="borderless form_row">
+    <div class="large field_container">
+      <label for="PLACE_FEATURE">Feature</label>
+      <input type='text' id="PLACE_FEATURE">
+    </div>
+  <div class="small field_container">
+      <label for="PLACE_FEATURE_DT">Feature Date</label>
+      <input type="text" id="PLACE_FEATURE_DT">
+    </div>
+  </div>
+  <div class="form_row">
+  <div class="medium repeating_field field_container">
+      <label for="PLACE_FEATURE_TY">Feature Type</label>
+      <select id="PLACE_FEATURE_TY">
+        <option></option>
+        <option>Burials</option>
+        <option>Cisterns</option>
+        <option>Construction cuts</option>
+        <option>Cuts</option>
+        <option>Ditches</option>
+        <option>Drains</option>
+        <option>Enclosures</option>
+        <option>Fire pits</option>
+        <option>Foundations</option>
+        <option>Graves</option>
+        <option>Hearths</option>
+        <option>Lynchets</option>
+        <option>Middens</option>
+        <option>Pit-houses</option>
+        <option>Pits</option>
+        <option>Post holes</option>
+        <option>Re-cuts</option>
+        <option>Robber trenches</option>
+        <option>Stairs and steps</option>
+        <option>Stake holes</option>
+        <option>Walls</option>
+        <option>Wells</option>
+        <option>Re-cuts</option>
+        <option>Other</option>
+    </select>
+  </div>
+
+  <div class="medium field_container">
+      <label for="PLC_F_ORIENTATIO">Orientation</label>
+      <input type="text" id="PLC_F_ORIENTATIO">
+    </div>
+    </div>
+  <div class="form_row">
+    <div class="small combo field_container">
+      <label for="PLC_F_LENGTHP">Length</label>
+      <input type="text" id="PLC_F_LENGTH">
+      <select id="PLC_F_LENGTH_U">
+        <option value=""></option>
+        <option value="inch">in</option>
+        <option value="feet">ft</option>
+        <option value="mm">mm</option>
+        <option value="cm">cm</option>
+      </select>
+    </div>
+
+    <div class="small combo field_container">
+      <label for="PLC_F_WIDTH">Width</label>
+      <input type="text" id="PLC_F_WIDTH">
+      <select id="PLC_F_WIDTH_U">
+        <option value=""></option>
+        <option value="inch">in</option>
+        <option value="feet">ft</option>
+        <option value="mm">mm</option>
+        <option value="cm">cm</option>
+      </select>
+    </div>
+
+    <div class="small combo field_container">
+      <label for="PLC_F_DIAMETER">Diameter</label>
+      <input type="text" id="PLC_F_DIAMETER">
+      <select id="PLC_F_DIAMETER_U">
+        <option value=""></option>
+        <option value="inch">in</option>
+        <option value="feet">ft</option>
+        <option value="mm">mm</option>
+        <option value="cm">cm</option>
+      </select>
+    </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class = "full field_container">
+        <label for="PLC_F_NOTES">Comments/Notes</label>
+        <textarea id="PLC_F_NOTES"></textarea>
+  </div>
+</div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Site Owner" id="SITE_OWNER_GRP">
+  <div class="form_row">
+    <div class="full org_validated_field people_validated_field field_container" data-map-people="powner" data-map-org="powner_org"> <!-- RL-20211231 -->
+      <label for="SITE_OWNER">Site Owner</label>
+      <input type="text" id="SITE_OWNER" readonly>
+      <input type="hidden" id="SITE_OWNER_ID">
+    </div>
+
+<div class="borderless form_row">
+    <div class="full field_container">
+      <label for="SITE_OWNER_NOTE">Notes</label>
+      <textarea id="SITE_OWNER_NOTE"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<div class="borderless form_row">
+  <div class = "full field_container">
+    <label for="SITE_LEGAL_DESCR">Legal Description</label>
+    <textarea id="SITE_LEGAL_DESCR"></textarea>
+  </div>
+</div>
+<div class="borderless form_row">
+  <div class = "full field_container">
+    <label for="SITE_ENVIRONMENT">Environment</label>
+    <textarea id="SITE_ENVIRONMENT"></textarea>
+  </div>
+</div>
+   <div class="borderless form_row">
+  <div class = "full field_container">
+    <label for="SITE_SOIL">Soil</label>
+    <textarea id="SITE_SOIL"></textarea>
+  </div>
+</div>
+<fieldset class="repeating_group" data-group-title="Structures" id="STRUCTURES_GRP">
+  <div class="borderless form_row">
+    <div class="medium field_container">
+      <label for="STRUCTURES">Structure</label>
+      <input type="text" id="STRUCTURES">
+    </div>
+    <div class="medium field_container">
+      <label for="NO_OF_STRUCTURES">Quantity</label>
+      <input type="text" id="NO_OF_STRUCTURES">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Drainage</legend>
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="PRIME_DRAIN">Primary</label>
+      <input type="text" id="PRIME_DRAIN">
+    </div>
+
+    <div class="medium field_container">
+      <label for="SEC_DRAIN">Secondary</label>
+      <input type="text" id="SEC_DRAIN">
+    </div>
+  </div>
+</fieldset

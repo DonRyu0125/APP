@@ -1,0 +1,13 @@
+<script>
+  site_params = {
+    add_link : get_home_sessid() + '/PROPERTIES_DB?OPEN&DBOPTION=ADD',
+    global_change_link : get_home_sessid() + '?QUERYFORM&SEARCHFORM=[CAMS_APP]/144/search%5cprop_gc.html&DATABASE=PROPERTIES_DB&DBOPTION=SEARCH',
+    save_link : get_saverecord() + '&RETURN_URL=' + get_return_url() + '&DISCONNECT=N&CLOSE=Y',
+    skip_link : get_skiprecord()  + '&RETURN_URL=' + get_return_url(),
+    search_link : get_home_sessid() + '/PROPERTIES_DB?OPEN&DBOPTION=SEARCH&CLEAR=Y'
+  };
+</script>
+<script src="/144/assets/js/vendor/jquery.colorbox-min.js"></script>
+<script src="/144/assets/js/frontend_util.js"></script>
+<script src="/144/assets/js/frontend.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>

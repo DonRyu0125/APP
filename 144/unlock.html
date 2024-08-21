@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CAMS - MWI Control Panel</title>
+</head>
+<body>
+    <h1>CAMS - Unlock Locked Records</h1>
+    <form method="post" action="/scripts/mwimain.dll?SYSTEMCTRL">
+        <input type="hidden" name="USERNAME" value="admin">
+        <input type="hidden" name="USERPASSWORD" value="">
+        <p>
+            <label for="UNLOCKISN">Unlock SISN #:</label>
+            <input type="text" name="UNLOCKISN">
+
+            <label for="UNLOCKDB"> of database </label>
+            <input type="text" name="UNLOCKDB">
+        </p>
+
+        <p>
+            <input type="submit" value="OK">
+            <input type="reset" value="Clear">
+        </p>
+    </form>
+</body>
+</html>

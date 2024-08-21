@@ -1,0 +1,360 @@
+<!-- Description Form to Create New Record on Description Tab -->
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- description.html/dataentry -->
+  <title>CAMS - Cultural Assets Managment System - Description Database</title>
+  <!-- include virtual="/mylang/assets/html/template/stylesheets.html" -->
+  <!-- include virtual="/mylang/assets/html/template/header_scripts.html" -->
+</head>
+
+<body data-database="description" data-popup="N">
+  <header>
+    <!-- include virtual="/mylang/assets/html/template/header.html" -->
+  </header>
+
+  <section id="body">
+    <!-- include virtual="/mylang/assets/html/template/db_selection_nav.html" -->
+
+    <div class="container">
+      <!-- include virtual="/mylang/assets/html/template/db/des_db_actions_nav.html" -->
+      <section id="data_entry_forms">
+        <div id="universal_record_information">
+          <div class="column">
+            <div class="field_container">
+              <label for="REFD"><u>Ref. Code</u></label>
+              <input type="text" id="REFD">
+            </div>
+            <div class="select_container field_container">
+              <label for="DESC_TYPE">Record Type</label>
+              <select id="DESC_TYPE">
+                <option></option>
+                <option>Government</option>
+                <option>Private</option>
+              </select>
+            </div>
+            <div class="select_container field_container">
+              <label for="WEBD">Web Ready</label>
+              <select id="WEBD">
+                <option></option>
+                <option>Ready</option>
+                <option>Review</option>
+                <option>Restrict</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="column">
+            <!-- <div class="field_container">
+              <label for="TITLE">Title</label>
+              <input type="text" id="TITLE">
+            </div> -->
+            <div class="select_container field_container">
+              <label for="LEVEL_DESC"><u>Level</u></label>
+              <select id="LEVEL_DESC">
+                <option></option>
+                <option>Fonds</option>
+                <option>Sous-fonds</option>
+                <option>Series</option>
+                <option>Sub-series</option>
+                <option>Listing</option>
+                <option>File</option>
+                <option>File part</option>
+                <option>Item</option>
+                <option>Component</option>
+                <option>Diffusion material</option> 
+ </select>
+            </div>
+            <div class="select_container field_container">
+              <label for="STATUSD">Status</label>
+              <select id="STATUSD">
+                <option></option>
+                <option>Preliminary</option>
+                <option>Review</option>
+                <option>Approved</option>
+              </select>
+            </div>
+            <div class="field_container">
+              <label for="D_LOCN_LINK">
+                <a href="#" class="edit_record" title="Edit Location Authority" data-key="CURATORS_CODE" data-sourcedb="LOCATION_VALTAB" data-source="D_LOCN_LINK"><i class="fa fa-pencil-square-o fa-lg"></i></a>
+                Loc. code
+              </label>
+              <input type="text" id="D_LOCN_LINK" readonly>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="img_container">
+              <img src="/mylang/assets/img/image-placeholder.png">
+            </div>
+            <div class="add_image">
+              <a href="#">
+                <i class="fa fa-image fa-2x"></i>
+                <i class="fa fa-plus"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="universal_row">
+            <div class="full field_container">
+              <label for="TITLE"><u>Title</u></label>
+              <input type="text" id="TITLE">
+              <!-- <textarea id="TITLE"></textarea> -->
+            </div>
+          </div>
+        </div>
+
+        <div id="primary_data_entry_form">
+          <nav id="worksheet_nav">
+            <ul id="primary_worksheet_nav">
+              <!-- #if global(MWI_ACCESS_TOKEN) == USER2 -->
+                <!-- #if DESC_TYPE == Confidential -->
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/desc_restrictions.html" data-form="restrictions">
+                      <i class="fa fa-warning fa-lg"></i>Restrictions</a>
+                  </li>
+                <!-- #else -->
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/description_main.html" data-form="description">Core</a>
+                  </li>
+                <!-- #endif -->
+              <!-- #else -->
+                <li>
+                  <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/description_main.html" data-form="description">Core</a>
+                </li>
+                <li>
+                  <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/admin_main.html" data-form="admin">Admin</a>
+                </li>
+                <li>
+                  <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/access_main.html" data-form="access">Access</a>
+                </li>
+                <li>
+                  <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/item_main.html" data-form="item">Item</a>
+                </li>
+                <li>
+                  <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/graphic_main.html" data-form="graphic">Media</a>
+                </li>
+                <li>
+            <!--<a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/audio_main.html" data-form="audio">Audio</a>
+                </li>
+                <li>
+                  <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/video_main.html" data-form="video">Video</a>
+                </li>-->
+                <li>
+                  <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/cartographic_main.html" data-form="cartographic">Architectural and Cartographic</a>
+                </li>
+                <li>
+                <!--<a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/textual_main.html" data-form="textual">Textual</a>
+                </li>-->
+                <li>
+                  <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/oral_main.html" data-form="oral">Oral History</a>
+                </li>
+                <!-- <li>
+                  <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/movement_main.html" data-form="movement">Movement</a>
+                </li> -->
+                <li>
+                  <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/conservation_main.html" data-form="conservation">Conservation</a>
+                </li>
+              <!-- #endif -->
+            </ul>
+
+            <nav id="secondary_worksheet_nav">
+              <!-- #if global(MWI_ACCESS_TOKEN) == USER2 -->
+                <!-- #if DESC_TYPE <> Confidential -->
+                  <ul id="description">
+                    <li>
+                      <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/description_main.html" data-form="main">Core</a>
+                    </li>
+                    <li>
+                      <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/desc_restrictions.html" data-form="restrictions">
+                        <i class="fa fa-warning fa-lg"></i>Restrictions</a>
+                    </li>
+                  </ul>
+                <!-- #endif -->
+              <!-- #else -->
+                <ul id="description">
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/description_main.html" data-form="main">Core</a>
+                  </li>
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/desc_restrictions.html" data-form="restrictions">
+                      <i class="fa fa-warning fa-lg"></i>Restrictions</a>
+                  </li>
+                </ul>
+                <ul id="admin">
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/admin_main.html" data-form="main">Admin</a>
+                  </li>
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/desc_restrictions.html" data-form="restrictions">
+                      <i class="fa fa-warning fa-lg"></i>Restrictions</a>
+                  </li>
+                </ul>
+
+                <ul id="access">
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/access_main.html" data-form="main">Access</a>
+                  </li>
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/access_related_objects.html" data-form="related">Related Material(s)</a>
+                  </li>
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/desc_restrictions.html" data-form="restrictions">
+                      <i class="fa fa-warning fa-lg"></i>Restrictions</a>
+                  </li>
+                </ul>
+
+                <ul id="item">
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/item_main.html" data-form="main">Item</a>
+                  </li>
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/desc_restrictions.html" data-form="restrictions">
+                      <i class="fa fa-warning fa-lg"></i>Restrictions</a>
+                  </li>
+                </ul>
+
+                <ul id="graphic">
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/graphic_main.html" data-form="main">Media</a>
+                  </li>
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/desc_restrictions.html" data-form="restrictions">
+                      <i class="fa fa-warning fa-lg"></i>Restrictions</a>
+                  </li>
+                </ul>
+
+<!--                <ul id="audio">
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/audio_main.html" data-form="main">Audio</a>
+                  </li>
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/desc_restrictions.html" data-form="restrictions">
+                      <i class="fa fa-warning fa-lg"></i>Restrictions</a>
+                  </li>
+                </ul>
+
+                <ul id="video">
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/video_main.html" data-form="main">Video</a>
+                  </li>
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/desc_restrictions.html" data-form="restrictions">
+                      <i class="fa fa-warning fa-lg"></i>Restrictions</a>
+                  </li>
+                </ul>-->
+
+                <ul id="cartographic">
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/cartographic_main.html" data-form="main">Architectural and Cartographic</a>
+                  </li>
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/cartographic_architect.html" data-form="architect">Architect</a>
+                  </li>
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/desc_restrictions.html" data-form="restrictions">
+                      <i class="fa fa-warning fa-lg"></i>Restrictions</a>
+                  </li>
+                </ul>
+
+<!--                <ul id="textual">
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/textual_main.html" data-form="main">Textual</a>
+                  </li>
+                    <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/desc_restrictions.html" data-form="restrictions">
+                      <i class="fa fa-warning fa-lg"></i>Restrictions</a>
+                  </li>
+                </ul>-->
+
+                <ul id="oral">
+                  <li>
+                      <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/oral_main.html" data-form="main">Oral History Main</a>
+                  </li>
+                  <li>
+                      <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/oral_interview.html" data-form="interview">Interview Details</a>
+                  </li>
+                  <li>
+                      <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/oral_media.html" data-form="media">Media Details</a>
+                  </li>
+                  <li>
+                      <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/desc_restrictions.html" data-form="restrictions">
+                      <i class="fa fa-warning fa-lg"></i>Restrictions</a>
+                  </li>
+                </ul>
+
+                <ul id="movement">
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/movement_main.html" data-form="main">Movement Main</a>
+                  </li>
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/desc_restrictions.html" data-form="restrictions">
+                      <i class="fa fa-warning fa-lg"></i>Restrictions</a>
+                  </li>
+                </ul>
+
+                <ul id="conservation">
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/conservation_main.html" data-form="main">Conservation Main</a>
+                  </li>
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/conservation_media.html" data-form="media">Conservation Media</a>
+                  </li>
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/conservation_treatment_proposal.html" data-form="treatment_proposal">Treatment Proposal</a>
+                  </li>
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/description/desc_restrictions.html" data-form="restrictions">
+                      <i class="fa fa-warning fa-lg"></i>Restrictions</a>
+                  </li>
+                </ul>
+              <!-- #endif -->
+            </nav>
+          </nav>
+
+          <div id="data_entry_form">
+            <!-- #if global(MWI_ACCESS_TOKEN) == USER2 and DESC_TYPE == Confidential -->
+              <!-- include virtual="/mylang/assets/html/dataentry/description/desc_restrictions.html" -->
+            <!-- #else -->
+              <!-- include virtual="/mylang/assets/html/dataentry/description/description_main.html" -->
+            <!-- #endif -->
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <footer>
+    <!-- include virtual="/mylang/assets/html/template/footer.html" -->
+  </footer>
+
+  <!-- #if global(MWI_ACCESS_TOKEN) = USER2 -->
+    <xml id="MY_XML" style="display: none;" data-readonly="y">
+  <!-- #else -->
+    <xml id="MY_XML" style="display: none;">
+  <!-- #endif -->
+      ^XML_TREE^-(LOWER_LEVEL)
+    </xml>
+
+  <div id="notices">^WIN_INFO^</div>
+
+  <!-- include virtual="/mylang/assets/html/template/db/des_base_scripts.html" -->
+  <!-- include virtual="/mylang/assets/html/template/core_dataentry_scripts.html" -->
+  <script src="/mylang/assets/js/dataentry/frontend/m2atree_scripts.js"></script>
+  <script src="/mylang/assets/js/dataentry/record_databases/description.js"></script>
+  <script src="/mylang/assets/js/dataentry/frontend/description.js"></script>
+
+
+  <script>
+      $( document ).ready(function() {
+          //DOM manipulation code
+          var value = sessionStorage.getItem("refdtext");
+          $('#REFD').attr('value', value);
+      });
+  </script>
+</body>
+
+</html>

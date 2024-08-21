@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMS - Cultural Assets Managment System - Building Database</title>
+
+    <!-- include virtual="/144/assets/html/template/stylesheets.html" -->
+    <!-- include virtual="/144/assets/html/template/header_scripts.html" -->
+  </head>
+  <body data-database="buildings">
+    <header>
+      <!-- include virtual="/144/assets/html/template/header.html" -->
+    </header>
+
+    <section id="body">
+      <!-- include virtual="/144/assets/html/template/db_selection_nav.html" -->
+
+      <div class="container">
+        <!-- include virtual="/144/assets/html/template/db/bldg_db_actions_nav.html" -->
+
+        <section id="data_entry_forms">
+          <div id="primary_data_entry_form">
+            <nav id="worksheet_nav">
+              <ul id="primary_worksheet_nav">
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/buildings/building_main.html" data-form="building" class="active">Building Main</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/buildings/bldginspection_main.html" data-form="bldginspection">Inspections</a></li>  <!-- RL-20211231 -->
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/buildings/bldgrepair_main.html" data-form="bldgrepair">Repairs</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/buildings/bldgmedia_main.html" data-form="bldgmedia">Media</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/buildings/bldgincident_main.html" data-form="bldgincident">Incident</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/buildings/bldgemergency_main.html" data-form="bldgemergency">Emergency Contacts</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/buildings/bldgfeatures_main.html" data-form="bldgfeatures">Features</a></li>
+              </ul>
+
+              <nav id="secondary_worksheet_nav">
+                <ul id="building">
+                  <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/buildings/building_main.html" data-form="main">Building Main</a></li>
+                  <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/buildings/building_add.html" data-form="additional">Additional Information</a></li>
+                </ul>
+
+                <ul id="bldginspection">
+                  <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/buildings/bldginspection_main.html" data-form="main">Inspections Main</a></li>
+                  <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/buildings/bldginspection_pest.html" data-form="pest">Pest</a></li>
+                </ul>
+
+                <ul id="bldgrepair">
+                  <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/buildings/bldgrepair_main.html" data-form="main">Repairs</a></li>
+                </ul>
+
+                <ul id="bldgmedia">
+                  <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/buildings/bldgmedia_main.html" data-form="main">Media</a></li>
+                </ul>
+
+                <ul id="bldgincident">
+                  <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/buildings/bldgincident_main.html" data-form="main">Incidents</a></li>
+                </ul>
+
+                <ul id="bldgemergency">
+                  <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/buildings/bldgemergency_main.html" data-form="main">Emergency Contacts</a></li>
+                </ul>
+
+                <ul id="bldgfeatures">
+                  <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/buildings/bldgfeatures_main.html" data-form="main">Features</a></li>
+                </ul>
+              </nav>
+            </nav>
+
+            <div id="data_entry_form">
+              <!-- include virtual="/144/assets/html/dataentry/buildings/building_main.html" -->
+            </div>
+
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <footer>
+      <!-- include virtual="/144/assets/html/template/footer.html" -->
+    </footer>
+
+    <xml id="MY_XML" style="display: none;">
+      ^XML_TREE^
+    </xml>
+
+    <div id="notices">^WIN_INFO^</div>
+
+    <!-- include virtual="/144/assets/html/template/db/bldg_base_scripts.html" -->
+    <!-- include virtual="/144/assets/html/template/core_dataentry_scripts.html" -->
+    <script src="/144/assets/customize/dataentry/record_databases/buildings.js"></script>
+    <script src="/144/assets/customize/dataentry/frontend/buildings.js"></script>
+  </body>
+</html>

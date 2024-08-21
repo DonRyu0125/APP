@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMS - ServiceDesk Summary</title>
+
+    <!-- include virtual="/mylang/assets/html/template/stylesheets.html" -->
+    <!-- include virtual="/mylang/assets/html/template/header_scripts.html" -->
+  </head>
+  <body data-database="servicedesk_accession" data-db-title="accession" data-popup="Y" data-height="650">   <!-- RL-2021-03-28 -->
+    <header>
+      <!-- include virtual="/mylang/assets/html/template/header.html" -->
+    </header>
+
+    <section id="body">
+      <!-- include virtual="/mylang/assets/html/template/db_selection_nav.html" -->
+
+      <div class="container">
+        <!-- include virtual="/mylang/assets/html/template/db/servicedesk_db_actions_nav.html" -->
+
+        <section class="query_container">
+          <section class="query_form">
+            <!-- include virtual="/mylang/assets/html/query/servicedesk_accession.html" -->
+          </section>
+
+          <hr>
+
+          <!-- include virtual="/mylang/assets/html/template/servicedesk_search_control.html" -->
+        </section>
+
+        <div class="results_container">
+
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <!-- include virtual="/mylang/assets/html/template/footer.html" -->
+    </footer>
+
+    <div style="display:none;">
+      <div id="report_chooser">
+        <h1>Please select a report to download as PDF</h1>
+        <select>
+          <option value="">No reports added yet</option>
+        </select>
+
+        <p><a class="button">Download PDF Report</a></p>
+      </div>
+    </div>
+
+    <div id="notices">^WIN_INFO^</div>
+    <!-- include virtual="/mylang/assets/html/template/db/servicedesk_base_scripts.html" -->
+
+    <script src="/mylang/assets/js/search/frontend/servicedesk_accession.js"></script>
+  </body>
+</html>

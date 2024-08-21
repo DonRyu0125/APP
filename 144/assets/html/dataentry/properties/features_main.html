@@ -1,0 +1,276 @@
+<span class="hidden current_page" id="features_main"></span>
+
+<div class="form_row">
+  <div class="medium field_container">
+    <label for="PD_CURRENT_USAGE">Current Usage</label>
+    <input type="text" id="PD_CURRENT_USAGE">
+  </div>
+
+  <div class="medium field_container">
+    <label for="PD_ORIGINAL_USAG">Original Usage</label>
+    <input type="text" id="PD_ORIGINAL_USAG">
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full org_validated_field field_container" data-map="prop_management">
+    <label for="PD_SITE_MANAGEME">Property Management</label>
+    <input type="text" id="PD_SITE_MANAGEME" readonly>
+    <input type="hidden" id="PD_SITE_MGR_ID">
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Operating Partner(s)" id="PD_PARTNER_GRP">
+  <div class="form_row">
+    <div class="full org_validated_field people_validated_field field_container" data-map-people="prop_partner" data-map-org="prop_org_partner"> <!-- RL-20211231 -->
+     <label for="PD_OPERATION_PRT">Name</label>
+      <input type="text" id="PD_OPERATION_PRT" readonly>
+      <input type="hidden" id="PD_OP_PRT_ID">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full text file_attachment field_container">
+      <label for="PD_PART_CONTRACT">Plan Path</label>
+      <input type="text" id="PD_PART_CONTRACT" readonly>
+    </div>
+    </div>
+  </fieldset>
+
+<div class="form_row">
+  <div class="medium field_container">
+    <label for="PD_OWNERSHIP_TYP">Ownership Type</label>
+    <select id="PD_OWNERSHIP_TYP">
+        <option></option>
+        <option>Private</option>
+        <option>Public</option>
+    </select>
+  </div>
+
+  <div class="medium repeating_field field_container">
+     <label for="PD_SEASONAL_ACT">Seasonal Activity</label>
+      <select id="PD_SEASONAL_ACT">
+        <option></option>
+        <option>Spring</option>
+        <option>Summer</option>
+        <option>Fall</option>
+        <option>Winter</option>
+        <option>All Seasons</option>
+      </select>
+    </div>
+  </div>
+
+<fieldset class="repeating_group" data-group-title="Public Usage" id="PD_PUBLIC_USE_G">
+  <div class="form_row">
+    <div class="small field_container">
+     <label for="PD_PUBLIC_USE">Designation</label>
+      <select id="PD_PUBLIC_USE">
+        <option></option>
+        <option>Low</option>
+        <option>Medium</option>
+        <option>High</option>
+        <option>None</option>
+        <option>Unknown</option>
+      </select>
+    </div>
+
+  <div class="small field_container">
+    <label for="PD_ANUAL_PUBL_VI">Annual Public Visits</label>
+    <input type="text" id="PD_ANUAL_PUBL_VI">
+  </div>
+
+  <div class="small field_container">
+    <label for="PD_PUBLIC_YEAR">Year</label>
+    <input type="text" id="PD_PUBLIC_YEAR">
+  </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Fee(s)" id="PD_FEES_GROUP">
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="PD_FEE_YEAR">Year</label>
+      <input type="text" id="PD_FEE_YEAR">
+    </div>
+
+  <div class="small field_container">
+    <label for="PD_FEE_AMOUNT">Amount:</label>
+    <input type="text" id="PD_FEE_AMOUNT">
+  </div>
+
+  <div class="small field_container">
+    <label for="PD_FEE_TYPE">Type</label>
+    <input type="text" id="PD_FEE_TYPE">
+  </div>
+  </div>
+</fieldset>
+
+  <fieldset class="logical_group">
+    <legend>Tenancy</legend>
+
+    <div class="form_row">
+      <div class="small field_container">
+        <label for="PD_TENENT">Tenants (Yes/No)</label>
+          <select id="PD_TENENT">
+            <option></option>
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+      </div>
+
+        <div class="small field_container">
+    <label for="PD_TENENT_NO">No. of Tenents</label>
+    <input type="text" id="PD_TENENT_NO">
+  </div>
+  </div>
+</fieldset>
+
+  <fieldset class="logical_group">
+    <legend>Pets</legend>
+
+    <div class="form_row">
+      <div class="small field_container">
+        <label for="PD_PETS_PROPERTY">Pets (Yes/No)</label>
+          <select id="PD_PETS_PROPERTY">
+            <option></option>
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+      </div>
+
+        <div class="small repeating_field field_container">
+    <label for="PD_TYPE_OF_PETS">Type</label>
+    <input type="text" id="PD_TYPE_OF_PETS">
+  </div>
+  </div>
+</fieldset>
+
+  <fieldset class="logical_group">
+    <legend>Parking Spaces</legend>
+
+    <div class="form_row">
+       <div class="small field_container">
+        <label for="PD_PARKING_SPACE">No. of Spaces</label>
+        <input type="text" id="PD_PARKING_SPACE">
+      </div>
+
+        <div class="small field_container">
+    <label for="PD_DISABLE_SPACE">No. Disabled Spaces</label>
+    <input type="text" id="PD_DISABLE_SPACE">
+  </div>
+  </div>
+</fieldset>
+
+  <fieldset class="logical_group">
+    <legend>Number of Structures</legend>
+
+    <div class="form_row">
+       <div class="small field_container">
+        <label for="PD_NO_STRUCTURES">Main</label>
+        <input type="text" id="PD_NO_STRUCTURES">
+      </div>
+
+       <div class="small field_container">
+        <label for="PD_NO_HERIT_STRU">Heritage</label>
+        <input type="text" id="PD_NO_HERIT_STRU">
+      </div>
+
+       <div class="small field_container">
+        <label for="PD_NO_ANCIL_STRU">Ancillary</label>
+        <input type="text" id="PD_NO_ANCIL_STRU">
+      </div>
+  </div>
+</fieldset>
+
+  <fieldset class="logical_group">
+    <legend>Outdoor Features</legend>
+      <div class="form_row">
+       <div class="small field_container">
+        <label for="PD_WALKWAYS">
+        <input type="checkbox" id="PD_WALKWAYS"> Walkways</label>
+      </div>
+
+      <div class="small field_container">
+        <label for="PD_DRIVEWAYS">
+        <input type="checkbox" id="PD_DRIVEWAYS"> Driveways</label>
+      </div>
+
+      <div class="small field_container">
+        <label for="PD_PONDS">
+        <input type="checkbox" id="PD_PONDS"> Ponds</label>
+      </div>
+
+      <div class="small field_container">
+        <label for="PD_STATUES">
+        <input type="checkbox" id="PD_STATUES"> Statues</label>
+      </div>
+      </div>
+
+      <div class="form_row">
+       <div class="small field_container">
+        <label for="PD_FLAGS">
+        <input type="checkbox" id="PD_FLAGS"> Flags</label>
+      </div>
+
+      <div class="small field_container">
+        <label for="PD_HERITAGE_TREE">
+        <input type="checkbox" id="PD_HERITAGE_TREE"> Heritage Trees</label>
+      </div>
+
+      <div class="small field_container">
+        <label for="PD_HORTICULTURAL">
+        <input type="checkbox" id="PD_HORTICULTURAL"> Horicultural Features</label>
+      </div>
+      </div>
+
+    <div class="form_row">
+       <div class="full repeating_field field_container">
+        <label for="PD_OTHER_FEATURE">Other</label>
+        <input type="text" id="PD_OTHER_FEATURE">
+      </div>
+    </div>
+    </fieldset>
+
+  <fieldset class="logical_group">
+    <legend>Fences</legend>
+      <div class="form_row">
+       <div class="small field_container">
+        <label for="PD_STONE">
+        <input type="checkbox" id="PD_STONE"> Stone</label>
+      </div>
+
+      <div class="small field_container">
+        <label for="PD_FARMWIRE">
+        <input type="checkbox" id="PD_FARMWIRE"> Farmwire</label>
+      </div>
+
+      <div class="small field_container">
+        <label for="PD_WROUGHT_IRON">
+        <input type="checkbox" id="PD_WROUGHT_IRON"> Wrought Iron</label>
+      </div>
+
+      <div class="small field_container">
+        <label for="PD_BRICK">
+        <input type="checkbox" id="PD_BRICK"> Brick</label>
+      </div>
+      </div>
+
+    <div class="form_row">
+       <div class="small field_container">
+        <label for="PD_CHAINLINK">
+        <input type="checkbox" id="PD_CHAINLINK"> Chain Link</label>
+      </div>
+
+      <div class="small field_container">
+        <label for="PD_WOOD">
+        <input type="checkbox" id="PD_WOOD"> Wood</label>
+      </div>
+      </div>
+
+    <div class="form_row">
+       <div class="full repeating_field field_container">
+        <label for="PD_OTHER_FENCES">Other</label>
+        <input type="text" id="PD_OTHER_FENCES">
+      </div>
+    </div>
+    </fieldset>

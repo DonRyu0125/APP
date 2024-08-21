@@ -1,0 +1,306 @@
+<span class="hidden current_page" id="archives_main"></span>
+
+<div class="form_row">
+  <div class="small field_container">
+    <label for="A_LEVEL_DESC">Descriptive Level</label>
+    <input type="text" id="A_LEVEL_DESC">
+  </div>
+
+  <div class="medium field_container">
+    <label for="A_REFD_HIGHER">Parent Unique Number</label>
+    <input type="text" id="A_REFD_HIGHER">
+  </div>
+
+  <div class="small date field_container">
+    <label for="A_DATE_CR_INC">Date</label>
+    <input type="text" id="A_DATE_CR_INC">
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="A_PHYSICAL_DESC">Extent</label>
+    <input type="text" id="A_PHYSICAL_DESC">
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="A_HISTORICAL_INF">Admin History / Biblio Info</label>
+    <input type="text" id="A_HISTORICAL_INF">
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="A_CUSTODIAL_HIST">Custodial History</label>
+    <input type="text" id="A_CUSTODIAL_HIST">
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="OBJ_DESCRIPTION">Scope</label>
+    <textarea id="OBJ_DESCRIPTION"></textarea>
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Origination" id="A_ORIGINATION_GR">
+	<div class="form_row">
+      <div class="full org_validated_field people_validated_field field_container" data-map="desc_originator">
+        <label for="A_ORIGINATOR">Creator</label>
+        <input type="text" id="A_ORIGINATOR">
+        <input type="hidden" id="A_ORIGIN_ID">
+      </div>
+    </div>
+
+<div class="form_row">
+  <div class="medium field_container">
+    <label for="A_EAD_LABEL">EAD Label</label>
+    <select id="A_EAD_LABEL">
+	    <option></option>
+        <option>Agency</option>
+        <option>Agency responsible for reproduction</option>
+        <option>Animator</option>
+        <option>Appraiser</option>
+        <option>Architect</option>
+        <option>Architectural historian</option>
+        <option>Archivist</option>
+        <option>Armorer</option>
+        <option>Arranger</option>
+        <option>Artist</option>
+        <option>Assembler</option>
+        <option>Assistant</option>
+        <option>Associated architect</option>
+        <option>Author</option>
+        <option>Basket maker</option>
+        <option>Blacksmith</option>
+        <option>Book illustrator</option>
+        <option>Bookbinder</option>
+        <option>Bookseller</option>
+        <option>Bronzeworker</option>
+        <option>Cabinetmaker</option>
+        <option>Calligrapher</option>
+        <option>Cameraman</option>
+        <option>Caricaturist</option>
+        <option>Carpenter</option>
+        <option>Cartographer</option>
+        <option>Cartoonist</option>
+        <option>Carver</option>
+        <option>Caster</option>
+        <option>Ceramicist</option>
+        <option>Cinematographer</option>
+        <option>Civil engineer</option>
+        <option>Client</option>
+        <option>Clockmaker</option>
+        <option>Cobbler</option>
+        <option>Collagist</option>
+        <option>Collector</option>
+        <option>Commercial artist</option>
+        <option>Commissioner</option>
+        <option>Compiler</option>
+        <option>Composer</option>
+        <option>Conservator</option>
+        <option>Coppersmith</option>
+        <option>Copyist</option>
+        <option>Correspondent (correspondence writer)</option>
+        <option>Costume designer</option>
+        <option>Craftsman</option>
+        <option>Dealer</option>
+        <option>Delineator</option>
+        <option>Demographer</option>
+        <option>Designer</option>
+        <option>Diarist</option>
+        <option>Director (administrator)</option>
+        <option>Director (performing arts)</option>
+        <option>Doll maker</option>
+        <option>Donor</option>
+        <option>Draftsman</option>
+        <option>Dressmaker</option>
+        <option>Editor</option>
+        <option>Editorial writer</option>
+        <option>Embroiderer</option>
+        <option>Engraver</option>
+        <option>Essayist</option>
+        <option>Etcher</option>
+        <option>Fashion designer</option>
+        <option>Fashion illustrator</option>
+        <option>Filmmaker</option>
+        <option>Folk artist</option>
+        <option>Founder</option>
+        <option>Foundryman</option>
+        <option>Furniture worker</option>
+        <option>Genealogist</option>
+        <option>Geographer</option>
+        <option>Gilder</option>
+        <option>Glassblower</option>
+        <option>Glassmaker</option>
+        <option>Glassworker</option>
+        <option>Glover</option>
+        <option>Goldsmith</option>
+        <option>Graphic designer</option>
+        <option>Gunsmith</option>
+        <option>Hatter</option>
+        <option>Hornworker</option>
+        <option>Hydrographer</option>
+        <option>Illustrator</option>
+        <option>Importer</option>
+        <option>Inlayer</option>
+        <option>Inscriber</option>
+        <option>Interior decorator</option>
+        <option>Interviewee</option>
+        <option>Interviewer</option>
+        <option>Inventor</option>
+        <option>Iron smith</option>
+        <option>Jeweler</option>
+        <option>Journalist</option>
+        <option>Knitter</option>
+        <option>Lace maker</option>
+        <option>Lacquerer</option>
+        <option>Landscape architect</option>
+        <option>Lawyer</option>
+        <option>Leatherworker</option>
+        <option>Librettist</option>
+        <option>Lithographer</option>
+        <option>Lyricist</option>
+        <option>Machinist</option>
+        <option>Maker</option>
+        <option>Manufacturer</option>
+        <option>Marine engineer</option>
+        <option>Marine painter</option>
+        <option>Medalist</option>
+        <option>Metalworker</option>
+        <option>Mezzotinter</option>
+        <option>Milliner</option>
+        <option>Miniaturist</option>
+        <option>Minter</option>
+        <option>Mosaicist</option>
+        <option>Muralist</option>
+        <option>Musician</option>
+        <option>Naval architect</option>
+        <option>Notary</option>
+        <option>Optician</option>
+        <option>Painter</option>
+        <option>Paper maker</option>
+        <option>Pastelist</option>
+        <option>Pewterer</option>
+        <option>Photoengraver</option>
+        <option>Photographer</option>
+        <option>Photojournalist</option>
+        <option>Photolithographer</option>
+        <option>Pianist</option>
+        <option>Plasterer</option>
+        <option>Playwright</option>
+        <option>Poet</option>
+        <option>Potter</option>
+        <option>Preparator</option>
+        <option>Printer</option>
+        <option>Printmaker</option>
+        <option>Producer</option>
+        <option>Publisher</option>
+        <option>Recipient</option>
+        <option>Renderer</option>
+        <option>Reporter</option>
+        <option>Researcher</option>
+        <option>Restorer</option>
+        <option>Retailer</option>
+        <option>Satirist</option>
+        <option>Screen writer</option>
+        <option>Sculptor</option>
+        <option>Serigrapher</option>
+        <option>Sewer (textile worker)</option>
+        <option>Signer</option>
+        <option>Silversmith</option>
+        <option>Singer</option>
+        <option>Sponsor</option>
+        <option>Still photographer</option>
+        <option>Stonemason</option>
+        <option>Superintendent</option>
+        <option>Supervisor</option>
+        <option>Surveyor</option>
+        <option>Swordsmith</option>
+        <option>Tailor</option>
+        <option>Technician</option>
+        <option>Textile worker</option>
+        <option>Theater designer</option>
+        <option>Tinsmith</option>
+        <option>Topographer</option>
+        <option>Translator</option>
+        <option>Typesetter</option>
+        <option>Typographer</option>
+        <option>Upholsterer</option>
+        <option>Vendor</option>
+        <option>Videographer</option>
+        <option>Watchmaker</option>
+        <option>Watercolorist</option>
+        <option>Weaver</option>
+        <option>Welder</option>
+        <option>Wood engraver</option>
+        <option>Wood-carver</option>
+        <option>Woodcutter</option>
+        <option>Woodworker</option>
+        <option>Worker</option>
+      </select>
+  </div>
+
+  <div class="medium field_container">
+    <label for="A_EAD_ROLE">EAD Role</label>
+    <select id="A_EAD_ROLE">
+		<option></option>
+		<option>corpname</option>
+		<option>famname</option>
+		<option>name</option>
+		<option>persname</option>
+	</select>
+  </div>
+  </div>
+</fieldset>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="A_TITLE_NOTES">Source of Supplied Title</label>
+    <input type="text" id="A_TITLE_NOTES">
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="A_ARRANGEMENT">Arrangement</label>
+    <input type="text" id="A_ARRANGEMENT">
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="A_FINDAID">Finding Aid</label>
+    <input type="text" id="A_FINDAID">
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="A_ACCRUALS_NOTES">Accruals</label>
+    <input type="text" id="A_ACCRUALS_NOTES">
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="A_NOTES">General Notes</label>
+    <input type="text" id="A_NOTES">
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Last Modified" id="LAST_MODIFIED">
+  <div class="borderless form_row">
+    <div class="large field_container">
+      <label for="LAST_MODIFIED_BY">By</label>
+      <input type="text" id="LAST_MODIFIED_BY" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="LAST_MODIFIED_TM">On</label>
+      <input type="text" id="LAST_MODIFIED_TM" readonly>
+    </div>
+  </div>
+</fieldset>

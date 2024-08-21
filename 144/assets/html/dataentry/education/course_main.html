@@ -1,0 +1,131 @@
+<span class="hidden current_page" id="course_main"></span>
+
+<fieldset class="repeating_group" data-group-title="Course Details" id="EDU_COURSE_DETAI">
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="EDU_CRS_PERIOD">Course Period</label>
+      <input type="text" id="EDU_CRS_PERIOD">
+    </div>
+    <div class="small field_container">
+      <label for="EDU_MAX_STDNTS">Max No. of Students</label>
+      <input type="text" id="EDU_MAX_STDNTS">
+    </div>
+    <div class="small field_container">
+      <label for="EDU_NO_STDNTS">No. of Students</label>
+      <input type="text" id="EDU_NO_STDNTS">
+    </div>
+    <div class="small field_container">
+      <label for="EDU_DAYS">No. of Students</label>
+      <input type="text" id="EDU_DAYS">
+    </div>
+  </div>
+
+<fieldset class="repeating_group" data-group-title="Course Materials" id="EDU_COURSE_GRP">
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="EDU_MAT_TYPE">Material Type</label>
+      <select id="EDU_MAT_TYPE"> 
+        <option></option>
+        <option>Assignment</option>
+        <option>Final Exam</option>
+        <option>Mid Term Exam</option>
+        <option>Quizz</option>
+      </select>
+    </div>
+
+  <div class="medium validated_table repeating_field field_container">
+    <label for="EDU_MAT_LANG">Language</label>
+    <input type="text" id="EDU_MAT_LANG" data-val-database="LANGUAGE" data-val-field="LOOKUP_FIELD" readonly>
+  </div>
+
+    <div class="small date field_container">
+      <label for="EDU_MAT_DATE">Date</label>
+      <input type="text" id="EDU_MAT_DATE" readonly>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="EDU_MATERIAL_NAM">Topic</label>
+      <input type="text" id="EDU_MATERIAL_NAM">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+    <label for="EDU_MATERIAL_NOT">Note</label>
+    <textarea id="EDU_MATERIAL_NOT"></textarea>
+    </div>
+  </div>
+  
+<fieldset class="repeating_group" data-group-title="Material Textual" id="EDU_MAT_DOCS_GRP">
+  <div class="form_row borderless">
+    <div class="full text file_attachment field_container">
+      <label for="EMAT_TX_ACCESS">Text/Access Path</label>
+      <input type="text" id="EMAT_TX_ACCESS">
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="EMAT_TX_CAPTION">Caption</label>
+      <textarea id="EMAT_TX_CAPTION"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="large field_container">
+      <label for="EMAT_TX_TYPE">Type</label>
+      <input type="text" id="EMAT_TX_TYPE">
+    </div>
+  </div>
+
+  
+  <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="EMAT_TX_AST_NAME">Asset Name</label>
+          <input type="text" id="EMAT_TX_AST_NAME">
+        </div>
+      </div>
+	  
+        <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="EMAT_TX_OCR">TDR OCR</label>
+          <input type="text" id="EMAT_TX_OCR">
+        </div>
+      </div>
+	  
+     <div class="form_row">
+        <div class="full field_container">
+          <label for="EMAT_TX_THUMB">TDR Thumb</label>
+          <input type="text" id="EMAT_TX_THUMB">
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="EMAT_TX_PRESER">TDR Preservation</label>
+          <input type="text" id="EMAT_TX_PRESER">
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="EMAT_TX_ORIGIN">TDR Original</label>
+          <input type="text" id="EMAT_TX_ORIGIN">
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="EMAT_TX_OTHER">TDR Other</label>
+          <input type="text" id="EMAT_TX_OTHER">
+        </div>
+      </div>
+  </fieldset>
+ </fieldset>
+</fieldset>
+</fieldset>

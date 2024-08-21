@@ -1,0 +1,56 @@
+<nav id="database_actions">
+  <ul>
+  <!-- #if GLOBAL(MWI_ACCESS_TOKEN) == PUBLIC BODY -->
+    <li id="dba_new"><a href="^SESSID^/ACCESSION?OPEN&DBOPTION=ADD" title="Create New Record"><i class="fa fa-file-o"></i></a></li>
+    <li id="dba_search"><a href="^SESSID^/ACCESSION?OPEN&DBOPTION=SEARCH&CLEAR=Y" title="Back to Search"><i class="fa fa-search"></i></a></li>
+    <li id="dba_delete"><a href="#" title="Delete Record" class="disabled"><i class="fa fa-trash-o"></i></a></li>
+    <li id="dba_save"><a data-form-action="" href="#" title="Save Record" class="disabled"><i class="fa fa-floppy-o"></i></a></li>
+    <li id="dba_cancel"><a href="#" title="Cancel Edits" class="disabled"><i class="fa fa-ban"></i></a></li>
+    <li id="dba_reports"  class="dropdown">
+      <a href="#" data-toggle="dropdown" class="dropdown-toggle" title="Reports"><i class="fa fa-newspaper-o"></i><b class="caret"></b></a>
+      <ul class="dropdown-menu" style="background: white">
+          <li>
+            <a href="#" class="db_report" id="acc_bri">To be added</a>
+          </li>
+      </ul>
+    </li>
+
+  <!-- #else -->
+
+    <li id="dba_search_todo"><a href="^HOME_SESSID^/SERVICEDESK_ACCESSION?OPEN&DBOPTION=SEARCH&CLEAR=Y" title="To-Do List"><i class="fa fa-list-ul"></i></a></li>
+    <li id="dba_new"><a href="^SESSID^/ACCESSION?OPEN&DBOPTION=ADD" title="Create New Record"><i class="fa fa-file-o"></i></a></li>
+    <li id="dba_delete"><a href="#" title="Delete Record" class="disabled"><i class="fa fa-trash-o"></i></a></li>
+    <li id="dba_save"><a data-form-action="" href="#" title="Save Record" class="disabled"><i class="fa fa-floppy-o"></i></a></li>
+    <li id="dba_save_next"><a href="#" title="Save and Load Next Record" class="disabled"><i class="fa fa-floppy-o"></i><i class="fa fa-angle-right"></i></a></li>
+    <li id="dba_cancel"><a href="#" title="Cancel Edits" class="disabled"><i class="fa fa-ban"></i></a></li>
+    <li id="dba_search"><a href="^SESSID^/ACCESSION?OPEN&DBOPTION=SEARCH&CLEAR=Y" title="Back to Search"><i class="fa fa-search"></i></a></li>
+    <li id="dba_edit"><a href="#" title="Edit Record" class="disabled"><i class="fa fa-edit"></i></a></li>
+    <li id="dba_copy"><a href="#" title="Copy Record" class="disabled"><i class="fa fa-copy"></i></a></li>
+    <!-- KN-2021-01-26 -->
+    <li id="dba_reports"  class="dropdown">
+      <a href="#" data-toggle="dropdown" class="dropdown-toggle" title="Reports"><i class="fa fa-newspaper-o"></i><b class="caret"></b></a>
+    <ul class="dropdown-menu" style="background: white">
+        <li>
+          <a href="#" class="db_report" id="acc_bri">Accession Brief</a>
+        </li>
+        <li>
+          <a href="#" class="db_report" id="acc_full">Accession Full</a>
+        </li>
+        <li>
+          <a href="#" class="db_report" id="acc_accno">Accessions by Acc. No.</a>
+        </li>
+        <li>
+          <a href="#" class="db_report" id="acc_date">Accessions by Date</a>
+        </li>
+        <li>
+          <a href="#" class="db_report" id="acc_donor">Accessions by Donor</a>
+        </li>
+    </ul>
+    </li>
+    <li id="dba_print"><a href="#" title="Print"><i class="fa fa-print"></i></a></li>
+    <li id="dba_global_change"><a href="^SESSID^?QUERYFORM&SEARCHFORM=[CAMS_APP]/144/search%5cacc_gc.html&DATABASE=ACCESSION&DBOPTION=SEARCH" title="Perform Global Change"><i class="fa fa-globe"></i></a></li>
+
+  <!-- #endif -->
+  </ul>
+  <hr>
+</nav>

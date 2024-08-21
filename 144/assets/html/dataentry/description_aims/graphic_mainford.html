@@ -1,0 +1,124 @@
+<span class="hidden current_page" id="graphic_main"></span>
+
+<fieldset class="repeating_group contains_image" data-group-title="Media" id="A_MEDIA_REF_GRP">
+
+ <div class="form_row">
+  <div class="small field_container">
+    <label for="A_MEDIA_TYPE">Media Type</label>
+      <select id="A_MEDIA_TYPE">
+        <option></option>
+        <option>Audio</option>
+        <option>Image</option>
+        <option>Moving Image</option>
+        <option>Textual</option>
+        <option>URL</option>
+      </select>
+  </div>
+
+    <div class="small field_container">
+      <label for="A_MEDIA_RIGHTS">MediaRights</label>
+      <select id="A_MEDIA_RIGHTS">
+        <option></option>
+        <option>Yes</option>
+        <option>No</option>
+        <option>Additional Clearance</option>
+      </select>
+    </div>
+    </div>
+    
+ <div class="form_row">
+    <div class="full field_container">
+      <label for="A_MEDIA_LOW_RES">Low Resolution</label>
+      <input type="text" id="A_MEDIA_LOW_RES">
+    </div>
+	</div>    
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="A_MEDIA_HIGH_RES">High Resolution</label>
+      <input type="text" id="A_MEDIA_HIGH_RES">
+    </div>
+	</div>
+  
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="A_MEDIA_IMG_TYPE">Image Type</label>
+      <input type="text" id="A_MEDIA_IMG_TYPE">
+  </div>
+
+  <div class="medium validated_table field_container">
+    <label for="A_MEDIA_MAST_FOR">Image Master Format</label>
+    <input type="text" id="A_MEDIA_MAST_FOR" data-val-database="MFORMAT_VAL" data-val-field="LOOKUP_FIELD" readonly>
+  </div>
+  </div>
+  
+  <div class="form_row">
+  <div class="small validated_table field_container">
+    <label for="A_MEDIA_MAKE">Make</label>
+    <input type="text" id="A_MEDIA_MAKE" data-val-database="MAKE_VAL" data-val-field="LOOKUP_FIELD" readonly>
+  </div>
+
+  <div class="small validated_table field_container">
+    <label for="A_MEDIA_MODEL">Model</label>
+    <input type="text" id="A_MEDIA_MODEL" data-val-database="MODEL_VAL" data-val-field="LOOKUP_FIELD" readonly>
+  </div>
+
+  <div class="small validated_table field_container">
+    <label for="A_MEDIA_COLOR">Color</label>
+    <input type="text" id="A_MEDIA_COLOR" data-val-database="COLOR_VAL" data-val-field="LOOKUP_FIELD" readonly>
+  </div>
+   </div> 
+  
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="A_MEDIA_DESCRIPT">Description</label>
+      <textarea id="A_MEDIA_DESCRIPT"></textarea>
+    </div>
+  </div>
+  
+  <div class="borderless form_row">
+  <div class="small validated_table field_container">
+    <label for="A_MEDIA_FORMAT">Video Format</label>
+    <input type="text" id="A_MEDIA_FORMAT" data-val-database="FORMAT_VAL" data-val-field="LOOKUP_FIELD" readonly>
+  </div>   
+
+  <div class="small field_container">	
+		<label for="A_MEDIA_MASTER">Video Master Type</label>
+		<select id="A_MEDIA_MASTER">
+		<option></option>
+		<option>Dub</option>
+		<option>Sound track</option>
+    <option>Master</option>
+		<option>Negative</option>
+		<option>Original</option>
+    <option>Outs and trims</option>
+		</select>
+	</div>
+ 
+	<div class="medium field_container">
+      <label for="A_MEDIA_DATES">Subject Dates</label>
+      <input type="text" id="A_MEDIA_DATES">
+    </div>
+	    </div>
+	
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="A_MEDIA_CC">Video Closed Captions</label>
+      <textarea id="A_MEDIA_CC"></textarea>
+    </div>
+  </div>
+ 
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="A_MEDIA_NOTES">Notes</label>
+      <textarea id="A_MEDIA_NOTES"></textarea>
+    </div>
+  </div>
+ 
+  <div class="borderless form_row">
+    <div class="full url_field field_container">
+      <label for="A_MEDIA_URL">Web Path</label>
+      <input type="text" id="A_MEDIA_URL">
+    </div>
+  </div>
+</fieldset>

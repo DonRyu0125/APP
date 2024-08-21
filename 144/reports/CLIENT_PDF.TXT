@@ -1,0 +1,117 @@
+$ADD_REPORT
+!REC-ID
+¶SPEC_NAME¶CLIENT_PDF
+¶STATUS¶UPDATED
+¶VERSION¶9.04.00
+¶REVISION¶3
+¶DBNAME¶CLIENT
+¶PAGE_WIDTH¶5000
+¶DISPLAY_MODE¶8
+¶PAGE_BREAK¶X
+¶SPLIT_RECORD¶X
+¶HANDLE_NAME¶UTF8_HANDLER
+¶PAGE_FIELD¶¶PAGE_FIELD_TYPE¶1
+¶PAGE_FIELD¶¶PAGE_FIELD_TYPE¶2
+¶PAGE_FIELD¶¶PAGE_FIELD_TYPE¶3
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶<CARD_NUMBER>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_EXP¶C_CURRENT_NUMBER
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶</CARD_NUMBER>
+¶PRINT_COND_DISP¶X
+¶OUTPUT_TYPE¶3
+¶EDITOR¶XML Report Editor
+¶TEMPLATE¶[M2A_DM]\xml\CLIENT_PDF.mrt
+¶SPEC_CREATOR¶M2A_MGR
+***ENDBODY***
+2761 CLIENT_PDF
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.0" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="0" />
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <GlobalizationStrings isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="2" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="0" />
+      <Conditions isList="true" count="0" />
+      <Guid>1cf27ab0d906422c9f32ccd626c71e46</Guid>
+      <Margins>0.39,0.39,0.39,0.39</Margins>
+      <Name>Page1</Name>
+      <Page isRef="2" />
+      <PageHeight>11.69</PageHeight>
+      <PageWidth>8.27</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="3" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="4" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="9">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+    <value>Minisis.Report.dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>2/19/2008 2:35:33 PM</ReportChanged>
+  <ReportCreated>2/19/2008 2:32:36 PM</ReportCreated>
+  <ReportDescription>&lt;MinisisInfo&gt;&lt;Description /&gt;&lt;DataModel /&gt;&lt;Database /&gt;&lt;SortInfos /&gt;&lt;/MinisisInfo&gt;</ReportDescription>
+  <ReportGuid>1d27fa9236144c4cabeb7c6f1a6eb934</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2007.3.100</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+using Stimulsoft.Report.Dictionary;
+using Minisis.Report;
+namespace Reports
+{
+    
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        
+        public Report()
+        {
+            this.InitializeComponent();
+        }
+        #region StiReport Designer generated code - do not modify#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>
+***END***

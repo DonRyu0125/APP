@@ -1,0 +1,193 @@
+<span class="hidden current_page" id="location"></span>
+
+<fieldset class="logical_group">
+  <legend>Latitude/Longitude</legend>
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="LAT_DEGREE">Latitude Degree</label>
+      <input type="text" id="LAT_DEGREE">
+    </div>
+
+    <div class="small field_container">
+      <label for="LAT_MIN">Latitude Minutes</label>
+      <input type="text" id="LAT_MIN">
+    </div>
+
+    <div class="small field_container">
+      <label for="LAT_SEC">Latitude Seconds</label>
+      <input type="text" id="LAT_SEC">
+    </div>
+
+    <div class="small field_container">
+      <label for="LAT_NS">Direction</label>
+      <select id="LAT_NS">
+	       <option></option>
+           <option>N</option>
+           <option>S</option>
+       </select>
+    </div>
+  </div>
+
+ <div class="form_row">
+    <div class="small field_container">
+      <label for="LONGITUDE_DEGREE">Longitude Degree</label>
+      <input type="text" id="LONGITUDE_DEGREE">
+    </div>
+
+    <div class="small field_container">
+      <label for="LONG_MIN">Longitude Minutes</label>
+      <input type="text" id="LONG_MIN">
+    </div>
+
+    <div class="small field_container">
+      <label for="LONG_SEC">Longitude Seconds</label>
+      <input type="text" id="LONG_SEC">
+    </div>
+
+    <div class="small field_container">
+      <label for="LONG_EW">Direction</label>
+      <select id="LONG_EW">
+       <option></option>
+        <option>E</option>
+        <option>W</option>
+      </select>
+    </div>
+  </div>
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="DECIMAL_LATITUDE">Decimal Latitude</label>
+      <input type="text" id="DECIMAL_LATITUDE">
+    </div>
+
+    <div class="small field_container">
+      <label for="DECIMAL_LONGITUD">Decimal Longitude</label>
+      <input type="text" id="DECIMAL_LONGITUD">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>UTM</legend>
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="UTM_NORTHING">UTM Northing</label>
+      <input type="text" id="UTM_NORTHING">
+    </div>
+
+    <div class="small field_container">
+      <label for="UTM_EASTING">UTM Easting</label>
+      <input type="text" id="UTM_EASTING">
+    </div>
+
+    <div class="small field_container">
+      <label for="UTM_DATAPOINT">UTM Datapoint</label>
+      <input type="text" id="UTM_DATAPOINT">
+    </div>
+
+    <div class="small field_container">
+      <label for="UTM_ZONE">UTM Zone</label>
+      <input type="text" id="UTM_ZONE">
+    </div>
+  </div>
+</fieldset>
+
+<div class="form_row">
+    <div class="small field_container">
+      <label for="NTS_MAP_REFER">Map Reference</label>
+      <input type="text" id="NTS_MAP_REFER">
+    </div>
+
+    <div class="small field_container">
+      <label for="NA_DATA">NA Datum</label>
+      <input type="text" id="NA_DATA">
+    </div>
+
+   <div class="small repeating_field field_container">
+      <label for="COORDINATE_METHO">Method</label>
+      <input type="text" id="COORDINATE_METHO">
+    </div>
+
+   <div class="small field_container">
+      <label for="SITE_DIRECTION">Direction</label>
+      <input type="text" id="SITE_DIRECTION">
+    </div>
+  </div>
+
+<div class="borderless form_row">
+  <div class = "full field_container">
+    <label for="COLLECT_SITE_ACC">Accurracy</label>
+    <textarea id="COLLECT_SITE_ACC"></textarea>
+  </div>
+  </div>
+
+<fieldset class="logical_group">
+  <legend>Dimension</legend>
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="SITE_LENGTH">Length</label>
+      <input type="text" id="SITE_LENGTH">
+    </div>
+
+
+    <div class="small field_container">
+      <label for="SITE_WIDTH">Width</label>
+      <input type="text" id="SITE_WIDTH">
+    </div>
+    <div class="small combo field_container">
+      <label for="UNIT_SITE_DIM">Unit</label>
+        <select id="UNIT_SITE_DIM">
+         <option></option>
+         <option>ft</option>
+         <option>m</option>
+       </select>
+    </div>
+    </div>
+  <div class="borderless form_row">
+    <div class = "full field_container">
+     <label for="SITE_DIMEN_NOTES">Notes</label>
+      <textarea id="SITE_DIMEN_NOTES"></textarea>
+  </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Elevation</legend>
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="MAX_AB_SEALEVEL">Max. Above Sea Level</label>
+      <input type="text" id="MAX_AB_SEALEVEL">
+    </div>
+
+    <div class="small field_container">
+      <label for="MIN_AB_SEALEVEL">Min. Above Sea Level</label>
+      <input type="text" id="MIN_AB_SEALEVEL">
+    </div>
+
+    <div class="small combo field_container">
+      <label for="UNIT_AB_SEALEVEL">Unit</label>
+      <select id="UNIT_AB_SEALEVEL">
+          <option></option>
+          <option>ft</option>
+          <option>m</option>
+       </select>
+    </div>
+  </div>
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="MAX_B_SEALEVEL">Max. Below Sea Level</label>
+      <input type="text" id="MAX_B_SEALEVEL">
+    </div>
+
+    <div class="small field_container">
+      <label for="MIN_B_SEALEVEL">Min. Below Sea Level</label>
+      <input type="text" id="MIN_B_SEALEVEL">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+  <div class = "full field_container">
+    <label for="AB_SEALEVEL_NOTE">Notes</label>
+    <textarea id="AB_SEALEVEL_NOTE"></textarea>
+  </div>
+  </div>
+</fieldset>

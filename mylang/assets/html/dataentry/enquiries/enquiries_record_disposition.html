@@ -1,0 +1,23 @@
+<span class="hidden current_page" id="recorddisposition"></span>
+
+<fieldset class="logical_group">
+  <legend>Records Disposition</legend>
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <label for="E_DISPOSE_HOLD">Hold Type</label>
+      <select id="E_DISPOSE_HOLD" class="protect_field_exit unprotect_field_exit"
+        data-protect1="'R_DISPOSE_HOLD !-',R_HOLD_DETAILS"
+        data-unprotect1="'R_DISPOSE_HOLD !+',R_HOLD_DETAILS"
+      >
+        <option></option>
+        <option>Administrative</option>
+        <option>Legal</option>
+      </select>
+    </div>
+    <div class="large field_container">
+      <label for="E_HOLD_DETAILS">Hold Details</label>
+      <textarea type="text" id="E_HOLD_DETAILS" rows="3"></textarea>
+    </div>
+  </div>
+</fieldset>
+

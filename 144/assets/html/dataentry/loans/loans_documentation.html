@@ -1,0 +1,211 @@
+<span class="hidden current_page" id="loans_documentation"></span>
+
+<div class="form_row">
+  <div class="small field_container">
+    <label for="LO_ID">ID</label>
+    <input type="text" id="LO_ID" readonly>
+  </div>
+  </div>
+
+<fieldset class="repeating_group" data-group-title="Venue Details" id="VENUE_GROUP">
+  <fieldset class="repeating_group" data-group-title="Facility Report(s)" id="FACILITY_RPT_GRP">
+    <div class="form_row">
+      <div class="full text file_attachment field_container">
+        <label for="E_FAC_REPORT"><input type="checkbox" id="FAC_RPRT_YN"> Facility Report on File?</label>
+        <input type="text" id="E_FAC_REPORT" readonly>
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="small date field_container">
+        <label for="FAC_RPRT_DATE">Date Report Filed</label>
+        <input type="text" id="FAC_RPRT_DATE">
+      </div>
+
+      <div class="small date field_container">
+        <label for="FAC_RPT_R_DATE"><input type="checkbox" id="FAC_RPT_REQUEST"> Facility Report Requested?</label>
+        <input type="text" id="FAC_RPT_R_DATE">
+      </div>
+
+      <div class="small date field_container">
+        <label for="FAC_RPT_REC_DATE"><input type="checkbox" id="FAC_RPT_RECEIVE"> Facility Report Received?</label>
+        <input type="text" id="FAC_RPT_REC_DATE">
+      </div>
+
+      <div class="small date field_container">
+        <label for="FAC_RPT_REV_DATE"><input type="checkbox" id="FAC_RPT_REVIEWED"> Facility Report Reviewed?</label>
+        <input type="text" id="FAC_RPT_REV_DATE">
+      </div>
+    </div>
+  </fieldset>
+
+  <div class="form_row">
+    <div class="medium misc file_attachment field_container" data-tdr-map="Board-request">
+      <label for="BOARD_REQ_DOC"><input type="checkbox" id="BOARD_REQ_YN"> Board Request</label>
+      <input type="text" id="BOARD_REQ_DOC" readonly>
+    </div>
+
+    <div class="small date field_container">
+      <label for="BOARD_REQ_SENT">Sent</label>
+      <input type="text" id="BOARD_REQ_SENT">
+    </div>
+
+    <div class="small date field_container">
+      <label for="BOARD_REQ_RCVD">Received</label>
+      <input type="text" id="BOARD_REQ_RCVD">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium misc file_attachment field_container" data-tdr-map="Loan-request">
+      <label for="LOAN_REQ_DOC"><input type="checkbox" id="LOAN_REQ_YN"> Formal Loan Request</label>
+      <input type="text" id="LOAN_REQ_DOC" readonly>
+    </div>
+
+    <div class="small date field_container">
+      <label for="LOAN_REQ_SENT">Sent</label>
+      <input type="text" id="LOAN_REQ_SENT">
+    </div>
+
+    <div class="small date field_container">
+      <label for="LOAN_REQ_RCVD">Received</label>
+      <input type="text" id="LOAN_REQ_RCVD">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium misc file_attachment field_container" data-tdr-map="Insurance-request">
+      <label for="CERT_INSUR_DOC"><input type="checkbox" id="CERT_INSUR_YN"> Certificate of Insurance</label>
+      <input type="text" id="CERT_INSUR_DOC" readonly>
+    </div>
+
+    <div class="small date field_container">
+      <label for="CERT_INSUR_SENT">Sent</label>
+      <input type="text" id="CERT_INSUR_SENT">
+    </div>
+
+    <div class="small date field_container">
+      <label for="CERT_INSUR_RCVD">Received</label>
+      <input type="text" id="CERT_INSUR_RCVD">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium misc file_attachment field_container" data-tdr-map="Incoming-receipt">
+      <label for="INCOME_REC_DOC"><input type="checkbox" id="INCOME_REC_YN"> Incoming Receipt</label>
+      <input type="text" id="INCOME_REC_DOC" readonly>
+    </div>
+
+    <div class="small date field_container">
+      <label for="INCOME_REC_SENT">Sent</label>
+      <input type="text" id="INCOME_REC_SENT">
+    </div>
+
+    <div class="small date field_container">
+      <label for="INCOME_REC_RCVD">Received</label>
+      <input type="text" id="INCOME_REC_RCVD">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium misc file_attachment field_container" data-tdr-map="Outgoing-receipt">
+      <label for="OUTGO_REC_DOC"><input type="checkbox" id="OUTGO_REC_YN"> Outgoing Receipt</label>
+      <input type="text" id="OUTGO_REC_DOC" readonly>
+    </div>
+
+    <div class="small date field_container">
+      <label for="OUTGO_REC_SENT">Sent</label>
+      <input type="text" id="OUTGO_REC_SENT">
+    </div>
+
+    <div class="small date field_container">
+      <label for="OUTGO_REC_RCVD">Received</label>
+      <input type="text" id="OUTGO_REC_RCVD">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium misc file_attachment field_container" data-tdr-map="Temporary-loanout-receipt">
+      <label for="TEMP_REC_DOC"><input type="checkbox" id="TEMP_REC_YN"> Temporary Loan-Out Receipt</label>
+      <input type="text" id="TEMP_REC_DOC" readonly>
+    </div>
+
+    <div class="small date field_container">
+      <label for="TEMP_REC_SENT">Sent</label>
+      <input type="text" id="TEMP_REC_SENT">
+    </div>
+
+    <div class="small date field_container">
+      <label for="TEMP_REC_RCVD">Received</label>
+      <input type="text" id="TEMP_REC_RCVD">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium misc file_attachment field_container" data-tdr-map="Shipping-receipt">
+      <label for="SHIP_REC_DOC"><input type="checkbox" id="SHIP_REC_YN"> Shipping Receipt</label>
+      <input type="text" id="SHIP_REC_DOC" readonly>
+    </div>
+
+    <div class="small date field_container">
+      <label for="SHIP_REC_SENT">Sent</label>
+      <input type="text" id="SHIP_REC_SENT">
+    </div>
+
+    <div class="small date field_container">
+      <label for="SHIP_REC_RCVD">Received</label>
+      <input type="text" id="SHIP_REC_RCVD">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium misc file_attachment field_container" data-tdr-map="Loan-agreement">
+      <label for="LOAN_AGREE_DOC"><input type="checkbox" id="LOAN_AGREE_YN"> Loan Agreement</label>
+      <input type="text" id="LOAN_AGREE_DOC" readonly>
+    </div>
+
+    <div class="small date field_container">
+      <label for="LOAN_AGREE_SENT">Sent</label>
+      <input type="text" id="LOAN_AGREE_SENT">
+    </div>
+
+    <div class="small date field_container">
+      <label for="LOAN_AGREE_RCVD">Received</label>
+      <input type="text" id="LOAN_AGREE_RCVD">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium misc file_attachment field_container" data-tdr-map="Shipping-invoice">
+      <label for="SHIP_INV_DOC"><input type="checkbox" id="SHIP_INV_YN"> Shipping Invoice</label>
+      <input type="text" id="SHIP_INV_DOC" readonly>
+    </div>
+
+    <div class="small date field_container">
+      <label for="SHIP_INV_SENT">Sent</label>
+      <input type="text" id="SHIP_INV_SENT">
+    </div>
+
+    <div class="small date field_container">
+      <label for="SHIP_INV_RCVD">Received</label>
+      <input type="text" id="SHIP_INV_RCVD">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="medium misc file_attachment field_container" data-tdr-map="Loan-invoice">
+      <label for="LOAN_INV_DOC"><input type="checkbox" id="LOAN_INV_YN"> Loan Fee Invoice</label>
+      <input type="text" id="LOAN_INV_DOC" readonly>
+    </div>
+
+    <div class="small date field_container">
+      <label for="LOAN_INV_SENT">Sent</label>
+      <input type="text" id="LOAN_INV_SENT">
+    </div>
+
+    <div class="small date field_container">
+      <label for="LOAN_INV_RCVD">Received</label>
+      <input type="text" id="LOAN_INV_RCVD">
+    </div>
+  </div>
+</fieldset>

@@ -1,0 +1,155 @@
+<span class="hidden current_page" id="insurance_damage_loss"></span>
+
+<fieldset class="repeating_group" data-group-title="Damage / Loss Details" id="DAMAGE_LOSS_GRP">
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="LOSS_TYPE">Damage / Loss Type</label>
+      <select id="LOSS_TYPE">
+        <option></option>
+        <option>Destroyed</option>
+        <option>Flood</option>
+        <option>Impact Damage</option>
+        <option>Missing</option>
+        <option>Stolen</option>
+        <option>Termites</option>
+        <option>Water Damage</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <div class="small date field_container">
+      <label for="LOSS_DATE">Date</label>
+      <input type="text" id="LOSS_DATE">
+    </div>
+
+    <div class="small field_container">
+      <label for="RPLC_RESTR_ESTIM">Restoration Estimate</label>
+      <input type="text" id="RPLC_RESTR_ESTIM">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full people_validated_field field_container" data-map="damage_reported_by">
+      <label for="LOSS_REPORTER">Reported By</label>
+      <input type="text" id="LOSS_REPORTER" readonly>
+      <input type="hidden" id="LOSS_REPORTER_ID">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="DAMAGE_LOSS_DESC">Damage / Loss Details</label>
+      <textarea id="DAMAGE_LOSS_DESC"></textarea>
+    </div>
+
+    <div class="medium field_container">
+      <label for="ESTIMATE_NOTE">Estimate Notes</label>
+      <textarea id="ESTIMATE_NOTE"></textarea>
+    </div>
+  </div>
+
+  <fieldset class="logical_group">
+    <legend>Claim Information</legend>
+    
+    <div class="form_row">
+      <div class="small field_container">
+        <label for="CLAIM">Claim</label>
+        <select id="CLAIM">
+          <option></option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+
+      <div class="small date field_container">
+        <label for="NOTIFICATON_DATE">Notification Date</label>
+        <input type="text" id="NOTIFICATON_DATE">
+      </div>
+
+      <div class="small date field_container">
+        <label for="CLAIM_DATE">Claim Date</label>
+        <input type="text" id="CLAIM_DATE">
+      </div>
+
+      <div class="small field_container">
+        <label for="CLAIM_AMOUNT">Claim Amount</label>
+        <input type="text" id="CLAIM_AMOUNT">
+      </div>
+    </div>
+
+    <div class="form_row">
+      <div class="medium field_container">
+        <label for="CLAIM_NUM">Claim Number</label>
+        <input type="text" id="CLAIM_NUM">
+      </div>
+
+      <div class="small date field_container">
+        <label for="SETTLE_DATE">Settlement Date</label>
+        <input type="text" id="SETTLE_DATE">
+      </div>
+
+      <div class="small field_container">
+        <label for="SETTLE_AMOUNT">Settlement Amount</label>
+        <input type="text" id="SETTLE_AMOUNT">
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="full org_validated_field people_validated_field field_container" data-map="claim_settlement_to">
+        <label for="SETTLE_TO">Settlement To</label>
+        <input type="text" id="SETTLE_TO" readonly>
+        <input type="hidden" id="SETTLE_TO_ID">
+      </div>
+    </div>
+  </fieldset>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="LOSS_NOTE">Damage / Loss Notes</label>
+      <textarea id="LOSS_NOTE"></textarea>
+    </div>
+  </div>
+
+  <fieldset class="repeating_group" data-group-title="Actions" id="RESOLV_PROGRESS">
+    <div class="form_row">
+      <div class="full people_validated_field field_container" data-map="damage_actions_contact">
+        <label for="INCIDENT_CONTACT">Contact</label>
+        <input type="text" id="INCIDENT_CONTACT" readonly>
+        <input type="hidden" id="INC_CONTACT_ID">
+      </div>
+    </div>
+
+    <div class="form_row">
+      <div class="small date field_container">
+        <label for="RESOLV_DATE">Date</label>
+        <input type="text" id="RESOLV_DATE">
+      </div>
+
+      <div class="medium field_container">
+        <label for="INC_NUM_HOURS">Hours Involved</label>
+        <input type="text" id="INC_NUM_HOURS">
+      </div>
+
+      <div class="small combo field_container">
+        <label for="INC_VALUE_INVOLV">Costs</label>
+        <input type="text" id="INC_VALUE_INVOLV">
+        <select id="INC_VALUE_CURR">
+          <option></option>
+          <option>CAD</option>
+          <option>EURO</option>
+          <option>FRA</option>
+          <option>GBP</option>
+          <option>USD</option> 
+        </select>
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="RESOLV_NOTES">Action</label>
+        <textarea id="RESOLV_NOTES"></textarea>
+      </div>
+    </div>
+
+  </fieldset>
+</fieldset>

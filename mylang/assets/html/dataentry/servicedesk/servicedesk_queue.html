@@ -1,0 +1,54 @@
+<span class="hidden current_page" id="queue"></span>
+
+<div class="borderless form_row">
+  <div class="smallmed field_container">
+    <label for="QUE_ITEM_ID">Item ID</label>
+    <input type="text" id="QUE_ITEM_ID" readonly>
+  </div>
+
+  <div class="smallmed field_container">
+    <label for="QUE_DB_NAME">Item Source</label>
+    <input type="text" id="QUE_DB_NAME" readonly>
+  </div>
+
+  <div class="smallmed field_container">
+    <label for="ACTIVE_ORDER_NUM">Active Order No.</label>
+    <input type="text" id="ACTIVE_ORDER_NUM" readonly>
+  </div></div>
+
+<br/>
+
+<ul class="generic_table_menu">
+  <li><a class="move_up_occ" title="Move Up Request" data-table="queue_table"><i class="fa fa-arrow-up"></i> Move Up</a></li>
+  <li><a class="move_down_occ" title="Move Down Request" data-table="queue_table"><i class="fa fa-arrow-down"></i> Move Down</a></li>
+  <li>|</li>
+  <li><a class="save_queue" title="Save Queue" data-table="queue_table"><i class="fa fa-floppy-o"></i> Save</a></li>
+</div>
+</ul>
+
+<div style="max-height:500px; overflow-y:scroll;">
+  <table class="generic_table" id="queue_table" data-form="" data-group="QUEUE_GROUP" data-no-edit="Y">
+    <thead>
+      <tr>
+        <th style="width:8%;" data-source="$occnum">#</th>
+        <th style="width:15%;" data-source="QUE_ORDER_NUM">Order No.</th>
+        <th style="width:30%;" data-source="QUE_PATRON_NAME">Client</th>
+        <th style="width:47%;" data-source="QUE_TITLE">Request Title</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td colspan="4">No Request</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- call initalization user routine -->
+<input type="hidden" class="init_call_exit servicedesk_load_queue" data-table="queue_table" />
+
+<!-- call record wrapup user routine -->
+<input type="hidden" class="wrapup_user_exit"
+  data-exit="wrapupRequest"
+/>

@@ -1,0 +1,15 @@
+body.validated_search {
+  min-width: 500px;
+  padding: 0.5rem 1rem;
+
+  #body {
+    .container {
+      padding: 0.5rem;
+      border-radius: 5px;
+
+      span.copy_to_record {
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,727 @@
+$ADD_REPORT
+!REC-ID
+¶SPEC_NAME¶CCPAY_PAY_RECEIPT
+¶STATUS¶UPDATED
+¶VERSION¶9.07.20
+¶REVISION¶4
+¶DBNAME¶REQUEST_INFO
+¶PAGE_WIDTH¶5000
+¶DISPLAY_MODE¶8
+¶PAGE_BREAK¶X
+¶SPLIT_RECORD¶X
+¶HANDLE_NAME¶UTF8_HANDLER
+¶PAGE_FIELD¶¶PAGE_FIELD_TYPE¶1
+¶PAGE_FIELD¶¶PAGE_FIELD_TYPE¶2
+¶PAGE_FIELD¶¶PAGE_FIELD_TYPE¶3
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶<REQ_ORDER_NUM>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_EXP¶REQ_ORDER_NUM
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶</REQ_ORDER_NUM>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶<REQ_TITLE>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_EXP¶REQ_TITLE
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶</REQ_TITLE>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶<REQ_PAY_TYPE>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_EXP¶REQ_PAY_TYPE
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶</REQ_PAY_TYPE>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶<REQ_PAY_ON>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_EXP¶REQ_PAY_ON
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶</REQ_PAY_ON>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶<REQ_CHARGE_AMT>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_EXP¶REQ_CHARGE_AMT
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶</REQ_CHARGE_AMT>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶<REQ_TAX>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_EXP¶REQ_TAX
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶</REQ_TAX>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶<REQ_HANDLING>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_EXP¶REQ_HANDLING
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶</REQ_HANDLING>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶<REQ_PAID_AMT>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_EXP¶REQ_PAID_AMT
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶</REQ_PAID_AMT>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶3
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶1L
+¶COMMON_OCCGAP¶1
+¶GROUP_ID¶CCPAY_CALL
+¶GROUP_START_OCC¶LAST
+¶GROUP_END_OCC¶LAST
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶<CCPAY_STATUS>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_EXP¶CCPAY_STATUS
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶</CCPAY_STATUS>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶<CCPAY_SESSION_ID>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_EXP¶CCPAY_SESSION_ID
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶</CCPAY_SESSION_ID>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶<CCPAY_AMOUNT>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_EXP¶CCPAY_AMOUNT
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶</CCPAY_AMOUNT>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶<GWY_AUTH_CODE>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_EXP¶GWY_AUTH_CODE
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶</GWY_AUTH_CODE>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶<GWY_AUTH_TIME>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_EXP¶GWY_AUTH_TIME
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶</GWY_AUTH_TIME>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶<MASKEDCARD>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_EXP¶MASKEDCARD
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶</MASKEDCARD>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶<NAMEONCARD>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_EXP¶NAMEONCARD
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶</NAMEONCARD>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶9
+¶STATEMENT_LEVEL¶0
+¶SPEC_UR_PARM¶PDF=Y
+¶OUTPUT_TYPE¶3
+¶EDITOR¶XML Report Editor
+¶TEMPLATE¶[M2A_DM]xml\CCPAY_PAY_RECEIPT.mrt
+¶SPEC_CREATOR¶M2A_MGR
+***ENDBODY***
+32533 CCPAY_PAY_RECEIPT
+ï»¿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <CCPAY_PAY_RECEIPT Ref="2" type="Stimulsoft.Report.Dictionary.StiXmlDatabase" isKey="true">
+        <Alias>CCPAY_PAY_RECEIPT</Alias>
+        <Name>CCPAY_PAY_RECEIPT</Name>
+        <PathData>I:\AO_ICMSS\CCPay\ReceiptData.xml</PathData>
+        <PathSchema />
+      </CCPAY_PAY_RECEIPT>
+    </Databases>
+    <DataSources isList="true" count="1">
+      <RECORD Ref="3" type="DataTableSource" isKey="true">
+        <Alias>RECORD</Alias>
+        <Columns isList="true" count="15">
+          <value>REQ_ORDER_NUM,System.String</value>
+          <value>REQ_TITLE,System.String</value>
+          <value>REQ_PAY_TYPE,System.String</value>
+          <value>REQ_PAY_ON,System.String</value>
+          <value>REQ_CHARGE_AMT,System.String</value>
+          <value>REQ_TAX,System.String</value>
+          <value>REQ_HANDLING,System.String</value>
+          <value>REQ_PAID_AMT,System.String</value>
+          <value>CCPAY_STATUS,System.String</value>
+          <value>CCPAY_SESSION_ID,System.String</value>
+          <value>CCPAY_AMOUNT,System.String</value>
+          <value>GWY_AUTH_CODE,System.String</value>
+          <value>GWY_AUTH_TIME,System.String</value>
+          <value>MASKEDCARD,System.String</value>
+          <value>NAMEONCARD,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>RECORD</Name>
+        <NameInSource>CCPAY_PAY_RECEIPT.RECORD</NameInSource>
+      </RECORD>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="4" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="2">
+        <HeaderBand1 Ref="5" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.2,7.72,1.2</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text1 Ref="6" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,0.8,6.5,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>Ministry of Government and Consumer Services</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text1>
+            <Image1 Ref="7" type="Image" isKey="true">
+              <AspectRatio>True</AspectRatio>
+              <Brush>Transparent</Brush>
+              <CanShrink>True</CanShrink>
+              <ClientRectangle>0.2,0.1,2.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Image>iVBORw0KGgoAAAANSUhEUgAAAWgAAABdCAYAAACIJfx/AAAABGdBTUEAALGPC/xhBQAALRBJREFUeF7tnQvYt9W854lIyqmcikQoRM04Tk2SYmx22SpT0TZMM0NpUpj2zKRStDVCahP2Likqe7AzSBQVjRRbOSWHnLZElEo55XDv3+fu/fytZ7336X96nud93vW9ru/1P9zrdK/D9173OvzWHQoKCgqWMe4YvFPwzqvI73ljnaDxEfdixFlQUFCw7KEgrxtEKJuwYfARwR2D+wQPCR4TPCn4vuDZwY8Hzw9+ehXPC54T/FDw9ODfBY8KHhjcM7hdcPPg3YJN8CHRlqaCgoKCFQuED1HOsXFwp+Crg2cE/zn4s+Afg9WMeVvwx8FLgicHDwg+JcgDIQUPkSLWBQUFKx4OI6R4UvCI4GeCNwWbxBQi0r8PIqyQ7/IPLUzdpH66BP+6IL3vVwQfFUzRlP6CgoKCNRoIWzq2u3Xwb4PfDOYCqRBDRPZPq5i7m5aESVypkDcJ9xeC9OgfHBSIdBHqgoKCNRqIWDo0sFvwU8FUABFFereKcXptKUgaEGvSlP7/2+D7g/8uKMrQR0FBwRoHesvpGPNfBS8PpiKIAHYNNSwX8uDIxfqTQcarRdN4ekFBQcGyQ/rq/7jghUGFzWGLVOzWFNqzTh8qrCK5fxDkbwsFBQUFywppT/LooEK2JgtzE1OhvjX4kqBg2KOgoKBgWUFx3jR4WRDxsteZittKYjr0wfi0eVCGPAoKCpYNFKSnBm8JIli/Cy6HSb9500lOvrMqZbMgKCJdUFCw5FCI2KGnaOWTamsDeSDxeXNwmyAoIl1QULBkUIDYgq1QraSx5nHpgwmx/jdBUES6oKBg0aHwPDuoQK0Jy+bmTcfcmTzcIgjKxGFBQcGiQcFhR6CivDb3nHPak/5B8O5BUJbgFRQUzB1u2V4v+P0gQrSSV2pMSsekzw2CItAFBQVzh71nrM2lQlS4Os0bbHmAMh5dUFAwNyjOewQRntJz7ma6zHCrIChGlgoKCmYOhzYwco8dZUSnTAr204cYBwmAMtRRUFAwc/h6/voggrM2rnWelIo0bx6grOooKCiYGez1PTD46yBiM9EuwTve8Y7VXe5yl+pe97pX9cAHPrB68IMfXG2++ebVwx72sJoPechDqgc96EHV/e53v2qDDTao7nSnOzWGMwuuu+661T3vec/qAQ94QGM6+O/+979/dY973KO6853v3BjGQLrC5evBgoKCgpnCHt8bgwjNWL1nhBAx3mKLLWoR5HeTuybe9773rf099KEPre5zn/tU66yzTqO7IURkEVzCQ4R5ADS5ayJCjh/88vCY4MFhL5pNPaD0ogsKCqaGY8/3Dv4iiMgM6j0jhg9/+MOr9dZbb7Vru+22W/XKV76yesMb3lCddNJJ1amnnlqdcsop1Vvf+tbqqKOOql760pdW22+//Wr+6F0jlBtuuOFq19q40UYb1engM7/2rGc9q3rFK15RHXPMMdXb3va2Oh3vfve7qxNPPLF6/etfXx144IHVLrvsspq/jTfeuDXMFtqLxpAUKGPRBQUFU8Oe3suDCExr75nhCz4ZEmCIIL326le/uvrQhz5Ufe1rX6t+/vOfV7/97W+rLvzpT3+qbr311uqaa66pLr300urkk0+u9t577wVhIpD0qtP/UtprT/874IADqrPOOqu64oorqp/+9KfVb37zm1UxNoN0/PrXv65+8pOfVF/60peqM844o354pGGO8VbgpOq/D4KyoqOgIAM9Fya8EJ4u4iY9R29thXnwxSDi0rljkKEAv++///7V+eefX/3sZz9bJXerAwGEf/zjH2v6uwm33XZb9d3vfrd63/veV+2www6jeB7xiEcsGK6gd5sK8z777FN95CMfqX784x+3hj1OOvifBwdhErbx3PWudx19b6HDHKcEAfVsUUAhUvEhT4WU/l8qe8FSY5I6uDbXW3t42wYRls6hDSb++Nxjjz2qq666ajWBGyJ+KXSnvxS/+tWvqgsvvLCOy/gZp06F+eCDD64uv/zy6ve///0qX7djlun4wx/+UF122WWjeJuGcxLag/5ZcMMgmHn9IkAKzp7GOBEg1Prje0HBYsH6xqGfRwUPDf7PFv5N8MjgI4Jgba2r9vDIL4Slc3hj0003rb8feeSRq+TrdjHsE0EFUHYhF0l61eedd94CYd5zzz3r4YgUs04H1xFnwOfOO+9cx80bhEM9LbQX/dwgMI+nhqLchA2CHEv+mOATgzQC+PjglsEHBO8azIG48ypZxLpg3nAdr2IzhM8Pgpk1ojUMdr4GDW84HrzXXntVv/vd72rxaoIi2yWCXOty53Vx0003Vccdd1w9vpz2mFM3KfrCF6m7HPpjLJv7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</Image>
+              <Name>Image1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Stretch>True</Stretch>
+            </Image1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>HeaderBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </HeaderBand1>
+        <DataBand1 Ref="8" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,1.8,7.72,3.2</ClientRectangle>
+          <Components isList="true" count="18">
+            <Text2 Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.3,0.2,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>Payment To:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text2>
+            <Text3 Ref="10" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2,0.2,4.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>Archives of Ontario</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text3>
+            <Text4 Ref="11" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.3,0.4,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>Order No.:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text4>
+            <Text5 Ref="12" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2,0.4,4.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{RECORD.REQ_ORDER_NUM}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text5>
+            <Text6 Ref="13" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.3,2.3,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>Authorization Code:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text6>
+            <Text7 Ref="14" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2,2.3,4.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{RECORD.GWY_AUTH_CODE}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text7>
+            <Text8 Ref="15" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.3,0.6,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>Total:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text8>
+            <Text9 Ref="16" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2,0.6,4.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>${RECORD.CCPAY_AMOUNT}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text9>
+            <Text10 Ref="17" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.3,0.8,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>Time:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text10>
+            <Text11 Ref="18" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2,0.8,4.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{FormatDate(RECORD.GWY_AUTH_TIME)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text11>
+            <Text12 Ref="19" type="Text" isKey="true">
+              <Border>Top;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.1,1.1,7.5,0.1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+            </Text12>
+            <Text13 Ref="20" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.3,1.3,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>Name:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text13>
+            <Text14 Ref="21" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2,1.3,4.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{RECORD.NAMEONCARD}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text14>
+            <Text15 Ref="22" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.3,1.5,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>Card Number:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text15>
+            <Text16 Ref="23" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2,1.5,4.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{RECORD.MASKEDCARD}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text16>
+            <Text17 Ref="24" type="Text" isKey="true">
+              <Border>Top;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.1,1.9,7.5,0.1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <Guid>b63907e6c81a4c6d9380a48ade665aa0</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+            </Text17>
+            <Text18 Ref="25" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.3,2.1,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>Session ID:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text18>
+            <Text19 Ref="26" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2,2.1,4.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{RECORD.CCPAY_SESSION_ID}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text19>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>RECORD</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>6e9ea0ce6c0d43098b7cf0eb04a71d68</Guid>
+      <Margins>0.39,0.39,0.39,0.39</Margins>
+      <Name>Page1</Name>
+      <PageHeight>11</PageHeight>
+      <PageWidth>8.5</PageWidth>
+      <PaperSize>Letter</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="27" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="28" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="9">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+    <value>Minisis.Report.dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>11/25/2021 11:57:45 AM</ReportChanged>
+  <ReportCreated>3/28/2014 10:41:26 AM</ReportCreated>
+  <ReportDescription>&lt;MinisisInfo&gt;&lt;Description /&gt;&lt;DataModel /&gt;&lt;Database /&gt;&lt;SortInfos /&gt;&lt;/MinisisInfo&gt;</ReportDescription>
+  <ReportFile>F:\MINISIS\MD\M2ADEMO\M2A\USERDM\XML\CCPAY_PAY_RECEIPT.MRT</ReportFile>
+  <ReportGuid>00865080d4ed4296862d17373667e054</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2013.3.1800</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+using Stimulsoft.Report.Dictionary;
+using Minisis.Report;
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+		
+		public string FormatDate(string date) {
+			string result = "";
+			DateTime time;
+			if (DateTime.TryParse(date, out time)) {
+				result = time.ToString("U");
+			}
+			else {
+				result = date;
+			}
+			return result;
+		}
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>
+***END***

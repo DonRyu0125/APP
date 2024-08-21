@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAMS - Cultural Assets Managment System - Collections Database</title>
+
+    <!-- include virtual="/mylang/assets/html/template/stylesheets.html" -->
+    <!-- include virtual="/mylang/assets/html/template/header_scripts.html" -->
+  </head>
+  <body data-database="collections" class="components">
+    <section id="body">
+      <div class="container">
+        <!-- include virtual="/mylang/assets/html/template/db/com_db_actions_nav.html" -->
+
+        <section id="data_entry_forms">
+          <div id="universal_record_information">
+            <div class="column">
+              <div class="field_container">
+                <label for="ACCESSION_NUMBER">Accession #</label>
+                <input type="text" id="ACCESSION_NUMBER">
+              </div>
+              <div class="field_container">
+                <label for="C_CUR_CODE">Location</label>
+                <input type="text" id="C_CUR_CODE">
+              </div>
+              <div class="select_container field_container">
+                <label for="OPAC_READY">OPAC Ready</label>
+                <select id="OPAC_READY">
+                <option></option>
+                <option>Ready</option>
+                <option>Review</option>
+                <option>Restrict</option>
+              </select>
+              </div>
+            </div>
+
+          <div class="column">
+            <div class="select_container field_container">
+              <label for="OBJECT_STATUS">Status</label>
+              <select id="OBJECT_STATUS">
+                <option></option>
+                <option>Art Loan Program</option>
+                <option>Conservation</option>
+                <option>Deaccessioned</option>
+                <option>Loan to External Organization</option>
+                <option>Not Available</option>
+                <option>On Hold</option>
+                <option>Permanent Collection</option>
+              </select>
+            </div>
+
+            <div class="field_container">
+              <label for="PERM_LOCATION">Perm. Location</label>
+              <input type="text" id="PERM_LOCATION" readonly>
+            </div>
+
+            <div class="select_container field_container">
+              <label for="COLLECTION_TYPE">Collection</label>
+              <select id="COLLECTION_TYPE">
+                <option>Museum</option>
+                <option>Archives</option>
+                <option>Library</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="img_container">
+              <!-- <img src="/mylang/assets/img/image-placeholder.png"> -->
+            </div>
+            <!-- RL-2020-09-29 -->
+            <div class="img_container2">
+              <!-- <img src="/mylang/assets/img/image-placeholder.png">   -->
+            </div>
+            <div class="add_image">
+              <a href="#"><i class="fa fa-image fa-2x"></i><i class="fa fa-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="universal_row">
+            <div class="full field_container">
+              <label for="LEGAL_TITLE">Title</label>
+              <input type="text" id="LEGAL_TITLE">
+            </div>
+          </div>
+        </div>
+
+        <div id="primary_data_entry_form">
+          <nav id="worksheet_nav">
+            <ul id="primary_worksheet_museum_nav">
+              <!-- RL-2020-09-29 -->
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/catalogue_main.html" data-form="catalogue">Catalogue</a></li>
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/components_main.html" data-form="components">Components</a></li>
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/production_main.html" data-form="production">Production</a></li>
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/acquisition_main.html" data-form="acquisition">Acquisition</a></li>
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/physical_main.html" data-form="physical">Physical</a></li>
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/media_main.html" data-form="media">Media</a></li>
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/research_main.html" data-form="research">Research</a></li>
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/movement_main.html" data-form="movement">Movement</a></li>
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/conservation_main.html" data-form="conservation">Conservation</a></li>
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/insurance_main.html" data-form="insurance">Insurance</a></li>
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/deaccession_main.html" data-form="deaccession">Deaccession</a></li>
+            </ul>
+
+            <ul id="primary_worksheet_archives_nav">
+              <!-- RL-2020-09-29 -->
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/archives_main.html" data-form="archives">Archives</a></li>
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/media_main.html" data-form="media">Media</a></li>
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/research_main.html" data-form="research">Research</a></li>
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/movement_main.html" data-form="movement">Movement</a></li>
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/conservation_main.html" data-form="conservation">Conservation</a></li>
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/insurance_main.html" data-form="insurance">Insurance</a></li>
+            </ul>
+
+
+            <ul id="primary_worksheet_library_nav">
+              <!-- RL-2020-09-29 -->
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/library_main.html" data-form="library">Library</a></li>
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/media_main.html" data-form="media">Media</a></li>
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/research_main.html" data-form="research">Research</a></li>
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/movement_main.html" data-form="movement">Movement</a></li>
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/conservation_main.html" data-form="conservation">Conservation</a></li>
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/insurance_main.html" data-form="insurance">Insurance</a></li>
+
+            </ul>
+
+            <nav id="secondary_worksheet_nav">
+              <!-- RL-2020-09-29 -->
+              <ul id="archives">
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/archives_main.html" data-form="main">Archives</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/archives_related.html" data-form="related">Related
+                    Collections</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/archives_cultural_property.html" data-form="cultural_property">Cultural
+                    Property</a></li>
+              </ul>
+
+
+              <ul id="catalogue">
+                <!-- RL-2020-09-29 -->
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/catalogue_main.html" data-form="main">Catalogue
+                    Main</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/catalogue_associations.html" data-form="associations">Associations</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/catalogue_provenance.html" data-form="provenance">Provenance</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/catalogue_cultural_property.html" data-form="cultural_property">Cultural
+                    Property</a></li>
+                <li><a href="/mylang/assets/html/dataentry/collections/catalogue_related_objects.html" data-form="related_objects">Related
+                    Objects</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/collections_restrictions.html" data-form="restrictions"><i
+                      class="fa fa-warning fa-lg"></i>Restrictions</a></li>
+              </ul>
+
+
+              <ul id="components">
+                <!-- RL-2020-09-29 -->
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/components_main.html" data-form="main">Components
+                    Main</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/collections_restrictions.html" data-form="restrictions"><i
+                      class="fa fa-warning fa-lg"></i>Restrictions</a></li>
+              </ul>
+
+              <ul id="library">
+                <!-- RL-2020-09-29 -->
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/library_main.html" data-form="main">Library
+                    Main</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/library_related.html" data-form="related">Related
+                    Collections</a></li>
+              </ul>
+
+              <ul id="production">
+                <!-- RL-2020-09-29 -->
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/production_main.html" data-form="main">Production
+                    Main</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/production_inscriptions.html" data-form="inscriptions">Inscriptions</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/collections_restrictions.html" data-form="restrictions"><i
+                      class="fa fa-warning fa-lg"></i>Restrictions</a></li>
+              </ul>
+
+              <ul id="acquisition">
+                <!-- RL-2020-09-29 -->
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/acquisition_main.html" data-form="main">Acquisition
+                    Main</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/acquisition_documents.html" data-form="documents">Documentation</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/collections_restrictions.html" data-form="restrictions"><i
+                      class="fa fa-warning fa-lg"></i>Restrictions</a></li>
+              </ul>
+
+              <ul id="physical">
+                <!-- RL-2020-09-29 -->
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/physical_main.html" data-form="main">Physical
+                    Main</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/collections_restrictions.html" data-form="restrictions"><i
+                      class="fa fa-warning fa-lg"></i>Restrictions</a></li>
+              </ul>
+
+
+              <ul id="media">
+                <!-- RL-2020-09-29 -->
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/media_main.html" data-form="main">Media Main</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/media_object_copyright.html" data-form="object_copyright">Object
+                    Copyright</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/collections_restrictions.html" data-form="restrictions"><i
+                      class="fa fa-warning fa-lg"></i>Restrictions</a></li>
+              </ul>
+
+              <ul id="research">
+                <!-- RL-2020-09-29 -->
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/research_main.html" data-form="main">Research
+                    Main</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/research_bibliographic_reference.html"
+                    data-form="bibliographic_reference">Bibliographic Reference</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/collections_restrictions.html" data-form="restrictions"><i
+                      class="fa fa-warning fa-lg"></i>Restrictions</a></li>
+              </ul>
+
+
+
+              <ul id="movement">
+                <!-- RL-2020-09-29 -->
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/movement_main.html" data-form="main">Movement
+                    Main</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/movement_dispatch.html" data-form="dispatch">Dispatch</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/movement_inventory.html" data-form="inventory">Inventory</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/movement_shipping_cost.html" data-form="shipping_cost">Shipping
+                    / Cost</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/movement_packing.html" data-form="packing">Packing</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/movement_exhibition.html" data-form="exhibition">Exhibition History</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/collections_restrictions.html" data-form="restrictions"><i
+                      class="fa fa-warning fa-lg"></i>Restrictions</a></li>
+              </ul>
+
+
+
+              <ul id="conservation">
+                <!-- RL-2020-09-29 -->
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/conservation_main.html" data-form="main">Conservation
+                    Main</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/conservation_media_main.html" data-form="media">Conservation
+                    Media</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/conservation_treatment_proposal.html"
+                    data-form="treatment_proposal">Treatment Proposal</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/collections_restrictions.html" data-form="restrictions"><i
+                      class="fa fa-warning fa-lg"></i>Restrictions</a></li>
+              </ul>
+
+
+              <ul id="insurance">
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/insurance_main.html" data-form="main">Insurance
+                    Main</a></li>
+
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/insurance_damage_loss.html" data-form="damage_loss">Damage
+                    Loss</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/insurance_incident_tracking.html" data-form="incident_tracking">Incident
+                    Tracking</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/collections_restrictions.html" data-form="restrictions"><i
+                      class="fa fa-warning fa-lg"></i>Restrictions</a></li>
+              </ul>
+
+              <ul id="deaccession">
+                <!-- RL-2020-09-29 -->
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/deaccession_main.html" data-form="main">Deaccession Main</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/collections/collections_restrictions.html" data-form="restrictions"><i
+                      class="fa fa-warning fa-lg"></i>Restrictions</a></li>
+              </ul>
+
+            </nav>
+          </nav>
+
+
+          <div id="data_entry_form">
+            <!-- include virtual="/mylang/assets/html/dataentry/collections/catalogue_main.html" -->
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+    <footer>
+        <!-- include virtual="/mylang/assets/html/template/footer.html" -->
+    </footer>
+
+
+    <xml id="component" style="display: none;">
+      ^XML_TREE^
+    </xml>
+
+    <div id="notices">^WIN_INFO^</div>
+
+  <!-- include virtual="/mylang/assets/html/template/db/col_base_scripts.html" -->
+  <!-- include virtual="/mylang/assets/html/template/core_dataentry_scripts.html" -->
+  <script src="/mylang/assets/js/dataentry/record_databases/collections.js"></script>
+  <script src="/mylang/assets/js/dataentry/interface_databases/collections.js"></script>
+  <script src="/mylang/assets/js/dataentry/frontend/collections.js"></script>
+</body>
+
+</html>

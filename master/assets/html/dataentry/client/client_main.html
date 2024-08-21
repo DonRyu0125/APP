@@ -1,0 +1,429 @@
+<span class="hidden current_page" id="client_main"></span>
+
+<div class="borderless form_row">
+  <div class="small field_container">
+    <label for="C_CARD_NUMBER"><u>Client ID</u></label>
+    <input type="text" id="C_CARD_NUMBER" readonly>
+  </div>
+
+  <div class="small field_container">
+    <label for="AOR_CARD_NO">Former AOR Card No.</label>
+    <input type="text" id="AOR_CARD_NO">
+  </div>
+
+  <div class="small field_container">
+    <label for="C_EMAIL"><u>Client Email</u></label>
+    <input type="text" id="C_EMAIL" class="mandatory_check" data-mandatory="C_TEL_WORK !- * C_TEL_HOME">
+  </div>
+
+  <div class="small field_container">
+    <label for="PATRON_PID"><u>Password</u></label>
+    <input type="password" id="PATRON_PID">
+  </div>
+  </div>
+
+<div class="borderless form_row">
+  <div class="smallmed field_container">
+    <label for="C_NAME_LAST"><u>Last Name</u></label>
+    <input type="text" id="C_NAME_LAST" class="mandatory_check" data-mandatory="$$">
+  </div>
+
+  <div class="smallmed field_container">
+    <label for="C_NAME_FIRST"><u>First Name</u></label>
+    <input type="text" id="C_NAME_FIRST" class="mandatory_check" data-mandatory="$$">
+  </div>
+
+  <div class="smallmed field_container">
+    <label for="C_NAME_INIT">Middle Name</label>
+    <input type="text" id="C_NAME_INIT">
+  </div>
+</div>
+
+<div class="borderless form_row">
+  <div class="smallmed field_container">
+    <label for="C_NAME_ALIAS">Name Alias</label>
+    <input type="text" id="C_NAME_ALIAS">
+  </div>
+
+  <div class="smallmed field_container">
+    <label for="DIVISION">Affiliated Ministry</label>
+    <select id="DIVISION">
+      <option></option>
+      <option>Ministry of Agriculture, Food and Rural Affairs</option>
+      <option>Ministry of the Attorney General</option>
+      <option>Ministry of Children, Community and Social Services</option>
+      <option>Ministry of Citizenship and Multiculturalism</option>
+      <option>Ministry of Colleges and Universities</option>
+      <option>Ministry of Economic Development, Job Creation and Trade</option>
+      <option>Ministry of Education</option>
+      <option>Ministry of Energy</option>
+      <option>Ministry of Environment, Conservation and Parks</option>
+      <option>Ministry of Finance</option>
+      <option>Ministry of Francophone Affairs</option>
+      <option>Ministry of Government and Consumer Services</option>
+      <option>Ministry of Health</option>
+      <option>Ministry of Heritage, Sport, Tourism and Culture Industries</option>
+      <option>Ministry of Indigenous Affairs</option>
+      <option>Ministry of Infrastructure</option>
+      <option>Ministry of Intergovernmental Affairs</option>
+      <option>Ministry of Labour, Training and Skills Development</option>
+      <option>Ministry of Long-Term Care</option>
+      <option>Ministry of Municipal Affairs and Housing</option>
+      <option>Ministry of Northern Development, Mines, Natural Resources and Forestry</option>
+      <option>Ministry of Seniors and Accessibility</option>
+      <option>Ministry of Solicitor General</option>
+      <option>Ministry of Transportation</option>
+      <option>Treasury Board Secretariat</option>
+    </select>
+  </div>
+
+  <div class="smallmed field_container">
+    <label for="C_TYPE">User Role</label>
+    <select id="C_TYPE">
+      <option></option>
+      <option>Staff</option>
+      <option>Administrator</option>
+      <option>Public User</option>
+      <option>Public Body</option>
+    </select>
+  </div>
+</div>
+
+<div class="borderless form_row">
+  <div class="smallmed field_container">
+    <label for="C_TITLE">Title</label>
+    <select id="C_TITLE">
+      <option></option>
+      <option>Bro.</option>
+      <option>Capt.</option>
+      <option>Cmdr.</option>
+      <option>Dr.</option>
+      <option>Fr.</option>
+      <option>Gen.</option>
+      <option>Hon.</option>
+      <option>Maj.</option>
+      <option>Miss.</option>
+      <option>Msgr.</option>
+      <option>Mr.</option>
+      <option>Mrs.</option>
+      <option>Ms.</option>
+      <option>Mr. and Mrs.</option>
+      <option>Rabbi</option>
+      <option>Rev.</option>
+      <option>Sergt.</option>
+      <option>Sr.</option>
+    </select>
+  </div>
+
+  <div class="smallmed field_container">
+    <label for="C_SUFFIX">Suffix</label>
+    <select id="C_SUFFIX">
+      <option></option>
+      <option>Esq.</option>
+      <option>Jr.</option>
+      <option>Sr.</option>
+      <option>I</option>
+      <option>II</option>
+      <option>III</option>
+      <option>IV</option>
+      <option>V</option>
+    </select>
+  </div>
+  <div class="smallmed repeating_field field_container">
+    <label for="C_LANGUAGE">Language of Correspondence</label>
+    <select id="C_LANGUAGE">
+      <option>English</option>
+      <option>French</option>
+      <option>Spanish</option>
+    </select>
+  </div>
+</div>
+
+<div class="borderless form_row">
+  <div class="full field_container">
+    <label for="C_ORGANIZATION">Organization</label>
+    <input type="text" id="C_ORGANIZATION">
+  </div>
+</div>
+
+<fieldset class="logical_group">
+  <legend>Address</legend>
+
+  <div class="borderless form_row">
+    <div class="smallmed field_container">
+      <label for="C_STREET">Line 1</label>
+      <input type="text" id="C_STREET">
+    </div>
+
+    <div class="smallmed field_container">
+      <label for="C_STREET2">Line 2</label>
+      <input type="text" id="C_STREET2">
+    </div>
+
+    <div class="smallmed field_container">
+      <label for="C_STREET3">Line 3</label>
+      <input type="text" id="C_STREET3">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="smallmed field_container">
+      <label for="C_CITY">Cty</label>
+      <input type="text" id="C_CITY">
+    </div>
+
+    <div class="smallmed field_container">
+      <label for="C_PROV_STATE">Province</label>
+      <input type="text" id="C_PROV_STATE">
+    </div>
+
+    <div class="smallmed field_container">
+      <div class="medium field_container">
+        <label for="C_COUNTRY">Country</label>
+        <input type="text" id="C_COUNTRY">
+      </div>
+
+      <div class="medium field_container">
+        <label for="C_POSTAL_ZIP">Postal Code</label>
+        <input type="text" id="C_POSTAL_ZIP">
+      </div>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Shipping Address</legend>
+
+  <div class="borderless form_row">
+    <div class="smallmed field_container">
+      <label for="C_S_STREET">Line 1</label>
+      <input type="text" id="C_S_STREET">
+    </div>
+
+    <div class="smallmed field_container">
+      <label for="C_S_STREET2">Line 2</label>
+      <input type="text" id="C_S_STREET2">
+    </div>
+
+    <div class="smallmed field_container">
+      <label for="C_S_STREET3">Line 3</label>
+      <input type="text" id="C_S_STREET3">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="smallmed field_container">
+      <label for="C_S_CITY">Cty</label>
+      <input type="text" id="C_S_CITY">
+    </div>
+
+    <div class="smallmed field_container">
+      <label for="C_S_PROV_STATE">Province</label>
+      <input type="text" id="C_S_PROV_STATE">
+    </div>
+
+    <div class="smallmed field_container">
+      <div class="medium field_container">
+        <label for="C_S_COUNTRY">Country</label>
+        <input type="text" id="C_S_COUNTRY">
+      </div>
+
+      <div class="medium field_container">
+        <label for="C_S_POSTAL_ZIP">Postal Code</label>
+        <input type="text" id="C_S_POSTAL_ZIP">
+      </div>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Billing Address</legend>
+
+  <div class="borderless form_row" style="margin-top: -20px;">
+    <div class="smallmed field_container">
+      <label for="BILL_SAMEAS_SHIP">Same as shipping</label>
+      <input type="checkbox" id="BILL_SAMEAS_SHIP" class="protect_field_exit unprotect_field_exit"
+         data-protect1="'BILL_SAMEAS_SHIP = ''X''',C_B_STREET"
+         data-protect2="'BILL_SAMEAS_SHIP = ''X''',C_B_STREET2"
+         data-protect3="'BILL_SAMEAS_SHIP = ''X''',C_B_STREET3"
+         data-protect4="'BILL_SAMEAS_SHIP = ''X''',C_B_CITY"
+         data-protect5="'BILL_SAMEAS_SHIP = ''X''',C_B_PROV_STATE"
+         data-protect6="'BILL_SAMEAS_SHIP = ''X''',C_B_COUNTRY"
+         data-protect7="'BILL_SAMEAS_SHIP = ''X''',C_B_POSTAL_ZIP"
+         data-unprotect1="'BILL_SAMEAS_SHIP <> ''X''',C_B_STREET"
+         data-unprotect2="'BILL_SAMEAS_SHIP <> ''X''',C_B_STREET2"
+         data-unprotect3="'BILL_SAMEAS_SHIP <> ''X''',C_B_STREET3"
+         data-unprotect4="'BILL_SAMEAS_SHIP <> ''X''',C_B_CITY"
+         data-unprotect5="'BILL_SAMEAS_SHIP <> ''X''',C_B_PROV_STATE"
+         data-unprotect6="'BILL_SAMEAS_SHIP <> ''X''',C_B_COUNTRY"
+         data-unprotect7="'BILL_SAMEAS_SHIP <> ''X''',C_B_POSTAL_ZIP"
+      >
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="smallmed field_container">
+      <label for="C_B_STREET">Line 1</label>
+      <input type="text" id="C_B_STREET">
+    </div>
+
+    <div class="smallmed field_container">
+      <label for="C_B_STREET2">Line 2</label>
+      <input type="text" id="C_B_STREET2">
+    </div>
+
+    <div class="smallmed field_container">
+      <label for="C_B_STREET3">Line 3</label>
+      <input type="text" id="C_B_STREET3">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="smallmed field_container">
+      <label for="C_B_CITY">Cty</label>
+      <input type="text" id="C_B_CITY">
+    </div>
+
+    <div class="smallmed field_container">
+      <label for="C_B_PROV_STATE">Province</label>
+      <input type="text" id="C_B_PROV_STATE">
+    </div>
+
+    <div class="smallmed field_container">
+      <div class="medium field_container">
+        <label for="C_B_COUNTRY">Country</label>
+        <input type="text" id="C_B_COUNTRY">
+      </div>
+
+      <div class="medium field_container">
+        <label for="C_B_POSTAL_ZIP">Postal Code</label>
+        <input type="text" id="C_B_POSTAL_ZIP">
+      </div>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Telephone</legend>
+
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <label for="C_TEL_HOME">Home</label>
+      <input type="text" id="C_TEL_HOME" class="mandatory_check" data-mandatory="C_EMAIL !- * C_TEL_WORK">
+    </div>
+
+    <div class="small field_container">
+      <label for="C_TEL_WORK">Work</label>
+      <input type="text" id="C_TEL_WORK" class="mandatory_check" data-mandatory="C_EMAIL !- * C_TEL_HOME">
+    </div>
+
+    <div class="small field_container">
+      <label for="C_TEL_CELL">Cell</label>
+      <input type="text" id="C_TEL_CELL">
+    </div>
+
+    <div class="small field_container">
+      <label for="C_TEL_FAX">Fax</label>
+      <input type="text" id="C_TEL_FAX">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Approval</legend>
+  <div class="borderless form_row">
+    <div class="small form_button field_container" style="font-size: 1rem; margin-top: 3px;" id="APPROVED_BUTTON">
+    <a href="#" onclick="approveClient($(this));"><i class="fa fa-check"></i> Approved</a>
+    </div>
+    <div class="small validated_table field_container">
+      <label for="C_APPROVED_BY">Approved By</label>
+      <input type="text" id="C_APPROVED_BY" data-val-database="STAFF_ID" data-val-field="USER_NAME" readonly>
+    </div>
+    <div class="small field_container">
+      <label for="C_APPROVED_ON">Approved On</label>
+      <input type="text" id="C_APPROVED_ON" readonly>
+    </div>
+    <div class="small field_container">
+      <label for="C_REG_STATUS">Record Status</label>
+      <select id="C_REG_STATUS">
+        <option>NEW</option>
+        <option>PENDING</option>
+        <option>APPROVED</option>
+        <option>DELETED</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="small form_button field_container" style="font-size: 1rem; margin-top: 3px;" id="RENEW_CLIENT">
+      <a href="#" onclick="renewClient($(this));" data-param="APP_EXP_DATE,++1+2Y"><i class="fa fa-check"></i> Renew Client Expiry</a>
+    </div>
+    <div class="small field_container">
+      <label for="APP_EXP_DATE">Client Expiry Date</label>
+      <input type="text" id="APP_EXP_DATE" readonly>
+    </div>
+    <div class="small field_container">
+      <label for="NON_EXPIRED">Never Expired</label>
+      <input type="checkbox" id="NON_EXPIRED" class="call_exit protect_field_exit unprotect_field_exit generate_field_exit"
+         data-protect1="'NON_EXPIRED = ''X''',RENEW_CLIENT"
+         data-protect2="'NON_EXPIRED = ''X''',RENEW_PWD_EXPIRY"
+         data-generate1="'NON_EXPIRED = ''X''',APP_EXP_DATE,''"
+         data-generate2="'NON_EXPIRED = ''X''',PW_EXPIRY_DATE,''"
+         data-unprotect1="'NON_EXPIRED <> ''X''',RENEW_CLIENT"
+         data-unprotect2="'NON_EXPIRED <> ''X''',RENEW_PWD_EXPIRY"
+      >
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="small form_button field_container" style="font-size: 1rem; margin-top: 3px;" id="RENEW_PWD_EXPIRY">
+      <a href="#" onclick="renewPassword($(this));" data-param="PW_EXPIRY_DATE,++1+90D"><i class="fa fa-check"></i> Renew Password Expiry</a>
+    </div>
+    <div class="small field_container">
+      <label for="PW_EXPIRY_DATE">Password Expiry Date</label>
+      <input type="text" id="PW_EXPIRY_DATE" readonly>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Actions taken on record</legend>
+
+  <div class="borderless form_row">
+    <div class="medium field_container">
+      <label for="C_INPUT_BY">Entered By</label>
+      <input type="text" id="C_INPUT_BY" readonly>
+    </div>
+
+    <div class="medium field_container">
+      <label for="C_INPUT_ON">Entered On</label>
+      <input type="text" id="C_INPUT_ON" readonly>
+    </div>
+  </div>
+
+  <fieldset class="repeating_group" data-group-title="Last Modified" id="C_MODIFIED">
+    <div class="borderless form_row">
+      <div class="medium field_container">
+        <label for="C_MOD_BY">By</label>
+        <input type="text" id="C_MOD_BY" readonly>
+      </div>
+
+      <div class="medium field_container">
+        <label for="C_MOD_ON">On</label>
+        <input type="text" id="C_MOD_ON" readonly>
+      </div>
+    </div>
+  </fieldset>
+</fieldset>
+
+<!-- call initalization user routine -->
+<input type="hidden" class="init_call_exit protect_field_exit unprotect_field_exit"
+   data-protect1="'C_REG_STATUS = ''APPROVED''',APPROVED_BUTTON"
+   data-protect2="'NON_EXPIRED = ''X''',RENEW_CLIENT"
+   data-protect3="'NON_EXPIRED = ''X''',RENEW_PWD_EXPIRY"
+/>
+
+<!-- call record wrapup user routine -->
+<input type="hidden" class="wrapup_user_exit"
+  data-exit="wrapupClient"
+/>

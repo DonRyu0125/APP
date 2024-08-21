@@ -1,0 +1,191 @@
+<span class="hidden current_page" id="description_main"></span>
+
+<div class="form_row">
+  <div class="medium field_container">
+    <label for="REFD_HIGHER">Parent Reference Code</label>
+    <input type="text" id="REFD_HIGHER" readonly>
+  </div>
+
+  <div class="medium field_container">
+    <label for="REFD_LOWEREXIST">Lower levels?</label>
+    <input type="checkbox" id="REFD_LOWEREXIST">
+  </div>
+</div>
+
+<fieldset class="logical_group">
+  <legend>Dates</legend>
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="DATE_CR_INC">Creation (eg. 1991-01-07)</label>
+      <input type="text" id="DATE_CR_INC">
+    </div>
+
+    <div class="small field_container">
+      <label for="DATE_CR_PRED">Predominant (eg. 2000-2015)</i></label>
+      <input type="text" id="DATE_CR_PRED">
+    </div>
+
+    <div class="small field_container">
+      <label for="DATE_SEARCH">Search <i>(descriptive date)</i></label>
+      <input type="text" id="DATE_SEARCH">
+    </div>
+
+    <div class="small field_container">
+      <label for="DATE_ACCUM">Accumulation (eg. 1950s-1990)</label>
+      <input type="text" id="DATE_ACCUM">
+    </div>
+  </div>
+</fieldset>
+
+<div class="form_row">
+  <div class="full repeating_field field_container"> <!-- RL-20211231 -->
+    <label for="PHYSICAL_DESC">Physical Description</label>
+    <textarea id="PHYSICAL_DESC"></textarea>
+  </div>
+</div>
+
+
+<fieldset class="repeating_group" data-group-title="Office of Origin - Primarily for Government and Hierarchical Organisations" id="OFFICE_OF_ORIGIN">
+   <div class="form_row">
+    <div class="small field_container">
+      <label for="DATE_OFFICE">Controlling Dates</label>
+      <input type="text" id="DATE_OFFICE">
+    </div>
+    </div>
+	
+ <div class="form_row contains_browse">
+    <div class="full org_validated_field field_container" data-map="office_org_main">
+      <label for="OFFICE_AB">Main Authority</label>
+      <input type="text" id="OFFICE_AB" readonly>
+      <input type="hidden" id="OFFICE_ID">
+    </div>
+	</div>
+  <div class="form_row contains_browse">
+    <div class="full org_validated_field field_container" data-map="office_org_sub">
+      <label for="OFFICE_C">Sub-Authority</label>
+      <input type="text" id="OFFICE_C" readonly>
+      <input type="hidden" id="OFFICEC_ID">
+    </div>
+  </div>
+  </fieldset>
+
+<fieldset class="repeating_group" data-group-title="Origination - Enter the person/organisation responsible for creation " id="ORIGINATION_GRP">
+  <div class="form_row contains_browse">
+    <div class="full org_validated_field people_validated_field field_container" data-map-people="desc_originator" data-map-org="desc_org_originator">  <!-- RL-20211231 -->
+      <label for="ORIGINATOR">Creator</label>
+      <input type="text" id="ORIGINATOR" readonly>
+      <input type="hidden" id="ORIGIN_ID">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="EAD_LABEL">EAD Label</label>
+      <input type="text" id="EAD_LABEL">
+    </div>
+
+    <div class="medium field_container">
+      <label for="EAD_ROLE">EAD Role</label>
+      <select id="EAD_ROLE">
+        <option></option>
+        <option>corpname</option>
+        <option>famname</option>
+        <option>name</option>
+        <option>persname</option>
+      </select>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Accession" id="ACCESSION_GRP">
+  <div class="borderless form_row">
+    <div class="medium accession_validated_field field_container" data-map="accsn_group">
+      <label for="D_ACCNO_ID">Accession No.</label>
+      <input type="text" id="D_ACCNO_ID" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="PROCESSED">Processed</label>
+      <input type="checkbox" id="PROCESSED">
+    </div>
+    <div class="small repeating_field field_container">
+      <label for="BOX_NO">Box. No.</label>
+      <input type="text" id="BOX_NO">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Other Title" id="OTHER_TITLE_GRP">
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="OTHER_TITLE">Other Title</label>
+      <input type="text" id="OTHER_TITLE">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full validated_table field_container">
+      <label for="OTHER_TITLE_TYPE">Type</label>
+      <select id="OTHER_TITLE_TYPE">
+        <option></option>
+        <option>Alternate Language</option>
+        <option>Parallel</option>
+        <option>Proper/Formal</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="OTHER_TITLE_NOTE">Notes</label>
+      <textarea id="OTHER_TITLE_NOTE"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="SCOPE">Scope & Content</label>
+    <textarea id="SCOPE"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="ABSTRACT">Abstract</label>
+    <textarea id="ABSTRACT"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="ARRANGEMENT">Arrangement</label>
+    <textarea id="ARRANGEMENT"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full repeating_field field_container">
+    <label for="FORM">GMD</label>
+    <select id="FORM">
+      <option></option>
+      <option>Textual records</option>
+      <option>Graphic materials</option>
+      <option>Architectural and technical drawings</option>
+      <option>Cartographic materials</option>
+      <option>Moving images</option>
+      <option>Sound recordings</option>
+      <option>Artifacts</option>
+      <option>Philatelic records</option>
+      <option>Electronic records  </option>
+    </select>
+  </div>
+  </div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="OTHER_CONTEXT">Other Context</label>
+    <textarea id="OTHER_CONTEXT"></textarea>
+  </div>
+</div>
+

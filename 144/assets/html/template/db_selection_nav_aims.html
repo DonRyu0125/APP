@@ -1,0 +1,162 @@
+<nav id="database_selection">
+  <ul>
+  <!-- RL-2021-08-20 -->
+  <!-- #IF GLOBAL(MWI_ACCESS_TOKEN) == PUBLIC BODY -->
+    <li class="public_body_request">
+      <a href="^HOME_SESSID^/PUBLIC_BODY_REQUEST?OPEN&DBOPTION=SEARCH&CLEAR=Y">Tranfer Request</a>
+    </li>
+    <li class="schedule">
+      <a href="^HOME_SESSID^/SCHEDULE_VAL?OPEN&DBOPTION=SEARCH&CLEAR=Y">Record Schedules</a>
+    </li>
+    <li class="record_series">
+      <a href="^HOME_SESSID^/RECORD_SERIES?OPEN&DBOPTION=SEARCH&CLEAR=Y">Record Series</a>
+    </li>
+    <li class="branch">
+      <a href="^HOME_SESSID^/BRANCH?OPEN&DBOPTION=SEARCH&CLEAR=Y">Branch/Program Authority</a>
+    </li>
+
+  <!-- #ELSE -->
+
+  <!-- RL-2021-03-24 -->
+    <li class="servicedesk">
+      <a href="^HOME_SESSID^/SERVICEDESK_SUMMARY?OPEN&DBOPTION=SEARCH&CLEAR=Y">Request</a>
+    </li>
+    <!--
+    <li class="public_body_request">
+      <a href="^HOME_SESSID^/PUBLIC_BODY_REQUEST?OPEN&DBOPTION=SEARCH&CLEAR=Y">Tranfer Request</a>
+    </li>
+    -->
+    <li class="accession">
+      <a href="^HOME_SESSID^/ACCESSION?OPEN&DBOPTION=SEARCH&CLEAR=Y">Accession</a>
+    </li>
+    <!--
+    <li class="Container">
+      <a href="^HOME_SESSID^/CONTAINER?OPEN&DBOPTION=SEARCH&CLEAR=Y">Container</a>
+    </li>
+    -->
+    <li class="description">
+      <a href="^HOME_SESSID^/DESCRIPTION?OPEN&DBOPTION=SEARCH&CLEAR=Y">Description</a>
+    </li>
+    <li class="enquiries">
+        <a href="^HOME_SESSID^/ENQUIRIES?OPEN&DBOPTION=SEARCH&CLEAR=Y">Inquiries</a>
+    </li>
+    <!--
+    <li class="collections">
+      <a href="^HOME_SESSID^/COLLECTIONS?OPEN&DBOPTION=SEARCH&CLEAR=Y">Collections</a>
+    </li>
+    -->
+    <li class="loans">
+      <a href="^HOME_SESSID^/LOAN_OUT?OPEN&DBOPTION=SEARCH&CLEAR=Y">Loan Out</a>
+    </li>
+    <!--
+    <li class="catalogue">
+      <a href="^HOME_SESSID^/CATALOGUE?OPEN&DBOPTION=SEARCH&CLEAR=Y">Library</a>
+    </li>
+    <li class="client">
+      <a href="^HOME_SESSID^/CLIENT?OPEN&DBOPTION=SEARCH&CLEAR=Y">Client</a>
+    </li>
+    <li class="comments">
+      <a href="^HOME_SESSID^/COMMENTS?OPEN&DBOPTION=SEARCH&CLEAR=Y">Comments</a>
+    </li>
+    <li class="questions">
+      <a href="^HOME_SESSID^/QUESTIONS?OPEN&DBOPTION=SEARCH&CLEAR=Y">Questions</a>
+    </li>
+    <!--
+
+    <!--
+    <li class="payment">
+      <a href="^HOME_SESSID^/PAYMENT?OPEN&DBOPTION=SEARCH&CLEAR=Y">Payment History</a>
+    </li>
+    <li class="project">
+      <a href="^HOME_SESSID^/PROJECT_DB?OPEN&DBOPTION=SEARCH&CLEAR=Y">Projects</a>
+    </li>
+    <li class="incident">
+      <a href="^HOME_SESSID^/JOB_INCIDENT?OPEN&DBOPTION=SEARCH&CLEAR=Y">Incidents</a>
+    </li>
+
+
+    <li class="dropdown">
+      <a href="#" data-toggle="dropdown" class="dropdown-toggle">Location
+        <b class="caret"></b>
+      </a>
+      <ul class="dropdown-menu">
+        <li class="locations">
+          <a href="^HOME_SESSID^/LOCATION_AUTHORITY?OPEN&DBOPTION=SEARCH&CLEAR=Y">Locations (Archives/Library)</a>
+        </li>
+        <li class="artlocations">
+          <a href="^HOME_SESSID^/ART_LOCATION_VAL?OPEN&DBOPTION=SEARCH&CLEAR=Y">Art Location</a>
+        </li>
+      </ul>
+    </li>
+    -->
+    <li class="dropdown">
+      <a href="#" data-toggle="dropdown" class="dropdown-toggle">Authorities
+        <b class="caret"></b>
+      </a>
+      <ul class="dropdown-menu">
+        <!--
+        <li class="name-authority">
+          <a href="^HOME_SESSID^/AUTHORITY?OPEN&DBOPTION=SEARCH&CLEAR=Y">Name Authority</a>
+        </li>
+        -->
+        <li class="people">
+          <a href="^HOME_SESSID^/PEOPLE_VAL?OPEN&DBOPTION=SEARCH&CLEAR=Y">People</a>
+        </li>
+        <li class="organizations">
+          <a href="^HOME_SESSID^/ORGANIZATION_VAL?OPEN&DBOPTION=SEARCH&CLEAR=Y">Organizations</a>
+        </li>
+        <li class="locations">
+          <a href="^HOME_SESSID^/LOCATION_AUTHORITY?OPEN&DBOPTION=SEARCH&CLEAR=Y">Locations</a>
+        </li>
+        </li>
+        <li class="valuser">
+            <a href="^HOME_SESSID^/VAL_USER?OPEN&DBOPTION=SEARCH&CLEAR=Y">Staff Names</a>
+        </li>
+        <!--
+        <li class="properties">
+          <a href="^HOME_SESSID^/PROPERTIES_DB?OPEN&DBOPTION=SEARCH&CLEAR=Y">Property</a>
+		  -->
+        </li>
+        <li class="buildings">
+          <a href="^HOME_SESSID^/BUILDINGS_DB?OPEN&DBOPTION=SEARCH&CLEAR=Y">Buildings</a>
+        </li>
+         <li class="schedule_val">
+          <a href="^HOME_SESSID^/SCHEDULE_VAL?OPEN&DBOPTION=SEARCH&CLEAR=Y">Record Schedules</a>
+        </li>
+        <!--
+        <li class="record_series">
+          <a href="^HOME_SESSID^/RECORD_SERIES?OPEN&DBOPTION=SEARCH&CLEAR=Y">Record Series</a>
+        </li>
+		  -->
+        <li class="sites">
+          <a href="^HOME_SESSID^/GEOGRAPHIC_SITE?OPEN&DBOPTION=SEARCH&CLEAR=Y">Sites</a>
+        </li>
+        <li class="restrictions">
+          <a href="^HOME_SESSID^/RESTRICTIONS?OPEN&DBOPTION=SEARCH&CLEAR=Y">Restrictions</a>
+        </li>
+        <!--
+        <li class="forbiddenword">
+          <a href="^HOME_SESSID^/FORBIDDEN_WORD?OPEN&DBOPTION=SEARCH&CLEAR=Y">Forbidden Words</a>
+        </li>
+        <!--
+        <li class="event-notification">
+          <a href="^HOME_SESSID^/EVENT_NOTIFICATION?OPEN&DBOPTION=SEARCH&CLEAR=Y">Event Notifications</a>
+        </li>
+        <li class="user_group_lookup">
+          <a href="^HOME_SESSID^/USER_GROUP_LOOKUP?OPEN&DBOPTION=SEARCH&CLEAR=Y">User Group Lookup</a>
+        </li>
+        <li class="lookup_email_template">
+          <a href="^HOME_SESSID^/LOOKUP_EMAIL_TEMPLATE?OPEN&DBOPTION=SEARCH&CLEAR=Y">Email Template</a>
+        </li>
+        <li class="ministry">
+          <a href="^HOME_SESSID^/MINISTRY?OPEN&DBOPTION=SEARCH&CLEAR=Y">Ministry Name</a>
+        </li>
+        <li class="branch">
+          <a href="^HOME_SESSID^/BRANCH?OPEN&DBOPTION=SEARCH&CLEAR=Y">Branch/Program Authority</a>
+        </li>
+        -->
+      </ul>
+    </li>
+  <!-- #ENDIF -->
+  </ul>
+</nav>

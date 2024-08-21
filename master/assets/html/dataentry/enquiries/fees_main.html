@@ -1,0 +1,202 @@
+<span class="hidden current_page" id="fees_main"></span>
+
+<fieldset class="repeating_group" data-group-title="Digital Items Orders" id="R_ITEM_INFO">
+  <fieldset class="logical_group">
+    <legend>Print or Digital Items Ordered</legend>
+<div class="borderless form_row">
+  <div class="medium m3_validated_field field_container" data-map="desc_orders">
+    <label for="R_ITEM_ACC_NO">Accession Number</label>
+    <input type="text" id="R_ITEM_ACC_NO" readonly>
+  </div>
+
+  <div class="medium field_container">
+    <label for="R_ITEM_TITLE">Title</label>
+    <input type="text" id="R_ITEM_TITLE" readonly>
+  </div>
+  </div>
+ 
+  <div class="form_row">
+    <div class="small salesitems_validated_field field_container" data-map="sale_item">
+    <label for="R_ITEM_TYPE">Type</label>
+    <input type="text" id="R_ITEM_TYPE" readonly>
+      <input type="hidden" id="R_ID">
+ </div>
+
+       <div class="small field_container">
+        <label for="R_ITEM_COST">Cost</label>
+        <input type="text" id="R_ITEM_COST" readonly>
+    </div>
+
+       <div class="small field_container">
+        <label for="R_TOT_NUM_COPIES">Quantity</label>
+        <input type="text" id="R_TOT_NUM_COPIES">
+    </div>
+	
+	<div class="small field_container">
+        <label for="R_ITEM_TOTAL">Total</label>
+        <input type="text" id="R_ITEM_TOTAL">
+    </div>
+	</div>
+
+ <div class="form_row">  
+   <div class="full field_container">
+      <label for="R_SPEC_INSTRUCT">Details</label>
+      <textarea id="R_SPEC_INSTRUCT"></textarea>
+    </div> 
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Reproduction" id="RR_ITEM_INFO">
+  <fieldset class="logical_group">
+    <legend>Rights Management</legend>
+<div class="borderless form_row">
+  <div class="medium m3_validated_field field_container" data-map="desc_repro">
+    <label for="RR_ITEM_ACC_NO">Accession Number</label>
+    <input type="text" id="RR_ITEM_ACC_NO" readonly>
+  </div>
+
+  <div class="medium field_container">
+    <label for="RR_ITEM_TITLE">Title</label>
+    <input type="text" id="RR_ITEM_TITLE" readonly>
+  </div>
+  </div>
+
+  <div class="form_row">
+    <div class="large rightsitems_validated_field field_container" data-map="rights_item">
+      <label for="RR_ITEM_TYPE">Type</label>
+      <input type="text" id="RR_ITEM_TYPE" readonly>
+      <input type="hidden" id="RR_ID">
+	  </div>
+
+       <div class="small field_container">
+        <label for="RR_ITEM_COST">Cost</label>
+        <input type="text" id="RR_ITEM_COST" readonly>
+    </div>
+    </div>
+
+  <div class="form_row">
+       <div class="small field_container">
+        <label for="RIGHTS_DISCOUNT">Discount</label>
+        <input type="text" id="RIGHTS_DISCOUNT">
+    </div>
+	
+	<div class="small field_container">
+        <label for="NET_PAYMENT_SUBT">Total</label>
+        <input type="text" id="NET_PAYMENT_SUBTL">
+    </div>
+	</div>
+	
+   <div class="form_row">
+	<div class="full field_container">
+        <label for="RR_PROJECT_TITLE">Project/Publication title</label>
+        <input type="text" id="RR_PROJECT_TITLE">
+    </div>
+	
+ <div class="form_row">  
+   <div class="full field_container">
+      <label for="RR_SPEC_INSTRUCT">Details</label>
+      <textarea id="RR_SPEC_INSTRUCT"></textarea>
+    </div> 
+  </div>
+  
+    <fieldset class="repeating_group" data-group-title="Reproduction Copyright Textual" id="EN_COPTX_GRP">
+      <div class="form_row borderless">
+        <div class="full text file_attachment field_container">
+          <label for="EN_COPTX_ACCESS">Text/Access Path</label>
+          <input type="text" id="EN_COPTX_ACCESS">
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="EN_COPTX_CAPTION">Caption</label>
+          <textarea id="EN_COPTX_CAPTION"></textarea>
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="large field_container">
+          <label for="EN_COPTX_TYPE">Type</label>
+          <input type="text" id="EN_COPTX_TYPE">
+        </div>
+      </div>
+
+      <fieldset class="logical_group">
+        <legend>Trusted Digital Repository (TDR) Details</legend>
+
+        <div class="form_row">
+          <div class="full field_container">
+            <label for="EN_COPTX_AST_NAME">Asset Name</label>
+            <input type="text" id="EN_COPTX_AST_NAME" readonly>
+          </div>
+        </div>
+
+        <div class="form_row borderless">
+          <div class="full field_container">
+            <label for="EN_COPTX_OCR">TDR OCR</label>
+            <input type="text" id="EN_COPTX_OCR" readonly>
+          </div>
+        </div>
+
+        <div class="form_row">
+          <div class="full field_container">
+            <label for="EN_COPTX_THUMB">TDR Thumb</label>
+            <input type="text" id="EN_COPTX_THUMB">
+          </div>
+        </div>
+
+        <div class="form_row">
+          <div class="full field_container">
+            <label for="EN_COPTX_PRESER">TDR Preservation</label>
+            <input type="text" id="EN_COPTX_PRESER" readonly>
+          </div>
+        </div>
+
+        <div class="form_row">
+          <div class="full field_container">
+            <label for="EN_COPTX_ORIGIN">TDR Original</label>
+            <input type="text" id="EN_COPTX_ORIGIN" readonly>
+          </div>
+        </div>
+
+        <div class="form_row">
+          <div class="full field_container">
+            <label for="EN_COPTX_OTHER">TDR Other</label>
+            <input type="text" id="EN_COPTX_OTHER" readonly>
+          </div>
+        </div>
+      </fieldset>
+    </fieldset>
+</fieldset>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Additional Costs" id="ADD_ENQ_COSTS">
+  <div class="form_row">
+    <div class="medium field_container">
+        <label for="ENQ_COST_TYP">Type</label>
+        <input type="text" id="ENQ_COST_TYP">
+	</div>
+
+	<div class="small field_container">
+        <label for="ADDL_COST_AMNT">Cost</label>
+        <input type="text" id="ADDL_COST_AMNT">
+	</div>
+
+    <div class="small field_container">
+      <label for="ADDL_CLIENTAPPR">Type</label>
+      <select id="ADDL_CLIENTAPPR">
+           <option></option>
+           <option>Yes</option>
+           <option>No</option>
+		   <option>Not required</option>
+        </select>
+      </div>>
+	 </div>
+	
+ <div class="form_row">  
+   <div class="full field_container">
+      <label for="ADD_SPC_INS">Details</label>
+      <textarea id="ADD_SPC_INS"></textarea>
+    </div> 
+  </div>
+</fieldset>

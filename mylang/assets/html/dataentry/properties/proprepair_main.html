@@ -1,0 +1,211 @@
+<span class="hidden current_page" id="proprepair_main"></span>
+
+<fieldset class="repeating_group" data-group-title="Repairs(s)" id="PD_REPAIRS_GRP">
+  <div class="form_row">
+     <div class="full field_container">
+       <label for="PD_DAMAGE_SPEC">Area damaged</label>
+       <input type="text" id="PD_DAMAGE_SPEC">
+     </div>
+  </div>
+
+  <div class="form_row">
+     <div class="full field_container">
+       <label for="PD_REPAIR">Repair Required</label>
+       <input type="text" id="PD_REPAIR">
+     </div>
+  </div>
+
+  <fieldset class="repeating_group" data-group-title="Repair Proposal(s)" id="PD_REPAIR_PROP">
+    <div class="form_row">
+      <div class="small date field_container">
+        <label for="PD_PROP_IMP_DATE">Date</label>
+        <input type="text" id="PD_PROP_IMP_DATE">
+      </div>
+
+      <div class="small field_container">
+         <label for="PD_PROPOSAL_IMP">Proposal Implemented?</label>
+         <select id="PD_PROPOSAL_IMP">
+           <option></option>
+           <option>Yes</option>
+           <option>No</option>
+         </select>
+      </div>
+
+      <div class="small combo field_container">
+         <label for="PD_PROPOSAL_PRIC">Price</label>
+         <input type="text" id="PD_PROPOSAL_PRIC">
+         <select id="PD_PROP_PRIC_CUR">
+           <option></option>
+           <option>CAD</option>
+           <option>EURO</option>
+           <option>FRA</option>
+           <option>GBP</option>
+           <option>USD</option>
+         </select>
+      </div>
+    </div>
+
+    <div class="form_row contains_browse">
+      <div class="full org_validated_field people_validated_field field_container" data-map-people="proposal_by" data-map-org="proposal_org_by"> <!-- RL-20211231 -->
+        <label for="PD_PROP_IMP_BY">By</label>
+        <input type="text" id="PD_PROP_IMP_BY" readonly>
+        <input type="hidden" id="PD_PROP_IMP_B_ID">
+      </div>
+    </div>
+
+    <div class="form_row">
+      <div class="full field_container">
+        <label for="PD_PROPOSAL_NOTE">Description:</label>
+        <textarea id="PD_PROPOSAL_NOTE"></textarea>
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="full text file_attachment repeating_field field_container">
+        <label for="PD_PROPOSAL_DOC">Document(s)</label>
+        <input type="text" id="PD_PROPOSAL_DOC">
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="logical_group">
+    <legend>Estimated Costs</legend>
+    <div class="form_row">
+      <div class="small date field_container">
+        <label for="PD_REPAIR_START">Date</label>
+        <input type="text" id="PD_REPAIR_START">
+      </div>
+
+      <div class="small date field_container">
+        <label for="PD_REPAIR_END">End Date</label>
+        <input type="text" id="PD_REPAIR_END">
+      </div>
+
+      <div class="small combo field_container">
+        <label for="PD_REPAIR_EST">Price</label>
+        <input type="text" id="PD_REPAIR_EST">
+        <select id="PD_REPAIR_EST_CU">
+          <option></option>
+          <option>CAD</option>
+          <option>EURO</option>
+          <option>FRA</option>
+          <option>GBP</option>
+          <option>USD</option>
+        </select>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="logical_group">
+    <legend>Actual Costs</legend>
+
+    <div class="form_row">
+      <div class="small date field_container">
+        <label for="PD_REPAIR_ASTART">Start Date</label>
+        <input type="text" id="PD_REPAIR_ASTART">
+      </div>
+
+      <div class="small date field_container">
+        <label for="PD_REPAIR_AEND">End Date</label>
+        <input type="text" id="PD_REPAIR_AEND">
+      </div>
+
+      <div class="small combo field_container">
+        <label for="PD_REPAIR_ACT">Price</label>
+        <input type="text" id="PD_REPAIR_ACT">
+        <select id="PD_REPAIR_ACT_CU">
+          <option></option>
+          <option>CAD</option>
+          <option>EURO</option>
+          <option>FRA</option>
+          <option>GBP</option>
+          <option>USD</option>
+        </select>
+      </div>
+    </div>
+  </fieldset>
+
+  <div class="form_row contains_browse">
+    <div class="full org_validated_field people_validated_field field_container" data-map-people="repair_by" data-map-org="repair_org_by">  <!-- RL-20211231 -->
+      <label for="PD_REPAIR_BY">Repaired by</label>
+      <input type="text" id="PD_REPAIR_BY" readonly>
+      <input type="hidden" id="PD_REPAIR_BY_ID">
+    </div>
+  </div>
+
+  <div class="form_row contains_browse">
+    <div class="full org_validated_field people_validated_field field_container" data-map-people="proj_architect" data-map-org="proj_org_architect"> <!-- RL-20211231 -->
+      <label for="PD_PROJ_ARCHITEC">Project Architect</label>
+      <input type="text" id="PD_PROJ_ARCHITEC" readonly>
+      <input type="hidden" id="PD_PROJ_ARCH_ID">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="PD_REPAIR_NOTES">Note</label>
+      <textarea id="PD_REPAIR_NOTES"></textarea>
+    </div>
+  </div>
+
+  <fieldset class="repeating_group contains_image" data-group-title="Repair Images" id="PD_REPAIR_IMAGES">
+    <div class="form_row">
+      <div class="full image file_attachment field_container">
+        <label for="PD_REPAIR_IMG">Image Path</label>
+        <input type="text" id="PD_REPAIR_IMG">
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="PD_REPAIR_IMG_CA">Note</label>
+        <textarea id="PD_REPAIR_IMG_CA"></textarea>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="repeating_group" data-group-title="Repair Video" id="PD_REPAIR_VIDEOS">
+    <div class="borderless form_row">
+      <div class="full video file_attachment field_container">
+        <label for="PD_REPAIR_VIDEO">Video Path</label>
+        <input type="text" id="PD_REPAIR_VIDEO" readonly>
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="PD_REPAIR_VID_NO">Note</label>
+        <textarea id="PD_REPAIR_VID_NO"></textarea>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="repeating_group" data-group-title="Repair Documents" id="PD_REPAIR_DOCS">
+    <div class="borderless form_row">
+      <div class="full text file_attachment field_container">
+        <label for="PD_REPAIR_DOC_PA">Notes Path</label>
+        <input type="text" id="PD_REPAIR_DOC_PA" readonly>
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="large field_container">
+        <label for="PD_REPAIR_DOC_TY">Type</label>
+        <input type="text" id="PD_REPAIR_DOC_TY">
+      </div>
+
+      <div class="small date field_container">
+        <label for="PD_REPAIR_DOC_DT">Date</label>
+        <input type="text" id="PD_REPAIR_DOC_DT">
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="PD_REPAIR_DOC_NO">Note</label>
+        <textarea id="PD_REPAIR_DOC_NO"></textarea>
+      </div>
+    </div>
+  </fieldset>
+</fieldset>
+

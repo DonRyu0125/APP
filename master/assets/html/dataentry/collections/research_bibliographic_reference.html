@@ -1,0 +1,120 @@
+<span class="hidden current_page" id="research_bibliographic_reference"></span>
+
+<fieldset class="repeating_group" data-group-title="Bibliographic Reference" id="REFERENCE_GROUP">
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="REFERENCE">Title</label>
+      <input type="text" id="REFERENCE">
+    </div>
+
+    <div class="small field_container">
+      <label for="BOOK_RECEIVED">Book Received</label>
+      <select id="BOOK_RECEIVED">
+        <option></option>
+        <option value="X">Yes</option>
+        <option value="">No</option>
+      </select>
+    </div>
+    
+    <div class="small field_container">
+      <label for="BIB_LEVEL">Bibliographic Level</label>
+      <select id="BIB_LEVEL">
+        <option></option>  
+        <option>A</option>  
+        <option>M</option>  
+        <option>C</option>  
+        <option>S</option>  
+      </select>
+    </div>
+  </div>
+
+  <fieldset class="repeating_group" data-group-title="Author" id="REF_ASSOC_GRP">
+    <div class="borderless form_row">
+      <div class="full people_validated_field org_validated_field field_container" data-map="bibliographic_author">
+        <label for="REFERENCE_ASSOC">Author</label>
+        <input type="text" id="REFERENCE_ASSOC" readonly>
+        <input type="hidden" id="REF_ASSOC_ID">
+      </div>
+    </div>
+  </fieldset>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="REFERENCE_REF">Page / Plate Reference</label>
+      <input type="text" id="REFERENCE_REF">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="large org_validated_field field_container" data-map="bibliographic_publisher">
+      <label for="PUBLISHER">Publisher</label>
+      <input type="text" id="PUBLISHER" readonly>
+      <input type="hidden" id="PUBLISHER_ID">
+    </div>
+
+    <div class="small field_container">
+      <label for="REF_CODE">Reference Code</label>
+      <input type="text" id="REF_CODE">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="PUBL_PLACE">Publication Place</label>
+      <input type="text" id="PUBL_PLACE">
+    </div>
+
+    <div class="small field_container">
+      <label for="PUBLISH_DATE">Publication Date</label>
+      <input type="text" id="PUBLISH_DATE">
+    </div>
+
+    <div class="small field_container">
+      <label for="REFERENCE_TYPE">Reference Type</label>
+      <select id="REFERENCE_TYPE">
+        <option></option>
+        <option>CART</option>
+        <option>CASS</option>
+        <option>CD-ROM</option>
+        <option>DISK</option>
+        <option>FILM</option>
+        <option>MFICHE</option>
+        <option>MFILM</option>
+        <option>MIXED</option>
+        <option>PRINT</option>
+        <option>SLIDE</option>
+        <option>TAPE</option>
+        <option>VIDEO</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="ISBN">ISBN</label>
+      <input type="text" id="ISBN">
+    </div>
+
+    <div class="small field_container">
+      <label for="ILLUSTRATE">Illustrations</label>
+      <input type="text" id="ILLUSTRATE">
+    </div>
+
+    <div class="small field_container">
+      <label for="OCLC_NO">OCLC Number</label>
+      <input type="text" id="OCLC_NO">
+    </div>
+
+    <div class="small field_container">
+      <label for="ISSN">ISSN</label>
+      <input type="text" id="ISSN">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="REFERENCE_NOTE">Notes</label>
+      <textarea id="REFERENCE_NOTE"></textarea>
+    </div>
+  </div>
+</fieldset>

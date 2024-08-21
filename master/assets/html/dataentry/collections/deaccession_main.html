@@ -1,0 +1,198 @@
+<span class="hidden current_page" id="deaccession_main"></span>
+
+<span class="hidden current_page" id="deaccession_main"></span>
+
+<div class="form_row">
+  <div class="small field_container">
+    <label for="LEGAL_RIGHT">Legal Right</label>
+    <select id="LEGAL_RIGHT">
+      <option></option>
+      <option>Yes</option>
+      <option>No</option>
+    </select>
+  </div>
+  <div class="small field_container">
+    <label for="DEACC_REF_NO">Reference No.</label>
+    <input type="text" id="DEACC_REF_NO">
+  </div>
+  <div class="small field_container">
+    <label for="DEACC_OBJ_NUM">Recipient's Object No.</label>
+    <input type="text" id="DEACC_OBJ_NUM">
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="DEACC_REASON">Reason</label>
+    <input type="text" id="DEACC_REASON">
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="DEACC_METHOD">Method</label>
+    <select id="DEACC_METHOD">
+      <option></option>
+      <option>Auctioned</option>
+      <option>Destroyed</option>
+      <option>Repatriated</option>
+      <option>Repatriated under treaty</option>
+      <option>Returned to owner</option>
+      <option>Transferred</option>
+    </select>
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Potential Recipient(s)" id="PROP_RECEIP_GRP">
+  <div class="borderless form_row">
+    <div class="full org_validated_field people_validated_field field_container" data-map="prop_receip">
+      <label for="PROPOSED_RECEIP">Name</label>
+      <input type="text" id="PROPOSED_RECEIP" readonly>
+      <input type="hidden" id="PROP_RECEIP_ID">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Actual Recipient(s)" id="ACT_RECEIP_GRP">
+  <div class="borderless form_row">
+    <div class="full org_validated_field people_validated_field field_container" data-map="act_receip">
+      <label for="ACT_RECEIPIENT">Name</label>
+      <input type="text" id="ACT_RECEIPIENT" readonly>
+      <input type="hidden" id="ACT_RECIP_ID">
+    </div>
+  </div>
+</fieldset>
+
+<div class="form_row">
+    <div class="small combo field_container">
+        <label for="DISPOSAL_PRICE">Disposal Price</label>
+        <input type="text" id="DISPOSAL_PRICE">
+        <select id="DISPOS_PRICE_CUR">
+          <option></option>
+          <option>CAD</option>
+          <option>EURO</option>
+          <option>FRA</option>
+          <option>GBP</option>
+          <option>USD</option>
+        </select>
+    </div>
+
+  <div class="small combo field_container">
+        <label for="DISPO_G_PRICE">Group Disposal Price</label>
+        <input type="text" id="DISPO_G_PRICE">
+        <select id="DISPO_G_PRICE_CU">
+          <option></option>
+          <option>CAD</option>
+          <option>EURO</option>
+          <option>FRA</option>
+          <option>GBP</option>
+          <option>USD</option>
+        </select>
+    </div>
+</div>
+
+<div class="form_row">
+  <div class="small date field_container">
+    <label for="DEACC_DATE">Deaccessioned On</label>
+    <input type="text" id="DEACC_DATE">
+  </div>
+
+  <div class="small validated_table field_container">
+    <label for="DEACCESSION_BY">Deaccessioned By</label>
+    <input type="text" id="DEACCESSION_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+  </div>
+
+  <div class="small date field_container">
+    <label for="APPROVED_DATE">Authorized Date</label>
+    <input type="text" id="APPROVED_DATE">
+  </div>
+
+  <div class="small validated_table field_container">
+    <label for="APPROVED_BY">Authorized By</label>
+    <input type="text" id="APPROVED_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="small date field_container">
+    <label for="DISPOSAL_DATE">Disposal Date</label>
+    <input type="text" id="DISPOSAL_DATE">
+  </div>
+ </div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="DEACCESSION_NOTE">Deaccession Notes</label>
+    <textarea id="DEACCESSION_NOTE"></textarea>
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Deaccession Textual - M3" id="M_DEATX_GRP">
+  <div class="form_row borderless">
+    <div class="full text file_attachment field_container">
+      <label for="M_DEATX_ACCESS">Text/Access Path</label>
+      <input type="text" id="M_DEATX_ACCESS">
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="M_DEATX_CAPTION">Caption</label>
+      <textarea id="M_DEATX_CAPTION"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="large field_container">
+      <label for="M_DEATX_TYPE">Type</label>
+      <input type="text" id="M_DEATX_TYPE">
+    </div>
+  </div>
+
+
+  <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="M_DEATX_AST_NAME">Asset Name</label>
+          <input type="text" id="M_DEATX_AST_NAME" readonly>
+        </div>
+      </div>
+
+        <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="M_DEATX_OCR">TDR OCR</label>
+          <input type="text" id="M_DEATX_OCR" readonly>
+        </div>
+      </div>
+
+     <div class="form_row">
+        <div class="full field_container">
+          <label for="M_DEATX_THUMB">TDR Thumb</label>
+          <input type="text" id="M_DEATX_THUMB" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="M_DEATX_PRESER">TDR Preservation</label>
+          <input type="text" id="M_DEATX_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="M_DEATX_ORIGIN">TDR Original</label>
+          <input type="text" id="M_DEATX_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="M_DEATX_OTHER">TDR Other</label>
+          <input type="text" id="M_DEATX_OTHER" readonly>
+        </div>
+      </div>
+  </fieldset>
+</fieldset>

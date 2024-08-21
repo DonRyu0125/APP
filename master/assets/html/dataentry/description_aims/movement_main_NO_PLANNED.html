@@ -1,0 +1,98 @@
+<span class="hidden current_page" id="movement_main"></span>
+
+<div class="form_row">
+  <div class="full location_validated_field field_container" data-map="permanent_location">
+    <label for="PERM_LOCATION">Permanent Location</label>
+    <input type="text" id="PERM_LOCATION" readonly>
+  </div>
+</div>
+
+
+<fieldset class="repeating_group" data-group-title="Current Location" id="A_CUR_LOC_INFO">
+  <div class="form_row">
+    <div class="medium location_validated_field field_container" data-map="current_movement">
+      <label for="A_CURATORS_CODE">Location</label>
+      <input type="text" id="A_CURATORS_CODE" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="A_BUS_UNIT">Organizational Unit</label>
+      <input type="text" id="A_BUS_UNIT" readonly>
+    </div>
+
+    <div class="small validated_table field_container">
+      <label for="A_MOVE_AUTHOR">Authorizer</label>
+      <input type="text" id="A_MOVE_AUTHOR" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="A_BUILDING">Building</label>
+      <input type="text" id="A_BUILDING" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="A_FLOOR">Area / Floor</label>
+      <input type="text" id="A_FLOOR" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="A_ROOM">Room</label>
+      <input type="text" id="A_ROOM" readonly>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="A_RACK_UNIT">Rack / Unit</label>
+      <input type="text" id="A_RACK_UNIT" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="A_SHELF">Shelf / Drawer</label>
+      <input type="text" id="A_SHELF" readonly>
+    </div>
+
+    <div class="medium field_container">
+      <label for="A_CONTAINER">Container Details</label>
+      <input type="text" id="A_CONTAINER" readonly>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="A_LOCATION_TYPE">Location Type</label>
+      <input type="text" id="A_LOCATION_TYPE" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="A_POSITION">Position</label>
+      <input type="text" id="A_POSITION" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="A_LOC_ACCESS">Access</label>
+      <input type="text" id="A_LOC_ACCESS" readonly>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="small date field_container">
+      <label for="A_LOC_DATE">Assigned On</label>
+      <input type="text" id="A_LOC_DATE">
+    </div>
+
+    <div class="medium validated_table field_container">
+      <label for="A_MOVE_CONTACT">Move Contact</label>
+      <input type="text" id="A_MOVE_CONTACT" data-val-database="VAL_USER" data-val-field="EXPANSION">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="A_MOVE_NOTE">Notes</label>
+      <textarea id="A_MOVE_NOTE"></textarea>
+    </div>
+  </div>
+</fieldset>

@@ -1,0 +1,118 @@
+<span class="hidden current_page" id="admin_main"></span>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="IMM_SOURCE_ACQ">Immediate Source of Acq.</label>
+    <textarea id="IMM_SOURCE_ACQ"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full validated_table repeating_field field_container">
+    <label for="TERMS_GOV_USE">Terms Governing Use</label>
+    <input type="text" id="TERMS_GOV_USE" data-val-database="COPYRIGHT_AUTHORITY" data-val-field="EXPANSION" readonly>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="LOC_OF_ORIGINAL">Location of Original</label>
+    <textarea id="LOC_OF_ORIGINAL"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="ACCRUALS_NOTES">Accruals Notes</label>
+    <textarea id="ACCRUALS_NOTES"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full repeating_field field_container">
+    <label for="PHYSICAL_COND">Physical Condition</label>
+    <textarea id="PHYSICAL_COND"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full repeating_field field_container">
+    <label for="TITLE_NOTES">Title Notes</label>
+    <textarea id="TITLE_NOTES"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="LANGUAGE_NOTES">Language Notes</label>
+    <textarea id="LANGUAGE_NOTES"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="CUSTODIAL_HIST">Custodial History</label>
+    <textarea id="CUSTODIAL_HIST"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="STATEMENT_RESP">Statement of Responsibility</label>
+    <textarea id="STATEMENT_RESP"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full repeating_field field_container">
+    <label for="HOW_TO_ORDER">How to Order</label>
+    <textarea id="HOW_TO_ORDER"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="INTERLOAN">Interloan</label>
+    <textarea id="INTERLOAN"></textarea>
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Notepad" id="ARCHIV_NOTE_GRP">
+  <div class="form_row">
+    <div class="medium validated_table field_container">
+      <label for="ARCHIV_NOTE_BY">Archivist</label>
+      <input type="text" id="ARCHIV_NOTE_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+
+    <div class="small date field_container">
+      <label for="ARCHIV_NOTE_DAT">Date</label>
+      <input type="text" id="ARCHIV_NOTE_DAT">
+    </div>
+
+    <div class="small field_container">
+      <label for="ARCHIV_NOTE_TYP">Type</label>
+      <input type="text" id="ARCHIV_NOTE_TYP">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="ARCH_NOTEPAD">Notes</label>
+      <textarea id="ARCH_NOTEPAD"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Last Modified" id="MODIFIED_HIST">
+  <div class="borderless form_row">
+    <div class="large field_container">
+      <label for="MODIFIED_BY">By</label>
+      <input type="text" id="MODIFIED_BY" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="MODIFIED_ON">On</label>
+      <input type="text" id="MODIFIED_ON" readonly>
+    </div>
+  </div>
+</fieldset>

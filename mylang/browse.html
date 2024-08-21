@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>Fast Access List</title>
+  <link rel="stylesheet" href="/mylang/assets/css/app.css">
+  <script src="/mylang/assets/js/vendor/jquery-min.js"></script>
+  <script src="/mylang/upload_util.js"></script>
+  <!-- include virtual="/mylang/browse_script.txt" -->
+</head>
+<body class="browse">
+  <section>
+    <div id="browse-form-body">
+      <span> </span>
+    </div>
+  </section>
+
+  <script>
+    $(document).ready(function () {
+      read_page('^parm1^','','browse-form-body');
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,257 @@
+<span class="hidden current_page" id="org_main"></span>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="ORG_MAIN_BODY"><u>Organization Name</u></label>
+    <input type="text" id="ORG_MAIN_BODY">
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="ORG_NATURAL_NAME">Natural Name</label>
+    <input type="text" id="ORG_NATURAL_NAME">
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Sub Organization Group" id="ORG_SUB_GROUP">
+  <div class="form_row">
+    <div class="full org_validated_field field_container" data-map="sub_org">
+    <label for="ORG_SUB_BODY">Sub-Organization</label>
+    <input type="text" id="ORG_SUB_BODY" readonly>
+      <input type="hidden" id="ORG_SUB_BODY_ID">
+  </div>
+  </div>
+</fieldset>
+
+  <div class="form_row">
+  <div class="small field_container">
+    <label for="ORG_ABBREVIATION">Abbreviation</label>
+    <input type="text" id="ORG_ABBREVIATION">
+  </div>
+  
+  <div class="small repeating_field field_container">
+    <label for="VENDOR_ROLE">Type</label>
+    <select id="VENDOR_ROLE">
+       <option></option>
+       <option>A Ontario Government Name</option>
+       <option>B Ontario Government Name</option>
+       <option>C Ontario Government Name</option>
+       <option>Corporate Name</option>
+       <option>Geographic Name</option>
+       <option>Other</option>
+    </select>
+  </div>
+  
+<!-- KN 2022-08-17 label changed from REFA-->
+  <div class="small field_container">
+    <label for="REFA">Agency Code</label>
+    <input type="text" id="REFA">
+  </div>
+</div>
+
+<!-- KN 2022-08-17 Status and Opac Ready Added -->
+<div class="form_row">
+    <div class="small field_container">
+      <label for="ORG_STATUS">Status</label>
+      <select id="ORG_STATUS">
+        <option></option>
+        <option>Preliminary</option>
+        <option>Review</option>
+        <option>Approved</option>
+      </select>
+    </div>
+
+    <div class="small field_container">
+      <label for="ORG_WEBREADY">Web Ready</label>
+      <select id="ORG_WEBREADY">
+        <option></option>
+        <option>Restrict</option>
+        <option>Review</option>
+        <option>Ready</option>
+      </select>
+    </div>
+</div>
+
+
+<fieldset class="logical_group">
+  <legend>Dates of Operation</legend>
+
+  <div class="borderless form_row">
+    <div class="medium field_container">
+      <label for="ORG_START">Start Date  <i>(descriptive date)</i></label>
+      <input type="text" id="ORG_START">
+    </div>
+
+    <div class="medium field_container">
+      <label for="ORG_END">End Date  <i>(descriptive date)</i></label>
+      <input type="text" id="ORG_END">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Alias" id="ALIAS_GROUP">
+  <div class="borderless form_row">
+    <div class="large field_container">
+      <label for="ORG_ALIAS">Alias</label>
+      <input type="text" id="ORG_ALIAS">
+    </div>
+
+    <div class="small repeating_field field_container">
+      <label for="ALIAS_TYPE">Type</label>
+      <select id="ALIAS_TYPE">
+        <option></option>
+        <option>Known As</option>
+        <option>Label</option>
+        <option>Other</option>
+      </select>
+    </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Contact" id="ORG_CONTACT">
+  <div class="form_row">
+    <div class="medium people_validated_field field_container" data-map="new_org_contact_name">
+      <label for="CON_FULLNAME3">Name</label>
+      <input type="text" id="CON_FULLNAME3" readonly>
+      <input type="hidden" id="CON_FULLNAME_ID">
+    </div>
+
+    <div class="small field_container">
+      <label for="PERSON_PHONE">Phone</label>
+      <input type="text" id="PERSON_PHONE">
+    </div>
+
+    <div class="small field_container">
+      <label for="PERSON_FAX">Fax</label>
+      <input type="text" id="PERSON_FAX">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="medium field_container">
+      <label for="PERSON_URL">URL</label>
+      <input type="text" id="PERSON_URL">
+    </div>
+
+    <div class="medium field_container">
+      <label for="PERSON_EMAIL">E-mail</label>
+      <input type="text" id="PERSON_EMAIL">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Address" id="O_OTH_ADDRESS">
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="O_OTH_ADDRESS1">Suite # / PO Box</label>
+      <input type="text" id="O_OTH_ADDRESS1">
+    </div>
+
+    <div class="medium field_container">
+      <label for="O_OTH_ADDRESS2">Street</label>
+      <input type="text" id="O_OTH_ADDRESS2">
+    </div>
+
+    <div class="small form_button field_container">
+      <a href="#" class="set_default_address"><i class="fa fa-home"></i> Set as Default Address</a>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="O_OTH_CITY">City</label>
+      <input type="text" id="O_OTH_CITY">
+    </div>
+
+    <div class="small field_container">
+      <label for="O_OTH_COUNTY">Province/State</label>
+      <input type="text" id="O_OTH_COUNTY">
+    </div>
+
+    <div class="small field_container">
+      <label for="O_OTH_COUNTRY">Country</label>
+      <input type="text" id="O_OTH_COUNTRY">
+    </div>
+
+    <div class="small field_container">
+      <label for="O_OTH_POSTAL_COD">Postal Code</label>
+      <input type="text" id="O_OTH_POSTAL_COD">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="O_OTH_PHONE">Primary Phone</label>
+      <input type="text" id="O_OTH_PHONE">
+    </div>
+
+    <div class="small field_container">
+      <label for="O_OTH_PHONE2">Secondary Phone</label>
+      <input type="text" id="O_OTH_PHONE2">
+    </div>
+
+    <div class="small field_container">
+      <label for="O_OTH_FAX">Fax</label>
+      <input type="text" id="O_OTH_FAX">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="medium field_container">
+      <label for="O_OTH_URL">URL</label>
+      <input type="text" id="O_OTH_URL">
+    </div>
+
+    <div class="medium field_container">
+      <label for="O_OTH_EMAIL">E-mail</label>
+      <input type="text" id="O_OTH_EMAIL">
+    </div>
+  </div>
+
+  <input type="hidden" id="ORG_ADDRESS1">
+  <input type="hidden" id="ORG_ADDRESS2">
+  <input type="hidden" id="ORG_COUNTRY">
+  <input type="hidden" id="ORG_POSTAL_CODE">
+  <input type="hidden" id="ORG_CITY">
+  <input type="hidden" id="ORG_COUNTY">
+  <input type="hidden" id="ORG_PHONE">
+  <input type="hidden" id="ORG_PHONE2">
+  <input type="hidden" id="ORG_FAX">
+  <input type="hidden" id="ORG_URL">
+  <input type="hidden" id="ORG_EMAIL">
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Organization Record Notepad" id="ORG_NOTE_GROUP">
+  <div class="form_row">
+    <div class="large validated_table field_container">
+      <label for="ORG_NOTE_BY">Notes Entered by</label>
+      <input type="text" id="ORG_NOTE_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+
+    <div class="small date field_container">
+      <label for="ORG_NOTE_ON">Date</label>
+      <input type="text" id="ORG_NOTE_ON">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="ORG_NOTE">Note</label>
+      <textarea id="ORG_NOTE"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Last Modified" id="RECORD_HIST">
+  <div class="borderless form_row">
+    <div class="large field_container">
+      <label for="ENTERED_BY">By</label>
+      <input type="text" id="ENTERED_BY" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="UPDATE_DATE">On</label>
+      <input type="text" id="UPDATE_DATE" readonly>
+    </div>
+  </div>
+</fieldset>

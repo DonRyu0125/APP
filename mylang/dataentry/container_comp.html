@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMS - Cultural Assets Managment System - Container Database</title>
+
+    <!-- include virtual="/mylang/assets/html/template/stylesheets.html" -->
+    <!-- include virtual="/mylang/assets/html/template/header_scripts.html" -->
+  </head>
+  <body data-database="Container">
+    <header>
+      <!-- include virtual="/mylang/assets/html/template/header.html" -->
+    </header>
+
+    <section id="body">
+      <!-- include virtual="/mylang/assets/html/template/db_selection_nav.html" -->
+
+      <div class="container">
+        <!-- include virtual="/mylang/assets/html/template/db/container_db_actions_nav.html" -->
+      <section id="data_entry_forms">
+        <div id="universal_record_information">
+          <div class="column">
+            <div class="field_container">
+              <label for="CONTAINER_ID"><u>Barcode</u></label>
+              <input type="text" id="CONTAINER_ID" class="unique_key_check mandatory_check" data-mandatory="$$">
+            </div>
+            <div class="field_container">
+              <label for="CON_ASSO_ACC">Asso. Accession</label>
+              <input type="text" id="CON_ASSO_ACC" readonly>
+            </div>
+            <div class="select_container field_container">
+              <label for="CON_MONITOR">Monitor</label>
+              <select id="CON_MONITOR">
+                <option></option>
+                <option>Y</option>
+                <option>N</option>
+              </select>
+            </div>
+            <div class="field_container">
+              <label for="CON_ORDER_TYPE">Last Order</label>
+              <input type="text" id="CON_ORDER_TYPE" readonly>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="select_container field_container">
+              <label for="CON_ITEM_TYPE">Item Type</label>
+              <select id="CON_ITEM_TYPE">
+                <option>BOX</option>
+                <option>DOCUMENT</option>
+                <option>FOLDER</option>
+                <option>MICROFILMFICHE</option>
+                <option>TAPE</option>
+                <option>DIGITAL ITEM</option>
+              </select>
+            </div>
+            <div class="field_container">
+              <label for="CON_REF_SISN">Ref. Code SISN</label>
+              <input type="text" id="CON_REF_SISN">
+            </div>
+            <div class="field_container">
+              <label for="CON_DESTROYED">Destroyed</label>
+              <input type="text" id="CON_DESTROYED" readonly>
+            </div>
+            <div class="select_container field_container">
+              <label for="CON_AONE_STATUS">AOne Status</label>
+              <select id="CON_AONE_STATUS" class="generate_field_exit"
+                data-generate1="'CON_AONE_STATUS !-',CON_REJ_REASON,''"
+                data-generate2="'CON_AONE_STATUS !-',CON_ORDER_TYPE,''"
+                data-generate3="'CON_AONE_STATUS !-',CON_ORDER_SEQ,''"
+              >
+                <option></option>
+                <option>In progress</option>
+                <option>Not accepted</option>
+                <option>In transit</option>
+                <option>Completed</option>
+                <option>Received</option>
+                <option>Rejected</option>
+                <option>Undelivered</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="field_container">
+              <label for="CON_P_BARCODE">
+                <a href="#" class="get_index_value_exit" data-param="CON_P_BARCODE" data-val-database="container" data-val-field="CONTAINER_ID" data-val-label="Parent Barcode"><i class="fa fa-search"></i></a> Parent Barcode
+              </label>
+              <input type="text" id="CON_P_BARCODE">
+            </div>
+            <div class="select_container field_container">
+              <label for="DIGITAL_CHECK">Digital/Physical</label>
+              <select id="DIGITAL_CHECK" class="show_optional_data_exit"
+                data-toggle-section="digital_item=Digital|physical_item=Physical"
+              >
+                <option>Physical</option>
+                <option>Digital</option>
+              </select>
+            </div>
+            <div class="field_container">
+              <label for="CON_RETRIEVED">Retrieved</label>
+              <input type="text" id="CON_RETRIEVED" readonly>
+            </div>
+            <div class="field_container">
+              <label for="CON_REJ_REASON">Reject Reason</label>
+              <input type="text" id="CON_REJ_REASON" readonly>
+            </div>
+          </div>
+
+          <div class="universal_row">
+            <div class="full field_container">
+              <label for="LOCATION_DETAILS">Description</label>
+              <textarea id="LOCATION_DETAILS"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div id="primary_data_entry_form">
+            <nav id="worksheet_nav">
+              <ul id="primary_worksheet_nav">
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/container/container_main.html" data-form="container" class="active">Main</a></li>
+                <li>
+                  <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/container/con_conservation_main.html" data-form="conservation">Conservation</a>
+                </li>
+              </ul>
+
+              <nav id="secondary_worksheet_nav">
+                <ul id="container">
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/container/container_main.html" data-form="main">Conservation Main</a>
+                  </li>
+                </ul>
+                <ul id="conservation">
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/container/con_conservation_main.html" data-form="main">Conservation Main</a>
+                  </li>
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/container/con_conservation_media.html" data-form="media">Conservation Media</a>
+                  </li>
+                  <li>
+                    <a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/container/con_conservation_treatment_proposal.html" data-form="treatment_proposal">Treatment Proposal</a>
+                  </li>
+                </ul>
+              </nav>
+            </nav>
+
+            <div id="data_entry_form">
+              <!-- include virtual="/mylang/assets/html/dataentry/container/container_main.html" -->
+
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <footer>
+      <!-- include virtual="/mylang/assets/html/template/footer.html" -->
+    </footer>
+
+    <xml id="MY_XML" style="display: none;">
+      ^XML_TREE^-(CON_JSON_STRING)
+    </xml>
+
+    <div id="notices">^WIN_INFO^</div>
+
+    <!-- include virtual="/mylang/assets/html/template/db/container_comp_base_scripts.html" -->
+    <!-- include virtual="/mylang/assets/html/template/core_dataentry_scripts.html" -->
+    <script src="/mylang/assets/js/dataentry/record_databases/container.js"></script>
+    <script src="/mylang/assets/js/dataentry/frontend/container.js"></script>
+  </body>
+</html>

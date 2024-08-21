@@ -1,0 +1,301 @@
+<span class="hidden current_page" id="conservation_media"></span>
+
+<fieldset class="repeating_group" data-group-title="Examination / Treatment Details" id="CONSERVE_INFO">
+<fieldset class="repeating_group has_image_holder" data-group-title="Conservation Image" id="A_CONIM_REF_GRP">
+  <div class="form_row borderless">
+      <div class="large image file_attachment field_container">
+        <label for="A_CONIM_ACCESS">Image Path/Thumbnail</label>
+        <input type="text" id="A_CONIM_ACCESS" readonly>
+      </div>
+      <div>
+        <!-- RL-2020-11-10  image holder -->
+         <img class="field_img" src="/mylang/assets/img/image-placeholder.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="A_CONIM_CAPTION">Caption</label>
+      <textarea id="A_CONIM_CAPTION"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="medium validated_table field_container">
+       <label for="A_CONIM_TYPE">Image Type</label>
+       <input type="text" id="A_CONIM_TYPE" data-val-database="IMAGE_TYPE_VAL" data-val-field="LOOKUP_FIELD" readonly>
+    </div>
+  </div>
+
+  <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_CONIM_AST_NAME">Asset Name</label>
+          <input type="text" id="A_CONIM_AST_NAME" readonly>
+        </div>
+      </div>
+
+     <div class="form_row">
+        <div class="full field_container">
+          <label for="A_CONIM_THUMB">TDR Thumb</label>
+          <input type="text" id="A_CONIM_THUMB">
+        </div>
+      </div>
+
+        <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="A_CONIM_OCR">TDR OCR</label>
+          <input type="text" id="A_CONIM_OCR" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_CONIM_PRESER">TDR Preservation</label>
+          <input type="text" id="A_CONIM_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_CONIM_ORIGIN">TDR Original</label>
+          <input type="text" id="A_CONIM_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_CONIM_OTHER">TDR Other</label>
+          <input type="text" id="A_CONIM_OTHER" readonly>
+        </div>
+      </div>
+  </fieldset>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Conservation Video" id="A_CONVD_REF_GRP">
+  <div class="form_row borderless">
+    <div class="full video file_attachment field_container">
+      <label for="A_CONVD_ACCESS">Video or Access Path</label>
+      <input type="text" id="A_CONVD_ACCESS">
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="A_CONVD_CAPTION">Caption</label>
+      <textarea id="A_CONVD_CAPTION"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="medium location_validated_field field_container" data-map="con_video_location">
+      <label for="A_CONVD_LOC_ID">Location</label>
+      <input type="text" id="A_CONVD_LOC_ID" readonly>
+    </div>
+  </div>
+
+  <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_CONVD_AST_NAME">Asset Name</label>
+          <input type="text" id="A_CONVD_AST_NAME" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_CONVD_OCR">TDR OCR</label>
+          <input type="text" id="A_CONVD_OCR" readonly>
+        </div>
+      </div>
+
+     <div class="form_row">
+        <div class="full field_container">
+          <label for="A_CONVD_THUMB">TDR Thumb</label>
+          <input type="text" id="A_CONVD_THUMB" readonly>
+        </div>
+      </div>
+
+     <div class="form_row">
+        <div class="full field_container">
+          <label for="A_CONVD_PRESER">TDR Preservation</label>
+          <input type="text" id="A_CONVD_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="M_VD_ORIGIN">TDR Original</label>
+          <input type="text" id="M_VD_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_CONVD_ORIGIN">TDR Other</label>
+          <input type="text" id="A_CONVD_ORIGIN" readonly>
+        </div>
+      </div>
+  </fieldset>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Conservation Audio" id="A_CONAD_REF_GRP">
+  <div class="form_row borderless">
+    <div class="full audio file_attachment field_container">
+      <label for="A_CONAD_ACCESS">Audio/Access Path</label>
+      <input type="text" id="A_CONAD_ACCESS">
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="A_CONAD_CAPTION">Caption</label>
+      <textarea id="A_CONAD_CAPTION"></textarea>
+    </div>
+  </div>
+
+   <div class="form_row borderless">
+    <div class="medium location_validated_field field_container" data-map="con_audio_location">
+      <label for="A_CONAD_LOC_ID">Location</label>
+      <input type="text" id="A_CONAD_LOC_ID" readonly>
+    </div>
+   </div>
+
+  <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_CONAD_AST_NAME">Asset Name</label>
+          <input type="text" id="A_CONAD_AST_NAME" readonly>
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="A_CONAD_OCR">TDR OCR</label>
+          <input type="text" id="A_CONAD_OCR" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_CONAD_THUMB">TDR Thumb</label>
+          <input type="text" id="A_CONAD_THUMB" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_CONAD_PRESER">TDR Preservation</label>
+          <input type="text" id="A_CONAD_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_CONAD_ORIGIN">TDR Original</label>
+          <input type="text" id="A_CONAD_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_CONAD_OTHER">TDR Other</label>
+          <input type="text" id="A_CONAD_OTHER" readonly>
+        </div>
+      </div>
+  </fieldset>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Conservation Textual" id="A_CONTX_REF_GRP">
+  <div class="form_row borderless">
+    <div class="full text file_attachment field_container">
+      <label for="A_CONTX_ACCESS">Text/Access Path</label>
+      <input type="text" id="A_CONTX_ACCESS">
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="A_CONTX_CAPTION">Caption</label>
+      <textarea id="A_CONTX_CAPTION"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="large field_container">
+      <label for="A_CONTX_TYPE">Type</label>
+      <input type="text" id="A_CONTX_TYPE">
+    </div>
+  </div>
+
+
+  <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_CONTX_AST_NAME">Asset Name</label>
+          <input type="text" id="A_CONTX_AST_NAME" readonly>
+        </div>
+      </div>
+
+        <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="A_CONTX_OCR">TDR OCR</label>
+          <input type="text" id="A_CONTX_OCR" readonly>
+        </div>
+      </div>
+
+     <div class="form_row">
+        <div class="full field_container">
+          <label for="A_CONTX_THUMB">TDR Thumb</label>
+          <input type="text" id="A_CONTX_THUMB" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_CONTX_PRESER">TDR Preservation</label>
+          <input type="text" id="A_CONTX_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_CONTX_ORIGIN">TDR Original</label>
+          <input type="text" id="A_CONTX_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_CONTX_OTHER">TDR Other</label>
+          <input type="text" id="A_CONTX_OTHER" readonly>
+        </div>
+      </div>
+  </fieldset>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="URL" id="CONSERVE_WEB_GRP">
+  <div class="borderless form_row">
+    <div class="full url_field field_container">
+      <label for="CONSERV_WEB_PATH">Web Path</label>
+      <input type="text" id="CONSERV_WEB_PATH">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="CONSERV_WEB_NOTE">Note</label>
+      <textarea id="CONSERV_WEB_NOTE"></textarea>
+    </div>
+  </div>
+</fieldset>
+</fieldset>

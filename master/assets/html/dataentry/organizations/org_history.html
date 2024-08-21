@@ -1,0 +1,81 @@
+<span class="hidden current_page" id="org_history"></span>
+
+<div class="form_row">
+  <div class="medium repeating_field field_container">
+    <label for="ORG_PARALLEL">Parallel Name(s)</label>
+    <input type="text" id="ORG_PARALLEL">
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="ORG_BRIEF_HIST">Brief Biography or Administrative History</label>
+    <textarea id="ORG_BRIEF_HIST"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full repeating_field field_container">
+    <label for="ORG_HISTORY">Full Biography or Administrative History</label>
+    <textarea id="ORG_HISTORY"></textarea>
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Controlling Entity" id="ORG_CONTROL_GRP">
+  <div class="borderless form_row">
+    <div class="large org_validated_field field_container" data-map="controlling_entity">
+      <label for="ORG_CONT_AGENCY">Name</label>
+      <input type="text" id="ORG_CONT_AGENCY" readonly>
+      <input type="hidden" id="O_CONT_AGENCY_ID">
+    </div>
+
+    <div class="small field_container">
+      <label for="ORG_DATE_CONTROL">Dates</label>
+      <input type="text" id="ORG_DATE_CONTROL">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Predecessor(s)" id="ORG_PRED_GRP">
+  <div class="borderless form_row">
+    <div class="full org_validated_field field_container" data-map="predecessors">
+      <label for="ORG_PREDECESSOR">Predecessor</label>
+      <input type="text" id="ORG_PREDECESSOR" readonly>
+      <input type="hidden" id="ORG_PRED_ID">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Successor(s)" id="ORG_SUCCESS_GRP">
+  <div class="borderless form_row">
+    <div class="full org_validated_field field_container" data-map="successors">
+      <label for="ORG_SUCCESSOR">Successor</label>
+      <input type="text" id="ORG_SUCCESSOR" readonly>
+      <input type="hidden" id="ORG_SUCCESS_ID">
+    </div>
+  </div>
+</fieldset>
+
+<div class="form_row">
+  <div class="full repeating_field field_container">
+    <label for="O_SOURCE">Source</label>
+    <input type="text" id="O_SOURCE">
+  </div>
+</div>
+
+<div class="borderless form_row">
+  <div class="full field_container">
+    <label for="ORG_AUTH_AGENT">Authorizing Agent</label>
+    <textarea id="ORG_AUTH_AGENT"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full repeating_field field_container">
+    <label for="O_FUNCTION">Function</label>
+    <textarea id="O_FUNCTION"></textarea>
+  </div>
+</div>
+
+
+

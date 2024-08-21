@@ -1,0 +1,227 @@
+<span class="hidden current_page" id="loanexhibitions"></span>
+
+<fieldset class="logical_group">
+  <legend>Loan/Exhibitions</legend>
+  <div style="padding-bottom: 5px; margin-top: -30px;">
+     <div class="full form_button field_container">
+       <a href="#" onclick="hide_show_div('loan_general');" style=" border-radius: 5px 5px 0 0;"><i class="fa fa-arrows-alt"></i>General Information</a>
+     </div>
+  </div>
+
+  <div id="loan_general" class="show_as_is">
+    <div class="borderless form_row">
+      <div class="small field_container">
+        <label for="E_LOAN_TYPE">Loan Type</label>
+        <select id="E_LOAN_TYPE">
+          <option>Outgoing Loan </option>
+          <option>Internal Exhibition</option>
+          <option>Exhibition</option>
+        </select>
+      </div>
+      <div class="small date field_container">
+        <label for="E_PROPOSED_DATE">Proposed Date</label>
+        <input type="text" id="E_PROPOSED_DATE">
+      </div>
+      <div class="small field_container">
+        <label for="E_LOAN_DURATION">Duration in Days</label>
+        <input type="number" id="E_LOAN_DURATION" min="1" step="1" />
+      </div>
+      <div class="small field_container">
+        <div class="medium field_container">
+          <label for="E_RELOC_YN">Relocation</label>
+          <select id="E_RELOC_YN">
+            <option>Y</option>
+            <option>N</option>
+          </select>
+        </div>
+        <div class="medium field_container">
+          <label for="E_REMOVE_YN">Removal</label>
+          <select id="E_REMOVE_YN">
+            <option>Y</option>
+            <option>N</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="medium date field_container">
+        <label for="E_EXH_START_DATE">Exhibition Start Date</label>
+        <input type="text" id="E_EXH_START_DATE" class="mandatory_check" data-mandatory="$$">
+      </div>
+      <div class="medium date field_container">
+        <label for="E_EXH_END_DATE">Exhibition End Date</label>
+        <input type="text" id="E_EXH_END_DATE" class="mandatory_check" data-mandatory="$$" />
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="medium org_validated_field field_container" data-map="enq_loan_org">
+        <label for="E_LOAN_ORG">Institution / Owner</label>
+        <input type="text" id="E_LOAN_ORG" class="mandatory_check" data-mandatory="$$">
+        <input type="hidden" id="E_LOAN_ORG_ID">
+      </div>
+      <div class="medium people_validated_field field_container" data-map="enq_exh_contact">
+        <label for="E_EXH_CONTACT">Loan Contact</label>
+        <input type="text" id="E_EXH_CONTACT">
+        <input type="hidden" id="E_EXH_CONTACT_ID">
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="medium people_validated_field field_container" data-map="enq_int_contact">
+        <label for="E_INT_CONTACT">Inhouse Contact</label>
+        <input type="text" id="E_INT_CONTACT">
+        <input type="hidden" id="E_INT_CONTACT_ID">
+      </div>
+      <div class="medium people_validated_field field_container" data-map="enq_return_to">
+        <label for="E_RETURN_TO">Return Contact</label>
+        <input type="text" id="E_RETURN_TO">
+        <input type="hidden" id="E_RETURN_TO_ID">
+      </div>
+    </div>
+  </div>
+
+  <div style="padding-bottom: 5px;">
+     <div class="full form_button field_container" style="margin: -5px 0 0px 0">
+       <a href="#" onclick="hide_show_div('exhibit_loan_form');" style=" border-radius: 5px 5px 0 0;"><i class="fa fa-arrows-alt"></i>Exhibit Loan Form</a>
+     </div>
+  </div>
+
+  <div id="exhibit_loan_form" class="show_as_is" style="display:none;">
+    <!-- <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="ED_TITLE">Title</label>
+        <input type="text" id="ED_TITLE">
+      </div>
+    </div> -->
+    <div class="borderless form_row">
+      <div class="medium repeating_field field_container">
+        <label for="E_REVIEWERS">Reviewers</label>
+        <input type="text" id="E_REVIEWERS">
+      </div>
+      <div class="medium date field_container">
+        <label for="E_REV_DATE">Date of Review</label>
+        <input type="text" id="E_REV_DATE">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="E_LOAN_REST">Restriction</label>
+        <input type="text" id="E_LOAN_REST">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="E_CONSERV_DETAIL">Conservation Issues</label>
+        <input type="text" id="E_CONSERV_DETAIL">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="E_LOAN_COMMENT">Comments</label>
+        <input type="text" id="E_LOAN_COMMENT">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="medium field_container">
+        <label for="E_PROCESS_STATUS">Status of Processing</label>
+        <input type="text" id="E_PROCESS_STATUS">
+      </div>
+      <div class="medium field_container">
+        <label for="E_LOAN_OK">Recommendation for Loan</label>
+        <select id="E_LOAN_OK">
+          <option>Y</option>
+          <option>N</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div style="padding-bottom: 5px;">
+     <div class="full form_button field_container" style="margin: -5px 0 0px 0">
+       <a href="#" onclick="hide_show_div('monetary_appraisal');" style=" border-radius: 5px 5px 0 0;"><i class="fa fa-arrows-alt"></i>Monetary Appraisal</a>
+     </div>
+  </div>
+
+  <div id="monetary_appraisal" class="show_as_is" style="display:none;">
+    <div class="borderless form_row">
+      <div class="medium field_container">
+        <label for="E_MARKET_VALUE">Fair Market Value</label>
+        <input type="number" id="E_MARKET_VALUE" step="0.01">
+      </div>
+      <div class="medium repeating_field field_container">
+        <label for="E_APPRAISER">Appraiser Names</label>
+        <input type="text" id="E_APPRAISER">
+      </div>
+    </div>
+  </div>
+
+  <div style="padding-bottom: 5px;">
+     <div class="full form_button field_container" style="margin: -5px 0 0px 0">
+       <a href="#" onclick="hide_show_div('exhibit_condition');" style=" border-radius: 5px 5px 0 0;"><i class="fa fa-arrows-alt"></i>Exhibit Condition Report</a>
+     </div>
+  </div>
+
+  <div id="exhibit_condition" class="show_as_is" style="display:none;">
+    <div class="borderless form_row">
+      <div class="medium field_container">
+        <label for="E_EXAMINER">Examiner</label>
+        <input type="text" id="E_EXAMINER">
+      </div>
+      <div class="medium date field_container">
+        <label for="E_EXAM_DATE">Date of Examination</label>
+        <input type="text" id="E_EXAM_DATE">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="E_EXH_LOCATION">Exhibit Location</label>
+        <input type="text" id="E_EXH_LOCATION">
+      </div>
+    </div>
+    <!-- <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="E_EXH_TITLE">Exhibit Title</label>
+        <input type="text" id="E_EXH_TITLE">
+      </div>
+    </div> -->
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="E_EXH_DESC">Exhibit Description</label>
+        <input type="text" id="E_EXH_DESC">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="E_EXH_DESC">Exhibit Description</label>
+        <input type="text" id="E_EXH_DESC">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="E_EXH_CONDITION">Exhibit Condition</label>
+        <input type="text" id="E_EXH_CONDITION">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="E_ADD_COMMENTS">Additional comments</label>
+        <input type="text" id="E_ADD_COMMENTS">
+      </div>
+    </div>
+  </div>
+  <div class="borderless form_row" style="padding-bottom: 5px;">
+     <div class="small field_container">
+       <a href="#" id="EXHIBIT_LOAN" onclick="downLoadEnquiryReport('ENQ_EXHIBIT_LOAN_FORM');" class="simple_button" style="margin: 0 0 0 -8px;"><i class="fa fa-print"></i> Exhibit Loan Form</a>
+     </div>
+     <div class="small field_container">
+       <a href="#" id="MONETARY_APPRAISAL" onclick="downLoadEnquiryReport('ENQ_MONETARY_APPRAISAL_REPORT');" class="simple_button" style="margin: 0 0 0 -8px;"><i class="fa fa-print"></i> Monetary Appraisal Report</a>
+     </div>
+     <div class="small field_container">
+       <a href="#" id="LOAN_AGREEMENT" onclick="downLoadEnquiryReport('ENQ_LOAN_AGREEMENT_REPORT');" class="simple_button" style="margin: 0 0 0 -8px;"><i class="fa fa-print"></i> Loan Agreement</a>
+     </div>
+     <div class="small field_container">
+       <a href="#" id="EXHIBIT_CONDITION" onclick="downLoadEnquiryReport('ENQ_EXHIBIT_CONDITION_REPORT');" class="simple_button" style="margin: 0 0 0 -8px;"><i class="fa fa-print"></i> Exhibit Condition Report</a>
+     </div>
+  </div>
+</fieldset>

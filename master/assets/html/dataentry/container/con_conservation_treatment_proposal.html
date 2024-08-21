@@ -1,0 +1,54 @@
+<span class="hidden current_page" id="conservation_treatment_proposal"></span>
+
+<fieldset class="repeating_group" data-group-title="Examination / Treatment Details" id="CONSERVE_INFO">
+  <fieldset class="repeating_group" data-group-title="Treatment Proposal - Container" id="C_TREATMENT_PROP">
+    <div class="borderless form_row">
+      <div class="medium text file_attachment field_container">
+        <label for="C_PROPOSAL_DOC">Treatment Proposal Image</label>
+        <input type="text" id="C_PROPOSAL_DOC" readonly>
+      </div>
+
+      <div class="small combo field_container">
+        <label for="C_PROPOSAL_PRICE">Cost</label>
+        <input type="text" id="PROPOSAL_PRICE">
+        <select id="C_PROPOSAL_CUR">
+          <option></option>
+          <option>CAD</option>
+          <option>EURO</option>
+          <option>FRA</option>
+          <option>GBP</option>
+          <option>USD</option>
+        </select>
+      </div>
+
+      <div class="small field_container">
+        <label for="C_PROPOSAL_IMP">Proposal Implemented</label>
+        <select id="C_PROPOSAL_IMP">
+          <option></option>
+          <option value="X">Yes</option>
+          <option value="">No</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="large org_validated_field people_validated_field field_container" data-map-people="treatment_proposal_by" data-map-org="treatment_org_proposal_by">
+        <label for="C_PROP_IMP_BY">By</label>
+        <input type="text" id="C_PROP_IMP_BY" readonly>
+        <input type="hidden" id="C_PROP_IMP_ID">
+      </div>
+
+      <div class="small date field_container">
+        <label for="C_PROP_IMP_DATE">Date</label>
+        <input type="text" id="C_PROP_IMP_DATE">
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="C_PROP_NOTES">Comments</label>
+      <textarea id="C_PROP_NOTES"></textarea>
+    </div>
+  </div>
+ </fieldset>
+

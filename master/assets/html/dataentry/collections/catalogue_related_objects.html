@@ -1,0 +1,73 @@
+<span class="hidden current_page" id="catalogue_related_objects"></span>
+
+<fieldset class="repeating_group" data-group-title="Related Objects Within Collections" id="RELAT_OBJ_GROUP">
+  <div class="form_row">
+    <div class="small m3_validated_field field_container" data-map="related_objects">
+      <label for="RELATED_ACC_ID">Unique Number</label>
+      <input type="text" id="RELATED_ACC_ID" readonly>
+    </div>
+
+    <div class="large field_container">
+      <label for="RELATED_TITLE">Title</label>
+      <input type="text" id="RELATED_TITLE" readonly>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="RELATED_NOTES">Related Notes</label>
+      <textarea id="RELATED_NOTES"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Related Objects Outside Collections" id="RELAT_OBJ_OTH_GR">
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="REL_OBJ_OTH_ID">Identifier</label>
+      <input type="text" id="REL_OBJ_OTH_ID">
+    </div>
+
+    <div class="medium date field_container">
+      <label for="REL_OBJ_OTH_DATE">Date</label>
+      <input type="text" id="REL_OBJ_OTH_DATE">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="REL_OBJ_OTH_TITL">Title/Object Name</label>
+      <input type="text" id="REL_OBJ_OTH_TITL">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="REL_OBJ_OTH_DESC">Description</label>
+      <textarea id="REL_OBJ_OTH_DESC"></textarea>
+    </div>
+  </div>
+
+    <div class="borderless form_row">
+    <div class="full url_field field_container">
+      <label for="REL_OBJ_OTH_URL">URL File Path</label>
+      <input type="text" id="REL_OBJ_OTH_URL">
+    </div>
+  </div>
+
+   <div class="form_row contains_browse">
+    <div class="medium org_validated_field field_container" data-map="rel_orgout">
+      <label for="REL_OBJ_OTH_INST">Organization</label>
+      <input type="text" id="REL_OBJ_OTH_INST" readonly>
+      <input type="hidden" id="REL_OBJOTH_IN_ID">
+    </div>
+   </div>
+
+  <div class="form_row contains_browse">
+    <div class="full people_validated_field field_container" data-map="rel_indout">
+      <label for="REL_OBJ_OTH_PER">Individual</label>
+      <input type="text" id="REL_OBJ_OTH_PER" readonly>
+      <input type="hidden" id="REL_OBJOTH_PR_ID">
+    </div>
+   </div>
+</fieldset>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<!-- RL-2020-09-29 -->
+
+<html class="no-js" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMS</title>
+    <link rel="stylesheet" href="/144/assets/css/app.css">
+  </head>
+  <body class="home">
+    <header>
+      <div class="container">
+        <div id="logo">
+     <!--<a href="/"><img src="/144/assets/img/m2a.png" alt="CAMS"></a> -->
+                <p>Cultural Assets Managment System</p>
+        </div>
+
+        <ul id="user_actions">
+          <li><a href="#" class="help" title="Help"><i class="fa fa-question"></i> Help</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="body">
+      <div class="container">
+        <h1>CAMS - Cultural Assets Managment System</h1>
+        <h2>Your user password is successfully reset.</h2>
+        <p>Welcome to CAMS. Please enter your username and password to access your account.</p>
+
+        <form class="login" action="/scripts/mwimain.dll?LOGON&COOKIE=USERNAME&file=[CAMS_APP]/144/search~2Facquisitions.html" method="post">
+          <div class="form_input">
+            <label for="USERNAME">Username</label><input name="USERNAME" id="USERNAME" type="text" placeholder="Enter your Username" required>
+          </div>
+
+          <div class="form_input">
+            <label for="USERPASSWORD">Password</label><input name="USERPASSWORD" id="USERPASSWORD" type="password" placeholder="Enter your Password">
+          </div>
+
+          <div class="form_submission">
+            <input type="hidden" name="APPLICATION" value="m2aonline">
+            <input type="submit" name="login" value="Login">
+          </div>
+          <div class="form_submission">
+            <a href="/144/reset_password.html"><h3>Reset Password</h3></a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+            <h2>CAMS covers Inquiry Management, Request and Catalogue Databases.  <br>CAMS provides multiple query modes for advanced searching capabilities as well as data entry to record your holdings and related treasures!</h2>
+
+        <div class="triple_bucket">
+          <div class="bucket">
+            <img src="/144/assets/img/pitch_1.jpg" alt="Boolean Operators">
+            <h3>Boolean Operators</h3>
+            <p>The default search mode can be used to create advanced search strategies by selecting the operators of your choice.</p>
+          </div>
+
+          <div class="bucket">
+            <img src="/144/assets/img/pitch_3.jpg" alt="Browse for Terms">
+            <h3>Browse for Terms</h3>
+            <p>Use the pop-up menus to quickly browse the index of terms contained in the fast access table of the field you're searching.</p>
+          </div>
+
+          <div class="bucket">
+            <img src="/144/assets/img/pitch_2.jpg" alt="Line Mode Search">
+            <h3>Line Mode Search</h3>
+            <p>Our powerful line mode search combines the capabilities of boolean operators, fast access tables, and command searching.</p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="footer_text">
+
+              <div class="footer_left">
+                <p>Thank you for choosing CAMS as your museum management solution. <br>If you have any questions, or if you need to reset your password, please contact us at 604.255.4366 or 1.877.255.4399. &copy; 2023 MINISIS Inc. All Rights Reserved.</p>
+              </div>
+
+              <div class="footer_right">
+                <img src="/144/assets/img/minisis.png" alt="MINISIS Inc">
+                <p>1-877-255-4399 | <a href="http://www.minisisinc.com">www.minisisinc.com</a></p>
+              </div>
+
+        </div>
+      </div>
+    </footer>
+
+    <script src="/144/assets/js/login_frontend.js"></script>
+  </body>
+</html>

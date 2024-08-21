@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMS - Incident Database</title>
+
+    <!-- include virtual="/144/assets/html/template/stylesheets.html" -->
+    <!-- include virtual="/144/assets/html/template/header_scripts.html" -->
+  </head>
+  <body data-database="incident" class="validated_record">
+    <section id="body">
+      <div class="container">
+        <!-- include virtual="/144/assets/html/template/db/incidentvt_db_actions_nav.html" -->
+
+        <section id="data_entry_forms">
+          <div id="primary_data_entry_form">
+            <nav id="worksheet_nav">
+              <nav id="secondary_worksheet_nav">
+                <ul id="incident">
+                  <li><a href="/144/assets/html/dataentry/incident/incident_main.html" data-form="main">incident Main</a></li>
+                </ul>
+              </nav>
+            </nav>
+
+            <div id="data_entry_form">
+              <!-- include virtual="/144/assets/html/dataentry/incident/incident_main.html" -->
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <xml id="validated_record" style="display: none;">
+      ^XML_TREE^
+    </xml>
+
+    <div id="notices">^WIN_INFO^</div>
+
+    <!-- include virtual="/144/assets/html/template/db/incident_base_scripts.html" -->
+    <!-- include virtual="/144/assets/html/template/core_dataentry_scripts.html" -->
+    <script src="/144/assets/customize/dataentry/record_databases/incident.js"></script>
+    <script src="/144/assets/customize/dataentry/frontend/incident_val.js"></script>
+  </body>
+</html>

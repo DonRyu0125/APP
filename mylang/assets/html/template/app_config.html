@@ -1,0 +1,37 @@
+<script>
+  var app_config =
+  {
+    // extract from *_base_scripts.html
+    'reports' :
+    {
+      'xxx'  : { 'query': '',  'report': '' }
+    },
+
+    // extract from core_dataentry_scripts.html
+    "tdr_parms" :
+    {
+      "username":           "^ESCAPE('Generic1')^",
+      "userpassword":       "^ESCAPE('Gt345Ty34_df')^",
+      "tdr_api":            "https://titanapi.minisisinc.com",
+      "tdr_ui":             "https://titan.minisisinc.com",
+      "login_endpoint":     "/token",
+      "search_endpoint":    "/#/discover",
+      "bookmark_endpoint":  "/api/Discover/BookmarkLinks",
+      "delete_bookmark_ep": "/api/Discover/Bookmarks"
+    },
+
+    "databases":
+    {
+      "sample":
+      {
+        'database' : 'sample',
+        'dup_field_list' :
+        {
+          'dup_schedule' : [
+                             'SAMPLE'
+                           ]
+        }
+      }  // end of "sample"
+    }
+  };
+</script>

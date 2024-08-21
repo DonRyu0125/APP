@@ -1,0 +1,95 @@
+<span class="hidden current_page" id="questions_main"></span>
+
+<div class="form_row">
+  <div class="smallmed field_container">
+    <label for="QUESTION_ID">ID</label>
+    <input type="text" id="QUESTION_ID" readonly>
+  </div>
+  <div class="smallmed validated_table field_container">
+    <label for="QUESTION_CAT">Category</label>
+    <input type="text" id="QUESTION_CAT" data-val-database="QUESTIONS" data-val-field="QUESTION_CAT">
+  </div>
+  <div class="smallmed validated_table field_container">
+    <label for="QUESTION_SUBCAT">Sub-Category</label>
+    <input type="text" id="QUESTION_SUBCAT" data-val-database="QUESTIONS" data-val-field="QUESTION_SUBCAT">
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="QUESTION">Question</label>
+    <input type="text" id="QUESTION">
+  </div>
+</div>
+
+<div class="borderless form_row">
+  <div class="full field_container">
+    <label for="ANSWER">Answer</label>
+    <textarea id="ANSWER" ROWS="10"></textarea>
+  </div>
+</div>
+
+<fieldset class="logical_group">
+  <legend>Approval</legend>
+  <div class="borderless form_row">
+    <div class="small form_button field_container" style="font-size: 1rem; margin-top: 3px;" id="APPROVED_BUTTON">
+    <a href="#" onclick="approveQuestions($(this));"><i class="fa fa-check"></i> Approved</a>
+    </div>
+    <div class="small field_container">
+      <label for="Q_APPROVED_BY">Approved By</label>
+      <input type="text" id="CM_APPROVED_BY" readonly>
+    </div>
+    <div class="small field_container">
+      <label for="Cm_APPROVED_ON">Approved On</label>
+      <input type="text" id="Q_APPROVED_ON" readonly>
+    </div>
+    <div class="small field_container">
+      <label for="Q_STATUS">Record Status</label>
+      <select id="Q_STATUS">
+        <option>NEW</option>
+        <option>REVIEW</option>
+        <option>APPROVED</option>
+      </select>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Actions taken on record</legend>
+
+  <div class="borderless form_row">
+    <div class="medium field_container">
+      <label for="Q_CREATED_BY">Entered By</label>
+      <input type="text" id="Q_CREATED_BY" readonly>
+    </div>
+
+    <div class="medium field_container">
+      <label for="Q_CREATED_ON">Entered On</label>
+      <input type="text" id="Q_CREATED_ON" readonly>
+    </div>
+  </div>
+
+  <fieldset class="repeating_group" data-group-title="Last Modified" id="Q_MOD_GROUP">
+    <div class="borderless form_row">
+      <div class="medium field_container">
+        <label for="Q_MOD_BY">By</label>
+        <input type="text" id="Q_MOD_BY" readonly>
+      </div>
+
+      <div class="medium field_container">
+        <label for="Q_MOD_ON">On</label>
+        <input type="text" id="Q_MOD_ON" readonly>
+      </div>
+    </div>
+  </fieldset>
+</fieldset>
+
+<!-- call initalization user routine -->
+<input type="hidden" class="init_call_exit protect_field_exit"
+   data-protect1="'Q_STATUS = ''APPROVED''',APPROVED_BUTTON"
+/>
+
+<!-- call record wrapup user routine -->
+<input type="hidden" class="wrapup_user_exit"
+  data-exit="wrapupQuestions"
+/>

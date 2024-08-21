@@ -1,0 +1,184 @@
+<span class="hidden current_page" id="conservation_treatment_proposal"></span>
+
+<fieldset class="repeating_group" data-group-title="Examination / Treatment Details" id="CONSERVE_INFO">
+<fieldset class="repeating_group" data-group-title="Treatment Proposal" id="TREATMENT_PROP">
+    <div class="form_row borderless">
+      <div class="small date field_container">
+        <label for="PROP_IMP_DATE">Date</label>
+        <input type="text" id="PROP_IMP_DATE">
+      </div>
+
+      <div class="small combo field_container">
+        <label for="PROPOSAL_PRICE">Cost</label>
+        <input type="text" id="PROPOSAL_PRICE">
+        <select id="PROPOSAL_CUR">
+          <option></option>
+          <option>CAD</option>
+          <option>EURO</option>
+          <option>FRA</option>
+          <option>GBP</option>
+          <option>USD</option>
+        </select>
+      </div>
+
+      <div class="small field_container">
+        <label for="PROPOSAL_IMP">Proposal Implemented</label>
+        <select id="PROPOSAL_IMP">
+          <option></option>
+          <option value="X">Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form_row borderless">
+      <div class="full org_validated_field people_validated_field field_container" data-map-people="treatment_proposal_by" data-map-org="treatment_org_proposal_by">  <!-- RL-20211231 -->
+        <label for="PROP_IMP_BY">By</label>
+        <input type="text" id="PROP_IMP_BY" readonly>
+        <input type="hidden" id="PROP_IMP_ID">
+      </div>
+    </div>
+
+    <div class="form_row">
+      <div class="full field_container">
+        <label for="PROP_NOTES">Comments</label>
+        <textarea id="PROP_NOTES"></textarea>
+      </div>
+    </div>
+
+<fieldset class="repeating_group" data-group-title="Treatment Proposal - M3" id="M_TRETX_REF_GRP">
+  <div class="form_row borderless">
+    <div class="full text file_attachment field_container">
+      <label for="M_TRETX_ACCESS">Text/Access Path</label>
+      <input type="text" id="M_TRETX_ACCESS">
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="M_TRETX_CAPTION">Caption</label>
+      <textarea id="M_TRETX_CAPTION"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="large field_container">
+      <label for="M_TRETX_TYPE">Type</label>
+      <input type="text" id="M_TRETX_TYPE">
+    </div>
+  </div>
+
+
+  <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="M_TRETX_AST_NAME">Asset Name</label>
+          <input type="text" id="M_TRETX_AST_NAME" readonly>
+        </div>
+      </div>
+
+        <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="M_TRETX_OCR">TDR OCR</label>
+          <input type="text" id="M_TRETX_OCR" readonly>
+        </div>
+      </div>
+
+     <div class="form_row">
+        <div class="full field_container">
+          <label for="M_TRETX_THUMB">TDR Thumb</label>
+          <input type="text" id="M_TRETX_THUMB" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="M_TRETX_PRESER">TDR Preservation</label>
+          <input type="text" id="M_TRETX_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="M_TRETX_ORIGIN">TDR Original</label>
+          <input type="text" id="M_TRETX_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="M_TRETX_OTHER">TDR Other</label>
+          <input type="text" id="M_TRETX_OTHER" readonly>
+        </div>
+      </div>
+  </fieldset>
+  </fieldset>
+ </fieldset>
+
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="CONS_B_PROTECT">Backing</label>
+      <select id="CONS_B_PROTECT">
+        <option></option>
+        <option>Conservation board</option>
+        <option>Wood</option>
+        <option>Hardboard</option>
+        <option>Blockboard</option>
+        <option>Other</option>
+        <option>Not applicable</option>
+      </select>
+    </div>
+
+    <div class="small field_container">
+      <label for="CONS_GLAZING">Glazing</label>
+      <select id="CONS_GLAZING">
+        <option></option>
+        <option>Glass</option>
+        <option>Glazed</option>
+        <option>Low-reflect laminated</option>
+        <option>Laminated glass</option>
+        <option>Non-reflect glass</option>
+        <option>Perspex</option>
+        <option>Other</option>
+        <option>Not applicable</option>
+      </select>
+    </div>
+
+    <div class="small field_container">
+      <label for="CONS_SUPPORT">Support</label>
+      <select id="CONS_SUPPORT">
+        <option></option>
+        <option>Canvas</option>
+        <option>Paper</option>
+        <option>Cardboard</option>
+        <option>Vellum</option>
+        <option>Cotton duck</option>
+        <option>Hardboard</option>
+        <option>Plywood</option>
+        <option>Wood</option>
+        <option>Other</option>
+        <option>Not applicable</option>
+      </select>
+    </div>
+
+    <div class="small repeating_field field_container">
+      <label for="CONS_FRAME">Frame</label>
+      <select id="CONS_FRAME">
+        <option></option>
+        <option>Aluminium</option>
+        <option>Card mount</option>
+        <option>Framed</option>
+        <option>Gilded</option>
+        <option>No frame</option>
+        <option>Other</option>
+        <option>Wood</option>
+        <option>Painted</option>
+        <option>Plaster</option>
+        <option>Not applicable</option>
+      </select>
+    </div>
+  </div>
+ </fieldset>
+

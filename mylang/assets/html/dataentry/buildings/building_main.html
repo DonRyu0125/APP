@@ -1,0 +1,122 @@
+<span class="hidden current_page" id="building_main"></span>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="BD_BUILDING_NAME">Building Name</label>
+    <input type="text" id="BD_BUILDING_NAME">
+  </div>
+</div>
+
+<fieldset class="logical_group">
+  <legend>Address Details</legend>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="BD_ADDRESS">Address</label>
+      <input type="text" id="BD_ADDRESS">
+    </div>
+    </div>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="BD_CITY">City</label>
+      <input type="text" id="BD_CITY">
+    </div>
+
+    <div class="medium field_container">
+      <label for="BD_COUNT_DIST">County/District</label>
+      <input type="text" id="BD_COUNT_DIST">
+    </div>
+   </div>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="BD_PROV_STATE">Prov./State</label>
+      <input type="text" id="BD_PROV_STATE">
+    </div>
+
+    <div class="medium field_container">
+      <label for="BD_COUNTRY">Country</label>
+      <input type="text" id="BD_COUNTRY">
+    </div>
+   </div>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="BD_POSTAL_CODE">PC/Zip</label>
+      <input type="text" id="BD_POSTAL_CODE">
+    </div>
+   </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Property" id="BD_PROP_GROUP">
+<div class="form_row">
+  <div class="small field_container">
+    <label for="BD_PROP_NUM">Property No.</label>
+    <input type="text" id="BD_PROP_NUM">
+  </div>
+  <div class="large field_container">
+    <label for="BD_PROPERTY_NAME">Property Name</label>
+    <input type="text" id="BD_PROPERTY_NAME">
+  </div>
+  </div>
+</fieldset>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="BD_LOCA_ON_PROPE">Location on Property</label>
+      <input type="text" id="BD_LOCA_ON_PROPE">
+    </div>
+    </div>
+
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="BD_CONSTRUCT_YEA">Year of construction</label>
+      <input type="text" id="BD_CONSTRUCT_YEA">
+    </div>
+
+    <div class="small field_container">
+      <label for="BD_BUILDING_AREA">Square Footage</label>
+      <input type="text" id="BD_BUILDING_AREA">
+    </div>
+
+    <div class="small field_container">
+      <label for="BD_NUMVER_OF_STO">Number of Storeys</label>
+      <input type="text" id="BD_NUMVER_OF_STO">
+    </div>
+  </div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="BD_DESCRIPTION">Description</label>
+    <input type="text" id="BD_DESCRIPTION">
+  </div>
+  </div>
+
+<div class="form_row contains_browse">
+    <div class="full org_validated_field people_validated_field field_container" data-map-people="bldg_cust" data-map-org="bldg_org_cust"> <!-- RL-20211231 -->
+      <label for="BD_CUSTODIAN">By</label>
+      <input type="text" id="BD_CUSTODIAN" readonly>
+      <input type="hidden" id="BD_CUSTODIAN_ID">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="BD_DESIGNATION">Designation</label>
+      <input type="text" id="BD_DESIGNATION">
+    </div>
+
+    <div class="medium field_container">
+      <label for="BD_DESIGNAT_DATE">Designation Date</label>
+      <input type="text" id="BD_DESIGNAT_DATE">
+    </div>
+    </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="BD_DESIGN_VALUE">Designation Justification</label>
+      <input type="text" id="BD_DESIGN_VALUE">
+    </div>
+  </div>
+

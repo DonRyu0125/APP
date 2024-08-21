@@ -1,0 +1,326 @@
+<span class="hidden current_page" id="media_main"></span>
+
+<!-- RL-2020-11-10 remove contains_image and add has_image_holder -->
+<fieldset class="repeating_group has_image_holder" data-group-title="Accession Image" id="AC_IM_REF_GRP">
+  <div class="form_row borderless">
+      <div class="large image file_attachment field_container">
+        <label for="AC_IM_ACCESS">Image/Access Path</label>
+        <input type="text" id="AC_IM_ACCESS" readonly>
+      </div>
+      <div>
+        <!-- RL-2020-11-10  image holder -->
+         <a href="#" class="image_clicked"><img class="field_img" src="/144/assets/img/image-placeholder.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="medium field_container">
+      <label for="AC_IM_OPAC">Web Ready</label>
+      <select id="AC_IM_OPAC">
+        <option></option>
+        <option>Restrict</option>
+        <option>Review</option>
+        <option>Ready</option>
+      </select>
+    </div>
+
+    <div class="medium validated_table field_container">
+       <label for="AC_IM_TYPE">Image Type</label>
+       <input type="text" id="AC_IM_TYPE" data-val-database="IMAGE_TYPE_VAL" data-val-field="LOOKUP_FIELD" readonly>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="AC_IM_CREDIT">Image credit line</label>
+      <textarea id="AC_IM_CREDIT"></textarea>
+    </div>
+  </div>
+  
+  <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_IM_AST_NAME">Asset Name</label>
+          <input type="text" id="AC_IM_AST_NAME" readonly>
+        </div>
+      </div>
+
+        <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="AC_IM_OCR">TDR OCR</label>
+          <input type="text" id="AC_IM_OCR" readonly>
+        </div>
+      </div>
+
+	  <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_IM_THUMB">TDR Thumbnail</label>
+          <input type="text" id="AC_IM_THUMB">
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_IM_PRESER">TDR Preservation</label>
+          <input type="text" id="AC_IM_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_IM_ORIGIN">TDR Original</label>
+          <input type="text" id="AC_IM_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_IM_OTHER">TDR Other</label>
+          <input type="text" id="AC_IM_OTHER" readonly>
+        </div>
+      </div>
+  </fieldset>
+</fieldset>
+
+
+<fieldset class="repeating_group" data-group-title="Accession Video" id="AC_VD_REF_GRP">
+  <div class="form_row borderless">
+      <div class="full video file_attachment field_container">
+        <label for="AC_VD_ACCESS">Video/Access Path</label>
+        <input type="text" id="AC_VD_ACCESS">
+      </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="medium field_container">
+      <label for="AC_VD_OPAC">Web Ready</label>
+      <select id="AC_VD_OPAC">
+        <option></option>
+        <option>Restrict</option>
+        <option>Review</option>
+        <option>Ready</option>
+      </select>
+    </div>
+
+    <div class="medium location_validated_field field_container" data-map="video_location">
+      <label for="AC_VD_LOC_ID">Location</label>
+      <input type="text" id="AC_VD_LOC_ID" readonly>
+    </div>
+  </div>
+
+  <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_VD_AST_NAME">Asset Name</label>
+          <input type="text" id="AC_VD_AST_NAME" readonly>
+        </div>
+      </div>
+
+        <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="AC_VD_OCR">TDR OCR</label>
+          <input type="text" id="AC_VD_OCR" readonly>
+        </div>
+      </div>
+
+     <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_VD_THUMB">TDR Thumb</label>
+          <input type="text" id="AC_VD_THUMB">
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_VD_PRESER">TDR Preservation</label>
+          <input type="text" id="AC_VD_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_VD_ORIGIN">TDR Original</label>
+          <input type="text" id="AC_VD_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_VD_OTHER">TDR Other</label>
+          <input type="text" id="AC_VD_OTHER" readonly>
+        </div>
+      </div>
+  </fieldset>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Accession Audio" id="AC_AD_REF_GRP">
+  <div class="form_row borderless">
+    <div class="full audio file_attachment field_container">
+      <label for="AC_AD_ACCESS">Audio/Access Path</label>
+      <input type="text" id="AC_AD_ACCESS">
+    </div>
+  </div>
+
+   <div class="form_row borderless">
+    <div class="medium field_container">
+      <label for="AC_AD_OPAC">Web Ready</label>
+      <select id="AC_AD_OPAC">
+        <option></option>
+        <option>Restrict</option>
+        <option>Review</option>
+        <option>Ready</option>
+      </select>
+    </div>
+
+    <div class="medium location_validated_field field_container" data-map="audio_location">
+      <label for="AC_AD_LOC_ID">Location</label>
+      <input type="text" id="AC_AD_LOC_ID" readonly>
+    </div>
+   </div>
+  
+  <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_AD_AST_NAME">Asset Name</label>
+          <input type="text" id="AC_AD_AST_NAME" readonly>
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="AC_AD_OCR">TDR OCR</label>
+          <input type="text" id="AC_AD_OCR" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_AD_THUMB">TDR Thumb</label>
+          <input type="text" id="AC_AD_THUMB">
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_AD_PRESER">TDR Preservation</label>
+          <input type="text" id="AC_AD_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_AD_ORIGIN">TDR Original</label>
+          <input type="text" id="AC_AD_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_AD_OTHER">TDR Other</label>
+          <input type="text" id="AC_AD_OTHER" readonly>
+        </div>
+      </div>
+  </fieldset>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Accession Textual" id="AC_TX_REF_GRP">
+  <div class="form_row borderless">
+    <div class="full text file_attachment field_container">
+      <label for="AC_TX_ACCESS">Text/Access Path</label>
+      <input type="text" id="AC_TX_ACCESS">
+      </div>
+    </div>
+
+  <div class="form_row borderless">
+    <div class="small field_container">
+      <label for="AC_TX_OPAC">Web Ready</label>
+      <select id="AC_TX_OPAC">
+        <option></option>
+        <option>Restrict</option>
+        <option>Review</option>
+        <option>Ready</option>
+      </select>
+    </div>
+
+    <div class="small field_container">
+      <label for="AC_TX_TYPE">Type</label>
+      <select id="AC_TX_TYPE">
+        <option></option>
+        <option>Label Text</option>
+        <option>Blog</option>
+        <option>Social Media</option>
+        <option>Other</option> 
+      </select>
+    </div>
+  </div>
+
+  
+  <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_TX_AST_NAME">Asset Name</label>
+          <input type="text" id="AC_TX_AST_NAME" readonly>
+        </div>
+      </div>
+	  
+        <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="AC_TX_OCR">TDR OCR</label>
+          <input type="text" id="AC_TX_OCR" readonly>
+        </div>
+      </div>
+	  
+     <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_TX_THUMB">TDR Thumb</label>
+          <input type="text" id="AC_TX_THUMB">
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_TX_PRESER">TDR Preservation</label>
+          <input type="text" id="AC_TX_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_TX_ORIGIN">TDR Original</label>
+          <input type="text" id="AC_TX_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="AC_TX_OTHER">TDR Other</label>
+          <input type="text" id="AC_TX_OTHER" readonly>
+        </div>
+      </div>
+  </fieldset>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="URL" id="AC_WEB_REF_GRP">
+  <div class="form_row borderless">
+    <div class="full url_field field_container">
+      <label for="AC_WEB_REFERENCE">Web Path</label>
+      <input type="text" id="AC_WEB_REFERENCE">
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="AC_WEB_REF_NOTES">Caption</label>
+      <textarea id="AC_WEB_REF_NOTES"></textarea>
+    </div>
+  </div>
+</fieldset>

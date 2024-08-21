@@ -1,0 +1,109 @@
+<span class="hidden current_page" id="costs_main"></span>
+<ul class="loans_menu">
+  <li><a class="add" title="Add Component"><i class="fa fa-file-o"></i></a></li>
+  <li><a class="edit" title="Edit Component"><i class="fa fa-edit"></i></a></li>
+  <li><a class="delete" title="Delete Component"><i class="fa fa-trash-o"></i></a></li>
+</ul>
+
+<table class="loan_costs">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Activity</th>
+      <th>Detail</th>
+      <th># Staff</th>
+      <th># Hours</th>
+      <th>Amount ($)</th>
+      <th>Cur</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td colspan="7">No loan costs found</td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <td colspan="5">Tax 1</td>
+      <td colspan="2"><input type="text" id="LO_TAX1"></td>
+    </tr>
+    <tr>
+      <td colspan="5">Tax 2</td>
+      <td colspan="2"><input type="text" id="LO_TAX2"></td>
+    </tr>
+    <tr>
+      <td colspan="5">Total Cost</td>
+      <td colspan="2"><input type="text" id="LO_TOTAL_COST" readonly></td>
+    </tr>
+    <tr>
+      <td colspan="5"></td>
+      <td colspan="2"><a class="calculate_loans_costs">Calculate Total Cost</a></td>
+    </tr>
+  </tfoot>
+</table>
+
+
+<div style="display:none;">
+  <div id="costs_data_entry">
+    <nav class="cost_actions">
+      <ul>
+        <li class="dba_save_cost"><a title="Save Record"><i class="fa fa-floppy-o"></i></a></li>
+        <li class="dba_cancel"><a title="Cancel Edits"><i class="fa fa-ban"></i></a></li>
+        <li class="dba_print"><a title="Print"><i class="fa fa-print"></i></a></li>
+      </ul>
+      <hr>
+    </nav>
+    <div>
+      <fieldset class="logical_group">
+        <legend>Loan Cost Details</legend>
+
+        <div class="form_row">
+          <div class="medium field_container">
+            <label for="loancost_other_fee_active">Activity</label>
+            <input type="text" id="loancost_other_fee_active">
+          </div>
+
+          <div class="medium field_container">
+            <label for="loancost_other_fees_dtl">Detail</label>
+            <input type="text" id="loancost_other_fees_dtl">
+          </div>
+        </div>
+
+        <div class="form_row">
+          <div class="medium combo field_container">
+            <label for="loancost_other_fees">Amount</label>
+            <input type="text" id="loancost_other_fees">
+            <select id="loancost_other_fees_cur">
+              <option></option>
+              <option>CAD</option>
+              <option>EURO</option>
+              <option>FRA</option>
+              <option>GBP</option>
+              <option>USD</option>
+            </select>
+          </div>
+
+          <div class="small field_container">
+            <label for="loancost_no_hours">Number of Hours</label>
+            <input type="text" id="loancost_no_hours">
+          </div>
+
+          <div class="small field_container">
+            <label for="loancost_no_staff">Number of Staff</label>
+            <input type="text" id="loancost_no_staff">
+          </div>
+        </div>
+
+        <div class="borderless form_row">
+          <div class="full field_container">
+            <label for="loancost_other_fees_notes">Notes</label>
+            <textarea id="loancost_other_fees_notes"></textarea>
+            <input type="hidden" id="loancost_occurrence">
+          </div>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+</div>

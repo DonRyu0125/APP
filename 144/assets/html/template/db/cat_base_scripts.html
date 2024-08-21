@@ -1,0 +1,16 @@
+<script>
+  site_params = {
+    add_link : get_home_sessid() + '/CATALOGUE?OPEN&DBOPTION=ADD&RECORD_DEFAULT=Y',
+    global_change_link : get_home_sessid() + '?QUERYFORM&SEARCHFORM=[CAMS_APP]/144/search%5ccat_gc.html&DATABASE=CATALGUE&DBOPTION=SEARCH',
+    save_link : get_saverecord() + '&FILE=[CAMS_APP]/144/ASSETS%2fHTML%2fTEMPLATE%2fCLOSE_FORM.HTML&DISCONNECT=N&CLOSE=Y',    // RL-20211130
+    skip_link : get_skiprecord()  + '&FILE=[CAMS_APP]/144/ASSETS%2fHTML%2fTEMPLATE%2fCLOSE_FORM.HTML',     // RL-20211130
+    search_link : get_home_sessid() + '/CATALOGUE?OPEN&DBOPTION=SEARCH&CLEAR=Y',
+    'reports' : {
+                  'xxx'  : { 'query': '',  'report': '' }
+                }
+  };
+</script>
+<script src="/144/assets/js/vendor/jquery.colorbox-min.js"></script>
+<script src="/144/assets/js/frontend_util.js"></script>    <!-- RL-2021-03-02 -->
+<script src="/144/assets/js/frontend.js"></script>
+<!-- <script src="/144/assets/js/vendor/custom-alert.min.js"></script> -->

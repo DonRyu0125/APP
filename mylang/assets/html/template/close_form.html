@@ -1,0 +1,16 @@
+<!-- this file closes the modal dialog window which is created by Colorbox -->
+<html>
+  <head>
+    <script src="/mylang/assets/js/vendor/jquery-min.js"></script>
+  </head>
+  <body>
+    <script>
+      if ( parent != null ) { /* && typeof parent.$popup != 'undefined' && parent.$popup == 'Y' */
+        parent.$.colorbox.close();
+      }
+      else {
+        window.location = "^HOME_SESSID^?QUERYFORM";
+      }
+    </script>
+  </body>
+</html>

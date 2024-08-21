@@ -1,0 +1,255 @@
+<span class="hidden current_page" id="item"></span>
+<ul class="generic_table_menu">
+  <li><a class="add_group_occ" title="Add Occurrence" data-table="item_table"><i class="fa fa-file-o"></i></a></li>
+  <li><a class="edit_group_occ" title="Edit Occurrence" data-table="item_table"><i class="fa fa-edit"></i></a></li>
+  <li><a class="delete_group_occ" title="Delete Occurrence" data-table="item_table"><i class="fa fa-trash-o"></i></a></li>
+  <li>|</li>
+  <li><a href="#" id="view_requests" title="View Requests"><i class="fa fa-eye"></i></a></li>
+</ul>
+
+<div style="max-height:200px; overflow-y:scroll;">
+  <table class="generic_table" id="item_table" data-form="item_form" data-group="ITEM_INFO">
+    <thead>
+      <tr>
+        <th style="width:10%;" data-source="$occnum">#</th>
+        <th style="width:20%;" data-source="BARCODE">Barcode</th>
+        <th style="width:30%;" data-source="VOLUME_ID">Vol/Issue</th>
+        <th style="width:20%;" data-source="HOLDING_CENTRE">Branch</th>
+        <th style="width:20%;" data-source="ITEM_STATUS">Status</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td colspan="5">No item</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<hr style="width:100%;">
+
+<!-- <div style="display:none;"> -->
+  <div id="item_form">
+    <fieldset class="repeating_group has_image_holder" data-group-title="Item" id="ITEM_INFO">
+      <div class="form_row borderless">
+        <div class="small field_container">
+          <label for="BARCODE">Barcode</label>
+          <input type="text" id="BARCODE" maxLength="16">
+        </div>
+        <div class="small field_container">
+          <label for="COPY_NUMBER">Copy No.</label>
+          <input type="text" id="COPY_NUMBER" maxLength="20">
+        </div>
+        <div class="small field_container">
+          <label for="ITEM_PRICE">Price</label>
+          <input type="number" id="ITEM_PRICE" step="0.01">
+        </div>
+        <div class="small field_container">
+          <label for="ITEM_STATUS">Item Status</label>
+          <select id="ITEM_STATUS">
+            <option></option>
+            <option>AVAILABLE</option>
+            <option>ON HOLD</option>
+            <option>CIRCULATED</option>
+            <option>LOST</option>
+            <option>MISSING</option>
+            <option>IN PROCESS</option>
+            <option>CLAIMED RETURN</option>
+            <option>IN TRANSFER</option>
+            <option>NON-CIRC</option>
+            <option>DAMAGED</option>
+            <option>WITHDRAWN</option>
+            <option>ON ORDER</option>
+            <option>MENDING</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="medium field_container">
+          <label for="VOLUME_ID">Volume / Issue</label>
+          <input type="text" id="VOLUME_ID">
+        </div>
+        <div class="medium field_container">
+          <label for="HOLDING_CENTRE">Branch Location</label>
+          <select id="HOLDING_CENTRE">
+            <option></option>
+            <option>Delhi</option>
+            <option>Interlibrary loan</option>
+            <option>Norview</option>
+            <option>Port Dover</option>
+            <option>Port Rowan</option>
+            <option>Simcoe</option>
+            <option>Waterford</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="medium field_container">
+          <label for="I_COLLECT_CODE">Material Type</label>
+          <input type="text" id="I_COLLECT_CODE" data-val-database="COLLECTION_CODE_LIST" data-val-field="COLLECT_CODE_DES">
+        </div>
+        <div class="medium field_container">
+          <label for="MEDIA_TYPE">Loan Type</label>
+          <input type="text" id="MEDIA_TYPE" calss="disabled">
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="smallmed2 validated_table field_container">
+          <label for="ITEM_CALL_NUMBER">Call Number</label>
+          <input type="text" id="ITEM_CALL_NUMBER" data-val-database="CATALOGUE" data-val-field="ITEM_CALL_NUMBER">
+        </div>
+        <div class="smallmed form_button field_container">
+          <a href="#" class="simple_button get_index_value_exit" data-param="ITEM_CALL_NUMBER" data-val-database="Catalogue" data-val-field="ITEM_CALL_NUMBER" data-val-label="Call number mask"><i class="fa fa-search"></i> Find call number mask</a>
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="small field_container">
+          <label for="BORROWER_ID">Borrower ID</label>
+          <input type="text" id="BORROWER_ID" readonly>
+        </div>
+        <div class="small field_container">
+          <label for="CHARGE_DATE">Charge Date</label>
+          <input type="text" id="CHARGE_DATE" readonly>
+        </div>
+        <div class="small field_container">
+          <label for="ORG_DUE_DATE">Org. Due Date</label>
+          <input type="text" id="ORG_DUE_DATE" readonly>
+        </div>
+        <div class="small date field_container">
+          <label for="LAST_DUE_DATE">Last Due Date</label>
+          <input type="text" id="LAST_DUE_DATE">
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="small field_container">
+          <label for="HOLD_ID">Held for Patron ID</label>
+          <input type="text" id="HOLD_ID" readonly>
+        </div>
+        <div class="small field_container">
+          <label for="HOLD_DATE">Hold Date</label>
+          <input type="text" id="HOLD_DATE" readonly>
+        </div>
+        <div class="small field_container">
+          <label for="HOLD_EXPIRY_DATE">Pickup Before</label>
+          <input type="text" id="HOLD_EXPIRY_DATE" readonly>
+        </div>
+        <div class="small date field_container">
+          <label for="ITEM_TRANS_DATE">In=transit Since</label>
+          <input type="text" id="ITEM_TRANS_DATE" readonly>
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="smallmed field_container">
+          <label for="LAST_RENEW_DATE">Last Renewal Date</label>
+          <input type="text" id="LAST_RENEW_DATE" readonly>
+        </div>
+        <div class="smallmed field_container">
+          <label for="RENEWALS">No. of Renewals</label>
+          <input type="text" id="RENEWALS" readonly>
+        </div>
+        <div class="smallmed field_container">
+          <label for="EXTRA_RENEW">Extra Renewal</label>
+          <input type="checkbox" id="EXTRA_RENEW">
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="smallmed field_container">
+          <label for="CURRENT_LOC">Current Location</label>
+          <select id="CURRENT_LOC">
+            <option></option>
+            <option>Delhi</option>
+            <option>Interlibrary loan</option>
+            <option>Norview</option>
+            <option>Port Dover</option>
+            <option>Port Rowan</option>
+            <option>Simcoe</option>
+            <option>Waterford</option>
+          </select>
+        </div>
+        <div class="smallmed field_container">
+          <label for="DEST_LOCATION">Destination Location</label>
+          <select id="DEST_LOCATION">
+            <option></option>
+            <option>Delhi</option>
+            <option>Interlibrary loan</option>
+            <option>Norview</option>
+            <option>Port Dover</option>
+            <option>Port Rowan</option>
+            <option>Simcoe</option>
+            <option>Waterford</option>
+          </select>
+        </div>
+        <div class="smallmed field_container">
+          <label for="PICKUP_LOCATION">Pickup Location</label>
+          <select id="PICKUP_LOCATION">
+            <option></option>
+            <option>Delhi</option>
+            <option>Interlibrary loan</option>
+            <option>Norview</option>
+            <option>Port Dover</option>
+            <option>Port Rowan</option>
+            <option>Simcoe</option>
+            <option>Waterford</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="small field_container">
+          <label for="ITEM_NON_CIRC">Non Circulated</label>
+          <input type="checkbox" id="ITEM_NON_CIRC" readonly>
+        </div>
+        <div class="small field_container">
+          <label for="ITEM_EMAIL_NOTIF">Hold Email Notification Sent</label>
+          <input type="checkbox" id="ITEM_EMAIL_NOTIF" readonly>
+        </div>
+        <div class="small field_container">
+          <label for="ITEM_DUE_NOTIF">Overdue Email Notification Sent</label>
+          <input type="checkbox" id="ITEM_DUE_NOTIF">
+        </div>
+        <div class="small field_container">
+          <label for="ITEM_IN_HOUSE">In House Use</label>
+          <input type="checkbox" id="ITEM_IN_HOUSE">
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="small repeating_field field_container">
+          <label for="LAST_BORROWER">Last Borrower ID</label>
+          <input type="text" id="LAST_BORROWER" readonly>
+        </div>
+        <div class="small form_button field_container">
+          <a href="#" id="print_label"><i class="fa fa-newspaper-o"></i> Spine Label</a>
+        </div>
+        <div class="small form_button field_container">
+          <a href="#" ><i class="fa fa-newspaper-o"></i> Print Slip</a>
+        </div>
+        <div class="small form_button field_container">
+          <a href="#" onclick="hide_show_div('attach_cover');"><i class="fa fa-external-link "></i> Attach Image</a>
+        </div>
+      </div>
+
+      <div class="form_row borderless show_as_is" id="attach_cover" style="display:none;">
+          <div class="large image file_attachment field_container">
+            <label for="BOOK_COVER">Book cover</label>
+            <input type="text" id="BOOK_COVER" readonly>
+          </div>
+          <div>
+             <img class="field_img" src="/144/assets/img/image-placeholder.png">
+          </div>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+<!-- </div> -->
+
+<!-- call initalization user routine -->
+<input type="hidden" class="init_call_exit" />

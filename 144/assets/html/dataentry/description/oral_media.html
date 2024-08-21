@@ -1,0 +1,260 @@
+<span class="hidden current_page" id="oral_media"></span>
+
+<fieldset class="repeating_group" data-group-title="Media Details" id="OH_RECORD_GRP">
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="OH_REC_MEDIA">Recorded Media</label>
+      <select id="OH_REC_MEDIA">
+	  <option></option>
+	  <option>DVCAM-L</option>
+	  <option>DVCPRO-M</option>
+	  <option>MiniDV</option>
+	  <option>PFD</option>
+	  <option>CD-Audio</option>
+	  <option>CD-ROM</option>
+	</select>
+    </div>
+
+	<div class="small field_container">
+      <label for="OH_MODIFICATION">Modification</label>
+      <select id="OH_MODIFICATION">
+	  <option></option>
+	  <option>Image modified</option>
+	  <option>Audio modified</option>
+	  <option>Audio and Image modified</option>
+	</select>
+	</div>
+	
+	<div class="small date field_container">
+      <label for="OH_REC_DATE">Date</label>
+      <input type="text" id="OH_REC_DATE">
+	</div>
+	
+	<div class="small field_container">
+      <label for="OH_REC_COPY">Copy</label>
+      <select id="OH_REC_COPY">
+	  <option></option>
+	  <option>Yes</option>
+	  <option>No</option>
+	</select>
+	</div>
+	</div>
+	  
+  <div class="form_row contains_browse">
+    <div class="small field_container">
+      <label for="OH_ACCESS_COPY">Access Copy Exists</label>
+	  <select id="OH_ACCESS_COPY">
+	  <option></option>
+	  <option>Yes</option>
+	  <option>No</option>
+	</select>
+	</div>
+	
+	<div class="small field_container">
+        <label for="OH_REC_STATUS">Status</label>
+        <input type="text" id="OH_REC_STATUS">
+      </div>
+
+      <div class="medium people_validated_field field_container" data-map="recorded_individual">
+        <label for="OH_RECORDED_BY">Individual</label>
+        <input type="text" id="OH_RECORDED_BY" readonly>
+        <input type="hidden" id="OH_RECORD_BY_ID">
+	</div>
+	</div>
+
+<fieldset class="repeating_group" data-group-title="Oral History Audio" id="A_OHAD_REF_GRP">
+  <div class="form_row borderless">
+    <div class="full audio file_attachment field_container">
+      <label for="A_OHAD_ACCESS">Audio/Access Path</label>
+      <input type="text" id="A_OHAD_ACCESS">
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="A_OHAD_CAPTION">Caption</label>
+      <textarea id="A_OHAD_CAPTION"></textarea>
+    </div>
+  </div>
+
+   <div class="form_row borderless">
+    <div class="medium location_validated_field field_container" data-map="oh_audio_location">
+      <label for="A_OHAD_LOC_ID">Location</label>
+      <input type="text" id="A_OHAD_LOC_ID" readonly>
+    </div>
+   </div>
+
+  <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_OHAD_AST_NAME">Asset Name</label>
+          <input type="text" id="A_OHAD_AST_NAME" readonly>
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="A_OHAD_OCR">TDR OCR</label>
+          <input type="text" id="A_OHAD_OCR" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_OHAD_THUMB">TDR Thumb</label>
+          <input type="text" id="A_OHAD_THUMB">
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_OHAD_PRESER">TDR Preservation</label>
+          <input type="text" id="A_OHAD_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_OHAD_ORIGIN">TDR Original</label>
+          <input type="text" id="A_OHAD_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_OHAD_OTHER">TDR Other</label>
+          <input type="text" id="A_OHAD_OTHER" readonly>
+        </div>
+      </div>
+  </fieldset>
+</fieldset>
+
+  <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="OH_EQUIP_NOTE">Notes</label>
+        <textarea id="OH_EQUIP_NOTE"></textarea>
+      </div>
+    </div>
+</fieldset>		
+
+
+<fieldset class="repeating_group" data-group-title="Transcription Information" id="OH_TRANSCRIPT_GR">
+  <fieldset class="repeating_group" data-group-title="Transcriber" id="OH_TRNSCRIBE_GRP">
+  <div class="borderless form_row">
+    <div class="medium people_validated_field field_container" data-map="transcribe_individual">
+      <label for="OH_TRANSCRIBER">Name</label>
+      <input type="text" id="OH_TRANSCRIBER" readonly>
+      <input type="hidden" id="OH_TRNSCRIBER_ID">
+    </div>
+     <div class="small field_container">
+        <label for="OH_TRANS_ACT">Activity</label>
+        <input type="text" id="OH_TRANS_ACT">
+      </div>
+	 <div class="small field_container">
+        <label for="OH_TRANS_DATE">Activity Date</label>
+        <input type="text" id="OH_TRANS_DATE">
+      </div>
+    </div>
+  </fieldset>
+  
+  <fieldset class="repeating_group" data-group-title="Transcript Status" id="OH_TRANSTAT_GRP">
+  <div class="borderless form_row">
+     <div class="medium field_container">
+        <label for="OH_TRANS_STATUS">Status</label>
+        <input type="text" id="OH_TRANS_STATUS">
+      </div>
+	 <div class="medium field_container">
+        <label for="OH_STATUS_DATE">Date</label>
+        <input type="text" id="OH_STATUS_DATE">
+      </div>
+    </div>
+  </fieldset>
+  
+<div class="borderless form_row">
+     <div class="small field_container">
+        <label for="OH_TRANS_PAGES">Pages</label>
+        <input type="text" id="OH_TRANS_PAGES">
+      </div>
+      </div>
+	  
+<fieldset class="repeating_group" data-group-title="Transcript Textual" id="A_OHTTX_REF_GRP">
+  <div class="form_row borderless">
+    <div class="full text file_attachment field_container">
+      <label for="A_OHTTX_ACCESS">Text/Access Path</label>
+      <input type="text" id="A_OHTTX_ACCESS">
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="A_OHTTX_CAPTION">Caption</label>
+      <textarea id="A_OHTTX_CAPTION"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="large field_container">
+      <label for="A_OHTTX_TYPE">Type</label>
+      <input type="text" id="A_OHTTX_TYPE">
+    </div>
+  </div>
+
+
+  <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_OHTTX_AST_NAME">Asset Name</label>
+          <input type="text" id="A_OHTTX_AST_NAME" readonly>
+        </div>
+      </div>
+
+        <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="A_OHTTX_OCR">TDR OCR</label>
+          <input type="text" id="A_OHTTX_OCR" readonly>
+        </div>
+      </div>
+
+     <div class="form_row">
+        <div class="full field_container">
+          <label for="A_OHTTX_THUMB">TDR Thumb</label>
+          <input type="text" id="A_OHTTX_THUMB">
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_OHTTX_PRESER">TDR Preservation</label>
+          <input type="text" id="A_OHTTX_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_OHTTX_ORIGIN">TDR Original</label>
+          <input type="text" id="A_OHTTX_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_OHTTX_OTHER">TDR Other</label>
+          <input type="text" id="A_OHTTX_OTHER" readonly>
+        </div>
+      </div>
+  </fieldset>
+</fieldset>
+	
+<div class="borderless form_row">	
+	      <div class="full field_container">
+        <label for="OH_TRANS_NOTES">Notes</label>
+        <input type="text" id="OH_TRANS_NOTES">
+	</div>
+	</div>
+</fieldset>
+
+

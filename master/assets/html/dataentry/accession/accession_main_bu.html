@@ -1,0 +1,242 @@
+<span class="hidden current_page" id="accession_main"></span>
+
+  <fieldset class="repeating_group" data-group-title="Description Code group" id="DESC_REF_GROUP">
+<div class="borderless form_row">
+  <div class="medium m2a_validated_field field_container" data-map="descript_ref">
+    <label for="DESC_REF_ID">Desc. Reference Code</label>
+    <input type="text" id="DESC_REF_ID">
+  </div>
+  </div>
+  </fieldset>
+  
+<div class="borderless form_row">
+  <div class="medium field_container">
+    <label for="BUS_UNIT_OWNER">Business unit Owner</label>
+    <select id="BUS_UNIT_OWNER">
+      <option></option>
+      <option>Community Archives</option>
+      <option>Government Archives</option>
+      <option>Main Archives</option>
+      <option>Other</option>
+      <option>Special Collections</option>
+    </select>
+  </div>
+</div>
+
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="EXTENT">Physical Description</label>
+    <textarea id="EXTENT"></textarea>
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Donor/Source Information" id="DONOR_GROUP">
+  <div class="form_row">
+    <div class="medium org_validated_field field_container" data-map="donor_org">
+      <label for="ORGANIZATION">Organization</label>
+      <input type="text" id="ORGANIZATION" readonly>
+      <input type="hidden" id="ORGN_ID">
+    </div>
+
+    <div class="medium people_validated_field field_container" data-map="donor_ind">
+      <label for="INDIVIDUAL">Individual</label>
+      <input type="text" id="INDIVIDUAL" readonly>
+      <input type="hidden" id="IND_ID">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium people_validated_field field_container" data-map="donor_contact">
+      <label for="CONTACT">Contact Individual</label>
+      <input type="text" id="CONTACT" readonly>
+      <input type="hidden" id="CON_ID">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Schedule" id="SCHEDULE_GROUP">
+  <div class="borderless form_row">
+    <div class="medium schedule_validated_field field_container" data-map="acc_schedule">
+      <label for="SCHEDULE">Schedule</label>
+      <input type="text" id="SCHEDULE" readonly>
+      <input type="hidden" id="ACC_SCHED_ID">
+    </div>
+
+    <div class="small field_container">
+      <label for="ACC_SCHED_ADOPT">Adopted Date</label>
+      <input type="text" id="ACC_SCHED_ADOPT" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="ACC_SCHED_EFFECT">Effective Date</label>
+      <input type="text" id="ACC_SCHED_EFFECT" readonly>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="ACC_SCHED_TITLE">Rec. Series Title</label>
+      <input type="text" id="ACC_SCHED_TITLE" readonly>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="ACC_SCHED_CUTOFF">Rec. Series Cutoff</label>
+      <input type="text" id="ACC_SCHED_CUTOFF" readonly>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="ACC_SCHED_RETAIN">Total Retention</label>
+      <input type="text" id="ACC_SCHED_RETAIN" readonly>
+    </div>
+  </div>
+</fieldset>
+
+<div class="borderless form_row">
+  <div class="small field_container">
+    <label for="Transfer">Transfer</label>
+    <input type="text" id="Transfer">
+  </div>
+  <div class="small field_container">
+    <label for="BOXES">Boxes</label>
+    <input type="text" id="BOXES">
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Container Information" id="LOCATION_GROUP">
+  <fieldset class="logical_group">
+    <legend>Physical Material</legend>
+    <div class="form_row">
+      <div class="small field_container">
+        <label for="DIGITAL_CHECK">Digital/Physical</label>
+        <select id="DIGITAL_CHECK">
+          <option></option>
+          <option>Digital</option>
+          <option>Physical</option>
+        </select>
+      </div>
+
+      <div class="small field_container">
+        <label for="BOX_ITEM_NUMBER">Box No.</label>
+        <input type="text" id="BOX_ITEM_NUMBER">
+      </div>
+
+      <div class="small field_container">
+        <label for="LOCATION_EXTENT">Size (L*D*H)</label>
+        <input type="text" id="LOCATION_EXTENT">
+      </div>
+
+      <div class="small field_container">
+        <label for="LOCATION_UNIT">Unit</label>
+        <select id="LOCATION_UNIT">
+          <option></option>
+          <option>Shelf</option>
+          <option>Vessel</option>
+          <option>Other</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form_row">
+      <div class="medium location_validated_field field_container" data-map="acc_loc">
+        <label for="ACC_LOC_CODE_ID">Location</label>
+        <input type="text" id="ACC_LOC_CODE_ID" readonly>
+      </div>
+
+      <div class="medium text file_attachment field_container">
+        <label for="BOXLIST_LINK">Box list</label>
+        <input type="text" id="BOXLIST_LINK" readonly>
+      </div>
+    </div>
+
+    <div class="form_row">
+      <div class="full field_container">
+        <label for="LOCATION_DETAILS">Details</label>
+        <textarea id="LOCATION_DETAILS"></textarea>
+      </div>
+    </div>
+  </fieldset>
+  </fieldset>
+
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="ACCNO">Dates</label>
+      <input type="text" id="ACC_DATES">
+    </div>
+
+    <div class="large field_container">
+      <label for="CREDIT_LINE">Credit Line</label>
+      <input type="text" id="CREDIT_LINE">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="ACC_SCOPE">Scope</label>
+      <textarea id="ACC_SCOPE"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="COMMENTS_ACC">Notes</label>
+      <textarea id="COMMENTS_ACC"></textarea>
+    </div>
+  </div>
+
+  <fieldset class="repeating_group" data-group-title="Creator" id="ACC_CREATOR_GRP">
+    <div class="form_row contains_browse">
+      <div class="full org_validated_field people_validated_field field_container" data-map="accession_creator">
+        <label for="ACC_CREATOR">Creator</label>
+        <input type="text" id="ACC_CREATOR">
+        <input type="hidden" id="ACCR_ID">
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="logical_group">
+    <legend>TDR</legend>
+    <div class="form_row">
+      <div class="medium field_container">
+        <label for="DIGITAL_EXTENT">Size</label>
+        <input type="text" id="DIGITAL_EXTENT">
+      </div>
+
+      <div class="medium field_container">
+        <label for="DIGITAL_UNIT">Unity</label>
+        <input type="text" id="DIGITAL_UNIT">
+      </div>
+    </div>
+
+    <div class="form_row">
+      <div class="full field_container">
+        <label for="TDR_MEDIA">TDR Media</label>
+        <textarea id="TDR_MEDIA"></textarea>
+      </div>
+    </div>
+
+    <div class="form_row">
+      <div class="full field_container">
+        <label for="TDR_DETAILS">TDR Details</label>
+        <textarea id="TDR_DETAILS"></textarea>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="repeating_group" data-group-title="Last Modified" id="ACC_MOD_HIST">
+    <div class="borderless form_row">
+      <div class="medium field_container">
+        <label for="ACC_MOD_BY">By</label>
+        <input type="text" id="ACC_MOD_BY" readonly>
+      </div>
+
+      <div class="medium field_container">
+        <label for="ACC_MOD_DATE">On</label>
+        <input type="text" id="ACC_MOD_DATE" readonly>
+      </div>
+    </div>
+  </fieldset>

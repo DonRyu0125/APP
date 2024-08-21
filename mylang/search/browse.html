@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>Fast Access List</title>
+	<link rel="stylesheet" href="/mylang/assets/css/app.css">
+	<script src="/mylang/assets/js/vendor/jquery-min.js"></script>
+	
+	<script>
+		var submitVal = function() {
+			values = $('#keyvalue').val();
+			callingField = '#' + $('input[name=callingField]').val();
+			
+			if ($('input[name=DE_callField]').val() != $('input[name=callingField]').val()) {
+				callingField = '#' + $('input[name=DE_callField]').val();
+			}
+			
+			parent.tmp_val = values;
+			parent.$.colorbox.close();
+		}
+	</script>
+</head>
+<body class="browse">
+	<div>
+		<h2>Browse ^TITLE^</h2>
+		<form name="keys" id="keys">
+			<ul>
+				<li><a href="^FIRST^">First</a></li>
+				<li><a href="^PREV^">Previous</a></li>
+				<li><a href="^NEXT^">Next</a></li>
+				<li><a href="^LAST^">Last</a></li>
+			</ul>
+			
+			<h4>Select item(s) to search for:</h4>
+			
+			<select id="keyvalue" name="keyvalue" size="10" ondblclick="submitVal();">
+				^INDEX_LIST^
+			</select>
+
+			<p>
+				<input type="hidden" name="callingField" value="^KEYNAME^">
+				<input type="hidden" name="DE_callField" value="^WINDOW^">
+				<input type="button" name="addkeys" id="addkeys" value="Add to Form" onclick="submitVal();">
+			</p>
+		</form>
+
+		<form method="post" action="^FIND^">
+			<input type="hidden" name="KEYNAME" value="^KEYNAME^">
+			<input type="text" name="KEYVALUE">
+			<input type="submit" value="Search">
+		</form>
+	</div>
+</body>
+</html>

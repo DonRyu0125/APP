@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Download Report</title>     
+    </head>
+    <body class="download">
+        <h3>The download file has been successfully created.</h3>
+        <!-- RL-2020-09-29 -->
+        <p>Please click below link to download your report.</p>
+        <p><a class="button" id="start_download" href="#" target="_blank" onclick="$.colorbox.close();">Download Report</a></p>
+        <input type="hidden" id="report" value="^REPORT^" />
+
+    <script>
+      $(document).ready(function(){
+        var report = $('#report').val();
+        var raw_report = unescape(report);
+        var filename = raw_report.split('/');
+          filename = filename.pop();
+					
+				$('#start_download').attr('href', '/144/web_temp/'+filename);
+			});
+		</script>
+	</body>
+</html>

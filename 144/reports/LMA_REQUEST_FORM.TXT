@@ -1,0 +1,2196 @@
+$ADD_REPORT
+!REC-ID
+¶SPEC_NAME¶LMA_REQUEST_FORM
+¶STATUS¶UPDATED
+¶VERSION¶9.01.22
+¶REVISION¶4
+¶DBNAME¶REQUEST_INFO_VIEW
+¶PAGE_WIDTH¶32000
+¶DISPLAY_MODE¶8
+¶PAGE_BREAK¶X
+¶SPLIT_RECORD¶X
+¶HANDLE_NAME¶UTF8_HANDLER
+¶PAGE_FIELD¶¶PAGE_FIELD_TYPE¶1
+¶PAGE_FIELD¶¶PAGE_FIELD_TYPE¶2
+¶PAGE_FIELD¶¶PAGE_FIELD_TYPE¶3
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶1L
+¶COMMON_OCCGAP¶1
+¶PRINT_LIT_EXP¶<PATRON_NAME>
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_OCCGAP¶1
+¶PRINT_EXP¶REQ_PATRON_ID
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PRINT_RPT_RTN¶EXPAND_FIELD_VALUE
+¶PRINT_UR_PARM¶CLIENT,C_CARD_NUMBER,C_NAME_FULL
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_OCCGAP¶1
+¶PRINT_LIT_EXP¶</PATRON_NAME>
+¶PRINT_COND_DISP¶X
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶1L
+¶COMMON_OCCGAP¶1
+¶PRINT_LIT_EXP¶<PATRON_ID>
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_OCCGAP¶1
+¶PRINT_EXP¶REQ_PATRON_ID
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_OCCGAP¶1
+¶PRINT_LIT_EXP¶</PATRON_ID>
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶PRINT_LIT_EXP¶<REQUEST_DATE>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_OCCGAP¶1
+¶PRINT_EXP¶DATE_NEEDED
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PRINT_RPT_RTN¶REPORT_FORMAT_DATE
+¶PRINT_UR_PARM¶0,!9 !3 !0 !1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_OCCGAP¶1
+¶PRINT_LIT_EXP¶</REQUEST_DATE>
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶1L
+¶COMMON_OCCGAP¶1
+¶PRINT_LIT_EXP¶<COLLECTION_TIME>
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_OCCGAP¶1
+¶PRINT_EXP¶TIME_NEEDED
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_OCCGAP¶1
+¶PRINT_LIT_EXP¶</COLLECTION_TIME>
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶1L
+¶COMMON_OCCGAP¶1
+¶PRINT_LIT_EXP¶<REFERENCE>
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_OCCGAP¶1
+¶PRINT_EXP¶REQ_ITEM_ID
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_OCCGAP¶1
+¶PRINT_LIT_EXP¶</REFERENCE>
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶<REMARKS>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶4
+¶STATEMENT_LEVEL¶0
+¶IF_EXP¶LIBRARY_REQ = YES
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_EXP¶LIB_NOTES
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶12
+¶STATEMENT_LEVEL¶0
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶4
+¶STATEMENT_LEVEL¶1
+¶IF_EXP¶REQ_ITEM_ID == REFERENCE
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶2
+¶COMMON_SP_BFE¶0
+¶COMMON_OCCGAP¶1
+¶PRINT_EXP¶REMARKS
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶9
+¶STATEMENT_LEVEL¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶9
+¶STATEMENT_LEVEL¶0
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶</REMARKS>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶<FORMAT>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶4
+¶STATEMENT_LEVEL¶0
+¶IF_EXP¶LIBRARY_REQ = YES
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_EXP¶LIB_AUTHOR
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶12
+¶STATEMENT_LEVEL¶0
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶4
+¶STATEMENT_LEVEL¶1
+¶IF_EXP¶REQ_ITEM_ID == REFERENCE
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶2
+¶COMMON_SP_BFE¶0
+¶COMMON_OCCGAP¶1
+¶PRINT_EXP¶STOREFORM
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶9
+¶STATEMENT_LEVEL¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶9
+¶STATEMENT_LEVEL¶0
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_OCCGAP¶1
+¶PRINT_LIT_EXP¶</FORMAT>
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶1L
+¶COMMON_OCCGAP¶1
+¶PRINT_LIT_EXP¶<TITLE>
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_OCCGAP¶1
+¶PRINT_EXP¶REQ_TITLE
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶PRINT_LIT_EXP¶</TITLE>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶1L
+¶COMMON_OCCGAP¶1
+¶PRINT_LIT_EXP¶<REQUEST_TYPE>
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_OCCGAP¶1
+¶PRINT_EXP¶LIBRARY_REQ
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_OCCGAP¶1
+¶PRINT_LIT_EXP¶</REQUEST_TYPE>
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶1L
+¶COMMON_OCCGAP¶1
+¶PRINT_LIT_EXP¶<REQUEST_NO>
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_OCCGAP¶1
+¶PRINT_EXP¶REQ_ORDER_NUM
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_OCCGAP¶1
+¶PRINT_LIT_EXP¶</REQUEST_NO>
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶1L
+¶COMMON_OCCGAP¶1
+¶PRINT_LIT_EXP¶<LOCATION>
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_OCCGAP¶1
+¶PRINT_EXP¶LOCN_CODE
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_OCCGAP¶1
+¶PRINT_LIT_EXP¶</LOCATION>
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶COMMON_OCCGAP¶1
+¶PRINT_LIT_EXP¶<STAFF_TYPE>
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶4
+¶STATEMENT_LEVEL¶0
+¶IF_EXP¶C_EMPLOYEE = Y
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶COMMON_OCCGAP¶1
+¶PRINT_LIT_EXP¶STAFF
+¶PRINT_COND_DISP¶X
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶9
+¶STATEMENT_LEVEL¶0
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶</STAFF_TYPE>
+¶PRINT_COND_DISP¶X
+¶OUTPUT_TYPE¶3
+¶EDITOR¶XML Report Editor
+¶TEMPLATE¶[M2A_DM]xml\LMA_REQUEST_FORM.mrt
+¶SPEC_CREATOR¶M2A_MGR
+***ENDBODY***
+80748 LMA_REQUEST_FORM
+ï»¿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.0" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="1">
+      <RECORD Ref="2" type="DataTableSource" isKey="true">
+        <Alias>RECORD</Alias>
+        <Columns isList="true" count="12">
+          <value>PATRON_NAME,System.String</value>
+          <value>PATRON_ID,System.String</value>
+          <value>REQUEST_DATE,System.String</value>
+          <value>COLLECTION_TIME,System.String</value>
+          <value>REFERENCE,System.String</value>
+          <value>REMARKS,System.String</value>
+          <value>FORMAT,System.String</value>
+          <value>TITLE,System.String</value>
+          <value>REQUEST_TYPE,System.String</value>
+          <value>REQUEST_NO,System.String</value>
+          <value>LOCATION,System.String</value>
+          <value>STAFF_TYPE,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>RECORD</Name>
+        <NameInSource>LMA_REQUEST_FORM.RECORD</NameInSource>
+      </RECORD>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <GlobalizationStrings isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="3" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="50">
+        <DataRECORD Ref="4" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <CanGrow>False</CanGrow>
+          <ClientRectangle>0,4,128.08,195.42</ClientRectangle>
+          <Components isList="true" count="81">
+            <Shape3 Ref="5" type="Shape" isKey="true">
+              <BorderColor>Black</BorderColor>
+              <Brush>Black</Brush>
+              <ClientRectangle>2,118,124,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Shape3</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ShapeType Ref="6" type="Stimulsoft.Report.Components.ShapeTypes.StiRectangleShapeType" isKey="true" />
+            </Shape3>
+            <Shape2 Ref="7" type="Shape" isKey="true">
+              <BorderColor>Black</BorderColor>
+              <Brush>Black</Brush>
+              <ClientRectangle>70,104,56,12</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Shape2</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ShapeType Ref="8" type="Stimulsoft.Report.Components.ShapeTypes.StiRectangleShapeType" isKey="true" />
+            </Shape2>
+            <Shape1 Ref="9" type="Shape" isKey="true">
+              <BorderColor>Black</BorderColor>
+              <Brush>Black</Brush>
+              <ClientRectangle>2,104,64,12</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Shape1</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ShapeType Ref="10" type="Stimulsoft.Report.Components.ShapeTypes.StiRectangleShapeType" isKey="true" />
+            </Shape1>
+            <Text1 Ref="11" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.35,3.62,60,7.62</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text1</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>London Metropolitan Archives
+Request for Strong Room Item</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="12" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+            <Text2 Ref="13" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>74,1.62,50.1,9.62</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,16,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text2</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>Document</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="14" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+            <Text3 Ref="15" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4,16,12,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text3</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>NAME:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="16" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text3>
+            <Text4 Ref="17" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>18,16,106,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text4</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{RECORD.STAFF_TYPE} {RECORD.PATRON_NAME} ({RECORD.PATRON_ID})</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="18" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text4>
+            <Text5 Ref="19" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4,26,12,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text5</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>DATE:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="20" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text5>
+            <Text6 Ref="21" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>18,26,52,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text6</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{RECORD.REQUEST_DATE}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="22" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text6>
+            <Text7 Ref="23" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>76,26,24,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text7</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>COLLECTION:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="24" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text7>
+            <Text8 Ref="25" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>102,26,22,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text8</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{RECORD.COLLECTION_TIME}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="26" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text8>
+            <Text9 Ref="27" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4,36,40,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text9</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>Reference/Call Number:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="28" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text9>
+            <Text10 Ref="29" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>44,34,80,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text10</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{RECORD.REFERENCE}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="30" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+              <VertAlignment>Bottom</VertAlignment>
+            </Text10>
+            <Text11 Ref="31" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4,48,22,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text11</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{IIF(ToUpperCase(RECORD.REQUEST_TYPE) == "NO","Remarks:","Remarks:")}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="32" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text11>
+            <Text12 Ref="33" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4,52,22,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text12</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{IIF(ToUpperCase(RECORD.REQUEST_TYPE) == "NO","Format:","Format:")}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="34" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text12>
+            <Text13 Ref="35" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4,56,22,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text13</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>Title:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="36" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text13>
+            <Text14 Ref="37" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4,62,22,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text14</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>Library/Other:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="38" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text14>
+            <Text15 Ref="39" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>30,48,94,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text15</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{RECORD.REMARKS}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="40" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text15>
+            <Text16 Ref="41" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>30,52,94,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text16</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{RECORD.FORMAT}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="42" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text16>
+            <Text17 Ref="43" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>30,56,94,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text17</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{RECORD.TITLE}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="44" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text17>
+            <Text18 Ref="45" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>30,62,94,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text18</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{ToUpperCase(RECORD.REQUEST_TYPE)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="46" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text18>
+            <BarCode1 Ref="47" type="Stimulsoft.Report.Components.StiBarCode" isKey="true">
+              <BackColor>White</BackColor>
+              <BarCodeType Ref="48" type="Stimulsoft.Report.Components.BarCodes.StiCode39BarCodeType" isKey="true" />
+              <ClientRectangle>0,72,54,18</ClientRectangle>
+              <Code>{RECORD.REQUEST_NO}</Code>
+              <Conditions isList="true" count="0" />
+              <ForeColor>Black</ForeColor>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>BarCode1</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+            </BarCode1>
+            <Text19 Ref="49" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4,40,8,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text19</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>LOC</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="50" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text19>
+            <Text20 Ref="51" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>44,40,80,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text20</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{RECORD.LOCATION}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="52" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text20>
+            <Text21 Ref="53" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>86,74,14,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text21</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>PRO</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="54" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text21>
+            <Text22 Ref="55" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>100,74,14,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text22</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>TY</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="56" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text22>
+            <Text23 Ref="57" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>114,74,12,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text23</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>STR</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="58" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text23>
+            <Text24 Ref="59" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4,106,58,7.62</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>a437da8cc4374c0c81f2a381e5884eba</Guid>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text24</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>London Metropolitan Archives
+Request for Strong Room Item</Text>
+              <TextBrush>White</TextBrush>
+              <TextFormat Ref="60" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text24>
+            <Text25 Ref="61" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>86,106,38.1,7.62</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,16,Bold</Font>
+              <Guid>3b467bacf1b6436c8c3eb25b3ef5be5d</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text25</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>SHELF</Text>
+              <TextBrush>White</TextBrush>
+              <TextFormat Ref="62" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text25>
+            <Text26 Ref="63" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4,118,12,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>416badaa357b452bb4fcfa09f33a9511</Guid>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text26</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>NAME:</Text>
+              <TextBrush>White</TextBrush>
+              <TextFormat Ref="64" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text26>
+            <Text27 Ref="65" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>18,120,106,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>d3b1ece49a084170a0dcd50542c9207e</Guid>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text27</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{RECORD.STAFF_TYPE} {RECORD.PATRON_NAME} ({RECORD.PATRON_ID})</Text>
+              <TextBrush>White</TextBrush>
+              <TextFormat Ref="66" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text27>
+            <Shape4 Ref="67" type="Shape" isKey="true">
+              <BorderColor>Black</BorderColor>
+              <Brush>Black</Brush>
+              <ClientRectangle>2,130,70,8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Shape4</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ShapeType Ref="68" type="Stimulsoft.Report.Components.ShapeTypes.StiRectangleShapeType" isKey="true" />
+            </Shape4>
+            <Text28 Ref="69" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4,132,12,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>50390357c321477e937fd01083a8c630</Guid>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text28</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>DATE:</Text>
+              <TextBrush>White</TextBrush>
+              <TextFormat Ref="70" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+              <VertAlignment>Bottom</VertAlignment>
+            </Text28>
+            <Text29 Ref="71" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>18,132,52,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <Guid>83f5a74cacf941edb28c182d201df5e1</Guid>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text29</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{RECORD.REQUEST_DATE}</Text>
+              <TextBrush>White</TextBrush>
+              <TextFormat Ref="72" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text29>
+            <Shape5 Ref="73" type="Shape" isKey="true">
+              <BorderColor>Black</BorderColor>
+              <Brush>Black</Brush>
+              <ClientRectangle>74,130,52,8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Shape5</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ShapeType Ref="74" type="Stimulsoft.Report.Components.ShapeTypes.StiRectangleShapeType" isKey="true" />
+            </Shape5>
+            <Text30 Ref="75" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>76,132,24,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>fe2cadf3c2644473bf7343ebd3f7451c</Guid>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text30</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>COLLECTION:</Text>
+              <TextBrush>White</TextBrush>
+              <TextFormat Ref="76" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+              <VertAlignment>Bottom</VertAlignment>
+            </Text30>
+            <Text31 Ref="77" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>102,132,22,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <Guid>ef76bc1343714ba0907da33ab3d7ef53</Guid>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text31</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{RECORD.COLLECTION_TIME}</Text>
+              <TextBrush>White</TextBrush>
+              <TextFormat Ref="78" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text31>
+            <Text32 Ref="79" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4,142,40,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>bd86be5615f24e8b8d795487270c0eb5</Guid>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text32</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>Reference/Call Number:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="80" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text32>
+            <Text33 Ref="81" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>44,140,80,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <Guid>b0c2bfb78a494a54b2c1e8aae0a82b00</Guid>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text33</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{RECORD.REFERENCE}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="82" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+              <VertAlignment>Bottom</VertAlignment>
+            </Text33>
+            <Text34 Ref="83" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4,154,22,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>c0fffe1d16aa4200a8b23ec4b576789d</Guid>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text34</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{IIF(ToUpperCase(RECORD.REQUEST_TYPE) == "NO","Remarks:","Remarks:")}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="84" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text34>
+            <Text35 Ref="85" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4,158,22,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>117ce7a847de4204b097e8c0bec37c5a</Guid>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text35</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{IIF(ToUpperCase(RECORD.REQUEST_TYPE) == "NO","Format:","Format:")}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="86" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text35>
+            <Text36 Ref="87" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4,162,22,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>18cb582d94754bc8b4d09cd808c22ab7</Guid>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text36</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>Title:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="88" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text36>
+            <Text37 Ref="89" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4,168,22,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>7feccd10023f49a4b0ea94042dcd3e3d</Guid>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text37</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>Library/Other:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="90" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text37>
+            <Text38 Ref="91" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>30,154,94,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>d11758eb9ed34926b3fa0679f4e4ceab</Guid>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text38</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{RECORD.REMARKS}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="92" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text38>
+            <Text39 Ref="93" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>30,158,94,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>9aba719accc749c29c5a81b11fedcc1e</Guid>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text39</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{RECORD.FORMAT}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="94" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text39>
+            <Text40 Ref="95" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>30,162,94,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>046dfb563ac748e1bdad5390fdf14596</Guid>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text40</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{RECORD.TITLE}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="96" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text40>
+            <Text41 Ref="97" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>30,168,94,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>d57373ecd7f4466da54054a712191bbd</Guid>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text41</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{ToUpperCase(RECORD.REQUEST_TYPE)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="98" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text41>
+            <BarCode2 Ref="99" type="Stimulsoft.Report.Components.StiBarCode" isKey="true">
+              <BackColor>White</BackColor>
+              <BarCodeType Ref="100" type="Stimulsoft.Report.Components.BarCodes.StiCode39BarCodeType" isKey="true" />
+              <ClientRectangle>0,178,54,18</ClientRectangle>
+              <Code>{RECORD.REQUEST_NO}</Code>
+              <Conditions isList="true" count="0" />
+              <ForeColor>Black</ForeColor>
+              <Guid>1de637f5423c4a67b44727f1650860c5</Guid>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>BarCode2</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+            </BarCode2>
+            <Text42 Ref="101" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4,146,8,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>666f857de20243ba955ff56c46755736</Guid>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text42</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>LOC</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="102" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text42>
+            <Text43 Ref="103" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>44,146,80,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>20d7e71f0c3d4d89bd8eb2b799a1bc3e</Guid>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text43</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{RECORD.LOCATION}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="104" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text43>
+            <Text44 Ref="105" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>86,180,14,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>91de8e50e5eb481a9f3d84afbb25ec85</Guid>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text44</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>PRO</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="106" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text44>
+            <Text45 Ref="107" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>100,180,14,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>33fe24f5b1ff432bb23fc7c6fc17ab0c</Guid>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text45</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>TY</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="108" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text45>
+            <Text46 Ref="109" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>114,180,12,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>7fb14f6681984ae1bfd65aa1806e546c</Guid>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>Text46</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>STR</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="110" type="GeneralFormat" isKey="true" />
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text46>
+            <StartPointPrimitive3 Ref="111" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>2,14,0,0</ClientRectangle>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>StartPointPrimitive3</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>58529881f9b44e1f87a08b5b5d089b75</ReferenceToGuid>
+            </StartPointPrimitive3>
+            <EndPointPrimitive3 Ref="112" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>126,22,0,0</ClientRectangle>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>EndPointPrimitive3</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>58529881f9b44e1f87a08b5b5d089b75</ReferenceToGuid>
+            </EndPointPrimitive3>
+            <StartPointPrimitive4 Ref="113" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>2,24,0,0</ClientRectangle>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>StartPointPrimitive4</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>7d555605bb934427845762da9a945e79</ReferenceToGuid>
+            </StartPointPrimitive4>
+            <EndPointPrimitive4 Ref="114" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>72,32,0,0</ClientRectangle>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>EndPointPrimitive4</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>7d555605bb934427845762da9a945e79</ReferenceToGuid>
+            </EndPointPrimitive4>
+            <StartPointPrimitive5 Ref="115" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>74,24,0,0</ClientRectangle>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>StartPointPrimitive5</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>08c86b18f3f3495594afe3be8b1fb651</ReferenceToGuid>
+            </StartPointPrimitive5>
+            <EndPointPrimitive5 Ref="116" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>126,32,0,0</ClientRectangle>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>EndPointPrimitive5</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>08c86b18f3f3495594afe3be8b1fb651</ReferenceToGuid>
+            </EndPointPrimitive5>
+            <StartPointPrimitive6 Ref="117" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>2,34,0,0</ClientRectangle>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>StartPointPrimitive6</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>1a2276da63ec4a93991a9f91075f3dc4</ReferenceToGuid>
+            </StartPointPrimitive6>
+            <EndPointPrimitive6 Ref="118" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>126,68,0,0</ClientRectangle>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>EndPointPrimitive6</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>1a2276da63ec4a93991a9f91075f3dc4</ReferenceToGuid>
+            </EndPointPrimitive6>
+            <HorizontalLine1 Ref="119" type="Stimulsoft.Report.Components.StiHorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>56,72,70,0.254</ClientRectangle>
+              <Color>Black</Color>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>HorizontalLine1</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+            </HorizontalLine1>
+            <StartPointPrimitive7 Ref="120" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>86,72,0,0</ClientRectangle>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>StartPointPrimitive7</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>04ae89d46ad44a03ac4a3697578715a6</ReferenceToGuid>
+            </StartPointPrimitive7>
+            <EndPointPrimitive7 Ref="121" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>86.25,84,0,0</ClientRectangle>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>EndPointPrimitive7</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>04ae89d46ad44a03ac4a3697578715a6</ReferenceToGuid>
+            </EndPointPrimitive7>
+            <StartPointPrimitive8 Ref="122" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>100,72,0,0</ClientRectangle>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>StartPointPrimitive8</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>a825d26c67ba43a38ce92b4293e33019</ReferenceToGuid>
+            </StartPointPrimitive8>
+            <EndPointPrimitive8 Ref="123" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>100.25,84,0,0</ClientRectangle>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>EndPointPrimitive8</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>a825d26c67ba43a38ce92b4293e33019</ReferenceToGuid>
+            </EndPointPrimitive8>
+            <StartPointPrimitive9 Ref="124" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>114,72,0,0</ClientRectangle>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>StartPointPrimitive9</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>60ac29561c9944e29f08560143a3a679</ReferenceToGuid>
+            </StartPointPrimitive9>
+            <EndPointPrimitive9 Ref="125" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>114.25,84,0,0</ClientRectangle>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>EndPointPrimitive9</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>60ac29561c9944e29f08560143a3a679</ReferenceToGuid>
+            </EndPointPrimitive9>
+            <StartPointPrimitive1 Ref="126" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>2,2,0,0</ClientRectangle>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>StartPointPrimitive1</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>180dc680957e49ea95d9c9fde6012990</ReferenceToGuid>
+            </StartPointPrimitive1>
+            <EndPointPrimitive1 Ref="127" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>68,12,0,0</ClientRectangle>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>EndPointPrimitive1</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>180dc680957e49ea95d9c9fde6012990</ReferenceToGuid>
+            </EndPointPrimitive1>
+            <StartPointPrimitive2 Ref="128" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>72,2,0,0</ClientRectangle>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>StartPointPrimitive2</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>5454de856fc342a5aec82f0b4a0b0fe3</ReferenceToGuid>
+            </StartPointPrimitive2>
+            <EndPointPrimitive2 Ref="129" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>126,12,0,0</ClientRectangle>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>EndPointPrimitive2</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>5454de856fc342a5aec82f0b4a0b0fe3</ReferenceToGuid>
+            </EndPointPrimitive2>
+            <StartPointPrimitive10 Ref="130" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>2,140,0,0</ClientRectangle>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>StartPointPrimitive10</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>c8796288add8420ca3f3d72ac2cc84c3</ReferenceToGuid>
+            </StartPointPrimitive10>
+            <EndPointPrimitive10 Ref="131" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>126,174,0,0</ClientRectangle>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>EndPointPrimitive10</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>c8796288add8420ca3f3d72ac2cc84c3</ReferenceToGuid>
+            </EndPointPrimitive10>
+            <HorizontalLine2 Ref="132" type="Stimulsoft.Report.Components.StiHorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>56,178,70,0.254</ClientRectangle>
+              <Color>Black</Color>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>HorizontalLine2</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+            </HorizontalLine2>
+            <StartPointPrimitive11 Ref="133" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>86,178,0,0</ClientRectangle>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>StartPointPrimitive11</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>f49f375a87d34de59b193f9ba66962b4</ReferenceToGuid>
+            </StartPointPrimitive11>
+            <EndPointPrimitive11 Ref="134" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>86.25,190,0,0</ClientRectangle>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>EndPointPrimitive11</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>f49f375a87d34de59b193f9ba66962b4</ReferenceToGuid>
+            </EndPointPrimitive11>
+            <StartPointPrimitive12 Ref="135" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>100,178,0,0</ClientRectangle>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>StartPointPrimitive12</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>7641b2a744fe4150b9ddf15a1d2358a1</ReferenceToGuid>
+            </StartPointPrimitive12>
+            <EndPointPrimitive12 Ref="136" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>100.25,190,0,0</ClientRectangle>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>EndPointPrimitive12</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>7641b2a744fe4150b9ddf15a1d2358a1</ReferenceToGuid>
+            </EndPointPrimitive12>
+            <StartPointPrimitive13 Ref="137" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>114,178,0,0</ClientRectangle>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>StartPointPrimitive13</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>8ff653e47a664c04891e26e36e1c916b</ReferenceToGuid>
+            </StartPointPrimitive13>
+            <EndPointPrimitive13 Ref="138" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>114.25,190,0,0</ClientRectangle>
+              <MaxSize>0,0</MaxSize>
+              <MinSize>0,0</MinSize>
+              <Name>EndPointPrimitive13</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>8ff653e47a664c04891e26e36e1c916b</ReferenceToGuid>
+            </EndPointPrimitive13>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName />
+          <DataSourceName>RECORD</DataSourceName>
+          <Filters isList="true" count="0" />
+          <MaxHeight>0</MaxHeight>
+          <MinHeight>0</MinHeight>
+          <Name>DataRECORD</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Sort isList="true" count="0" />
+        </DataRECORD>
+        <Rectangle3 Ref="139" type="Stimulsoft.Report.Components.StiRectanglePrimitive" isKey="true">
+          <ClientRectangle>2,18,124,8</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>58529881f9b44e1f87a08b5b5d089b75</Guid>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>Rectangle3</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </Rectangle3>
+        <Rectangle4 Ref="140" type="Stimulsoft.Report.Components.StiRectanglePrimitive" isKey="true">
+          <ClientRectangle>2,28,70,8</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>7d555605bb934427845762da9a945e79</Guid>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>Rectangle4</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </Rectangle4>
+        <Rectangle5 Ref="141" type="Stimulsoft.Report.Components.StiRectanglePrimitive" isKey="true">
+          <ClientRectangle>74,28,52,8</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>08c86b18f3f3495594afe3be8b1fb651</Guid>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>Rectangle5</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </Rectangle5>
+        <Rectangle6 Ref="142" type="Stimulsoft.Report.Components.StiRectanglePrimitive" isKey="true">
+          <ClientRectangle>2,38,124,34</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>1a2276da63ec4a93991a9f91075f3dc4</Guid>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>Rectangle6</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </Rectangle6>
+        <VerticalLine1 Ref="143" type="Stimulsoft.Report.Components.StiVerticalLinePrimitive" isKey="true">
+          <ClientRectangle>86,76,0.254,12</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>04ae89d46ad44a03ac4a3697578715a6</Guid>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>VerticalLine1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </VerticalLine1>
+        <VerticalLine2 Ref="144" type="Stimulsoft.Report.Components.StiVerticalLinePrimitive" isKey="true">
+          <ClientRectangle>100,76,0.254,12</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>a825d26c67ba43a38ce92b4293e33019</Guid>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>VerticalLine2</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </VerticalLine2>
+        <VerticalLine3 Ref="145" type="Stimulsoft.Report.Components.StiVerticalLinePrimitive" isKey="true">
+          <ClientRectangle>114,76,0.254,12</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>60ac29561c9944e29f08560143a3a679</Guid>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>VerticalLine3</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </VerticalLine3>
+        <StartPointPrimitive19 Ref="146" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>1.84,311.33,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>StartPointPrimitive19</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>9b03896f23b549fd977ad1f24a2a4d72</ReferenceToGuid>
+        </StartPointPrimitive19>
+        <EndPointPrimitive19 Ref="147" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>79.34,370.03,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>EndPointPrimitive19</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>9b03896f23b549fd977ad1f24a2a4d72</ReferenceToGuid>
+        </EndPointPrimitive19>
+        <StartPointPrimitive20 Ref="148" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>71.12,311.08,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>StartPointPrimitive20</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>45fcfcc6cabe427681992f48e7a957f5</ReferenceToGuid>
+        </StartPointPrimitive20>
+        <EndPointPrimitive20 Ref="149" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>137.7,369.78,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>EndPointPrimitive20</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>45fcfcc6cabe427681992f48e7a957f5</ReferenceToGuid>
+        </EndPointPrimitive20>
+        <StartPointPrimitive21 Ref="150" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>2,324,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>StartPointPrimitive21</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>523a8285a634437c9b338282ff546a2d</ReferenceToGuid>
+        </StartPointPrimitive21>
+        <EndPointPrimitive21 Ref="151" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>138,380,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>EndPointPrimitive21</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>523a8285a634437c9b338282ff546a2d</ReferenceToGuid>
+        </EndPointPrimitive21>
+        <StartPointPrimitive22 Ref="152" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>2,334,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>StartPointPrimitive22</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>5e47453822d24f4087c471491b6b61dd</ReferenceToGuid>
+        </StartPointPrimitive22>
+        <EndPointPrimitive22 Ref="153" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>84,390,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>EndPointPrimitive22</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>5e47453822d24f4087c471491b6b61dd</ReferenceToGuid>
+        </EndPointPrimitive22>
+        <StartPointPrimitive23 Ref="154" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>74,334,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>StartPointPrimitive23</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>9b21e68ee9de436aa24a305398d26c63</ReferenceToGuid>
+        </StartPointPrimitive23>
+        <EndPointPrimitive23 Ref="155" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>138,390,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>EndPointPrimitive23</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>9b21e68ee9de436aa24a305398d26c63</ReferenceToGuid>
+        </EndPointPrimitive23>
+        <StartPointPrimitive24 Ref="156" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>2,344,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>StartPointPrimitive24</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>8c7c6ccc38d14099a75a3fb13d41a433</ReferenceToGuid>
+        </StartPointPrimitive24>
+        <EndPointPrimitive24 Ref="157" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>138,424,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>EndPointPrimitive24</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>8c7c6ccc38d14099a75a3fb13d41a433</ReferenceToGuid>
+        </EndPointPrimitive24>
+        <StartPointPrimitive25 Ref="158" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>86,380,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>StartPointPrimitive25</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>ec5ef5d098e64d5d80d77735ec93ad4d</ReferenceToGuid>
+        </StartPointPrimitive25>
+        <EndPointPrimitive25 Ref="159" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>86,440,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>EndPointPrimitive25</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>ec5ef5d098e64d5d80d77735ec93ad4d</ReferenceToGuid>
+        </EndPointPrimitive25>
+        <StartPointPrimitive26 Ref="160" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>100,380,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>StartPointPrimitive26</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>745b3201d6634ef1a7c808ded69cd8ad</ReferenceToGuid>
+        </StartPointPrimitive26>
+        <EndPointPrimitive26 Ref="161" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>100,440,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>EndPointPrimitive26</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>745b3201d6634ef1a7c808ded69cd8ad</ReferenceToGuid>
+        </EndPointPrimitive26>
+        <StartPointPrimitive27 Ref="162" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>114,380,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>StartPointPrimitive27</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>22426011326e4b86837284ef30254a73</ReferenceToGuid>
+        </StartPointPrimitive27>
+        <EndPointPrimitive27 Ref="163" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>114,440,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>EndPointPrimitive27</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>22426011326e4b86837284ef30254a73</ReferenceToGuid>
+        </EndPointPrimitive27>
+        <StartPointPrimitive28 Ref="164" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>1.84,311.33,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>StartPointPrimitive28</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>9b03896f23b549fd977ad1f24a2a4d72</ReferenceToGuid>
+        </StartPointPrimitive28>
+        <EndPointPrimitive28 Ref="165" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>79.34,370.03,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>EndPointPrimitive28</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>9b03896f23b549fd977ad1f24a2a4d72</ReferenceToGuid>
+        </EndPointPrimitive28>
+        <StartPointPrimitive29 Ref="166" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>71.12,311.08,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>StartPointPrimitive29</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>45fcfcc6cabe427681992f48e7a957f5</ReferenceToGuid>
+        </StartPointPrimitive29>
+        <EndPointPrimitive29 Ref="167" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>137.7,369.78,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>EndPointPrimitive29</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>45fcfcc6cabe427681992f48e7a957f5</ReferenceToGuid>
+        </EndPointPrimitive29>
+        <StartPointPrimitive30 Ref="168" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>2,324,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>StartPointPrimitive30</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>523a8285a634437c9b338282ff546a2d</ReferenceToGuid>
+        </StartPointPrimitive30>
+        <EndPointPrimitive30 Ref="169" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>138,380,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>EndPointPrimitive30</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>523a8285a634437c9b338282ff546a2d</ReferenceToGuid>
+        </EndPointPrimitive30>
+        <StartPointPrimitive31 Ref="170" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>2,334,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>StartPointPrimitive31</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>5e47453822d24f4087c471491b6b61dd</ReferenceToGuid>
+        </StartPointPrimitive31>
+        <EndPointPrimitive31 Ref="171" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>84,390,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>EndPointPrimitive31</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>5e47453822d24f4087c471491b6b61dd</ReferenceToGuid>
+        </EndPointPrimitive31>
+        <StartPointPrimitive32 Ref="172" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>74,334,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>StartPointPrimitive32</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>9b21e68ee9de436aa24a305398d26c63</ReferenceToGuid>
+        </StartPointPrimitive32>
+        <EndPointPrimitive32 Ref="173" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>138,390,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>EndPointPrimitive32</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>9b21e68ee9de436aa24a305398d26c63</ReferenceToGuid>
+        </EndPointPrimitive32>
+        <StartPointPrimitive33 Ref="174" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>2,344,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>StartPointPrimitive33</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>8c7c6ccc38d14099a75a3fb13d41a433</ReferenceToGuid>
+        </StartPointPrimitive33>
+        <EndPointPrimitive33 Ref="175" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>138,424,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>EndPointPrimitive33</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>8c7c6ccc38d14099a75a3fb13d41a433</ReferenceToGuid>
+        </EndPointPrimitive33>
+        <StartPointPrimitive34 Ref="176" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>86,380,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>StartPointPrimitive34</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>ec5ef5d098e64d5d80d77735ec93ad4d</ReferenceToGuid>
+        </StartPointPrimitive34>
+        <EndPointPrimitive34 Ref="177" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>86,440,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>EndPointPrimitive34</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>ec5ef5d098e64d5d80d77735ec93ad4d</ReferenceToGuid>
+        </EndPointPrimitive34>
+        <StartPointPrimitive35 Ref="178" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>100,380,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>StartPointPrimitive35</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>745b3201d6634ef1a7c808ded69cd8ad</ReferenceToGuid>
+        </StartPointPrimitive35>
+        <EndPointPrimitive35 Ref="179" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>100,440,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>EndPointPrimitive35</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>745b3201d6634ef1a7c808ded69cd8ad</ReferenceToGuid>
+        </EndPointPrimitive35>
+        <StartPointPrimitive36 Ref="180" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>114,380,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>StartPointPrimitive36</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>22426011326e4b86837284ef30254a73</ReferenceToGuid>
+        </StartPointPrimitive36>
+        <EndPointPrimitive36 Ref="181" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>114,440,0,0</ClientRectangle>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>EndPointPrimitive36</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ReferenceToGuid>22426011326e4b86837284ef30254a73</ReferenceToGuid>
+        </EndPointPrimitive36>
+        <Rectangle1 Ref="182" type="Stimulsoft.Report.Components.StiRectanglePrimitive" isKey="true">
+          <ClientRectangle>2,6,66,10</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>180dc680957e49ea95d9c9fde6012990</Guid>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>Rectangle1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </Rectangle1>
+        <Rectangle2 Ref="183" type="Stimulsoft.Report.Components.StiRectanglePrimitive" isKey="true">
+          <ClientRectangle>72,6,54,10</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>5454de856fc342a5aec82f0b4a0b0fe3</Guid>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>Rectangle2</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </Rectangle2>
+        <Rectangle7 Ref="184" type="Stimulsoft.Report.Components.StiRectanglePrimitive" isKey="true">
+          <ClientRectangle>2,144,124,34</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>c8796288add8420ca3f3d72ac2cc84c3</Guid>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>Rectangle7</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </Rectangle7>
+        <VerticalLine4 Ref="185" type="Stimulsoft.Report.Components.StiVerticalLinePrimitive" isKey="true">
+          <ClientRectangle>86,182,0.254,12</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>f49f375a87d34de59b193f9ba66962b4</Guid>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>VerticalLine4</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </VerticalLine4>
+        <VerticalLine5 Ref="186" type="Stimulsoft.Report.Components.StiVerticalLinePrimitive" isKey="true">
+          <ClientRectangle>100,182,0.254,12</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>7641b2a744fe4150b9ddf15a1d2358a1</Guid>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>VerticalLine5</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </VerticalLine5>
+        <VerticalLine6 Ref="187" type="Stimulsoft.Report.Components.StiVerticalLinePrimitive" isKey="true">
+          <ClientRectangle>114,182,0.254,12</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>8ff653e47a664c04891e26e36e1c916b</Guid>
+          <MaxSize>0,0</MaxSize>
+          <MinSize>0,0</MinSize>
+          <Name>VerticalLine6</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </VerticalLine6>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>0ccf7a6cd8f2454682570ca348dacafc</Guid>
+      <Margins>10,10,5,5</Margins>
+      <Name>Page1</Name>
+      <Page isRef="3" />
+      <PageHeight>210</PageHeight>
+      <PageWidth>148.08</PageWidth>
+      <PaperSize>A5</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="188" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="189" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="9">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+    <value>Minisis.Report.dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>RequestReport1</ReportAlias>
+  <ReportChanged>10/21/2009 11:46:50 AM</ReportChanged>
+  <ReportCreated>5/1/2008 1:52:09 PM</ReportCreated>
+  <ReportDescription>&lt;MinisisInfo&gt;&lt;Description /&gt;&lt;DataModel /&gt;&lt;Database /&gt;&lt;SortInfos /&gt;&lt;/MinisisInfo&gt;</ReportDescription>
+  <ReportGuid>b9ec0c495a4248509f792d6d04707345</ReportGuid>
+  <ReportName>RequestReport1</ReportName>
+  <ReportUnit>Millimeters</ReportUnit>
+  <ReportVersion>2008.1.201</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+using Stimulsoft.Report.Dictionary;
+using Minisis.Report;
+namespace Reports
+{
+    
+    public class RequestReport1 : Stimulsoft.Report.StiReport
+    {
+        
+        public RequestReport1()
+        {
+            this.InitializeComponent();
+        }
+        #region StiReport Designer generated code - do not modify#endregion StiReport Designer generated code - do not modify
+    }
+}</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>
+***END***

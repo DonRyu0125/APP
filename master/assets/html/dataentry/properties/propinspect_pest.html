@@ -1,0 +1,172 @@
+<span class="hidden current_page" id="propinspect_pest"></span>
+
+<fieldset class="repeating_group" data-group-title="Inspection(s)" id="PD_INSPECTION_GR">
+<fieldset class="repeating_group" data-group-title="Pest(s)" id="PD_PEST_GROUP">
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="PD_PEST_TYPE">Pest Involved</label>
+      <input type="text" id="PD_PEST_TYPE">
+    </div>
+    </div>
+
+ <div class="form_row">
+    <div class="medium field_container">
+      <label for="PD_PEST_INVEST">Infestation Location</label>
+      <input type="text" id="PD_PEST_INVEST">
+    </div>
+
+      <div class="medium field_container">
+        <label for="PD_PEST_DAMAGE">Damage Done</label>
+        <input type="text" id="PD_PEST_DAMAGE">
+      </div>
+    </div>
+
+  <div class="borderless form_row">
+    <div class="full repeating_field field_container">
+      <label for="PD_PEST_CONTROL">Current Controls</label>
+      <input type="text" id="PD_PEST_CONTROL">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full repeating_field field_container">
+      <label for="PD_PEST_REMEDIAT">Treatment required</label>
+      <input type="text" id="PD_PEST_REMEDIAT">
+    </div>
+  </div>
+
+<fieldset class="logical_group">
+    <legend>Estimated Treatment Costs</legend>
+    <div class="form_row">
+    <div class="small date field_container">
+      <label for="PD_PEST_START">Start Date</label>
+      <input type="text" id="PD_PEST_START">
+    </div>
+
+    <div class="small date field_container">
+      <label for="PD_PEST_END">End Date</label>
+      <input type="text" id="PD_PEST_END">
+    </div>
+
+    <div class="small combo field_container">
+        <label for="PD_PEST_EST">Price</label>
+        <input type="text" id="PD_PEST_EST">
+        <select id="PD_PEST_EST_CUR">
+          <option></option>
+          <option>CAD</option>
+          <option>EURO</option>
+          <option>FRA</option>
+          <option>GBP</option>
+          <option>USD</option>
+        </select>
+      </div>
+   </div>
+  </fieldset>
+
+<fieldset class="logical_group">
+    <legend>Actual Treatment Costs</legend>
+
+  <div class="form_row">
+    <div class="small date field_container">
+      <label for="PD_PEST_ASTART">Start Date</label>
+      <input type="text" id="PD_PEST_ASTART">
+    </div>
+
+    <div class="small date field_container">
+      <label for="PD_PEST_AENDD">End Date</label>
+      <input type="text" id="PD_PEST_AEND">
+    </div>
+
+    <div class="small combo field_container">
+        <label for="PD_PEST_ACT">Price</label>
+        <input type="text" id="PD_PEST_ACT">
+        <select id="PD_PEST_ACT_CUR">
+          <option></option>
+          <option>CAD</option>
+          <option>EURO</option>
+          <option>FRA</option>
+          <option>GBP</option>
+          <option>USD</option>
+        </select>
+      </div>
+   </div>
+  </fieldset>
+
+  <div class="form_row contains_browse">
+    <div class="full org_validated_field people_validated_field field_container" data-map-people="pdpest_treat" data-map-org="pdpest_org_treat"> <!-- RL-20211231 -->
+      <label for="PD_PEST_REMED_BY">Treated By</label>
+      <input type="text" id="PD_PEST_REMED_BY" readonly>
+      <input type="hidden" id="PD_PEST_R_BY_ID">
+    </div>
+    </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="PD_PEST_NOTES">Notes</label>
+      <textarea id="PD_PEST_NOTES"></textarea>
+    </div>
+  </div>
+
+<fieldset class="repeating_group contains_image" data-group-title="Pest Images" id="PD_PEST_IMAGES">
+  <div class="form_row">
+    <div class="full image file_attachment field_container">
+      <label for="PD_PEST_IMG">Image Path</label>
+      <input type="text" id="PD_PEST_IMG">
+    </div>
+    </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="PD_PEST_IMG_CA">Note</label>
+      <textarea id="PD_PEST_IMG_CA"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Pest Video" id="PD_PEST_VIDEOS">
+  <div class="borderless form_row">
+    <div class="full video file_attachment field_container">
+      <label for="PD_PEST_VID">Video Path</label>
+      <input type="text" id="PD_PEST_VID">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="PD_PEST_VID_NOTE">Note</label>
+      <textarea id="PD_PEST_VID_NOTE"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Pest Documents" id="PD_PEST_DOC_GRP">
+  <div class="borderless form_row">
+    <div class="full text file_attachment field_container">
+      <label for="PD_PEST_DOC">Notes Path</label>
+      <input type="text" id="PD_PEST_DOC">
+    </div>
+    </div>
+
+   <div class="borderless form_row">
+    <div class="large field_container">
+      <label for="PD_PEST_DOC_TYPE">Type</label>
+      <input type="text" id="PD_PEST_DOC_TYPE">
+    </div>
+
+    <div class="small date field_container">
+      <label for="PD_PEST_DOC_DATE">Date</label>
+      <input type="text" id="PD_PEST_DOC_DATE">
+    </div>
+    </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="PD_PEST_DOC_NOTES">Note</label>
+      <textarea id="PD_PEST_DOC_NOTE"></textarea>
+    </div>
+  </div>
+</fieldset>
+</fieldset>
+
+</fieldset>
+

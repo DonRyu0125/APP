@@ -1,0 +1,123 @@
+<span class="hidden current_page" id="bldginspection_main"></span>
+
+<fieldset class="repeating_group" data-group-title="Inspection(s)" id="BD_INSPECTION_GR">
+ <div class="form_row">
+    <div class="small date field_container">
+      <label for="BD_INSPECT_DATE">Date</label>
+      <input type="text" id="BD_INSPECT_DATE">
+    </div>
+
+    <div class="medium field_container">
+      <label for="BD_CONDITION">Status</label>
+      <select id="BD_CONDITION">
+        <option></option>
+        <option>Excellent</option>
+        <option>Excellent/Good</option>
+        <option>Good</option>
+        <option>Good/Fair</option>
+        <option>Fair</option>
+        <option>Fair/Poor</option>
+        <option>Poor</option>
+        <option>Poor/Unacceptable</option>
+        <option>Unacceptable</option>
+      </select>
+    </div>
+
+      <div class="small field_container">
+        <label for="BD_INSPECT_PEST">Pest(s) involved?</label>
+        <select id="BD_INSPECT_PEST">
+          <option></option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+    </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="BD_INSPECT_FU">Followup</label>
+      <input type="text" id="BD_INSPECT_FU">
+    </div>
+  </div>
+
+    <div class="form_row contains_browse">
+    <div class="full org_validated_field people_validated_field field_container" data-map-people="bldg_inspect" data-map-org="bldg_org_inspect">   <!-- RL-20211231 -->
+      <label for="BD_INSPECT_BY">Treated By</label>
+      <input type="text" id="BD_INSPECT_BY" readonly>
+      <input type="hidden" id="BD_INSPECT_BY_ID">
+    </div>
+    </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="BD_INSPECT_NOTES">Inspection Details</label>
+      <textarea id="BD_INSPECT_NOTES"></textarea>
+    </div>
+  </div>
+
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="BD_CONDITION_NOT">Condition Summary</label>
+      <textarea id="BD_CONDITION_NOT"></textarea>
+    </div>
+  </div>
+
+ <fieldset class="repeating_group contains_image" data-group-title="Inspection Images - Buildings" id="BD_INSPECT_IMG_G">
+  <div class="form_row">
+    <div class="full image file_attachment field_container">
+      <label for="BD_INSPECT_IMG">Image Path</label>
+      <input type="text" id="BD_INSPECT_IMG" readonly>
+    </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="BD_INSPECT_IMG_C">Image Note</label>
+      <textarea id="BD_INSPECT_IMG_C"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Video - Buildings" id="BD_INSP_VID_GRP">
+  <div class="borderless form_row">
+    <div class="full video file_attachment field_container">
+      <label for="BD_INSPECT_VIDEO">Video Path</label>
+      <input type="text" id="BD_INSPECT_VIDEO" readonly>
+    </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="BD_INSPEC_VID_NO">Note</label>
+      <textarea id="BD_INSPEC_VID_NO"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Documents - Buildings" id="BD_INSP_DOC_GRP">
+  <div class="borderless form_row">
+    <div class="full text file_attachment field_container">
+      <label for="BD_INSPECT_DOC">Notes Path</label>
+      <input type="text" id="BD_INSPECT_DOC" readonly>
+    </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="BD_INSP_DOC_TYPE">Type</label>
+      <textarea id="BD_INSP_DOC_TYPE"></textarea>
+    </div>
+    </div>
+
+  <div class=<"borderless form_row">
+    <div class="small date field_container">
+      <label for="BD_INSP_DOC_DATE">Date</label>
+      <input type="text" id="BD_INSP_DOC_DATE">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="BD_INSP_DOC_NOTE">Note</label>
+      <textarea id="BD_INSP_DOC_NOTE"></textarea>
+    </div>
+  </div>
+</fieldset>

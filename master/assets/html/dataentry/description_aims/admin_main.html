@@ -1,0 +1,170 @@
+<span class="hidden current_page" id="admin_main"></span>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="IMM_SOURCE_ACQ">Immediate Source of Acq.</label>
+    <textarea id="IMM_SOURCE_ACQ"></textarea>
+  </div>
+</div>
+<!-- KN-2022-07-14 added barcode grp-->
+<fieldset class="repeating_group" data-group-title="Barcode Information" id="BARCODE_GRP">
+  <div class="form_row">
+    <div class="medium container_validated_field field_container" data-map="desc_barcode">
+      <label for="BARCODE_ID">Barcode</label>
+      <input type="text" id="BARCODE_ID" readonly>
+    </div>
+
+    <div class="smallmed field_container">
+      <label for="BDISPLAY">Display?</label>
+       <select id="BDISPLAY">
+          <option></option>
+          <option>Y</option>
+          <option>N</option>
+          </select>
+        </div>
+      </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="BNOTE">Barcode Note</label>
+      <textarea id="BNOTE"></textarea>
+    </div>
+  </div>
+  </fieldset>
+
+<!-- KN-2022-05-18 added -->
+<div class="form_row">
+  <div class="medium field_container">
+    <label for="CLOSED_UNTIL">Closed Until</label>
+      <input type="text" id="CLOSED_UNTIL">
+  </div>
+</div>
+
+<!-- KN-2022-05-18 added -->
+<fieldset class="repeating_group" data-group-title="Access Restrictions" id="ACCESS_REST_GRP">
+  <div class="form_row">
+    <div class="full restrictions_validated_field field_container" data-map="access_restrictions">
+      <label for="RESTRICTION">Restriction</label>
+      <input type="text" id="RESTRICTION">
+      <input type="hidden" id="RESTRICT_ID">
+    </div>
+  </div>
+</fieldset>
+
+<div class="form_row">
+  <div class="full validated_table repeating_field field_container">
+    <label for="TERMS_GOV_USE">Terms Governing Use</label>
+    <textarea id="TERMS_GOV_USE"></textarea> 
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="LOC_OF_ORIGINAL">Location of Original</label>
+    <textarea id="LOC_OF_ORIGINAL"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="ACCRUALS_NOTES">Accruals Notes</label>
+    <textarea id="ACCRUALS_NOTES"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="LANGUAGE_NOTES">Language Notes</label>
+    <textarea id="LANGUAGE_NOTES"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="CUSTODIAL_HIST">Custodial History</label>
+    <textarea id="CUSTODIAL_HIST"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="STATEMENT_RESP">Statement of Responsibility</label>
+    <textarea id="STATEMENT_RESP"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="medium repeating_field field_container">
+    <label for="HOW_TO_ORDER">How to Order</label>
+    <textarea id="HOW_TO_ORDER"></textarea>
+  </div>
+<!-- KN-2022-07-14 added  2022-08-17 changed label to Container from Microfilm Access Details-->
+  <div class="medium field_container">
+    <label for="MICROFILM_ORDER">Container</label>
+    <textarea id="MICROFILM_ORDER"></textarea>
+  </div>
+</div>
+
+<!-- KN-2022-07-14 added interloan grp-->
+<fieldset class="repeating_group" data-group-title="Interloan Group" id="INTERLOAN_GRP">
+  <div class="form_row">
+  <div class="full field_container">
+    <label for="INTERLOAN">Interloan</label>
+    <textarea id="INTERLOAN"></textarea>
+  </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full url_field field_container">
+      <label for="IIL_URL">Interloan URL</label>
+      <input type="text" id="IIL_URL">
+    </div>
+    </div>
+</fieldset>
+
+<div class="form_row">
+  <div class="full repeating_field field_container">
+    <label for="NOTES">Notes</label>
+    <textarea id="NOTES"></textarea>
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Notepad" id="ARCHIV_NOTE_GRP">
+  <div class="form_row">
+    <div class="medium validated_table field_container">
+      <label for="ARCHIV_NOTE_BY">Archivist</label>
+      <input type="text" id="ARCHIV_NOTE_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+
+    <div class="small date field_container">
+      <label for="ARCHIV_NOTE_DAT">Date</label>
+      <input type="text" id="ARCHIV_NOTE_DAT">
+    </div>
+
+    <div class="small field_container">
+      <label for="ARCHIV_NOTE_TYP">Type</label>
+      <input type="text" id="ARCHIV_NOTE_TYP">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="ARCH_NOTEPAD">Notes</label>
+      <textarea id="ARCH_NOTEPAD"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Last Modified" id="MODIFIED_HIST">
+  <div class="borderless form_row">
+    <div class="large field_container">
+      <label for="MODIFIED_BY">By</label>
+      <input type="text" id="MODIFIED_BY" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="MODIFIED_ON">On</label>
+      <input type="text" id="MODIFIED_ON" readonly>
+    </div>
+  </div>
+</fieldset>

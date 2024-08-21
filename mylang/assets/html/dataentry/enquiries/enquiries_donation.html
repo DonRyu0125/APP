@@ -1,0 +1,311 @@
+<span class="hidden current_page" id="donation"></span>
+
+<fieldset class="logical_group">
+  <legend>Donation</legend>
+
+  <div style="padding-bottom: 5px;">
+     <div class="full form_button field_container">
+       <a href="#" onclick="hide_show_div('donation_general');" style=" border-radius: 5px 5px 0 0;"><i class="fa fa-arrows-alt"></i>General Information</a>
+     </div>
+  </div>
+
+  <div id="donation_general" class="show_as_is">
+    <div class="borderless form_row">
+      <div class="medium field_container">
+        <label for="E_DONOR_TYPE">Donor Type</label>
+        <input type="text" id="E_DONOR_TYPE">
+      </div>
+
+      <div class="medium field_container">
+        <label for="E_CREATOR">Creator</label>
+        <input type="text" id="E_CREATOR">
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="E_COLLECT_INFO">Collection Information</label>
+        <input type="text" id="E_COLLECT_INFO">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="medium repeating_field field_container">
+        <label for="E_MEDIA_TYPE">Media Type</label>
+        <select id="E_MEDIA_TYPE">
+          <option>Photographs</option>
+          <option>Maps</option>
+          <option>Drawings</option>
+          <option>Tapes</option>
+        </select>
+      </div>
+      <div class="medium field_container">
+        <label for="E_DATE_COLLECT">Dates of Collection</label>
+        <input type="text" id="E_DATE_COLLECT">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="medium field_container">
+        <label for="E_EXTENT_COLLECT">Extent of Collection</label>
+        <input type="text" id="E_EXTENT_COLLECT">
+      </div>
+      <div class="medium field_container">
+        <label for="E_SIZE_COLLECT">Size of Collection Items</label>
+        <input type="text" id="E_SIZE_COLLECT">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="medium field_container">
+        <label for="E_GEOG_LOC">Geographic Location</label>
+        <input type="text" id="E_GEOG_LOC">
+      </div>
+      <div class="small field_container">
+        <label for="E_PREV_DONATE">Previous Donations</label>
+        <input type="text" id="E_PREV_DONATE">
+      </div>
+      <div class="small field_container">
+        <label for="E_RECEIPT">Tax Receipt Required</label>
+        <select id="E_RECEIPT">
+          <option>Y</option>
+          <option>N</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div style="padding-bottom: 5px;">
+     <div class="full form_button field_container" style="margin: -5px 0 0px 0">
+       <a href="#" onclick="hide_show_div('donation_assessment');" style=" border-radius: 5px 5px 0 0;"><i class="fa fa-arrows-alt"></i>Assessment Report</a>
+     </div>
+  </div>
+
+  <div id="donation_assessment" class="show_as_is" style="display:none;">
+    <!-- <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="ED_TITLE">Title</label>
+        <input type="text" id="ED_TITLE">
+      </div>
+    </div> -->
+    <div class="borderless form_row">
+      <div class="medium field_container">
+        <label for="ED_REF_CODE">Reference Code/Collection Group</label>
+        <input type="text" id="ED_REF_CODE">
+      </div>
+      <div class="medium date field_container">
+        <label for="ED_DATE_CREATE">Date of Creation</label>
+        <input type="text" id="ED_DATE_CREATE">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="ED_PHY_DESC">Physical Description</label>
+        <input type="text" id="ED_PHY_DESC">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="ED_BIB_INFO">History/Bibliographical Information</label>
+        <input type="text" id="ED_BIB_INFO">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="ED_SCOPE">Scope & Content</label>
+        <input type="text" id="ED_SCOPE">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="medium field_container">
+        <label for="ED_ACC_REST">Access Restrictions</label>
+        <input type="text" id="ED_ACC_REST">
+      </div>
+      <div class="medium field_container">
+        <label for="ED_COPYRIGHT">Copyright</label>
+        <input type="text" id="ED_COPYRIGHT">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="medium field_container">
+        <label for="ED_PHY_COND">Physical Condition</label>
+        <input type="text" id="ED_PHY_COND">
+      </div>
+      <div class="medium field_container">
+        <label for="ED_RECOMMEND">Recommendation</label>
+        <input type="text" id="ED_RECOMMEND">
+      </div>
+    </div>
+  </div>
+
+  <div style="padding-bottom: 5px;">
+     <div class="full form_button field_container" style="margin: -5px 0 0px 0">
+       <a href="#" onclick="hide_show_div('donation_accessioning');" style=" border-radius: 5px 5px 0 0;"><i class="fa fa-arrows-alt"></i>Accessioning Information</a>
+     </div>
+  </div>
+
+  <div id="donation_accessioning" class="show_as_is" style="display:none;">
+    <div class="borderless form_row">
+      <div class="medium field_container">
+        <label for="ED_ACC_ID">Accession ID</label>
+        <input type="text" id="ED_ACC_ID">
+      </div>
+      <div class="medium field_container">
+        <label for="ED_SRC_TYPE">Source Type</label>
+        <input type="text" id="ED_SRC_TYPE">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="medium field_container">
+        <label for="ED_SRC_NAME">Source Name</label>
+        <input type="text" id="ED_SRC_NAME">
+      </div>
+      <div class="medium field_container">
+        <label for="ED_SRC_CONTACT">Contact</label>
+        <input type="text" id="ED_SRC_CONTACT">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="medium field_container">
+        <label for="ED_SRC_ROLE">Role</label>
+        <input type="text" id="ED_SRC_ROLE">
+      </div>
+      <div class="medium field_container">
+        <label for="ED_SRC_CONFID">Confidentiality</label>
+        <input type="text" id="ED_SRC_CONFID">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="ED_SRC_NOTE">Note</label>
+        <input type="text" id="ED_SRC_NOTE">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="medium date field_container">
+        <label for="ED_DATE_MAT">Date of Materials</label>
+        <input type="text" id="ED_DATE_MAT">
+      </div>
+      <div class="medium field_container">
+        <label for="ED_EXT_TYPE">Extent Type</label>
+        <input type="text" id="ED_EXT_TYPE">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="medium field_container">
+        <label for="ED_QTY_UNIT">Quantity and Unit of Measure</label>
+        <input type="text" id="ED_QTY_UNIT">
+      </div>
+      <div class="medium field_container">
+        <label for="ED_CONT_TYPE">Content Type</label>
+        <input type="text" id="ED_CONT_TYPE">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="medium field_container">
+        <label for="ED_CARRIER_TYPE">Carrier Type</label>
+        <input type="text" id="ED_CARRIER_TYPE">
+      </div>
+      <div class="medium field_container">
+        <label for="ED_EXT_NOTE">Extent Note</label>
+        <input type="text" id="ED_EXT_NOTE">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="medium field_container">
+        <label for="ED_EVENT_TYPE">Event Type</label>
+        <input type="text" id="ED_EVENT_TYPE">
+      </div>
+      <div class="medium date field_container">
+        <label for="ED_EVENT_DATE">Event Date</label>
+        <input type="text" id="ED_EVENT_DATE">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="medium field_container">
+        <label for="ED_EVENT_AGENT">Event Agent</label>
+        <input type="text" id="ED_EVENT_AGENT">
+      </div>
+      <div class="medium field_container">
+        <label for="ED_EVENT_NOTE">Event Note</label>
+        <input type="text" id="ED_EVENT_NOTE">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="medium field_container">
+        <label for="ED_REV_TYPE">Creation/Revision Type</label>
+        <input type="text" id="ED_REV_TYPE">
+      </div>
+      <div class="medium date field_container">
+        <label for="ED_REV_DATE">Creation/Revision Date</label>
+        <input type="text" id="ED_REV_DATE">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="medium field_container">
+        <label for="ED_REV_AGENT">Creation/Revision Agent</label>
+        <input type="text" id="ED_REV_AGENT">
+      </div>
+      <div class="medium field_container">
+        <label for="ED_REV_NOTE">Creation/Revision Note</label>
+        <input type="text" id="ED_REV_NOTE">
+      </div>
+    </div>
+  </div>
+
+  <div style="padding-bottom: 5px;">
+     <div class="full form_button field_container" style="margin: -5px 0 0px 0">
+       <a href="#" onclick="hide_show_div('donation_acquisition');" style=" border-radius: 5px 5px 0 0;"><i class="fa fa-arrows-alt"></i>Acquisition/Catalogue Information</a>
+     </div>
+  </div>
+
+  <div id="donation_acquisition" class="show_as_is" style="display:none;">
+    <fieldset class="repeating_group" data-group-title="Collection Items" id="ED_ACQ">
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="ED_ACQ_TITLE">Title</label>
+        <input type="text" id="ED_ACQ_TITLE">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="ED_ACQ_AUTHOR">Authors</label>
+        <input type="text" id="ED_ACQ_AUTHOR">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="medium field_container">
+        <label for="ED_ACQ_ISBN">ISBN</label>
+        <input type="text" id="ED_ACQ_ISBN">
+      </div>
+      <div class="medium field_container">
+        <label for="ED_ACQ_PRICE">Purchase Price</label>
+        <input type="text" id="ED_ACQ_PRICE">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="ED_ACQ_AGREE">Purchase Agreement</label>
+        <input type="text" id="ED_ACQ_AGREE">
+      </div>
+    </div>
+    <div class="borderless form_row">
+      <div class="medium field_container">
+        <label for="ED_ACQ_SUBSCRIPT">Subscription</label>
+        <input type="text" id="ED_ACQ_SUBSCRIPT">
+      </div>
+      <div class="medium field_container">
+        <label for="ED_ACQ_VENDOR">Vendor</label>
+        <input type="text" id="ED_ACQ_VENDOR">
+      </div>
+    </div>
+    </fieldset>
+  </div>
+
+  <div class="borderless form_row" style="padding-bottom: 5px;">
+     <div class="small field_container">
+       <a href="#" id="ACCESSMENT_REPORT" onclick="downLoadEnquiryReport('ENQ_ASSESSMENT_REPORT');" class="simple_button" style="margin: 0 0 0 -8px;"><i class="fa fa-print"></i> Assessment Report</a>
+     </div>
+     <div class="small field_container">
+       <a href="#" id="DONATION_AGREEMENT" onclick="downLoadEnquiryReport('ENQ_DONATION_AGREEMENT');" class="simple_button" style="margin: 0 0 0 -8px;"><i class="fa fa-print"></i> Donation Agreement Report</a>
+     </div>
+  </div>
+
+</fieldset>

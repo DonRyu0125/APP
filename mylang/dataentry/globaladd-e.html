@@ -1,0 +1,150 @@
+<!-- RL-2020-09-29 -->
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+      <meta charset="windows-1252" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMS - Plan Movement</title>
+
+    <!-- include virtual="/mylang/assets/html/template/stylesheets.html" -->
+    <!-- include virtual="/mylang/assets/html/template/header_scripts.html" -->
+  </head>
+  <body data-database="locations">
+    <header>
+      <!-- include virtual="/mylang/assets/html/template/header.html" -->
+    </header>
+
+    <section id="body">
+      <div class="container">
+        <section id="data_entry_forms">
+          <div id="primary_data_entry_form">
+            <div id="data_entry_form">
+              <form id="plan_move" method="post" action="^SEARCHRESULT^?GLOBALADD&PARM_FILE=[M2A_SCRIPT]GBTRANS2">
+                <span class="hidden current_page" id="globaladd_main"></span>
+
+                <!-- include virtual="/mylang/assets/html/template/db/globaladd_actions_nav.html" -->
+
+                <div class="loading" id="progress_container" style="display:none;">
+                  <i class="fa fa-spin fa-gear fa-4x"></i>
+                </div>
+
+                <fieldset class="logical_group">
+                  <legend>Location Details</legend>
+
+                  <div class="form_row">
+                    <div class="medium location_validated_field field_container" data-map="plan_location" data-formfield="y">
+                      <label for="LOC1">Location Code</label>
+                      <input type="text" id="LOC1" name="LOC1" readonly required>
+                    </div>
+
+                    <div class="small date field_container">
+                      <label for="ACTION_DATE">Plan Move Date</label>
+                      <input type="text" name="ACTION_DATE" id="ACTION_DATE" readonly>
+                    </div>
+                  </div>
+
+                  <div class="form_row">
+                    <div class="medium field_container">
+                      <label for="LOC3">Building</label>
+                      <input type="text" id="LOC3" name="LOC3" readonly>
+                    </div>
+
+                    <div class="small field_container">
+                      <label for="LOC11">Move Ref. No.</label>
+                      <input type="text" id="LOC11" name="LOC11" readonly>
+                    </div>
+                  </div>
+
+                  <div class="form_row">
+                    <div class="medium field_container">
+                      <label for="LOC4">Area / Floor</label>
+                      <input type="text" id="LOC4" name="LOC4" readonly>
+                    </div>
+
+                    <div class="medium field_container">
+                      <label for="LOC2">Room</label>
+                      <input type="text" id="LOC2" name="LOC2" readonly>
+                    </div>
+                  </div>
+
+                  <div class="form_row">
+                    <div class="small field_container">
+                      <label for="LOC6">Rack / Unit</label>
+                      <input type="text" id="LOC6" name="LOC6" readonly>
+                    </div>
+
+                    <div class="small field_container">
+                      <label for="LOC13">Shelf / Drawer</label>
+                      <input type="text" id="LOC13" name="LOC13" readonly>
+                    </div>
+                  </div>
+
+                  <div class="form_row">
+                    <div class="medium field_container">
+                      <label for="LOC7">Container Details</label>
+                      <input type="text" id="LOC7" name="LOC7" readonly>
+                    </div>
+
+                    <div class="medium field_container">
+                      <label for="LOC5">Location Type</label>
+                      <input type="text" id="LOC5" name="LOC5" readonly>
+                    </div>
+                  </div>
+
+                  <div class="form_row">
+                    <div class="medium field_container">
+                      <label for="LOC14">Position</label>
+                      <input type="text" id="LOC14" name="LOC14" readonly>
+                    </div>
+
+                    <div class="medium field_container">
+                      <label for="LOC15">Access</label>
+                      <input type="text" id="LOC15" name="LOC15" readonly>
+                    </div>
+                  </div>
+
+                  <div class="form_row">
+                    <div class="medium field_container">
+                      <label for="LOC9">Organization Unit</label>
+                      <input type="text" id="LOC9" name="LOC9" readonly>
+                    </div>
+
+                    <div class="medium field_container">
+                      <label for="LOC10">Location Contact</label>
+                      <input type="text" id="LOC10" name="LOC10" readonly>
+                    </div>
+                  </div>
+
+                  <div class="borderless form_row">
+                    <div class="full field_container">
+                      <label for="LOC12">Move Note</label>
+                      <input type="text" id="LOC12" name="LOC12">
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <footer>
+      <!-- include virtual="/mylang/assets/html/template/footer.html" -->
+    </footer>
+
+    <xml id="MY_XML" style="display: none;">
+      <record>
+        <SISN>0</SISN>
+      </record>
+    </xml>
+
+    <div id="notices"></div>
+
+    <!-- include virtual="/mylang/assets/html/template/db/loc_base_scripts.html" -->
+    <!-- include virtual="/mylang/assets/html/template/core_dataentry_scripts.html" -->
+    <script src="/mylang/assets/js/dataentry/record_databases/globaladd.js"></script>
+    <script src="/mylang/assets/js/dataentry/frontend/globaladd.js"></script>
+  </body>
+</html>

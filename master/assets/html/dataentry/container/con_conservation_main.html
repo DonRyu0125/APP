@@ -1,0 +1,223 @@
+<span class="hidden current_page" id="conservation_main"></span>
+
+<fieldset class="repeating_group" data-group-title="Treatment / Examination Details" id="CONSERVE_INFO">
+  <div class="form_row">
+    <div class="large org_validated_field people_validated_field field_container" data-map-people="treat_treated_by" data-map-org="treat_org_treated_by"> <!-- RL-20211231 -->
+      <label for="TREATED_BY">Treated By</label>
+      <input type="text" id="TREATED_BY" readonly>
+      <input type="hidden" id="TREATED_BY_P_ID">
+    </div>
+    </div>
+  <div class="form_row">
+    <div class="large org_validated_field people_validated_field field_container" data-map-people="treatment_examiner" data-map-org="treatment_org_examiner"> <!-- RL-20211231 -->
+      <label for="EXAMINER">Examiner</label>
+      <input type="text" id="EXAMINER" readonly>
+      <input type="hidden" id="EXAMINER_PER_ID">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="EXAM_TREAT">Type</label>
+      <select id="EXAM_TREAT">
+        <option></option>
+        <option>Examination</option>
+        <option>Condition report (loan out)</option>
+        <option>Treatment</option>
+        <option>Treatment proposal</option>
+      </select>
+    </div>
+
+    <div class="small date field_container">
+      <label for="CONDTION_CHK_DTE">Start Date</label>
+      <input type="text" id="CONDTION_CHK_DTE">
+    </div>
+
+    <div class="small date field_container">
+      <label for="CONDTION_CHK_EDT">End Date</label>
+      <input type="text" id="CONDTION_CHK_EDT">
+    </div>
+
+    <div class="small field_container">
+      <label for="CONDITION">Condition</label>
+      <select id="CONDITION">
+        <option></option>
+        <option>New</option>
+        <option>Excellent </option>
+        <option>Very Good </option>
+        <option>Good</option>
+        <option>Fair</option>
+        <option>Poor</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="CONDTION_REF_NUM">Reference Number</label>
+      <input type="text" id="CONDTION_REF_NUM">
+    </div>
+
+    <div class="small field_container">
+      <label for="CONDITION_STATUS">Status</label>
+      <select id="CONDITION_STATUS">
+        <option></option>
+        <option>Stable</option>
+        <option>Unstable</option>
+        <option>Deaccession</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="small validated_table field_container">
+      <label for="CONDN_CHK_PERSON">Staff Checker</label>
+      <input type="text" id="CONDN_CHK_PERSON" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+
+    <div class="medium repeating_field field_container">
+      <label for="CON_SUMMARY">Summary</label>
+      <select id="CON_SUMMARY">
+        <option></option>
+        <option>Abrasions</option>
+        <option>Accretions</option>
+        <option>Adhesive Damage</option>
+        <option>Biological Damage - Active/Dormant</option>
+        <option>Biological Damage</option>
+        <option>Breakage</option>
+        <option>Chips/Dents</option>
+        <option>Biological Damage - Mold/Mildew</option>
+        <option>Biological Damage - Pests</option>
+        <option>Cockling</option>
+        <option>Corrosion</option>
+        <option>Corrosion - Active (Progressive)</option>
+        <option>Corrosion - Passive (Patina, Dormant)</option>
+        <option>Cracks</option>
+        <option>Discolouration</option>
+        <option>Distortion</option>
+        <option>Embrittlement</option>
+        <option>Fading/Bleaching</option>
+        <option>Flaking</option>
+        <option>Frame or Mount Damage</option>
+        <option>Holes</option>
+        <option>Loose parts</option>
+        <option>Residues</option>
+        <option>Scratches</option>
+        <option>Soil</option>
+        <option>Soil - Dust/Surface</option>
+        <option>Soil - Fingerprints</option>
+        <option>Soil - Grime</option>
+        <option>Soil - Ingrained Dirt</option>
+        <option>Splitting</option>
+        <option>Stains</option>
+        <option>Tears/Rips</option>
+        <option>Warping</option>
+        <option>Weakness</option>
+        <option>Wear</option>
+        <option>Other</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="COND_COMMENTS">Comments</label>
+      <textarea id="COND_COMMENTS"></textarea>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="medium repeating_field field_container">
+      <label for="A_CONS_MATERIAL">Material</label>
+      <input type="text" id="A_CONS_MATERIAL">
+    </div>
+
+    <div class="medium repeating_field field_container">
+      <label for="A_CONS_MEDIUM">Medium</label>
+      <input type="text" id="A_CONS_MEDIUM">
+    </div>
+   </div>
+
+  <div class="borderless form_row">
+    <div class="medium date field_container">
+      <label for="NXT_CONDIT_CHK">Next Check</label>
+      <input type="text" id="NXT_CONDIT_CHK">
+    </div>
+
+    <div class="medium field_container">
+      <label for="CONSRVTION_PRITY">Priority</label>
+      <select id="CONSRVTION_PRITY">
+        <option></option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="CONS_B_PROTECT">Backing</label>
+      <select id="CONS_B_PROTECT">
+        <option></option>
+        <option>Conservation board</option>
+        <option>Wood</option>
+        <option>Hardboard</option>
+        <option>Blockboard</option>
+        <option>Other</option>
+        <option>Not applicable</option>
+      </select>
+    </div>
+
+    <div class="small field_container">
+      <label for="CONS_GLAZING">Glazing</label>
+      <select id="CONS_GLAZING">
+        <option></option>
+        <option>Glass</option>
+        <option>Glazed</option>
+        <option>Low-reflect laminated</option>
+        <option>Laminated glass</option>
+        <option>Non-reflect glass</option>
+        <option>Perspex</option>
+        <option>Other</option>
+        <option>Not applicable</option>
+      </select>
+    </div>
+
+    <div class="small field_container">
+      <label for="CONS_SUPPORT">Support</label>
+      <select id="CONS_SUPPORT">
+        <option></option>
+        <option>Canvas</option>
+        <option>Paper</option>
+        <option>Cardboard</option>
+        <option>Vellum</option>
+        <option>Cotton duck</option>
+        <option>Hardboard</option>
+        <option>Plywood</option>
+        <option>Wood</option>
+        <option>Other</option>
+        <option>Not applicable</option>
+      </select>
+    </div>
+
+    <div class="small repeating_field field_container">
+      <label for="CONS_FRAME">Frame</label>
+      <select id="CONS_FRAME">
+        <option></option>
+        <option>Aluminium</option>
+        <option>Card mount</option>
+        <option>Framed</option>
+        <option>Gilded</option>
+        <option>No frame</option>
+        <option>Other</option>
+        <option>Wood</option>
+        <option>Painted</option>
+        <option>Plaster</option>
+        <option>Not applicable</option>
+      </select>
+    </div>
+  </div>
+</fieldset>

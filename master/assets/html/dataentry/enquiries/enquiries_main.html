@@ -1,0 +1,196 @@
+<span class="hidden current_page" id="enquiries_main"></span>
+
+<div class="form_row">
+  <div class="small field_container">
+    <label for="ENQUIRY_ID><u>Enquiry No.</u></label>
+    <input type="text" id="ENQUIRY_ID" readonly>
+  </div>
+
+  <div class="small field_container">
+    <label for="E_METHOD_REQUEST">Method</label>
+    <select id="E_METHOD_REQUEST">
+      <option></option>
+      <option>Email</option>
+      <option>Fax</option>
+      <option>In person</option>
+      <option>Mail</option>
+      <option>Phone</option>
+      <option>Web</option>
+      <option>Other</option>
+    </select>
+  </div>
+  
+  <div class="small validated_table field_container">
+    <label for="ENQ_RECEIVED_BY">Received By</label>
+    <input type="text" id="ENQ_RECEIVED_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="small date field_container">
+      <label for="ENQ_DATE_RECEIVE">Received on</label>
+      <input type="text" id="ENQ_DATE_RECEIVE">
+    </div>
+
+  <div class="small field_container">
+    <label for="ENQ_STATUS">Status</label>
+    <select id="ENQ_STATUS">
+      <option></option>
+      <option>Open</option>
+      <option>Closed</option>
+    </select>
+  </div>    
+
+  <div class="small date field_container">
+      <label for="ENQ_DUE_DATE">Due</label>
+      <input type="text" id="ENQ_DUE_DATE">
+    </div>
+</div>
+
+<div class="form_row">
+  <div class="small validated_table field_container">
+    <label for="ENQ_COMPLETED_BY">Completed By</label>
+    <input type="text" id="ENQ_COMPLETED_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+  </div>
+
+  <div class="small date field_container">
+      <label for="ENQ_DATE_COMPLET">Completed on</label>
+      <input type="text" id="ENQ_DATE_COMPLET">
+    </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Client (Enter either an individual or an organization )" id="ENQ_SOURCE_GRP">
+  <div class="form_row contains_browse">
+    <div class="large org_validated_field field_container" data-map="client_organization">
+      <label for="ENQ_ORG">Organization</label>
+      <input type="text" id="ENQ_ORG" readonly>
+      <input type="hidden" id="ENQ_ORG_ID">
+    </div>
+   </div>
+
+  <div class="form_row contains_browse">
+    <div class="large people_validated_field field_container" data-map="client_person">
+      <label for="ENQ_USER">Name</label>
+      <input type="text" id="ENQ_USER" readonly>
+      <input type="hidden" id="ENQ_USER_ID">
+    </div>
+    </div>
+
+    <fieldset class="logical_group">
+     <legend>Address Details</legend>
+
+     <div class="form_row">
+      <div class="small field_container">
+        <label for="ADDRESS1">Suite#/PO Box</label>
+        <input type="text" id="ADDRESS1" readonly>
+      </div>
+
+      <div class="large field_container">
+        <label for="ADDRESS2">Street</label>
+        <input type="text" id="ADDRESS2"readonly>
+      </div>
+    </div>
+
+    <div class="form_row">
+      <div class="small field_container">
+        <label for="CITY">City</label>
+        <input type="text" id="CITY" readonly>
+      </div>
+      <div class="small field_container">
+        <label for="STATE">Province/State</label>
+        <input type="text" id="STATE" readonly>
+      </div>
+      <div class="small field_container">
+        <label for="COUNTRY">Country</label>
+        <input type="text" id="COUNTRY" readonly>
+      </div>
+      <div class="small field_container">
+        <label for="ZIPCODE">Postal Code/ZIP</label>
+        <input type="text" id="ZIPCODE" readonly>
+      </div>
+    </div>
+
+    <div class="form_row">
+      <div class="medium field_container">
+        <label for="PHONE1">Primary Phone</label>
+        <input type="text" id="PHONE1" readonly>
+      </div>
+
+      <div class="small field_container">
+        <label for="PHONE2">Secondary Phone</label>
+        <input type="text" id="PHONE2" readonly>
+      </div>
+
+      <div class="small field_container">
+        <label for="FAX">Fax</label>
+        <input type="text" id="FAX" readonly>
+      </div>
+    </div>
+
+    <div class="form_row">
+      <div class="medium field_container">
+        <label for="URL_USER">URL</label>
+        <input type="text" id="URL_USER" readonly>
+      </div>
+
+      <div class="medium field_container">
+        <label for="EMAIL">E-mail Address</label>
+        <input type="text" id="EMAIL" readonly>
+      </div>
+	  </div>
+    
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="ADDRESS_NOTE">Address Note</label>
+      <input type="text" id="ADDRESS_NOTE">
+    </div>
+  </div>
+   </fieldset> 
+  </fieldset>
+
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="PURPOSE">Topic</label>
+      <select id="PURPOSE">
+      <option></option>
+      <option>Academic (undergraduate)</option>
+      <option>Academic (postgraduate)</option>
+      <option>Business (commercial)</option>
+      <option>Genealogical</option>
+      <option>General interest</option>
+      <option>Independent research (non-genealogical)</option>
+      <option>Media</option>
+      <option>School assignment</option>
+      <option>Other</option>
+    </select>
+  </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+    <label for="ACTUAL_ENQ_REQ">Enquiry/Request Details</label>
+    <textarea id="ACTUAL_ENQ_REQ"></textarea>
+  </div>
+  </div>
+
+<fieldset class="repeating_group" data-group-title="Notepad" id="ENQ_NOTE_GRP">
+  <div class="form_row">
+    <div class="large validated_table field_container">
+      <label for="ENQ_NOTE_BY">Curator</label>
+      <input type="text" id="ENQ_NOTE_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+
+    <div class="small date field_container">
+      <label for="ENQ_NOTE_DATE">Date</label>
+      <input type="text" id="ENQ_NOTE_DATE">
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="ENQ_NOTE">Notes</label>
+      <textarea id="ENQ_NOTE"></textarea>
+    </div>
+  </div>
+</fieldset>

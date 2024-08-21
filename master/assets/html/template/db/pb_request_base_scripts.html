@@ -1,0 +1,22 @@
+<script>
+  // kn-2021-01-226 - save_link changed; add "reports"
+  site_params = {
+    add_link : '^SESSID^/PUBLIC_BODY_REQUEST?OPEN&DBOPTION=ADD',
+    global_change_link : '^SESSID^?QUERYFORM&SEARCHFORM=[CAMS_APP]/144/search%5cacc_gc.html&DATABASE=PUBLIC_BODY_REQUEST&DBOPTION=SEARCH',
+    save_link : '^SAVE_N_STOP_RECORD^&FILE=[CAMS_APP]/144/ASSETS%2fHTML%2fTEMPLATE%2fQUERY_FORM.HTML&DISCONNECT=N&CLOSE=Y',
+    skip_link : '^SKIP_N_STOP_RECORD^&FILE=[CAMS_APP]/144/ASSETS%2fHTML%2fTEMPLATE%2fQUERY_FORM.HTML',
+    search_link : '^SESSID^/PUBLIC_BODY_REQUEST?OPEN&DBOPTION=SEARCH&CLEAR=Y',
+    'reports' : {
+                  'acc_bri'    : { 'query': '[CAMS_APP]/144/search\\accession_acc_bri.html',    'report': 'ACCESSION_BRIEF' },
+                  'acc_full'   : { 'query': '[CAMS_APP]/144/search\\accession_acc_full.html',   'report': 'ACCESSION_FULL' },
+                  'acc_accno'  : { 'query': '[CAMS_APP]/144/search\\accession_acc_accno.html',  'report': 'ACCESSION_BY_ACCNO' },
+                  'acc_date'   : { 'query': '[CAMS_APP]/144/search\\accession_acc_accno.html',   'report': 'ACCESSION_BY_DATE' },
+                  'acc_donor'  : { 'query': '[CAMS_APP]/144/search\\accession_acc_accno.html',   'report': 'ACCESSION_BY_DONOR' }
+        }
+  };
+</script>
+<script src="/144/assets/js/vendor/jquery.colorbox-min.js"></script>
+<script src="/144/assets/js/frontend_util.js"></script>    <!-- RL-2021-03-02 -->
+<script src="/144/assets/js/frontend.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<!-- <script src="/144/assets/js/vendor/custom-alert.min.js"></script> -->

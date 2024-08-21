@@ -1,0 +1,109 @@
+<span class="hidden current_page" id="movement_packing"></span>
+
+<fieldset class="repeating_group" data-group-title="Packing" id="RISK_MGT">
+  <div class="form_row">
+    <div class="large artlocations_validated_field field_container" data-map="packing_case_location">
+      <label for="BOX_LOC_ID">Case Location</label>
+      <input type="text" id="BOX_LOC_ID" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="BOX_ID">Packing Case Number</label>
+      <input type="text" id="BOX_ID">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="PACKING_REC">Packing Requirements</label>
+      <input type="text" id="PACKING_REC">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="DISPLAY_REC">Display Requirements</label>
+      <input type="text" id="DISPLAY_REC">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="HANDLING_REC">Handling Requirements</label>
+      <input type="text" id="HANDLING_REC">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="SPECIAL_REQUIR">Special Requirements</label>
+      <input type="text" id="SPECIAL_REQUIR">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="STORAGE_REC">Storage Requirements</label>
+      <input type="text" id="STORAGE_REC">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="FRAME_REC">Frame Requirements</label>
+      <input type="text" id="FRAME_REC">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Recommended Environmental Conditions</legend>
+
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="REL_HUMIDITY">RH</label>
+      <input type="text" id="REL_HUMIDITY">
+    </div>
+
+    <div class="small field_container">
+      <label for="UV_LEVEL">Microwatts/hr</label>
+      <input type="text" id="UV_LEVEL">
+    </div>
+
+    <div class="small field_container">
+      <label for="TEMPERATURE">Degrees C</label>
+      <input type="text" id="TEMPERATURE">
+    </div>
+
+    <div class="small field_container">
+      <label for="TEMPERATURE_F">Degrees F</label>
+      <input type="text" id="TEMPERATURE_F">
+    </div>
+  </div>
+
+  <fieldset class="repeating_group" data-group-title="Lux Details" id="LUX_GRP">
+    <div class="form_row">
+      <div class="medium field_container">
+        <label for="LIGHT">Lux</label>
+        <input type="text" id="LIGHT">
+      </div>
+
+      <div class="small date field_container">
+        <label for="LIGHT_DATE">Date</label>
+        <input type="text" id="LIGHT_DATE">
+      </div>
+
+      <div class="small field_container">
+        <label for="LIGHT_ANNUAL_HRS">Annual Exposure Limit (hrs)</label>
+        <input type="text" id="LIGHT_ANNUAL_HRS">
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="LIGHT_NOTES">Notes</label>
+        <textarea id="LIGHT_NOTES"></textarea>
+      </div>
+    </div>
+  </fieldset>
+</fieldset>

@@ -1,0 +1,98 @@
+<span class="hidden current_page" id="insurance_incident_tracking"></span>
+
+<fieldset class="repeating_group" data-group-title="Damage / Loss Details" id="DAMAGE_LOSS_GRP">
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="D_RESOLVED">Case / Incident Resolved</label>
+      <select id="D_RESOLVED">
+        <option></option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div>
+  </div>
+  
+  <fieldset class="logical_group">
+    <legend>Incident Related Entities</legend>
+
+    <div class="form_row">
+      <div class="small field_container">
+        <label for="POLICE_APPLIED">Reported to Police</label>
+        <select id="POLICE_APPLIED">
+          <option></option>
+          <option value="X">Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+
+      <div class="medium field_container">
+        <label for="POLICE_NAME">Related Name</label>
+        <input type="text" id="POLICE_NAME">
+      </div>
+
+      <div class="small field_container">
+        <label for="POLICE_DIVISION">Division / Department</label>
+        <input type="text" id="POLICE_DIVISION">
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="small field_container">
+        <label for="POLICE_CONTACT">Related Phone</label>
+        <input type="text" id="POLICE_CONTACT">
+      </div>
+
+      <div class="medium field_container">
+        <label for="POLICE_EMAIL">E-mail</label>
+        <input type="text" id="POLICE_EMAIL">
+      </div>
+
+      <div class="small field_container">
+        <label for="POLICE_TRACK_NO">Tracking Number</label>
+        <input type="text" id="POLICE_TRACK_NO">
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="repeating_group" data-group-title="Actions" id="RESOLV_PROGRESS">
+    <div class="form_row">
+      <div class="large people_validated_field field_container" data-map="damage_actions_contact">
+        <label for="INCIDENT_CONTACT">Contact</label>
+        <input type="text" id="INCIDENT_CONTACT" readonly>
+        <input type="text" id="INC_CONTACT_ID">
+      </div>
+
+      <div class="small date field_container">
+        <label for="RESOLV_DATE">Action Date</label>
+        <input type="text" id="RESOLV_DATE">
+      </div>
+    </div>
+
+    <div class="form_row">
+      <div class="medium field_container">
+        <label for="INC_NUM_HOURS">Hours Involved</label>
+        <input type="text" id="INC_NUM_HOURS">
+      </div>
+
+      <div class="medium combo field_container">
+        <label for="INC_VALUE_INVOLV">Costs</label>
+        <input type="text" id="INC_VALUE_INVOLV">
+        <select id="INC_VALUE_CURR">
+          <option></option>
+          <option>CAD</option>
+          <option>EURO</option>
+          <option>FRA</option>
+          <option>GBP</option>
+          <option>USD</option> 
+        </select>
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="RESOLV_NOTES">Details</label>
+        <textarea id="RESOLV_NOTES"></textarea>
+      </div>
+    </div>
+  </fieldset>
+</fieldset>

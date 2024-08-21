@@ -1,0 +1,2278 @@
+$ADD_REPORT
+!REC-ID
+¶SPEC_NAME¶ENQUIRIES_STATS
+¶STATUS¶UPDATED
+¶VERSION¶9.08.00
+¶REVISION¶4
+¶DBNAME¶ENQUIRIES
+¶PAGE_WIDTH¶5000
+¶DISPLAY_MODE¶8
+¶PAGE_BREAK¶X
+¶SPLIT_RECORD¶X
+¶HANDLE_NAME¶UTF8_HANDLER
+¶PAGE_FIELD¶¶PAGE_FIELD_TYPE¶1
+¶PAGE_FIELD¶¶PAGE_FIELD_TYPE¶2
+¶PAGE_FIELD¶¶PAGE_FIELD_TYPE¶3
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶COMMON_OCCGAP¶1
+¶PRINT_LIT_EXP¶<ENQ_CREATE_DATE>
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_EXP¶ENQ_CREATE_DATE
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶</ENQ_CREATE_DATE>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶<E_METHOD_REQUEST>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_EXP¶E_METHOD_REQUEST
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶</E_METHOD_REQUEST>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶<ENQ_STATUS>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_EXP¶ENQ_STATUS
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶</ENQ_STATUS>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶<ENQ_HANDLED_BY>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_EXP¶ENQ_HANDLED_BY
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶</ENQ_HANDLED_BY>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶<ENQ_ID>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_EXP¶ENQ_ID
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶</ENQ_ID>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶3
+¶STATEMENT_LEVEL¶0
+¶GROUP_ID¶CORRESPOND_GRP
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶<CORRESPOND_GRP REPEAT="Y">
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶<CORRESPOND_DATE>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_EXP¶CORRESPOND_DATE
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶</CORRESPOND_DATE>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶<CORRESPOND_TYPE>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_EXP¶CORRESPOND_TYPE
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶</CORRESPOND_TYPE>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶<CORRESPOND_WHO>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_EXP¶CORRESPOND_WHO
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶</CORRESPOND_WHO>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶<CORRESPOND_SUBJ>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_EXP¶CORRESPOND_SUBJ
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶</CORRESPOND_SUBJ>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶0
+¶COMMON_SP_AFTER¶0
+¶PRINT_LIT_EXP¶</CORRESPOND_GRP>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶9
+¶STATEMENT_LEVEL¶0
+¶OUTPUT_TYPE¶3
+¶EDITOR¶XML Report Editor
+¶TEMPLATE¶[M2A_DM]xml\ENQUIRIES_STATS.mrt
+¶SPEC_CREATOR¶M2A_MGR
+***ENDBODY***
+81831 ENQUIRIES_STATS
+ï»¿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <ENQUIRIES_STATS Ref="2" type="Stimulsoft.Report.Dictionary.StiXmlDatabase" isKey="true">
+        <Alias>ENQUIRIES_STATS</Alias>
+        <Name>ENQUIRIES_STATS</Name>
+        <PathData>C:\MD\M2ADemo\enquiry_stats.xml</PathData>
+        <PathSchema />
+      </ENQUIRIES_STATS>
+    </Databases>
+    <DataSources isList="true" count="2">
+      <RECORD Ref="3" type="DataTableSource" isKey="true">
+        <Alias>RECORD</Alias>
+        <Columns isList="true" count="6">
+          <value>ENQ_CREATE_DATE,System.String</value>
+          <value>E_METHOD_REQUEST,System.String</value>
+          <value>ENQ_STATUS,System.String</value>
+          <value>ENQ_HANDLED_BY,System.String</value>
+          <value>ENQ_ID,System.String</value>
+          <value>RECORD_Id,System.Int32</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>RECORD</Name>
+        <NameInSource>ENQUIRIES_STATS.RECORD</NameInSource>
+      </RECORD>
+      <CORRESPOND_GRP Ref="4" type="DataTableSource" isKey="true">
+        <Alias>CORRESPOND_GRP</Alias>
+        <Columns isList="true" count="5">
+          <value>CORRESPOND_DATE,System.String</value>
+          <value>CORRESPOND_TYPE,System.String</value>
+          <value>CORRESPOND_WHO,System.String</value>
+          <value>CORRESPOND_SUBJ,System.String</value>
+          <value>RECORD_Id,System.Int32</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>CORRESPOND_GRP</Name>
+        <NameInSource>ENQUIRIES_STATS.CORRESPOND_GRP</NameInSource>
+      </CORRESPOND_GRP>
+    </DataSources>
+    <Relations isList="true" count="1">
+      <RECORD Ref="5" type="DataRelation" isKey="true">
+        <Alias>RECORD</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>RECORD_Id</value>
+        </ChildColumns>
+        <ChildSource isRef="4" />
+        <Dictionary isRef="1" />
+        <Name>RECORD</Name>
+        <NameInSource>RECORD_CORRESPOND_GRP</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>RECORD_Id</value>
+        </ParentColumns>
+        <ParentSource isRef="3" />
+      </RECORD>
+    </Relations>
+    <Report isRef="0" />
+    <Variables isList="true" count="26">
+      <value>,enqMethodEmail,enqMethodEmail,System.Int32,_x0030_,False,False</value>
+      <value>,enqMethodPhone,enqMethodPhone,System.Int32,_x0030_,False,False</value>
+      <value>,enqMethodWeb,enqMethodWeb,System.Int32,_x0030_,False,False</value>
+      <value>,enqMethodFax,enqMethodFax,System.Int32,_x0030_,False,False</value>
+      <value>,enqMethodInPerson,enqMethodInPerson,System.Int32,_x0030_,False,False</value>
+      <value>,enqMethodMail,enqMethodMail,System.Int32,_x0030_,False,False</value>
+      <value>,enqMethodOther,enqMethodOther,System.Int32,,False,False</value>
+      <value>,enqMethodNone,enqMethodNone,System.Int32,_x0030_,False,False</value>
+      <value>,enqResultReceiveEmail,enqResultReceiveEmail,System.Int32,_x0030_,False,False</value>
+      <value>,enqResultReceivePhone,enqResultReceivePhone,System.Int32,_x0030_,False,False</value>
+      <value>,enqResultReceiveWeb,enqResultReceiveWeb,System.Int32,_x0030_,False,False</value>
+      <value>,enqResultReceiveFax,enqResultReceiveFax,System.Int32,_x0030_,False,False</value>
+      <value>,enqResultReceiveInPerson,enqResultReceiveInPerson,System.Int32,_x0030_,False,False</value>
+      <value>,enqResultReceiveMail,enqResultReceiveMail,System.Int32,_x0030_,False,False</value>
+      <value>,enqResultReceiveOther,enqResultReceiveOther,System.Int32,_x0030_,False,False</value>
+      <value>,enqResultReceiveNone,enqResultReceiveNone,System.Int32,_x0030_,False,False</value>
+      <value>,enqResultAddEmail,enqResultAddEmail,System.Int32,_x0030_,False,False</value>
+      <value>,enqResultAddPhone,enqResultAddPhone,System.Int32,_x0030_,False,False</value>
+      <value>,enqResultAddWeb,enqResultAddWeb,System.Int32,_x0030_,False,False</value>
+      <value>,enqResultAddFax,enqResultAddFax,System.Int32,_x0030_,False,False</value>
+      <value>,enqResultAddInPerson,enqResultAddInPerson,System.Int32,_x0030_,False,False</value>
+      <value>,enqResultAddMail,enqResultAddMail,System.Int32,_x0030_,False,False</value>
+      <value>,enqResultAddOther,enqResultAddOther,System.Int32,_x0030_,False,False</value>
+      <value>,enqResultAddNone,enqResultAddNone,System.Int32,_x0030_,False,False</value>
+      <value>,oldEnquiriesTotal,oldEnquiriesTotal,System.Int32,_x0030_,False,False</value>
+      <value>,staffIndex,staffIndex,System.Int32,_x0030_,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="6" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="7">
+        <ReportTitleBand1 Ref="7" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.2,7.72,0.6</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text1 Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,0.1,1.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,14,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="6" />
+              <Parent isRef="7" />
+              <Text>CAMS Inquiry Statistics</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+            <Text2 Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.4,0.1,0.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="6" />
+              <Parent isRef="7" />
+              <Text>Printed on:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+            <Text3 Ref="10" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.3,0.1,1.5,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="6" />
+              <Parent isRef="7" />
+              <Text>{Today.ToString("yyyy-MM-dd")}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>ReportTitleBand1</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+        </ReportTitleBand1>
+        <DataBand1 Ref="11" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <CanShrink>True</CanShrink>
+          <ClientRectangle>0,1.2,7.72,1.2</ClientRectangle>
+          <Components isList="true" count="2">
+            <Panel1 Ref="12" type="Panel" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <CanShrink>True</CanShrink>
+              <ClientRectangle>0,0.4,7.7,0.7</ClientRectangle>
+              <Components isList="true" count="1">
+                <DataBand2 Ref="13" type="DataBand" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <BusinessObjectGuid isNull="true" />
+                  <CanShrink>True</CanShrink>
+                  <ClientRectangle>0,0.2,7.7,0.4</ClientRectangle>
+                  <Components isList="true" count="1">
+                    <Text24 Ref="14" type="Text" isKey="true">
+                      <Brush>Transparent</Brush>
+                      <CanShrink>True</CanShrink>
+                      <ClientRectangle>0.2,0,0.6,0.2</ClientRectangle>
+                      <Conditions isList="true" count="0" />
+                      <Font>Calibri,11</Font>
+                      <GetValueEvent>{
+	HandleCorrespondenceSimple(CORRESPOND_GRP.CORRESPOND_DATE, CORRESPOND_GRP.CORRESPOND_TYPE, CORRESPOND_GRP.CORRESPOND_WHO, 
+						 CORRESPOND_GRP.RECORD.ENQ_STATUS, CORRESPOND_GRP.RECORD.E_METHOD_REQUEST, CORRESPOND_GRP.RECORD.ENQ_CREATE_DATE);
+	HandleCorrespondence(CORRESPOND_GRP.CORRESPOND_DATE, CORRESPOND_GRP.CORRESPOND_TYPE, CORRESPOND_GRP.CORRESPOND_WHO, 
+						 CORRESPOND_GRP.RECORD.ENQ_STATUS, CORRESPOND_GRP.RECORD.E_METHOD_REQUEST, CORRESPOND_GRP.RECORD.ENQ_CREATE_DATE,
+						 CORRESPOND_GRP.RECORD.ENQ_HANDLED_BY, CORRESPOND_GRP.RECORD.ENQ_ID);
+}</GetValueEvent>
+                      <Margins>0,0,0,0</Margins>
+                      <Name>Text24</Name>
+                      <Page isRef="6" />
+                      <Parent isRef="13" />
+                      <TextBrush>Black</TextBrush>
+                      <TextQuality>Typographic</TextQuality>
+                    </Text24>
+                  </Components>
+                  <Conditions isList="true" count="0" />
+                  <DataRelationName>RECORD_CORRESPOND_GRP</DataRelationName>
+                  <DataSourceName>CORRESPOND_GRP</DataSourceName>
+                  <Filters isList="true" count="0" />
+                  <MasterComponent isRef="11" />
+                  <Name>DataBand2</Name>
+                  <Page isRef="6" />
+                  <Parent isRef="12" />
+                  <Sort isList="true" count="0" />
+                </DataBand2>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Name>Panel1</Name>
+              <Page isRef="6" />
+              <Parent isRef="11" />
+            </Panel1>
+            <Text4 Ref="15" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanShrink>True</CanShrink>
+              <ClientRectangle>0.2,0,0.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <GetValueEvent>{
+	HandleRecord(RECORD.ENQ_CREATE_DATE, RECORD.ENQ_STATUS, RECORD.E_METHOD_REQUEST);
+}</GetValueEvent>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="6" />
+              <Parent isRef="11" />
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+            </Text4>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>RECORD</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+        <DataBand3 Ref="16" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,2.8,7.72,3.1</ClientRectangle>
+          <Components isList="true" count="18">
+            <Text5 Ref="17" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,0,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="6" />
+              <Parent isRef="16" />
+              <Text>Inquiries Method</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text5>
+            <Text6 Ref="18" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,0.3,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="6" />
+              <Parent isRef="16" />
+              <Text>By Email</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text6>
+            <Text7 Ref="19" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,0.3,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="6" />
+              <Parent isRef="16" />
+              <Text>{enqMethodEmail}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text7>
+            <Text8 Ref="20" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,0.6,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>fab489f10131444a9d1aa35bcd9bc63a</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="6" />
+              <Parent isRef="16" />
+              <Text>By Telephone</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text8>
+            <Text9 Ref="21" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,0.6,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>1cebcd50ccb34bd8803b13b67d549274</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="6" />
+              <Parent isRef="16" />
+              <Text>{enqMethodPhone}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text9>
+            <Text10 Ref="22" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,0.9,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>388226d1ecc94ab4a38306ef0af90b70</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="6" />
+              <Parent isRef="16" />
+              <Text>By OPAC</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text10>
+            <Text11 Ref="23" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,0.9,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>3be0709a4d9d41cd913d6323b1161c15</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="6" />
+              <Parent isRef="16" />
+              <Text>{enqMethodWeb}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text11>
+            <Text12 Ref="24" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,1.2,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>85fc758ff9074e61a1050b831ec8b936</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="6" />
+              <Parent isRef="16" />
+              <Text>By Facsimile</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text12>
+            <Text13 Ref="25" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,1.2,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>60180b9379fc4790a93fcff71fcd3a3b</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="6" />
+              <Parent isRef="16" />
+              <Text>{enqMethodFax}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text13>
+            <Text14 Ref="26" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,1.5,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>005e870dc06043ebacf81f0bfb8e6990</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="6" />
+              <Parent isRef="16" />
+              <Text>By In-person</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text14>
+            <Text15 Ref="27" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,1.5,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>5dbcb31228704d8eabd735a8c908f00e</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="6" />
+              <Parent isRef="16" />
+              <Text>{enqMethodInPerson}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text15>
+            <Text16 Ref="28" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,1.8,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>5c1203a30a534372bb54848c14f02a04</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="6" />
+              <Parent isRef="16" />
+              <Text>By Mail</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text16>
+            <Text17 Ref="29" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,1.8,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>6b25a05085ed4716a1eca59fbbe04d09</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="6" />
+              <Parent isRef="16" />
+              <Text>{enqMethodMail}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text17>
+            <Text18 Ref="30" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,2.1,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>19d921c10bb54a9cb8c46a17e3854723</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="6" />
+              <Parent isRef="16" />
+              <Text>By Other</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text18>
+            <Text19 Ref="31" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,2.1,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>87496a285e214027b59faf2de55d9d8b</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="6" />
+              <Parent isRef="16" />
+              <Text>{enqMethodOther}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text19>
+            <Text22 Ref="32" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,2.4,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11,Bold</Font>
+              <Guid>d2d14b13bf67485a8425da3c42d52b3f</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text22</Name>
+              <Page isRef="6" />
+              <Parent isRef="16" />
+              <Text>Total Inquiries Received</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text22>
+            <Text23 Ref="33" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,2.4,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>5be77154d4104612840afbb7cfba1d09</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text23</Name>
+              <Page isRef="6" />
+              <Parent isRef="16" />
+              <Text>{enqMethodEmail + enqMethodPhone + enqMethodWeb + enqMethodFax + enqMethodInPerson + enqMethodMail + enqMethodOther + enqMethodNone}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text23>
+            <Text20 Ref="34" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,0,1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="6" />
+              <Parent isRef="16" />
+              <Text># of inquiries</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text20>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <CountData>1</CountData>
+          <DataRelationName isNull="true" />
+          <Filters isList="true" count="0" />
+          <Name>DataBand3</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <Sort isList="true" count="0" />
+        </DataBand3>
+        <DataBand4 Ref="35" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,6.3,7.72,3.9</ClientRectangle>
+          <Components isList="true" count="31">
+            <Text25 Ref="36" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,0,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text25</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>Inquiries Result</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text25>
+            <Text26 Ref="37" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,0,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text26</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text># Received</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text26>
+            <Text27 Ref="38" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.6,0,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text27</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text># Addressed</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text27>
+            <Text28 Ref="39" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,0.3,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>50f28d1c19de43e0a3a6247f0afafc77</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text28</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>By Email</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text28>
+            <Text29 Ref="40" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,0.6,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>75f2fbd06f8e47b6b25fbef52c4b67f8</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text29</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>By Telephone</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text29>
+            <Text30 Ref="41" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,0.9,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>0a3678a4e48c4e8b95a819c86b6459a2</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text30</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>By OPAC</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text30>
+            <Text31 Ref="42" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,1.2,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>8df6194db0ff4e5aabdcde3a9005b9d4</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text31</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>By Facsimile</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text31>
+            <Text32 Ref="43" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,1.5,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>4b64292a1afb4883b9647b85eafcde8f</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text32</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>By In-person</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text32>
+            <Text33 Ref="44" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,1.8,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>1ca59aa34552480987160caa7710f227</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text33</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>By Mail</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text33>
+            <Text34 Ref="45" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,2.1,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>8d1179e24141493ebb02ce39cf62b0cb</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text34</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>By Other</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text34>
+            <Text36 Ref="46" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,0.3,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text36</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{enqResultReceiveEmail}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text36>
+            <Text37 Ref="47" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.6,0.3,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>b0cfbe7032cc4daba0c98757311d32b7</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text37</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{enqResultAddEmail}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text37>
+            <Text38 Ref="48" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,0.6,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>61da690e1f104e52876997a768f9e6da</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text38</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{enqResultReceivePhone}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text38>
+            <Text39 Ref="49" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.6,0.6,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>e54c5d9861f942f8aaceaa11213e2297</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text39</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{enqResultAddPhone}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text39>
+            <Text40 Ref="50" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,0.9,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>a56e64d65d3542a995ca0e90b5325652</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text40</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{enqResultReceiveWeb}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text40>
+            <Text41 Ref="51" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.6,0.9,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>0cd52064379847daa60aba72d5dd11ec</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text41</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{enqResultAddWeb}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text41>
+            <Text42 Ref="52" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,1.2,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>ea56c70f1b9e4dd492a5bad4910975ca</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text42</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{enqResultReceiveFax}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text42>
+            <Text43 Ref="53" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.6,1.2,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>347206be992243228a9aa4607719e300</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text43</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{enqResultAddFax}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text43>
+            <Text44 Ref="54" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,1.5,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>44cd8a2c1e104cc1aa4f3c599b0b99bd</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text44</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{enqResultReceiveInPerson}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text44>
+            <Text45 Ref="55" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.6,1.5,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>32164987845344eca65cf5aa30fe49f2</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text45</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{enqResultAddInPerson}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text45>
+            <Text46 Ref="56" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,1.8,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>c684f419e14345a6a194a206a5cb578c</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text46</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{enqResultReceiveMail}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text46>
+            <Text47 Ref="57" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.6,1.8,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>95314dc84893455bb30fb823df513420</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text47</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{enqResultAddMail}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text47>
+            <Text48 Ref="58" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,2.1,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>f448bfe75f304a23a89df5f38342c703</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text48</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{enqResultReceiveOther}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text48>
+            <Text49 Ref="59" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.6,2.1,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>ca7036849306406485d6bcaa929eca4f</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text49</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{enqResultAddOther}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text49>
+            <Text52 Ref="60" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,2.5,1.8,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text52</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>TOTAL INQUIRIES RECEIVED:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text52>
+            <Text53 Ref="61" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,2.5,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text53</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{enqResultReceiveEmail+enqResultReceivePhone+enqResultReceiveWeb+enqResultReceiveFax+enqResultReceiveInPerson+enqResultReceiveMail+enqResultReceiveOther+enqResultReceiveNone}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text53>
+            <Text54 Ref="62" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,2.8,2,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11,Bold</Font>
+              <Guid>f2d2d01fc434488c86b54623c271977a</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text54</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>TOTAL INQUIRIES ADDRESSED:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text54>
+            <Text55 Ref="63" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.6,2.8,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text55</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{enqResultAddEmail+enqResultAddPhone+enqResultAddWeb+enqResultAddFax+
+enqResultAddInPerson+enqResultAddMail+enqResultAddOther+enqResultAddNone}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text55>
+            <Text56 Ref="64" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,3.1,2.2,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text56</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>TOTAL OUTSTANDING INQUIRIES:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text56>
+            <Text92 Ref="65" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,3.1,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text92</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{ outstandingRecieved() }</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text92>
+            <Text93 Ref="66" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.6,3.1,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>ef31b7f07b9c4c28a0b1f1067397ff7f</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text93</Name>
+              <Page isRef="6" />
+              <Parent isRef="35" />
+              <Text>{ outstandingAddressed() }</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text93>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <CountData>1</CountData>
+          <DataRelationName isNull="true" />
+          <Filters isList="true" count="0" />
+          <Name>DataBand4</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <Sort isList="true" count="0" />
+        </DataBand4>
+        <HeaderBand1 Ref="67" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,10.6,7.72,0.3</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text59 Ref="68" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,0,1.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text59</Name>
+              <Page isRef="6" />
+              <Parent isRef="67" />
+              <Text>Inquiries Result by Staff</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text59>
+            <Text60 Ref="69" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,0,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11,Bold</Font>
+              <Guid>586385db5c284da2bb29f072284d7da8</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text60</Name>
+              <Page isRef="6" />
+              <Parent isRef="67" />
+              <Text># Received</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text60>
+            <Text61 Ref="70" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.6,0,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11,Bold</Font>
+              <Guid>feaefbbb8e834c529782d20c32d532df</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text61</Name>
+              <Page isRef="6" />
+              <Parent isRef="67" />
+              <Text># Addressed</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text61>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>HeaderBand1</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+        </HeaderBand1>
+        <DataBand5 Ref="71" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,11.3,7.72,3.5</ClientRectangle>
+          <Components isList="true" count="27">
+            <Text62 Ref="72" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,0,4.7,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text62</Name>
+              <Page isRef="6" />
+              <Parent isRef="71" />
+              <Text>{ GetStaffName(staffIndex) }</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text62>
+            <Text63 Ref="73" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,0.3,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>59ec2a5eac674e38845b3be0b9474f1c</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text63</Name>
+              <Page isRef="6" />
+              <Parent isRef="71" />
+              <Text>By Email</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text63>
+            <Text64 Ref="74" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,0.6,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>bb674f0791db46b9bea89ffefc7ff1ad</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text64</Name>
+              <Page isRef="6" />
+              <Parent isRef="71" />
+              <Text>By Telephone</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text64>
+            <Text65 Ref="75" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,0.9,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>a2df8eba89b142c7828687bf80718dc2</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text65</Name>
+              <Page isRef="6" />
+              <Parent isRef="71" />
+              <Text>By OPAC</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text65>
+            <Text66 Ref="76" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,1.2,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>7778d62ba3a64703897f556ad574687f</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text66</Name>
+              <Page isRef="6" />
+              <Parent isRef="71" />
+              <Text>By Facsimile</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text66>
+            <Text67 Ref="77" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,1.5,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>cc793817bd2b4cff91d5125d13a56170</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text67</Name>
+              <Page isRef="6" />
+              <Parent isRef="71" />
+              <Text>By In-person</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text67>
+            <Text68 Ref="78" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,1.8,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>408f015df20d47859ae8e78678f85209</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text68</Name>
+              <Page isRef="6" />
+              <Parent isRef="71" />
+              <Text>By Mail</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text68>
+            <Text69 Ref="79" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,2.1,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>cd6807b519e14ed3a110ceccaa723451</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text69</Name>
+              <Page isRef="6" />
+              <Parent isRef="71" />
+              <Text>By Other</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text69>
+            <Text71 Ref="80" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,2.5,1.8,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11,Bold</Font>
+              <Guid>6b359cf7b1204d819a73ef7c1a7a1db2</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text71</Name>
+              <Page isRef="6" />
+              <Parent isRef="71" />
+              <Text>TOTAL INQUIRIES RECEIVED:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text71>
+            <Text72 Ref="81" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,2.8,2,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11,Bold</Font>
+              <Guid>00f6f0bc65724c3f843361c1ff3a4457</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text72</Name>
+              <Page isRef="6" />
+              <Parent isRef="71" />
+              <Text>TOTAL INQUIRIES ADDRESSED:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text72>
+            <Text73 Ref="82" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,0.3,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text73</Name>
+              <Page isRef="6" />
+              <Parent isRef="71" />
+              <Text>{ GetEMailRec(staffIndex) }</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text73>
+            <Text74 Ref="83" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.6,0.3,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>acf74a0e71404ad69821284b6d9a20ee</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text74</Name>
+              <Page isRef="6" />
+              <Parent isRef="71" />
+              <Text>{ GetEMailSend(staffIndex) }</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text74>
+            <Text75 Ref="84" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,0.6,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>aa851281a9da479fb63a4ee6192f7bdc</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text75</Name>
+              <Page isRef="6" />
+              <Parent isRef="71" />
+              <Text>{ GetPhoneRec(staffIndex) }</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text75>
+            <Text76 Ref="85" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.6,0.6,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>ae3b568071bf46aa8298ad6b566e26bd</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text76</Name>
+              <Page isRef="6" />
+              <Parent isRef="71" />
+              <Text>{ GetPhoneSend(staffIndex) }</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text76>
+            <Text77 Ref="86" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,0.9,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>41e1d6e4374245d2854811425863af0c</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text77</Name>
+              <Page isRef="6" />
+              <Parent isRef="71" />
+              <Text>{ GetWebRec(staffIndex) }</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text77>
+            <Text78 Ref="87" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.6,0.9,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>b54e11a16b5e4658bc47eaf245e257d8</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text78</Name>
+              <Page isRef="6" />
+              <Parent isRef="71" />
+              <Text>{ GetWebSend(staffIndex) }</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text78>
+            <Text79 Ref="88" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,1.2,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>422bbd78f4164c1080868316f555011c</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text79</Name>
+              <Page isRef="6" />
+              <Parent isRef="71" />
+              <Text>{ GetFaxRec(staffIndex) }</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text79>
+            <Text80 Ref="89" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.6,1.2,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>09defe6fa66f497bae7fc816089938d1</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text80</Name>
+              <Page isRef="6" />
+              <Parent isRef="71" />
+              <Text>{ GetFaxSend(staffIndex) }</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text80>
+            <Text81 Ref="90" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,1.5,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>da4c4574f5cd491f83e789750dc746ad</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text81</Name>
+              <Page isRef="6" />
+              <Parent isRef="71" />
+              <Text>{ GetInPersonRec(staffIndex) }</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text81>
+            <Text82 Ref="91" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.6,1.5,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>c168730dd1ef4b1caf41babb16b0926c</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text82</Name>
+              <Page isRef="6" />
+              <Parent isRef="71" />
+              <Text>{ GetInPersonSend(staffIndex) }</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text82>
+            <Text83 Ref="92" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,1.8,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>f3884dd0d4b84fecb4c3f4b72850fa49</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text83</Name>
+              <Page isRef="6" />
+              <Parent isRef="71" />
+              <Text>{ GetMailRec(staffIndex) }</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text83>
+            <Text84 Ref="93" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.6,1.8,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>4490203b6b8347e283597e197a28fe0d</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text84</Name>
+              <Page isRef="6" />
+              <Parent isRef="71" />
+              <Text>{ GetMailSend(staffIndex) }</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text84>
+            <Text85 Ref="94" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,2.1,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>25d5720a033a481d820858a0130ba9fa</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text85</Name>
+              <Page isRef="6" />
+              <Parent isRef="71" />
+              <Text>{ GetOtherRec(staffIndex) }</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text85>
+            <Text86 Ref="95" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.6,2.1,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>fcde1d4562914cfc87bcf057eadc1102</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text86</Name>
+              <Page isRef="6" />
+              <Parent isRef="71" />
+              <Text>{ GetOtherSend(staffIndex) }</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text86>
+            <Text89 Ref="96" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,2.5,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>5ea2597e3caf4be7a972b409ffb3e639</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text89</Name>
+              <Page isRef="6" />
+              <Parent isRef="71" />
+              <Text>{ GetTotalRec(staffIndex) }</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text89>
+            <Text90 Ref="97" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.6,2.8,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>a9949a5fd2cf493eaa75188e5f9f7d9d</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text90</Name>
+              <Page isRef="6" />
+              <Parent isRef="71" />
+              <Text>{ GetTotalSend(staffIndex) }</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text90>
+            <Text91 Ref="98" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanShrink>True</CanShrink>
+              <ClientRectangle>6.7,3,0.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11,Bold</Font>
+              <GetValueEvent>{ staffIndex += 1; }</GetValueEvent>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text91</Name>
+              <Page isRef="6" />
+              <Parent isRef="71" />
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+            </Text91>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <CountData>1</CountData>
+          <DataRelationName isNull="true" />
+          <Filters isList="true" count="0" />
+          <Name>DataBand5</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <Sort isList="true" count="0" />
+        </DataBand5>
+        <DataBand6 Ref="99" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,15.2,7.72,0.3</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text57 Ref="100" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,0,2,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11,Bold</Font>
+              <Guid>cca120cffb794e4b8a7e0aab0b685089</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text57</Name>
+              <Page isRef="6" />
+              <Parent isRef="99" />
+              <Text>Carry Over Total:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text57>
+            <Text58 Ref="101" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,0,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>0392d9bfc07848398ec59e999fa03081</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text58</Name>
+              <Page isRef="6" />
+              <Parent isRef="99" />
+              <Text>{oldEnquiriesTotal}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Typographic</TextQuality>
+              <Type>Expression</Type>
+            </Text58>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <CountData>1</CountData>
+          <DataRelationName isNull="true" />
+          <Filters isList="true" count="0" />
+          <Name>DataBand6</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <Sort isList="true" count="0" />
+        </DataBand6>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>6e9ea0ce6c0d43098b7cf0eb04a71d68</Guid>
+      <LargeHeight>True</LargeHeight>
+      <Margins>0.39,0.39,0.39,0.39</Margins>
+      <Name>Page1</Name>
+      <PageHeight>11</PageHeight>
+      <PageWidth>8.5</PageWidth>
+      <PaperSize>Letter</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="102" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="103" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="9">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+    <value>Minisis.Report.dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>6/30/2022 2:56:16 PM</ReportChanged>
+  <ReportCreated>3/28/2014 10:41:26 AM</ReportCreated>
+  <ReportDescription>&lt;MinisisInfo&gt;&lt;Description /&gt;&lt;DataModel /&gt;&lt;Database /&gt;&lt;SortInfos /&gt;&lt;/MinisisInfo&gt;</ReportDescription>
+  <ReportFile>C:\MD\M2ADemo\M2A\USERDM\XML\ENQUIRIES_STATS.MRT</ReportFile>
+  <ReportGuid>4d537ae2a5de475d8adeec958f9787aa</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2013.3.1800</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using System.IO;
+using System.Collections;
+using System.Collections.Generic;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+using Stimulsoft.Report.Dictionary;
+using Minisis.Report;
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+		
+		public bool initCode = false;
+		public DateTime startDate = new DateTime(1900, 1, 1);
+		public DateTime endDate = new DateTime(2300, 1, 1);
+		
+		public void init() {
+			if (initCode == false) {
+				// Add the rest of the init code.
+				DateTime d = DateTime.Today;
+				GetDateRange(d, ref startDate, ref endDate);
+			}
+			initCode = true;
+			
+		}
+		public class TypeOfCorresponce {
+			public int enqRecieveEmail = 0;
+			public int enqRecievePhone = 0;
+			public int enqRecieveWeb = 0;
+			public int enqRecieveFax = 0;
+			public int enqRecievePerson = 0;
+			public int enqRecieveMail = 0;
+			public int enqRecieveOther = 0;
+			public int enqRecieveNone = 0;
+			public int enqSendEmail = 0;
+			public int enqSendPhone = 0;
+			public int enqSendWeb = 0;
+			public int enqSendFax = 0;
+			public int enqSendPerson = 0;
+			public int enqSendMail = 0;
+			public int enqSendOther = 0;
+			public int enqSendNone = 0;
+		}
+		
+		public SortedList&lt;String, TypeOfCorresponce&gt; corespondsPeople = new SortedList&lt;string, TypeOfCorresponce&gt;();
+		public void HandleRecord(string createDate, string status, string requestMethod) {
+			init();
+			
+			try {
+				if (createDate != null &amp;&amp; createDate.Length &gt; 0) {
+					DateTime cdate = System.Convert.ToDateTime(createDate);
+					// add check for date range. 
+					int startcompare = DateTime.Compare(cdate, startDate);
+					int endcompare = DateTime.Compare(cdate, endDate);
+					bool inWeek = (startcompare &gt; 0) &amp;&amp; (endcompare &lt;= 0);
+					
+					string method = requestMethod.ToLower();
+					if (status.ToLower().Equals("active")) {
+						if (inWeek) {
+							if (method.Equals("email")) {
+								enqMethodEmail += 1;
+							}
+							else if (method.Equals("phone")) {
+								enqMethodPhone += 1;
+							}
+							else if (method.Equals("web")) {
+								enqMethodWeb += 1;
+							}
+							else if (method.Equals("fax")) {
+								enqMethodFax += 1;
+							}
+							else if (method.Equals("in person")) {
+								enqMethodInPerson += 1;
+							}
+							else if (method.Equals("mail")) {
+								enqMethodMail += 1;
+							}
+							else {
+								enqMethodOther += 1;
+							}
+						}
+						
+						if (DateTime.Compare(cdate, startDate) &lt;= 0) {
+							oldEnquiriesTotal += 1;
+						}
+					}
+				}
+			}
+			catch (Exception) {
+			}
+		}
+		
+		public string GetStaffName(int index) {
+			string result = "";
+			if (index &gt;= 0 &amp;&amp; index &lt; corespondsPeople.Count) {
+				result = corespondsPeople.Keys[index];
+			}
+			return result;
+		}
+		
+		public string GetTotalRec(int index) {
+			string result = "";
+			if (index &gt;= 0 &amp;&amp; index &lt; corespondsPeople.Count) {
+				TypeOfCorresponce type = corespondsPeople.Values[index];
+				int val = type.enqRecieveEmail + type.enqRecieveFax + type.enqRecieveMail + type.enqRecieveNone +
+					type.enqRecieveOther + type.enqRecievePerson + type.enqRecievePhone + type.enqRecieveWeb;
+				if (val &gt;= 0) {
+					result = val.ToString();
+				}
+			}
+			return result;
+		}
+		public string GetTotalSend(int index) {
+			string result = "";
+			if (index &gt;= 0 &amp;&amp; index &lt; corespondsPeople.Count) {
+				TypeOfCorresponce type = corespondsPeople.Values[index];
+				int val = type.enqSendEmail + type.enqSendFax + type.enqSendMail + type.enqSendNone +
+					type.enqSendOther + type.enqSendPerson + type.enqSendPhone + type.enqSendWeb;
+				if (val &gt;= 0) {
+					result = val.ToString();
+				}
+			}
+			return result;
+		}
+		public string GetEMailRec(int index) {
+			string result = "";
+			if (index &gt;= 0 &amp;&amp; index &lt; corespondsPeople.Count) {
+				TypeOfCorresponce type = corespondsPeople.Values[index];
+				int val = type.enqRecieveEmail;
+				if (val &gt;= 0) {
+					result = val.ToString();
+				}
+			}
+			return result;
+		}
+		public string GetPhoneRec(int index) {
+			string result = "";
+			if (index &gt;= 0 &amp;&amp; index &lt; corespondsPeople.Count) {
+				TypeOfCorresponce type = corespondsPeople.Values[index];
+				int val = type.enqRecievePhone;
+				if (val &gt;= 0) {
+					result = val.ToString();
+				}
+			}
+			return result;
+		}
+		public string GetWebRec(int index) {
+			string result = "";
+			if (index &gt;= 0 &amp;&amp; index &lt; corespondsPeople.Count) {
+				TypeOfCorresponce type = corespondsPeople.Values[index];
+				int val = type.enqRecieveWeb;
+				if (val &gt;= 0) {
+					result = val.ToString();
+				}
+			}
+			return result;
+		}
+		public string GetFaxRec(int index) {
+			string result = "";
+			if (index &gt;= 0 &amp;&amp; index &lt; corespondsPeople.Count) {
+				TypeOfCorresponce type = corespondsPeople.Values[index];
+				int val = type.enqRecieveFax;
+				if (val &gt;= 0) {
+					result = val.ToString();
+				}
+			}
+			return result;
+		}
+		public string GetInPersonRec(int index) {
+			string result = "";
+			if (index &gt;= 0 &amp;&amp; index &lt; corespondsPeople.Count) {
+				TypeOfCorresponce type = corespondsPeople.Values[index];
+				int val = type.enqRecievePerson;
+				if (val &gt;= 0) {
+					result = val.ToString();
+				}
+			}
+			return result;
+		}
+		public string GetMailRec(int index) {
+			string result = "";
+			if (index &gt;= 0 &amp;&amp; index &lt; corespondsPeople.Count) {
+				TypeOfCorresponce type = corespondsPeople.Values[index];
+				int val = type.enqRecieveMail;
+				if (val &gt;= 0) {
+					result = val.ToString();
+				}
+			}
+			return result;
+		}
+		public string GetOtherRec(int index) {
+			string result = "";
+			if (index &gt;= 0 &amp;&amp; index &lt; corespondsPeople.Count) {
+				TypeOfCorresponce type = corespondsPeople.Values[index];
+				int val = type.enqRecieveOther;
+				if (val &gt;= 0) {
+					result = val.ToString();
+				}
+			}
+			return result;
+		}
+		public string GetNoneRec(int index) {
+			string result = "";
+			if (index &gt;= 0 &amp;&amp; index &lt; corespondsPeople.Count) {
+				TypeOfCorresponce type = corespondsPeople.Values[index];
+				int val = type.enqRecieveNone;
+				if (val &gt;= 0) {
+					result = val.ToString();
+				}
+			}
+			return result;
+		}
+		public string GetEMailSend(int index) {
+			string result = "";
+			if (index &gt;= 0 &amp;&amp; index &lt; corespondsPeople.Count) {
+				TypeOfCorresponce type = corespondsPeople.Values[index];
+				int val = type.enqSendEmail;
+				if (val &gt;= 0) {
+					result = val.ToString();
+				}
+			}
+			return result;
+		}
+		public string GetPhoneSend(int index) {
+			string result = "";
+			if (index &gt;= 0 &amp;&amp; index &lt; corespondsPeople.Count) {
+				TypeOfCorresponce type = corespondsPeople.Values[index];
+				int val = type.enqSendPhone;
+				if (val &gt;= 0) {
+					result = val.ToString();
+				}
+			}
+			return result;
+		}
+		public string GetWebSend(int index) {
+			string result = "";
+			if (index &gt;= 0 &amp;&amp; index &lt; corespondsPeople.Count) {
+				TypeOfCorresponce type = corespondsPeople.Values[index];
+				int val = type.enqSendWeb;
+				if (val &gt;= 0) {
+					result = val.ToString();
+				}
+			}
+			return result;
+		}
+		public string GetFaxSend(int index) {
+			string result = "";
+			if (index &gt;= 0 &amp;&amp; index &lt; corespondsPeople.Count) {
+				TypeOfCorresponce type = corespondsPeople.Values[index];
+				int val = type.enqSendFax;
+				if (val &gt;= 0) {
+					result = val.ToString();
+				}
+			}
+			return result;
+		}
+		public string GetInPersonSend(int index) {
+			string result = "";
+			if (index &gt;= 0 &amp;&amp; index &lt; corespondsPeople.Count) {
+				TypeOfCorresponce type = corespondsPeople.Values[index];
+				int val = type.enqSendPerson;
+				if (val &gt;= 0) {
+					result = val.ToString();
+				}
+			}
+			return result;
+		}
+		public string GetMailSend(int index) {
+			string result = "";
+			if (index &gt;= 0 &amp;&amp; index &lt; corespondsPeople.Count) {
+				TypeOfCorresponce type = corespondsPeople.Values[index];
+				int val = type.enqSendMail;
+				if (val &gt;= 0) {
+					result = val.ToString();
+				}
+			}
+			return result;
+		}
+		public string GetOtherSend(int index) {
+			string result = "";
+			if (index &gt;= 0 &amp;&amp; index &lt; corespondsPeople.Count) {
+				TypeOfCorresponce type = corespondsPeople.Values[index];
+				int val = type.enqSendOther;
+				if (val &gt;= 0) {
+					result = val.ToString();
+				}
+			}
+			return result;
+		}
+		public string GetNoneSend(int index) {
+			string result = "";
+			if (index &gt;= 0 &amp;&amp; index &lt; corespondsPeople.Count) {
+				TypeOfCorresponce type = corespondsPeople.Values[index];
+				int val = type.enqSendNone;
+				if (val &gt;= 0) {
+					result = val.ToString();
+				}
+			}
+			return result;
+		}
+		public string outstandingRecieved() {
+			string result = "";
+			
+			int val = totalIncomming() - totalOutgoing();
+			if (val &gt; 0) {
+				result = val.ToString();
+			}
+			
+			return result;
+		}
+		public string outstandingAddressed() {
+			string result = "";
+			
+			int val = totalOutgoing() - totalIncomming() ;
+			if (val &gt; 0) {
+				result = val.ToString();
+			}
+			
+			return result;
+		}
+		
+		public int totalOutgoing() {
+			int result = enqResultAddEmail + enqResultAddPhone + enqResultAddWeb + enqResultAddFax +
+				enqResultAddInPerson + enqResultAddMail + enqResultAddOther + enqResultAddNone;
+			
+			return result;
+		}
+		public int totalIncomming() {
+			int result = enqResultReceiveEmail + enqResultReceivePhone + enqResultReceiveWeb + enqResultReceiveFax +
+				enqResultReceiveInPerson + enqResultReceiveMail + enqResultReceiveOther + enqResultReceiveNone;
+			
+			return result;
+		}
+		public void HandleCorrespondenceSimple(string corDate, string corType, string corWho, string status, 
+							string requestmethod, string enquiryDate) {
+			init();
+			try {
+				DateTime cdate = System.Convert.ToDateTime(corDate);
+				// add check for date range. 
+				int startcompare = DateTime.Compare(cdate, startDate);
+				int endcompare = DateTime.Compare(cdate, endDate);
+				bool inWeek = (startcompare &gt; 0) &amp;&amp; (endcompare &lt;= 0);
+				string method = requestmethod.ToLower();
+				if (status.ToLower().Equals("active")) {
+					if (inWeek) {
+						if (corType.ToLower().Equals("outgoing")) {
+							if (method.Equals("email")) {
+								enqResultAddEmail += 1;
+							}
+							else if (method.Equals("phone")) {
+								enqResultAddPhone += 1;
+							}
+							else if (method.Equals("web")) {
+								enqResultAddWeb += 1;
+							}
+							else if (method.Equals("fax")) {
+								enqResultAddFax += 1;
+							}
+							else if (method.Equals("in person")) {
+								enqResultAddInPerson += 1;
+							}
+							else if (method.Equals("mail")) {
+								enqResultAddMail += 1;
+							}
+							else {
+								enqResultAddOther += 1;
+							}
+						}
+						else {
+							if (method.Equals("email")) {
+								enqResultReceiveEmail += 1;
+							}
+							else if (method.Equals("phone")) {
+								enqResultReceivePhone += 1;
+							}
+							else if (method.Equals("web")) {
+								enqResultReceiveWeb += 1;
+							}
+							else if (method.Equals("fax")) {
+								enqResultReceiveFax += 1;
+							}
+							else if (method.Equals("in person")) {
+								enqResultReceiveInPerson += 1;
+							}
+							else if (method.Equals("mail")) {
+								enqResultReceiveMail += 1;
+							}
+							else {
+								enqResultReceiveOther += 1;
+							}
+						}
+					}
+				}
+			}
+			catch (Exception) {
+			}
+		}
+		
+		public string enqIdPrev = "";
+		public string enqPersonPrev = "";
+		public void HandleCorrespondence(string corDate, string corType, string corWho, string status, string requestmethod, 
+							string enquiryDate, string enqWho, string enqId) {
+			init();
+			try {
+				DateTime cdate = System.Convert.ToDateTime(corDate);
+				// add check for date range. 
+				int startcompare = DateTime.Compare(cdate, startDate);
+				int endcompare = DateTime.Compare(cdate, endDate);
+				bool inWeek = (startcompare &gt; 0) &amp;&amp; (endcompare &lt;= 0);
+				
+				bool sameRecord = true;
+				if (enqIdPrev != enqId) {
+					sameRecord = false;
+				}
+				
+				string who = enqPersonPrev;
+				if (!sameRecord) {
+					if (corType.ToLower().Equals("outgoing")) {
+						who = corWho;
+					}
+					else {
+						who = enqWho;
+					}
+					enqPersonPrev = who;
+				}
+				else {
+					if (corType.ToLower().Equals("outgoing")) {
+						who = corWho;
+						enqPersonPrev = who;
+					}
+					else {
+						who = enqPersonPrev;
+					}
+				}
+				string method = requestmethod.ToLower();
+				if (status.ToLower().Equals("active")) {
+					// Filter by time
+					if (inWeek) {
+						// lookup the corWho in corespondsPeople. If not in then add the person.
+						if (!corespondsPeople.ContainsKey(who)) {
+							TypeOfCorresponce val = new TypeOfCorresponce();
+							corespondsPeople.Add(who, val);
+						}
+						if (corType.ToLower().Equals("outgoing")) {
+							if (method.Equals("email")) {
+								corespondsPeople[who].enqSendEmail += 1;
+							}
+							else if (method.Equals("phone")) {
+								corespondsPeople[who].enqSendPhone += 1;
+							}
+							else if (method.Equals("web")) {
+								corespondsPeople[who].enqSendWeb += 1;
+							}
+							else if (method.Equals("fax")) {
+								corespondsPeople[who].enqSendFax += 1;
+							}
+							else if (method.Equals("in person")) {
+								corespondsPeople[who].enqSendPerson += 1;
+							}
+							else if (method.Equals("mail")) {
+								corespondsPeople[who].enqSendMail += 1;
+							}
+							else {
+								corespondsPeople[who].enqSendOther += 1;
+							}
+						}
+						else {
+							if (method.Equals("email")) {
+								corespondsPeople[who].enqRecieveEmail += 1;
+							}
+							else if (method.Equals("phone")) {
+								corespondsPeople[who].enqRecievePhone += 1;
+							}
+							else if (method.Equals("web")) {
+								corespondsPeople[who].enqRecieveWeb += 1;
+							}
+							else if (method.Equals("fax")) {
+								corespondsPeople[who].enqRecieveFax += 1;
+							}
+							else if (method.Equals("in person")) {
+								corespondsPeople[who].enqRecievePerson += 1;
+							}
+							else if (method.Equals("mail")) {
+								corespondsPeople[who].enqRecieveMail += 1;
+							}
+							else {
+								corespondsPeople[who].enqRecieveOther += 1;
+							}
+						}
+					}
+				}
+				DataBand5.CountData = corespondsPeople.Count;
+			}
+			catch (Exception) {
+			}
+		}
+		public bool GetDateRange(DateTime curdt, ref DateTime startdate, ref DateTime endDate) {
+			bool result = false;
+			try {
+				DateTime lastweek = curdt.AddDays(-7);
+				int day = (int)lastweek.DayOfWeek;
+				int diff = 0;
+				if (day == 1) {
+					diff = 0;
+				}
+				else if (day == 0) {
+					diff = 1;
+				}
+				else {
+					diff = 1 - day;
+				}
+				startdate = lastweek.AddDays(diff);
+				endDate = startdate.AddDays(7);
+				result = true;
+			}
+			catch (Exception) {
+			}
+			return result;
+		}
+		
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>
+***END***

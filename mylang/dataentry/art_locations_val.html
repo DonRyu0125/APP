@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art - Location Database</title>
+    
+    <!-- include virtual="/mylang/assets/html/template/stylesheets.html" -->
+    <!-- include virtual="/mylang/assets/html/template/header_scripts.html" -->
+  </head>
+  <body data-database="artlocations" class="validated_record">
+    <section id="body">
+      <div class="container">
+        <!-- include virtual="/mylang/assets/html/template/db/art_locvt_db_actions_nav.html" -->
+
+        <section id="data_entry_forms">
+          <div id="primary_data_entry_form">
+            <nav id="worksheet_nav">
+              <nav id="secondary_worksheet_nav">
+                <ul id="locations">
+                  <li><a href="/mylang/assets/html/dataentry/art_locations/art_locations_main.html" data-form="main">Location Main</a></li>
+                </ul>
+              </nav>
+            </nav>
+
+            <div id="data_entry_form">
+              <!-- include virtual="/mylang/assets/html/dataentry/art_locations/art_locations_main.html" -->
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <xml id="validated_record" style="display: none;">
+      ^XML_TREE^
+    </xml>
+
+    <div id="notices">^WIN_INFO^</div>
+
+    <!-- include virtual="/mylang/assets/html/template/db/art_loc_base_scripts.html" -->
+    <!-- include virtual="/mylang/assets/html/template/core_dataentry_scripts.html" -->
+    <script src="/mylang/assets/js/dataentry/record_databases/art_locations.js"></script>
+    <script src="/mylang/assets/js/dataentry/frontend/art_locations_val.js"></script>
+  </body>
+</html>

@@ -1,0 +1,287 @@
+<span class="hidden current_page" id="production_main"></span>
+
+<div class="form_row">
+  <div class="medium field_container">
+    <label for="MANUFACTURE_DATE">Production Date</label>
+    <input type="text" id="MANUFACTURE_DATE">
+  </div>
+
+  <div class="small field_container">
+    <label for="PROD_QUANTITY">Quantity</label>
+    <input type="text" id="PROD_QUANTITY">
+  </div>
+
+  <div class="small field_container">
+    <label for="NUMBER_OF_PARTS">Number of Parts</label>
+    <input type="text" id="NUMBER_OF_PARTS">
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Maker Group" id="MAKER_GROUP">
+  <div class="form_row">
+    <div class="small people_validated_field field_container" data-map="maker_group_individual">
+      <label for="MAKER_FULLNAME">Individual</label>
+      <input type="text" id="MAKER_FULLNAME" readonly>
+      <input type="hidden" id="MAKER_PERSON_ID">
+    </div>
+
+    <div class="small repeating_field field_container">
+      <label for="MAKER_ALIAS">Alias</label>
+      <input type="text" id="MAKER_ALIAS" readonly>
+    </div>
+
+    <div class="medium org_validated_field field_container" data-map="maker_group_organization">
+      <label for="MAKER_ORG">Organization</label>
+      <input type="text" id="MAKER_ORG" readonly>
+      <input type="hidden" id="MAKER_ORG_ID">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="PART_NAME">Part Name</label>
+      <input type="text" id="PART_NAME">
+    </div>
+
+    <div class="medium field_container">
+      <label for="MAKER_ASSOC_TYP">Role</label>
+      <select id="MAKER_ASSOC_TYP">
+        <option></option>
+        <option>Agency</option>
+        <option>Agency responsible for reproduction</option>
+        <option>Animator</option>
+        <option>Appraiser</option>
+        <option>Architect</option>
+        <option>Architectural historian</option>
+        <option>Archivist</option>
+        <option>Armorer</option>
+        <option>Arranger</option>
+        <option>Artist</option>
+        <option>Assembler</option>
+        <option>Assistant</option>
+        <option>Associated architect</option>
+        <option>Author</option>
+        <option>Basket maker</option>
+        <option>Blacksmith</option>
+        <option>Book illustrator</option>
+        <option>Bookbinder</option>
+        <option>Bookseller</option>
+        <option>Bronzeworker</option>
+        <option>Cabinetmaker</option>
+        <option>Calligrapher</option>
+        <option>Cameraman</option>
+        <option>Caricaturist</option>
+        <option>Carpenter</option>
+        <option>Cartographer</option>
+        <option>Cartoonist</option>
+        <option>Carver</option>
+        <option>Caster</option>
+        <option>Ceramicist</option>
+        <option>Cinematographer</option>
+        <option>Civil engineer</option>
+        <option>Client</option>
+        <option>Clockmaker</option>
+        <option>Cobbler</option>
+        <option>Collagist</option>
+        <option>Collector</option>
+        <option>Commercial artist</option>
+        <option>Commissioner</option>
+        <option>Compiler</option>
+        <option>Composer</option>
+        <option>Conservator</option>
+        <option>Coppersmith</option>
+        <option>Copyist</option>
+        <option>Correspondent (correspondence writer)</option>
+        <option>Costume designer</option>
+        <option>Craftsman</option>
+        <option>Dealer</option>
+        <option>Delineator</option>
+        <option>Demographer</option>
+        <option>Designer</option>
+        <option>Diarist</option>
+        <option>Director (administrator)</option>
+        <option>Director (performing arts)</option>
+        <option>Doll maker</option>
+        <option>Donor</option>
+        <option>Draftsman</option>
+        <option>Dressmaker</option>
+        <option>Editor</option>
+        <option>Editorial writer</option>
+        <option>Embroiderer</option>
+        <option>Engraver</option>
+        <option>Essayist</option>
+        <option>Etcher</option>
+        <option>Fashion designer</option>
+        <option>Fashion illustrator</option>
+        <option>Filmmaker</option>
+        <option>Folk artist</option>
+        <option>Founder</option>
+        <option>Foundryman</option>
+        <option>Furniture worker</option>
+        <option>Genealogist</option>
+        <option>Geographer</option>
+        <option>Gilder</option>
+        <option>Glassblower</option>
+        <option>Glassmaker</option>
+        <option>Glassworker</option>
+        <option>Glover</option>
+        <option>Goldsmith</option>
+        <option>Graphic designer</option>
+        <option>Gunsmith</option>
+        <option>Hatter</option>
+        <option>Hornworker</option>
+        <option>Hydrographer</option>
+        <option>Illustrator</option>
+        <option>Importer</option>
+        <option>Inlayer</option>
+        <option>Inscriber</option>
+        <option>Interior decorator</option>
+        <option>Interviewee</option>
+        <option>Interviewer</option>
+        <option>Inventor</option>
+        <option>Iron smith</option>
+        <option>Jeweler</option>
+        <option>Journalist</option>
+        <option>Knitter</option>
+        <option>Lace maker</option>
+        <option>Lacquerer</option>
+        <option>Landscape architect</option>
+        <option>Lawyer</option>
+        <option>Leatherworker</option>
+        <option>Librettist</option>
+        <option>Lithographer</option>
+        <option>Lyricist</option>
+        <option>Machinist</option>
+        <option>Maker</option>
+        <option>Manufacturer</option>
+        <option>Marine engineer</option>
+        <option>Marine painter</option>
+        <option>Medalist</option>
+        <option>Metalworker</option>
+        <option>Mezzotinter</option>
+        <option>Milliner</option>
+        <option>Miniaturist</option>
+        <option>Minter</option>
+        <option>Mosaicist</option>
+        <option>Muralist</option>
+        <option>Musician</option>
+        <option>Naval architect</option>
+        <option>Notary</option>
+        <option>Optician</option>
+        <option>Painter</option>
+        <option>Paper maker</option>
+        <option>Pastelist</option>
+        <option>Pewterer</option>
+        <option>Photoengraver</option>
+        <option>Photographer</option>
+        <option>Photojournalist</option>
+        <option>Photolithographer</option>
+        <option>Pianist</option>
+        <option>Plasterer</option>
+        <option>Playwright</option>
+        <option>Poet</option>
+        <option>Potter</option>
+        <option>Preparator</option>
+        <option>Printer</option>
+        <option>Printmaker</option>
+        <option>Producer</option>
+        <option>Publisher</option>
+        <option>Recipient</option>
+        <option>Renderer</option>
+        <option>Reporter</option>
+        <option>Researcher</option>
+        <option>Restorer</option>
+        <option>Retailer</option>
+        <option>Satirist</option>
+        <option>Screen writer</option>
+        <option>Sculptor</option>
+        <option>Serigrapher</option>
+        <option>Sewer (textile worker)</option>
+        <option>Signer</option>
+        <option>Silversmith</option>
+        <option>Singer</option>
+        <option>Sponsor</option>
+        <option>Still photographer</option>
+        <option>Stonemason</option>
+        <option>Superintendent</option>
+        <option>Supervisor</option>
+        <option>Surveyor</option>
+        <option>Swordsmith</option>
+        <option>Tailor</option>
+        <option>Technician</option>
+        <option>Textile worker</option>
+        <option>Theater designer</option>
+        <option>Tinsmith</option>
+        <option>Topographer</option>
+        <option>Translator</option>
+        <option>Typesetter</option>
+        <option>Typographer</option>
+        <option>Upholsterer</option>
+        <option>Vendor</option>
+        <option>Videographer</option>
+        <option>Watchmaker</option>
+        <option>Watercolorist</option>
+        <option>Weaver</option>
+        <option>Welder</option>
+        <option>Wood engraver</option>
+        <option>Wood-carver</option>
+        <option>Woodcutter</option>
+        <option>Woodworker</option>
+        <option>Worker</option>
+      </select>
+    </div>
+  </div>
+
+  <fieldset class="logical_group">
+    <legend>Place of Origin/Production</legend>
+    <div class="form_row">
+      <div class="small field_container">
+        <label for="PPG_ADD1">Suite # / PO Box</label>
+        <input type="text" id="PPG_ADD1">
+      </div>
+
+      <div class="large field_container">
+        <label for="PPG_ADD2">Street</label>
+        <input type="text" id="PPG_ADD2">
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="small field_container">
+        <label for="PPG_CITY">City</label>
+        <input type="text" id="PPG_CITY">
+      </div>
+
+      <div class="small field_container">
+        <label for="PPG_COUNTY">Province/State</label>
+        <input type="text" id="PPG_COUNTY">
+      </div>
+
+      <div class="small field_container">
+        <label for="PPG_COUNTRY">Country</label>
+        <input type="text" id="PPG_COUNTRY">
+      </div>
+
+      <div class="small field_container">
+        <label for="PPG_CONTINENT">Continent</label>
+        <input type="text" id="PPG_CONTINENT">
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="repeating_group" data-group-title="Maker Notes" id="MAKER_NOTE_GROUP">
+    <div class="form_row">
+      <div class="full field_container">
+        <label for="MAKER_NOTE_TYPE">Note Type</label>
+        <input type="text" id="MAKER_NOTE_TYPE">
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="MAKER_DETAIL_NT">Notes</label>
+        <textarea id="MAKER_DETAIL_NT"></textarea>
+      </div>
+    </div>
+  </fieldset>
+</fieldset>

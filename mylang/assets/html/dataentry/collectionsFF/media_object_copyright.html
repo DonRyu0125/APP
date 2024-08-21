@@ -1,0 +1,168 @@
+<span class="hidden current_page" id="media_object_copyright"></span>
+
+<fieldset class="repeating_group" data-group-title="License Requirements" id="LEGAL_GRP">
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="LICENCE_REQ">License Type</label>
+      <select id="LICENCE_REQ">
+        <option></option>
+        <option>CITES Specimen Specific Certificate</option>
+        <option>Copyright</option>
+        <option>Firearms</option>
+      </select>
+    </div>
+
+    <div class="medium field_container">
+      <label for="REQ_LENGTH">Term</label>
+      <input type="text" id="REQ_LENGTH">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium date field_container">
+      <label for="REQ_DATE_FROM">From</label>
+      <input type="text" id="REQ_DATE_FROM">
+    </div>
+
+    <div class="medium date field_container">
+      <label for="REQ_DATE_TO">To</label>
+      <input type="text" id="REQ_DATE_TO">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full file file_attachment field_container">
+      <label for="LICENCE_REF">Outgoing Receipt</label>
+      <input type="text" id="LICENCE_REF">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Copyright Information" id="COPYRIGHT_INFO">
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="COPYRIGHT_LENGTH">Term</label>
+      <input type="text" id="COPYRIGHT_LENGTH">
+    </div>
+
+    <div class="small date field_container">
+      <label for="COPYRIGHT_FROM">From</label>
+      <input type="text" id="COPYRIGHT_FROM">
+    </div>
+
+    <div class="small date field_container">
+      <label for="COPYRIGHT_UNTIL">To</label>
+      <input type="text" id="COPYRIGHT_UNTIL">
+    </div>
+  </div>
+
+  <fieldset class="repeating_group" data-group-title="Copyright Owner" id="CPYRGHT_OWN_GRP">
+    <div class="borderless form_row">
+      <div class="medium people_validated_field field_container" data-map="copyright_owner_individual">
+        <label for="CPYRGHT_OWN_IND">Individual</label>
+        <input type="text" id="CPYRGHT_OWN_IND" readonly>
+        <input type="hidden" id="OWN_IND_ID">
+      </div>
+
+      <div class="medium org_validated_field field_container" data-map="copyright_owner_org">
+        <label for="CPYRGT_OWN_ORG">Organization</label>
+        <input type="text" id="CPYRGT_OWN_ORG" readonly>
+        <input type="hidden" id="OWN_ORG_ID">
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="repeating_group" data-group-title="Copyright Beneficiary" id="CPYRGHT_BEN_GRP">
+    <div class="borderless form_row">
+      <div class="medium people_validated_field field_container" data-map="copyright_beneficiary_individual">
+        <label for="CPYRGHT_BENF_IND">Individual</label>
+        <input type="text" id="CPYRGHT_BENF_IND" readonly>
+        <input type="hidden" id="BENF_IND_ID">
+      </div>
+
+      <div class="medium org_validated_field field_container" data-map="copyright_beneficiary_org">
+        <label for="CPYRGHT_BENF_ORG">Organization</label>
+        <input type="text" id="CPYRGHT_BENF_ORG" readonly>
+        <input type="hidden" id="BENF_ORG_ID">
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="repeating_group" data-group-title="Copyright Administrator" id="CPYRGHT_ADMN_GRP">
+    <div class="borderless form_row">
+      <div class="medium people_validated_field field_container" data-map="copyright_admin_individual">
+        <label for="CPYRGHT_ADMN_IND">Individual</label>
+        <input type="text" id="CPYRGHT_ADMN_IND" readonly>
+        <input type="hidden" id="ADMN_IND_ID">
+      </div>
+
+      <div class="medium org_validated_field field_container" data-map="copyright_admin_org">
+        <label for="CPYRGHT_ADMN_ORG">Organization</label>
+        <input type="text" id="CPYRGHT_ADMN_ORG" readonly>
+        <input type="hidden" id="ADMN_ORG_ID">
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="repeating_group" data-group-title="Legal Heirs" id="LEGAL_HEIRS_GRP">
+    <div class="borderless form_row">
+      <div class="full people_validated_field field_container" data-map="legal_heirs">
+        <label for="LEGAL_HEIRS">Individual</label>
+        <input type="text" id="LEGAL_HEIRS" readonly>
+        <input type="hidden" id="LEGAL_HEIRS_ID">
+      </div>
+    </div>
+  </fieldset>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="COPYRIGHT_CREDIT">Copyright Credit</label>
+      <textarea id="COPYRIGHT_CREDIT"></textarea>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="medium field_container">
+      <label for="COPYRIGHT_LEVEL">Copyright Level</label>
+      <select id="COPYRIGHT_LEVEL">
+        <option></option>
+        <option>Owner identified and contacted</option>
+        <option>All Rights retained by Owner</option>
+        <option>Copyright assigned to Institution</option>
+        <option>Cleared for all museum purposes</option>
+        <option>Rights managed by Institution</option>
+        <option>Rights owned by Institution</option>
+      </select>
+    </div>
+
+    <div class="medium field_container">
+      <label for="THIRD_PARTY">Release owner data to third parties?</label>
+      <select id="THIRD_PARTY">
+        <option></option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div>
+  </div>
+</fieldset>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="PREFERED_CREDIT">Image Credit Line</label>
+    <textarea id="PREFERED_CREDIT"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="CREDIT_LINE">Object Credit Line</label>
+    <textarea id="CREDIT_LINE"></textarea>
+  </div>
+</div>
+
+<div class="borderless form_row">
+  <div class="full field_container">
+    <label for="CPYRIGHT_INFO">Copyright Notes</label>
+    <textarea id="CPYRIGHT_INFO"></textarea>
+  </div>
+</div>

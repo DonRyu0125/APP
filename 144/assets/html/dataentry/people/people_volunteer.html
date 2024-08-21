@@ -1,0 +1,226 @@
+<span class="hidden current_page" id="people_volunteer"></span>
+
+<div class="form_row borderless">
+    <div class="small field_container">
+      <label for="VOLUNTEER_ID">Membership ID</label>
+      <input type="text" id="VOLUNTEER_ID">
+    </div>
+
+    <div class="small field_container">
+      <label for="VOLUNTEER_SINCE">Volunteer Since (Year)</label>
+      <input type="text" id="VOLUNTEER_SINCE">
+    </div>
+
+    <div class="small field_container">
+      <label for="VOLUNTEER_S_RANGE">Date Range Volunteer Period</label>
+      <input type="text" id="VOLUNTEER_S_RANG">
+    </div>
+
+    <div class="small field_container">
+      <label for="VOLUNTEER_E_RANG">To</label>
+      <input type="text" id="VOLUNTEER_E_RANG">
+    </div>
+    </div>
+	
+<div class="form_row borderless">
+    <div class="medium field_container">
+      <label for="MEMBER_ACTIVE_YN">Wiling to Volunteer For</label>
+      <select id="MEMBER_ACTIVE_YN">
+      <option></option>
+      <option>Administration</option>
+      <option>Events</option>
+      <option>Docent</option>
+      <option>Fundraising</option>
+      </select>
+    </div>
+    </div>
+
+<fieldset class="logical_group">
+  <legend>Emergency Contact Information</legend>
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="VOL_EMG_CONTACT">Contact Name</label>
+      <input type="text" id="VOL_EMG_CONTACT">
+    </div>
+
+    <div class="small field_container">
+      <label for="VOL_EMG_PHONE1">Contact Phone # 1:</label>
+      <input type="text" id="VOL_EMG_PHONE1">
+    </div>
+
+    <div class="small field_container">
+      <label for="VOL_EMG_PHONE2">Contact Phone # 2:</label>
+      <input type="text" id="VOL_EMG_PHONE2">
+    </div>
+    </div>
+	</fieldset>
+	
+	
+  <div class="form_row">
+    <div class="large repeating_field field_container">
+      <label for="VOLUNTEER_TYPE">Benefits/Features</label>
+      <input type="text" id="VOLUNTEER_TYPE">
+    </div>
+    </div>
+
+<fieldset class="repeating_group" data-group-title="General Volunteer Availability" id="VOL_AVAILABLE_GR">
+<div class="form_row borderless">
+    <div class="small field_container">
+      <label for="VOL_AVAILABLE">Availabilty</label>
+      <select id="VOL_AVAILABLE">
+      <option></option>
+      <option>As Needed</option>
+      <option>Morning (Mon-Fri)</option>
+      <option>Afternoons (Mon-Fri)</option>
+      <option>Evenings (Mon-Fri)</option>
+      <option>Weekends</option>
+      <option>Once A Week (specify Day)</option>
+      <option>More Than Once a Week (specify)</option>
+      <option>OTHER (please specify)</option>
+      </select>
+    </div>
+
+    <div class="small field_container">
+      <label for="VOL_AVAILABLE_TM">Available Times</label>
+      <input type="text" id="VOL_AVAILABLE_TM">
+    </div>
+	
+    <div class="small field_container">
+      <label for="VOL_AVAILABLE_DA">Available Day</label>
+      <input type="text" id="VOL_AVAILABLE_DA">
+    </div>
+  </div>
+</fieldset>
+
+  <fieldset class="logical_group">
+    <legend>Special Skills/Abilities/Concerns?</legend>
+      <div class="form_row">
+       <div class="small field_container">
+        <label for="DRIVER_LICENCE_Y">
+        <input type="checkbox" id="DRIVER_LICENCE_Y"> Possess Valid Driver's Licence</label>
+      </div>
+
+      <div class="small field_container">
+        <label for="COVID_VAC_YN">
+        <input type="checkbox" id="COVID_VAC_YN"> Fully Covid Vaccinated</label>
+      </div>
+
+      <div class="small field_container">
+        <label for="VOL_FIRST_AID_YN">
+        <input type="checkbox" id="VOL_FIRST_AID_YN"> Standard First Aid</label>
+      </div>
+
+      <div class="small field_container">
+        <label for="VOL_CPR_YN">
+        <input type="checkbox" id="VOL_CPR_YN"> CPR Certification</label>
+      </div>
+      </div>
+
+      <div class="form_row">
+       <div class="small field_container">
+        <label for="VOL_HEALTH_YN">
+        <input type="checkbox" id="VOL_HEALTH_YN"> Any Health Concerns?</label>
+      </div>
+
+    <div class="large field_container">
+      <label for="VOL_HEALTH_NOTE">Specify</label>
+      <input type="text" id="VOL_HEALTH_NOTE">
+    </div>
+    </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Volunteering History" id="VOLUNTEER_HISTOR">
+  <div class="form_row borderless">
+    <div class="small date field_container">
+      <label for="VOLUNTEER_DATE_S">Date (start)</label>
+      <input type="text" id="VOLUNTEER_DATE_S" readonly>
+    </div>
+
+    <div class="small date field_container">
+      <label for="VOLUNTEER_DATE_E">Date (end, if multiple days)</label>
+      <input type="text" id="VOLUNTEER_DATE_E" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="VOLUNTEER_HRS">Total Hours</label>
+      <input type="text" id="VOLUNTEER_HRS">
+    </div>
+
+    <div class="small field_container">
+      <label for="VOLUNTEER_ROLE">Role</label>
+      <input type="text" id="VOLUNTEER_ROLE">
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="medium field_container">
+      <label for="VOL_EVENT_NAME">Event Name</label>
+      <input type="text" id="VOL_EVENT_NAME">
+    </div>
+
+    <div class="small field_container">
+      <label for="VOL_EVENT_START">Event Start</label>
+      <input type="text" id="VOL_EVENT_START">
+    </div>
+
+    <div class="small field_container">
+      <label for="VOL_EVENT_END">Event End</label>
+      <input type="text" id="VOL_EVENT_END">
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+    <label for="VOL_HISTORY_NOTE">Notes</label>
+    <textarea id="VOL_HISTORY_NOTE"></textarea>
+    </div>
+  </div>
+
+<fieldset class="logical_group">
+  <legend>Documentation Checklist</legend>
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="VOL_THANK_YOU_YN">Thank You Letter</label>
+      <select id="VOL_THANK_YOU_YN">
+      <option></option>
+      <option>Yes</option>
+      <option>No</option>
+      </select>
+    </div>
+
+    <div class="small date field_container">
+      <label for="VOL_THANKU_SENT">Sent On</label>
+      <input type="text" id="VOL_THANKU_SENT" readonly>
+    </div>
+
+    <div class="medium validated_table field_container">
+      <label for="VOL_THANKU_BY">Sent By</label>
+      <input type="text" id="VOL_THANKU_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group has_image_holder" data-group-title="Volunteer Sign" id="VOL_E_SIGN_GRP">
+  <div class="form_row borderless">
+      <div class="large image file_attachment field_container">
+        <label for="VOL_E_SIGNATURE">Image Path/Thumbnail</label>
+        <input type="text" id="VOL_E_SIGNATURE" readonly>
+      </div>
+      <div>
+        <!-- RL-2020-11-10  image holder  and KN 2022-03-29 image clicked added.-->
+         <a href="#" class="image_clicked"><img class="field_img" src="/m3online/assets/img/image-placeholder.png">
+      </div>
+    </div>
+
+  <div class="form_row borderless">
+    <div class="medium field_container">
+      <label for="VOL_E_NAME">Name</label>
+      <input type="text" id="VOL_E_NAME">
+    </div>
+    <div class="medium field_container">
+      <label for="VOL_E_TITLE">Title</label>
+      <input type="text" id="VOL_E_TITLE">
+    </div>
+  </div>
+ </fieldset>
+  </fieldset>

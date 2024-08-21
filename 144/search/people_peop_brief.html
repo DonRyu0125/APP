@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMS - People Database</title>
+
+    <!-- include virtual="/144/assets/html/template/stylesheets.html" -->
+    <!-- include virtual="/144/assets/html/template/header_scripts.html" -->
+  </head>
+  <body data-database="people" data-query="peop_brief">  <!-- KN-2021-01-26 -->>
+    <header>
+      <!-- include virtual="/144/assets/html/template/header.html" -->
+    </header>
+
+    <section id="body">
+      <!-- include virtual="/144/assets/html/template/db_selection_nav.html" -->
+
+      <div class="container">
+        <!-- include virtual="/144/assets/html/template/db/people_db_actions_nav.html" -->
+
+        <section class="query_container">
+           <section class="query_form">
+            <div align="center">
+              <h3>Please select records for Person Brief Report</h3>
+            </div>
+          </section>
+          <section class="query_form">
+            <!-- KN-2021-01-25 -->
+            <section class="query_form">
+                <!-- include virtual="/144/assets/html/query/people.html" -->
+            </section>
+
+            <hr>
+
+            <!-- include virtual="/144/assets/html/template/search_control.html" -->
+        </section>
+
+        <div class="results_container">
+
+        </div>
+      </div>
+    </section>
+
+    <footer>
+        <!-- include virtual="/144/assets/html/template/footer.html" -->
+    </footer>
+
+    <div style="display:none;">
+      <div id="report_chooser">
+        <h1>Please select a report to download as PDF</h1>
+        <select>
+          <option value="PERSON_FULL_XML">Detailed Person Report</option>
+          <option value="PERSON_BRIEF_XML">Brief Person Report</option></select>
+        </select>
+
+        <p><a class="button">Download PDF Report</a></p>
+      </div>
+    </div>
+
+    <div id="notices">^WIN_INFO^</div>
+    <!-- include virtual="/144/assets/html/template/db/people_base_scripts.html" -->
+    <! KN 2021-01-26 -->
+    <!-- include virtual="/144/assets/html/template/core_dataentry_scripts.html" -->
+  </body>
+</html>

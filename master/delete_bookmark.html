@@ -1,0 +1,88 @@
+<html>
+  <header>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+       function getAccessToken()
+       {
+         var token_result = {};
+         var token_url = "https://titanapi.minisisinc.com/token";
+
+         // prepare form data
+         var grant_type = "password";
+         var username = "Generic1";
+         var userpassword = "Gt345Ty34_df";
+         var form_data = 'grant_type=' + grant_type + "&username=" + username + "&password=" + userpassword;
+
+         $.ajax({
+           async: false,
+           type: "POST",
+           url: token_url,
+           headers: {'Content-Type' : 'application/x-www-form-urlencoded',
+                     'Accept'       : 'application/json'},
+           data: form_data,
+           processData: false,
+           cache: false,
+           timeout: 30000,
+           success: function (data) {
+             token_result = data;
+           },
+           error: function (e) {
+             alert ( "Error is encountered while obtaining access token." );
+           }
+         });
+
+         return token_result;
+       }
+
+       function delete_bookmark()
+       {
+         var bookmark_id = document.getElementById('bookmark_id');
+         if ( bookmark_id == null || bookmark_id.value == "" ) {
+           alert ( "Bookmark ID is not found." );
+         }
+         else {
+           var token_result = getAccessToken();
+           if ( Object.keys(token_result).length < 1 ) {
+             alert ( "Access token is not found." );
+           }
+           else {
+             var token_type = token_result["token_type"];
+             var access_token = token_result["access_token"];
+             var bookmark_url = "https://titanapi.minisisinc.com/api/Discover/BookmarkLinks/" + bookmark_id.value;
+             var request_headers = { };
+             request_headers["Authorization"] = token_type + " " + access_token;
+             request_headers["Content-Type"] = "application/x-www-form-urlencoded";
+             request_headers["Accept"] = "application/json";
+
+             // send request to delete TDR bookmark
+             $.ajax({
+               async: false,
+               type: "delete",
+               dataType: "json",
+               headers: request_headers,
+               url: bookmark_url,
+               success: function (data) {
+                 alert ( "Bookmark is deleted." );
+               },
+               error: function (xhr, status, error) {
+                 if ( xhr.status != 200 ) {
+                   var error_message = "Unable to remove bookmark." + "\nStatus: " + xhr.status;
+                   var response_text = xhr.responseJSON.Message;
+                   if ( response_text != null ) {
+                     error_message = error_message + "\nMessage: " + response_text;
+                   }
+                   alert ( error_message );
+                 }
+               }
+             });
+           }
+         }
+       }
+    </script>
+  <header>
+  <body>
+    Bookmark ID: <input type='text', id='bookmark_id'>
+    <br/><br/>
+    <a href='#' onclick='delete_bookmark()'>Delete Bookmark</a>
+  </body>
+</html>

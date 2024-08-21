@@ -1,0 +1,36 @@
+<span class="hidden current_page" id="movement_dispatch"></span>
+
+<fieldset class="repeating_group" data-group-title="Dispatch Details" id="DESPATCH_GRP">
+  <div class="form_row">
+    <div class="medium validated_table field_container">
+      <label for="DESPATCHER">Dispatcher</label>
+      <input type="text" id="DESPATCHER" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="PICK_UP">Pick Up</label>
+      <select id="PICK_UP">
+        <option></option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div>
+
+    <div class="small field_container">
+      <label for="TRANSFERER">Transportation</label>
+      <input type="text" id="TRANSFERER">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="small date field_container">
+      <label for="DESPATCH_DATE">Dispatch Date</label>
+      <input type="text" id="DESPATCH_DATE">
+    </div>
+
+    <div class="large artlocations_validated_field field_container" data-map="dispatch_location">
+      <label for="DISPATCH_LOC_ID">Location</label>
+      <input type="text" id="DISPATCH_LOC_ID" readonly>
+    </div>
+  </div>
+</fieldset>

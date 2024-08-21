@@ -1,0 +1,50 @@
+<span class="hidden current_page" id="people_note"></span>
+
+
+<div class="form_row">
+  <div class="full repeating_field field_container">
+    <label for="PERSON_BIOGRAPHY">Biography</label>
+    <textarea id="PERSON_BIOGRAPHY"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="ARTIST_STATEMNT">Artist Statement</label>
+    <textarea id="ARTIST_STATEMNT"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+    <div class="medium field_container">
+      <label for="ACTIVE_FROM">Active (from) <i>(descriptive date)</i></label>
+      <input type="text" id="ACTIVE_FROM">
+    </div>
+
+    <div class="medium field_container">
+      <label for="ACTIVE_TO">Active (to) <i>(descriptive date)</i></label>
+      <input type="text" id="ACTIVE_TO">
+    </div>
+</div>
+	
+<fieldset class="repeating_group" data-group-title="Person Record Notepad" id="PERSON_NOTE_GRP">
+  <div class="form_row">
+    <div class="large validated_table field_container">
+      <label for="P_NOTE_BY">Notes Entered by</label>
+      <input type="text" id="P_NOTE_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+
+    <div class="small date field_container">
+      <label for="P_NOTE_DATE">Date</label>
+      <input type="text" id="P_NOTE_DATE">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="PERSON_NOTE">Note</label>
+      <textarea id="PERSON_NOTE"></textarea>
+    </div>
+  </div>
+</fieldset>
+

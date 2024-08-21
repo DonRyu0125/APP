@@ -1,0 +1,273 @@
+<span class="hidden current_page" id="client_main"></span>
+
+<div class="form_row">
+  <div class="medium field_container">
+    <label for="SURNAME"><u>Last Name</u></label>
+    <input type="text" id="SURNAME">
+  </div>
+
+  <div class="small field_container">
+    <label for="FORENAME"><u>First Name</u></label>
+    <input type="text" id="FORENAME">
+  </div>
+
+  <div class="small field_container">
+    <label for="MIDDLE_NAME">Middle Name</label>
+    <input type="text" id="MIDDLE_NAME">
+  </div>
+
+  <input type="hidden" id="PERSON_ID">
+</div>
+
+<div class="form_row">
+  <div class="small field_container">
+    <label for="NAME_TITLE">Title</label>
+    <select id="NAME_TITLE">
+      <option></option>
+      <option>Bro.</option>
+      <option>Capt.</option>
+      <option>Cmdr.</option>
+      <option>Dr.</option>
+      <option>Fr.</option>
+      <option>Gen.</option>
+      <option>Hon.</option>
+      <option>Maj.</option>
+      <option>Miss.</option>
+      <option>Msgr.</option>
+      <option>Mr.</option>
+      <option>Mrs.</option>
+      <option>Ms.</option>
+      <option>Mr. and Mrs.</option>
+      <option>Rabbi</option>
+      <option>Rev.</option>
+      <option>Sergt.</option>
+      <option>Sr.</option>
+    </select>
+  </div>
+
+  <div class="small field_container">
+    <label for="SUFFIX">Suffix</label>
+    <select id="SUFFIX">
+      <option></option>
+      <option>Esq.</option>
+      <option>Jr.</option>
+      <option>Sr.</option>
+      <option>I</option>
+      <option>II</option>
+      <option>III</option>
+      <option>IV</option>
+      <option>V</option>
+    </select>
+  </div>
+
+  <div class="small field_container">
+    <label for="PERSON_GENDER">Gender</label>
+    <select id="PERSON_GENDER">
+      <option></option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+      <option>Unknown</option>
+    </select>
+  </div>
+
+  <div class="small field_container">
+    <label for="PERSON_CITIZEN">Citizenship</label>
+    <select id="PERSON_CITIZEN">
+      <option></option>
+      <option>Canadian</option>
+      <option>Landed Immigrant</option>
+      <option>Other</option>
+    </select>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="medium field_container">
+    <label for="INDIGENOUS_PEOP">Ethnology/Peoples</label>
+    <input type="text" id="INDIGENOUS_PEOP">
+  </div>
+
+  <div class="medium repeating_field field_container">
+    <label for="PERSON_LANGUAGE">Language of Correspondence</label>
+    <input type="text" id="PERSON_LANGUAGE">
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Alias" id="ALIAS_GROUP">
+  <div class="borderless form_row">
+    <div class="large field_container">
+      <label for="PERSON_ALIAS">Alias</label>
+      <input type="text" id="PERSON_ALIAS">
+    </div>
+
+    <div class="small repeating_field field_container">
+      <label for="ALIAS_TYPE">Type</label>
+      <select id="ALIAS_TYPE">
+        <option></option>
+        <option>First Nations</option>
+        <option>Known As</option>
+        <option>Label</option>
+        <option>LC Name Authority</option>
+        <option>Other</option>
+      </select>
+    </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Associated Organization" id="ORG_MAKER_GROUP">
+  <div class="form_row">
+    <div class="full org_validated_field field_container" data-map="associated_organization">
+      <label for="MAKER_ORG">Organization</label>
+      <input type="text" id="MAKER_ORG">
+      <input type="hidden" id="P_MAKER_ORG_ID">
+    </div>
+  </div>
+
+  <fieldset class="repeating_group" data-group-title="Office Held" id="OFFICE_HELD">
+    <div class="borderless form_row">
+      <div class="medium field_container">
+        <label for="OFFICE_HELD_POS">Position</label>
+        <input type="text" id="OFFICE_HELD_POS">
+      </div>
+
+      <div class="small field_container">
+        <label for="OFFICE_HELD_FROM">From <i>(descriptive date)</i></label>
+        <input type="text" id="OFFICE_HELD_FROM">
+      </div>
+
+      <div class="small field_container">
+        <label for="OFFICE_HELD_TO">To <i>(descriptive date)</i></label>
+        <input type="text" id="OFFICE_HELD_TO">
+      </div>
+    </div>
+  </fieldset>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Birth Details</legend>
+
+  <div class="borderless form_row">
+    <div class="large field_container">
+      <label for="PLACE_OF_BIRTH">Place</label>
+      <input type="text" id="PLACE_OF_BIRTH">
+    </div>
+
+    <div class="small field_container">
+      <label for="PERSON_DOB">Date of birth <i>(descriptive date)</i></label>
+      <input type="text" id="PERSON_DOB">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Death Details</legend>
+
+  <div class="borderless form_row">
+    <div class="large field_container">
+      <label for="PLACE_OF_DEATH">Place</label>
+      <input type="text" id="PLACE_OF_DEATH">
+    </div>
+
+    <div class="small field_container">
+      <label for="PERSON_DOD">Date of death <i>(descriptive date)</i></label>
+      <input type="text" id="PERSON_DOD">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Address" id="P_OTH_ADDRESS">
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="P_OTH_ADDRESS1">Suite # / PO Box</label>
+      <input type="text" id="P_OTH_ADDRESS1">
+    </div>
+
+    <div class="medium field_container">
+      <label for="P_OTH_ADDRESS2">Street</label>
+      <input type="text" id="P_OTH_ADDRESS2">
+    </div>
+
+    <div class="small form_button field_container">
+      <a href="#" class="set_default_address"><i class="fa fa-home"></i> Set as Default Address</a>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="P_OTH_CITY">City</label>
+      <input type="text" id="P_OTH_CITY">
+    </div>
+
+    <div class="small field_container">
+      <label for="P_OTH_COUNTY">Province</label>
+      <input type="text" id="P_OTH_COUNTY">
+    </div>
+
+    <div class="small field_container">
+      <label for="P_OTH_COUNTRY">Country</label>
+      <input type="text" id="P_OTH_COUNTRY">
+    </div>
+
+    <div class="small field_container">
+      <label for="P_OTH_POSTAL_COD">Postal Code</label>
+      <input type="text" id="P_OTH_POSTAL_COD">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="P_OTH_PHONE">Primary Phone</label>
+      <input type="text" id="P_OTH_PHONE">
+    </div>
+
+    <div class="small field_container">
+      <label for="P_OTH_PHONE_2">Secondary Phone</label>
+      <input type="text" id="P_OTH_PHONE_2">
+    </div>
+
+    <div class="small field_container">
+      <label for="P_OTH_FAX">Fax</label>
+      <input type="text" id="P_OTH_FAX">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="medium url_field field_container">
+      <label for="P_OTH_URL">URL</label>
+      <input type="text" id="P_OTH_URL">
+    </div>
+
+    <div class="medium field_container">
+      <label for="P_OTH_EMAIL">E-mail</label>
+      <input type="text" id="P_OTH_EMAIL">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Social media/networking" id="ONLINE_GRP">
+  <div class="borderless form_row">
+    <div class="medium field_container">
+      <label for="ONLINE_NAME">Account</label>
+      <input type="text" id="ONLINE_NAME">
+    </div>
+
+    <div class="medium field_container">
+      <label for="ONLINE_TYPE">Type</label>
+      <input type="text" id="ONLINE_TYPE">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Last Modified" id="PVAL_LAST_MOD">
+  <div class="borderless form_row">
+    <div class="large field_container">
+      <label for="PVAL_LAST_MOD_BY">By</label>
+      <input type="text" id="PVAL_LAST_MOD_BY" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="PVAL_LAST_MOD_TM">On</label>
+      <input type="text" id="PVAL_LAST_MOD_TM" readonly>
+    </div>
+  </div>
+</fieldset>

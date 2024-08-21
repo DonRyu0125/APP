@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMS - People Database</title>
+
+    <!-- include virtual="/144/assets/html/template/stylesheets.html" -->
+    <!-- include virtual="/144/assets/html/template/header_scripts.html" -->
+  </head>
+  <body data-database="people" class="validated_record">
+    <section id="body">
+      <div class="container">
+        <!-- include virtual="/144/assets/html/template/db/peovt_db_actions_nav.html" -->
+
+        <section id="data_entry_forms">
+          <div id="primary_data_entry_form">
+            <nav id="worksheet_nav">
+              <nav id="secondary_worksheet_nav">
+                <ul id="people">
+                  <li><a href="/144/assets/html/dataentry/people/people_main.html" data-form="main">People Main</a></li>
+                  <li><a href="/144/assets/html/dataentry/people/people_other.html" data-form="other">Additional Information</a></li>
+                  <li><a href="/144/assets/html/dataentry/people/people_note.html" data-form="note">Notes</a></li>
+              <!-- KN 2022-08-17 removed client request
+                  <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/people/people_restrictions.html" data-form="restrictions"><i class="fa fa-warning fa-lg"></i> Restrictions</a></li> -->
+                </ul>
+              </nav>
+            </nav>
+
+            <div id="data_entry_form">
+              <!-- include virtual="/144/assets/html/dataentry/people/people_main.html" -->
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <xml id="validated_record" style="display: none;">
+      ^XML_TREE^
+    </xml>
+
+    <div id="notices">^WIN_INFO^</div>
+
+    <!-- include virtual="/144/assets/html/template/db/people_base_scripts.html" -->
+    <!-- include virtual="/144/assets/html/template/core_dataentry_scripts.html" -->
+    <script src="/144/assets/customize/dataentry/record_databases/people.js"></script>
+    <script src="/144/assets/customize/dataentry/frontend/people_val.js"></script>
+  </body>
+</html>

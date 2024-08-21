@@ -1,0 +1,101 @@
+<span class="hidden current_page" id="visit"></span>
+
+<fieldset class="repeating_group" data-group-title="Site Visit" id="SITE_VISIT">
+<div class="form_row">
+    <div class="small field_container">
+      <label for="PERMIT_NUMBER">Permit No.</label>
+      <input type="text" id="PERMIT_NUMBER">
+    </div>
+
+    <div class="large field_container">
+      <label for="SITE_PERM_ISSUER">Permit Issuer</label>
+      <input type="text" id="SITE_PERM_ISSUER">
+    </div>
+   </div>
+
+<div class="form_row">
+    <div class="small date field_container">
+      <label for="SITE_VISIT_DATE">Start Date <i>(descriptive date)</i></label>
+      <input type="text" id="SITE_VISIT_DATE">
+    </div>
+
+    <div class="small date field_container">
+      <label for="SITE_VISIT_END">End Date <i>(descriptive date)</i></label>
+      <input type="text" id="SITE_VISIT_END">
+    </div>
+
+<div class="medium repeating_field field_container">
+      <label for="SITE_VISIT_TYPE">Activity</label>
+      <select id="SITE_VISIT_TYPE">
+        <option></option>
+        <option>Alteration</option>
+        <option>Excavation</option>
+        <option>Monitoring</option>
+        <option>Recording</option>
+        <option>Surface Collection</option>
+        <option>Other</option>
+      </select>
+    </div>
+  </div>
+
+<fieldset class="repeating_group" data-group-title="Visit Team" id="SITE_VISIT_TEAM">
+  <div class="form_row">
+    <div class="large people_validated_field field_container" data-map="visit_person">
+      <label for="MEMBER_NAME">Individual</label>
+      <input type="text" id="MEMBER_NAME" readonly>
+      <input type="hidden" id="MEMBER_ID">
+    </div>
+
+    <div class="small field_container">
+      <label for="MEMBER_ROLE">Role</label>
+      <select id="MEMBER_ROLE">
+        <option></option>
+        <option>Field Director</option>
+        <option>Field Supervisor</option>
+        <option>Permit Holder</option>
+        <option>Other</option>
+      </select>
+    </div>
+  </div>
+</fieldset>
+
+ <div class="form_row">
+    <div class="full field_container">
+      <label for="SITE_VISIT_DSCRP">Description</label>
+      <textarea id="SITE_VISIT_DSCRP"></textarea>
+    </div>
+  </div>
+
+<fieldset class="repeating_group contains_image" data-group-title="Site Visit Image(s)" id="SITE_VISIT_IMG_G">
+  <div class="form_row">
+    <div class="full image file_attachment field_container">
+      <label for="SITE_VISIT_IMG">Image Path</label>
+      <input type="text" id="SITE_VISIT_IMG" readonly>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="SITE_V_IMG_NO">Notes</label>
+      <textarea id="SITE_V_IMG_NO"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group contains_image" data-group-title="Site Visit Document(s)" id="SITE_VISIT_DOC_G">
+  <div class="form_row">
+    <div class="full image file_attachment field_container">
+      <label for="SITE_VISIT_DOC">Document Path</label>
+      <input type="text" id="SITE_VISIT_DOC" readonly>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="SITE_V_DOC_TYPE">Document Notes</label>
+      <textarea id="SITE_V_DOC_TYPE"></textarea>
+    </div>
+  </div>
+</fieldset>
+</fieldset>
+

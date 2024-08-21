@@ -1,0 +1,99 @@
+<span class="hidden current_page" id="rights_main"></span>
+<ul class="rights_menu">
+  <li><a class="add" title="Add Component"><i class="fa fa-file-o"></i></a></li>
+  <li><a class="edit" title="Edit Component"><i class="fa fa-edit"></i></a></li>
+  <li><a class="delete" title="Delete Component"><i class="fa fa-trash-o"></i></a></li>
+</ul>
+
+<table class="rights_costs">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Category</th>
+      <th>Detail</th>
+	  <th>Quantity</th>
+      <th>Amount ($)</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td colspan="5">No Charges Found</td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <td colspan="3">Tax 1</td>
+      <td colspan="2"><input type="text" id="ENQ_TAX1"></td>
+    </tr>
+    <tr>
+      <td colspan="3">Tax 2</td>
+      <td colspan="2"><input type="text" id="ENQ_TAX2"></td>
+    </tr>
+    <tr>
+      <td colspan="3">Total Cost</td>
+      <td colspan="2"><input type="text" id="ENQ_TOTAL_COST" readonly></td>
+    </tr>
+    <tr>
+      <td colspan="3"></td>
+      <td colspan="2"><a class="calculate_rights_costs">Calculate Total Cost</a></td>
+    </tr>
+  </tfoot>
+</table>
+
+
+<div style="display:none;">
+  <div id="costs_data_entry">
+    <nav class="cost_actions">
+      <ul>
+        <li class="dba_save_cost"><a title="Save Record"><i class="fa fa-floppy-o"></i></a></li>
+        <li class="dba_cancel"><a title="Cancel Edits"><i class="fa fa-ban"></i></a></li>
+        <li class="dba_print"><a title="Print"><i class="fa fa-print"></i></a></li>
+      </ul>
+      <hr>
+    </nav>
+    <div>
+      <fieldset class="logical_group">
+        <legend>Charges Details</legend>
+
+        <div class="form_row">
+          <div class="small field_container">
+            <label for="rightscost_charge_type">Type</label>
+            <select id="rightscost_charge_type">
+			  <option></option>
+			  <option>Order</option>
+			  <option>Reproduction</option>
+			  <option>Service</option>
+			</select>
+          </div>
+ 	  
+          <div class="large field_container">
+            <label for="rightscost_charge_detail">Detail</label>
+            <input type="text" id="rightscost_charge_detail">
+          </div>
+		</div>
+
+        <div class="form_row borderless">		  
+		  <div class="small field_container">
+            <label for="rightscost_charge_quantity">Quantity</label>
+            <input type="text" id="rightscost_charge_quantity">
+          </div>
+		  
+		 <div class="small field_container">
+            <label for="rightscost_charge_amount">Amount ($)</label>
+            <input type="text" id="rightscost_charge_amount">
+          </div> 
+        </div>
+
+        <div class="form_row borderless">
+          <div class="full field_container">
+            <label for="rightscost_charge_spec_inst">Notes</label>
+            <textarea id="rightscost_charge_spec_inst"></textarea>
+            <input type="hidden" id="rightscost_occurrence">
+          </div>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+</div>

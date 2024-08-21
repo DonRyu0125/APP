@@ -1,0 +1,24 @@
+<script>
+  site_params = {
+    add_link : get_home_sessid() + '/COLLECTIONS?OPEN&DBOPTION=ADD&RECORD_DEFAULT=Y',
+    global_change_link : get_home_sessid() + '?QUERYFORM&SEARCHFORM=[CAMS_APP]/144/search%5ccol_gc.html&DATABASE=COLLECTIONS&DBOPTION=SEARCH',
+    save_link : get_saverecord() + '&FILE=[CAMS_APP]/144/ASSETS%2fHTML%2fTEMPLATE%2fCLOSE_FORM.HTML&DISCONNECT=N&CLOSE=Y',
+    skip_link : get_skiprecord()  + '&FILE=[CAMS_APP]/144/ASSETS%2fHTML%2fTEMPLATE%2fCLOSE_FORM.HTML',
+    search_link : get_home_sessid() + '/COLLECTIONS?OPEN&DBOPTION=SEARCH&CLEAR=Y',
+    'reports' : {
+                  'plan_move'  : { 'query': '[CAMS_APP]/144/search\\collections_plan_move.html',  'report': '' },
+                  'multi_move' : { 'query': '[CAMS_APP]/144/search\\collections_multi_move.html', 'report': '' },
+                  'acc_reg'    : { 'query': '[CAMS_APP]/144/search\\collections_acc_reg.html',    'report': 'ACCESSION_REGISTER_XML' },
+                  'obj_sum'    : { 'query': '[CAMS_APP]/144/search\\collections_obj_sum.html',    'report': 'COLLECTIONS_BRIEF_XML' },
+                  'obj_det'    : { 'query': '[CAMS_APP]/144/search\\collections_obj_det.html',    'report': 'COLLECTIONS_FULL_XML'},
+                  'obj_con'    : { 'query': '[CAMS_APP]/144/search\\collections_obj_con.html',    'report': 'CONSERVATION_OBJ_XML'},
+                  'obj_conh'   : { 'query': '[CAMS_APP]/144/search\\collections_obj_conh.html',   'report': 'CONSERVATION_HISTORY_XML'},
+                  'obj_exh'    : { 'query': '[CAMS_APP]/144/search\\collections_obj_exh.html',    'report': 'EXH_HISTORY_XML'},
+                  'obj_lab'    : { 'query': '[CAMS_APP]/144/search\\collections_obj_lab.html',    'report': 'SH_LABEL_XML'}
+          }
+  };
+</script>
+<script src="/144/assets/js/vendor/jquery.colorbox-min.js"></script>
+<script src="/144/assets/js/frontend_util.js"></script>
+<script src="/144/assets/js/frontend.js"></script>
+<!-- <script src="/144/assets/js/vendor/custom-alert.min.js"></script> -->

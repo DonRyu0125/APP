@@ -1,0 +1,129 @@
+<span class="hidden current_page" id="propinspect_main"></span>
+
+<fieldset class="repeating_group" data-group-title="Inspection(s)" id="PD_INSPECTION_GR">
+ <div class="form_row">
+    <div class="small date field_container">
+      <label for="PD_INSPECT_DATE">Date</label>
+      <input type="text" id="PD_INSPECT_DATE">
+    </div>
+
+    <div class="medium field_container">
+      <label for="PD_CONDITION">Status</label>
+      <select id="PD_CONDITION">
+        <option></option>
+        <option>Excellent</option>
+        <option>Excellent/Good</option>
+        <option>Good</option>
+        <option>Good/Fair</option>
+        <option>Fair</option>
+        <option>Fair/Poor</option>
+        <option>Poor</option>
+        <option>Poor/Unacceptable</option>
+        <option>Unacceptable</option>
+      </select>
+    </div>
+
+    <div class="small field_container">
+      <label for="PD_INSPECT_PEST">Pest(s) involved?</label>
+       <select id="PD_INSPECT_PEST">
+         <option></option>
+         <option>Yes</option>
+         <option>No</option>
+       </select>
+    </div>
+    </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="PD_INSPECT_FEAT">Feature</label>
+      <input type="text" id="PD_INSPECT_FEAT">
+    </div>
+  </div>
+
+    <div class="form_row contains_browse">
+    <div class="full org_validated_field people_validated_field field_container" data-map-people="pdinspect" data-map-org="pdinspect_org"> <!-- RL-20211231 -->
+      <label for="PD_INSPECT_BY">Treated By</label>
+      <input type="text" id="PD_INSPECT_BY" readonly>
+      <input type="hidden" id="PD_INSPECT_BY_ID">
+    </div>
+    </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="PD_INSPECT_NOTES">Inspection Details</label>
+      <textarea id="PD_INSPECT_NOTES"></textarea>
+    </div>
+  </div>
+
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="PD_CONDITION_NOT">Condition Summary</label>
+      <textarea id="PD_CONDITION_NOT"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="PD_INSPECT_FU">Followup</label>
+      <textarea id="PD_INSPECT_FU"></textarea>
+    </div>
+  </div>
+
+ <fieldset class="repeating_group contains_image" data-group-title="Inspection Images - Properties" id="PD_INSPECT_IMG_G">
+  <div class="form_row">
+    <div class="full image file_attachment field_container">
+      <label for="PD_INSPECT_IMG">Image Path</label>
+      <input type="text" id="PD_INSPECT_IMG">
+    </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="PD_INSPECT_IMG_C">Image Note</label>
+      <textarea id="PD_INSPECT_IMG_C"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Video - Properties" id="PD_INSPECT_VID_G">
+  <div class="borderless form_row">
+    <div class="full video file_attachment field_container">
+      <label for="PD_INSPECT_VIDEO">Video Path</label>
+      <input type="text" id="PD_INSPECT_VIDEO">
+    </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="PD_INSPECT_VID_N">Note</label>
+      <textarea id="PD_INSPECT_VID_N"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Documents - Properties" id="PD_INSPECT_DOC_G">
+  <div class="borderless form_row">
+    <div class="full text file_attachment field_container">
+      <label for="PD_INSPECT_DOC">Notes Path</label>
+      <input type="text" id="PD_INSPECT_DOC">
+    </div>
+    </div>
+
+  <div class="borderless form_row">
+    <div class="large field_container">
+      <label for="PD_INSPECT_D_TYP">Type</label>
+      <textarea id="PD_INSPECT_D_TYP">
+    </div>
+
+    <div class="small date field_container">
+      <label for="PD_INSPECT_D_DAT">Date</label>
+      <input type="text" id="PD_INSPECT_D_DAT">
+    </div>
+  </div>
+
+    <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="PD_INSPECT_DOC_N">Note</label>
+      <textarea id="PD_INSPECT_DOC_N"></textarea>
+    </div>
+  </div>
+</fieldset>

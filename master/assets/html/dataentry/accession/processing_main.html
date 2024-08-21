@@ -1,0 +1,386 @@
+<span class="hidden current_page" id="processing_main"></span>
+
+  <div class="form_row">
+   <div class="medium field_container">
+    <label for="PROC_STATUS">Processing Status</label>
+     <select id="PROC_STATUS">
+      <option></option>
+      <option>Processed</option>
+      <option>Partially</option>
+    </select>
+    </div>
+
+    <div class="small combo field_container">
+     <label for="PROC_VOLUME">Volume.</label>
+     <input type="text" id="PROC_VOLUME">
+     <select id="PROC_VOLUME_UNIT">
+	 <option></option>
+      <option>cubic feet</option>
+      <option>sheets</option>
+	  <option>reels</option>
+	  <option>rolls</option>
+	  <option>mixed</option>
+    </select>
+    </div>
+	
+    <div class="small field_container">
+     <label for="CONTAINERS_AFTER">No. of Containers.</label>
+     <input type="text" id="CONTAINERS_AFTER">
+    </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Location Information" id="LOCATION_GROUP">
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="BOX_ITEM_NUMBER">Box No.</label>
+      <input type="text" id="BOX_ITEM_NUMBER" readonly>
+    </div>
+  </div>
+  
+<div class="form_row">
+  <div class="small field_container">
+    <label for="ACQ_ACKNOW">Acquisition acknowledged</label>
+    <input type="checkbox" id="ACQ_ACKNOW">
+
+  </div>
+
+  <div class="small date field_container">
+    <label for="ACKNOW_DATE">Date</label>
+    <input type="text" id="ACKNOW_DATE">
+  </div>
+
+  <div class="medium validated_table field_container">
+      <label for="ACKNOW_STAFF">Processed By</label>
+      <input type="text" id="ACKNOW_STAFF" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="ACKNOW_NOTES">Notes</label>
+    <textarea id="ACKNOW_NOTES"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="small field_container">
+    <label for="TRL">Transmittal receipt/Transfer list</label>
+    <input type="checkbox" id="TRL">
+  </div>
+
+  <div class="small date field_container">
+    <label for="TRL_DATE">Date</label>
+    <input type="text" id="TRL_DATE">
+  </div>
+
+  <div class="medium validated_table field_container">
+      <label for="TRL_STAFF">Processed By</label>
+      <input type="text" id="TRL_STAFF" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="TRL_NOTES">Notes</label>
+    <textarea id="TRL_NOTES"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="small field_container">
+    <label for="ACC_REC_COMP">Accession record completed</label>
+    <input type="checkbox" id="ACC_REC_COMP">
+  </div>
+
+  <div class="small date field_container">
+    <label for="ARC_DATE">Date</label>
+    <input type="text" id="ARC_DATE">
+  </div>
+
+  <div class="medium validated_table field_container">
+      <label for="ARC_STAFF">Processed By</label>
+      <input type="text" id="ARC_STAFF" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="ARC_NOTES">Notes</label>
+    <textarea id="ARC_NOTES"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="small field_container">
+    <label for="CLIPS_REMOVED">Clips/Staples removed</label>
+    <input type="checkbox" id="CLIPS_REMOVED">
+  </div>
+
+  <div class="small date field_container">
+    <label for="CLIPS_DATE">Date</label>
+    <input type="text" id="CLIPS_DATE">
+  </div>
+
+  <div class="medium validated_table field_container">
+      <label for="CLIPS_STAFF">Processed By</label>
+      <input type="text" id="CLIPS_STAFF" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="CLIPS_NOTES">Notes</label>
+    <textarea id="CLIPS_NOTES"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="small field_container">
+    <label for="ITEMS_CLEANED">Items flattened and cleaned</label>
+    <input type="checkbox" id="ITEMS_CLEANED">
+  </div>
+
+  <div class="small date field_container">
+    <label for="ITEMS_DATE">Date</label>
+    <input type="text" id="ITEMS_DATE">
+  </div>
+
+  <div class="medium validated_table field_container">
+      <label for="ITEMS_STAFF">Processed By</label>
+      <input type="text" id="ITEMS_STAFF" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="ITEMS_NOTES">Notes</label>
+    <textarea id="ITEMS_NOTES"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="small field_container">
+    <label for="PRESERVATION">Preservation Concerns</label>
+    <input type="checkbox" id="PRESERVATION">
+  </div>
+
+  <div class="small date field_container">
+    <label for="PRESERV_DATE">Date</label>
+    <input type="text" id="PRESERV_DATE">
+  </div>
+
+  <div class="medium validated_table field_container">
+      <label for="PRESERV_STAFF">Processed By</label>
+      <input type="text" id="PRESERV_STAFF" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="PRESERV_NOTES">Notes</label>
+    <textarea id="PRESERV_NOTES"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="small field_container">
+    <label for="DISCARDS">Discards</label>
+    <input type="checkbox" id="DISCARDS">
+  </div>
+
+  <div class="small date field_container">
+    <label for="DISCARDS_DATE">Date</label>
+    <input type="text" id="DISCARDS_DATE">
+  </div>
+
+  <div class="medium validated_table field_container">
+      <label for="DISCARDS_STAFF">Processed By</label>
+      <input type="text" id="DISCARDS_STAFF" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="DISCARDS_NOTES">Notes</label>
+    <textarea id="DISCARDS_NOTES"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="small field_container">
+    <label for="ARRANGEMNT">Arrangement</label>
+    <input type="checkbox" id="ARRANGEMNT">
+  </div>
+
+  <div class="small date field_container">
+    <label for="ARRANGEMNT_DATE">Date</label>
+    <input type="text" id="ARRANGEMNT_DATE">
+  </div>
+
+  <div class="medium validated_table field_container">
+      <label for="ARRANGEMNT_STAFF">Processed By</label>
+      <input type="text" id="ARRANGEMNT_STAFF" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="ARRANGEMNT_NOTES">Notes</label>
+    <textarea id="ARRANGEMNT_NOTES"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="small field_container">
+    <label for="RECS_FILED">Records filed and boxed</label>
+    <input type="checkbox" id="RECS_FILED">
+  </div>
+
+  <div class="small date field_container">
+    <label for="RECS_FILED_DATE">Date</label>
+    <input type="text" id="RECS_FILED_DATE">
+  </div>
+
+  <div class="medium validated_table field_container">
+      <label for="RECS_FILED_STAFF">Processed By</label>
+      <input type="text" id="RECS_FILED_STAFF" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="RECS_FILED_NOTES">Notes</label>
+    <textarea id="RECS_FILED_NOTES"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="small field_container">
+    <label for="RECS_LABELLED">Records labelled</label>
+    <input type="checkbox" id="RECS_LABELLED">
+  </div>
+
+  <div class="small date field_container">
+    <label for="RECS_LABL_DATE">Date</label>
+    <input type="text" id="RECS_LABL_DATE">
+  </div>
+
+  <div class="medium validated_table field_container">
+      <label for="RECS_LABL_STAFF">Processed By</label>
+      <input type="text" id="RECS_LABL_STAFF" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="RECS_LABL_NOTES">Notes</label>
+    <textarea id="RECS_LABL_NOTES"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="small field_container">
+    <label for="RECS_SHELVED">Records shelved</label>
+    <input type="checkbox" id="RECS_SHELVED">
+  </div>
+
+  <div class="small date field_container">
+    <label for="RECS_SHLV_DATE">Date</label>
+    <input type="text" id="RECS_SHLV_DATE">
+  </div>
+
+  <div class="medium validated_table field_container">
+      <label for="RECS_SHLV_STAFF">Processed By</label>
+      <input type="text" id="RECS_SHLV_STAFF" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="RECS_SHLV_NOTES">Notes</label>
+    <textarea id="RECS_SHLV_NOTES"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="small field_container">
+    <label for="INVENTORY_COMP">Inventory completed</label>
+    <input type="checkbox" id="INVENTORY_COMP">
+  </div>
+
+  <div class="small date field_container">
+    <label for="INVENTORY_DATE">Date</label>
+    <input type="text" id="INVENTORY_DATE">
+  </div>
+
+  <div class="medium validated_table field_container">
+      <label for="INVENTORY_STAFF">Processed By</label>
+      <input type="text" id="INVENTORY_STAFF" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="INVENTORY_NOTES">Notes</label>
+    <textarea id="INVENTORY_NOTES"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="small field_container">
+    <label for="COLL_DATA_FILED">Collection manager data filed</label>
+    <input type="checkbox" id="COLL_DATA_FILED">
+  </div>
+
+  <div class="small date field_container">
+    <label for="COLL_DATA_DATE">Date</label>
+    <input type="text" id="COLL_DATA_DATE">
+  </div>
+
+  <div class="medium validated_table field_container">
+      <label for="COLL_DATA_STAFF">Processed By</label>
+      <input type="text" id="COLL_DATA_STAFF" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="COLL_DATA_NOTES">Notes</label>
+    <textarea id="COLL_DATA_NOTES"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="small field_container">
+    <label for="SPREADSHEET">Spreadsheet created</label>
+    <input type="checkbox" id="SPREADSHEET">
+  </div>
+
+  <div class="small date field_container">
+    <label for="SPREADST_DATE">Date</label>
+    <input type="text" id="SPREADST_DATE">
+  </div>
+
+  <div class="medium validated_table field_container">
+      <label for="SPREADST_STAFF">Processed By</label>
+      <input type="text" id="SPREADST_STAFF" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="SPREADST_NOTES">Notes</label>
+    <textarea id="SPREADST_NOTES"></textarea>
+  </div>
+</div>
+</fieldset>
+
+<fieldset class="logical_group">
+<div class="form_row">
+  <div class="full field_container">
+    <label for="PROCESSING_NOTES">Processing Notes</label>
+    <textarea id="PROCESSING_NOTES"></textarea>
+  </div>
+</div>
+</fieldset>
+

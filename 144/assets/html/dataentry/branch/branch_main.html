@@ -1,0 +1,22 @@
+<span class="hidden current_page" id="branch_main"></span>
+
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <label for="BRANCH_ID">Branch No.</label>
+      <input type="text" id="BRANCH_ID" readonly>
+    </div>
+    <div class="large ministry_validated_field field_container" data-map="branch_ministry">
+       <label for="B_MINISTRY_NAME">Ministry Name</label>
+       <input type="text" id="B_MINISTRY_NAME" readonly class="mandatory_check" data-mandatory="$$">
+       <input type="hidden" id="B_MINISTRY_ID">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="BRANCH_NAME">Branch Name</label>
+      <input type="text" id="BRANCH_NAME" class="unique_key_check mandatory_check"
+        data-mandatory="$$"
+      >
+    </div>
+  </div>

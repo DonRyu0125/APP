@@ -1,0 +1,151 @@
+<span class="hidden current_page" id="propincident_main"></span>
+
+<fieldset class="repeating_group" data-group-title="Incident(s)" id="PD_INCIDENT_GRP">
+ <div class="form_row">
+     <div class="small date field_container">
+      <label for="PD_INCIDENT_DATE">Date</label>
+      <input type="text" id="PD_INCIDENT_DATE">
+    </div>
+	
+    <div class="large validated_table field_container">
+      <label for="PD_INC_REPORT_BY">Reported by</label>
+    <input type="text" id="PD_INC_REPORT_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+  </div>
+
+  <div class="form_row">
+     <div class="full field_container">
+      <label for="PD_INCIDENT_TYPE">Type</label>
+      <input type="text" id="PD_INCIDENT_TYPE">
+    </div>
+	</div>
+	
+  <div class="form_row">	
+      <div class="full field_container">
+        <label for="PD_INCIDENT_NOTE">Incident</label>
+        <textarea id="PD_INCIDENT_NOTE"></textarea>
+    </div>  
+  </div>
+  
+    <fieldset class="repeating_group" data-group-title="People Involved" id="PD_INC_PEOPLE_GR">
+    <div class="form_row contains_browse">
+      <div class="medium people_validated_field field_container" data-map="pdincident_person">
+      <label for="PD_INC_PERSON">Name</label>
+      <input type="text" id="PD_INC_PERSON" readonly>
+      <input type="hidden" id="PD_INC_PERSON_ID">
+    </div> 
+
+  <div class="medium field_container">
+      <label for="PD_INC_PER_ROLE">Role</label>
+      <input type="text" id="PD_INC_PER_ROLE">
+    </div>
+	</div>
+	
+ <div class="form_row">
+    <div class="large field_container">
+      <label for="PD_INC_PER_INJUR">Injuries</label>
+      <input type="text" id="PD_INC_PER_INJUR">
+    </div>
+	
+	 <div class="small field_container">
+        <label for="PD_INC_PER_CLM_N">Claim Submitted?</label>
+        <select id="PD_INC_PER_CLM_N">
+          <option></option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+    </div> 
+    </div>
+
+ <div class="form_row">
+    <div class="full field_container">
+      <label for="PD_INC_PER_CLAIM">Claim statement</label>
+      <input type="text" id="PD_INC_PER_CLAIM">
+    </div>
+	</div>
+	</fieldset>
+	
+	
+  <div class="form_row">
+	<div class="small field_container">
+        <label for="PD_INC_EMERG_Y">Emergency Services Involved?</label>
+        <select id="PD_INC_EMERG_Y">
+          <option></option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+    </div>
+    </div>
+	
+  <div class="form_row">
+    <div class="full repeating_field field_container">
+      <label for="BC_INC_EMERG">Emergency Service</label>
+      <textarea id="BC_INC_EMERG"></textarea>
+    </div>
+  </div>
+  
+<div class="form_row">
+    <div class="medium validated_table field_container">
+      <label for="PD_INC_INVEST_BY">Reported by</label>
+    <input type="text" id="PD_INC_REPORT_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+  </div> 
+ 
+  <div class="form_row">
+    <div class="large field_container">
+      <label for="PD_INC_INVEST_RE">Investigation result</label>
+      <input type="text" id="PD_INC_INVEST_RE">
+    </div>
+	</div>
+ 
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="PD_INC_INVESTIGA">Investigation</label>
+      <textarea id="PD_INC_INVESTIGA"></textarea>
+    </div>
+	</div>
+	
+<fieldset class="repeating_group contains_image" data-group-title="Images" id="PD_INCDNT_IMAGES">
+  <div class="borderless form_row">
+    <div class="full image file_attachment field_container">
+      <label for="PD_INCDNT_IMG">Image Path</label>
+      <input type="text" id="PD_INCDNT_IMG">
+    </div>
+    </div>
+	
+	<div class="borderless form_row">
+     <div class="full field_container">
+      <label for="PD_INCDNT_IMG_CA">Notes</label>
+      <textarea id="PD_INCDNT_IMG_CA"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Documents" id="PD_INCDNT_DOCS">
+  <div class="borderless form_row">
+    <div class="full text file_attachment field_container">
+      <label for="PD_INCDNT_DOC_PA">Notes Path</label>
+      <input type="text" id="PD_INCDNT_DOC_PA">
+    </div>
+     </div> 
+
+   <div class="borderless form_row">
+    <div class="large field_container">
+      <label for="PD_INCDNT_DOC_TY">Type</label>
+      <input type="text" id="PD_INCDNT_DOC_TY">
+    </div>
+
+    <div class="small date field_container">
+      <label for="PD_INCDNT_DOC_DT">Date</label>
+      <input type="text" id="PD_INCDNT_DOC_DT">
+    </div>
+	</div>
+	
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="PD_INCDNT_DOC_NO">Note</label>
+      <textarea id="PD_INCDNT_DOC_NO"></textarea>
+    </div>  
+  </div>
+</fieldset>
+</fieldset>

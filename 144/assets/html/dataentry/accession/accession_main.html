@@ -1,0 +1,209 @@
+<span class="hidden current_page" id="accession_main"></span>
+
+<div class="borderless form_row">
+
+  <div class="medium date field_container">
+    <label for="RECDATE">Date Received</label>
+    <input type="text" id="RECDATE">
+  </div>
+
+  <div class="medium field_container">
+    <label for="BUS_UNIT_OWNER">Business unit Owner</label>
+    <select id="BUS_UNIT_OWNER">
+      <option></option>
+      <option>Corporations</option>
+      <option>Other</option>
+      <option>Private</option>
+      <option>Public</option>
+      <option>Unknown</option>
+    </select>
+  </div>
+</div>
+
+
+<div class="borderless form_row">
+  <div class="full field_container">
+    <label for="EXTENT">Physical Description</label>
+    <textarea id="EXTENT"></textarea>
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Donor/Source Information" id="DONOR_GROUP">
+  <div class="borderless form_row">
+    <div class="medium org_validated_field field_container" data-map="donor_org">
+      <label for="ORGANIZATION">Organization</label>
+      <input type="text" id="ORGANIZATION" readonly>
+      <input type="hidden" id="ORGN_ID"> <!-- KN - 2024-07-30 -->
+    </div>
+
+    <div class="medium people_validated_field field_container" data-map="donor_ind">
+      <label for="INDIVIDUAL">Individual</label>
+      <input type="text" id="INDIVIDUAL" readonly>
+      <input type="hidden" id="IND_ID">   <!-- KN - 2024-07-30 -->
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="medium people_validated_field field_container" data-map="donor_contact">
+      <label for="CONTACT">Contact Individual</label>
+      <input type="text" id="CONTACT" readonly>
+      <input type="hidden" id="CON_ID"><!-- KN - 2024-07-30 -->
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Schedule" id="SCHEDULE_GROUP">
+  <div class="borderless form_row">
+    <div class="medium schedule_validated_field field_container" data-map="acc_schedule">
+      <label for="SCHEDULE">Schedule</label>
+      <input type="text" id="SCHEDULE" readonly>
+      <input type="hidden" id="ACC_SCHED_ID">
+    </div>
+
+    <div class="small field_container">
+      <label for="ACC_SCHED_ADOPT">Adopted Date</label>
+      <input type="text" id="ACC_SCHED_ADOPT" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="ACC_SCHED_EFFECT">Effective Date</label>
+      <input type="text" id="ACC_SCHED_EFFECT" readonly>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="ACC_SCHED_TITLE">Rec. Series Title</label>
+      <input type="text" id="ACC_SCHED_TITLE" readonly>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="ACC_SCHED_CUTOFF">Rec. Series Cutoff</label>
+      <input type="text" id="ACC_SCHED_CUTOFF" readonly>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="ACC_SCHED_RETAIN">Total Retention</label>
+      <input type="text" id="ACC_SCHED_RETAIN" readonly>
+    </div>
+  </div>
+</fieldset>
+
+<div class="borderless form_row">
+  <div class="medium field_container">
+    <label for="Transfer">Transfer</label>
+    <input type="text" id="Transfer">
+  </div>
+  <div class="medium field_container">
+    <label for="BOXES">Boxes</label>
+    <input type="text" id="BOXES">
+  </div>
+</div>
+
+<fieldset class="logical_group">
+  <legend>Item Information</legend>
+  <ul class="generic_table_menu">
+    <li><a class="add_group_occ" title="Add Request Item" data-table="item_table"><i class="fa fa-file-o"></i> Add Item</a></li>
+    <li><a class="edit_group_occ" title="Edit Request Item" data-table="item_table"><i class="fa fa-edit"></i> Edit Item</a></li>
+    <li><a class="delete_group_occ" title="Delete Request Item" data-table="item_table"><i class="fa fa-trash-o"></i> Delete Item</a></li>
+  </ul>
+
+  <div style="max-height:500px; overflow-y:scroll;">
+    <table class="generic_table" id="item_table"
+      data-group="LOCATION_GROUP"
+      data-exit="accessionGroupFieldHanler"
+      data-component-database="CONTAINER_COMP"
+      data-recid="A_BOX_ITEM_NO,CONTAINER_ID"
+      data-delete="CON_STATUS,Deleted"
+      data-pull="A_BOX_ITEM_NO=CONTAINER_ID,A_BOX_ITEM_TYPE=CON_ITEM_TYPE,A_LOC_DETAILS=LOCATION_DETAILS,A_DEACC_METHOD=CON_DESTROYED"
+      data-push="CON_ASSO_ACC=ACCNO"
+      data-mandatory="ACCNO"
+      data-add-option="&RECORD_DEFAULT=Y&NAME1=CON_STATUS&VALUE1=Prepare"
+    >
+    <thead>
+      <tr>
+        <th style="width:10%;" data-source="$occnum">#</th>
+        <th style="width:12%;" data-source="A_BOX_ITEM_NO">Container ID</th>
+        <th style="width:12%;" data-source="A_BOX_ITEM_TYPE">Type</th>
+        <th style="width:50%;" data-source="A_LOC_DETAILS">Description</th>
+        <th style="width:16%;" data-source="A_DEACC_METHOD">Disposal</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td colspan="4">No Container</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</fieldset>
+
+<div class="form_row borderless">
+  <div class="small field_container">
+    <label for="ACC_DATES">Dates <i>(descriptive date)</i></label>
+    <input type="text" id="ACC_DATES">
+  </div>
+
+  <div class="large field_container">
+    <label for="CREDIT_LINE">Credit Line</label>
+    <input type="text" id="CREDIT_LINE">
+  </div>
+</div>
+
+<div class="form_row borderless">
+  <div class="full field_container">
+    <label for="ACC_SCOPE">Scope</label>
+    <textarea id="ACC_SCOPE"></textarea>
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Archivist's Notepad" id="ACCESSION_NOTES">
+  <div class="form_row">
+    <div class="large validated_table field_container">
+      <label for="ACC_NOTES_BY">Archivist</label>
+      <input type="text" id="ACC_NOTES_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+
+    <div class="small date field_container">
+      <label for="ACC_NOTES_DATE">Date</label>
+      <input type="text" id="ACC_NOTES_DATE">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="ACC_NOTES">Notes</label>
+      <textarea id="ACC_NOTES"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+  <fieldset class="repeating_group" data-group-title="Creator" id="ACC_CREATOR_GRP">
+    <div class="form_row contains_browse">
+      <div class="full org_validated_field people_validated_field field_container"
+        data-map-people="accession_creator" data-map-org="accession_org_creator">
+        <label for="ACC_CREATOR">Creator</label>
+        <input type="text" id="ACC_CREATOR">
+        <input type="hidden" id="ACCRID">
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="repeating_group" data-group-title="Last Modified" id="ACC_MOD_HIST">
+    <div class="borderless form_row">
+      <div class="medium field_container">
+        <label for="ACC_MOD_BY">By</label>
+        <input type="text" id="ACC_MOD_BY" readonly>
+      </div>
+
+      <div class="medium field_container">
+        <label for="ACC_MOD_DATE">On</label>
+        <input type="text" id="ACC_MOD_DATE" readonly>
+      </div>
+    </div>
+  </fieldset>

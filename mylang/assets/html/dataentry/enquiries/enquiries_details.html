@@ -1,0 +1,135 @@
+<span class="hidden current_page" id="next-steps"></span>
+
+
+<fieldset class="logical_group">
+  <legend>Step Four - Fill Inquiry Details</legend>
+
+  <div class="borderless form_row">
+    <div class="small repeating_field field_container">
+      <label for="ENQ_ACTION">Action</label>
+      <select id="ENQ_ACTION">
+        <option></option>
+        <option>FAQ</option>
+        <option>Collection Search</option>
+        <option>Consultation</option>
+        <option>Identify Resources</option>
+        <option>Other</option>
+        <option>Refer</option>
+        <option>Respond</option>
+      </select>
+    </div>
+    <div class="large field_container">
+    <div class="full field_container">
+      <label for="ENQ_ACT_RESPONSE">Response</label>
+      <textarea id="ENQ_ACT_RESPONSE"></textarea>
+    </div>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <label for="ENQ_TIME_SPENT">Time Spent in quarter of the hour</label>
+      <input type="number" id="ENQ_TIME_SPENT" min="0" step="0.25">
+    </div>
+
+    <div class="small field_container">
+      <label for="ENQ_HOURLY_RATE">Hourly Rate</label>
+      <select id="ENQ_HOURLY_RATE">
+        <option>0.00</option>
+        <option>10.00</option>
+        <option>30.00</option>
+      </select>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Step Five (Optional) - Select Item(s)</legend>
+  <ul class="generic_table_menu">
+    <li><a class="add_group_occ" title="Add Request Item" data-table="item_table"><i class="fa fa-file-o"></i> Add Item</a></li>
+    <li><a class="edit_group_occ" title="Edit Request Item" data-table="item_table"><i class="fa fa-edit"></i> Edit Item</a></li>
+    <li><a class="delete_group_occ" title="Delete Request Item" data-table="item_table"><i class="fa fa-trash-o"></i> Delete Item</a></li>
+  </ul>
+
+  <div style="max-height:500px; overflow-y:scroll;">
+    <table class="generic_table" id="item_table"
+      data-group="ASSO_REQ_GRP"
+      data-exit="enquiryGroupFieldHanler"
+      data-component-database="ENQUIRY_REQUEST"
+      data-recid="ASSO_ORDER_NUM,REQ_ORDER_NUM"
+      data-delete="REC_STATUS,Deleted"
+      data-pull="ASSO_ORDER_NUM=REQ_ORDER_NUM,ASSO_ITEM_ID=REQ_ITEM_ID,ASSO_ITEM_TITLE=REQ_ITEM_TITLE,ASSO_REQ_STATUS=REQ_STATUS,ASSO_ITEM_SOURCE=REQ_DB_NAME"
+      data-push="REQ_ENQUIRY_ID=ENQ_ID,REQ_TOPIC=ENQ_TOPIC,METHOD_REQUEST=E_METHOD_REQUEST,REQ_PATRON_NAME=ENQ_PATRON_NAME,REQ_PATRON_ID=ENQ_PATRON_ID,REQ_PATRON_EMAIL=ENQ_PATRON_EMAIL,REQ_AOR_CARD_NO=AOR_CARD_NO,REQ_USER_GROUP=ENQ_USER_GROUP,REQ_AFFILIATE=ENQ_AFFILIATE,REQ_TITLE=ENQ_TITLE,HANDLED_BY=ENQ_HANDLED_BY,ITEM_REQ_DATE=E_EXH_START_DATE,END_DATE_NEEDED=E_EXH_END_DATE,R_LOAN_TYPE=E_LOAN_TYPE,R_LOAN_ORG=E_LOAN_ORG,R_LOAN_ORG_ID=E_LOAN_ORG_ID"
+      data-mandatory="ENQ_PATRON_NAME|ENQ_PATRON_ID|ENQ_PATRON_EMAIL"
+      data-add-option="&RECORD_DEFAULT=Y&NAME1=REQ_STATUS&VALUE1=Prepare"
+    >
+    <!-- ,REQ_TIME_UNITS=E_LOAN_DURATION,R_EXH_CONTACT=E_EXH_CONTACT,R_EXH_CONTACT_ID=E_EXH_CONTACT_ID,R_INT_CONTACT=E_INT_CONTACT,R_INT_CONTACT_ID=E_INT_CONTACT_ID,R_RETURN_TO=E_RETURN_TO,R_RETURN_TO_ID=E_RETURN_TO_ID -->
+    <thead>
+      <tr>
+        <th style="width:10%;" data-source="$occnum">#</th>
+        <th style="width:12%;" data-source="ASSO_ORDER_NUM">Request No.</th>
+        <th style="width:12%;" data-source="ASSO_ITEM_SOURCE">Source</th>
+        <th style="width:12%;" data-source="ASSO_ITEM_ID">Item ID</th>
+        <th style="width:44%;" data-source="ASSO_ITEM_TITLE">Item Title</th>
+        <th style="width:10%;" data-source="ASSO_REQ_STATUS">Status</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td colspan="4">No Request Item</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Step Six - Finalize Inquiry</legend>
+  <div class="borderless form_row">
+    <div class="medium form_button field_container" style="font-size: 1rem; margin-top: 3px;" id="COMPLETED_BUTTON">
+      <a href="#" onclick="approveEnquiry($(this));"><i class="fa fa-check"></i> Completed</a>
+    </div>
+    <div class="medium field_container">
+      <label for="ENQ_PROCESS_DATE">Completed On</label>
+      <input type="text" id="ENQ_PROCESS_DATE" readonly>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Actions taken on record</legend>
+
+  <div class="borderless form_row">
+    <div class="medium field_container">
+      <span class="title_text">Entered On / By</span>
+    </div>
+    <div class="medium field_container">
+      <span class="title_text">Due On</span>
+    </div>
+  </div>
+  <div class="borderless form_row">
+    <div class="medium field_container">
+      <input type="text" id="ENQ_CREATE_DATE" readonly>
+    </div>
+    <div class="medium date field_container">
+      <input type="text" id="ENQ_DUE_DATE">
+    </div>
+  </div>
+  <div class="borderless form_row">
+    <div class="medium field_container">
+      <input type="text" id="E_REQUESTOR_NAME" readonly>
+    </div>
+  </div>
+</fieldset>
+
+<!-- call initalization user routine -->
+<input type="hidden" class="init_call_exit protect_field_exit unprotect_field_exit show_optional_data_exit"
+  data-protect1="'ENQ_STATUS <> ''REQUEST'' * ENQ_STATUS <> ''ACTIVE''',COMPLETED_BUTTON"
+ data-source_value="ENQ_TOPIC"
+/>
+
+<!-- call record wrapup user routine -->
+<input type="hidden" class="wrapup_user_exit"
+  data-exit="wrapupEnquiries"
+/>

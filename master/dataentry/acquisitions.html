@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M3 Online - MINISIS Management for Museums - Acquisitions Database</title>
+
+  <!-- include virtual="/m3online/assets/html/template/stylesheets.html" -->
+  <!-- include virtual="/m3online/assets/html/template/header_scripts.html" -->
+</head>
+
+<body data-database="registration_root" data-popup="Y">
+  <header>
+    <!-- include virtual="/m3online/assets/html/template/header.html" -->
+  </header>
+
+  <section id="body">
+    <!-- include virtual="/m3online/assets/html/template/db_selection_nav.html" -->
+
+    <div class="container">
+      <!-- include virtual="/m3online/assets/html/template/db/acq_db_actions_nav.html" -->
+
+      <section id="data_entry_forms">
+        <div id="universal_record_information">
+          <div class="column">
+            <div class="field_container">
+              <label for="ACCESS_GRP_NO"><u>Accession Group No.</u></label>
+              <input type="text" id="ACCESS_GRP_NO">
+            </div>
+            </div>		
+			
+          <div class="column">
+		  <div class="select_container field_container">
+              <label for="STATUS">Status</label>
+              <select id="STATUS">
+                <option></option>
+                <option>Accessioned</option>
+                <option>Acquisition Proposal</option>
+                <option>Cancelled Proposal</option>	
+                <option>De-accessioned</option>
+                <option>Handling Object or Prop</option>
+                <option>Missing</option>
+                <option>Loan In</option>
+                <option>Returned to Lender</option>
+                <option>Unknown</option>
+              </select>
+            </div>
+             </div>
+
+          <div class="column">	
+           <div class="select_container field_container">
+              <label for="ACQUIS_METHOD"><u>Acq. Method</u></label>
+              <select id="ACQUIS_METHOD">
+                <option></option>
+                <option>Bequest</option>
+                <option>Correction</option>
+                <option>De-accession</option>
+                <option>Donation</option>
+                <option>External</option>
+                <option>Gift</option>
+                <option>Mixed Method</option>
+                <option>Purchase</option>
+                <option>Trade</option>
+                <option>Transfer</option>
+                <option>Unknown</option>
+                </select>
+           </div>
+          </div>
+
+          <div class="universal_row">
+            <div class="full field_container">
+              <label for="REGISTRAT_TITLE"><u>Title</u></label>
+              <input type="text" id="REGISTRAT_TITLE">
+           </div>
+          </div>
+        </div>
+
+        <div id="primary_data_entry_form">
+          <nav id="worksheet_nav">
+            <ul id="primary_worksheet_nav">
+              <li>
+                <a href="/m3online/assets/html/dataentry/acquisitions/acquisition_main.html" data-form="acquisition" class="active">Acquisition</a>
+              </li>
+              <li>
+                <a href="/m3online/assets/html/dataentry/acquisitions/documentation_main.html" data-form="documentation">Documentation</a>
+              </li>
+            </ul>
+            <nav id="secondary_worksheet_nav">
+              <ul id="acquisition">
+                <li><a href="/m3online/assets/html/dataentry/acquisitions/acquisition_main.html" data-form="main">Acquisition</a>
+                </li>
+              </ul>
+
+              <ul id="documentation">
+                <li>
+                  <a href="/m3online/assets/html/dataentry/acquisitions/documentation_main.html" data-form="main">Documentation</a>
+                </li>
+              </ul>
+            </nav>
+          </nav>
+
+          <div id="data_entry_form">
+            <!-- include virtual="/m3online/assets/html/dataentry/acquisitions/acquisition_main.html" -->
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <footer>
+    <!-- include virtual="/m3online/assets/html/template/footer.html" -->
+  </footer>
+
+<!-- #if global(READONLY_RECORD) = Y or global(MWI_ACCESS_TOKEN) = USER01-->
+  <xml id="MY_XML" style="display: none;" data-readonly="Y">
+<!-- #else -->
+  <xml id="MY_XML" style="display: none;">
+<!-- #endif -->
+    ^XML_TREE^
+  </xml>
+
+  <div id="notices">^WIN_INFO^</div>
+
+  <!-- include virtual="/m3online/assets/html/template/db/acq_base_scripts.html" -->
+  <!-- include virtual="/m3online/assets/html/template/core_dataentry_scripts.html" -->
+  <script src="/m3online/assets/customize/dataentry/record_databases/acquisitions.js"></script>
+  <script src="/m3online/assets/customize/dataentry/interface_databases/documentation.js"></script>
+  <script src="/m3online/assets/customize/dataentry/frontend/acquisitions.js"></script>
+</body>
+
+</html>

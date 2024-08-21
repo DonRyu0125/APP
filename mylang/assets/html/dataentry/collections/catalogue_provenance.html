@@ -1,0 +1,103 @@
+<span class="hidden current_page" id="catalogue_provenance"></span>
+
+<fieldset class="repeating_group" data-group-title="Provenance" id="PROVENANCE_GROUP">
+  <fieldset class="repeating_group" data-group-title="Owner" id="OWNER">
+    <div class="borderless form_row">
+      <div class="medium people_validated_field field_container" data-map="provenance_owner_individual">
+        <label for="OWNER_FULLNAME">Individual</label>
+        <input type="text" id="OWNER_FULLNAME" readonly>
+        <input type="hidden" id="OWNER_ID">
+      </div>
+      
+      <div class="small org_validated_field field_container" data-map="provenance_owner_org">
+        <label for="OWNER_ORG">Organization</label>
+        <input type="text" id="OWNER_ORG" readonly>
+        <input type="hidden" id="OWNER_ORG_ID">
+      </div>
+      
+      <div class="small field_container">
+        <label for="OWNERS_ROLE">Role</label>
+        <select id="OWNERS_ROLE">
+          <option></option>
+          <option>Previous Owner</option>
+          <option>Creator</option>
+        </select>
+      </div>
+    </div>
+  </fieldset>
+
+  <div class="form_row">
+    <div class="small date field_container">
+      <label for="OWNERSHIP_DATE">Ownership Starts</label>
+      <input type="text" id="OWNERSHIP_DATE">
+    </div>
+
+    <div class="medium field_container">
+      <label for="OWNERSHIP_PLACE">Ownership Place</label>
+      <input type="text" id="OWNERSHIP_PLACE">
+    </div>
+
+    <div class="small field_container">
+      <label for="OWN_EXCHANGE_MET">Exchange Method</label>
+      <select id="OWN_EXCHANGE_MET">
+        <option></option>
+        <option>Bequest</option>
+        <option>By descent</option>
+        <option>Free</option>
+        <option>Gift</option>
+        <option>Loan</option>
+        <option>Purchase</option>
+        <option>Purchase at Auction</option>
+        <option>Temporary Loan</option>
+        <option>Trade</option>
+        <option>Transfer</option>
+        <option>Unknown</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="large field_container">
+      <label for="DISPOS_MET">Disposal Method</label>
+      <input type="text" id="DISPOS_MET">
+    </div>
+
+    <div class="small combo field_container">
+      <label for="OWN_EXCHNG_PRICE">Price</label>
+      <input type="text" id="OWN_EXCHNG_PRICE">
+      <select id="OWN_EXCHNG_CUR">
+        <option></option>
+        <option>CAD</option>
+        <option>EURO</option>
+        <option>FRA</option>
+        <option>GBP</option>
+        <option>USD</option> 
+      </select>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="OWN_EXCHANG_NOTE">Ownership Exchange Notes</label>
+      <textarea id="OWN_EXCHANG_NOTE"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Item Number" id="OTHER_NUM_GROUP">
+  <div class="borderless form_row">
+    <div class="medium field_container">
+      <label for="OTHER_NUMBER">Item Number</label>
+      <input type="text" id="OTHER_NUMBER">
+    </div>
+
+    <div class="medium field_container">
+      <label for="OTHER_NUM_TYPE">Item/Other Number Type</label>
+      <select id="OTHER_NUM_TYPE">
+        <option></option>
+        <option>Tracking Number</option>
+        <option>Old Accession Number</option>
+      </select>
+    </div>
+  </div>
+</fieldset>

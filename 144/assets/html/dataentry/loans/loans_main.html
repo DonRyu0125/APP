@@ -1,0 +1,174 @@
+<span class="hidden current_page" id="loans_main"></span>
+
+<div class="borderless form_row">
+  <div class="small field_container">
+    <label for="LO_ID">ID</label>
+    <!-- RL-2020-09-29 -->
+    <input type="text" id="LO_ID" readonly>
+  </div>
+
+  <div class="small field_container">
+    <label for="LO_STATUS">Status</label>
+    <select id="LO_STATUS">
+      <option></option>
+      <option>Opened</option>
+      <option>Closed</option>
+      <option>Planning</option>
+      <option>Other</option>
+    </select>
+  </div>
+
+  <div class="small field_container">
+    <label for="LO_TYPE">Type</label>
+    <!-- RL-2020-09-29 -->
+    <select id="LO_TYPE" class="set_ai_value" data-ai="loanout_ai">
+      <option></option>
+      <option>Outgoing Loan</option>
+      <option>Internal Exhibition</option>
+      <option>Exhibition</option>
+    </select>
+  </div>
+
+  <div class="small field_container">
+    <label for="LO_PURPOSE">Purpose</label>
+    <select id="LO_PURPOSE">
+      <option></option>
+      <option>Appraisal</option>
+      <option>Conservation</option>
+      <option>Educational</option>
+      <option>Exhibition</option>
+      <option>Identification</option>
+      <option>Reproduction</option>
+      <option>Research</option>
+      <option>Other</option>
+    </select>
+  </div>
+
+</div>
+
+<fieldset class="logical_group">
+  <legend>Step One: Assign Contact Details - Loan / Exhibition Information</legend>
+
+  <div class="form_row">
+    <div class="medium org_validated_field field_container" data-map="step_one_institution">
+      <label for="LO_ORG">Institution</label>
+      <input type="text" id="LO_ORG" readonly>
+      <input type="hidden" id="LO_ORG_ID">
+    </div>
+
+    <div class="medium people_validated_field field_container" data-map="step_one_contact">
+      <label for="LO_SHIPPED_TO">Contact</label>
+      <input type="text" id="LO_SHIPPED_TO" readonly>
+      <input type="hidden" id="LO_SHIPPED_TO_ID">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium location_validated_field field_container" data-map="step_one_location">
+      <label for="LO_INT_SHIP_TO">Inhouse Location</label>
+      <input type="text" id="LO_INT_SHIP_TO" readonly>
+    </div>
+
+    <div class="medium people_validated_field field_container" data-map="step_one_location_contact">
+      <label for="">Inhouse Location Contact</label>
+      <input type="text" id="LO_INT_CONTACT" readonly>
+      <input type="hidden" id="LO_INT_CONT_ID">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full people_validated_field field_container" data-map="step_one_return_to">
+      <label for="LO_RETURNED_TO">Return Items To</label>
+      <input type="text" id="LO_RETURNED_TO" readonly>
+      <input type="hidden" id="LO_RETURNED_ID">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Step Two:  Assign Parameters</legend>
+
+  <div class="form_row">
+    <div class="small date field_container">
+      <label for="LO_DATE_XPECT">Expected Date</label>
+      <input type="text" id="LO_DATE_XPECT">
+    </div>
+
+    <div class="small date field_container">
+      <label for="LO_DATE_XPECTRET">Expected Return Date</label>
+      <input type="text" id="LO_DATE_XPECTRET">
+    </div>
+
+  <div class="form_row">
+    <div class="small date field_container">
+      <label for="LO_DATE_LOANED">Actual Date</label>
+      <input type="text" id="LO_DATE_LOANED">
+    </div>
+
+    <div class="small date field_container">
+      <label for="LO_DATE_RETURNED">Actual Return Date</label>
+      <input type="text" id="LO_DATE_RETURNED">
+    </div>
+  </div>
+
+  <fieldset class="logical_group">
+    <legend>Item Count</legend>
+
+    <div class="borderless form_row">
+      <div class="small field_container">
+        <label for="LO_ITEMS_EXPECT">Expected</label>
+        <input type="text" id="LO_ITEMS_EXPECT">
+      </div>
+
+      <div class="medium field_container">
+        <label for="LO_ITEMS_RECVD">Actual</label>
+        <input type="text" id="LO_ITEMS_RECVD">
+      </div>
+
+      <div class="small field_container">
+        <label for="LO_ITEMS_MISSING">Missing</label>
+        <input type="text" id="LO_ITEMS_MISSING">
+      </div>
+    </div>
+  </fieldset>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Loan / Exhibition Renewal</legend>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="LO_RENEWAL">Is loan / exhibition to be renewed?</label>
+      <select id="LO_RENEWAL">
+        <option></option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div>
+
+    <div class="medium people_validated_field field_container" data-map="loan_renewed_by">
+      <label for="LO_RENEWED_BY">Renewed By</label>
+      <input type="text" id="LO_RENEWED_BY" readonly>
+      <input type="hidden" id="LO_RENEWED_BY_ID">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium date field_container">
+      <label for="LO_RENEW_DATE">Date Renewed</label>
+      <input type="text" id="LO_RENEW_DATE">
+    </div>
+
+    <div class="medium date field_container">
+      <label for="LO_RENEW_TO">Renewed To</label>
+      <input type="text" id="LO_RENEW_TO">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="LOAN_RENEW_NOTES">Notes</label>
+      <textarea id="LOAN_RENEW_NOTES"></textarea>
+    </div>
+  </div>
+</fieldset>

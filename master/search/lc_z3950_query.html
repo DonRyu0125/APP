@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMS - LC z39.50 Database</title>
+
+    <!-- include virtual="/144/assets/html/template/stylesheets.html" -->
+    <!-- include virtual="/144/assets/html/template/header_scripts.html" -->
+  </head>
+  <body class="z3950_search" data-database="catalogue">
+
+    <div style="text-align: center;"><h3>LC z39.50 Query Form</h3></div>
+
+    <div style="text-align: center;">^@INFO_WIN^</div><br/>
+
+    <section id="body">
+      <div class="container">
+        <section class="query_container">
+          <section class="query_form">
+               <form class="database_search" id="search_form" method="post" action="^HOME_SESSID^?SEARCHZ3950DATABASE&PARM_FILE=[cams_m2a_script]Z3950_DOWNLOAD.PAR&ID=LC-Z39.50">
+                 <div class="advanced_search">
+                   <div class="row">
+                     <div class="full_query_element">
+                         <input type="text" name="TITLE" placeholder="Enter Title">
+                     </div>
+                   </div>
+
+                   <div class="row">
+                     <div class="full_query_element">
+                       <input type="text" name="AUTHOR" placeholder="Enter Author">
+                     </div>
+                   </div>
+
+                   <div class="row">
+                     <div class="half_query_element">
+                       <input type="text" name="LC_NUMBER" placeholder="Enter LC Number">
+                     </div>
+                     <div class="half_query_element">
+                       <input type="text" name="CONTROL_NO" placeholder="Enter Control Number">
+                      </div>
+                   </div>
+
+                   <div class="row">
+                     <div class="half_query_element">
+                       <input type="text" name="ISBN" placeholder="Enter ISBN">
+                     </div>
+                     <div class="half_query_element">
+                       <input type="text" name="ISSN" placeholder="Enter ISSN">
+                     </div>
+                   </div>
+
+                   <div class="row">
+                     <div class="full_query_element">
+                       <input type="text" name="PUBLISHER" placeholder="Enter Publisher">
+                     </div>
+                   </div>
+
+                   <div class="row">
+                     <div class="full_query_element">
+                       <input type="text" name="SUBJECT" placeholder="Enter Subject">
+                     </div>
+                   </div>
+
+                   <div class="row">
+                     <div class="full_query_element">
+                       <input type="text" name="QRY_EXPRESSION" placeholder="Enter Line-mode Query">
+                     </div>
+                   </div>
+                 </div>
+               </form>
+          </section>
+
+          <hr>
+
+          <!-- include virtual="/144/assets/html/template/import_search_control.html" -->
+        </section>
+
+        <div class="results_container">
+
+        </div>
+      </div>
+    </section>
+
+    <div class="loading" style="display:none;" id="search-waiting"><i class="fa fa-spin fa-gear fa-4x"></i></div>
+
+    <!-- include virtual="/144/assets/html/template/db/cat_base_scripts.html" -->
+    <!-- include virtual="/144/assets/html/template/import_scripts.html" -->
+  </body>
+</html>

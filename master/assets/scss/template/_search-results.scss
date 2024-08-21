@@ -1,0 +1,110 @@
+table#search_results {
+  padding: 1rem;
+  margin: 1rem auto;
+  width: 85%;
+
+  thead {
+    color: darken($light, 35%);
+    font-size: 1rem;
+    text-align: left;
+    border-bottom: 1px solid $light;
+
+    th { 
+      padding: 0.5rem; 
+
+      &:first-child {
+        width: 1rem;
+      }
+
+      &:first-child, &:last-child {
+        text-align: center;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      background: lighten($light, 8%);
+
+      &:nth-child(odd) {
+        background: lighten($light, 5%);
+      }
+    }
+
+    td { 
+      padding: 0.5rem; 
+
+      a {
+        color: darken($light, 45%);
+      }
+
+      &:first-child, &:last-child {
+        color: darken($light, 35%);
+        text-align: center;
+      }
+
+      &:first-child {
+        cursor: pointer;
+        position: relative;
+        left: 2px;
+      }
+
+      &.no_results {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+#search_metadata {
+  width: 85%;
+  margin: 0 auto;
+  padding: 0.5rem;
+
+  span {
+    font-weight: bold;
+    font-size: 0.95rem;
+    position: relative;
+    top: 0.05rem;
+  }
+
+  p {
+    font-size: 0.75rem;
+    &:first-child { margin-top: 0; }
+    &:last-child { margin-bottom: 0; }
+  }
+}
+
+.pagination {
+  margin: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: darken($light, 5%);
+
+  a {
+    @include transition(all 0.5s);
+    display: inline-block;
+    padding: 0.5rem;
+    color: darken($light, 35%);
+    text-decoration: none;
+
+    b {
+      color: darken($light, 60%);
+      display: inline-block;
+      padding-bottom: 3px;
+      border-bottom: 3px solid;
+    }
+
+    span {
+      padding: 0;
+    }
+
+    &:hover {
+      color: darken($light, 60%);
+    }
+  }
+
+  span {
+    padding: 0.5rem;
+  }
+}

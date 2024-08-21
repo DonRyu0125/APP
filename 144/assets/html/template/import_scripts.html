@@ -1,0 +1,81 @@
+<script>
+  // RL-2021-02-17
+  const SEARCH_FORM_ID         = "search_form";
+  const CLEAR_FORM_ID          = "clear_search";
+  const SUBMIT_FORM_ID         = "submit_import_search";
+  const SEARCH_WAIT_ID         = "search-waiting";
+  const CONFIRM_SELECTION_ID   = "confirm_selection";
+  const PREV_LINK_ID           = "prev_link";
+  const NEXT_LINK_ID           = "next_link";
+
+  /*****
+   **
+   **  enterFormSubmit : handles submitting a form when the user clicks 'enter' key
+   **
+   **  params:
+   **    - key : The key that was pressed
+   **
+   *****/
+  var z3950FormSubmit = function (key) {
+    if (key.which == 13) {
+      var form_action = $('#'+SEARCH_FORM_ID).attr('action');
+      if ( form_action != null && form_action != '' ) {
+        document.getElementById(SEARCH_WAIT_ID).style.display = "block";
+        document.getElementById(SEARCH_FORM_ID).submit();
+      }
+    }
+  };
+
+  $(document).ready(function(){
+     // submit search if enter key is pressed
+    $('.query_form input').off().on('keypress', function (e) { z3950FormSubmit(e); });
+
+    toggleSimpleAdvancedSearch();  // show query form
+
+    // handle "reset z39.50 query form" event
+    $('#'+CLEAR_FORM_ID).on("click", function (e) {
+      e.preventDefault();
+
+      document.getElementById(SEARCH_FORM_ID).reset();
+    });
+
+    // handle "submit z39.50 query form" event
+    $('#'+SUBMIT_FORM_ID).on("click", function (e) {
+      e.preventDefault();
+
+      var form_action = $('#'+SEARCH_FORM_ID).attr('action');
+      if ( form_action != null && form_action != '' ) {
+        document.getElementById(SEARCH_WAIT_ID).style.display = "block";
+        document.getElementById(SEARCH_FORM_ID).submit();
+      }
+    });
+
+    // handle "confirm z39.50 record selection" event
+    $('#'+CONFIRM_SELECTION_ID).on("click", function (e) {
+      e.preventDefault();
+
+      var confirm_url = $(this).attr('href');
+      if ( confirm_url != null && confirm_url != '' ) {
+        if ( parent ) {
+          // return confirmation url
+          parent.$tmp_url = confirm_url;
+          parent.$.colorbox.close();
+        }
+      }
+    });
+
+    var record_link;
+
+    // disable prev record link
+    record_link = $('#'+PREV_LINK_ID).attr('href');
+    if ( record_link != null && record_link == '#' ) {
+      $('#'+PREV_LINK_ID).addClass("disabled");
+    }
+
+    // disable next record link
+    record_link = $('#'+NEXT_LINK_ID).attr('href');
+    if ( record_link != null && record_link == '#' ) {
+      $('#'+NEXT_LINK_ID).addClass("disabled");
+    }
+  });
+</script>

@@ -1,0 +1,208 @@
+<span class="hidden current_page" id="main"></span>
+
+<div class="borderless form_row">
+  <div class="small field_container">
+     <label for="SERIES_ID"><u>Record Series ID</u></label>
+     <input type="text" id="SERIES_ID" class="unique_key_check mandatory_check"  data-mandatory="$$">
+  </div>
+
+  <div class="large field_container">
+    <label for="SERIRES_TITLE"><u>Record Series Ttile</u></label>
+    <input type="text" id="SERIES_TITLE" class="mandatory_check" data-mandatory="$$">
+  </div>
+</div>
+
+<div class="borderless form_row">
+  <div class="medium field_container">
+    <label for="AFFILIATE_DEPT">Affiliated Ministry</label>
+    <select id="AFFILIATE_DEPT">
+      <option></option>
+      <option>Ministry of Agriculture, Food and Rural Affairs</option>
+      <option>Ministry of the Attorney General</option>
+      <option>Ministry of Children, Community and Social Services</option>
+      <option>Ministry of Citizenship and Multiculturalism</option>
+      <option>Ministry of Colleges and Universities</option>
+      <option>Ministry of Economic Development, Job Creation and Trade</option>
+      <option>Ministry of Education</option>
+      <option>Ministry of Energy</option>
+      <option>Ministry of Environment, Conservation and Parks</option>
+      <option>Ministry of Finance</option>
+      <option>Ministry of Francophone Affairs</option>
+      <option>Ministry of Government and Consumer Services</option>
+      <option>Ministry of Health</option>
+      <option>Ministry of Heritage, Sport, Tourism and Culture Industries</option>
+      <option>Ministry of Indigenous Affairs</option>
+      <option>Ministry of Infrastructure</option>
+      <option>Ministry of Intergovernmental Affairs</option>
+      <option>Ministry of Labour, Training and Skills Development</option>
+      <option>Ministry of Long-Term Care</option>
+      <option>Ministry of Municipal Affairs and Housing</option>
+      <option>Ministry of Northern Development, Mines, Natural Resources and Forestry</option>
+      <option>Ministry of Seniors and Accessibility</option>
+      <option>Ministry of Solicitor General</option>
+      <option>Ministry of Transportation</option>
+      <option>Treasury Board Secretariat</option>
+    </select>
+  </div>
+  <div class="medium validated_table field_container">
+    <label for="FUNCTION">Ministry Function</label>
+    <input type="text" id="FUNCTION" data-val-database="RECORD_SERIES" data-val-field="FUNCTION">
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Record Schedule" id="ASSO_SCH_GRP">
+  <div class="form_row borderless">
+    <div class="small schedule_validated_field field_container" data-map="record_series_schedule">
+      <label for="ASSO_SCH_ID">Record Schedule ID</label>
+      <input type="text" id="ASSO_SCH_ID" readonly>
+    </div>
+
+    <div class="large field_container">
+      <label for="ASSO_SCHEDULE">Record Schedule</label>
+      <input type="text" id="ASSO_SCHEDULE" readonly>
+    </div>
+  </div>
+</fieldset>
+
+<div class="borderless form_row">
+  <div class="medium field_container">
+     <label for="RETENTION_PERIOD">Retention Period</label>
+     <input type='text' id="RETENTION_PERIOD">
+  </div>
+  <div class="medium field_container">
+     <label for="CLOSE_CRITERIA">Closure Criteria</label>
+     <input type='text' id="CLOSE_CRITERIA">
+  </div>
+</div>
+
+<div class="borderless form_row">
+  <div class="medium field_container">
+    <label for="FINAL_DISPOST">final Disposition</label>
+    <select id="FINAL_DISPOST">
+      <option></option>
+      <option>Destroy</option>
+      <option>Transfer to Archives</option>
+    </select>
+  </div>
+  <div class="medium field_container">
+    <label for="PRIVACY_CLASS">Security & Privacy</label>
+    <select id="PRIVACY_CLASS">
+      <option></option>
+      <option>High</option>
+      <option>Medium</option>
+      <option>Low</option>
+      <option>Unclassified</option>
+      <option>Not Implemented</option>
+    </select>
+  </div>
+</div>
+
+<div class="borderless form_row">
+  <div class="full repeating_field validated_table field_container">
+    <label for="SERIES_FORMAT">Format Type</label>
+    <input type="text" id="SERIES_FORMAT" data-val-database="RECORD_SERIES" data-val-field="SERIES_FORMAT">
+  </div>
+</div>
+
+<div class="borderless form_row">
+  <div class="full field_container">
+     <label for="CURSTODIAL_OFFIC">Curstodial Office</label>
+     <textarea id="CURSTODIAL_OFFIC"></textarea>
+  </div>
+</div>
+
+<div class="borderless form_row">
+  <div class="full field_container">
+     <label for="NOTES">Purpose / Notes</label>
+     <textarea id="NOTES"></textarea>
+  </div>
+</div>
+
+<div class="borderless form_row">
+  <div class="full field_container">
+     <label for="CONTENTS">Contents</label>
+     <textarea id="CONTENTS"></textarea>
+  </div>
+</div>
+
+<div class="borderless form_row">
+  <div class="full field_container">
+     <label for="CROSS_XREF">Cross References</label>
+     <textarea id="CROSS_XREF"></textarea>
+  </div>
+</div>
+
+<!-- #IF GLOBAL(MWI_ACCESS_TOKEN) == PUBLIC BODY -->
+
+<fieldset class="logcial_group">
+  <legend>Request Submission</legend>
+  <div class="borderless form_row">
+    <div class="small field_container">
+       <label for="REQ_UNIT_TITLE">Requestor Title</label>
+       <input type='text' id="REQ_UNIT_TITLE">
+    </div>
+    <div class="large field_container">
+       <label for="REQ_UNIT_NAME">Requestor Name</label>
+       <input type='text' id="REQ_UNIT_NAME">
+    </div>
+  </div>
+  <div class="borderless form_row">
+    <div class="small form_button field_container" id="APPROVE_REQUEST" style="margin-top: 5px;">
+      <a href="#" onclick="toggleRequest($(this));"><i class="fa fa-check"></i> Request for Approval</a>
+    </div>
+    <div class="small field_container">
+       <label for="RS_REQ_APPROVE">Approval Status</label>
+       <input type='text' id="RS_REQ_APPROVE" readonly>
+    </div>
+    <div class="small field_container">
+       <label for="REQ_APPROVE_BY">Requested By</label>
+       <input type='text' id="REQ_APPROVE_BY" readonly>
+    </div>
+    <div class="small field_container">
+       <label for="REQ_APPROVE_ON">Requested On</label>
+       <input type='text' id="REQ_APPROVE_ON" readonly>
+    </div>
+  </div>
+</fieldset>
+
+<!-- #ELSE -->
+
+<div class="borderless form_row">
+  <div class="small form_button field_container" id="APPROVED_BUTTON" style="margin-top: 5px;">
+    <a href="#" onclick="approveRecordSeries($(this));"><i class="fa fa-check"></i> Approved</a>
+  </div>
+  <div class="small field_container">
+    <label for="RS_STATUS">Status</label>
+    <select id="RS_STATUS" class="unprotect_field_exit generate_field_exit"
+      data-unprotect1="'RS_STATUS <> ''Active''',APPROVED_BUTTON"
+      data-generate1="'RS_STATUS = ''Negotiate''',RS_REQ_APPROVE,'Pending'"
+    >
+      <option>Negotiate</option>
+      <option>Active</option>
+      <option>Deleted</option>
+    </select>
+  </div>
+  <div class="small field_container">
+    <label for="APPROVED_BY">Approved By</label>
+    <input type="text" id="APPROVED_BY" readonly>
+  </div>
+  <div class="small field_container">
+    <label for="APRROVED_ON">Approved On</label>
+    <input type="text" id="APPROVED_ON" readonly>
+  </div>
+</div>
+
+<div id="request_approval_flag" style="display:none;">
+  <div class="borderless form_row">
+    <input type="checkbox" checked readonly style="margin-left: 15px;"><span style="font-size: 16px;"><b> Request for Approval</b></span>
+  </div>
+</div>
+
+<!-- call initalization user routine -->
+<input type="hidden" class="init_call_exit protect_field_exit show_request_approval"
+   data-protect1="'RS_STATUS = ''Active''',APPROVED_BUTTON"
+   data-protect2="'RS_REQ_APPROVE = ''APPROVED'',APPROVE_REQUEST"
+/>
+
+<!-- #ENDIF -->
+

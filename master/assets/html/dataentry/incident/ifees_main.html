@@ -1,0 +1,93 @@
+<span class="hidden current_page" id="ifees_main"></span>
+<ul class="ifees_menu">
+  <li><a class="add" title="Add Component"><i class="fa fa-file-o"></i></a></li>
+  <li><a class="edit" title="Edit Component"><i class="fa fa-edit"></i></a></li>
+  <li><a class="delete" title="Delete Component"><i class="fa fa-trash-o"></i></a></li>
+</ul>
+
+<table class="ifees_costs">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Detail</th>
+      <th># Hours</th>
+      <th># Staff</th>
+      <th>Amount ($)</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td colspan="5">No Costs Found</td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <td colspan="3">Tax 1</td>
+      <td colspan="2"><input type="text" id="JOB_TAX1"></td>
+    </tr>
+    <tr>
+      <td colspan="3">Tax 2</td>
+      <td colspan="2"><input type="text" id="JOB_TAX2"></td>
+    </tr>
+    <tr>
+      <td colspan="3">Total Cost</td>
+      <td colspan="2"><input type="text" id="JOB_TOTAL_COST" readonly></td>
+    </tr>
+    <tr>
+      <td colspan="3"></td>
+      <td colspan="2"><a class="calculate_ifees_costs">Calculate Total Cost</a></td>
+    </tr>
+  </tfoot>
+</table>
+
+<div style="display:none;">
+  <div id="costs_data_entry">
+    <nav class="cost_actions">
+      <ul>
+        <li class="dba_save_cost"><a title="Save Record"><i class="fa fa-floppy-o"></i></a></li>
+        <li class="dba_cancel"><a title="Cancel Edits"><i class="fa fa-ban"></i></a></li>
+        <li class="dba_print"><a title="Print"><i class="fa fa-print"></i></a></li>
+      </ul>
+      <hr>
+    </nav>
+    <div>
+      <fieldset class="logical_group">
+        <legend>Charges Details</legend>
+
+        <div class="form_row">
+          <div class="large field_container">
+            <label for="ifeescost_incd_task">Detail</label>
+            <input type="text" id="ifeescost_incd_task">
+          </div>
+        </div>
+
+        <div class="borderless form_row">
+          <div class="small field_container">
+            <label for="ifeescost_incd_hours"># Hours</label>
+            <input type="text" id="ifeescost_incd_hours">
+          </div>
+
+          <div class="small field_container">
+            <label for="ifeescost_incd_staff"># Staff</label>
+            <input type="text" id="ifeescost_incd_staff">
+          </div>
+
+          <div class="small field_container">
+            <label for="ifeescost_proj_fee">Amount ($)</label>
+            <input type="text" id="ifeescost_incd_fee">
+          </div>
+        </div>
+
+        <div class="borderless form_row">
+          <div class="full field_container">
+            <label for="ifeescost_incd_proced_note">Notes</label>
+            <textarea id="ifeescost_incd_proced_note"></textarea>
+            <input type="hidden" id="ifeescost_occurrence">
+          </div>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+</div>

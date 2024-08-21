@@ -1,0 +1,77 @@
+<span class="hidden current_page" id="restrictions_main"></span>
+
+<fieldset class="logical_group">
+  <legend>Restriction Information</legend>
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="REST_ID">Restriction ID</label>
+      <input type="text" id="REST_ID" value="^VALUE=DEFAULT^" readonly>
+    </div>
+
+    <div class="medium field_container">
+      <label for="REST_CATEGORY">Restriction Category</label>
+      <select id="REST_CATEGORY">
+        <option></option>
+        <option>Access Restriction</option>
+        <option>Care and Handling</option>
+        <option>Cultural</option>
+        <option>Conservation</option>
+        <option>Donor</option>
+        <option>Exhibits and Loans</option>
+        <option>FOI</option>
+        <option>Health and Safety</option>
+        <option>Licensing and Use</option>
+        <option>Permits</option>
+        <option>Rights</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="REST_TEXT">Restriction</label>
+      <textarea id="REST_TEXT"></textarea>
+    </div>
+
+    <div class="medium field_container">
+      <label for="REST_NOTES">Notes</label>
+      <textarea id="REST_NOTES"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium date field_container">
+      <label for="REST_START">Start Date</label>
+      <input type="text" id="REST_START">
+    </div>
+
+    <div class="medium date field_container">
+      <label for="REST_END">End Date</label>
+      <input type="text" id="REST_END">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="REST_LEGAL_REF">Legal Reference</label>
+      <input type="text" id="REST_LEGAL_REF">
+    </div>
+
+    <div class="medium field_container">
+      <label for="REST_REFERENCE">Reference URL / Note</label>
+      <input type="text" id="REST_REFERENCE">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="medium validated_table field_container">
+      <label for="REST_CREATED_BY">Created By</label>
+      <input type="text" id="REST_CREATED_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+
+    <div class="medium date field_container">
+      <label for="REST_CREATED_ON">Created On</label>
+      <input type="text" id="REST_CREATED_ON">
+    </div>
+  </div>
+</fieldset>

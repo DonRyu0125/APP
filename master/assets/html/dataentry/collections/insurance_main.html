@@ -1,0 +1,172 @@
+<span class="hidden current_page" id="insurance_main"></span>
+
+<fieldset class="repeating_group" data-group-title="Revaluation Information" id="VALUATION_GROUP">
+  <fieldset class="logical_group">
+    <legend>Valuation</legend>
+
+    <div class="form_row">
+      <div class="small combo field_container">
+        <label for="VALUATION">Valuation</label>
+        <input type="text" id="VALUATION">
+        <select id="VALUE_CURR">
+          <option></option>
+          <option>CAD</option>
+          <option>EURO</option>
+          <option>FRA</option>
+          <option>GBP</option>
+          <option>USD</option> 
+        </select>
+      </div>
+
+      <div class="small combo field_container">
+        <label for="PURCHASE_PRICE">Purchase Price</label>
+        <input type="text" id="PURCHASE_PRICE">
+        <select id="PURCHASE_CURR">
+          <option></option>
+          <option>CAD</option>
+          <option>EURO</option>
+          <option>FRA</option>
+          <option>GBP</option>
+          <option>USD</option> 
+        </select>
+      </div>
+
+      <div class="medium field_container">
+        <label for="VALUATION_TYPE">Valuer Type</label>
+        <select id="VALUATION_TYPE">
+          <option></option>
+          <option>Internal valuation</option>
+          <option>External valuation</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form_row">
+      <div class="small date field_container">
+        <label for="VALUATION_DATE">Valuation Date</label>
+        <input type="text" id="VALUATION_DATE">
+      </div>
+
+      <div class="small date field_container">
+        <label for="VAL_REN_DATE">Renewal Date</label>
+        <input type="text" id="VAL_REN_DATE">
+      </div>
+
+      <div class="medium field_container">
+        <label for="VALUATION2_TYPE">Valuation Type</label>
+        <select id="VALUATION2_TYPE">
+          <option></option>
+          <option>Loan out</option>
+          <option>Revaluation</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form_row">
+      <div class="full org_validated_field people_validated_field field_container" data-map="revaluation_appraiser">
+        <label for="VALUER">Appraiser</label>
+        <input type="text" id="VALUER" readonly>
+        <input type="hidden" id="VALUER_ID">
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="VALUATION_NOTICE">Valuation Notes</label>
+        <textarea id="VALUATION_NOTICE"></textarea>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="logical_group">
+    <legend>Insurance</legend>
+
+    <div class="form_row">
+      <div class="medium org_validated_field field_container" data-map="insurance_insurer">
+        <label for="INSURER">Insurer</label>
+        <input type="text" id="INSURER" readonly>
+        <input type="hidden" id="INSURER_ID">
+      </div>
+
+      <div class="small field_container">
+        <label for="INSUR_POLICY_NUM">Policy Number</label>
+        <input type="text" id="INSUR_POLICY_NUM">
+      </div>
+
+      <div class="small date field_container">
+        <label for="INSUR_REWNAL_DTE">Renewal Date</label>
+        <input type="text" id="INSUR_REWNAL_DTE">
+      </div>
+    </div>
+
+    <div class="form_row">
+      <div class="medium field_container">
+        <label for="INSURANCE_REF_NO">Insurance Reference Number</label>
+        <input type="text" id="INSURANCE_REF_NO">
+      </div>
+
+      <div class="small field_container">
+        <label for="TRANSIT_VAL">Transit</label>
+        <select id="TRANSIT_VAL">
+          <option></option>
+          <option>Single</option>
+          <option>Double</option>
+        </select>
+      </div>
+
+      <div class="small field_container">
+        <label for="FRAGILE">Fragile</label>
+        <select id="FRAGILE">
+          <option></option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="INSURANCE_NOTE">Insurance Notes</label>
+        <textarea id="INSURANCE_NOTE"></textarea>
+      </div>
+    </div>
+  </fieldset>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Indemnity Information" id="INDEMNITY_INFO">
+  <div class="form_row">
+    <div class="medium date field_container">
+      <label for="INDEMNITY_CON_DT">Indemnity Contract Date</label>
+      <input type="text" id="INDEMNITY_CON_DT">
+    </div>
+
+    <div class="small field_container">
+      <label for="INDEMN_DEDUCT">Deductible</label>
+      <input type="text" id="INDEMN_DEDUCT">
+    </div>
+
+    <div class="small field_container">
+      <label for="OBJ_MIN_LIABILTY">Object Minimum Liability</label>
+      <input type="text" id="OBJ_MIN_LIABILTY">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium date field_container">
+      <label for="INDEMN_RENEWAL_D">Renewal Date</label>
+      <input type="text" id="INDEMN_RENEWAL_D">
+    </div>
+
+    <div class="medium field_container">
+      <label for="INDMN_REF_NUM">Indemnity Reference Number</label>
+      <input type="text" id="INDMN_REF_NUM">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="INDEMNITY_NOTE">Indemnity Notes</label>
+      <textarea id="INDEMNITY_NOTE"></textarea>
+    </div>
+  </div>
+</fieldset>

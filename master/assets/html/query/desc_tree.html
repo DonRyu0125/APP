@@ -1,0 +1,14 @@
+<form class="database_search" id="replaced_form" name="tree_submit" method="post" action="^SEARCH^&SHOWSINGLE=Y&DBOPTION=SEARCH&CLEAR=Y&REPORT=WEB_TREE&ERRMSG=[CAMS_APP]/144/assets~2Ferrors~2Fno_results.html">
+    <div class="linemode row" style="display: initial">
+      <div class="query_keyword"><input id="tree_call" value="TOP_LEVEL_FLAG Y" type="text" name="LINEMODE_QUERY" placeholder="Enter Line Mode Query to Start Global Change"></div>
+      <input type="hidden" name="$M_SHOW_LIMIT" value="999999"/>
+    </div>
+</form>
+
+<script>
+    $(document).ready(function () {
+      if ($("#search_results").length > 0) {
+        $(this).css({ display: "none" });
+      }
+    });
+</script>

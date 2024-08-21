@@ -1,0 +1,144 @@
+<span class="hidden current_page" id="pbrequest_main"></span>
+
+<fieldset class="repeating_group" data-group-title="Schedule" id="SCHEDULE_GROUP">
+  <div class="borderless form_row">
+    <div class="medium schedule_validated_field field_container" data-map="acc_schedule">
+      <label for="SCHEDULE">Schedule</label>
+      <input type="text" id="SCHEDULE" readonly>
+      <input type="hidden" id="ACC_SCHED_ID">
+    </div>
+
+    <div class="small field_container">
+      <label for="ACC_SCHED_ADOPT">Adopted Date</label>
+      <input type="text" id="ACC_SCHED_ADOPT" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="ACC_SCHED_EFFECT">Effective Date</label>
+      <input type="text" id="ACC_SCHED_EFFECT" readonly>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="ACC_SCHED_TITLE">Rec. Series Title</label>
+      <input type="text" id="ACC_SCHED_TITLE" readonly>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="ACC_SCHED_CUTOFF">Rec. Series Cutoff</label>
+      <input type="text" id="ACC_SCHED_CUTOFF" readonly>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="ACC_SCHED_RETAIN">Total Retention</label>
+      <input type="text" id="ACC_SCHED_RETAIN" readonly>
+    </div>
+  </div>
+</fieldset>
+
+<div class="borderless form_row">
+  <div class="medium field_container">
+    <label for="TRANSFER">Transfer ID</label>
+    <input type="text" id="TRANSFER" readonly>
+  </div>
+  <div class="medium field_container">
+    <label for="BOXES">Number of Containers</label>
+    <input type="text" id="BOXES" readonly>
+  </div>
+</div>
+
+<!-- #if GLOBAL(MWI_ACCESS_TOKEN) = "PUBLIC BODY" -->
+<fieldset class="logcial_group">
+  <legend>Approval Submission</legend>
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <label for="TR_REQ_TITLE">Requestor Title</label>
+      <input type='text' id="TR_REQ_TITLE">
+    </div>
+    <div class="large field_container">
+      <label for="TR_REQ_NAME">Requestor Name</label>
+      <input type='text' id="TR_REQ_NAME">
+    </div>
+  </div>
+  <div class="borderless form_row">
+    <div class="small form_button field_container" id="TR_APPROVE_REQUEST">
+      <a href="#" onclick="toggleTransferRequest($(this));"><i class="fa fa-check"></i> Request for Approval</a>
+    </div>
+    <div class="small field_container">
+      <label for="TR_REQ_APPROVE">Approval Status</label>
+      <input type='text' id="TR_REQ_APPROVE" readonly>
+    </div>
+    <div class="small field_container">
+      <label for="TR_REQ_APPROV_BY">Requested By</label>
+      <input type='text' id="TR_REQ_APPROV_BY" readonly>
+    </div>
+    <div class="small field_container">
+      <label for="TR_REQ_APPROV_ON">Requested On</label>
+      <input type='text' id="TR_REQ_APPROV_ON" readonly>
+    </div>
+  </div>
+</fieldset>
+
+<!-- #else -->
+
+<fieldset class="logcial_group">
+  <legend>Approval</legend>
+  <div class="borderless form_row">
+    <div class="small form_button field_container" id="APPROVED_BUTTON" style="margin-top: 4px;">
+      <a href="#" onclick="approveTransferRequest($(this));" id="approval" data-param="TRANSFER,TRANSFER_ID_AI"><i class="fa fa-check"></i> Approve</a>
+    </div>
+    <div class="small field_container">
+      <label for="TR_STATUS">Status</label>
+      <select id="TR_STATUS" class="toggle_status_button">
+        <option></option>
+        <option>Active</option>
+        <option>Under Negotiation</option>
+      </select>
+    </div>
+    <div class="small field_container">
+      <label for="TR_APPROVED_BY">Approved By</label>
+      <input type="text" id="TR_APPROVED_BY" readonly>
+    </div>
+    <div class="small field_container">
+      <label for="TR_APPROVED_ON">Approved On</label>
+      <input type="text" id="TR_APPROVED_ON" readonly>
+    </div>
+  </div>
+</fieldset>
+
+<!-- #endif -->
+
+<fieldset class="repeating_group" data-group-title="Creator" id="ACC_CREATOR_GRP">
+  <div class="form_row contains_browse">
+    <div class="full org_validated_field people_validated_field field_container" data-map-people="accession_creator" data-map-org="accession_org_creator"> <!-- RL-20211231 -->
+      <label for="ACC_CREATOR">Creator</label>
+      <input type="text" id="ACC_CREATOR">
+      <input type="hidden" id="ACCR_ID">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Last Modified" id="ACC_MOD_HIST">
+  <div class="borderless form_row">
+    <div class="medium field_container">
+      <label for="ACC_MOD_BY">By</label>
+      <input type="text" id="ACC_MOD_BY" readonly>
+    </div>
+
+    <div class="medium field_container">
+      <label for="ACC_MOD_DATE">On</label>
+      <input type="text" id="ACC_MOD_DATE" readonly>
+    </div>
+  </div>
+</fieldset>
+
+<!-- call initalization user routine -->
+<input type="hidden" class="init_call_exit generate_field_exit"
+  data-generate1="'TR_STATUS !-',TR_STATUS,'Under Negotiation'"
+  data-generate2="'TR_REQ_APPROVE !-',TR_REQ_APPROVE,'Negotiate'"
+/>

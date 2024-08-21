@@ -1,0 +1,709 @@
+$ADD_REPORT
+!REC-ID
+¶SPEC_NAME¶REQUEST_LATER
+¶STATUS¶UPDATED
+¶VERSION¶9.01.22
+¶REVISION¶4
+¶DBNAME¶DOC_REQUEST
+¶SPEC_DESC¶Request Later button for OPAC requesting
+¶PAGE_LENGTH¶1
+¶PAGE_WIDTH¶32000
+¶RECORD_GAP¶1L
+¶SPACING¶1
+¶LEFT_MARGIN¶1
+¶DISPLAY_MODE¶6
+¶PAGE_BREAK¶X
+¶NUM_COLUMN¶1
+¶SPLIT_RECORD¶X
+¶PAGE_FIELD¶¶PAGE_FIELD_TYPE¶1
+¶PAGE_FIELD¶¶PAGE_FIELD_TYPE¶2
+¶PAGE_FIELD¶¶PAGE_FIELD_TYPE¶3
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶PRINT_LIT_EXP¶<!--OWN_DOC_HEADER-->
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶4
+¶STATEMENT_LEVEL¶0
+¶IF_EXP¶$FIRST_MEMBER
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_LIT_EXP¶head.htm
+¶PRINT_COND_DISP¶X
+¶PRINT_RPT_RTN¶insert_file_contents
+¶PRINT_UR_PARM¶[AO_INCLUDES]head.htm
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_LIT_EXP¶header.htm
+¶PRINT_COND_DISP¶X
+¶PRINT_RPT_RTN¶insert_file_contents
+¶PRINT_UR_PARM¶[AO_INCLUDES]header.htm
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_LIT_EXP¶<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script><link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_LIT_EXP¶<script>\n
+$(document).ready(function() {\n
+$('#Submit').attr('enabled','enabled');\n
+$("#time_picker").attr('enabled','enabled');\n
+\n
+var dateToday = new Date();\n
+var yesterday = new Date(dateToday);\n
+if ( yesterday.getHours() <= 17 ) {\n
+ // if less than 5pm, allow to book item today\n
+ yesterday.setDate(yesterday.getDate() - 1);\n
+}\n
+\n
+$('#dateDebut').datepicker({\n
+ format: 'yyyy-mm-dd',\n
+ minDate: yesterday,   // dateToday,\n
+ change: function(dateText){var result = checkDate(dateText);},\n
+ uiLibrary: 'materialdesign',isableDaysOfWeek: [0, 6]\n
+});\n
+\n
+$('#dateEnd').datepicker({\n
+ format: 'yyyy-mm-dd',\n
+ minDate: yesterday,   // dateToday,\n
+ uiLibrary: 'materialdesign',isableDaysOfWeek: [0, 6]\n
+});\n
+});\n
+</script>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_LIT_EXP¶<title class='Rale-Med'>Archives of Ontario - Request Page</title>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_LIT_EXP¶<div id="Content-Wrapper" class="Content-Wrapper">
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶COMMON_OCCGAP¶1
+¶PRINT_LIT_EXP¶leftPanel.htm
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PRINT_RPT_RTN¶INSERT_FILE_CONTENTS
+¶PRINT_UR_PARM¶[AO_INCLUDES]leftPanel.htm
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_LIT_EXP¶<div id='Panel-Main' class='Main-Content Panel-Main d-flex flex-column'>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_LIT_EXP¶<h1 class="Rale-Extra">Request Item</h1>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_LIT_EXP¶<div class='Request-Container Rale-Reg request-later-page'>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶9
+¶STATEMENT_LEVEL¶0
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶PRINT_LIT_EXP¶<!--<dl class="request-later-details">-->
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶4
+¶STATEMENT_LEVEL¶0
+¶IF_EXP¶$DATABASE = DESCRIPTION_WEB
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_LIT_EXP¶<div class="row req-item-desc Rale-Reg shadow-lg">
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_EXP¶TITLE
+¶PRINT_LITERAL1¶<div class="col-md-3 dataLabel"><b>Title:</b></div><div class="col-md-9 dataDetail">
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LITERAL2¶</div>
+¶PRINT_LIT2_TYPE¶2
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_EXP¶REFD
+¶PRINT_LITERAL1¶<div class="col-md-3 dataLabel"><b>Reference Code:</b></div><div class="col-md-9 dataDetail">
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LITERAL2¶</div>
+¶PRINT_LIT2_TYPE¶2
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_LIT_EXP¶</div>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶9
+¶STATEMENT_LEVEL¶0
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶4
+¶STATEMENT_LEVEL¶0
+¶IF_EXP¶$DATABASE = COLLECTIONS_WEB
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_LIT_EXP¶<div class="row req-item-desc Rale-Reg shadow-lg">
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶PRINT_EXP¶LEGAL_TITLE
+¶PRINT_LITERAL1¶<div class="col-md-3 dataLabel"><b>Title:</b></div><div class="col-md-9 dataDetail">
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LITERAL2¶</div>
+¶PRINT_LIT2_TYPE¶2
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶PRINT_EXP¶ACCESSION_NUMBER
+¶PRINT_LITERAL1¶<div class="col-md-3 dataLabel"><b>Accession Number:</b></div><div class="col-md-9 dataDetail">
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LITERAL2¶</div>
+¶PRINT_LIT2_TYPE¶2
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_LIT_EXP¶</div>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶9
+¶STATEMENT_LEVEL¶0
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶4
+¶STATEMENT_LEVEL¶0
+¶IF_EXP¶$DATABASE = BIBLIO_WEB
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_LIT_EXP¶<div class="row req-item-desc Rale-Reg shadow-lg">
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶PRINT_EXP¶TITLE
+¶PRINT_LITERAL1¶<div class="col-md-3 dataLabel"><b>Title:</b></div><div class="col-md-9 dataDetail">
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LITERAL2¶</div>
+¶PRINT_LIT2_TYPE¶2
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶PRINT_EXP¶ACCESSION_NUMBER
+¶PRINT_LITERAL1¶<div class="col-md-3 dataLabel"><b>Accession Number:</b></div><div class="col-md-9 dataDetail">
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LITERAL2¶</div>
+¶PRINT_LIT2_TYPE¶2
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_LIT_EXP¶</div>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶9
+¶STATEMENT_LEVEL¶0
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶PRINT_LIT_EXP¶<!--</dl>-->
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶PRINT_LIT_EXP¶<div class="Rale-Reg shadow-lg req-item-info-cont"><div class="req-item-info">
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶PRINT_LIT_EXP¶<h4 class="Rale-Bold">Please select the dates of your visit from the calendar below:</h4><p>To request for the next collection, select the next working day from the calendar.</p><p>Specifying an end date is optional (defaults to visit start date) but is useful for us as an indication of when an item is no longer required and can be returned to storage.</p>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶PRINT_LIT_EXP¶</div></div>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶COMMON_SP_BFE¶1L
+¶COMMON_OCCGAP¶1
+¶PRINT_LIT_EXP¶<!--------- FORM -------->
+¶PRINT_LITERAL1¶<form id="request-later-form" name="form1" onsubmit ="return request_later(this)" method="post" action="
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT1_COND¶X
+¶PRINT_LITERAL2¶?REQUESTITEM">
+¶PRINT_LIT2_TYPE¶2
+¶PRINT_LIT2_COND¶X
+¶PRINT_COND_DISP¶X
+¶PRINT_JUSTIFY¶1
+¶PRINT_RPT_RTN¶ITEM_RECORD_HANDLE
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶PRINT_LIT_EXP¶<input type="hidden" name="ITEM_REQ_TIME" value="9:00">
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶PRINT_LIT_EXP¶<input type="hidden" name="METHOD_REQUEST" value="Web">
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶PRINT_LIT_EXP¶<input type="hidden" name="REQ_TOPIC" value="Retrieval Services">
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶PRINT_LIT_EXP¶<input type="hidden" name="REQ_APPL_NAME" value="M2A">
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT2_TYPE¶1
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶4
+¶STATEMENT_LEVEL¶0
+¶IF_EXP¶$DATABASE = DESCRIPTION_WEB
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_EXP¶REFD
+¶PRINT_LITERAL1¶<input type="hidden" name="REQ_TITLE" value="View item
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT1_COND¶X
+¶PRINT_LITERAL2¶">
+¶PRINT_LIT2_TYPE¶2
+¶PRINT_LIT2_COND¶X
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶COMMON_OCCGAP¶1
+¶PRINT_EXP¶SISN
+¶PRINT_LITERAL1¶<input type="hidden" name="REQ_DB_LINK1" value="
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT1_COND¶X
+¶PRINT_LITERAL2¶">
+¶PRINT_LIT2_TYPE¶2
+¶PRINT_LIT2_COND¶X
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶COMMON_OCCGAP¶1
+¶PRINT_LIT_EXP¶DESCRIPTION
+¶PRINT_LITERAL1¶<input type="hidden" name="REQ_DB_NAME" value="
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT1_COND¶X
+¶PRINT_LITERAL2¶">
+¶PRINT_LIT2_TYPE¶2
+¶PRINT_LIT2_COND¶X
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶COMMON_OCCGAP¶1
+¶PRINT_LIT_EXP¶REFD
+¶PRINT_LITERAL1¶<input type="hidden" name="REQ_DB_RECID" value="
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT1_COND¶X
+¶PRINT_LITERAL2¶">
+¶PRINT_LIT2_TYPE¶2
+¶PRINT_LIT2_COND¶X
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶COMMON_OCCGAP¶1
+¶PRINT_EXP¶TITLE
+¶PRINT_LITERAL1¶<input type="hidden" name="REQ_ITEM_TITLE" value="
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT1_COND¶X
+¶PRINT_LITERAL2¶">
+¶PRINT_LIT2_TYPE¶2
+¶PRINT_LIT2_COND¶X
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_EXP¶REFD
+¶PRINT_LITERAL1¶<input type="hidden" name="REQ_ITEM_ID" value="
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT1_COND¶X
+¶PRINT_LITERAL2¶">
+¶PRINT_LIT2_TYPE¶2
+¶PRINT_LIT2_COND¶X
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶COMMON_OCCGAP¶1
+¶PRINT_EXP¶D_LOCN_LINK
+¶PRINT_LITERAL1¶<input type="hidden" name="REQ_LOC_CODE" value="
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT1_COND¶X
+¶PRINT_LITERAL2¶">
+¶PRINT_LIT2_TYPE¶2
+¶PRINT_LIT2_COND¶X
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶9
+¶STATEMENT_LEVEL¶0
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶4
+¶STATEMENT_LEVEL¶0
+¶IF_EXP¶$DATABASE = COLLECTIONS_WEB
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_EXP¶ACCESSION_NUMBER
+¶PRINT_LITERAL1¶<input type="hidden" name="REQ_TITLE" value="View item
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT1_COND¶X
+¶PRINT_LITERAL2¶">
+¶PRINT_LIT2_TYPE¶2
+¶PRINT_LIT2_COND¶X
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶COMMON_OCCGAP¶1
+¶PRINT_EXP¶SISN
+¶PRINT_LITERAL1¶<input type="hidden" name="REQ_DB_LINK2" value="
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT1_COND¶X
+¶PRINT_LITERAL2¶">
+¶PRINT_LIT2_TYPE¶2
+¶PRINT_LIT2_COND¶X
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶COMMON_OCCGAP¶1
+¶PRINT_LIT_EXP¶COLLECTIONS
+¶PRINT_LITERAL1¶<input type="hidden" name="REQ_DB_NAME" value="
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT1_COND¶X
+¶PRINT_LITERAL2¶">
+¶PRINT_LIT2_TYPE¶2
+¶PRINT_LIT2_COND¶X
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶COMMON_OCCGAP¶1
+¶PRINT_LIT_EXP¶ACCESSION_NUMBER
+¶PRINT_LITERAL1¶<input type="hidden" name="REQ_DB_RECID" value="
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT1_COND¶X
+¶PRINT_LITERAL2¶">
+¶PRINT_LIT2_TYPE¶2
+¶PRINT_LIT2_COND¶X
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_EXP¶ACCESSION_NUMBER
+¶PRINT_LITERAL1¶<input type="hidden" name="REQ_ITEM_ID" value="
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT1_COND¶X
+¶PRINT_LITERAL2¶">
+¶PRINT_LIT2_TYPE¶2
+¶PRINT_LIT2_COND¶X
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶COMMON_OCCGAP¶1
+¶PRINT_EXP¶LEGAL_TITLE
+¶PRINT_LITERAL1¶<input type="hidden" name="REQ_ITEM_TITLE" value="
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT1_COND¶X
+¶PRINT_LITERAL2¶">
+¶PRINT_LIT2_TYPE¶2
+¶PRINT_LIT2_COND¶X
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶COMMON_OCCGAP¶1
+¶PRINT_EXP¶C_LOCN_LINK
+¶PRINT_LITERAL1¶<input type="hidden" name="REQ_LOC_CODE" value="
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT1_COND¶X
+¶PRINT_LITERAL2¶">
+¶PRINT_LIT2_TYPE¶2
+¶PRINT_LIT2_COND¶X
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶9
+¶STATEMENT_LEVEL¶0
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶4
+¶STATEMENT_LEVEL¶0
+¶IF_EXP¶$DATABASE = BIBLIO_WEB
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_EXP¶ACCESSION_NUMBER
+¶PRINT_LITERAL1¶<input type="hidden" name="REQ_TITLE" value="View item
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT1_COND¶X
+¶PRINT_LITERAL2¶">
+¶PRINT_LIT2_TYPE¶2
+¶PRINT_LIT2_COND¶X
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶COMMON_OCCGAP¶1
+¶PRINT_EXP¶SISN
+¶PRINT_LITERAL1¶<input type="hidden" name="REQ_DB_LINK3" value="
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT1_COND¶X
+¶PRINT_LITERAL2¶">
+¶PRINT_LIT2_TYPE¶2
+¶PRINT_LIT2_COND¶X
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶COMMON_OCCGAP¶1
+¶PRINT_LIT_EXP¶LIBRARY
+¶PRINT_LITERAL1¶<input type="hidden" name="REQ_DB_NAME" value="
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT1_COND¶X
+¶PRINT_LITERAL2¶">
+¶PRINT_LIT2_TYPE¶2
+¶PRINT_LIT2_COND¶X
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶COMMON_OCCGAP¶1
+¶PRINT_LIT_EXP¶ACCESSION_NUMBER
+¶PRINT_LITERAL1¶<input type="hidden" name="REQ_DB_RECID" value="
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT1_COND¶X
+¶PRINT_LITERAL2¶">
+¶PRINT_LIT2_TYPE¶2
+¶PRINT_LIT2_COND¶X
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_EXP¶ACCESSION_NUMBER
+¶PRINT_LITERAL1¶<input type="hidden" name="REQ_ITEM_ID" value="
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT1_COND¶X
+¶PRINT_LITERAL2¶">
+¶PRINT_LIT2_TYPE¶2
+¶PRINT_LIT2_COND¶X
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶COMMON_SP_AFTER¶0
+¶COMMON_OCCGAP¶1
+¶PRINT_EXP¶TITLE
+¶PRINT_LITERAL1¶<input type="hidden" name="REQ_ITEM_TITLE" value="
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT1_COND¶X
+¶PRINT_LITERAL2¶">
+¶PRINT_LIT2_TYPE¶2
+¶PRINT_LIT2_COND¶X
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶COMMON_SP_BFE¶1L
+¶COMMON_OCCGAP¶1
+¶PRINT_EXP¶B_LOCN_LINK
+¶PRINT_LITERAL1¶<input type="hidden" name="REQ_LOC_CODE" value="
+¶PRINT_LIT1_TYPE¶1
+¶PRINT_LIT1_COND¶X
+¶PRINT_LITERAL2¶">
+¶PRINT_LIT2_TYPE¶2
+¶PRINT_LIT2_COND¶X
+¶PRINT_COND_DISP¶X
+¶PRINT_SORTOCC¶1
+¶PRINT_EQ_SUPP¶1
+¶PRINT_JUSTIFY¶1
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶9
+¶STATEMENT_LEVEL¶0
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶PRINT_LIT_EXP¶<!--<div id="req-later-left" class="summon_index">\n
+<div id="datepicker" type="text"></div>\n
+</div> -->
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶PRINT_LIT_EXP¶<div id="req-later-right" class="summon_index">\n
+<h4 class="Rale-Bold">Select a visit date to continue.</h4>\n
+<div class="row mb-2">\n
+<div class="col-md-4 form-group">\n
+<label for="req-later-date">Visit start date:</label>\n
+<div role="wrapper" class="gj-datepicker gj-datepicker-bootstrap gj-unselectable input-group">\n
+<input type="text" class="form-control" autocomplete="off" id="dateDebut" name="DATE_NEEDED" maxlength="10" >\n
+</div></div></div>\n
+<div class="row mb-2">\n
+<div class="col-md-4 form-group">\n
+<label for="dateEnd">Visit end date: </label><input type="text" class="form-control" autocomplete="off"  id="dateEnd" name="END_DATE_NEEDED" maxlength="10" onblur="checkDate()" value="">\n
+</div></div>\n
+<input id="time_picker" name="COLLECTION_TIME" type="hidden" value="8:00">
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶PRINT_LIT_EXP¶<div id="req-later-submit">\n
+<div class="row">\n
+<div class="col-md-12 mb-3 d-flex justify-content-center">\n
+<div class="col-md-6" style="text-align:center;">\n
+<input type="submit" class="btn btn-primary function-buttons" name="Submit" id="Submit" class="request_later link-button" value="Continue">\n
+</div>\n
+<div class="col-md-6" style="text-align:center;">\n
+<input type="button" class="btn btn-primary function-buttons float-right" name="Submit2" value="Cancel Request" onclick="goToMarkedPage();" class="link-button">\n
+</div>\n
+</div>\n
+</div>\n
+</div>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶0
+¶PRINT_LIT_EXP¶</div></form>\n
+
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶4
+¶STATEMENT_LEVEL¶0
+¶IF_EXP¶$LAST_MEMBER
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_LIT_EXP¶<script type="text/javascript">\n
+function request_later(requestLaterForm) {  \n
+  var reqDate = document.getElementById("dateDebut").value;\n
+  var reqTime = document.getElementById("time_picker").value;\n
+  var endDate = document.getElementById("dateEnd").value;\n
+\n
+  yyyymmdd\n
+  var yyyy_mm_dd_format = false;\n
+  var reqDate_yyyy_mm_dd = reqDate.substr(0,3) + "-" + reqDate.substr(4,2) + "-" + reqDate.substr(6,2);\n
+\n
+  if ( yyyy_mm_dd_format ) {\n
+    reqDate = reqDate_yyyy_mm_dd;\n
+  }\n
+\n
+  requestLaterForm.DATE_NEEDED.value = reqDate;\n
+  requestLaterForm.TIME_NEEDED.value = reqTime;\n
+  requestLaterForm.END_DATE_NEEDED.value = endDate;\n
+\n
+  WriteCookie('enddate',endDate);\n
+  WriteCookie('requestdate',reqDate);\n
+  WriteCookie('requesttime',reqTime);\n
+  WriteCookie('REQUESTLATER','YES');\n
+\n
+  if ( reqTime != " " ) {\n
+    return true;\n
+  }\n
+  else {\n
+    alert("Please select a valid time");\n
+    return false;\n
+  }\n
+}\n
+</script>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_LIT_EXP¶<script type="text/javascript">\n
+\n
+$(document).ready(function(){\n
+ $('#Submit').click(function() {\n
+   var start_date = $('#dateDebut').val();\n
+   var end_date = $('#dateEnd').val();\n
+\n
+   WriteCookie('end_date',end_date);\n
+   WriteCookie('start_date',start_date);\n
+   WriteCookie('requestdate',start_date);\n
+   WriteCookie('requesttime',"9:00");\n
+   WriteCookie('requestlater','YES');\n
+\n
+   $('#request-later-from').submit();\n
+ });\n
+});\n
+\n
+</script>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_LIT_EXP¶</div>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_LIT_EXP¶</div>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_LIT_EXP¶<div id='Panel-Right' class='Panel-Right'>\n
+\n
+ <div class='Features-Container d-flex flex-column Rale-Reg'>\n
+     <div class="" id="accountInfo">\n
+\n
+     </div>\n
+     <h3 class='Rale-Bold'>Featured</h3>\n
+     <a class="btn btn-outline-primary btn-sm form-check-label" href="^HOME_SESSID^?SHOWORDERLIST&NOMSG=[AO_INCLUDES]error\nobookmark.htm&COOKIE=BOOKMARK"><em class="icon-list-alt"></em> Bookmarks (^ITEMCOUNT=BOOKMARK^ items)</a>\n
+ </div>\n
+</div>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_LIT_EXP¶</div></div>
+¶PRINT_COND_DISP¶X
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶1
+¶STATEMENT_LEVEL¶1
+¶PRINT_LIT_EXP¶footer.htm
+¶PRINT_COND_DISP¶X
+¶PRINT_RPT_RTN¶insert_file_contents
+¶PRINT_UR_PARM¶[AO_INCLUDES]footer.htm
+¶PROC_STATEMENT¶¶STATEMENT_TYPE¶9
+¶STATEMENT_LEVEL¶0
+¶P_COPIES¶1
+¶OUTPUT_TYPE¶0
+¶SPEC_CREATOR¶M2A_MGR
+***END***

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMS - Cultural Assets Management System - Accession Database</title>
+
+    <!-- include virtual="/144/assets/html/template/stylesheets.html" -->
+    <!-- include virtual="/144/assets/html/template/header_scripts.html" -->
+  </head>
+  <body data-database="accession">
+    <header>
+      <!-- include virtual="/144/assets/html/template/header.html" -->
+    </header>
+
+    <section id="body">
+      <!-- include virtual="/144/assets/html/template/db_selection_nav.html" -->
+
+      <div class="container">
+        <!-- include virtual="/144/assets/html/template/db/acc_db_actions_nav.html" -->
+      <section id="data_entry_forms">
+        <div id="universal_record_information">
+          <div class="column">
+            <div class="field_container">
+              <label for="ACCNO"><u>Accession No.</u></label>
+              <input type="text" id="ACCNO">
+            </div>
+            <div class="select_container field_container">
+              <label for="ACQUISITION_TYPE">Acq. Type</label>
+              <select id="ACQUISITION_TYPE">
+                <option></option>
+                <option>Bequest</option>
+                <option>Collected through fieldwork</option>
+                <option>Commission</option>
+                <option>Copies</option>
+                <option>Donation</option>
+                <option>Exchange</option>
+                <option>Extended Loan</option>
+                <option>Found in Collection</option>
+                <option>Found unaccessioned</option>
+                <option>In lieu of tax</option>
+                <option>Loan</option>
+                <option>Purchase</option>
+                <option>Returned</option>
+                <option>TDR</option>
+                <option>Transfer</option>
+                <option>Unknown</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="select_container field_container">
+              <label for="RECEIVING_LOC">Receiving Loc.</label>
+              <select id="RECEIVING_LOC">
+                <option></option>
+                <option>Loading Dock</option>
+                <option>Main Archives Area</option>
+              </select>
+            </div>
+
+            <div class="repeating_field field_container">
+              <label for="DESC_REF_ID">Desc. Ref.</label>
+              <input type="text" id="DESC_REF_ID" readonly>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="field_container">
+              <label for="AC_LOCN_LINK">
+                <a href="#" class="edit_record" title="Edit Location Authority" data-key="CURATORS_CODE" data-sourcedb="LOCATION_VALTAB" data-source="AC_LOCN_LINK"><i class="fa fa-pencil-square-o fa-lg"></i></a> Location Link
+              </label>
+              <input type="text" id="AC_LOCN_LINK" readonly>
+            </div>
+          </div>
+
+          <div class="universal_row">
+            <div class="full field_container">
+              <label for="ACC_TITLE">Title</label>
+              <input type="text" id="ACC_TITLE">
+            </div>
+          </div>
+        </div>
+
+        <div id="primary_data_entry_form">
+            <nav id="worksheet_nav">
+              <ul id="primary_worksheet_nav">
+                <li><a href="^home_sessid^?get&file=[cams_app]/144/assets/html/dataentry/accession/accession_main.html" data-form="accession" class="active">Main</a></li>
+                <li><a href="^home_sessid^?get&file=[cams_app]/144/assets/html/dataentry/accession/appraisal_main.html" data-form="appraisal">Appraisal</a></li>
+                <li><a href="^home_sessid^?get&file=[cams_app]/144/assets/html/dataentry/accession/processing_main.html" data-form="processing">Processing</a></li>
+                <li><a href="^home_sessid^?get&file=[cams_app]/144/assets/html/dataentry/accession/insurance_main.html" data-form="insurance">Insurance</a></li>
+                <li><a href="^home_sessid^?get&file=[cams_app]/144/assets/html/dataentry/accession/deaccession_main.html" data-form="deaccession">Deaccession</a></li>
+              </ul>
+
+              <nav id="secondary_worksheet_nav">
+                <ul id="accession">
+                  <li><a href="^home_sessid^?get&file=[cams_app]/144/assets/html/dataentry/accession/accession_main.html" data-form="main">Main</a></li>
+                  <li><a href="^home_sessid^?get&file=[cams_app]/144/assets/html/dataentry/accession/accession_copyright.html" data-form="copyright">Copyright</a></li>
+                  <li><a href="^home_sessid^?get&file=[cams_app]/144/assets/html/dataentry/accession/accession_restrictions.html" data-form="restrictions"><i class="fa fa-warning fa-lg"></i>Restrictions</a></li>
+                </ul>
+
+                <ul id="appraisal">
+                  <li><a href="^home_sessid^?get&file=[cams_app]/144/assets/html/dataentry/accession/appraisal_main.html" data-form="main">Main</a></li>
+                  <li><a href="^home_sessid^?get&file=[cams_app]/144/assets/html/dataentry/accession/appraisal_restrictions.html" data-form="restrictions"><i class="fa fa-warning fa-lg"></i>Restrictions</a></li>
+                </ul>
+
+                <ul id="processing">
+                  <li><a href="^home_sessid^?get&file=[cams_app]/144/assets/html/dataentry/accession/processing_main.html" data-form="main">Main</a></li>
+                  <li><a href="^home_sessid^?get&file=[cams_app]/144/assets/html/dataentry/accession/processing_restrictions.html" data-form="restrictions"><i class="fa fa-warning fa-lg"></i>Restrictions</a></li></ul>
+
+                <ul id="insurance">
+                  <li><a href="^home_sessid^?get&file=[cams_app]/144/assets/html/dataentry/accession/insurance_main.html" data-form="main">Main</a></li>
+                  <li><a href="^home_sessid^?get&file=[cams_app]/144/assets/html/dataentry/accession/insurance_restrictions.html" data-form="restrictions"><i class="fa fa-warning fa-lg"></i>Restrictions</a></li>
+                </ul>
+
+                <ul id="deaccession">
+                  <li><a href="^home_sessid^?get&file=[cams_app]/144/assets/html/dataentry/accession/deaccession_main.html" data-form="main">Main</a></li>
+                  <li><a href="^home_sessid^?get&file=[cams_app]/144/assets/html/dataentry/accession/deaccession_restrictions.html" data-form="restrictions"><i class="fa fa-warning fa-lg"></i>Restrictions</a></li>
+                </ul>
+              </nav>
+            </nav>
+
+            <div id="data_entry_form">
+              <!-- include virtual="/144/assets/html/dataentry/accession/accession_main.html" -->
+
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <footer>
+      <!-- include virtual="/144/assets/html/template/footer.html" -->
+    </footer>
+
+    <xml id="MY_XML" style="display: none;">
+      ^XML_TREE^
+    </xml>
+
+    <div id="notices">^WIN_INFO^</div>
+
+    <!-- include virtual="/144/assets/html/template/db/acc_base_scripts.html" -->
+    <!-- include virtual="/144/assets/html/template/core_dataentry_scripts.html" -->
+    <script src="/144/assets/customize/dataentry/record_databases/accession.js"></script>
+    <script src="/144/assets/customize/dataentry/frontend/accession.js"></script>
+  </body>
+</html>

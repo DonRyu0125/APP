@@ -1,0 +1,30 @@
+body.components, body.validated_record {
+  min-width: 600px;
+  font-size: 80%;
+
+  nav#database_actions {
+    li a {
+      padding: 0.75rem 2.25rem;
+    }
+  }
+
+  div#universal_record_information {
+    input#ACCESSION_NUMBER {
+      width: 33% !important;
+      margin-right: 2.5%;
+    }
+
+    input#ACCESSION_NUMBER_2 {
+      width: 25% !important;
+      margin-left: 2.5%;
+    }
+
+    div.column {
+      .field_container {
+        input, div.select {
+          width: 65% !important;
+        }
+      }
+    }
+  }
+}

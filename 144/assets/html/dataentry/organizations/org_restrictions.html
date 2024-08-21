@@ -1,0 +1,63 @@
+<span class="hidden current_page" id="org_restrictions"></span>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="ORG_MAIN_BODY">Organization Name</label>
+    <input type="text" id="ORG_MAIN_BODY" readonly>
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Organization Restrictions" id="O_RESTRICT_GRP">
+  <div class="form_row">
+    <div class="full restrictions_validated_field field_container" data-map="org_restrict">
+      <label for="O_REST_DETAILS">Restriction</label>
+      <input type="text" id="O_REST_DETAILS" readonly>
+      <input type="hidden" id="O_RESTRICT_ID">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="O_RESTRICT_CAT">Restriction Category</label>
+      <input type="text" id="O_RESTRICT_CAT" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="O_RESTRICT_STAT">Status</label>
+      <select id="O_RESTRICT_STAT">
+        <option></option>
+        <option>Active</option>
+        <option>Inactive</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="small validated_table field_container">
+      <label for="O_REST_ASGN_BY">Assigned By</label>
+      <input type="text" id="O_REST_ASGN_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+
+    <div class="small date field_container">
+      <label for="O_REST_ASGN_ON">Start Date</label>
+      <input type="text" id="O_REST_ASGN_ON">
+    </div>
+
+    <div class="small field_container">
+      <label for="O_REST_TERM">Term</label>
+      <input type="text" id="O_REST_TERM">
+    </div>
+
+    <div class="small date field_container">
+      <label for="O_REST_EXPIRY">End Date</label>
+      <input type="text" id="O_REST_EXPIRY">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="O_RESTRICT_NOTES">Comments</label>
+      <textarea id="O_RESTRICT_NOTES"></textarea>
+    </div>
+  </div>
+</fieldset>

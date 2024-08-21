@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMS - Inquiries</title>
+
+    <!-- include virtual="/144/assets/html/template/stylesheets.html" -->
+    <!-- include virtual="/144/assets/html/template/header_scripts.html" -->
+  </head>
+  <body data-database="enquiries" data-popup="Y">
+    <section id="body">
+      <nav id="database_selection" style="font-size: 1.50rem">
+        <div>Inquiries</div>
+      </nav>
+
+      <div class="container">
+        <!-- include virtual="/144/assets/html/template/db/enq_db_actions_nav.html" -->
+        <section id="data_entry_forms">
+          <div id="universal_record_information">
+            <div class="column">
+              <div class="field_container">
+                <label for="ENQ_ID"><u>Inquiry No.</u></label>
+                <input type="text" id="ENQ_ID" readonly>
+              </div>
+              <div class="select_container field_container">
+                <label for="ENQ_STATUS"><u>Record Status</u></label>
+                <select id="ENQ_STATUS">
+                  <option></option>
+                  <option>Active</option>
+                  <option>Request</option>
+                  <option>Closed</option>
+                  <option>Deleted</option>
+                </select>
+              </div>
+              <div class="select_container field_container">
+                <label for="ENQ_HIGH_PRI">Rush</label>
+                <select id="ENQ_HIGH_PRI">
+                  <option></option>
+                  <option>Y</option>
+                  <option>N</option>
+                </select>
+              </div>
+            </div>
+            <div class="column">
+              <div class="select_container field_container">
+                <label for="ENQ_TOPIC"><u>Action/Topic</u></label>
+                <select id="ENQ_TOPIC" class="mandatory_check lookup_exit show_optional_tab_exit"
+                  data-mandatory="$$"
+                  data-lookup="LOOKUP_USER_GROUP,LOOKUP_TOPIC,LOOKUP_USER_GRP,ENQ_USER_GROUP"
+                  data-toggle-tab="General Information=general|Accessing Collection Items=access_items|Finding Collection Items=find_items|Obtaining Reproductions=reproduction|Art Collection Inquiries=art_inquiries|Donations - Art=art_donation|Educational Resources and Workshops=education|Loans - Digitization=loan_digitization|Tours and Events=tour_event|Exhibits=exhibits|Website Technical Issues=website|Corrections to Descriptions=collect_desc|Loans - Exhibition=loan_exhibition|Donations - Archival and Library=donation_arch_lib|Other=other"
+                  data-menu-id="primary_worksheet_nav"
+                >
+                  <option selected>General Information</option>
+                  <option>Accessing Collection Items</option>
+                  <option>Finding Collection Items</option>
+                  <option>Obtaining Reproductions</option>
+                  <option>Art Collection Inquiries</option>
+                  <option>Donations - Art</option>
+                  <option>Educational Resources and Workshops</option>
+                  <option>Loans - Digitization</option>
+                  <option>Tours and Events</option>
+                  <option>Exhibits</option>
+                  <option>Website Technical Issues</option>
+                  <option>Corrections to Descriptions</option>
+                  <option>Loans - Exhibition</option>
+                  <option>Donations - Archival and Library</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="select_container field_container">
+                <label for="E_METHOD_REQUEST"><u>Method</u></label>
+                <select id="E_METHOD_REQUEST">
+                  <option></option>
+                  <option>Email</option>
+                  <option>Fax</option>
+                  <option>In person</option>
+                  <option>Mail</option>
+                  <option>Phone</option>
+                  <option>Web</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="field_container">
+                <label for="ENQ_LO_ID">Loan ID</label>
+                <input type="text" id="ENQ_LO_ID" readonly>
+              </div>
+            </div>
+            <div class="column">
+              <div class="select_container field_container">
+                <label for="ENQ_USER_GROUP"><u>User Group</u></label>
+                <select id="ENQ_USER_GROUP" class="gen_set_cond_help"
+                  data-main="USER_GRP_NAME"
+                  data-help="STAFF_LIST"
+                  data-display="ENQ_HANDLED_BY"
+                  data-table="AIMS_USER_GROUP"
+                >
+                  <option>Archival Descriptions</option>
+                  <option>Archival Donations</option>
+                  <option>Archival Loans</option>
+                  <option>Archivists</option>
+                  <option>Art</option>
+                  <option>Education Programming</option>
+                  <option>Digitization</option>
+                  <option>Reception</option>
+                  <option>Outreach</option>
+                  <option>Website</option>
+                </select>
+              </div>
+              <div class="select_container field_container">
+                <label for="ENQ_HANDLED_BY"><u>Assigned To</u></label>
+                <select id="ENQ_HANDLED_BY">
+                  <option></option>
+                </select>
+              </div>
+            <div class="validated_table field_container">
+              <label for="ENQ_REASSIGN_TO">Reassigned To</label>
+              <input type="text" id="ENQ_REASSIGN_TO" data-val-database="VAL_USER" data-val-field="EXPANSION">
+              </div> 
+            </div>
+
+            <div class="universal_row">
+              <div class="full field_container">
+                <label for="ENQ_TOPIC_DETAIL"><i><u>Topic Details</u></i></label>
+                <textarea id="ENQ_TOPIC_DETAIL" rows="5" class="mandatory_check" data-mandatory="ENQ_TOPIC !+"></textarea>
+              </div>
+              <div class="full field_container">
+                <label for="ENQ_TITLE"><i><u>Title</u></i></label>
+                <input type="text" id="ENQ_TITLE" class="mandatory_check" data-mandatory="$$">
+              </div>
+            </div>
+          </div>
+
+          <div id="primary_data_entry_form">
+            <nav id="worksheet_nav">
+              <ul id="primary_worksheet_nav">
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/enquiries/enquiries_correspondence.html" data-form="correspondence" class="active">Step 1-2</a></li>
+                <li class="conditional_menu"><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/enquiries/enquiries_general.html" data-form="general" class="active">General Information (Step 3)</a></li>
+                <li class="conditional_menu"><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/enquiries/enquiries_access_items.html" data-form="access_items" class="active">Accessing Collection Items (Step 3)</a></li>
+                <li class="conditional_menu"><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/enquiries/enquiries_find_items.html" data-form="find_items" class="active">Finding Collection Items (Step 3)</a></li>
+                <li class="conditional_menu"><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/enquiries/enquiries_reproduction.html" data-form="reproduction" class="active">Obtaining Reproductions (Step 3)</a></li>
+                <li class="conditional_menu"><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/enquiries/enquiries_art_inquiries.html" data-form="art_inquiries" class="active">Art Collection Inquiries (Step 3)</a></li>
+                <li class="conditional_menu"><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/enquiries/enquiries_art_donation.html" data-form="art_donation" class="active">Donations - Art(Step 3)</a></li>
+                <li class="conditional_menu"><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/enquiries/enquiries_education.html" data-form="education" class="active">Educational Resources and Workshops (Step 3)</a></li>
+                <li class="conditional_menu"><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/enquiries/enquiries_loan_digitization.html" data-form="loan_digitization" class="active">Loans - Digitization (Step 3)</a></li>
+                <li class="conditional_menu"><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/enquiries/enquiries_tour_event.html" data-form="tour_event" class="active">Tours and Events (Step 3)</a></li>
+                <li class="conditional_menu"><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/enquiries/enquiries_exhibits.html" data-form="exhibits" class="active">Exhibits (Step 3)</a></li>
+                <li class="conditional_menu"><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/enquiries/enquiries_website.html" data-form="website" class="active">Website Technical Issues (Step 3)</a></li>
+                <li class="conditional_menu"><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/enquiries/enquiries_collect_desc.html" data-form="collect_desc" class="active">Corrections to Descriptions (Step 3)</a></li>
+                <li class="conditional_menu"><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/enquiries/enquiries_loan_exhibitions.html" data-form="loan_exhibition" class="active">Loans - Exhibition (Step 3)</a></li>
+                <li class="conditional_menu"><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/enquiries/enquiries_donation_arch_lib.html" data-form="donation_arch_lib" class="active">Donations - Archival and Library (Step 3)</a></li>
+                <li class="conditional_menu"><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/enquiries/enquiries_other.html" data-form="other" class="active">Other (Step 3)</a></li>
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/enquiries/enquiries_details.html" data-form="next-steps" class="active">Step 4-6</a></li>
+              </ul>
+
+              <nav id="secondary_worksheet_nav">
+              </nav>
+            </nav>
+
+            <div id="data_entry_form">
+              <!-- include virtual="/144/assets/html/dataentry/enquiries/enquiries_correspondence.html" -->
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <xml id="MY_XML" style="display: none;">
+      ^XML_TREE^
+    </xml>
+
+    <div id="notices">^WIN_INFO^</div>
+
+    <!-- include virtual="/144/assets/html/template/db/enq_base_scripts.html" -->
+    <!-- include virtual="/144/assets/html/template/core_dataentry_scripts.html" -->
+    <script src="/144/assets/customize/dataentry/record_databases/enquiries.js"></script>
+    <script src="/144/assets/customize/dataentry/frontend/enquiries.js"></script>
+  </body>
+</html>

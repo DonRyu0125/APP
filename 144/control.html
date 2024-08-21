@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CAMS - MWI Control Panel</title>
+</head>
+<body>
+    <h1>CAMS - MWI Control Panel</h1>
+    <form method="post" action="/scripts/mwimain.dll?SYSTEMCTRL">
+        <p>
+            <label for="USERNAME">Username:</label>
+            <input type="text" name="USERNAME">
+        </p>
+
+        <p>
+            <label for="PASSWORD">Password:</label>
+            <input type="password" name="USERPASSWORD">
+        </p>
+
+        <p>
+            <input type="radio" name="RESETSYS" value="X">Reset System
+            <input type="radio" name="PAUSESYS" value="X">Deny User Request
+            <input type="radio" name="RESUMESYS" value="X">Accept User Request
+        </p>
+
+        <p>
+            <label for="SITEPROFILE">Refresh Site Profile:</label>
+            <input type="text" name="SITEPROFILE">
+        </p>
+
+        <p>
+            <label for="SITELANG">Language:</label>
+            <input type="radio" name="SITELANG" value="144">English
+            <input type="radio" name="SITELANG" value="145">French
+            <input type="radio" name="SITELANG" value="0" checked>All
+        </p>
+
+        <p>
+            <label for="DBPROFILE">Refresh Database Profile:</label>
+            <input type="text" name="DBPROFILE">
+        </p>
+
+        <p>
+            <label for="DBLANG">Database Language:</label>
+            <input type="radio" name="DBLANG" value="144">English
+            <input type="radio" name="DBLANG" value="145">French
+            <input type="radio" name="DBLANG" value="0" checked>All
+        </p>
+
+        <p>
+            <label for="DISMOUNTDB">Dismount Database:</label>
+            <input type="text" name="DISMOUNTDB">
+        </p>
+
+        <p>
+            <label for="MOUNTDB">Mount Database:</label>
+            <input type="text" name="MOUNTDB">
+        </p>
+
+        <p>
+            <label for="SHOWREP">Show System Status:</label>
+            <input type="checkbox" name="SHOWREP" value="X" checked>
+        </p>
+
+        <p>
+            <label for="UNLOCKISN">Unlock Record</label>
+            <input type="text" name="UNLOCKISN">
+
+            <label for="UNLOCKDB">of database</label>
+            <input type="text" name="UNLOCKDB">
+        </p>
+
+        <p>
+            <input type="submit" value="OK">
+            <input type="reset" value="Clear">
+        </p>
+    </form>
+</body>
+</html>

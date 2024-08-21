@@ -1,0 +1,108 @@
+<span class="hidden current_page" id="research_main"></span>
+
+<fieldset class="repeating_group" data-group-title="Research Information" id="RESEARCH">
+  <div class="form_row">
+    <div class="medium people_validated_field field_container" data-map="research_researcher">
+      <label for="RESEARCHER">Researcher</label>
+      <input type="text" id="RESEARCHER" readonly>
+      <input type="hidden" id="RESEARCHER_ID">
+    </div>
+
+    <div class="small date field_container">
+      <label for="RESEARCH_DATE">Assigned On</label>
+      <input type="text" id="RESEARCH_DATE">
+    </div>
+
+    <div class="small field_container">
+      <label for="RESEARCH_METHOD">Method</label>
+      <select id="RESEARCH_METHOD">
+        <option></option>
+        <option>Examined</option>
+        <option>Oral history</option>
+        <option>Periodical</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="RESEARCH_RESULT">Research Results</label>
+      <select id="RESEARCH_RESULT">
+        <option></option>
+        <option>Attributed</option>
+        <option>Cost analysis</option>
+        <option>Dated</option>
+        <option>Examined</option>
+        <option>Identified</option>
+      </select>
+    </div>
+
+    <div class="small field_container">
+      <label for="RESEARCH_REF_NUM">Reference Number</label>
+      <input type="text" id="RESEARCH_REF_NUM">
+    </div>
+
+    <div class="medium field_container">
+      <label for="RESEARCH_REF">Research Reference</label>
+      <input type="text" id="RESEARCH_REF">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="RESEARCH_NOTES">Research Notes</label>
+      <textarea id="RESEARCH_NOTES"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Label Text" id="LABEL_TXT_GROUP">
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="LABEL_TEXT">Label Text</label>
+      <textarea id="LABEL_TEXT"></textarea>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="medium people_validated_field field_container" data-map="legal_text_author">
+      <label for="LABEL_TXT_AUTHOR">Label Text Author</label>
+      <input type="text" id="LABEL_TXT_AUTHOR" readonly>
+      <input type="hidden" id="LBL_AUTHOR_ID">
+    </div>
+
+    <div class="small date field_container">
+      <label for="LABEL_TEXT_DATE">Label Text Date</label>
+      <input type="text" id="LABEL_TEXT_DATE">
+    </div>
+
+    <div class="small field_container">
+      <label for="PUBLIC">For Public Interface</label>
+      <select id="PUBLIC">
+        <option></option>
+        <option value="X">Yes</option>
+        <option value="">No</option>
+      </select>
+    </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Curator's Notepad" id="CUR_GRP">
+  <div class="form_row">
+    <div class="large validated_table field_container">
+      <label for="CUR_GRP_CURATOR">Curator</label>
+      <input type="text" id="CUR_GRP_CURATOR" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+
+    <div class="small date field_container">
+      <label for="CUR_GRP_DATE">Date</label>
+      <input type="text" id="CUR_GRP_DATE">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="CUR_NOTEPAD">Notes</label>
+      <textarea id="CUR_NOTEPAD"></textarea>
+    </div>
+  </div>
+</fieldset>

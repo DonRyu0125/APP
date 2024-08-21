@@ -1,0 +1,94 @@
+<form class="database_checkin_search" method="post" action="^SEARCH^&SHOWSINGLE=Y&DBOPTION=SEARCH&CLEAR=Y">
+  <div class="key_search">
+    <fieldset style="border-radius: 5px;">
+      <legend style="font-size: 16px;">Select Onsite Location</legend>
+      <div class="row">
+        <div class="query_keyword"><input type="text" id="onsite_loc_code" placeholder="Enter Onsite space ID"></div>
+      </div>
+    </fieldset>
+    <br/>
+
+    <fieldset style="border-radius: 5px;">
+      <legend style="font-size: 16px;">Select Item</legend>
+      <div class="simple_search row">
+        <div class="query_keyword"><input type="text" name="ID_CLUSTER" id="id_cluster" placeholder="Enter Order No. / Item ID / Container ID"></div>
+      </div>
+      <!--
+      <div class="row">
+        <div class="query_element2">
+          <ul>
+            <li class="disabled"><a href="#" class="and" title="And"><i class="fa fa-asterisk"></i></a></li>
+            <li class="disabled"><a href="#" class="not" title="And Not"><i class="fa fa-minus"></i></a></li>
+            <li class="disabled"><a href="#" class="or" title="Or"><i class="fa fa-plus"></i></a></li>
+            <li>
+              <input type="hidden" name="FO1">
+              <input type="text" name="REQ_ORDER_NUM" id="REQ_ORDER_NUM" placeholder="Enter Order No.">
+            </li>
+            <li><a href="#" class="browse" title="Browse for Value"><i class="fa fa-bars"></i></a></li>
+          </ul>
+        </div>
+        <div class="query_element2">
+          <ul>
+            <li class="disabled"><a href="#" class="and" title="And"><i class="fa fa-asterisk"></i></a></li>
+            <li class="disabled"><a href="#" class="not" title="And Not"><i class="fa fa-minus"></i></a></li>
+            <li class="disabled"><a href="#" class="or" title="Or"><i class="fa fa-plus"></i></a></li>
+            <li>
+              <input type="hidden" name="FO2">
+              <input type="text" name="REQ_BUILDING_COD" id="REQ_BUILDING_COD" placeholder="Enter Building Code">
+            </li>
+            <li><a href="#" class="browse" title="Browse for Value"><i class="fa fa-bars"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="query_element2">
+
+          <ul>
+            <li class="disabled"><a href="#" class="and" title="And"><i class="fa fa-asterisk"></i></a></li>
+            <li class="disabled"><a href="#" class="not" title="And Not"><i class="fa fa-minus"></i></a></li>
+            <li class="disabled"><a href="#" class="or" title="Or"><i class="fa fa-plus"></i></a></li>
+            <li>
+              <input type="hidden" name="FO3">
+              <select name="REQ_DB_NAME" id="REQ_DB_NAME">
+                <option selected disabled hidden value="">Enter Item Source</option>
+                <option value=""></option>
+                <option value="CONTAINER">CONTAINER</option>
+                <option value="DESCRIPTION">DESCRIPTION</option>
+                <option value="LIBRARY">LIBRARY</option>
+                <option value="COLLECTION">COLLECTION</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+      </div>
+      -->
+    </fieldset>
+
+    <div><input type="hidden" name="LINEMODE_QUERY" id="query_expression"></div>
+
+  </div>
+</form>
+
+<div><br/></div>
+
+<!-- <div style="max-height:500px; overflow-y:scroll;"> -->
+<div>
+  <table class="generic_table" id="checkin_table" data-form="" data-group="CHECKIN_GROUP" data-no-edit="Y">
+    <thead>
+      <tr>
+        <th style="width:5%;" data-source="$occnum">#</th>
+        <th style="width:8%;" data-source="REQ_ORDER_NUM">Order No.</th>
+        <th style="width:15%;" data-source="REQ_LOC_CODE">Location/Container ID</th>
+        <th style="width:15%;" data-source="REQ_ITEM_ID">Item ID</th>
+        <th style="width:32%;" data-source="REQ_ITEM_TITLE">Request Title</th>
+        <th style="width:12%;" data-source="REQ_CALL_NUMBER">Call No.</th>
+        <th style="width:12%;" data-source="REQ_VOLUME_ID">Volume</th>
+      </tr>
+
+    <tbody>
+      <tr>
+        <td colspan="7">No Check-in Items</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

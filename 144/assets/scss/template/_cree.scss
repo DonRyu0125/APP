@@ -1,0 +1,51 @@
+// Style overrides specific to ACCI client application:
+ul[id^=primary_worksheet_] {
+  display: none;
+  background: desaturate(darken($light, 25%), 10%) !important;
+  border-radius: $roundness $roundness 0 0 !important;
+
+  li a {
+    margin-top: 3px !important; 
+    padding: 0.35rem 0.75rem !important; 
+
+    &.active {
+      background: darken($light, 60%) !important;
+      color: #fff !important;
+
+      &:before {
+        box-shadow: 2px 2px 0 darken($light, 60%) !important;
+      }
+
+      &:after {
+        box-shadow: -2px 2px 0 darken($light, 60%) !important;
+      }
+    }
+  }
+}
+
+ul#primary_worksheet_fond_nav { display: block; }
+
+div.language_table {
+  position: relative;
+  input { cursor: pointer !important; }
+  
+  a.language_trigger {
+    @include transition(0.35s all);
+    display: inline-block;
+    position: absolute;
+    right: 8px;
+    bottom: 0;
+    border-radius: 0 $roundness $roundness 0;
+    margin: 0;
+    padding: 0.35rem;
+    background: darken($light, 15%);
+    text-align: center;
+    font-size: 0.6rem;
+    color: darken($light, 50%);
+
+    &:hover {
+      background: darken($light, 20%);
+      color: darken($light, 65%);
+    }
+  }
+}

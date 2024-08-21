@@ -1,0 +1,98 @@
+<span class="hidden current_page" id="media_main"></span>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="LO_ID">ID</label>
+    <input type="text" id="LO_ID" readonly>
+  </div>
+</div>
+
+<fieldset class="repeating_group contains_image" data-group-title="Images" id="EXH_IMAGE_GRP">
+  <div class="form_row">
+    <div class="full image file_attachment field_container">
+      <label for="EXH_IMAGE_REF">Image Path</label>
+      <input type="text" id="EXH_IMAGE_REF" readonly>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="EXH_IMAGE_CAP">Caption</label>
+      <textarea id="EXH_IMAGE_CAP"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Video - Loan Out" id="EXH_VID_GRP">
+  <div class="borderless form_row">
+    <div class="medium video file_attachment field_container">
+      <label for="EXHIB_VID_REF">Video Path</label>
+      <input type="text" id="EXHIB_VID_REF" readonly>
+    </div>
+
+    <div class="medium location_validated_field field_container" data-map="media_video_location">
+      <label for="EXHIB_VID_LOC">Location</label>
+      <input type="text" id="EXHIB_VID_LOC" readonly>
+    </div>
+  </div>
+
+    <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="EXHIB_VID_NOTE">Note</label>
+      <textarea id="EXHIB_VID_NOTE"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Audio - Loan Out" id="EXH_AUD_GRP">
+  <div class="borderless form_row">
+    <div class="medium video file_attachment field_container">
+      <label for="EXHIB_AUDIO_REF">Audio Path</label>
+      <input type="text" id="EXHIB_AUDIO_REF" readonly>
+    </div>
+
+    <div class="medium location_validated_field field_container" data-map="media_audio_location">
+      <label for="EXHIB_AUDIO_LOC">Location</label>
+      <input type="text" id="EXHIB_AUDIO_LOC" readonly>
+    </div>
+  </div>
+
+    <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="EXHIB_AUDIO_NOTE">Note</label>
+      <textarea id="EXHIB_AUDIO_NOTE"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Notes" id="EXH_DOC_GRP">
+  <div class="borderless form_row">
+    <div class="full text file_attachment field_container">
+      <label for="EXHIB_TEXT_REF">Notes Path</label>
+      <input type="text" id="EXHIB_TEXT_REF" readonly>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="EXHIB_TEXT_NOTE">Note</label>
+      <textarea id="EXHIB_TEXT_NOTE"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="URLs" id="EXH_WEB_GRP">
+  <div class="borderless form_row">
+  <div class="full url_field field_container">
+    <label for="EXHIB_WEB_REF">URL</label>
+    <input type="text" id="EXHIB_WEB_REF">
+  </div>
+</div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="EXHIB_WEB_NOTE">Note</label>
+      <textarea id="EXHIB_WEB_NOTE"></textarea>
+    </div>
+  </div>
+</fieldset>

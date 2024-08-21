@@ -1,0 +1,186 @@
+<span class="hidden current_page" id="insurance_main"></span>
+
+<fieldset class="repeating_group" data-group-title="Valuation" id="VALUATION_GROUP">
+  <div class="form_row">
+    <div class="medium combo field_container">
+      <label for="VAL_AMOUNT">Estimated Amount</label>
+      <input type="text" id="VAL_AMOUNT">
+      <select id="EST_VAL_CUR">
+          <option></option>
+          <option>CAD</option>
+          <option>EURO</option>
+          <option>FRA</option>
+          <option>GBP</option>
+          <option>USD</option>
+        </select>
+      </div>
+    <div class="medium date field_container">
+      <label for="VAL_DATE">Date</label>
+      <input type="text" id="VAL_DATE">
+    </div>
+    </div>
+
+  <fieldset class="logical_group">
+    <legend>Valuation</legend>
+
+    <div class="form_row">
+      <div class="small combo field_container">
+        <label for="VALUATION">Valuation</label>
+        <input type="text" id="VALUATION">
+        <select id="VALUE_CUR">
+          <option></option>
+          <option>CAD</option>
+          <option>EURO</option>
+          <option>FRA</option>
+          <option>GBP</option>
+          <option>USD</option>
+        </select>
+      </div>
+
+      <div class="small combo field_container">
+        <label for="PURCHASE_PRICE">Purchase Price</label>
+        <input type="text" id="PURCHASE_PRICE">
+        <select id="PURCHASE_CUR">
+          <option></option>
+          <option>CAD</option>
+          <option>EURO</option>
+          <option>FRA</option>
+          <option>GBP</option>
+          <option>USD</option>
+        </select>
+      </div>
+
+      <div class="medium field_container">
+        <label for="VALUATION_TYPE">Appraisal Type</label>
+        <select id="VALUATION_TYPE">
+          <option></option>
+          <option>Internal valuation</option>
+          <option>External valuation</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form_row">
+      <div class="small date field_container">
+        <label for="VALUATION_DATE">Appraisal Date</label>
+        <input type="text" id="VALUATION_DATE">
+      </div>
+
+      <div class="small date field_container">
+        <label for="VAL_REN_DATE">Renewal Date</label>
+        <input type="text" id="VAL_REN_DATE">
+      </div>
+
+      <div class="medium field_container">
+        <label for="VALUATION2_TYPE">Valuation Type</label>
+        <select id="VALUATION2_TYPE">
+          <option></option>
+          <option>Loan out</option>
+          <option>Revaluation</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form_row">
+      <div class="full org_validated_field people_validated_field field_container" data-map-people="value_appraiser" data-map-org="value_org_appraiser"> <!-- RL-20211231 -->
+        <label for="VALUER">Appraiser</label>
+        <input type="text" id="VALUER" readonly>
+        <input type="hidden" id="VALUER_ID">
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="VALUATION_NOTICE">Valuation Notes</label>
+        <textarea id="VALUATION_NOTICE"></textarea>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="logical_group">
+    <legend>Insurance</legend>
+
+    <div class="form_row">
+      <div class="medium org_validated_field field_container" data-map="insurance_insurer">
+        <label for="INSURER">Insurer</label>
+        <input type="text" id="INSURER" readonly>
+        <input type="hidden" id="INSURER_ID">
+      </div>
+
+      <div class="small field_container">
+        <label for="INSUR_POLICY_NUM">Policy Number</label>
+        <input type="text" id="INSUR_POLICY_NUM">
+      </div>
+
+      <div class="small date field_container">
+        <label for="INSUR_REWNAL_DTE">Renewal Date</label>
+        <input type="text" id="INSUR_REWNAL_DTE">
+      </div>
+    </div>
+
+    <div class="form_row">
+      <div class="medium field_container">
+        <label for="INSURANCE_REF_NO">Insurance Reference Number</label>
+        <input type="text" id="INSURANCE_REF_NO">
+      </div>
+
+     <div class="small field_container">
+        <label for="DEDUCTIBLE">Deductible</label>
+        <input type="text" id="DEDUCTIBLE">
+      </div>
+
+      <div class="small field_container">
+        <label for="FRAGILE">Fragile</label>
+        <select id="FRAGILE">
+          <option></option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="INSURANCE_NOTE">Insurance Notes</label>
+        <textarea id="INSURANCE_NOTE"></textarea>
+      </div>
+    </div>
+  </fieldset>
+</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+<span class="hidden current_page" id="movement_inventory"></span>
+
+<fieldset class="repeating_group" data-group-title="Inventory / Spot Check" id="INVENTORY_GROUP">
+  <div class="form_row">
+    <div class="medium artlocations_validated_field field_container" data-map="inventory_location">
+      <label for="INV_CUR_CODE_ID">Inventory Location Code</label>
+      <input type="text" id="INV_CUR_CODE_ID" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="INVENTORY_TYPE">Type</label>
+      <select id="INVENTORY_TYPE"> 
+        <option></option>
+        <option>Inventory</option>
+        <option>Spot-Check</option>
+      </select>
+    </div>
+
+    <div class="small date field_container">
+      <label for="INVENTORY_DATE">Date Checked</label>
+      <input type="text" id="INVENTORY_DATE">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full validated_table field_container">
+      <label for="INV_CHECKED_BY">Checker's Name</label>
+      <input type="text" id="INV_CHECKED_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="INVENTORY_NOTES">Notes</label>
+      <textarea id="INVENTORY_NOTES"></textarea>
+    </div>
+  </div>
+
+<fieldset class="repeating_group" data-group-title="Resolution" id="INV_RESOLVE_GRP">
+    <div class="form_row">
+      <div class="large validated_table field_container">
+        <label for="RESOLVED_BY">Resolved By</label>
+        <input type="text" id="RESOLVED_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+      </div>
+
+      <div class="small date field_container">
+        <label for="DATE_RESOLVED">Date Resolved</label>
+        <input type="text" id="DATE_RESOLVED">
+      </div>
+    </div>
+
+    <div class="form_row borderless">
+      <div class="full field_container">
+        <label for="RESOLUTION">Resolution</label>
+        <textarea id="RESOLUTION"></textarea>
+      </div>
+    </div>
+  </fieldset>
+</fieldset>

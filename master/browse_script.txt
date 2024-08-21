@@ -1,0 +1,42 @@
+<script language="JavaScript">
+  // rl changed-20200511 - save selected value in the HTML field of parent form
+
+  function submitVal() {
+    var values = $('#keyvalue').val();
+    var seek_html_name = $('input[name=DE_callField]').val();
+    var query_field = parent.document.getElementsByName(seek_html_name);
+    if ( query_field != null ) {
+      query_field[0].value = values;
+    }
+  
+    parent.$.colorbox.close();
+  }
+  
+  // start index by specified key value
+  function set_browse_index ( form_id ) {
+    var browse_key_form = document.getElementById(form_id);
+    
+    if ( browse_key_form != null ) {
+      var form_action = browse_key_form.action;
+      if ( form_action != "" && form_action != "#" ) {
+        read_index_page(form_action, form_id, "browse-form-body");
+      }
+    }
+    else {
+      alert ( "form " + form_id + " is not found." );
+    }
+    
+    return false;
+  }
+  
+  // read a page of idnex values
+  function read_index_page ( request_url, form_id, form_body_id ) {
+    if ( request_url != '#' && request_url != '' ) {
+      read_page ( request_url, form_id, form_body_id );
+    }
+    else {
+      alert ( "Index list stays as is." );
+    }
+  }
+      
+</script>  

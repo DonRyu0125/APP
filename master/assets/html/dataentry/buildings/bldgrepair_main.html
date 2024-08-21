@@ -1,0 +1,197 @@
+<span class="hidden current_page" id="bldgrepair_main"></span>
+
+<fieldset class="repeating_group" data-group-title="Repairs(s)" id="BD_REPAIRS_GRP">
+ <div class="form_row">
+    <div class="medium field_container">
+      <label for="BD_DAMAGE_FEATUR">Feature</label>
+      <input type="text" id="BD_DAMAGE_FEATUR">
+    </div>
+    <div class="medium field_container">
+      <label for="BD_DAMAGE_SPEC">Area damaged</label>
+      <input type="text" id="BD_DAMAGE_SPEC">
+    </div>
+    </div>
+
+ <div class="form_row">
+    <div class="full field_container">
+      <label for="BD_REPAIR">Repair Required</label>
+      <input type="text" id="BD_REPAIR">
+    </div>
+  </div>
+
+ <fieldset class="repeating_group" data-group-title="Repair Proposal(s)" id="BD_REPAIR_PROP">
+    <div class="form_row">
+     <div class="small date field_container">
+      <label for="BD_PROP_IMP_DATE">Date</label>
+      <input type="text" id="BD_PROP_IMP_DATE">
+    </div>
+
+    <div class="small field_container">
+        <label for="BD_PROPOSAL_IMP">Proposal Implemented?</label>
+        <select id="BD_PROPOSAL_IMP">
+          <option></option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+    </div>
+
+    <div class="small combo field_container">
+        <label for="BD_PROPOSAL_PRIC">Price</label>
+        <input type="text" id="BD_PROPOSAL_PRIC">
+        <select id="BD_PROP_PRIC_CUR">
+          <option></option>
+          <option>CAD</option>
+          <option>EURO</option>
+          <option>FRA</option>
+          <option>GBP</option>
+          <option>USD</option>
+        </select>
+    </div>
+</div>
+
+    <div class="form_row contains_browse">
+    <div class="full org_validated_field people_validated_field field_container" data-map-people="bldg_proposer" data-map-org="bldg_org_proposer">  <!-- RL-20211231 -->
+      <label for="BD_PROP_IMP_BY">By</label>
+      <input type="text" id="BD_PROP_IMP_BY" readonly>
+      <input type="hidden" id="BD_PROP_IMP_B_ID">
+    </div>
+    </div>
+
+  <div class="borderless form_row">
+    <div class="full text file_attachment repeating_field field_container">
+      <label for="BD_PROPOSAL_DOC">Document(s)</label>
+      <input type="text" id="BD_PROPOSAL_DOC" readonly>
+    </div>
+    </div>
+ </fieldset>
+
+<fieldset class="logical_group">
+    <legend>Estimated Costs</legend>
+    <div class="form_row">
+    <div class="small date field_container">
+      <label for="BD_REPAIR_START">Start Date</label>
+      <input type="text" id="BD_REPAIR_START">
+    </div>
+
+    <div class="small date field_container">
+      <label for="BD_REPAIR_END">End Date</label>
+      <input type="text" id="BD_REPAIR_END">
+    </div>
+
+    <div class="small combo field_container">
+        <label for="PD_REPAIR_EST">Price</label>
+        <input type="text" id="BD_REPAIR_EST">
+        <select id="BD_REPAIR_EST_CUR">
+          <option></option>
+          <option>CAD</option>
+          <option>EURO</option>
+          <option>FRA</option>
+          <option>GBP</option>
+          <option>USD</option>
+        </select>
+      </div>
+     </div>
+    </fieldset>
+
+<fieldset class="logical_group">
+    <legend>Actual Costs</legend>
+
+  <div class="form_row">
+    <div class="small date field_container">
+      <label for="BD_REPAIR_ASTART">Start Date</label>
+      <input type="text" id="BD_REPAIR_ASTART">
+    </div>
+
+    <div class="small date field_container">
+      <label for="BD_REPAIR_AEND">End Date</label>
+      <input type="text" id="BD_REPAIR_AEND">
+    </div>
+
+    <div class="small combo field_container">
+        <label for="BD_REPAIR_ACT">Price</label>
+        <input type="text" id="BD_REPAIR_ACT">
+        <select id="BD_REPAIR_ACT_CUR">
+          <option></option>
+          <option>CAD</option>
+          <option>EURO</option>
+          <option>FRA</option>
+          <option>GBP</option>
+          <option>USD</option>
+        </select>
+      </div>
+     </div>
+    </fieldset>
+
+    <div class="form_row contains_browse">
+      <div class="full org_validated_field people_validated_field field_container" data-map-people="bldg_repair" data-map-org="bldg_org_repair"> <!-- RL-20211231 -->
+        <label for="BD_REPAIR_BY">Repaired by</label>
+        <input type="text" id="BD_REPAIR_BY" readonly>
+        <input type="hidden" id="BD_REPAIR_BY_ID">
+      </div>
+    </div>
+
+   <div class="borderless form_row">
+     <div class="full field_container">
+      <label for="BD_REPAIR_NOTES">Note</label>
+      <textarea id="BD_REPAIR_NOTES"></textarea>
+    </div>
+    </div>
+
+  <fieldset class="repeating_group contains_image" data-group-title="Repair Images - Buildings" id="BD_REPAIR_IMAGES">
+  <div class="form_row">
+    <div class="full image file_attachment field_container">
+      <label for="BD_REPAIR_IMG">Image Path</label>
+      <input type="text" id="BD_REPAIR_IMG">
+    </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="BD_REPAIR_IMG_CA">Note</label>
+      <textarea id="BD_REPAIR_IMG_CA"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Repair Video - Buildings" id="BD_REPAIR_VIDEOS">
+  <div class="borderless form_row">
+    <div class="full video file_attachment field_container">
+      <label for="BD_REPAIR_VIDEO">Video Path</label>
+      <input type="text" id="BD_REPAIR_VIDEO" readonly>
+    </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="BD_REPAIR_VID_NO">Note</label>
+      <textarea id="BD_REPAIR_VID_NO"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Repair Documents - Buildings" id="BD_REPAIR_DOCS">
+  <div class="borderless form_row">
+    <div class="full text file_attachment field_container">
+      <label for="BD_REPAIR_DOC_PA">Notes Path</label>
+      <input type="text" id="BD_REPAIR_DOC_PA" readonly>
+    </div>
+    </div>
+
+   <div class="borderless form_row">
+    <div class="large field_container">
+      <label for="BD_REPAIR_DOC_TY">Type</label>
+      <input type="text" id="BD_REPAIR_DOC_TY">
+    </div>
+
+    <div class="small date field_container">
+      <label for="BD_REPAIR_DOC_DT">Date</label>
+      <input type="text" id="BD_REPAIR_DOC_DT">
+    </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="BD_REPAIR_DOC_NO">Note</label>
+      <textarea id="BD_REPAIR_DOC_NO"></textarea>
+    </div>
+  </div>
+</fieldset>
+</fieldset>
+

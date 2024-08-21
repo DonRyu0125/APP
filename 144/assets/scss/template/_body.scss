@@ -1,0 +1,93 @@
+#body {
+  .container { 
+    background: lighten($light, 10%); 
+    min-height: 200px; 
+    border-radius: 0 0 $roundness $roundness;
+    font-size: 0.75rem;
+    color: darken($light, 60%);
+
+    nav {
+      &#database_actions {
+        a {
+          color: darken($light, 25%);
+          text-shadow: none;
+          font-size: 1.25rem;
+
+          &:hover {
+            background: #fff;
+            color: darken($light, 60%);
+          }
+        }
+      }
+    }
+  }
+
+  nav {
+    &#database_selection { background: darken($light, 15%); }
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.85rem;
+
+    ul { 
+      @include container; 
+      padding: 0;
+
+      li {
+        display: inline-block;
+        position: relative;
+        margin: 0;
+        text-align: center;
+
+        a {
+          @include transition(all 0.25s);
+          display: inline-block;
+          padding: 0.75rem 2rem;
+          text-decoration: none;
+          color: #fff;
+          text-shadow: 1px 1px 0 darken($light, 35%);
+
+          &:before, &:after {
+            position: absolute;
+            bottom: -1px;
+            width: 6px;
+            height: 6px;
+            content: " ";
+          }
+
+          &:before { 
+            left: -6px; 
+            border-bottom-right-radius: 6px;
+            border-width: 0 1px 1px 0;
+          }
+
+          &:after { 
+            right: -6px;
+            border-bottom-left-radius: 6px;
+            border-width: 0 0 1px 1px;
+          }
+
+          &:hover {
+            background: rgba(0,0,0,0.05);
+          }
+
+          &.active {
+            background: lighten($light, 10%);
+            color: lighten(desaturate($base, 30%), 20%);
+            text-shadow: none;
+            border-radius: $roundness $roundness 0 0;
+
+            &:before {
+              box-shadow: 2px 2px 0 lighten($light, 10%);
+            }
+
+            &:after {
+              box-shadow: -2px 2px 0 lighten($light, 10%);
+            }
+          }
+        }
+      }
+    }
+  }
+}

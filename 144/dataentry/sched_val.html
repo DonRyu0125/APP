@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMS - Schedule Database</title>
+
+    <!-- include virtual="/144/assets/html/template/stylesheets.html" -->
+    <!-- include virtual="/144/assets/html/template/header_scripts.html" -->
+  </head>
+  <body data-database="schedule_val" class="validated_record">
+    <header>
+      <!-- include virtual="/144/assets/html/template/header.html" -->
+    </header>
+
+    <section id="body">
+      <div class="container">
+        <!-- include virtual="/144/assets/html/template/db/schedval_db_actions_nav.html" -->
+
+        <section id="data_entry_forms">
+          <div id="primary_data_entry_form">
+            <nav id="worksheet_nav">
+              <nav id="secondary_worksheet_nav">
+                <ul id="sched">
+                  <li><a href="/144/assets/html/dataentry/schedule/schedule_main.html" data-form="main">New Schedule</a></li>
+                </ul>
+              </nav>
+            </nav>
+
+            <div id="data_entry_form">
+              <!-- include virtual="/144/assets/html/dataentry/schedule/schedule_main.html" -->
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <footer>
+      <!-- include virtual="/144/assets/html/template/footer.html" -->
+    </footer>
+
+    <xml id="validated_record" style="display: none;">
+      ^XML_TREE^
+    </xml>
+
+    <div id="notices">^WIN_INFO^</div>
+
+    <!-- include virtual="/144/assets/html/template/db/sched_base_scripts.html" -->
+    <!-- include virtual="/144/assets/html/template/core_dataentry_scripts.html" -->
+    <script src="/144/assets/customize/dataentry/frontend/schedule_val.js"></script>
+  </body>
+</html>

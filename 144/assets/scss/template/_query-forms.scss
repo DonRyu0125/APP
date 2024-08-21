@@ -1,0 +1,141 @@
+.query_form {
+  @include transition(all 0.5s);
+  width: 95%;
+  margin: 1rem auto;
+
+  .row {
+    @include gridle_container();
+    margin-bottom: 0.5rem;
+
+    div.query_keyword {
+      text-align: center;
+
+      input[type=text] {
+        color: darken($light, 60%);
+        text-align: center;
+        width: 50%;
+        padding: 0.25rem;
+        font-size: 1.25rem;
+        border-radius: $roundness;
+        border: 1px solid darken($light, 5%);
+      }
+    }
+
+    div.query_element {
+      padding: 0.25rem;
+      @include gridle(6);
+      
+      &>ul {
+        margin: 0 auto;
+        padding: 0;
+        list-style-type: none;
+        display: table;
+        width: 100%;
+
+        li {
+          cursor: pointer;
+          display: table-cell;
+          border: 1px solid darken($light, 5%);
+          text-align: center;
+          font-size: 1rem;
+          padding: 0;
+
+          a, i {
+            @include transition(all 0.35s);
+            color: darken($light, 25%);
+            padding: 0.25rem 0;
+
+            &:hover {
+              color: darken($light, 60%);
+            }
+          }
+
+          input[type=text] {
+            border: 0;
+            width: 95%;
+            padding: 0.25rem;
+            font-size: 0.85rem;
+            color: darken($light, 60%);
+          }
+
+          &:first-child {
+            border-radius: $roundness 0 0 $roundness;
+          }
+
+          &:nth-child(-n+3) {
+            background: $light;
+          }
+
+          &:last-child {
+            border-radius: 0 $roundness $roundness 0;
+            background: $light;
+          }
+
+          &.active {
+            background: darken($light, 25%);
+
+            a, i {
+              color: $light;
+            }
+          }
+        }
+
+        &:last-child {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+hr {
+  margin-top: 1.5rem;
+}
+
+ul.search_control {
+  position: relative;
+  top: -1.45rem;
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    margin-left: -2px;
+  }
+
+  i {
+    background: #fff;
+    padding: 0.25rem;
+  }
+
+  a {
+    @include transition(all 0.35s);
+    color: darken($light, 35%);
+
+    &.key_search {
+      position: relative;
+      top: 2px;
+    }
+
+    &:hover {
+      color: darken($light, 60%);
+    }
+
+    &.active {
+      color: darken($light, 60%);
+    }
+
+    &.adv_active {
+      color: lighten($punch_color, 10%);
+    }
+  }
+}
+
+div.advanced_search { display: none; }
+div.linemode { display: none; }
+
+form.gc_search {
+  div.linemode { display: block; }
+}

@@ -1,0 +1,105 @@
+<span class="hidden current_page" id="emergency_main"></span>
+
+<fieldset class="repeating_group" data-group-title="Contact(s)" id="PD_EMERGC_GROUP">
+ <div class="form_row">
+    <div class="full people_validated_field field_container" data-map="pdemerg_name">
+      <label for="PD_EMERGENC_CONT">Individual</label>
+      <input type="text" id="PD_EMERGENC_CONT" readonly>
+      <input type="hidden" id="PD_EMERG_CONT_ID">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium field_container">
+     <label for="PD_EMERGENC_PHON">Phone</label>
+     <input type="text" id="PD_EMERGENC_PHON" readonly>
+    </div>
+
+    <div class="medium field_container">
+     <label for="PD_EMERG_PHONE2">Cell</label>
+     <input type="text" id="PD_EMERG_PHONE2" readonly>
+    </div> 
+  </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="PD_EMERGC_NOTES">Note</label>
+      <textarea id="PD_EMERGC_NOTES"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+    <legend>Non Emergency Numbers</legend>
+    <div class="form_row">
+      <div class="small field_container">
+        <label for="PD_CITY_POLICE">Local Police</label>
+        <input type="text" id="PD_CITY_POLICE">
+      </div>
+
+      <div class="small field_container">
+        <label for="PD_PROV_STATE_PO">Prov/State Police</label>
+        <input type="text" id="PD_PROV_STATE_PO">
+      </div>
+
+      <div class="small field_container">
+        <label for="PD_POLICE">Other Police Agency</label>
+        <input type="text" id="PD_POLICE">
+      </div>
+
+      <div class="small field_container">
+        <label for="PD_FIRE">Fire</label>
+        <input type="text" id="PD_FIRE">
+      </div>
+     </div>
+
+    <div class="form_row">
+      <div class="small field_container">
+        <label for="PD_LOCAL_MUNICIP">Local Municipality</label>
+        <input type="text" id="PD_LOCAL_MUNICIP">
+      </div>
+      </div>
+
+<fieldset class="repeating_group" data-group-title="Other Contact Numbers(s)" id="PD_EMERGC_OTHER">
+    <div class="form_row">
+      <div class="small field_container">
+        <label for="PD_EMERC_OTH_NO">Number</label>
+        <input type="text" id="PD_EMERC_OTH_NO">
+    </div>
+
+      <div class="large field_container">
+        <label for="PD_EMERC_OTH_NOT">Note</label>
+        <input type="text" id="PD_EMERC_OTH_NOT">
+    </div>
+    </div>
+  </fieldset>
+
+ <div class="form_row">
+  <div class="small field_container">
+        <label for="PD_FIRE_RISK">Emergency Preparedness Plan</label>
+        <select id="PD_FIRE_RISK">
+          <option></option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+    </div>
+
+    <div class="large text file_attachment field_container">
+      <label for="PD_EMERC_OTH_NOT">Plan Path</label>
+      <input type="text" id="PD_EMERC_OTH_NOT" readonly>
+    </div>
+    </div>
+
+ <div class="form_row">
+    <div class="full field_container">
+      <label for="PD_WATER_SUPPLY">Water Supply</label>
+      <input type="text" id="PD_WATER_SUPPLY">
+    </div>
+  </div>
+  
+ <div class="form_row">
+    <div class="full field_container">
+      <label for="PD_EMERG_NOTES">Notes</label>
+      <textarea id="PD_EMERG_NOTES"></textarea>
+    </div>
+  </div>

@@ -1,0 +1,114 @@
+<span class="hidden current_page" id="acquisition_documents_required"></span>
+
+<fieldset class="repeating_group" data-group-title="Acquisition Documentation" id="R_DOC_GRP">
+   <fieldset class="logical_group">
+    <legend>Documentation Information</legend> 
+	
+  <div class="form_row borderless">
+     <div class="small field_container">
+      <label for="R_DOC_TYPE">Type</label>
+      <select id="R_DOC_TYPE">
+        <option>Acknowledgement</option>
+        <option>Acquisition Justification</option>
+        <option>Act of Sale</option>
+        <option>Deed of Gift</option>
+        <option>Incoming receipt</option>
+        <option>Invoice</option>
+        <option>Non-exclusive License</option>
+        <option>Outgoing Receipt</option>
+        <option>Right to Copy</option>
+        <option>Tax Receipt</option>
+        <option>Temporary Receipt</option>
+        <option>Trade Agreement</option>
+		</select>
+     </div>
+
+     <div class="small field_container">
+      <label for="R_DOC_NO">Doc. No.</label>
+      <input type="text" id="R_DOC_NO">
+     </div>
+
+     <div class="small date field_container">
+      <label for="R_DOC_SENT">Date Sent</label>
+      <input type="text" id="R_DOC_SENT">
+     </div>
+
+     <div class="small date field_container">
+      <label for="R_DOC_RECEIVED">Date Received</label>
+      <input type="text" id="R_DOC_RECEIVED">
+     </div>
+  </div>
+</fieldset>
+
+  <div class="form_row borderless">
+      <div class="full text file_attachment field_container">
+        <label for="R_DOC_ACCESS">Access Path</label>
+        <input type="text" id="R_DOC_ACCESS">
+      </div>
+    </div>
+
+  
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="R_DOC_CAPTION">Caption</label>
+      <textarea id="R_DOC_CAPTION"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="R_DOC_TRANSCRIPT">Transcript</label>
+      <textarea id="R_DOC_TRANSCRIPT"></textarea>
+    </div>
+  </div>
+
+
+
+  
+   <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend> 
+
+	<div class="form_row">
+        <div class="full field_container">
+          <label for="R_DOC_AST_NAME">Asset Name</label>
+          <input type="text" id="R_DOC_AST_NAME" readonly>
+        </div>
+      </div>
+	  
+        <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="R_DOC_OCR">TDR OCR</label>
+          <input type="text" id="R_DOC_OCR" readonly>
+        </div>
+      </div>
+	  
+     <div class="form_row">
+        <div class="full field_container">
+          <label for="R_DOC_THUMB">TDR Thumb</label>
+          <input type="text" id="R_DOC_THUMB">
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="R_DOC_PRESER">TDR Preservation</label>
+          <input type="text" id="R_DOC_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="R_DOC_ORIGIN">TDR Original</label>
+          <input type="text" id="R_DOC_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="R_DOC_OTHER">TDR Other</label>
+          <input type="text" id="R_DOC_OTHER" readonly>
+        </div>
+      </div>
+  </fieldset>
+</fieldset>
+

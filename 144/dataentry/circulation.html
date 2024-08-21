@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M2L Online - MINISIS Management for Library - Circulation</title>
+
+  <!-- include virtual="/144/assets/html/template/stylesheets.html" -->
+  <!-- include virtual="/144/assets/html/template/header_scripts.html" -->
+</head>
+
+<body data-database="Circulation" data-popup="n">
+  <header>
+    <!-- include virtual="/144/assets/html/template/header.html" -->
+  </header>
+
+  <section id="body">
+    <!-- include virtual="/144/assets/html/template/db_selection_nav.html" -->
+
+    <div class="container">
+      <!-- include virtual="/144/assets/html/template/db/circ_record_actions_nav.html" -->
+
+      <section id="data_entry_forms">
+        <div id="universal_record_information">
+          <div class="column">
+            <div class="field_container">
+              <label for="SISN">Record No.</label>
+              <input type="text" id="SISN" readonly>
+            </div>
+            <div class="field_container">
+              <label for="ACCESSION_NUMBER">Accession No.</label>
+              <input type="text" id="ACCESSION_NUMBER" readonly>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="field_container">
+              <label for="CONTROL_NO">Control No.</label>
+              <input type="text" id="CONTROL_NO" readonly>
+            </div>
+
+            <div class="field_container">
+              <label for="LEADER_07">Bib. Level</label>
+              <input type="text" id="LEADER_07" readonly>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="field_container">
+              <label for="CATALOG_STATUS">Catalog Status</label>
+              <input type="text" id="CATALOG_STATUS" readonly>
+            </div>
+          </div>
+
+          <div class="universal_row">
+            <div class="full field_container">
+              <label for="TITLE">Title</label>
+              <input type="text" id="TITLE" readonly>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="primary_data_entry_form">
+          <nav id="worksheet_nav">
+          </nav>
+
+          <div id="data_entry_form">
+            <!-- include virtual="/144/assets/html/dataentry/circulation/circulation_main.html" -->
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <footer>
+    <!-- include virtual="/144/assets/html/template/footer.html" -->
+  </footer>
+
+  <xml id="MY_XML" style="display: none;">
+    ^MARCXML_TREE^-(TITLE*,ALL_TITLE_WORD,AUTHOR_GROUP,SUBJECT_GROUP,SERIES_GROUP,B_ID_LINK,W_ID_LINK,H_ID_LINK)
+  </xml>
+
+  <div id="notices">^WIN_INFO^</div>   <!-- RL-2021-02-16 -->
+
+  <!-- include virtual="/144/assets/html/template/db/circulation_base_scripts.html" -->
+  <!-- include virtual="/144/assets/html/template/core_dataentry_scripts.html" -->
+  <script src="/144/assets/customize/dataentry/record_databases/circulation.js"></script>
+  <script src="/144/assets/customize/dataentry/interface_databases/circulation.js"></script>
+  <script src="/144/assets/customize/dataentry/frontend/circulation.js"></script>
+  <script src="/144/assets/customize/dataentry/frontend/m2l_util.js"></script>
+</body>
+
+</html>

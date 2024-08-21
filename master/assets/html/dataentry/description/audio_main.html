@@ -1,0 +1,109 @@
+<span class="hidden current_page" id="audio_main"></span>
+
+<fieldset class="repeating_group" data-group-title="Audio" id="A_AD_REF_GRP">
+  <div class="form_row borderless">
+    <div class="full audio file_attachment field_container">
+      <label for="A_AD_ACCESS">Access Path</label>
+      <input type="text" id="A_AD_ACCESS">
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="A_AD_CAPTION">Caption</label>
+      <textarea id="A_AD_CAPTION"></textarea>
+    </div>
+  </div>
+
+   <div class="form_row borderless">
+    <div class="medium field_container">
+      <label for="A_AD_OPAC">Web Ready</label>
+      <select id="A_AD_OPAC">
+        <option></option>
+        <option>Ready</option>
+        <option>Review</option>
+        <option>Restrict</option>
+      </select>
+    </div>
+
+    <div class="medium location_validated_field field_container" data-map="audio_location">
+      <label for="A_AD_LOCATION_ID">Location</label>
+      <input type="text" id="A_AD_LOCATION_ID" readonly>
+    </div>
+   </div>
+
+  <div class="form_row borderless">
+    <div class="smallmed repeating_field field_container">
+      <label for="TECHNICAL_SPEC">Technical Spec.:</label>
+      <select id="TECHNICAL_SPEC">
+        <option></option>
+        <option>original</option>
+        <option>duplicate</option>
+        <option>master</option>
+      </select>
+    </div>
+
+    <div class="smallmed repeating_field field_container">
+      <label for="SOUND_CHAR">Sound</label>
+      <select id="SOUND_CHAR">
+        <option></option>
+        <option>sd.</option>
+        <option>si.</option>
+        <option>mute</option>
+      </select>
+    </div>
+
+    <div class="smallmed field_container">
+      <label for="TIME">Time</label>
+      <input type="text" id="TIME">
+        </div>
+    </div>
+
+  <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_AD_AST_NAME">Asset Name</label>
+          <input type="text" id="A_AD_AST_NAME" readonly>
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="A_AD_OCR">TDR OCR</label>
+          <input type="text" id="A_AD_OCR" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_AD_THUMB">TDR Thumb</label>
+          <input type="text" id="A_AD_THUMB">
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_AD_PRESER">TDR Preservation</label>
+          <input type="text" id="A_AD_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_AD_ORIGIN">TDR Original</label>
+          <input type="text" id="A_AD_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_AD_OTHER">TDR Other</label>
+          <input type="text" id="A_AD_OTHER" readonly>
+        </div>
+      </div>
+  </fieldset>
+</fieldset>
+
+\

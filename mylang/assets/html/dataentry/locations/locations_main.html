@@ -1,0 +1,246 @@
+<span class="hidden current_page" id="locations_main"></span>
+
+<fieldset class="logical_group">
+  <legend>Location Details</legend>
+
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <label for="SISN">SISN</label>
+      <input type="text" id="SISN" readonly>
+    </div>
+
+    <div class="large field_container">
+      <label for="CURATORS_CODE">
+        <!--
+        <a class="get_index_value_exit" title="Select Library Location link"
+          data-param="CURATORS_CODE" data-val-database="Catalogue" data-val-field="B_LOCN_LINK" data-val-label="Library Location Code">
+          <i class="fa fa-map-o fa-lg"></i>
+        </a>
+        <a class="get_index_value_exit" title="Select Container Location link"
+          data-param="CURATORS_CODE" data-val-database="Container" data-val-field="A_LOCN_LINK" data-val-label="Container Location Code">
+          <i class="fa fa-file-archive-o fa-lg"></i>
+        </a>
+        <a class="get_index_value_exit" title="Select Collections Location link"
+          data-param="CURATORS_CODE" data-val-database="Collections" data-val-field="C_LOCN_LINK" data-val-label="Collections Location Code">
+          <i class="fa fa-picture-o fa-lg"></i>
+        </a>
+        <a class="get_index_value_exit" title="Select Description Location link"
+          data-param="CURATORS_CODE" data-val-database="Description" data-val-field="D_LOCN_LINK" data-val-label="Description Location Code">
+          <i class="fa fa-book fa-lg"></i>
+        </a>
+        <a class="view_item_record" title="View Item Record">
+          <i class="fa fa-info-circle fa-lg" style="color: #798ca4"></i>
+        </a>
+        &nbsp;Item ID -->
+        Curators Code
+      </label>
+      <input type="text" id="CURATORS_CODE" class="unique_key_check protect mandatory_check">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <label for="LOCATION_TYPE">Location Type</label>
+      <select id="LOCATION_TYPE" class="protect_field_exit unprotect_field_exit generate_field_exit"
+        data-generate1="'LOCATION_TYPE <> ''Onsite''',BECOME_ONSITE,''"
+        data-generate2="'LOCATION_TYPE ''Onsite'' + LOCATION_TYPE ''Undefined''',WAIT_TIME,''"
+        data-generate3="'LOCATION_TYPE ''OFFSITESTD''',WAIT_TIME,'1'"
+        data-generate4="'LOCATION_TYPE ''OFFSITECOOL''',WAIT_TIME,'1'"
+        data-generate5="'LOCATION_TYPE ''OFFSITECOLD''',WAIT_TIME,'2'"
+        data-protect1="'LOCATION_TYPE ''Onsite''',BECOME_ONSITE"
+        data-unprotect1="'LOCATION_TYPE <> ''Onsite''',BECOME_ONSITE" >
+        <option></option>
+        <option>Undefined</option>
+        <option>Onsite</option>
+        <option>OFFSITESTD</option>
+        <option>OFFSITECOOL</option>
+        <option>OFFSITECOLD</option>
+        <option>Offsite - Iron Mountain</option>
+      </select>
+    </div>
+
+    <div class="small field_container">
+      <label for="WAIT_TIME">Delivery Days</label>
+      <input type="text" id="WAIT_TIME" readonly>
+      </select>
+    </div>
+
+    <div class="small field_container">
+      <label for="MANAGED_SPACE">Managed Space</label>
+      <select id="MANAGED_SPACE">
+        <option></option>
+        <option>Y</option>
+        <option>N</option>
+      </select>
+    </div>
+
+    <div class="small field_container">
+      <label for="BECOME_ONSITE">Temporary Onsite Storage</label>
+      <select id="BECOME_ONSITE">
+        <option></option>
+        <option>Y</option>
+        <option>N</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <label for="BOX">Container ID</label>
+      <input type="text" id="BOX">
+    </div>
+
+    <div class="small validated_table field_container">
+      <label for="PARENT_BOX">Parent Container ID</label>
+      <input type="text" id="PARENT_BOX" data-val-database="LOCATION_AUTHORITY" data-val-field="BOX" readonly>
+    </div>
+
+    <div class="medium field_container">
+      <div class="small field_container">
+        <label for="LOC_MONITOR_FLAG">Monitor</label>
+        <select id="LOC_MONITOR_FLAG">
+          <option></option>
+          <option>Y</option>
+          <option>N</option>
+        </select>
+      </div>
+
+      <div class="large field_container">
+        <label for="LOCATION_CONTACT">Container Details</label>
+        <input type="text" id="LOCATION_CONTACT">
+      </div>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="BUILDING">Building or Onsite Location Code</label>
+      <input type="text" id="BUILDING">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="medium field_container">
+      <label for="STREET">Street</label>
+      <input type="text" id="STREET">
+    </div>
+
+    <div class="medium field_container">
+      <label for="CITY">City</label>
+      <input type="text" id="CITY">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <label for="FLOOR">Area / Floor</label>
+      <input type="text" id="FLOOR">
+    </div>
+
+    <div class="small field_container">
+      <label for="ROOM">Room</label>
+      <input type="text" id="ROOM">
+    </div>
+
+    <div class="small field_container">
+      <label for="RACK_UNIT">Bay / Cabinet</label>
+      <input type="text" id="RACK_UNIT">
+    </div>
+
+    <div class="small field_container">
+      <label for="SHELF">Shelf / Drawer</label>
+      <input type="text" id="SHELF">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <label for="POSITION">Position</label>
+      <input type="text" id="POSITION">
+    </div>
+
+    <div class="small field_container">
+      <label for="LOC_ACCESS">Access</label>
+      <select id="LOC_ACCESS">
+        <option></option>
+        <option>Public</option>
+        <option>Private</option>
+      </select>
+    </div>
+
+    <div class="medium field_container">
+      <label for="BUS_UNIT">Organization Unit</label>
+      <input type="text" id="BUS_UNIT">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating-group" data-group-title="Location Contact" id="L_MOVE_CNT_GRP">
+  <div class="borderless form_row">
+    <div class="full people_validated_field field_container" data-map="loc_auth_contact">
+      <label for="MOVE_CONTACT">Location Contact</label>
+      <input type="text" id="MOVE_CONTACT" readonly>
+      <input type="hidden" id="LOC_MOVE_CNT_ID">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating-group" data-group-title="Hazard" id="HAZARD_GRP">
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="HAZARD">Hazard</label>
+      <input type="text" id="HAZARD">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="large validated_table field_container">
+      <label for="HAZARD_WHO_L">Reported By</label>
+      <input type="text" id="HAZARD_WHO_L" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+
+    <div class="small date field_container">
+      <label for="HAZARD_DATE">Reported On</label>
+      <input type="text" id="HAZARD_DATE">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Disposal</legend>
+
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <label for="LOC_DP_ACTION">Action</label>
+      <select id="LOC_DP_ACTION">
+        <option>Destroy</option>
+        <option>Return</option>
+      </select>
+    </div>
+    <div class="small form_button field_container" style="font-size: 1rem; margin-top: 3px;" id="APPROVED_BUTTON">
+      <a href="#" onclick="approveDisposal($(this));"><i class="fa fa-check"></i> Approved</a>
+    </div>
+    <div class="small field_container">
+      <label for="LOC_DP_USER">Approved By</label>
+      <input type="text" id="LOC_DP_USER" readonly>
+    </div>
+    <div class="small field_container">
+      <label for="LOC_DP_DATE">Approved On</label>
+      <input type="text" id="LOC_DP_DATE" readonly>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full text file_attachment field_container">
+      <label for="LOC_DP_LETTER">File path of Authorization Letter</label>
+        <input type="text" id="LOC_DP_LETTER">
+      </div>
+    </div>
+  </div>
+</fieldset>
+
+<!-- call initalization user routine -->
+<input type="hidden" class="init_call_exit protect_field_exit"
+  data-protect1="'LOC_DP_USER !+',APPROVED_BUTTON"
+  data-protect2="'CURATORS_CODE ''ACCESSION-'' + CURATORS_CODE ''DESCRIPTION-'' + CURATORS_CODE ''LIBRARY-'' + CURATORS_CODE ''COLLECTION-''',CURATORS_CODE"
+/>

@@ -1,0 +1,128 @@
+<span class="hidden current_page" id="action_main"></span>
+
+<fieldset class="repeating_group" data-group-title="Action(s) Taken" id="ACTION_TAKEN">
+ <div class="form_row">
+   <div class="small field_container">
+      <label for="ACTION_COMPLETED">Action</label>
+      <select id="ACTION_COMPLETED">
+           <option></option>
+           <option>Collection Search</option>
+           <option>Consultation</option>
+           <option>Identify Resources</option>
+           <option>Other</option> 
+           <option>Refer</option>
+           <option>Respond</option>         
+        </select>
+      </div>
+
+   <div class="small date field_container">
+      <label for="ACTION_DATE">Date</label>
+      <input type="text" id="ACTION_DATE">
+    </div>
+	
+   <div class="medium validated_table field_container">
+      <label for="STAFF_INIT">Action by</label>
+      <input type="text" id="STAFF_INIT" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+  </div>
+
+ <div class="form_row">  
+   <div class="full field_container">
+      <label for="DETAIL_RESPONSE">Response</label>
+      <textarea id="DETAIL_RESPONSE"></textarea>
+    </div>  
+  </div>
+
+<fieldset class="logical_group">
+   <legend>Time and Cost spent on action - internal use only</legend>
+      <div class="form_row">
+       <div class="large field_container">
+        <label for="RSRCH_TOTAL_HRS">Hrs (Round to the closest quarter of the hour)</label>
+        <input type="text" id="RSRCH_TOTAL_HRS">
+      </div>
+
+       <div class="small field_container">
+        <label for="RSRCH_HOURLYCOST">Hourly rate</label>
+        <input type="text" id="RSRCH_HOURLYCOST">
+      </div>
+    </div>
+</fieldset>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Objects Retrieved" id="ENQUIRY_ITEM_GRP">
+  <div class="form_row">
+    <div class="small m3_validated_field field_container" data-map="enquiry_objects">
+      <label for="ENQ_ACCESS_ID">Accession Number</label>
+      <input type="text" id="ENQ_ACCESS_ID" readonly>
+    </div>
+
+    <div class="large field_container">
+      <label for="ENQ_TITLE">Title</label>
+      <input type="text" id="ENQ_TITLE" readonly>
+    </div>
+    </div>
+
+  <div class="form_row">
+   <div class="medium field_container">
+      <label for="ENQ_DISCIPLINE">Business Unit</label>
+      <input type="text" id="ENQ_DISCIPLINE" readonly>
+    </div>
+    </div>
+	
+  <div class="form_row">
+   <div class="full field_container">
+      <label for="ENQ_ITEM_NOTE">Item Note</label>
+      <textarea id="ENQ_ITEM_NOTE"></textarea>
+    </div>
+	</div>
+</fieldset>
+
+<fieldset class="logical_group">
+   <legend>Other Retrievals</legend>
+<fieldset class="repeating_group" data-group-title="Organization Authority Research" id="ORG_RESEARCH">
+   <div class="form_row borderless">
+    <div class="large org_validated_field field_container" data-map="org_retrieve">
+      <label for="ORG_NAME">Organization</label>
+      <input type="text" id="ORG_NAME" readonly>
+      <input type="hidden" id="ORG_NAME_ID">
+    </div>
+  </div>
+  <div class="form_row">  
+   <div class="full field_container">
+      <label for="ORG_NOTE">Note</label>
+      <textarea id="ORG_NOTE"></textarea>
+    </div>  
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Person Authority Research" id="PERSON_RESEARCH">
+   <div class="form_row borderless">
+    <div class="large people_validated_field field_container" data-map="person_retrieve">
+      <label for="PERS_NAME">Person</label>
+      <input type="text" id="PERS_NAME" readonly>
+      <input type="hidden" id="PERS_NAME_ID">
+    </div>
+  </div>
+  <div class="form_row">  
+   <div class="full field_container">
+      <label for="PERSON_NOTE">Note</label>
+      <textarea id="PERSON_NOTE"></textarea>
+    </div>  
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Other Reference Sources" id="MATERIALS_USED">
+   <div class="form_row borderless">
+    <div class="large field_container">
+      <label for="OTHER_SOURCES">Source</label>
+      <input type="text" id="OTHER_SOURCES">
+    </div>
+  </div>
+  <div class="form_row">  
+   <div class="full field_container">
+      <label for="OTH_SOURCE_NOTE">Note</label>
+      <textarea id="OTH_SOURCE_NOTE"></textarea>
+    </div>  
+  </div>
+</fieldset>
+</fieldset>

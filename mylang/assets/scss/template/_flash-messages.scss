@@ -1,0 +1,47 @@
+div#flash_messages {
+  position: fixed;
+  border: 5px solid;
+  color: #333;
+  top: 10px;
+  left: 50%;
+  border-radius: 2 * $roundness;
+  width: 450px;
+  margin-left: -225px;
+  padding: 0.25rem 1rem;
+  background: $light;
+  font-size: 0.85rem;
+
+  h2 { text-align: center; }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      font-weight: bold;
+      margin-bottom: 0.85rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  p {
+    text-align: center;
+
+    span.close {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: lighten($base, 15%);
+      border-radius: $roundness;
+      color: #fff;
+      @include transition(all, 0.5s);
+      cursor: pointer;
+
+      &:hover {
+        background: $base;
+      }
+    }
+  }
+}

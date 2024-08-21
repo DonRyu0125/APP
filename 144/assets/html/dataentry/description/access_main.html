@@ -1,0 +1,160 @@
+<span class="hidden current_page" id="access_main"></span>
+
+<fieldset class="repeating_group" data-group-title="Availability of Other Formats" id="AVAILABILITY">
+  <div class="borderless form_row">
+    <div class="large validated_table field_container">
+      <label for="OTHER_FORMATS">Format</label>
+      <input type="text" id="OTHER_FORMATS" data-val-database="OTHER_FORMATS_AUTHORITY" data-val-field="LOOKUP_FIELD" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="CALL_NO">Call No.</label>
+      <input type="text" id="CALL_NO">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Other Codes" id="OTHER_CODES_GRP">
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="OTHER_CODES">Other Code</label>
+      <input type="text" id="OTHER_CODES">
+    </div>
+  </div>
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="OTHER_CODES_NOTE">Note</label>
+      <textarea id="OTHER_CODES_NOTE"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<div class="form_row">
+  <div class="full repeating_field field_container">
+    <label for="REFERENCE_REF">Bibliographic References</label>
+    <textarea id="REFERENCE_REF"></textarea>
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Finding Aid" id="A_FINTX_REF_GRP">
+  <div class="form_row borderless">
+    <div class="full text file_attachment field_container">
+      <label for="A_FINTX_ACCESS">Access Path</label>
+      <input type="text" id="A_FINTX_ACCESS">
+      </div>
+    </div>
+
+	
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="A_FINTX_CAPTION">Caption</label>
+      <textarea id="A_FINTX_CAPTION"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="small field_container">
+      <label for="A_FINTX_OPAC">Web Ready</label>
+      <select id="A_FINTX_OPAC">
+        <option></option>
+        <option>Ready</option>
+        <option>Review</option>
+        <option>Restrict</option>
+      </select>
+    </div>
+  </div>
+
+  
+  <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_FINTX_AST_NAME">Asset Name</label>
+          <input type="text" id="A_FINTX_AST_NAME" readonly>
+        </div>
+      </div>
+	  
+        <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="A_FINTX_OCR">TDR OCR</label>
+          <input type="text" id="A_FINTX_OCR" readonly>
+        </div>
+      </div>
+	  
+     <div class="form_row">
+        <div class="full field_container">
+          <label for="A_FINTX_THUMB">TDR Thumb</label>
+          <input type="text" id="A_FINTX_THUMB">
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_FINTX_PRESER">TDR Preservation</label>
+          <input type="text" id="A_FINTX_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_FINTX_ORIGIN">TDR Original</label>
+          <input type="text" id="A_FINTX_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_FINTX_OTHER">TDR Other</label>
+          <input type="text" id="A_FINTX_OTHER" readonly>
+        </div>
+      </div>
+  </fieldset>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Geographic Access Point" id="INDEXGEO_GRP">
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <input type="text" id="INDEXGEO">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Other Names" id="INDEXNAME_GRP">
+  <div class="form_row">
+    <div class="full org_validated_field people_validated_field field_container"
+      data-map-people="name_access" data-map-org="name_org_access">
+      <label for="INDEXNAME">Name</label>
+      <input type="text" id="INDEXNAME" readonly>
+      <input type="hidden" id="NAME_ID">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Names as Subjects" id="INDEXSUB_GRP">
+  <div class="form_row">
+    <div class="full org_validated_field people_validated_field field_container" data-map-people="name_subject" data-map-org="name_org_subject"> <!-- RL-20211231 -->
+      <label for="INDEXSUB">Name</label>
+      <input type="text" id="INDEXSUB" readonly>
+      <input type="hidden" id="SUB_ID">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Provenance" id="INDEXPROV_GRP">
+  <div class="form_row">
+    <div class="full org_validated_field people_validated_field field_container" data-map-people="name_prov"  data-map-org="name_org_prov">  <!-- RL-20211231 -->
+      <label for="INDEXPROV">Name</label>
+      <input type="text" id="INDEXPROV" readonly>
+      <input type="hidden" id="PROV_ID">
+    </div>
+  </div>
+</fieldset>
+
+<div class="form_row">
+  <div class="medium validated_table repeating_field field_container">
+    <label for="SUBJECT">Subject</label>
+    <input type="text" id="SUBJECT" data-val-database="SSAM" data-val-field="Heading" readonly>
+  </div>
+  </div>
+

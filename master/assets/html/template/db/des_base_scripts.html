@@ -1,0 +1,25 @@
+<script>
+  // rl-2020-09-29 - save_link changed; add "plan_move" "multi_move", "reports"
+  site_params = {
+    add_link : '^HOME_SESSID^/DESCRIPTION?OPEN&DBOPTION=ADD',
+    global_change_link : '^HOME_SESSID^?QUERYFORM&SEARCHFORM=[CAMS_APP]/144/search%5cdes_gc.html&DATABASE=DESCRIPTION&DBOPTION=SEARCH',
+    save_link : '^SAVE_N_STOP_RECORD^&FILE=[CAMS_APP]/144/ASSETS%2fHTML%2fTEMPLATE%2fCLOSE_FORM.HTML&DISCONNECT=N&CLOSE=Y',
+    save_next_link : '^SESSID^?NEXT_EDIT_RECORD&DISCONNECT=N&CLOSE=Y',
+    skip_link : '^SKIP_N_STOP_RECORD^&FILE=[CAMS_APP]/144/ASSETS%2fHTML%2fTEMPLATE%2fCLOSE_FORM.HTML',
+    search_link : '^HOME_SESSID^/DESCRIPTION?OPEN&DBOPTION=SEARCH&CLEAR=Y',
+    'reports' : {
+                  'plan_move'  : { 'query': '[CAMS_APP]/144/search\\collections_plan_move.html',  'report': '' },
+                  'multi_move' : { 'query': '[CAMS_APP]/144/search\\collections_multi_move.html', 'report': '' },
+                  'find_aid'   : { 'query': '[CAMS_APP]/144/search\\description_find_aid.html',    'report': 'FINDING_AID_ONLINE' }
+        }
+  }
+</script>
+<script src="/144/assets/js/vendor/jquery.colorbox-min.js"></script>
+<script src="/144/assets/js/frontend_util.js"></script> <!-- RL-20211025 -->
+<script src="/144/assets/js/frontend.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<!-- RL-2020-09-29 -->
+<!-- <script src="/144/assets/js/vendor/custom-alert.min.js"></script> -->
+
+
+

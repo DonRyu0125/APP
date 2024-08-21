@@ -1,0 +1,145 @@
+<span class="hidden current_page" id="marc"></span>
+
+<div class="borderless form_row">
+  <div class="small form_button field_container">
+    <a href="#" id="add_marc"><i class="fa fa-plus"></i> Add Marc Fields</a>
+  </div>
+</div>
+
+<fieldset class="logical_group">
+  <legend>Validated Marc Fields</legend>
+
+  <div class="borderless form_row">
+    <div class="full marc_validation field_container">
+      <label for="MARC__100">
+        <a href="#" class="browse_n_select_record" title="Load Person Authority" data-key="people" data-map="marc_100"><i class="fa fa-user fa-lg"></i></a>
+        <!-- <a href="#" class="view_selected_record" data-source="MARC__100_0" data-key="people"><i class="fa fa-info-circle fa-lg"></i></a> -->
+        100
+      </label>
+      <div class="marc_header field_container">
+        <input type="text" maxLength="2">
+      </div>
+      <div class="marc_body field_container">
+        <input type="text" id="MARC__100" class="marc_data">
+      </div>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full repeating_field marc_validation field_container">
+      <label for="MARC__600">
+        <a href="#" class="browse_n_select_record" title="Load Person Authority" data-key="people" data-map="marc_600"><i class="fa fa-user fa-lg"></i></a>
+        <!-- <a href="#" class="view_selected_record" data-source="MARC__600_0" data-key="people"><i class="fa fa-info-circle fa-lg"></i></a> -->
+        600
+      </label>
+      <div class="marc_header field_container">
+        <input type="text" maxLength="2">
+      </div>
+      <div class="marc_body field_container">
+        <input type="text" id="MARC__600" class="marc_data">
+      </div>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full repeating_field marc_validation field_container">
+      <label for="MARC__700">
+        <a href="#" class="browse_n_select_record" title="Load Person Authority" data-key="people" data-map="marc_700"><i class="fa fa-user fa-lg"></i></a>
+        <!-- <a href="#" class="view_selected_record" data-source="MARC__700_0" data-key="people"><i class="fa fa-info-circle fa-lg"></i></a> -->
+        700
+      </label>
+      <div class="marc_header field_container">
+        <input type="text" maxLength="2">
+      </div>
+      <div class="marc_body field_container">
+        <input type="text" id="MARC__700" class="marc_data">
+      </div>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full repeating_field marc_validation field_container">
+      <label for="MARC__541">
+        <a href="#" class="browse_n_select_record" title="Load Person Authority" data-key="people" data-map="marc_541"><i class="fa fa-user fa-lg"></i></a>
+        <!-- <a href="#" class="view_selected_record" data-source="MARC__541_6" data-key="people"><i class="fa fa-info-circle fa-lg"></i></a> -->
+        541
+      </label>
+      <div class="marc_header field_container">
+        <input type="text" maxLength="2">
+      </div>
+      <div class="marc_body field_container">
+        <input type="text" id="MARC__541" class="marc_data">
+      </div>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full marc_validation field_container">
+      <label for="MARC__110">
+        <a href="#" class="browse_n_select_record" title="Load Organization Authority" data-key="org" data-map="marc_110"><i class="fa fa-building fa-lg"></i></a>
+        <!-- <a href="#" class="view_selected_record" data-source="MARC__110_0" data-key="org"><i class="fa fa-info-circle fa-lg"></i></a> -->
+        110
+      </label>
+      <div class="marc_header field_container">
+        <input type="text" maxLength="2">
+      </div>
+      <div class="marc_body field_container">
+        <input type="text" id="MARC__110" class="marc_data">
+      </div>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full repeating_field marc_validation field_container">
+      <label for="MARC__610">
+        <a href="#" class="browse_n_select_record" title="Load Organizations Authority" data-key="org" data-map="marc_610"><i class="fa fa-building fa-lg"></i></a>
+        <!-- <a href="#" class="view_selected_record" data-source="MARC__610_0" data-key="org"><i class="fa fa-info-circle fa-lg"></i></a> -->
+        610
+      </label>
+      <div class="marc_header field_container">
+        <input type="text" maxLength="2">
+      </div>
+      <div class="marc_body field_container">
+        <input type="text" id="MARC__610" class="marc_data">
+      </div>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full repeating_field marc_validation field_container">
+      <label for="MARC__710">
+        <a href="#" class="browse_n_select_record" title="Load Organizations Authority" data-key="org" data-map="marc_710"><i class="fa fa-building fa-lg"></i></a>
+        <!-- <a href="#" class="view_selected_record" data-source="MARC__710_0" data-key="org"><i class="fa fa-info-circle fa-lg"></i></a> -->
+        710
+      </label>
+      <div class="marc_header field_container">
+        <input type="text" maxLength="2">
+      </div>
+      <div class="marc_body field_container">
+        <input type="text" id="MARC__710" class="marc_data">
+      </div>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Marc Fields</legend>
+
+  <div id="marc_field_table" data-exclude="MARC__001,MARC__003,MARC__005,MARC__100,MARC__600,MARC__700,MARC__541,MARC__110,MARC__610,MARC__710">
+      <!-- MARC field go here -->
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Unrecognized MARC tags" id="UNDEFINED_FIELD">
+  <div class="borderless form_row">
+    <div class="small field_container"">
+      <label for="UNDEFINED_TAG">Tag</label>
+      <input type="text" id="UNDEFINED_TAG" readonly>
+    </div>
+
+  <div class="large field_container">
+      <label for="UNDEFINED_VALUE">Value</label>
+      <textarea id="UNDEFINED_VALUE"></textarea>
+    </div>
+  </div>
+</fieldset>

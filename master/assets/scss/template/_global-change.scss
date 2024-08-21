@@ -1,0 +1,123 @@
+#gc_results {
+  padding: 1.5rem;
+
+  form {
+    div.row {
+      @include clearfix;
+      margin: 0.75rem 0;
+      padding: 0;
+
+      div.query_element {
+        margin: 0;
+
+        &.full { width: 100%; }
+        &.half { width: 50%; }
+        &.third { width: 33%; }
+
+        float: left;
+        padding: 0.5rem;
+
+        label { display: none; }
+
+        input[type=text],
+        textarea { 
+          width: 100%;
+          padding: 0.5rem 0.75rem;
+          border: 1px solid darken($light, 5%);
+          font-size: 1.05rem;
+          background: #fff;
+          border-radius: $roundness;
+        }
+
+        textarea {
+          height: 100px;
+          resize: vertical;
+        }
+      }
+    }
+
+    p.submit {
+      text-align: center;
+
+      a.button,
+      input[type=reset] {
+        display: inline-block;
+        border: 0;
+        background: $base;
+        font-size: 1rem;
+        padding: 0.75rem;
+        color: #fff;
+        border-radius: $roundness;
+        margin: 0 0.5rem;
+        @include transition(all 0.5s);
+        cursor: pointer;
+
+        &:hover {
+          background: darken($base, 10%);
+        }
+      }
+
+      input[type=reset] {
+        opacity: 0.5;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+table#global_change_status {
+  width: 95%;
+  margin: 1rem auto;
+  font-size: 0.85rem;
+  border-spacing: 0;
+
+  thead {
+    color: #fff;
+
+    tr {      
+      th, td {
+        background: darken($light, 60%);
+        border: 1px solid darken($light, 15%);      
+        padding: 0.5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+
+        &:first-child {
+          width: 35px;
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      @include transition(all 0.5s);
+
+      &.selected {
+        td {
+          background: darken($light, 3%);
+        }
+      }
+    }
+
+    td {
+      background: lighten($light, 3%);
+      border: 1px solid darken($light, 15%);
+      padding: 0.5rem;
+      text-align: center;
+
+      strong {
+        display: inline-block;
+        margin-top: 0.5rem;
+      }
+
+      &[colspan] {
+        text-align: center;
+      }
+    }
+  }
+}

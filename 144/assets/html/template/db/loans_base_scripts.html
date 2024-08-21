@@ -1,0 +1,13 @@
+<script>
+  site_params = {
+    add_link : get_home_sessid() + '/LOAN_OUT?OPEN&DBOPTION=ADD',
+    global_change_link : get_home_sessid() + '?QUERYFORM&SEARCHFORM=[CAMS_APP]/144/search%5cloans_gc.html&DATABASE=LOAN_OUT&DBOPTION=SEARCH',
+    // rl-2020-09-29 from M3 Dev changes
+    save_link : get_saverecord() + '&FILE=[CAMS_APP]/144/ASSETS%2fHTML%2fTEMPLATE%2fQUERY_FORM.HTML&DISCONNECT=N&CLOSE=Y&BOTHPROCESSING=[M2A_SCRIPT]CHECK_LOAN_ITEM_GROUP.PAR',
+    skip_link : get_skiprecord()  + '&FILE=[CAMS_APP]/144/ASSETS%2fHTML%2fTEMPLATE%2fQUERY_FORM.HTML',
+    search_link : get_home_sessid() + '/LOAN_OUT?OPEN&DBOPTION=SEARCH&CLEAR=Y'
+  };
+</script>
+<script src="/144/assets/js/vendor/jquery.colorbox-min.js"></script>
+<script src="/144/assets/js/frontend_util.js"></script>
+<script src="/144/assets/js/frontend.js"></script>

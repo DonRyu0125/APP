@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMS - z39.50 Database</title>
+
+    <!-- include virtual="/144/assets/html/template/stylesheets.html" -->
+    <!-- include virtual="/144/assets/html/template/header_scripts.html" -->
+  </head>
+  <body class="z3950_search" data-database="catalogue">
+    <section id="body">
+      <div class="container">
+        <section id="data_entry_forms">
+          <div id="primary_data_entry_form">
+            <div id="data_entry_form">
+                <fieldset class="logical_group">
+                  <legend>^SEQNO^/^HITS^</legend>
+
+                  <pre class="marc_record_display">
+                      ^RECORD^
+                  </pre>
+
+                  <div class="form_row borderless">
+                    <div class="small field_container">
+                      <a href="^SELECT^&TARGET=CATALOGUE" class="simple_button" id="confirm_selection"><i class="fa fa-check"></i> Select</a>
+                    </div>
+
+                    <div class="small field_container">
+                      <a href="^PREV^" id="prev_link" class="simple_button"><i class="fa fa-arrow-left"></i> Previous</a>
+                    </div>
+
+                    <div class="small field_container">
+                      <a href="^NEXT^" id="next_link" class="simple_button"><i class="fa fa-arrow-right"></i> Next</a>
+                    </div>
+                  </div>
+              </fieldset>
+            </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- include virtual="/144/assets/html/template/db/cat_base_scripts.html" -->
+    <!-- include virtual="/144/assets/html/template/import_scripts.html" -->
+  </body>
+</html>

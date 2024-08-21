@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAMS - MINISIS Management for Museums - Loans Database</title>
+
+  <!-- include virtual="/144/assets/html/template/stylesheets.html" -->
+  <!-- include virtual="/144/assets/html/template/header_scripts.html" -->
+</head>
+
+<body data-database="loans">
+  <header>
+    <!-- include virtual="/144/assets/html/template/header.html" -->
+  </header>
+
+  <section id="body">
+    <!-- include virtual="/144/assets/html/template/db_selection_nav.html" -->
+
+    <div class="container">
+      <!-- include virtual="/144/assets/html/template/db/loans_db_actions_nav.html" -->
+
+      <section id="data_entry_forms">
+        <div id="primary_data_entry_form">
+          <nav id="worksheet_nav">
+            <ul id="primary_worksheet_nav">
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/loans/loans_main.html" data-form="loans">Main</a></li>
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/loans/loans_objectitems.html" data-form="objectitems">Object
+                  Items</a></li>
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/loans/loans_shipping.html" data-form="shipping">Shipping /
+                  Insurance</a></li>
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/loans/loans_media.html" data-form="media">Media</a></li>
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/loans/loans_costs.html" data-form="costs">Costs</a></li>
+            </ul>
+
+          <nav id="secondary_worksheet_nav">
+            <ul id="loans">
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/loans/loans_main.html" data-form="main">Loans Main</a></li>
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/loans/loans_exhibition_venue.html" data-form="exhibition_venue">Exhibition
+                    / Venue</a></li>
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/loans/loans_documentation.html" data-form="documentation">Documentation</a></li>
+            </ul>
+
+            <ul id="objectitems">
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/loans/loans_objectitems.html" data-form="objectitems">Object
+                    Items</a></li>
+            </ul>
+
+            <ul id="shipping">
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/loans/loans_shipping.html" data-form="shipping">Shipping /
+                    Insurance</a></li>
+            </ul>
+
+            <ul id="media">
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/loans/loans_media.html" data-form="media">Media</a></li>
+            </ul>
+
+            <ul id="costs">
+              <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/loans/loans_costs.html" data-form="costs">Costs</a></li>
+            </ul>
+            </nav>
+          </nav>
+
+          <div id="data_entry_form">
+            <!-- include virtual="/144/assets/html/dataentry/loans/loans_main.html" -->
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <footer>
+    <!-- include virtual="/144/assets/html/template/footer.html" -->
+  </footer>
+
+  <xml id="MY_XML" style="display: none;">
+    ^XML_TREE^
+  </xml>
+
+  <div id="notices">^WIN_INFO^</div>
+
+  <!-- RL-2020-09-29 -->
+  <!-- include virtual="/144/assets/html/template/db/loans_base_scripts.html" -->
+  <!-- include virtual="/144/assets/html/template/core_dataentry_scripts.html" -->
+  <script src="/144/assets/customize/dataentry/record_databases/loans.js"></script>
+  <script src="/144/assets/customize/dataentry/interface_databases/loans.js"></script>
+  <script src="/144/assets/customize/dataentry/frontend/loans.js"></script>
+</body>
+
+</html>

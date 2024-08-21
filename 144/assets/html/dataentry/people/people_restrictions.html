@@ -1,0 +1,63 @@
+<span class="hidden current_page" id="people_restrictions"></span>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="FULLNAME2">Full Name</label>
+    <input type="text" id="FULLNAME2" readonly>
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Person Restrictions" id="P_RESTRICT_GRP">
+  <div class="form_row">
+    <div class="full restrictions_validated_field field_container" data-map="person_restrict">
+      <label for="P_REST_DETAILS">Restriction</label>
+      <input type="text" id="P_REST_DETAILS" readonly>
+      <input type="hidden" id="P_RESTRICT_ID">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="P_RESTRICT_CAT">Restriction Category</label>
+      <input type="text" id="P_RESTRICT_CAT" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="P_RESTRICT_STAT">Status</label>
+      <select id="P_RESTRICT_STAT">
+        <option></option>
+        <option>Active</option>
+        <option>Inactive</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="small validated_table field_container">
+      <label for="P_REST_ASGN_BY">Assigned By</label>
+      <input type="text" id="P_REST_ASGN_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+
+    <div class="small date field_container">
+      <label for="P_REST_ASGN_ON">Start Date</label>
+      <input type="text" id="P_REST_ASGN_ON">
+    </div>
+
+    <div class="small field_container">
+      <label for="P_REST_TERM">Term</label>
+      <input type="text" id="P_REST_TERM">
+    </div>
+
+    <div class="small date field_container">
+      <label for="P_REST_EXPIRY">End Date</label>
+      <input type="text" id="P_REST_EXPIRY">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="P_RESTRICT_NOTES">Comments</label>
+      <textarea id="P_RESTRICT_NOTES"></textarea>
+    </div>
+  </div>
+</fieldset>

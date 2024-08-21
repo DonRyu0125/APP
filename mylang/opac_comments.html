@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMS - Comments Database</title>
+
+    <!-- include virtual="/mylang/assets/html/template/stylesheets.html" -->
+    <!-- include virtual="/mylang/assets/html/template/header_scripts.html" -->
+  </head>
+  <body data-database="comments" data-popup="Y">
+    <section id="body">
+      <div class="container">
+        <nav id="database_actions">
+          <ul>
+            <li id="dba_save">
+              <a data-form-action="" href="#" title="Save Record" onclick="document.getElementById('crowdsource').submit();">
+                <i class="fa fa-floppy-o"></i>
+              </a>
+            </li>
+            <li id="dba_cancel">
+              <a href="#" title="Cancel Edits" onclick="window.location='^SKIP_N_STOP_RECORD^';parent.$.colorbox.close();">
+                <i class="fa fa-ban"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <section id="data_entry_forms">
+          <div id="primary_data_entry_form">
+            <nav id="worksheet_nav">
+              <nav id="secondary_worksheet_nav">
+                <ul id="comments">
+                  <li><a href="^home_sessid^?get&file=[CAMS_APP]/mylang/assets/html/dataentry/comments/comments_main.html" data-form="comments_main">Comments Main</a></li>
+                </ul>
+              </nav>
+            </nav>
+
+            <div id="data_entry_form">
+              <span class="hidden current_page" id="comments_main"></span>
+
+              <fieldset class="logical_group">
+                <legend>Comments ID</legend>
+                <div class="borderless form_row" style="margin-top: -20px">
+                  <div class="medium field_container" >
+                    <label for="COMMENTS_ITEM_ID">Item ID</label>
+                    <input type="text" id="COMMENTS_ITEM_ID" readonly class="mandatory_check" data-mandatory="$$">
+                  </div>
+
+                  <div class="medium field_container">
+                    <label for="COMMENTS_SOURCE">Item Source</label>
+                    <input type="text" id="COMMENTS_SOURCE"  class="mandatory_check" data-mandatory="$$" readonly>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="logical_group">
+                <legend>Comments Creator</legend>
+                <div class="borderless form_row" style="margin-top: -20px">
+                  <div class="full field_container" >
+                    <label for="CREATOR">Creator</label>
+                    <input type="text" id="CREATOR" class="mandatory_check" data-mandatory="$$">
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="logical_group">
+                <legend>Comments Details</legend>
+
+                <div class="borderless form_row" style="margin-top: -20px">
+                  <div class="full repeating_field validated_table field_container">
+                    <label for="COMMENTS_KEYWORD">Keyword</label>
+                    <input type="text" id="COMMENTS_KEYWORD" data-val-database="COMMENTS" data-val-field="COMMENTS_KEYWORD">
+                  </div>
+                </div>
+
+                <div class="borderless form_row">
+                  <div class="full select_field field_container">
+                    <label for="ANNOTATION_TYPE">Annotation Type</label>
+                    <select id="ANNOTATION_TYPE">
+                      <option></option>
+                      <option>Interpretation</option>
+                      <option>Comments</option>
+                      <option>Transcription</option>
+                      <option>Translated</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="borderless form_row">
+                  <div class="full field_container">
+                   <label for="COMMENTS">Original Comments</label>
+                     <textarea type="text" id="COMMENTS" rows="10"></textarea>
+                   </div>
+                </div>
+              </fieldset>
+
+              <!-- call record wrapup user routine -->
+              <input type="hidden" class="wrapup_user_exit" data-exit="wrapupComments"/>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <xml id="MY_XML" style="display: none;">
+      ^XML_TREE^
+    </xml>
+
+    <div id="notices">^WIN_INFO^</div>
+
+    <script>
+      site_params = {
+        add_link : '',
+        global_change_link : '',
+        save_link : '^SAVE_N_STOP_RECORD^&file=[CAMS_APP]/mylang/assets%5chtml%5ctemplate%5cclose_form.html&DISCONNECT=Y',
+        skip_link : '^SKIP_N_STOP_RECORD^&file=[CAMS_APP]/mylang/assets%5chtml%5ctemplate%5cclose_form.html&DISCONNECT=Y',
+        search_link : ''
+      };
+    </script>
+    <script src="/mylang/assets/js/vendor/jquery.colorbox-min.js"></script>
+    <script src="/mylang/assets/js/frontend_util.js"></script>
+    <script src="/mylang/assets/js/frontend.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- include virtual="/mylang/assets/html/template/core_dataentry_scripts.html" -->
+    <script src="/mylang/assets/js/dataentry/record_databases/comments.js"></script>
+    <script src="/mylang/assets/js/dataentry/frontend/comments.js"></script>
+  </body>
+</html>

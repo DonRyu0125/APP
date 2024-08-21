@@ -1,0 +1,46 @@
+<script src="/144/assets/js/frontend_util.js"></script>
+<script>
+  $(document).ready(function(){
+    $('a.key_search').click();
+
+    if ($('body').hasClass('validated_search')) {
+      var data_entry_url, html;
+      var dbname = $('body').data('database');
+      var create_record = $('body').data('create');
+      var add_enable = false;
+
+      if (dbname === 'people') {
+        data_entry_url = get_sessid() + '/PEOPLE_VAL_VALTAB?OPEN&DBOPTION=ADD&NEW=Y';
+        add_enable = true;
+      }
+      else if (dbname === 'organizations') {
+        data_entry_url = get_sessid() + '/ORGANIZATION_VAL_VALTAB?OPEN&DBOPTION=ADD&NEW=Y';
+        add_enable = true;
+      }
+      else if (dbname === 'client_valtab') {   // RL-2021-03-28
+        data_entry_url = get_sessid() + '/CLIENT_VALTAB?OPEN&DBOPTION=ADD&NEW=Y';
+        add_enable = true;
+      }
+      else if (dbname === 'container_valtab') {   // RL-2021-03-28
+        data_entry_url = get_essid() + '/CONTAINER_VALTAB?OPEN&DBOPTION=ADD&NEW=Y&RECORD_DEFAULT=Y';
+        add_enable = true;
+      }
+      else if (dbname === 'sites') {   // KN-2022-08-17
+        data_entry_url = get_sessid() + '/GEOGRAPHIC_SITE_VALTAB?OPEN&DBOPTION=ADD&NEW=Y';
+        add_enable = true;
+      }
+      else {
+        if ( create_record == 'Y' ) {
+          data_entry_url = get_sessid() + '/' + dbname.toUpperCase() + '?OPEN&DBOPTION=ADD&NEW=Y';
+          add_enable = true;
+        }
+      }
+
+
+      if ( add_enable ) {  // RL-2021-03-28
+        html = $('<li><a href="' + data_entry_url + '" title="Add New Record"><i class="fa fa-plus fa-2x"></i></a></li>');  // RL-2021-05-31
+        $('ul.search_control').append(html);
+      }
+    }
+  });
+</script>

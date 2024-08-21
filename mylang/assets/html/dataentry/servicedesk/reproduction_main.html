@@ -1,0 +1,285 @@
+<span class="hidden current_page" id="main"></span>
+
+<fieldset class="logical_group">
+  <legend>Client Information</legend>
+  <div class="borderless form_row">
+    <div class="small_field field_container">
+      <label for="REQ_PATRON_ID">Client ID</label>
+      <input type="text" id="REQ_PATRON_ID" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="REQ_AOR_CARD_NO">Former AOR Card No.</label>
+      <input type="text" id="REQ_AOR_CARD_NO" readonly>
+    </div>
+   
+      <div class="small field_container">
+        <label for="REQ_PATRON_NAME">Client Name</label>
+        <input type="text" id="REQ_PATRON_NAME" readonly>
+      </div>
+      <div class="small field_container">
+        <label for="REQ_PATRON_EMAIL">Client Email</label>
+        <input type="text" id="REQ_PATRON_EMAIL" readonly>
+      </div>
+    </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="REQ_AFFILIATE">Client Affiliation</label>
+      <input type="text" id="REQ_AFFILIATE" readonly>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Item Information</legend>
+  <div class="borderless form_row">
+    <div class="medium field_container">
+      <label for="REQ_ITEM_ID">Item ID</label>
+      <input type="text" id="REQ_ITEM_ID" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="REQ_DB_NAME">Item Source</label>
+      <input type="text" id="REQ_DB_NAME" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="REQ_RESTR_ITEM">Restricted</label>
+      <input type="text" id="REQ_RESTR_ITEM" readonly>
+    </div>
+  </div>
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="REQ_ITEM_TITLE">Item Title</label>
+      <input type="text" id="REQ_ITEM_TITLE" readonly>
+    </div>
+  </div>
+  <div class="borderless form_row">
+    <div class="medium field_container">
+      <label for="REQ_LOC_CODE">Location Code</label>
+      <input type="text" id="REQ_LOC_CODE" readonly>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group indent_box">
+  <legend>Reproduction/Certification Details</legend>
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <label for="REQ_RUSH">Rush Job</label>
+      <input type="checkbox" id="REQ_RUSH">
+    </div>
+    <div class="small field_container">
+      <label for="REQ_DELIVERY">Delivery Method</label>
+      <select id="REQ_DELIVERY">
+        <option></option>
+        <option>Courier</option>
+        <option>Digital Delivery</option>
+        <option>Email</option>
+        <option>FTP</option>
+        <option>In Person</option>
+        <option>Mail</option>
+      </select>
+    </div>
+
+    <div class="medium field_container">
+      <label for="REQ_WAYBILL_NO">Courier Waybill No.</label>
+      <input type="text" id="REQ_WAYBILL_NO">
+    </div>
+  </div>
+
+  <fieldset class="repeating_group" data-group-title="Reproduction Item(s)" id="REQ_REPROD_FILES">
+    <div class="borderless form_row">
+      <div class="small field_container">
+        <label for="REPRO_ITEM_TYPE">Item Type</label>
+        <select id="REPRO_ITEM_TYPE">
+          <option></option>
+          <option>Audio</option>
+          <option>Video</option>
+          <option>Graphic</option>
+          <option>Text</option>
+        </select>
+      </div>
+
+      <div class="small field_container">
+        <label for="REQ_REPRO_TYPE">Type of Reproduction</label>
+        <select id="REQ_REPRO_TYPE">
+          <option></option>
+          <option>Digital Copy up to 18" x 25"</option>
+          <option>Digital Copy up to 18" x 56"</option>
+          <option>Hi-Resolution Copy</option>
+          <option>Sound & Moving Images</option>
+          <option>Print up to 11" x 17"</option>
+          <option>Print up to 11" x 36"</option>
+          <option>Certified Copies</option>
+        </select>
+      </div>
+
+      <div class="small field_container">
+        <label for="REQ_NUM_UNITS"># of Pages/Titles</label>
+        <input type="number" id="REQ_NUM_UNITS">
+      </div>
+
+      <div class="small field_container">
+        <label for="REPRO_COST">Cost</label>
+        <input type="number" id="REPRO_COST" step="0.01">
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="REPRO_ITEM_TITLE">Item Title</label>
+        <input type="text" id="REPRO_ITEM_TITLE">
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="full image file_attachment field_container">
+        <label for="REQ_REPROD_FILE">Reproduction File Path</label>
+        <input type="text" id="REQ_REPROD_FILE" readonly>
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="REPRO_ITEM_CAP">Item Caption</label>
+        <textarea id="REPRO_ITEM_CAP"></textarea>
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="small field_container">
+        <label for="REPRO_TO_DESC">Transfer to Description</label>
+        <input type="checkbox" id="REPRO_TO_DESC">
+      </div>
+    </div>
+  </fieldset>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="REQ_TOPIC_RP">Reproduction Notes</label>
+      <textarea id="REQ_TOPIC_RP"></textarea>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <label for="REQ_CHARGE_AMT">Charge Amount</label>
+      <input type="number" id="REQ_CHARGE_AMT" step="0.01">
+    </div>
+    <div class="small field_container">
+      <label for="REQ_TAX_PERCENT">Tax Percentage</label>
+      <input type="number" id="REQ_TAX_PERCENT" step="1">
+    </div>
+    <div class="small field_container">
+      <label for="REQ_HANDLING">Shipping/Handling</label>
+      <input type="number" id="REQ_HANDLING" step="0.01">
+    </div>
+    <div class="small field_container">
+      <label for="REQ_PAID_AMT">Total Amount</label>
+      <input type="number" id="REQ_PAID_AMT" step="0.01" readonly>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <label for="REQ_WAIVE_AMT">Waive Charge</label>
+      <input type="checkbox" id="REQ_WAIVE_AMT" class="generate_field_exit protect_field_exit unprotect_field_exit"
+          data-protect1="'REQ_WAIVE_AMT X',REQ_CHARGE_AMT"
+          data-generate1="'REQ_WAIVE_AMT X',REQ_CHARGE_AMT,''"
+          data-unprotect1="'REQ_WAIVE_AMT !-',REQ_CHARGE_AMT"
+      >
+    </div>
+    <div class="small field_container">
+      <label for="REQ_WAIVE_TAX">Waive Tax</label>
+      <input type="checkbox" id="REQ_WAIVE_TAX" step="0.01" step="0.01" class="generate_field_exit protect_field_exit unprotect_field_exit"
+          data-protect1="'REQ_WAIVE_TAX X',REQ_TAX_PERCENT"
+          data-generate1="'REQ_WAIVE_TAX X',REQ_TAX_PERCENT,''"
+          data-unprotect1="'REQ_WAIVE_TAX !-',REQ_TAX_PERCENT"
+      >
+    </div>
+    <div class="small field_container">
+      <label for="REQ_WAIVE_HDL">Waive Shipping/Handling</label>
+      <input type="checkbox" id="REQ_WAIVE_HDL" class="generate_field_exit protect_field_exit unprotect_field_exit"
+          data-protect1="'REQ_WAIVE_HDL X',REQ_HANDLING"
+          data-generate1="'REQ_WAIVE_HDL X',REQ_HANDLING,''"
+          data-unprotect1="'REQ_WAIVE_HDL !-',REQ_HANDLING"
+      >
+    </div>
+    <div class="small field_container">
+      <label for="REQ_PARTIAL_PAID">Deposit</label>
+      <input type="number" id="REQ_PARTIAL_PAID" step="0.01" readonly>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="small form_button field_container" style="font-size: 1rem; margin-top: 3px;" id="COMPLETED_BUTTON">
+      <a href="#" onclick="CompleteReproduction($(this));"><i class="fa fa-check"></i> Completed</a>
+    </div>
+    <div class="small field_container">
+      <label for="REQ_REPRO_DATE">Completed On</label>
+      <input type="text" id="REQ_REPRO_DATE" readonly>
+    </div>
+    <div class="small field_container">
+      <label for="REQ_REPRO_USER">Completed By</label>
+      <input type="text" id="REQ_REPRO_USER" readonly>
+    </div>
+    <div class="small form_button field_container" style="font-size: 1rem; margin-top: 3px;" id="PRINT_COVER_BUTTON">
+      <a href="#" onclick="PrintCoverPageon($(this));"><i class="fa fa-print"></i> Print Cover Page</a>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Actions taken on record</legend>
+
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <span class="title_text">Entered On / By</span>
+    </div>
+    <div class="small field_container">
+      <span class="title_text">Completed On / By</span>
+    </div>
+    <div class="small field_container">
+      <span class="title_text">Due On</span>
+    </div>
+    <div class="small field_container">
+      <span class="title_text">Return On</span>
+    </div>
+  </div>
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <input type="text" id="CREATE_DATE" readonly>
+    </div>
+    <div class="small field_container">
+      <input type="text" id="REG_COMPLETE_DAT" readonly>
+    </div>
+    <div class="small date field_container">
+      <input type="text" id="REQ_DUE_DATE">
+    </div>
+    <div class="small field_container">
+      <input type="text" id="REQ_RETURN_DATE" readonly>
+    </div>
+  </div>
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <input type="text" id="REQUESTOR_NAME" readonly>
+    </div>
+    <div class="small field_container">
+      <input type="text" id="REG_COMPLETE_ID" readonly>
+    </div>
+  </div>
+</fieldset>
+
+<!-- call initalization user routine -->
+<input type="hidden" class="init_call_exit protect_field_exit"
+   data-protect1="'REQ_WAIVE_AMT X',REQ_CHARGE_AMT"
+   data-protect2="'REQ_WAIVE_TAX X',REQ_TAX_PERCENT"
+   data-protect3="'REQ_WAIVE_HDL X',REQ_HANDLING"
+/>
+
+<!-- call record wrapup user routine -->
+<input type="hidden" class="wrapup_user_exit"
+  data-exit="wrapupRequest"
+/>

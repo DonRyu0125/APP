@@ -1,0 +1,96 @@
+<span class="hidden current_page" id="item_graphic_main"></span>
+
+<fieldset class="repeating_group has_image_holder" data-group-title="Item" id="ITEM_INFO">
+<!-- RL-2020-11-10 remove contains_image and add has_image_holder -->
+<fieldset class="repeating_group has_image_holder" data-group-title="Book Cover" id="L_IM_REF_GRP">
+  <div class="form_row borderless">
+      <div class="large image file_attachment field_container">
+        <label for="L_IM_ACCESS">Image Access</label>
+        <input type="text" id="L_IM_ACCESS" readonly>
+      </div>
+      <div>
+        <!-- RL-2020-11-10  image holder -->
+         <img class="field_img" src="/mylang/assets/img/image-placeholder.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="L_IM_CAPTION">Caption</label>
+      <textarea id="L_IM_CAPTION"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="medium field_container">
+      <label for="L_IM_OPAC">Web Ready</label>
+      <select id="L_IM_OPAC">
+        <option></option>
+        <option>Ready</option>
+        <option>Review</option>
+        <option>Restrict</option>
+      </select>
+    </div>
+
+    <div class="medium field_container">
+       <label for="L_IM_TYPE">Image Type</label>
+      <input type="text" id="L_IM_TYPE">
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="L_IM_CREDIT">Image credit line</label>
+      <textarea id="L_IM_CREDIT"></textarea>
+    </div>
+  </div>
+
+  <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="L_IM_AST_NAME">Asset Name</label>
+          <input type="text" id="L_IM_AST_NAME" readonly>
+        </div>
+      </div>
+
+        <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="L_IM_OCR">TDR OCR</label>
+          <input type="text" id="L_IM_OCR" readonly>
+        </div>
+      </div>
+
+    <div class="form_row">
+        <div class="full field_container">
+          <label for="L_IM_THUMB">TDR Thumbnail</label>
+          <input type="text" id="L_IM_THUMB">
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="L_IM_PRESER">TDR Preservation</label>
+          <input type="text" id="L_IM_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="L_IM_ORIGIN">TDR Original</label>
+          <input type="text" id="L_IM_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="L_IM_OTHER">TDR Other</label>
+          <input type="text" id="L_IM_OTHER" readonly>
+        </div>
+      </div>
+  </fieldset>
+</fieldset>
+</fieldset>
+

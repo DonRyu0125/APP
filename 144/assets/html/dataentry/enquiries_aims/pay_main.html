@@ -1,0 +1,119 @@
+<span class="hidden current_page" id="pay_main"></span>
+
+<div class="form_row">
+       <div class="small field_container">
+        <label for="ENQUIRY_NUMBER">Request No.</label>
+        <input type="text" id="ENQUIRY_NUMBER" readonly>
+      </div>
+
+       <div class="small field_container">
+        <label for="ENQ_TOTAL_COST">Total Cost</label>
+        <input type="text" id="ENQ_TOTAL_COST" readonly>
+      </div>
+
+  <div class="small field_container">
+    <label for="ENQ_STATUS">Status</label>
+        <input type="text" id="ENQ_STATUS" readonly>
+</div>
+</div>
+	  
+<fieldset class="repeating_group" data-group-title="Payment" id="ENQ_PAYMENT_GRP">
+ <div class="form_row">
+   <div class="small field_container">
+      <label for="ENQ_PAY_TYPE">Payment Type</label>
+      <select id="ENQ_PAY_TYPE">
+           <option></option>
+           <option>cash</option>
+           <option>cheque</option>
+           <option>credit card</option>
+           <option>interact</option>
+           <option>Pay Pal</option>
+        </select>
+      </div>
+
+   <div class="small date field_container">
+      <label for="ENQ_PAY_DATE">Date</label>
+      <input type="text" id="ENQ_PAY_DATE">
+    </div>
+
+	<div class="small field_container">
+      <label for="ENQ_PAYMENT_AMT">Payment Amount</label>
+      <input type="text" id="ENQ_PAYMENT_AMT">
+    </div>
+	
+   <div class="small field_container">
+      <label for="ENQ_PAY_LEVEL">Payment Level</label>
+      <select id="ENQ_PAY_LEVEL">
+           <option></option>
+           <option>partial</option>
+           <option>deposit</option>
+           <option>full</option>
+        </select>
+      </div>
+ </div>
+
+<fieldset class="logical_group">
+   <legend>Credit Card Information</legend>
+      <div class="form_row">
+       <div class="medium field_container">
+        <label for="ENQ_CC_TYPE">Credit Card Type</label>
+		<select id="ENQ_CC_TYPE">
+           <option></option>
+           <option>American Express</option>
+           <option>Master Card</option>
+           <option>Visa</option>
+        </select>
+       </div>
+
+	   	<div class="medium field_container">
+      <label for="ENQ_CC_NAME">Name as it appears on credit card</label>
+      <input type="text" id="ENQ_CC_NAME">
+    </div>
+    </div>
+
+ <div class="form_row">
+	<div class="small field_container">
+      <label for="ENQ_CC_NUMBER">Credit Card Number</label>
+      <input type="text" id="ENQ_CC_NUMBER">
+    </div>
+	
+	<div class="small field_container">
+      <label for="ENQ_CC_EXPIRY">Expiry Date</label>
+      <input type="text" id="ENQ_CC_EXPIRY">
+    </div>
+	
+	<div class="small field_container">
+      <label for="ENQ_CC_SECURE">CVC/Security Card</label>
+      <input type="text" id="ENQ_CC_SECURE">
+    </div>
+ </div>
+</fieldset>
+
+<fieldset class="logical_group">
+   <legend>Banking Information</legend>
+      <div class="form_row">
+       <div class="small field_container">
+        <label for="ENQ_CHEQUE_NO">Cheque No.</label>
+      <input type="text" id="ENQ_CHEQUE_NO">
+       </div>
+
+	 <div class="small field_container">
+      <label for="ENQ_TRANSIT_NO">Transit Number</label>
+      <input type="text" id="ENQ_TRANSIT_NO">
+    </div>
+
+	<div class="small field_container">
+      <label for="ENQ_ACCOUNT_NO">Account Numberr</label>
+      <input type="text" id="ENQ_ACCOUNT_NO">
+    </div>
+    </div>
+	
+</fieldset>
+
+ <div class="form_row">  
+   <div class="full field_container">
+      <label for="ENQ_PAY_NOTE">Payment Note</label>
+      <textarea id="ENQ_PAY_NOTE"></textarea>
+    </div>  
+  </div>
+	</fieldset>   

@@ -1,0 +1,163 @@
+<span class="hidden current_page" id="people_donor"></span>
+
+
+<fieldset class="repeating_group" data-group-title="Donation Details" id="DONOR_GROUP">
+  <div class="form_row borderless">
+    <div class="small field_container">
+      <label for="DONATION_ID">Donor ID</label>
+      <input type="text" id="DONATION_ID">
+    </div>
+
+    <div class="small field_container">
+    <label for="DONOR_TYPE">Donation Type</label>
+    <select id="DONOR_TYPE">
+      <option></option>
+      <option>Art Object</option>
+      <option>Money</option>
+      <option>Museum Object</option>
+    </select>
+    </div>
+
+    <div class="small field_container">
+      <label for="DONOR_AMOUNT">Donation Amount</label>
+      <input type="text" id="DONOR_AMOUNT">
+    </div>
+
+  <div class="form_row borderless">
+    <div class="small date field_container">
+      <label for="DONOR_DOLL_DATE">Date Received</label>
+      <input type="text" id="DONOR_DOLL_DATE" readonly>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="small field_container">
+      <label for="DONATION_RECURR">Time</label>
+      <select id="DONATION_RECURR">
+      <option></option>
+      <option>One Time</option>
+      <option>Monthly</option>
+      <option>Yearly</option>
+    </select>
+    </div>
+
+    <div class="medium field_container">
+      <label for="DONATION_EVENT">Campaign/Event</label>
+      <input type="text" id="DONATION_EVENT">
+    </div>
+
+    <div class="small field_container">
+      <label for="DONATION_EVNT_DT">Donation Amount</label>
+      <input type="text" id="DONATION_EVNT_DT">
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="large field_container">
+      <label for="DON_IN_MEMORY">In Honor/Memory of</label>
+      <input type="text" id="DON_IN_MEMORY">
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="medium field_container">
+      <label for="DONOR_ACCESSION">Identifier</label>
+      <input type="text" id="DONOR_ACCESSION">
+    </div>
+
+    <div class="medium field_container">
+      <label for="DONOR_TITLE">Title</label>
+      <input type="text" id="DONOR_TITLE">
+    </div>
+  </div>
+  
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="DONOR_DESCRIPTIO">Description</label>
+      <textarea id="DONOR_DESCRIPTIO"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="DONOR_NOTES">Note</label>
+      <textarea id="DONOR_NOTES"></textarea>
+    </div>
+  </div>
+
+<fieldset class="logical_group">
+  <legend>Payment Details</legend>
+  <div class="form_row">
+    <div class="small date field_container">
+      <label for="DONOR_PAY_DATE">Date Received</label>
+      <input type="text" id="DONOR_PAY_DATE" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="DONOR_PAY_TYPE">Payment Type</label>
+      <input type="text" id="DONOR_PAY_TYPE">
+    </div>
+
+    <div class="small field_container">
+      <label for="DONOR_PAY_AMOUNT">Amount</label>
+      <input type="text" id="DONOR_PAY_AMOUNT">
+    </div>
+
+    <div class="small field_container">
+      <label for="DONOR_PAY">Payment Details</label>
+      <input type="text" id="DONOR_PAY">
+    </div>
+  </div>
+  
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="DONOR_PAY_NOTES">Note</label>
+      <textarea id="DONOR_PAY_NOTES"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Documentation Checklist</legend>
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="DONOR_THANKU_YN">Thank you Letter</label>
+      <select id="DONOR_THANKU_YN">
+      <option></option>
+      <option>Yes</option>
+      <option>No</option>
+      </select>
+    </div>
+
+    <div class="small date field_container">
+      <label for="DONOR_THANKU_SEN">Sent On</label>
+      <input type="text" id="DONOR_THANKU_SEN" readonly>
+    </div>
+
+    <div class="medium validated_table field_container">
+      <label for="DONOR_THANKU_BY">Sent By</label>
+      <input type="text" id="DONOR_THANKU_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="DON_TAXRCPT_YN">Membership Card</label>
+      <select id="DON_TAXRCPT_YN">
+      <option></option>
+      <option>Yes</option>
+      <option>No</option>
+      </select>
+    </div>
+
+    <div class="small date field_container">
+      <label for="DON_TAXRCPT_SENT">Sent On</label>
+      <input type="text" id="DON_TAXRCPT_SENT" readonly>
+    </div>
+
+    <div class="medium validated_table field_container">
+      <label for="DON_TAXRCPT_BY">Sent By</label>
+      <input type="text" id="DON_TAXRCPT_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+  </div>
+</fieldset>

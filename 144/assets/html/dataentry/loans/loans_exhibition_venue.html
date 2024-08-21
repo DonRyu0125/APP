@@ -1,0 +1,109 @@
+<span class="hidden current_page" id="loans_exhibition_venue"></span>
+
+<fieldset class="logical_group">
+  <legend>Exhibition Details</legend>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="EXHIB_NAME">Exhibition Title</label>
+      <input type="text" id="EXHIB_NAME">
+    </div>
+	</div>
+	
+  <div class="form_row">	
+    <div class="full field_container">
+      <label for="EXHIB_THEME">Theme</label>
+      <input type="text" id="EXHIB_THEME">
+    </div>
+	</div>
+
+ <div class="form_row">
+    <div class="small date field_container">
+      <label for="EXHIB_START">Start Date</label>
+      <input type="text" id="EXHIB_START">
+    </div>
+
+    <div class="small date field_container">
+      <label for="EXHIB_END">End Date</label>
+      <input type="text" id="EXHIB_END">
+    </div>
+
+    <div class="small field_container">
+      <label for="EXHIB_TOT_SPACE">Total Space</label>
+      <input type="text" id="EXHIB_TOT_SPACE">
+    </div>
+	
+     <div class="small people_validated_field field_container" data-map="exhibition_registrar">
+      <label for="EXHIB_REGISTER">Registrar</label>
+      <input type="text" id="EXHIB_REGISTER" readonly>
+      <input type="hidden" id="EXHIB_REG_ID">
+    </div>
+	</div>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="EXHIB_LIGHT_SPEC">Exhibition Spec</label>
+      <textarea id="EXHIB_LIGHT_SPEC"></textarea>
+    </div>
+
+    <div class="medium field_container">
+      <label for="EXHIB_CAT">Exhibition Catalogue</label>
+      <textarea id="EXHIB_CAT"></textarea>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="EXHIB_VENUE">Exhibition Notes</label>
+      <textarea id="EXHIB_VENUE"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Venue Details" id="VENUE_GROUP">
+  <div class="form_row">
+    <div class="medium org_validated_field field_container" data-map="venue_institution">
+      <label for="EXHIB_V_VENUE">Institution Location</label>
+      <input type="text" id="EXHIB_V_VENUE" readonly>
+	  <input type="hidden" id="EXHIB_V_VENUE_ID">
+    </div>
+
+    <div class="medium people_validated_field field_container" data-map="venue_institution_contact">
+      <label for="EXH_V_CURATOR">Institution Location Contact</label>
+      <input type="text" id="EXH_V_CURATOR" readonly>
+      <input type="hidden" id="EXH_V_CURATOR_ID">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium location_validated_field field_container" data-map="venue_location">
+      <label for="EXH_V_INHOUSE">Inhouse Location</label>
+      <input type="text" id="EXH_V_INHOUSE" readonly>
+    </div>
+
+    <div class="medium people_validated_field field_container" data-map="venue_location_contact">
+      <label for="EXH_V_CUR_INHOUS">Inhouse Location Contact</label>
+      <input type="text" id="EXH_V_CUR_INHOUS" readonly>
+      <input type="hidden" id="EXH_V_CUR_INH_ID">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium date field_container">
+      <label for="EXHIB_PROP_DATE1">Start Date</label>
+      <input type="text" id="EXHIB_PROP_DATE1">
+    </div>
+
+    <div class="medium date field_container">
+      <label for="EXHIB_PROP_DATE2">End Date</label>
+      <input type="text" id="EXHIB_PROP_DATE2">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="EXH_DETAIL">Venue Notes</label>
+      <textarea id="EXH_DETAIL"></textarea>
+    </div>
+  </div>
+</fieldset>

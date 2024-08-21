@@ -1,0 +1,74 @@
+<span class="hidden current_page" id="appraisal_main"></span>
+
+
+<div class="form_row">
+    <div class="small date field_container">
+     <label for="REAPPRAISAL_DATE">Reappraisal Date</label>
+    <input type="text" id="REAPPRAISAL_DATE">
+  </div>
+  </div>
+  
+<fieldset class="repeating_group" data-group-title="Appraisal" id="APPRAISAL_ACT">
+  <div class="form_row">
+    <div class="small date field_container">
+     <label for="APPRAISED_ON">Appraised on</label>
+     <input type="text" id="APPRAISED_ON">
+  </div>
+
+    <div class="medium validated_table field_container">
+      <label for="APPRAISED_BY">Processed By</label>
+      <input type="text" id="APPRAISED_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+  </div>
+
+  <div class="form_row">
+      <div class="medium repeating_field field_container">
+       <label for="DISPOSITION">Disposition</label>
+       <select id="DISPOSITION">
+        <option></option>
+        <option>Accept</option>
+        <option>Reject</option>
+        <option>Sample</option>
+        <option>Weed</option>
+        <option>Recommend microfilm</option>
+        <option>Recommend digitization</option>
+        <option>Correlate increments</option>
+        <option>Deaccession</option>
+      </select> 
+  </div>
+
+      <div class="medium field_container">
+        <label for="PHYS_CONDITION">Physical Condition</label>
+        <select id="PHYS_CONDITION">
+          <option></option>
+          <option>Excellent</option>
+          <option>Good</option>
+          <option>Fair</option>
+          <option>Poor</option>
+         </select>
+      </div>
+    </div> 
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="ACTION">Action</label>
+    <textarea id="ACTION"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="ACTION_NEEDED">Action Needed</label>
+    <textarea id="ACTION_NEEDED"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="ACTION_RECOM">Action Recommended</label>
+    <textarea id="ACTION_RECOM"></textarea>
+  </div>
+</div>
+</fieldset>
+
+

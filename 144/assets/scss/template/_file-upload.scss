@@ -1,0 +1,28 @@
+body.file_upload {
+  min-width: 500px;
+  text-align: center;
+
+  h2 {
+    margin-top: 2.5rem;
+  }
+
+  form {
+    input[type=submit] {
+      display: inline-block;
+      @include transition(all 0.35s);
+      margin-top: 1.2rem;
+      text-align: center;
+      padding: 0.75rem;
+      background: darken($light, 45%);
+      border-radius: $roundness;
+      border: 0;
+      font-size: 1.25rem;
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        background: darken($light, 60%);
+      }
+    }
+  }
+}

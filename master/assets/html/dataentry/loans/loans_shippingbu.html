@@ -1,0 +1,139 @@
+<span class="hidden current_page" id="shipping_main"></span>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="LO_ID">ID</label>
+    <input type="text" id="LO_ID" readonly>
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Shipping Information" id="LO_SHIP_GRP">
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="LO_SHIP_REF_NUM">Reference No.</label>
+      <input type="text" id="LO_SHIP_REF_NUM">
+  </div>
+   
+    <div class="small date field_container">
+      <label for="LO_SHIP_DATE">Shipped On</label>
+      <input type="text" id="LO_SHIP_DATE">
+    </div>
+	
+    <div class="small field_container">
+      <label for="LO_SHIP_METHOD">Shipping Method</label>
+      <select id="LO_SHIP_METHOD">
+        <option></option>
+        <option>Ground</option>
+        <option>Air</option>
+        <option>Rail</option>
+      </select>
+    </div>
+	
+	 <div class="small field_container">
+      <label for="LO_SHIP_INSUREDD">Insured?</label>
+      <select id="LO_SHIP_INSURED">
+        <option></option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div>
+  </div>
+	
+  <div class="form_row">
+     <div class="medium org_validated_field field_container" data-map="shipping_shipped_from">
+      <label for="LOAN_SHIP_TO_ORG">Shipped to Organization</label>
+      <input type="text" id="LOAN_SHIP_TO_ORG" readonly>
+      <input type="hidden" id="LOAN_SHIPTO_O_ID">
+    </div>
+
+    <div class="medium people_validated_field field_container" data-map="shipping_shipped_to">
+      <label for="LOAN_SHIP_TO">Shipped To Contact</label>
+      <input type="text" id="LOAN_SHIP_TO" readonly>
+      <input type="hidden" id="LOAN_SHIP_TO_ID">
+    </div>
+  </div>
+  
+  <fieldset class="repeating_group" data-group-title="Shipper" id="LO_SHIPPER_GRP">
+    <div class="form_row">
+      <div class="full org_validated_field people_validated_field field_container" data-map="revaluation_appraiser">
+        <label for="LO_SHIPPER">Shipper</label>
+        <input type="text" id="LO_SHIPPER" readonly>
+        <input type="hidden" id="LO_SHIP_IND_ID">
+      </div>
+    </div>
+	</fieldset>
+	
+    <div class="form_row">
+    <div class="large people_validated_field field_container" data-map="shipping_arranged_by">
+      <label for="LO_ORG_PERSONNEL">Accommpanied By</label>
+      <input type="text" id="LO_ORG_PERSONNEL" readonly>
+      <input type="hidden" id="LO_ORG_PER_ID">
+    </div>
+    </div>
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="LO_SHIP_NOTES">Shipping Notes</label>
+      <textarea id="LO_SHIP_NOTES"></textarea>
+    </div>
+  </div>
+	</fieldset>
+<fieldset class="repeating_group" data-group-title="Shipping Information" id="INSURANCE">
+  <div class="form_row">
+    <div class="medium org_validated_field field_container" data-map="shipping_insurer">
+      <label for="INSURER">Insurer</label>
+      <input type="text" id="INSURER" readonly>
+      <input type="hidden" id="INSURER_ID">
+    </div>
+
+    <div class="medium people_validated_field field_container" data-map="shipping_agent">
+      <label for="INSURE_AGENT">Agent</label>
+      <input type="text" id="INSURE_AGENT" readonly>
+      <input type="hidden" id="INS_AGENT_ID">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="small date field_container">
+      <label for="INSUR_CERT_START">Effective Date</label>
+      <input type="text" id="INSUR_CERT_START">
+    </div>
+
+    <div class="small date field_container">
+      <label for="INSUR_CERT_EXP">Expiry Date</label>
+      <input type="text" id="INSUR_CERT_EXP">
+    </div>
+
+    <div class="small field_container">
+      <label for="LO_INS_POLICY">Policy Number</label>
+      <input type="text" id="LO_INS_POLICY">
+    </div>
+
+    <div class="small field_container">
+      <label for="LO_INS_PREMIUM">Premium</label>
+      <input type="text" id="LO_INS_PREMIUM">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="small combo field_container">
+      <label for="EXHIB_INS_VAL">Insured Value</label>
+      <input type="text" id="EXHIB_INS_VAL">
+      <select id="EXHIB_INS_VAL_CU">
+        <option></option>
+        <option>CAD</option>
+        <option>EURO</option>
+        <option>FRA</option>
+        <option>GBP</option>
+        <option>USD</option>
+      </select>
+    </div>
+</div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="INS_NOTES">Notes</label>
+      <textarea id="INS_NOTES"></textarea>
+    </div>
+  </div>
+</fieldset>
+

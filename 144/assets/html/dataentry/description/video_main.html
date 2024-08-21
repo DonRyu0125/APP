@@ -1,0 +1,81 @@
+<span class="hidden current_page" id="video_main"></span>
+
+
+<fieldset class="repeating_group" data-group-title="Video" id="A_VD_REF_GRP">
+  <div class="form_row borderless">
+      <div class="full video file_attachment field_container">
+        <label for="A_VD_ACCESS">Access Path</label>
+        <input type="text" id="A_VD_ACCESS">
+      </div>
+  </div>
+  
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="A_VD_CAPTION">Caption</label>
+      <textarea id="A_VD_CAPTION"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="medium field_container">
+      <label for="A_VD_OPAC">Web Ready</label>
+      <select id="A_VD_OPAC">
+        <option></option>
+        <option>Ready</option>
+        <option>Review</option>
+        <option>Restrict</option>
+      </select>
+    </div>
+
+    <div class="medium location_validated_field field_container" data-map="video_location">
+      <label for="A_VD_LOCATION_ID">Location</label>
+      <input type="text" id="A_VD_LOCATION_ID" readonly>
+    </div>
+  </div>
+
+  <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_VD_AST_NAME">Asset Name</label>
+          <input type="text" id="A_VD_AST_NAME" readonly>
+        </div>
+      </div>
+
+        <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="A_VD_OCR">TDR OCR</label>
+          <input type="text" id="A_VD_OCR" readonly>
+        </div>
+      </div>
+
+     <div class="form_row">
+        <div class="full field_container">
+          <label for="A_VD_THUMB">TDR Thumb</label>
+          <input type="text" id="A_VD_THUMB">
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_VD_PRESER">TDR Preservation</label>
+          <input type="text" id="A_VD_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_VD_ORIGIN">TDR Original</label>
+          <input type="text" id="A_VD_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_VD_OTHER">TDR Other</label>
+          <input type="text" id="A_VD_OTHER" readonly>
+        </div>
+      </div>
+  </fieldset>
+</fieldset>

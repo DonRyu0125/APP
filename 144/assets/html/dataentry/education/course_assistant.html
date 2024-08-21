@@ -1,0 +1,167 @@
+<span class="hidden current_page" id="course_assistant"></span>
+
+<fieldset class="repeating_group" data-group-title="Course Details" id="EDU_COURSE_DETAI">
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="EDU_CRS_PERIOD">Course Period</label>
+      <input type="text" id="EDU_CRS_PERIOD" readonly> 
+    </div>
+    </div>
+
+<fieldset class="repeating_group" data-group-title="Teaching Assistant" id="EDU_INSTRUCT_GRP">
+  <div class="form_row">
+    <div class="medium field_container">
+	<label for="EDU_INSTRUCTOR">Name</label>
+      <input type="text" id="EDU_INSTRUCTOR" readonly>
+    </div>
+  </div>
+
+  <fieldset class="logical_group">
+    <legend>Teaching Assistant</legend>
+
+  <div class="form_row">
+    <div class="large people_validated_field field_container" data-map="assistant_individual">
+      <label for="EDU_INSTR_ASSIST">Name</label>
+      <input type="text" id="EDU_INSTR_ASSIST" readonly>
+      <input type="hidden" id="EDU_INS_ASSIST_I">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="EDU_ASSIST_PHONE">Phone</label>
+      <input type="text" id="EDU_ASSIST_PHONE">
+    </div>
+
+    <div class="small field_container">
+      <label for="EDU_ASSIST_HRS">Office Hours</label>
+      <input type="text" id="EDU_ASSIST_HRS">
+    </div>
+
+    <div class="small field_container">
+      <label for="EDU_ASSIST_EMAIL">Email</label>
+      <input type="text" id="EDU_ASSIST_EMAIL">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium location_validated_field field_container" data-map="assistant_location">
+      <label for="EDU_ASSIST_LOCAT">Location</label>
+      <input type="text" id="EDU_ASSIST_LOCAT" readonly>
+    </div>
+  <div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Assistant Comments" id="EDU_ASSIST_GRP">
+  <div class="form_row">
+    </div>
+    <div class="small date field_container">
+      <label for="EDU_ASSIST_DATE">Date</label>
+      <input type="text" id="EDU_ASSIST_DATE" readonly>
+    </div>
+    </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+    <label for="EDU_ASSIST_NOTES">Comment</label>
+    <textarea id="EDU_ASSIST_NOTES"></textarea>
+    </div>
+  </div>
+  
+<fieldset class="repeating_group" data-group-title="Assistant Textual" id="EDU_ASSIST_DOC_G">
+  <div class="form_row borderless">
+    <div class="full text file_attachment field_container">
+      <label for="ASIT_TX_ACCESS">Text/Access Path</label>
+      <input type="text" id="ASIT_TX_ACCESS">
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="ASIT_TX_CAPTION">Caption</label>
+      <textarea id="ASIT_TX_CAPTION"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="large field_container">
+      <label for="ASIT_TX_TYPE">Type</label>
+      <input type="text" id="ASIT_TX_TYPE">
+    </div>
+  </div>
+
+  
+  <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="ASIT_TX_AST_NAME">Asset Name</label>
+          <input type="text" id="ASIT_TX_AST_NAME" readonly>
+        </div>
+      </div>
+	  
+        <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="ASIT_TX_OCR">TDR OCR</label>
+          <input type="text" id="ASIT_TX_OCR" readonly>
+        </div>
+      </div>
+	  
+     <div class="form_row">
+        <div class="full field_container">
+          <label for="ASIT_TX_THUMB">TDR Thumb</label>
+          <input type="text" id="ASIT_TX_THUMB" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="ASIT_TX_PRESER">TDR Preservation</label>
+          <input type="text" id="ASIT_TX_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="ASIT_TX_ORIGIN">TDR Original</label>
+          <input type="text" id="ASIT_TX_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="ASIT_TX_OTHER">TDR Other</label>
+          <input type="text" id="ASIT_TX_OTHER" readonly>
+        </div>
+      </div>
+</fieldset>
+</fieldset>
+</fieldset>
+
+ <fieldset class="repeating_group" data-group-title="Other Individuals Involved" id="EDU_OTHER_GROUP">
+  <div class="form_row">
+    <div class="large people_validated_field field_container" data-map="instructor_individual">
+      <label for="EDU_OTHER_NAME">Name</label>
+      <input type="text" id="EDU_OTHER_NAME" readonly>
+      <input type="hidden" id="EDU_OTHR_NAME_ID">
+    </div>
+
+    <div class="small field_container">
+      <label for="EDU_OTHER_TYPE">Role</label>
+      <select id="EDU_OTHER_TYPE">
+        <option></option>
+        <option>Collaborator</option>
+        <option>Guest Speaker</option>
+      </select>
+    </div>
+  </div>
+  <div class="form_row">
+    <div class="full field_container">
+    <label for="EDU_OTHER_NOTE">Note</label>
+    <textarea id="EDU_OTHER_NOTE"></textarea>
+    </div>
+  </div>
+</fieldset>
+</fieldset>
+</fieldset>

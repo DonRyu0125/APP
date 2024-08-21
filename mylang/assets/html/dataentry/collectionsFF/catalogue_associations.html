@@ -1,0 +1,140 @@
+<span class="hidden current_page" id="catalogue_associations"></span>
+
+<fieldset class="repeating_group" data-group-title="Associated Person" id="ASSOC_PERSON_GRP">
+  <div class="borderless form_row">
+    <div class="large people_validated_field field_container" data-map="associated_person">
+      <label for="ASSOC_FULLNAME3">Name</label>
+      <input type="text" id="ASSOC_FULLNAME3" readonly>
+      <input type="hidden" id="ASSOC_FULL_ID">
+    </div>
+
+    <div class="small repeating_field field_container">
+      <label for="ASSOC_PERSON_TYP">Type</label>
+      <select id="ASSOC_PERSON_TYP">
+        <option></option>
+        <option>Military Unit</option>
+        <option>Owner</option>
+        <option>Related to Person</option>
+        <option>Renter</option>
+      </select> 
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Associated Organization" id="ASSOC_ORG_GRP">
+  <div class="borderless form_row">
+    <div class="large org_validated_field field_container" data-map="associated_organization">
+      <label for="ORG_ASSOC">Organization</label>
+      <input type="text" id="ORG_ASSOC" readonly>
+      <input type="hidden" id="ASSOC_ORG_ID">
+    </div>
+    
+    <div class="small repeating_field field_container">
+      <label for="ORG_ASSOC_TYPE">Type</label>
+      <select id="ORG_ASSOC_TYPE">
+        <option></option>
+        <option>Military Unit</option>
+        <option>Owner</option>
+        <option>Related to Person</option>
+        <option>Renter</option>
+      </select> 
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Associated Place" id="ASSOC_PLACE_NAME">
+  <div class="form_row">
+    <div class="large field_container">
+      <label for="PLACE_ASSOC_NAME">Description</label>
+      <input type="text" id="PLACE_ASSOC_NAME">
+    </div>
+    
+    <div class="small repeating_field field_container">
+      <label for="PLACE_ASSOC_TYPE">Type</label>
+      <select id="PLACE_ASSOC_TYPE">
+        <option></option>
+        <option>Manufactured location</option>
+        <option>Place of Origin</option>
+        <option>Tomb</option>
+      </select> 
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="ADDRESS1">Address 1</label>
+      <input type="text" id="ADDRESS1">
+    </div>
+
+    <div class="small field_container">
+      <label for="ADDRESS2">Address 2</label>
+      <input type="text" id="ADDRESS2">
+    </div>
+
+    <div class="small field_container">
+      <label for="ADDRESS3">Address 3</label>
+      <input type="text" id="ADDRESS3">
+    </div>
+
+    <div class="small field_container">
+      <label for="AP_CITY_TOWN">Town / City</label>
+      <input type="text" id="AP_CITY_TOWN">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <label for="AP_COUNTY">Province / State</label>
+      <input type="text" id="AP_COUNTY">
+    </div>
+
+    <div class="small field_container">
+      <label for="AP_COUNTRY">Country</label>
+      <input type="text" id="AP_COUNTRY">
+    </div>
+
+    <div class="small field_container">
+      <label for="AP_CONTINENT">Continent</label>
+      <input type="text" id="AP_CONTINENT">
+    </div>
+
+    <div class="small field_container">
+      <label for="AP_P_CODE">ZIP / Postal Code</label>
+      <input type="text" id="AP_P_CODE">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Associated Event" id="ASOCIATION_EVENT">
+  <div class="borderless form_row">
+    <div class="medium event_validated_field field_container" data-map="associated_event">
+      <label for="EVENT_NAME">Event</label>
+      <input type="text" id="EVENT_NAME" readonly>
+      <input type="hidden" id="ASSOC_EVENT_ID">
+    </div>
+    
+    <div class="small date field_container">
+      <label for="EVENT_DATE">Date</label>
+      <input type="text" id="EVENT_DATE" readonly>
+    </div>
+    
+    <div class="small repeating_field field_container">
+      <label for="EVENT_ASSOC_TYPE">Type</label>
+      <select id="EVENT_ASSOC_TYPE">
+        <option></option>
+        <option>Archaeology</option>
+        <option>Exposition</option>
+        <option>Groundbreaking</option>
+        <option>Official Ceremony</option>
+        <option>Official Visit</option>
+      </select> 
+    </div>
+  </div>
+</fieldset>
+
+<div class="borderless form_row">
+  <div class="full field_container">
+    <label for="ASSOC_NOTES">Notes</label>
+    <textarea id="ASSOC_NOTES"></textarea>
+  </div>
+</div>

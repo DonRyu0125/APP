@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Download Report</title>     
+    </head>
+    <body class="download">
+        <h3>The download file has been successfully created.</h3>
+        <p>Please right-click and choose "Save As" to download your report.</p>
+		<p><a class="button" id="start_download" href="#">Download Report</a></p>
+        <input type="hidden" id="report" value="^REPORT^" />
+
+		<script>
+			$(document).ready(function(){
+				var report = $('#report').val();
+				var raw_report = unescape(report);
+				var filename = raw_report.split('/');
+					filename = filename.pop();
+					
+				$('#start_download').attr('href', '/mylang/web_temp/'+filename);
+			});
+		</script>
+	</body>
+</html>

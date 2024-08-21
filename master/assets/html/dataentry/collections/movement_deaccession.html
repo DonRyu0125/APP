@@ -1,0 +1,71 @@
+<span class="hidden current_page" id="movement_deaccession"></span>
+
+<div class="form_row">
+  <div class="small field_container">
+    <label for="LEGAL_RIGHT">Legal Right</label>
+    <select id="LEGAL_RIGHT">
+      <option></option>
+      <option>Yes</option>
+      <option>No</option>
+    </select>
+  </div>
+
+  <div class="medium field_container">
+    <label for="REASON_DESPATCH">Deaccession Type</label>
+    <select id="REASON_DESPATCH">
+      <option></option>
+      <option>Deaccessioned - auctioned</option>
+      <option>Deaccessioned - destroyed</option>
+      <option>Deaccessioned - repatriated</option>
+      <option>Deaccessioned - repatriated under treaty</option>
+      <option>Deaccessioned - returned to owner</option>
+      <option>Deaccessioned - transferred</option>
+    </select>
+  </div>
+
+  <div class="small org_validated_field people_validated_field field_container" data-map="deaccessioned_to">
+    <label for="DES_REC_BY">Deaccessioned To</label>
+    <input type="text" id="DES_REC_BY" readonly>
+    <input type="hidden" id="DES_REC_BY_ID">
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="DEACCESSION_NOTE">Deaccession Notes</label>
+    <textarea id="DEACCESSION_NOTE"></textarea>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="medium date field_container">
+    <label for="DISPOSAL_DATE">Deaccessioned On</label>
+    <input type="text" id="DISPOSAL_DATE">
+  </div>
+
+  <div class="medium validated_table field_container">
+    <label for="DEACCESSION_BY">Deaccessioned By</label>
+    <input type="text" id="DEACCESSION_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="medium date field_container">
+    <label for="APPROVED_DATE">Authorized Date</label>
+    <input type="text" id="APPROVED_DATE">
+  </div>
+
+  <div class="medium validated_table field_container">
+    <label for="APPROVED_BY">Authorized By</label>
+    <input type="text" id="APPROVED_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Deaccessioned Documents" id="DEACC_DOC_GRP">
+  <div class="borderless form_row">
+    <div class="full text file_attachment field_container">
+      <label for="DEACCESSION_DOCS">Document</label>
+      <input type="text" id="DEACCESSION_DOCS" readonly>
+    </div>
+  </div>
+</fieldset>

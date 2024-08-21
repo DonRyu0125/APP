@@ -1,0 +1,167 @@
+<span class="hidden current_page" id="bldgincident_main"></span>
+
+<fieldset class="repeating_group" data-group-title="Incident(s)" id="BD_INCIDENT_GRP">
+ <div class="form_row">
+     <div class="small date field_container">
+      <label for="BD_INCIDENT_DATE">Date</label>
+      <input type="text" id="BD_INCIDENT_DATE">
+    </div>
+
+    <div class="large validated_table field_container">
+      <label for="BD_INC_REPORT_BY">Reported by</label>
+    <input type="text" id="BD_INC_REPORT_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+  </div>
+
+  <div class="form_row">
+     <div class="full field_container">
+      <label for="BD_INCIDENT_TYPE">Type</label>
+      <input type="text" id="BD_INCIDENT_TYPE">
+    </div>
+    </div>
+
+  <div class="form_row">
+      <div class="full field_container">
+        <label for="BD_INCIDENT_NOTE">Incident</label>
+        <textarea id="BD_INCIDENT_NOTE"></textarea>
+    </div>
+  </div>
+
+    <fieldset class="repeating_group" data-group-title="People Involved" id="BD_INC_PEOPLE_GR">
+    <div class="form_row contains_browse">
+      <div class="full people_validated_field field_container" data-map="bdincident_person">
+        <label for="BD_INC_PERSON">Name</label>
+        <input type="text" id="BD_INC_PERSON" readonly>
+        <input type="hidden" id="BD_INC_PERSON_ID">
+      </div>
+    </div>
+
+ <div class="form_row">
+    <div class="full field_container">
+      <label for="BD_INC_PER_ROLE">Role</label>
+      <input type="text" id="BD_INC_PER_ROLE">
+    </div>
+    </div>
+
+ <div class="form_row">
+    <div class="large field_container">
+      <label for="BD_INC_PER_INJUR">Injuries</label>
+      <input type="text" id="BD_INC_PER_INJUR">
+    </div>
+
+     <div class="small field_container">
+        <label for="BD_INC_PER_CLM_N">Claim Submitted?</label>
+        <select id="BD_INC_PER_CLM_N">
+          <option></option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+    </div>
+    </div>
+
+ <div class="form_row">
+    <div class="full field_container">
+      <label for="BD_INC_PER_CLAIM">Claim statement</label>
+      <input type="text" id="BD_INC_PER_CLAIM">
+    </div>
+    </div>
+    </fieldset>
+
+
+  <div class="form_row">
+    <div class="small field_container">
+        <label for="BD_INC_EMERG_Y">Emergency Services Involved?</label>
+        <select id="BD_INC_EMERG_Y">
+          <option></option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+    </div>
+    </div>
+  <div class="form_row">
+    <div class="full repeating_field field_container">
+      <label for="BD_INC_EMERG">Emergency Service</label>
+      <textarea id="BD_INC_EMERG"></textarea>
+    </div>
+  </div>
+
+<div class="form_row">
+    <div class="medium validated_table field_container">
+      <label for="BD_INC_INVEST_BY">Reported by</label>
+    <input type="text" id="BD_INC_INVEST_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="BD_INC_INVEST_RE">Investigation result</label>
+      <input type="text" id="BD_INC_INVEST_RE">
+    </div>
+    </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="BD_INC_INVESTIGA">Investigation</label>
+      <textarea id="BD_INC_INVESTIGA"></textarea>
+    </div>
+    </div>
+
+ <fieldset class="repeating_group contains_image" data-group-title="Incident Images" id="BD_INCDNT_IMAGES">
+  <div class="form_row">
+    <div class="full image file_attachment field_container">
+      <label for="BD_INCDNT_IMG">Image Path</label>
+      <input type="text" id="BD_INCDNT_IMG">
+    </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="BD_INCDNT_IMG_CA">Note</label>
+      <textarea id="BD_INCDNT_IMG_CA"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Incident Video" id="BD_INCDNT_VID_GR">
+  <div class="borderless form_row">
+    <div class="full video file_attachment field_container">
+      <label for="BD_INCDNT_VIDEO">Video Path</label>
+      <input type="text" id="BD_INCDNT_VIDEO">
+    </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="BD_INCDNT_VID_NO">Note</label>
+      <textarea id="BD_INCDNT_VID_NO"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Incident Documents" id="BD_INCDNT_DOCS">
+  <div class="borderless form_row">
+    <div class="full text file_attachment field_container">
+      <label for="BD_INCDNT_DOC_PA">Notes Path</label>
+      <input type="text" id="BD_INCDNT_DOC_PA">
+    </div>
+    </div>
+
+   <div class="borderless form_row">
+    <div class="large field_container">
+      <label for="BD_INCDNT_DOC_TY">Type</label>
+      <input type="text" id="BD_INCDNT_DOC_TY">
+    </div>
+
+    <div class="small date field_container">
+      <label for="BD_INCDNT_DOC">Date</label>
+      <input type="text" id="BD_INCDNT_DOC_DT">
+    </div>
+    </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="BD_INCDNT_DOC_NO">Note</label>
+      <textarea id="BD_INCDNT_DOC_NO"></textarea>
+    </div>
+  </div>
+</fieldset>
+</fieldset>
+

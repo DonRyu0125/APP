@@ -1,0 +1,71 @@
+<span class="hidden current_page" id="movement_shipping_cost"></span>
+
+<fieldset class="repeating_group" data-group-title="Shipping Information" id="SHIPPING_GROUP">
+  <div class="form_row">
+    <div class="medium org_validated_field field_container" data-map="shipping_shipped_by">
+      <label for="SHIPPED_BY">Shipped By</label>
+      <input type="text" id="SHIPPED_BY">
+      <input type="hidden" id="SHIPPED_BY_ID">
+    </div>
+
+    <div class="small field_container">
+      <label for="">Shipping Reference Number</label>
+      <input type="text" id="">
+    </div>
+
+    <div class="small field_container">
+      <label for="SHIPPING_METHOD">Shipping Method</label>
+      <input type="text" id="SHIPPING_METHOD">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="small date field_container">
+      <label for="SHIPPED_ON">Shipped On</label>
+      <input type="text" id="SHIPPED_ON">
+    </div>
+
+    <div class="small field_container">
+      <label for="SHIPPING_COST">Shipping Cost</label>
+      <input type="text" id="SHIPPING_COST">
+    </div>
+
+    <div class="small field_container">
+      <label for="INSUR_COST">Insurance Cost</label>
+      <input type="text" id="INSUR_COST">
+    </div>
+
+    <div class="small field_container">
+      <label for="INSURED">Insured?</label>
+      <select id="INSURED">
+        <option></option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="SHIPPING_NOTES">Shipping Notes</label>
+      <textarea id="SHIPPING_NOTES"></textarea>
+    </div>
+  </div>
+
+  <fieldset class="logical_group" data-group-title="Cost">
+    <div class="borderless form_row">
+      <div class="full combo field_container">
+        <label for="SHPPING_TOTAL">Shipping Total</label>
+        <input type="text" id="SHPPING_TOTAL">
+        <select id="SHP_CURR">
+          <option></option>
+          <option>CAD</option>
+          <option>EURO</option>
+          <option>FRA</option>
+          <option>GBP</option>
+          <option>USD</option> 
+        </select>
+      </div>
+    </div>
+  </fieldset>
+</fieldset>

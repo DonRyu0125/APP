@@ -1,0 +1,55 @@
+<span class="hidden current_page" id="conservation_treatment_proposal"></span>
+
+<fieldset class="repeating_group" data-group-title="Examination / Treatment Details" id="CONSERVE_INFO">
+  <fieldset class="repeating_group" data-group-title="Treatment Proposal" id="TREATMENT_PROP">
+    <div class="form_row">
+      <div class="medium image file_attachment field_container">
+        <label for="PROPOSAL_DOC">Treatment Proposal Image</label>
+        <input type="text" id="PROPOSAL_DOC" readonly>
+      </div>
+
+      <div class="small combo field_container">
+        <label for="PROPOSAL_PRICE">Cost</label>
+        <input type="text" id="PROPOSAL_PRICE">
+        <select id="PROPOSAL_CUR">
+          <option></option>
+          <option>CAD</option>
+          <option>EURO</option>
+          <option>FRA</option>
+          <option>GBP</option>
+          <option>USD</option> 
+        </select>
+      </div>
+
+      <div class="small field_container">
+        <label for="PROPOSAL_IMP">Proposal Implemented</label>
+        <select id="PROPOSAL_IMP">
+          <option></option>
+          <option value="X">Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="large org_validated_field people_validated_field field_container" data-map="treatment_proposal_by">
+        <label for="PROP_IMP_BY">By</label>
+        <input type="text" id="PROP_IMP_BY" readonly>
+        <input type="hidden" id="PROP_IMP_ID">
+      </div>
+
+      <div class="small date field_container">
+        <label for="PROP_IMP_DATE">Date</label>
+        <input type="text" id="PROP_IMP_DATE">
+      </div>
+    </div>
+	
+	<div class="form_row">
+    <div class="full field_container">
+      <label for="PROP_NOTES">Comments</label>
+      <textarea id="PROP_NOTES"></textarea>
+    </div>
+  </div>
+ </fieldset>
+
+ 

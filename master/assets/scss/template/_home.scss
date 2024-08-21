@@ -1,0 +1,135 @@
+body.home {
+  section#body {
+    .container { background: transparent; }
+
+    border-bottom: 2px solid $base;
+    text-align: center;
+    padding-bottom: 2rem;
+    margin-bottom: 0;
+
+    h1 {
+      text-align: center;
+      font-size: 2.75rem;
+    }
+
+    p {
+      font-size: 1.15rem;
+    }
+
+    form {
+      div.form_input {
+        display: inline-block;
+        margin-left: 1rem;
+        font-size: 1.15rem;
+
+        label {
+          display: none;
+        }
+
+        input {
+          padding: 0.5rem;
+          border-radius: $roundness;
+          border: 0;
+          background: #fff;
+          text-align: center;
+          width: 400px;
+        }
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+
+      div.form_submission {
+        margin-top: 1.15rem;
+
+        input[type=submit] {
+          padding: 0.75rem 1.25rem;
+          font-size: 1.15rem;
+          background: $base;
+          border-radius: $roundness;
+          border: 0;
+          color: #fff;
+          cursor: pointer;
+
+          &:before {
+            display: table;
+            height: 1px;
+            width: 1px;
+            margin: 1rem;
+            content: " ";
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    background: darken($light, 15%);
+    text-align: center;
+    line-height: 1.6;
+
+    .container {
+      padding-top: 1.15rem;
+    }
+
+    div.triple_bucket {
+      width: 100%;
+      display: table;
+
+      div.bucket {
+        display: table-cell;
+        text-align: center;
+        width: 33%;
+        padding: 1.25rem;
+
+        h3 { margin-bottom: 0; }
+        p { margin-top: 0; }
+
+        img {
+          max-width: 100%;
+          border-radius: 2 * $roundness;
+          border: 2px solid $base;
+        }
+      }
+    }
+
+    hr {
+      width: 60%;
+      border: 0;
+      height: 1px;
+      background: darken($light, 20%);
+      margin: 1.5rem auto;
+    }
+
+    div.footer_text {
+      display: table;
+      width: 100%;
+
+      div {
+        padding: 1.15rem;
+        vertical-align: middle;
+      }
+
+      div.footer_left {
+        display: table-cell;
+        font-size: 1rem;
+        width: 75%;
+
+        p { 
+          margin-top: 0; 
+          padding-right: 1.25rem;
+          border-right: 1px solid darken($light, 20%);
+        }
+      }
+
+      div.footer_right {
+        display: table-cell;
+        width: 25%;
+        font-size: 0.75rem;
+
+        p { margin-top: 0; }
+      }
+    }
+  }
+}

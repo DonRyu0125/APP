@@ -1,0 +1,539 @@
+<span class="hidden current_page" id="graphic_main"></span>
+
+<!-- RL-2020-11-10 remove contains_image and add has_image_holder -->
+<fieldset class="repeating_group has_image_holder" data-group-title="Image Reference" id="A_IM_REF_GRP">
+  <div class="form_row borderless">
+      <div class="large image file_attachment field_container" data-name-prefix="REFD">
+        <label for="A_IM_ACCESS">Image Access</label>
+        <input type="text" id="A_IM_ACCESS" readonly>
+      </div>
+      <div>
+        <!-- RL-2020-11-10  image holder -->
+         <img class="field_img" src="/144/assets/img/image-placeholder.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="A_IM_CAPTION">Caption</label>
+      <textarea id="A_IM_CAPTION"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="medium field_container">
+      <label for="A_IM_OPAC">Web Ready</label>
+      <select id="A_IM_OPAC">
+        <option></option>
+        <option>Ready</option>
+        <option>Review</option>
+        <option>Restrict</option>
+      </select>
+    </div>
+
+    <div class="medium field_container">
+       <label for="A_IM_TYPE">Image Type</label>
+      <input type="text" id="A_IM_TYPE">
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="A_IM_CREDIT">Image credit line</label>
+      <textarea id="A_IM_CREDIT"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+      <div class="smallmed field_container">
+        <label for="FREFCODE">Reference Code</label>
+        <input type="text" id="FREFCODE">
+      </div>
+
+      <div class="smallmed field_container">
+        <label for="A_IM_BOXNO">Box No.</label>
+        <input type="text" id="A_IM_BOXNO">
+      </div>
+
+      <div class="smallmed field_container">
+        <label for="IREFCODE">Item Reference Code</label>
+        <input type="text" id="IREFCODE">
+      </div>
+      </div>
+
+  <div class="form_row borderless">
+      <div class="smallmed field_container">
+        <label for="SCANDATE">Date of Scan</label>
+        <input type="text" id="SCANDATE">
+      </div>
+
+      <div class="smallmed field_container">
+        <label for="IMAGE_COLOUR">Colour</label>
+        <select id="IMAGE_COLOUR">
+        <option></option>
+        <option>Greyscale</option>
+        <option>Colour</option>
+      </select>
+      </div>
+	  
+      <div class="smallmed field_container">
+      <label for="A_IM_HIGHRES">Highres</label>
+      <select id="A_IM_HIGHRES">
+        <option></option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div>
+    </div>
+
+  <div class="form_row borderless">
+      <div class="full field_container">
+        <label for="SETTING">Scanned Setting</label>
+        <input type="text" id="SETTING">
+        <input type="hidden" class="group_call_exit generate_field_exit protect_field_exit set_default_shcedule_no"
+           data-generate1="'SETTING !- * A_IM_ACCESS !-',SETTING,'LS 150, Sampling 2 Scale 400%, tone and cast corr.'"
+           data-generate2="'SETTING !- * A_IM_ACCESS !+',SETTING,'LS 150, Sampling 2 Scale 400%, tone and cast corr.'"
+         />      </div>
+      </div>
+
+  <div class="form_row borderless">
+      <div class="small field_container">
+        <label for="UNSHARP">Unsharp Mask?</label>
+        <input type="text" id="UNSHARP">
+        <input type="hidden" class="group_call_exit generate_field_exit protect_field_exit set_default_shcedule_no"
+           data-generate1="'UNSHARP !- * A_IM_ACCESS !-',UNSHARP,'N'"
+           data-generate2="'UNSHARP !- * A_IM_ACCESS !+',UNSHARP,'N'"
+         />
+      </div>
+
+      <div class="small field_container">
+        <label for="AMT">Amt</label>
+        <input type="text" id="AMT">
+      </div>
+
+      <div class="small field_container">
+        <label for="RAD">Rad</label>
+        <input type="text" id="RAD">
+      </div>
+
+      <div class="small field_container">
+        <label for="THRES">Thres</label>
+        <input type="text" id="THRES">
+      </div>
+      </div>
+
+  <div class="form_row borderless">
+      <div class="full field_container">
+        <label for="ACTIONS">Actions</label>
+        <input type="text" id="ACTIONS">
+      </div>
+      </div>
+
+  <div class="form_row borderless">
+      <div class="small field_container">
+        <label for="RESOLUTION">Resolution</label>
+        <input type="text" id="RESOLUTION">
+      </div>
+
+      <div class="small field_container">
+        <label for="ORIGSIZE">Size of Original</label>
+        <input type="text" id="ORIGSIZE">
+      </div>
+
+      <div class="small field_container">
+        <label for="LEVELS">Levels</label>
+        <input type="text" id="LEVELS">
+      </div>
+
+      <div class="small field_container">
+        <label for="IMAGE_SIZE">Image Dimensions</label>
+        <input type="text" id="IMAGE_SIZE">
+      </div>
+      </div>
+
+  <div class="form_row borderless">
+       <div class="smallmed repeating_field field_container">
+        <label for="A_IM_CREATOR">Creator</label>
+        <input type="text" id="A_IM_CREATOR">
+      </div>
+
+      <div class="smallmed field_container">
+        <label for="A_IM_DATEIM">Display Date</label>
+        <input type="text" id="A_IM_DATEIM">
+      </div>
+
+      <div class="smallmed field_container">
+        <label for="A_IM_DATEIMSRC">Search Date</label>
+        <input type="text" id="A_IM_DATEIMSRC">
+      </div>
+      </div>
+	  
+  <div class="form_row borderless">
+      <div class="smallmed repeating_field field_container">
+        <label for="A_IM_FORMAT">Format</label>
+        <select id="A_IM_FORMAT">
+        <option></option>
+        <option>Ambrotype</option>
+        <option>Black and white negative</option>
+        <option>Black and white print</option>
+        <option>Blueprint</option>
+        <option>Colour negative</option>
+        <option>Colour print</option>
+        <option>Cyanotype</option>
+        <option>Daguerrotype</option>
+        <option>Drawing</option>
+        <option>Glass plate negative</option>
+        <option>Map</option>
+        <option>Perspective</option>
+        <option>Painting</option>
+        <option>Plan</option>
+        <option>Print</option>
+        <option>Sketch</option>
+        <option>Stereocard</option>
+        <option>Tintype</option>
+        <option>Transparency</option>
+        <option>Watercolour</option>
+        <option>Lantern Slide</option>
+        <option>Postcard</option>
+        <option>Stereograph</option>
+      </select> 
+      </div>
+
+      <div class="smallmed field_container">
+        <label for="A_IM_ARCHIVIST">Described by</label>
+        <input type="text" id="A_IM_ARCHIVIST">
+      </div>
+
+      <div class="smallmed field_container">
+        <label for="A_IM_DATEIMSRC">Date Described</label>
+        <input type="text" id="A_IM_DATEIMSRC">
+      </div>
+      </div>
+	  
+<div class="form_row">
+  <div class="full repeating field_container">
+    <label for="A_IM_SOURCE">Source</label>
+    <textarea id="A_IM_SOURCE"></textarea>
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Place Group" id="A_IM_PLACE_GRP">
+  <div class="borderless form_row">
+    <div class="medium sites_validated_field field_container" data-map="image_place">
+      <label for="A_IM_PLACE">Place</label>
+      <input type="text" id="A_IM_PLACE" readonly>
+      <input type="hidden" id="A_IM_PLACE_ID">
+    </div>
+    </div>
+</fieldset>
+
+  <div class="borderless form_row">
+       <div class="medium repeating_field field_container">
+        <label for="A_IM_SUBJECT">Subject</label>
+        <input type="text" id="A_IM_SUBJECT">
+  </div>
+</div>
+
+  <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_IM_AST_NAME">Asset Name</label>
+          <input type="text" id="A_IM_AST_NAME" readonly>
+        </div>
+      </div>
+
+        <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="A_IM_OCR">TDR OCR</label>
+          <input type="text" id="A_IM_OCR" readonly>
+        </div>
+      </div>
+
+    <div class="form_row">
+        <div class="full field_container">
+          <label for="A_IM_THUMB">TDR Thumbnail</label>
+          <input type="text" id="A_IM_THUMB">
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_IM_PRESER">TDR Preservation</label>
+          <input type="text" id="A_IM_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_IM_ORIGIN">TDR Original</label>
+          <input type="text" id="A_IM_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_IM_OTHER">TDR Other</label>
+          <input type="text" id="A_IM_OTHER" readonly>
+        </div>
+      </div>
+  </fieldset>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Audio" id="A_AD_REF_GRP">
+  <div class="form_row borderless">
+    <div class="full audio file_attachment field_container">
+      <label for="A_AD_ACCESS">Access Path</label>
+      <input type="text" id="A_AD_ACCESS">
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="A_AD_CAPTION">Caption</label>
+      <textarea id="A_AD_CAPTION"></textarea>
+    </div>
+  </div>
+
+   <div class="form_row borderless">
+    <div class="medium field_container">
+      <label for="A_AD_OPAC">Web Ready</label>
+      <select id="A_AD_OPAC">
+        <option></option>
+        <option>Ready</option>
+        <option>Review</option>
+        <option>Restrict</option>
+      </select>
+    </div>
+
+    <div class="medium location_validated_field field_container" data-map="audio_location">
+      <label for="A_AD_LOCATION_ID">Location</label>
+      <input type="text" id="A_AD_LOCATION_ID" readonly>
+    </div>
+   </div>
+  
+  <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_AD_AST_NAME">Asset Name</label>
+          <input type="text" id="A_AD_AST_NAME" readonly>
+        </div>
+      </div>
+
+      <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="A_AD_OCR">TDR OCR</label>
+          <input type="text" id="A_AD_OCR" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_AD_THUMB">TDR Thumb</label>
+          <input type="text" id="A_AD_THUMB">
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_AD_PRESER">TDR Preservation</label>
+          <input type="text" id="A_AD_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_AD_ORIGIN">TDR Original</label>
+          <input type="text" id="A_AD_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_AD_OTHER">TDR Other</label>
+          <input type="text" id="A_AD_OTHER" readonly>
+        </div>
+      </div>
+  </fieldset>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Video" id="A_VD_REF_GRP">
+  <div class="form_row borderless">
+      <div class="full video file_attachment field_container">
+        <label for="A_VD_ACCESS">Access Path</label>
+        <input type="text" id="A_VD_ACCESS">
+      </div>
+  </div>
+  
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="A_VD_CAPTION">Caption</label>
+      <textarea id="A_VD_CAPTION"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="medium field_container">
+      <label for="A_VD_OPAC">Web Ready</label>
+      <select id="A_VD_OPAC">
+        <option></option>
+        <option>Ready</option>
+        <option>Review</option>
+        <option>Restrict</option>
+      </select>
+    </div>
+
+    <div class="medium location_validated_field field_container" data-map="video_location">
+      <label for="A_VD_LOCATION_ID">Location</label>
+      <input type="text" id="A_VD_LOCATION_ID" readonly>
+    </div>
+  </div>
+
+  <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_VD_AST_NAME">Asset Name</label>
+          <input type="text" id="A_VD_AST_NAME" readonly>
+        </div>
+      </div>
+
+        <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="A_VD_OCR">TDR OCR</label>
+          <input type="text" id="A_VD_OCR" readonly>
+        </div>
+      </div>
+
+     <div class="form_row">
+        <div class="full field_container">
+          <label for="A_VD_THUMB">TDR Thumb</label>
+          <input type="text" id="A_VD_THUMB">
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_VD_PRESER">TDR Preservation</label>
+          <input type="text" id="A_VD_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_VD_ORIGIN">TDR Original</label>
+          <input type="text" id="A_VD_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_VD_OTHER">TDR Other</label>
+          <input type="text" id="A_VD_OTHER" readonly>
+        </div>
+      </div>
+  </fieldset>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Textual" id="A_TX_REF_GRP">
+  <div class="form_row borderless">
+    <div class="full text file_attachment field_container">
+      <label for="A_TX_ACCESS">Access Path</label>
+      <input type="text" id="A_TX_ACCESS">
+      </div>
+    </div>
+
+	
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="A_TX_CAPTION">Caption</label>
+      <textarea id="A_TX_CAPTION"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="small field_container">
+      <label for="A_TX_OPAC">Web Ready</label>
+      <select id="A_TX_OPAC">
+        <option></option>
+        <option>Ready</option>
+        <option>Review</option>
+        <option>Restrict</option>
+      </select>
+    </div>
+
+    <div class="small field_container">
+      <label for="A_TX_TYPE">Type</label>
+      <input type="text" id="A_TX_TYPE">
+    </div>
+  </div>
+
+  
+  <fieldset class="logical_group">
+    <legend>Trusted Digital Repository (TDR) Details</legend>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_TX_AST_NAME">Asset Name</label>
+          <input type="text" id="A_TX_AST_NAME" readonly>
+        </div>
+      </div>
+	  
+        <div class="form_row borderless">
+        <div class="full field_container">
+          <label for="A_TX_OCR">TDR OCR</label>
+          <input type="text" id="A_TX_OCR" readonly>
+        </div>
+      </div>
+	  
+     <div class="form_row">
+        <div class="full field_container">
+          <label for="A_TX_THUMB">TDR Thumb</label>
+          <input type="text" id="A_TX_THUMB">
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_TX_PRESER">TDR Preservation</label>
+          <input type="text" id="A_TX_PRESER" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_TX_ORIGIN">TDR Original</label>
+          <input type="text" id="A_TX_ORIGIN" readonly>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="full field_container">
+          <label for="A_TX_OTHER">TDR Other</label>
+          <input type="text" id="A_TX_OTHER" readonly>
+        </div>
+      </div>
+  </fieldset>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="URL" id="A_WEB_REF_GRP">
+  <div class="form_row borderless">
+    <div class="full url_field field_container">
+      <label for="A_WEB_REFERENCE">Web Path</label>
+      <input type="text" id="A_WEB_REFERENCE">
+    </div>
+  </div>
+
+  <div class="form_row borderless">
+    <div class="full field_container">
+      <label for="A_WEB_REFER_NOTE">Caption</label>
+      <textarea id="A_WEB_REFER_NOTE"></textarea>
+    </div>
+  </div>
+</fieldset>
+

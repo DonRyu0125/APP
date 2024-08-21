@@ -1,0 +1,215 @@
+<span class="hidden current_page" id="main"></span>
+
+<fieldset class="logical_group">
+  <legend>Leader</legend>
+  <div class="borderless form_row">
+    <div class="tiny_column">
+      <div class="select_container field_container">
+         <label for="LEADER_05">05</label>
+         <select id="LEADER_05">
+           <option></option>
+           <option>a</option>
+           <option>c</option>
+           <option>d</option>
+           <option>n</option>
+           <option>p</option>
+         </select>
+      </div>
+    </div>
+    <div class="tiny_column">
+      <div class="select_container field_container">
+         <label for="LEADER_06">06</label>
+         <select id="LEADER_06">
+           <option></option>
+           <option>a</option>
+           <option>c</option>
+           <option>d</option>
+           <option>e</option>
+           <option>f</option>
+           <option>g</option>
+           <option>i</option>
+           <option>j</option>
+           <option>k</option>
+           <option>m</option>
+           <option>o</option>
+           <option>p</option>
+           <option>r</option>
+           <option>t</option>
+         </select>
+      </div>
+    </div>
+    <div class="tiny_column">
+      <div class="select_container field_container">
+         <label for="LEADER_07">07</label>
+         <select id="LEADER_07">
+           <option></option>
+           <option>a</option>
+           <option>b</option>
+           <option>c</option>
+           <option>d</option>
+           <option>i</option>
+           <option>m</option>
+           <option>s</option>
+         </select>
+      </div>
+    </div>
+    <div class="tiny_column">
+      <div class="select_container field_container">
+         <label for="LEADER_08">08</label>
+         <select id="LEADER_08">
+           <option></option>
+           <option>#</option>
+           <option>a</option>
+         </select>
+      </div>
+    </div>
+    <div class="tiny_column">
+      <div class="select_container field_container">
+         <label for="LEADER_09">09</label>
+         <select id="LEADER_09">
+           <option></option>
+           <option>#</option>
+           <option>a</option>
+         </select>
+      </div>
+    </div>
+    <div class="tiny_column">
+      <div class="select_container field_container">
+         <label for="LEADER_17">17</label>
+         <select id="LEADER_17">
+           <option></option>
+           <option>#</option>
+           <option>1</option>
+           <option>2</option>
+           <option>3</option>
+           <option>4</option>
+           <option>5</option>
+           <option>7</option>
+           <option>8</option>
+           <option>u</option>
+           <option>z</option>
+         </select>
+      </div>
+    </div>
+    <div class="tiny_column">
+      <div class="select_container field_container">
+         <label for="LEADER_18">18</label>
+         <select id="LEADER_18">
+           <option></option>
+           <option>#</option>
+           <option>a</option>
+           <option>c</option>
+           <option>i</option>
+           <option>n</option>
+           <option>u</option>
+         </select>
+      </div>
+    </div>
+    <div class="tiny_column">
+      <div class="select_container field_container">
+         <label for="LEADER_19">19</label>
+         <select id="LEADER_19">
+           <option></option>
+           <option>#</option>
+           <option>a</option>
+           <option>b</option>
+           <option>c</option>
+         </select>
+      </div>
+    </div>
+  </div>
+</fieldset>
+
+<div class="form_row">
+  <div class="medium repeating_field field_container">
+    <label for="MARC__006">006</label>
+    <input type="text" id="MARC__006">
+  </div>
+
+  <div class="medium repeating_field field_container">
+    <label for="MARC__007">007</label>
+    <input type="text" id="MARC__007">
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full marc field_container">
+    <label for="MARC__008">008</label>
+    <input type="text" id="MARC__008">
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="MARC__245">245</label>
+    <div class="marc_header field_container">
+      <input type="text" maxLength="2">
+    </div>
+    <div class="marc_body field_container">
+      <textarea type="text" id="MARC__245" class="marc_data"></textarea>
+    </div>
+  </div>
+</div>
+
+<div class="borderless form_row">
+  <div class="medium repeating_field field_container">
+    <label for="MARC__020">020</label>
+    <div class="marc_header field_container">
+      <input type="text" maxLength="2">
+    </div>
+    <div class="marc_body field_container">
+      <input type="text" id="MARC__020" class="marc_data">
+    </div>
+  </div>
+  <div class="medium repeating_field field_container">
+    <label for="MARC__022">022</label>
+    <div class="marc_header field_container">
+      <input type="text" maxLength="2">
+    </div>
+    <div class="marc_body field_container">
+      <input type="text" id="MARC__022" class="marc_data">
+    </div>
+  </div>
+</div>
+
+<fieldset class="logical_group">
+  <legend>Actions taken on record</legend>
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <span class="title_text">Enter</span>
+    </div>
+    <div class="small field_container">
+      <span class="title_text">Modify</span>
+    </div>
+    <div class="small field_container">
+      <span class="title_text">Catalogue</span>
+    </div>
+  </div>
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <input type="text" id="ENTRY_DATE" readonly>
+    </div>
+    <div class="small field_container">
+      <input type="text" id="CAT_MOD_DATE" readonly>
+    </div>
+    <div class="small field_container">
+      <input type="text" id="CATALOG_DATE">
+    </div>
+    <div class="small field_container">
+      <a href="#" class="simple_button set_date_exit" data-param="CATALOG_DATE,++1-60D"><b> Hide new copy</b></a>
+    </div>
+  </div>
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <input type="text" id="ENTRY_ID" readonly>
+    </div>
+    <div class="small field_container">
+      <input type="text" id="CAT_MOD_ID" readonly>
+    </div>
+    <div class="small field_container">
+      <input type="text" id="CATALOG_ID" readonly>
+    </div>
+  </div>
+</fieldset>
+
+

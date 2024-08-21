@@ -1,0 +1,11 @@
+<ul class="search_control" style="display: none">
+    <li><a class="hide_search" title="Hide/Show Search Form"><i class="fa fa-eye-slash fa-2x"></i></a></li>
+    <li><a class="submit_search" id="submit_this" title="Perform Search"><i class="fa fa-search fa-2x"></i></a></li>
+</ul>
+<script>
+    $(document).ready(function () {
+        setTimeout(function () {
+            $("#submit_this").trigger('click');
+        }, 100);
+    });
+</script>

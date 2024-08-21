@@ -1,0 +1,108 @@
+<span class="hidden current_page" id="description_main"></span>
+
+<div class="form_row">
+  <div class="medium field_container">
+    <label for="REFD_HIGHER">Parent Reference Code</label>
+    <input type="text" id="REFD_HIGHER">
+  </div>
+
+  <div class="medium field_container">
+    <label for="REFD_LOWEREXIST">Lower levels?</label>
+    <input type="checkbox" id="REFD_LOWEREXIST">
+  </div>
+</div>
+
+<fieldset class="logical_group">
+  <legend>Dates</legend>
+  <div class="form_row">
+    <div class="small field_container">
+      <label for="DATE_CR_INC">Creation</label>
+      <input type="text" id="DATE_CR_INC">
+    </div>
+
+  <div class="small field_container">
+    <label for="DATE_CR_PRED">Predominant</label>
+    <input type="text" id="DATE_CR_PRED">
+  </div>
+
+  <div class="small field_container">
+      <label for="DATE_SEARCH">Search <i>(descriptive date)</i></label>
+      <input type="text" id="DATE_SEARCH">
+    </div>
+
+  <div class="small field_container">
+      <label for="DATE_ACCUM">Accumulation</label>
+      <input type="text" id="DATE_ACCUM">
+    </div>
+  </div>
+  </fieldset>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="PHYSICAL_DESC">Physical Description</label>
+    <textarea id="PHYSICAL_DESC"></textarea>
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Origination" id="ORIGINATION_GRP">
+  <fieldset class="logical_group">
+    <legend>Origination</legend>
+
+    <div class="form_row">
+      <div class="full org_validated_field people_validated_field field_container" data-map-people="desc_originatorr" data-map-org="desc_org_originator"> <!-- RL-20211231 -->
+        <label for="ORIGINATOR">Creator</label>
+        <input type="text" id="ORIGINATOR" readonly>
+        <input type="hidden" id="ORIGIN_ID">
+      </div>
+    </div>
+
+<div class="form_row">
+  <div class="medium field_container">
+    <label for="EAD_LABEL">EAD Label</label>
+    <input type="text" id="EAD_LABEL">
+  </div>
+
+  <div class="medium field_container">
+    <label for="EAD_ROLE">EAD Role</label>
+    <select id="EAD_ROLE">
+        <option></option>
+        <option>corpname</option>
+        <option>famname</option>
+        <option>name</option>
+        <option>persname</option>
+    </select>
+  </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Other Title" id="OTHER_TITLE_GRP">
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="OTHER_TITLE">Other Title</label>
+      <input type="text" id="OTHER_TITLE">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium repeating_field validated_table field_container">
+      <label for="OTHER_TITLE_TYPE">Type</label>
+      <input type="text" id="OTHER_TITLE_TYPE" data-val-database="OTHER_TITLE_TYPE_VAL" data-val-field="LOOKUP_FIELD" readonly>
+    </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="TITLE_NOTES">Notes</label>
+      <textarea id="TITLE_NOTES"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="SCOPE">Scope & Content</label>
+    <textarea id="SCOPE"></textarea>
+  </div>
+</div>
+
+
+

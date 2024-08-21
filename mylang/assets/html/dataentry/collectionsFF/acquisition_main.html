@@ -1,0 +1,351 @@
+<span class="hidden current_page" id="acquisition_main"></span>
+
+<div class="form_row contains_browse">
+  <div class="large validated_table field_container">
+    <label for="ENTERED_BY">Entered By</label>
+    <input type="text" id="ENTERED_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+  </div>
+    <div class="small date field_container">
+    <label for="ENTRY_DATE">Entered Date</label>
+    <input type="text" id="ENTRY_DATE">
+  </div>
+  </div>
+
+<div class="form_row">
+  <div class="small field_container">
+    <label for="ACQ_METHOD">Acquisition Method</label>
+<!-- RL-2020-09-29 -->
+<!-- #if global(MWI_ACCESS_TOKEN) == USER1 -->
+    <select id="ACQ_METHOD" data-readonly="y">
+<!-- #else -->
+    <select id="ACQ_METHOD">
+<!-- #endif -->
+      <option></option>
+      <option>Bequest</option>
+      <option>Collected through fieldwork</option>
+      <option>Commission</option>
+      <option>Copies</option>
+      <option>Donation</option>
+      <option>Exchange</option>
+      <option>Extended Loan</option>
+      <option>Found in Collection</option>
+      <option>Found unaccessioned</option>
+      <option>Gift</option>
+      <option>In lieu of tax</option>
+      <option>Loan</option>
+      <option>Loan in</option>
+      <option>Purchase</option>
+      <option>Returned</option>
+      <option>Transfer</option>
+      <option>Unknown</option>
+    </select>
+  </div>
+
+    <div class="small combo field_container">
+        <label for="OBJ_PRCHS_PRICE">Purchase Price</label>
+        <input type="text" id="OBJ_PRCHS_PRICE">
+        <select id="PRCHS_PRICE_CURR">
+          <option></option>
+          <option>CAD</option>
+          <option>EURO</option>
+          <option>FRA</option>
+          <option>GBP</option>
+          <option>USD</option>
+        </select>
+      </div>
+
+  <div class="small field_container">
+    <label for="INITIAL_STATUS">Initial Legal Status</label>
+    <select id="INITIAL_STATUS">
+      <option></option>
+      <option>Loan</option>
+      <option>Permanent Collection</option>
+      <option>Unaccessioned</option>
+    </select>
+  </div>
+
+<!-- RL-2020-09-29 -->
+<!-- #if global(MWI_ACCESS_TOKEN) == USER1 -->
+  <div class="small date field_container" data-readonly="y">
+<!-- #else -->
+  <div class="small date field_container">
+<!-- #endif -->
+    <label for="ARRIVAL_DATE">Arrival Date</label>
+<!-- RL-2020-09-29 -->
+<!-- #if global(MWI_ACCESS_TOKEN) == USER1 -->
+    <input type="text" id="ARRIVAL_DATE" data-readonly="y">
+<!-- #else -->
+    <input type="text" id="ARRIVAL_DATE">
+<!-- #endif -->
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Source" id="ACQ_SOURCE_GRP">
+  <div class="form_row contains_browse">
+<!-- RL-2020-09-29 -->
+<!-- #if global(MWI_ACCESS_TOKEN) == USER1 -->
+    <div class="medium org_validated_field field_container" data-map="source_organization" data-readonly="y">
+<!-- #else -->
+    <div class="medium org_validated_field field_container" data-map="source_organization">
+<!-- #endif -->
+      <label for="ACQ_SOURCE_ORG">Organization</label>
+      <input type="text" id="ACQ_SOURCE_ORG" readonly>
+      <input type="hidden" id="ACQ_ORG_ID">
+    </div>
+
+    <div class="medium field_container">
+      <label for="ACQ_SOURCE_ROLE">Role</label>
+      <select id="ACQ_SOURCE_ROLE">
+        <option></option>
+        <option>Donor</option>
+        <option>Employer</option>
+        <option>Lender</option>
+        <option>Owner of Original</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form_row contains_browse">
+    <div class="medium people_validated_field field_container" data-map="source_individual">
+      <label for="ACQ_SOURCE">Individual</label>
+      <input type="text" id="ACQ_SOURCE" readonly>
+      <input type="hidden" id="ACQ_SOURCE_ID">
+    </div>
+
+    <div class="medium repeating_field field_container">
+      <label for="ACQ_SOURCE_ALIAS">Alias</label>
+      <input type="text" id="ACQ_SOURCE_ALIAS" readonly>
+    </div>
+  </div>
+
+  <fieldset class="logical_group">
+    <legend>Address Details</legend>
+
+    <div class="form_row">
+      <div class="small field_container">
+        <label for="ACQ_ADDRESS">Suite#/PO Box</label>
+        <input type="text" id="ACQ_ADDRESS" readonly>
+      </div>
+
+      <div class="large field_container">
+        <label for="ACQ_ADDRESS2">Street</label>
+        <input type="text" id="ACQ_ADDRESS2"readonly>
+      </div>
+    </div>
+
+    <div class="form_row">
+      <div class="small field_container">
+        <label for="ACQ_CITY">City</label>
+        <input type="text" id="ACQ_CITY" readonly>
+      </div>
+      <div class="small field_container">
+        <label for="ACQ_PROVINCE">Province/State</label>
+        <input type="text" id="ACQ_PROVINCE" readonly>
+      </div>
+      <div class="small field_container">
+        <label for="ACQ_COUNTRY">Country</label>
+        <input type="text" id="ACQ_COUNTRY" readonly>
+      </div>
+      <div class="small field_container">
+        <label for="ACQ_POSTAL">ZIP/Postal Code</label>
+        <input type="text" id="ACQ_POSTAL" readonly>
+      </div>
+    </div>
+
+    <div class="form_row">
+      <div class="medium field_container">
+        <label for="ACQ_PHONE">Primary Phone</label>
+        <input type="text" id="ACQ_PHONE" readonly>
+      </div>
+
+      <div class="small field_container">
+        <label for="ACQ_PHONE2">Secondary Phone</label>
+        <input type="text" id="ACQ_PHONE2" readonly>
+      </div>
+
+      <div class="small field_container">
+        <label for="ACQ_FAX">Fax</label>
+        <input type="text" id="ACQ_FAX" readonly>
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="medium field_container">
+        <label for="ACQ_URL">URL</label>
+        <input type="text" id="ACQ_URL" readonly>
+      </div>
+
+      <div class="medium field_container">
+        <label for="ACQ_EMAIL">E-mail Address</label>
+        <input type="text" id="ACQ_EMAIL" readonly>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="repeating_group" data-group-title="Source Contact" id="SRC_CONTACT_GRP">
+    <div class="form_row contains_browse">
+      <div class="medium people_validated_field field_container" data-map="source_contact">
+        <label for="SOURCE_CONTACT">Individual</label>
+        <input type="text" id="SOURCE_CONTACT" readonly>
+        <input type="hidden" id="SRCE_CONTACT_ID">
+      </div>
+
+      <div class="medium repeating_field field_container">
+        <label for="SRCE_CON_ALIAS">Alias</label>
+        <input type="text" id="SRCE_CON_ALIAS" readonly>
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="full field_container">
+        <label for="SRCE_CON_NOTES">Notes</label>
+<!-- RL-2020-09-29 -->
+<!-- #if global(MWI_ACCESS_TOKEN) == USER1 -->
+        <textarea id="SRCE_CON_NOTES" data-readonly="y"></textarea>
+<!-- #else -->
+        <textarea id="SRCE_CON_NOTES"></textarea>
+<!-- #endif -->
+      </div>
+    </div>
+  </fieldset>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Object Information</legend>
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="RELEVANCE_NOTES">Importance</label>
+      <textarea id="RELEVANCE_NOTES"></textarea>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="CONSERVE_REQUIRE">Condition</label>
+      <textarea id="CONSERVE_REQUIRE"></textarea>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full validated_table field_container">
+      <label for="CONS_ASSESS_BY">Entered By</label>
+      <input type="text" id="CONS_ASSESS_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="UTILIZATION">Use</label>
+      <textarea id="UTILIZATION"></textarea>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="COLLECT_OBJECT">Collection Objectives</label>
+      <textarea id="COLLECT_OBJECT"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Decision Processes</legend>
+  <div class="borderless form_row">
+    <div class="medium validated_table field_container">
+      <label for="ACQ_AUTHORIZORS">Principals</label>
+      <input type="text" id="ACQ_AUTHORIZORS" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+
+     <div class="medium field_container">
+      <label for="ACQ_RECOMMEND">Recommendation</label>
+      <select id="ACQ_RECOMMEND">
+        <option></option>
+        <option>Accept</option>
+        <option>Decline</option>
+        <option>Defer</option>
+        <option>Negotiate</option>
+        <option>Bid at Auction</option>
+        <option>Purchase</option>
+        <option>Selective Acquisition</option>
+        <option>Selective Retention</option>
+    </select>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="small date field_container">
+      <label for="ACQ_AUTHOR_DATE">Decision Date</label>
+      <input type="text" id="ACQ_AUTHOR_DATE">
+    </div>
+
+     <div class="medium field_container">
+      <label for="ACQ_DISCRET_PUR">Discretionary Purchase</label>
+      <select id="ACQ_DISCRET_PUR">
+        <option></option>
+        <option>Yes</option>
+        <option>No</option>
+        </select>
+      </div>
+
+ <div class="small date field_container">
+      <label for="ACQ_DISCRE_DATE">Discretionary Purchase Date</label>
+      <input type="text" id="ACQ_DISCRE_DATE">
+    </div>
+    </div>
+
+<fieldset class="logical_group">
+  <legend>Board/Acquisition Commitee</legend>
+  <div class="borderless form_row">
+     <div class="small field_container">
+      <label for="ACQ_BOARD_CMTTE">Approval Required</label>
+      <select id="ACQ_BOARD_CMTTE">
+        <option></option>
+        <option>Yes</option>
+        <option>No</option>
+        </select>
+      </div>
+
+  <div class="small field_container">
+      <label for="ACQ_BRD_DECISION">Decision</label>
+      <select id="ACQ_BRD_DECISION">
+        <option></option>
+        <option>Approved</option>
+        <option>Declined</option>
+        <option>Tabled</option>
+        <option>Selective Retention</option>
+    </select>
+      </div>
+
+    <div class="small date field_container">
+      <label for="ACQ_DATE">Date</label>
+      <input type="text" id="ACQ_DATE">
+    </div>
+  </div>
+  </fieldset>
+
+  <div class="borderless form_row">
+    <div class="medium validated_table field_container">
+      <label for="ACCESSIONED_BY">Accessioned By</label>
+      <input type="text" id="ACCESSIONED_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+    </div>
+
+    <div class="small date field_container">
+      <label for="ACCESSION_DATE">Accession Date</label>
+      <input type="text" id="ACCESSION_DATE">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="CREDIT_LINE">Credit Line</label>
+      <input type="text" id="CREDIT_LINE">
+    </div>
+  </div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="ACQ_NOTE">Notes</label>
+    <textarea id="ACQ_NOT"></textarea>
+  </div>
+</div>
+ </fieldset>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMS - Reproduction</title>
+
+    <!-- include virtual="/144/assets/html/template/stylesheets.html" -->
+    <!-- include virtual="/144/assets/html/template/header_scripts.html" -->
+  </head>
+  <body data-database="servicedesk_reproduction" data-popup="Y">
+    <section id="body">
+      <nav id="database_selection" style="font-size: 1.50rem">
+        <div>Reproduction Request</div>
+      </nav>
+
+      <div class="container">
+        <!-- include virtual="/144/assets/html/template/db/reproduction_db_actions_nav.html" -->
+        <section id="data_entry_forms">
+          <div id="universal_record_information">
+            <div class="column">
+              <div class="field_container">
+                <label for="REQ_ORDER_NUM"><u>Order No.</u></label>
+                <input type="text" id="REQ_ORDER_NUM" readonly>
+              </div>
+              <div class="field_container">
+                <label for="REC_STATUS"><u>Record Status</u></label>
+                <input type="text" id="REC_STATUS" readonly>
+              </div>
+            </div>
+            <div class="column">
+              <div class="field_container">
+                <label for="REQ_TOPIC"><u>Topic</u></label>
+                <input type="text" id="REQ_TOPIC" readonly>
+              </div>
+              <div class="field_container">
+                <label for="METHOD_REQUEST"><u>Method</u></label>
+                <input type="text" id="METHOD_REQUEST" readonly>
+              </div>
+            </div>
+            <div class="column">
+              <div class="select_container field_container">
+                <label for="REQ_USER_GROUP"><u>User Group</u></label>
+                <select id="REQ_USER_GROUP">
+                  <option>Customer Service</option>
+                  <option>Reproduction</option>
+                </select>
+              </div>
+              <div class="validated_table field_container">
+                <label for="HANDLED_BY"><u>Assigned To</u></label>
+                <input type="text" id="HANDLED_BY" data-val-database="STAFF_ID" data-val-field="USER_NAME">
+              </div>
+            </div>
+
+            <div class="universal_row">
+              <div class="full field_container">
+                <label for="REQ_TITLE"><i><u>Title</u></i></label>
+                <input type="text" id="REQ_TITLE" readonly>
+              </div>
+            </div>
+          </div>
+
+          <div id="primary_data_entry_form">
+            <nav id="worksheet_nav">
+              <ul id="primary_worksheet_nav">
+                <li><a href="^home_sessid^?get&file=[CAMS_APP]/144/assets/html/dataentry/servicedesk/reproduction_main.html" data-form="main" class="active">Main</a></li>
+              </ul>
+
+              <nav id="secondary_worksheet_nav">
+              </nav>
+            </nav>
+
+            <div id="data_entry_form">
+              <!-- include virtual="/144/assets/html/dataentry/servicedesk/reproduction_main.html" -->
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- call record wrapup user routine -->
+      <input type="hidden" class="wrapup_user_exit"
+       data-exit="wrapupRequest"
+    />
+
+    <xml id="MY_XML" style="display: none;">
+      ^XML_TREE^
+    </xml>
+
+    <div id="notices">^WIN_INFO^</div>
+
+    <!-- include virtual="/144/assets/html/template/db/servicedesk_base_scripts.html" -->
+    <!-- include virtual="/144/assets/html/template/core_dataentry_scripts.html" -->
+    <script src="/144/assets/customize/dataentry/record_databases/servicedesk.js"></script>
+    <script src="/144/assets/customize/dataentry/frontend/servicedesk_util.js"></script>
+    <script src="/144/assets/customize/dataentry/frontend/servicedesk_reproduction.js"></script>
+  </body>
+</html>

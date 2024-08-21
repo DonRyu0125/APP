@@ -1,0 +1,103 @@
+<span class="hidden current_page" id="library_main"></span>
+
+<fieldset class="repeating_group" data-group-title="Author" id="L_AUTHOR_GRP">
+  <div class="borderless form_row">
+    <div class="full org_validated_field people_validated_field field_container" data-map="lib_author">
+      <label for="AUTHOR">Author</label>
+      <input type="text" id="AUTHOR" readonly>
+      <input type="hidden" id="AUTHOR_ID">
+    </div>
+  </div>
+</fieldset>
+
+<div class="form_row">
+  <div class="full org_validated_field field_container" data-map="lib_publisher">
+    <label for="L_PUBLISHER">Publisher</label>
+    <input type="text" id="L_PUBLISHER" readonly>
+    <input type="hidden" id="L_PUB_ID" readonly>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="medium field_container">
+    <label for="L_REF_TYPE">Format</label>
+    <select id="L_REF_TYPE">
+      <option></option>
+      <option>Audio(CD)</option>
+      <option>Book (Print)</option>
+      <option>Disk (CD ROM)</option>
+      <option>Microform</option>
+      <option>Mixed media</option>
+      <option>Other</option>
+      <option>Video</option>
+	</select>
+ 	  </div>
+
+  <div class="medium field_container">
+    <label for="L_SERIES_TITLE">Series</label>
+    <input type="text" id="L_SERIES_TITLE">
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="medium field_container">
+    <label for="L_PUBLISH_DATE">Publication Year</label>
+    <input type="text" id="L_PUBLISH_DATE">
+  </div>
+
+  <div class="medium repeating_field field_container">
+    <label for="BARCODE">Barcode</label>
+    <input type="text" id="BARCODE">
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="small field_container">
+    <label for="EDITION">Edition</label>
+    <input type="text" id="EDITION">
+  </div>
+
+  <div class="large repeating_field field_container">
+    <label for="SUB_PROPER_NOUN">Subject Heading</label>
+    <input type="text" id="SUB_PROPER_NOUN">
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="medium field_container">
+    <label for="L_ISBN">ISBN/ISSN</label>
+    <input type="text" id="L_ISBN">
+  </div>
+
+  <div class="medium field_container">
+    <label for="L_VOLUME_NO">Volume</label>
+    <input type="text" id="L_VOLUME_NO">
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="large people_validated_field field_container" data-map="borrower_ind">
+    <label for="BORROWER">Borrower</label>
+    <input type="text" id="BORROWER" readonly>
+    <input type="hidden" id="BORROWER_ID">
+  </div>
+
+  <div class="small date field_container">
+    <label for="DUE_DATE">Due Date</label>
+    <input type="text" id="DUE_DATE">
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Last Modified" id="LAST_MODIFIED">
+  <div class="borderless form_row">
+    <div class="large field_container">
+      <label for="LAST_MODIFIED_BY">By</label>
+      <input type="text" id="LAST_MODIFIED_BY" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="LAST_MODIFIED_TM">On</label>
+      <input type="text" id="LAST_MODIFIED_TM" readonly>
+    </div>
+  </div>
+</fieldset>

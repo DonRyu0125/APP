@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMS - Cultural Assets Managment System</title>
+
+    <!-- include virtual="/144/assets/html/template/stylesheets.html" -->
+    <script src="/144/assets/js/vendor/jquery-min.js"></script>
+  </head>
+  <body class="valtable_det_rep">
+    <div class="detailed_record_display"></div>
+
+    <script>
+      $(document).ready(function(){
+        /*****
+        **
+        **  generateDetailedReport : generates the HTML for a detailed record display given a record's XML data
+        **
+        **  params:
+        **    - record_xml : An XML representation of a record, returned by MINISIS
+        **
+         *****/
+        var generateDetailedReport = function(record_xml) {
+          var container_html = $('<ul class="detail_record_display"/>');
+
+          $(record_xml).find('*').each(function(){
+          if ($(this).children().length === 0) {
+            var element_name = $('<dt>' + $(this).prop('tagName').toUpperCase() + '</dt>');
+            var element_value = $('<dd>' + $(this).text() + '</dt>');
+            var html = $('<li/>');
+            var container = $('<dl/>');
+
+            container.append(element_name);
+            container.append(element_value);
+            html.append(container);
+
+            container_html.append(html);
+          }
+          });
+
+          return container_html;
+        };
+
+
+        if ($('xml.record_xml').length > 0) {
+          var record_xml = $('xml.record_xml').find('record');
+          $('div.detailed_record_display').html(generateDetailedReport(record_xml));
+        } else {
+          console.log("ERROR: No XML Loaded (val_det_rep.html)");
+        }
+      });
+    </script>
+  </body>
+</html>

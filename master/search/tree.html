@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMS - Cultural Assets Managment System - Description Database</title>
+
+    <!-- include virtual="/144/assets/html/template/stylesheets.html" -->
+    <!-- include virtual="/144/assets/html/template/header_scripts.html" -->
+
+    <!-- 5 include the minified jstree source -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/144/assets/css/tree.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.9/jstree.min.js"></script>
+    <script src="/144/assets/js/api_call.js?v=2"></script>
+    <!-- <script src="/144/assets/js/m2a_tree.js?v=2"></script> -->
+    <!-- <script src="/144/assets/js/m2a_tree_new.js?v=2"></script> -->
+</head>
+
+<body data-database="description">
+    <header>
+        <!-- include virtual="/144/assets/html/template/header.html" -->
+    </header>
+
+    <section id="body">
+        <!-- include virtual="/144/assets/html/template/db_selection_nav.html" -->
+
+        <div class="container">
+            <!-- include virtual="/144/assets/html/template/db/des_db_actions_nav.html" -->
+
+            <!-- This Section Tag is not needed for M2A Tree HTML-->
+            <!-- <section class="query_container" style=display:none>
+                <section class="query_form">
+                    virtual="/144/assets/html/query/desc_tree.html"
+                </section>
+
+                <hr>
+
+                   virtual="/144/assets/html/template/tree_search_control.html"
+            </section> -->
+            <div>
+
+                <!-- <p id="getstarttree"></p> -->
+                <input type="text" id="jstree_display_search" style="width: 30%; padding: 5px; border: 3px solid #a8e4ff; border-radius:0.5em; margin: 2em 0px 0px 2.2em;" placeholder="Enter Keyword"/>
+                <button id="searchBtn" style="background: white; margin: 2px; padding: 5px; border: 3px solid #a8e4ff; border-radius:0.5em">Search</button>
+                <button id="clearSearchBtn" style="background: white; margin: 2px; padding: 5px; border: 3px solid #a8e4ff; border-radius:0.5em">Clear Search</button>
+                <button id="deselectBtn" style="background: white; margin: 2px; padding: 5px; border: 3px solid #a8e4ff; border-radius:0.5em">Deselect All <b id="countOfRecord"></b> Record(s)</button>
+                <!-- <button id="clearBothBtn" style="background: white; margin: 2px; padding: 5px; border: 3px solid #a8e4ff; border-radius:0.5em">Clear Both</button> -->
+                <!-- <button id="refreshBtn" style="background: white; margin: 2px; padding: 5px; border: 3px solid #a8e4ff; border-radius:0.5em">Refresh</button> -->
+                <!--<p id="grab_sessid">^HOME_SESSID^</p>
+                <p>^HOME_SESSID^</p>-->
+                <div class="loading" id="running" style="display:none;"><i class="fa fa-spin fa-gear fa-4x"></i></div>
+            </div>
+
+
+            <!-- Modal Div -->
+            <div class="modal fade" id="importModal" role="dialog">
+                <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Import</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>Please locate CSV file in local drive to import.</p>
+                      <form method="post" enctype="multipart/form-data" id="fileUploadForm" action="#">
+                        <label for="file"><span style="font-size: 14px"><b>Description Import File </b></span></label>
+                        <input type="file" id="real-file" class="show_name"><br>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" id="run-import" class="btn btn-primary" data-dismiss="modal">Upload</button>
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+
+                </div>
+            </div>
+            <!-- Modal End -->
+
+            <!-- Original Tree Display -->
+            <div id="jstree_display" style="max-height:1000px; overflow-y:auto; font-family: Roboto,'Open Sans', 'Times New Roman'; font-size: 1.0rem; padding: 30px 30px">
+              <!--
+              <li><a class="previousButton">Previous</a></li>
+              <li><a class="nextButton">Next</a></li>
+              -->
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <!-- include virtual="/144/assets/html/template/footer.html" -->
+    </footer>
+
+    <div style="display:none;">
+        <div id="report_chooser">
+            <h1>Please select a report to download as PDF</h1>
+            <select>
+                <option value="ACCESSION_REGISTER_XML">Accession Register</option>
+                <option value="COLLECTION_SUMMARY_XML">Object Summary</option>
+                <option value="COLLECTIONS_FULL_XML">Detailed Object Report</option>
+            </select>
+
+            <p><a class="button">Download PDF Report</a></p>
+        </div>
+    </div>
+    <div id="notices">^WIN_INFO^</div>
+    <!-- include virtual="/144/assets/html/template/db/des_base_scripts.html" -->
+    <script src="/144/assets/js/m2atree_final.js"></script>
+</body>
+
+</html>

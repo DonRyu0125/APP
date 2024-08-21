@@ -1,0 +1,204 @@
+<span class="hidden current_page" id="incident_main"></span>
+
+<div class="form_row">
+  <div class="small field_container">
+    <label for="INC_ID"><u>Incident No.</u></label>
+    <input type="text" id="INC_ID" readonly>
+  </div>
+
+  <div class="small validated_table field_container">
+    <label for="INC_REP_BY">Damage Reported by</label>
+    <input type="text" id="INC_REP_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+  </div>
+  
+  <div class="small date field_container">
+      <label for="INC_REP_DATE">Reported Date</label>
+      <input type="text" id="INC_REP_DATE">
+    </div>
+
+  <div class="small date field_container">
+      <label for="DATE_REQ">Date Required by</label>
+      <input type="text" id="DATE_REQ">
+    </div>
+   </div>
+
+<div class="form_row">
+  <div class="small validated_table field_container">
+    <label for="SUBMIT_BY">Submitted by</label>
+    <input type="text" id="SUBMIT_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+  </div>   
+   
+  <div class="small date field_container">
+      <label for="DATE_SUBMIT">Date Submitted</label>
+      <input type="text" id="DATE_SUBMIT">
+    </div>
+
+  <div class="small field_container">
+      <label for="NUM_OBJECTS">No. of Objects</label>
+      <input type="text" id="NUM_OBJECTS">
+    </div>
+
+   <div class="small field_container">
+      <label for="INC_RELAT">Incident Related?</label>
+      <select id="INC_RELAT">
+	   <option></option>
+       <option>Yes</option>
+       <option>No</option>
+    </select>
+  </div>
+ </div>
+  
+ <div class="form_row"> 
+  <div class="large repeating_field field_container">
+    <label for="WORK_REQ">Work Required</label>
+    <select id="WORK_REQ">
+      <option></option>
+      <option>Conservation</option>
+      <option>Conservation - for exhibition</option>
+      <option>Conservation - for loan out</option>
+      <option>Conservation - for photography</option>
+      <option>Damage repair</option>
+      <option>Damage repair - for permanent display</option>
+	  <option>Environmental check</option>
+	  <option>Examine for acquisition</option>	  
+	  <option>Exhibition - condition check</option>  
+	  <option>Exhibition - pre-loan condition check</option>
+	  <option>Exhibition - return condition check</option>	  
+	  <option>Gallery maintenance</option>
+	  <option>Loan in - condition check</option>
+	  <option>Loan out - condition check</option>  
+	  <option>Loan out - pre-loan condition check</option>
+	  <option>Loan out - return condition check</option>
+      <option>Other</option>
+    </select>
+  </div>
+  
+   <div class="small field_container">
+      <label for="CONSERVE_REQUEST">Conservation Requested?</label>
+      <select id="CONSERVE_REQUEST">
+	   <option></option>
+       <option>Yes</option>
+       <option>No</option>
+    </select>
+  </div>
+ </div>
+
+<fieldset class="repeating_group" data-group-title="Conservator" id="J_CONSERV_GRP">
+  <div class="form_row contains_browse">
+    <div class="full people_validated_field field_container" data-map="job_conserve">
+      <label for="J_CONSERVATOR">Individual</label>
+      <input type="text" id="J_CONSERVATOR" readonly>
+      <input type="hidden" id="J_CONSERVATOR_ID">
+    </div>
+	</div>
+	
+   <div class="form_row">
+    <div class="full field_container">
+    <label for="CONSERVATOR_NOTE">Conservator's note</label>
+    <textarea id="CONSERVATOR_NOTE"></textarea>
+  </div>
+ 	</div> 
+	</fieldset>
+
+<div class="form_row">
+  <div class="small field_container">
+      <label for="JOB_STATUS">Status</label>
+      <select id="JOB_STATUS">
+	   <option></option>
+       <option>Open</option>
+       <option>In Progress</option>
+	   <option>Closed</option>
+    </select>
+    </div>
+
+ <div class="small date field_container">
+      <label for="WO_COMPLETE">Date Completed</label>
+      <input type="text" id="WO_COMPLETE">
+    </div>
+  </div>
+  
+<div class="form_row">
+  <div class="full field_container">
+    <label for="JOB_EXHIBIT_NAME">Exhibition/Loan </label>
+    <input type="text" id="JOB_EXHIBIT_NAME">
+  </div>
+ </div>  
+
+  <div class="form_row">
+    <div class="full field_container">
+    <label for="WORK_DETAILS">Work to be carried out</label>
+    <textarea id="WORK_DETAILS"></textarea>
+  </div>
+  </div>
+  
+<div class="form_row">
+  <div class="small date field_container">
+      <label for="FIRST_RESPONSE">Due</label>
+      <input type="text" id="FIRST_RESPONSE">
+    </div>
+
+  <div class="small validated_table field_container">
+    <label for="COMPLETED_BY">Completed By</label>
+    <input type="text" id="COMPLETED_BY" data-val-database="VAL_USER" data-val-field="EXPANSION" readonly>
+  </div>
+
+  <div class="small date field_container">
+      <label for="DATE_COMPLETED">Completed on</label>
+      <input type="text" id="DATE_COMPLETED">
+    </div>
+</div>
+
+
+<fieldset class="repeating_group" data-group-title="Objects Attached to Incident" id="JOB_INC_GROUP">
+  <div class="form_row">
+    <div class="small m2a_validated_field field_container" data-map="incident_objects">
+      <label for="JOB_ACC_NO">Accession Number</label>
+      <input type="text" id="JOB_ACC_NO" readonly>
+    </div>
+
+    <div class="large field_container">
+      <label for="JOB_LEGAL_TITLE">Title</label>
+      <input type="text" id="JOB_LEGAL_TITLE" readonly>
+    </div>
+    </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Incident Related Entities" id="RELATED_ENTITIES">
+   <div class="form_row">
+      <div class="small field_container">
+        <label for="JI_POLICE_APPLI">Reported to Police</label>
+        <select id="JI_POLICE_APPLI">
+          <option></option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+
+      <div class="medium field_container">
+        <label for="JI_POLICE_NAME">Related Name</label>
+        <input type="text" id="JI_POLICE_NAME">
+      </div>
+
+      <div class="small field_container">
+        <label for="JI_POLICE_DIVISI">Division / Department</label>
+        <input type="text" id="JI_POLICE_DIVISI">
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="small field_container">
+        <label for="JI_POLICE_CONTAC">Related Phone</label>
+        <input type="text" id="JI_POLICE_CONTAC">
+      </div>
+
+      <div class="medium field_container">
+        <label for="JI_POLICE_EMAIL">E-mail</label>
+        <input type="text" id="JI_POLICE_EMAIL">
+      </div>
+
+      <div class="small field_container">
+        <label for="JI_POLICE_CASENO">File Number</label>
+        <input type="text" id="JI_POLICE_CASENO">
+      </div>
+    </div>
+  </fieldset>

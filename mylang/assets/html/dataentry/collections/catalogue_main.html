@@ -1,0 +1,230 @@
+<span class="hidden current_page" id="catalogue_main"></span>
+
+<div class="form_row">
+  <div class="small acq_validated_field field_container" data-map="acquisition_to_collections">
+    <label for="REG_TRACKING_NO">Acq. Tracking No.</label>
+    <input type="text" id="REG_TRACKING_NO" readonly>
+  </div>
+
+  <div class="small validated_table repeating_field field_container">
+    <label for="OBJECT_NAME">Object Name</label>
+    <input type="text" id="OBJECT_NAME" data-val-database="OBJ_NAME_VAL" data-val-field="LOOKUP_FIELD" readonly>
+  </div>
+
+  <div class="medium field_container">
+    <label for="OBJECT_TYPE">Object Type</label>
+    <select id="OBJECT_TYPE">
+      <option></option>
+      <option>Painting</option>
+      <option>Bust</option>
+      <option>Ceramics</option>
+      <option>Furnishings</option>
+      <option>Heraldry</option>
+      <option>Metal enamel</option>
+      <option>Mineral</option>
+      <option>Mixed media</option>
+      <option>Monument</option>
+      <option>Monument/portrait</option>
+      <option>Painted mural</option>
+      <option>Photograph</option>
+      <option>Portrait</option>
+      <option>Relief</option>
+      <option>Relief mural</option>
+      <option>Reproduction/poster</option>
+      <option>Sculpture</option>
+      <option>Silver</option>
+      <option>Textile</option>
+      <option>Work on paper</option>
+    </select>
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="OBJ_DESCRIPTION">Object Description</label>
+    <textarea id="OBJ_DESCRIPTION"></textarea>
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Material" id="MATERIAL_GROUP">
+  <div class="borderless form_row">
+    <div class="medium matthes_validated_field field_container" data-map="material">
+      <label for="MATERIAL_COO">English</label>
+      <input type="text" id="MATERIAL_COO" readonly>
+    </div>
+
+  <div class="medium field_container">
+      <label for="MATERIAL_FRENCH">French</label>
+      <input type="text" id="MATERIAL_FRENCH" readonly>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Medium" id="MEDIUM_GROUP">
+  <div class="borderless form_row">
+    <div class="medium medium_validated_field field_container" data-map="medium">
+      <label for="MEDIUM">English</label>
+      <input type="text" id="MEDIUM" readonly>
+    </div>
+
+  <div class="medium field_container">
+      <label for="MEDIUM_FRENCH">French</label>
+      <input type="text" id="MEDIUM_FRENCH" readonly>
+    </div>
+  </div>
+</fieldset>
+
+<div class="form_row">
+  <div class="small field_container">
+    <label for="EARLY">Earliest Date</label>
+    <input type="text" id="EARLY">
+  </div>
+
+  <div class="small field_container">
+    <label for="LATE">Latest Date</label>
+    <input type="text" id="LATE">
+  </div>
+
+  <div class="medium field_container">
+    <label for="MANUFACTURE_DATE">Manufactured Date</label>
+    <input type="text" id="MANUFACTURE_DATE">
+  </div>
+</div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="DATE_NOTES">Date Notes</label>
+    <textarea id="DATE_NOTES"></textarea>
+  </div>
+</div>
+
+<fieldset class="logical_group">
+  <legend>Chenhall <a class="load_nom" data-map="nomenclature"><i class="fa fa-plus-square"></i></a></legend>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="CATEGORY">Category</label>
+      <input type="text" id="CATEGORY" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="CLASSIFICATION">Classification</label>
+      <input type="text" id="CLASSIFICATION" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="SUB_CLASSIFY">Sub-Classification</label>
+      <input type="text" id="SUB_CLASSIFY" readonly>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="medium field_container">
+      <label for="PRIMARY">Primary</label>
+      <input type="text" id="PRIMARY" readonly>
+    </div>
+    <div class="small field_container">
+      <label for="SECONDARY">Secondary</label>
+      <input type="text" id="SECONDARY" readonly>
+    </div>
+    <div class="small field_container">
+      <label for="TERTIARY">Tertiary</label>
+      <input type="text" id="TERTIARY" readonly>
+    </div>
+  </div>
+</fieldset>
+
+
+<fieldset class="repeating_group" data-group-title="Subject" id="SUBJECT_GROUP">
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="SUB_KEYWORD">Subject</label>
+      <input type="text" id="SUB_KEYWORD">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Other Number" id="OTHER_NUM_GROUP">
+  <div class="borderless form_row">
+    <div class="medium field_container">
+      <label for="OTHER_NUMBER">Other Number</label>
+      <input type="text" id="OTHER_NUMBER">
+    </div>
+    <div class="medium validated_table field_container">
+      <label for="OTHER_NUM_TYPE">Other Number Type</label>
+      <input type="text" id="OTHER_NUM_TYPE" data-val-database="OTHER_NUM_TYPE_VAL" data-val-field="LOOKUP_FIELD" readonly>
+    </div>
+  </div>
+</fieldset>
+
+<div class="form_row">
+  <div class="small field_container">
+    <label for="AO_BARCODED">Barcoded?</label>
+        <select id="AO_BARCODED">
+          <option></option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+  </div>
+
+  <div class="small repeating_field field_container">
+    <label for="BARCODE">Barcode</label>
+    <input type="text" id="BARCODE">
+  </div>
+
+  <div class="small field_container">
+    <label for="AO_SEC_MOUNTED">Can be Security Mounted?</label>
+        <select id="AO_SEC_MOUNTED">
+          <option></option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+  </div>
+
+  <div class="small field_container">
+    <label for="SCHOOL">School / Era</label>
+    <input type="text" id="SCHOOL">
+  </div>
+</div>
+
+<fieldset class="repeating_group" data-group-title="Other Title" id="OTHER_TITLE_GRP">
+  <div class="form_row">
+    <div class="full field_container">
+      <label for="OTHER_TITLE">Other Title</label>
+      <input type="text" id="OTHER_TITLE">
+    </div>
+  </div>
+
+  <div class="form_row">
+    <div class="medium repeating_field validated_table field_container">
+      <label for="OTHER_TITLE_TYPE">Type</label>
+      <input type="text" id="OTHER_TITLE_TYPE" data-val-database="OTHER_TITLE_TYPE_VAL" data-val-field="LOOKUP_FIELD" readonly>
+    </div>
+
+    <div class="medium field_container">
+      <label for="OTHER_TITLE_SRC">Source</label>
+      <input type="text" id="OTHER_TITLE_SRC">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="OTHER_TITLE_NOTE">Notes</label>
+      <textarea id="OTHER_TITLE_NOTE"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="repeating_group" data-group-title="Last Modified" id="LAST_MODIFIED">
+  <div class="borderless form_row">
+    <div class="large field_container">
+      <label for="LAST_MODIFIED_BY">By</label>
+      <input type="text" id="LAST_MODIFIED_BY" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="LAST_MODIFIED_TM">On</label>
+      <input type="text" id="LAST_MODIFIED_TM" readonly>
+    </div>
+  </div>
+</fieldset>

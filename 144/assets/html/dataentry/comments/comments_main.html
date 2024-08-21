@@ -1,0 +1,147 @@
+<span class="hidden current_page" id="comments_main"></span>
+
+<fieldset class="logical_group">
+  <legend>Comments ID</legend>
+  <div class="borderless form_row">
+    <div class="medium container_validated_field m2a_validated_field lib_validated_field m3_validated_field field_container no_view_link"
+      data-map-m2a="m2a_comments_object"
+      data-map-m3="m3_comments_object"
+      data-map-container="container_comments_object"
+      data-map-lib="lib_comments_object"
+    >
+      <label for="COMMENTS_ITEM_ID">
+        <a class="view_authority_record"
+          data-view="container=CONTAINER,m2a=DESCRIPTION,lib=LIBRARY,m3=COLLECTION"
+          data-source="COMMENTS_SOURCE"
+          data-recid="COMMENTS_ITEM_ID">
+          <i class="fa fa-info-circle fa-lg" style="color: #798ca4"></i>
+        </a>&nbsp;Item ID
+      </label>
+      <input type="text" id="COMMENTS_ITEM_ID" readonly class="mandatory_check" data-mandatory="$$">
+    </div>
+
+    <div class="medium field_container">
+      <label for="COMMENTS_SOURCE">Item Source</label>
+      <input type="text" id="COMMENTS_SOURCE"  class="mandatory_check" data-mandatory="$$" readonly>
+    </div>
+  </div>
+</fieldset>
+
+<!--
+<fieldset class="logical_group">
+  <legend>Comments Creator</legend>
+  <div class="borderless form_row">
+    <div class="full field_container" >
+      <label for="CREATOR">
+        Creator
+      </label>
+      <input type="text" id="CREATOR" class="mandatory_check" data-mandatory="$$">
+    </div>
+  </div>
+</fieldset>
+-->
+
+<fieldset class="logical_group">
+  <legend>Comments Details</legend>
+
+  <div class="form_row">
+    <div class="full repeating_field validated_table field_container">
+      <label for="COMMENTS_KEYWORD">Keyword</label>
+      <input type="text" id="COMMENTS_KEYWORD" data-val-database="COMMENTS" data-val-field="COMMENTS_KEYWORD">
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="full select_field field_container">
+      <label for="ANNOTATION_TYPE">Annotation Type</label>
+      <select id="ANNOTATION_TYPE">
+        <option></option>
+        <option>Interpretation</option>
+        <option>Comments</option>
+        <option>Transcription</option>
+        <option>Translated</option>
+        <option>Other</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="medium field_container">
+      <label for="COMMENTS">Original Comments</label>
+      <textarea type="text" id="COMMENTS" rows="10"></textarea>
+    </div>
+
+    <div class="medium field_container">
+      <label for="TRANSLATION">Updated Comments</label>
+      <textarea type="text" id="TRANSLATION" rows="10"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Approval</legend>
+  <div class="borderless form_row">
+    <div class="small form_button field_container" style="font-size: 1rem; margin-top: 3px;" id="APPROVED_BUTTON">
+    <a href="#" onclick="approveComments($(this));"><i class="fa fa-check"></i> Approved</a>
+    </div>
+    <div class="small field_container">
+      <label for="CM_APPROVED_BY">Approved By</label>
+      <input type="text" id="CM_APPROVED_BY" readonly>
+    </div>
+    <div class="small field_container">
+      <label for="CM_APPROVED_ON">Approved On</label>
+      <input type="text" id="Cm_APPROVED_ON" readonly>
+    </div>
+    <div class="small field_container">
+      <label for="COMMENTS_ACTION">Record Status</label>
+      <select id="COMMENTS_ACTION">
+        <option>NEW</option>
+        <option>REVIEW</option>
+        <option>APPROVED</option>
+        <option>REJECTED</option>
+        <option>DELETED</option>
+        <option>SAMPLE</option>
+     </select>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Actions taken on record</legend>
+
+  <div class="borderless form_row">
+    <div class="medium field_container">
+      <label for="CREATOR">Entered By</label>
+      <input type="text" id="CREATOR">
+    </div>
+
+    <div class="medium field_container">
+      <label for="COMMENTS_DATE">Entered On</label>
+      <input type="text" id="COMMENTS_DATE" readonly>
+    </div>
+  </div>
+
+  <fieldset class="repeating_group" data-group-title="Last Modified" id="MOD_GROUP">
+    <div class="borderless form_row">
+      <div class="medium field_container">
+        <label for="MOD_USER">By</label>
+        <input type="text" id="MOD_USER" readonly>
+      </div>
+
+      <div class="medium field_container">
+        <label for="MOD_DATE">On</label>
+        <input type="text" id="MOD_DATE" readonly>
+      </div>
+    </div>
+  </fieldset>
+</fieldset>
+
+<!-- call initalization user routine -->
+<input type="hidden" class="init_call_exit protect_field_exit"
+   data-protect1="'COMMENTS_ACTION = ''APPROVED''',APPROVED_BUTTON"
+/>
+
+<!-- call record wrapup user routine -->
+<input type="hidden" class="wrapup_user_exit"
+  data-exit="wrapupComments"
+/>

@@ -1,0 +1,14 @@
+<script>
+  site_params = {
+    add_link : get_home_sessid() + '/ENQUIRIES?OPEN&DBOPTION=ADD&RECORD_DEFAULT=Y&NAME1=ENQ_STATUS&VALUE1=Request&NAME2=ENQ_HANDLED_BY&VALUE2=%2b%2b2&NAME3=ENQ_DUE_DATE&VALUE3=%2b%2b1%2b14D&NAME4=E_METHOD_REQUEST&VALUE4=Web&RETURN_URL=^HOME_SESSID^?GET%26FILE=[CAMS_APP]/144/assets%5chtml%5ctemplate%5cclose_form.html',
+    global_change_link : get_home_sessid() + '?QUERYFORM&SEARCHFORM=[CAMS_APP]/144/search%5cservicedesk_gc.html&DATABASE=ENQUIRIES&DBOPTION=SEARCH',
+    save_link : get_saverecord() + '&FILE=[CAMS_APP]/144/ASSETS%2fHTML%2fTEMPLATE%2fQUERY_FORM.HTML&DISCONNECT=N&CLOSE=Y',
+    skip_link : get_skiprecord()  + '&FILE=[CAMS_APP]/144/ASSETS%2fHTML%2fTEMPLATE%2fQUERY_FORM.HTML',
+    search_link : get_home_sessid() + '/ENQUIRIES?OPEN&DBOPTION=SEARCH&CLEAR=Y'
+  };
+</script>
+<script src="/144/assets/js/vendor/jquery.colorbox-min.js"></script>
+<script src="/144/assets/html/template/db/app_data.js"></script>  <!-- RL-2021-05-31 -->
+<script src="/144/assets/js/frontend_util.js"></script>    <!-- RL-2021-03-08 -->
+<script src="/144/assets/js/frontend.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>

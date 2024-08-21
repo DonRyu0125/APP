@@ -1,0 +1,90 @@
+<span class="hidden current_page" id="oral_main"></span>
+
+<fieldset class="logical_group">
+  <legend>Interview Information</legend>
+  <div class="form_row">
+    <div class="small date field_container">
+      <label for="OH_INTERVIEW_DAT">Date</label>
+      <input type="text" id="OH_INTERVIEW_DAT">
+    </div>
+
+    <div class="small field_container">
+      <label for="OH_INTERVIEW_STA">Start Time</label>
+      <input type="text" id="OH_INTERVIEW_STA">
+    </div>
+
+    <div class="small field_container">
+      <label for="OH_INTERVIEW_END">End Time</label>
+      <input type="text" id="OH_INTERVIEW_END">
+    </div>
+
+    <div class="small field_container">
+        <label for="OH_INTERVIW_TYPE">Type</label>
+        <select id="OH_INTERVIW_TYPE">
+          <option></option>
+          <option>Audio only</option>
+          <option>Video only</option>
+      <option>Audio/Video</option>
+          <option>Interview not recorded</option>
+        </select>
+      </div>
+   </div>
+
+  <div class="form_row">
+    <div class="medium field_container">
+      <label for="OH_INTERVIEW_LOC">Location</label>
+      <input type="text" id="OH_INTERVIEW_LOC">
+    </div>
+
+   <div class="medium field_container">
+    <label for="OH_INTERVIEW_ID">Interview ID</label>
+    <input type="text" id="OH_INTERVIEW_ID">
+     </div>
+    </div>
+
+<div class="form_row">
+  <div class="full field_container">
+    <label for="OH_INTERVIEW_SUM">Interview Summary</label>
+   <textarea id="OH_INTERVIEW_SUM"></textarea>
+  </div>
+</div>
+  </fieldset>
+
+ <fieldset class="repeating_group" data-group-title="People Present" id="OH_PPRESENT_GRP">
+    <div class="form_row contains_browse">
+      <div class="full people_validated_field field_container" data-map="present_individual">
+        <label for="OH_PEOPLE_P">Individual</label>
+        <input type="text" id="OH_PEOPLE_P" readonly>
+        <input type="hidden" id="OH_PEOPLE_P_ID">
+      </div>
+
+      <div class="full field_container">
+        <label for="OH_PPRESENT_NOTE">Notes</label>
+        <input type="text" id="OH_PPRESENT_NOTE">
+      </div>
+    </div>
+  </fieldset>
+
+
+  <fieldset class="repeating_group" data-group-title="Tape Log" id="OH_TAPE_LOG">
+    <div class="form_row contains_browse">
+      <div class="small field_container">
+        <label for="OH_TAPE_LOG_TM">Time/Tape Log</label>
+        <input type="text" id="OH_TAPE_LOG_TM">
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="full text file_attachment field_container">
+        <label for="OH_AVFILE">Audio/Visual File</label>
+        <input type="text" id="OH_AVFILE">
+      </div>
+    </div>
+
+    <div class="form_row">
+      <div class="full field_container">
+        <label for="OH_TAPE_LOG_DESC">Description</label>
+        <textarea id="OH_TAPE_LOG_DESC"></textarea>
+      </div>
+    </div>
+  </fieldset>

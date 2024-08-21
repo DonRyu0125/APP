@@ -1,0 +1,75 @@
+<nav id="database_actions">
+  <ul>
+    <li id="dba_search_todo"><a href="^HOME_SESSID^/SERVICEDESK_DESCRIPTION?OPEN&DBOPTION=SEARCH&CLEAR=Y" title="To-Do List"><i class="fa fa-list-ul"></i></a></li>
+    <li id="dba_tree">
+        <a href='^HOME_SESSID^?QUERYFORM&SEARCHFORM=[CAMS_APP]/144/search%5ctree.html&DATABASE=DESCRIPTION&DBOPTION=SEARCH' title="View Record">
+            <i class="fa fa-tree"></i>
+        </a>
+    </li>
+
+    <!-- Add New Record -->
+    <!-- <li id="dba_new">
+        <a href="^HOME_SESSID^/DESCRIPTION?OPEN&DBOPTION=ADD" title="Create New Record" id="dba_new_link">
+            <i class="fa fa-file-o"></i>
+        </a>
+    </li>
+    -->
+
+    <!-- Delete Record -->
+    <li id="dba_delete">
+        <a href="^HOME_SESSID^/DESCRIPTION?OPEN&DBOPTION=DELETE" title="Delete Record" class="disabled" id="dba_delete_link">
+            <i class="fa fa-trash-o"></i>
+        </a>
+    </li>
+
+    <!-- Save Record -->
+    <li id="dba_save">
+        <a data-form-action="" href="#" title="Save Record" class="disabled">
+            <i class="fa fa-floppy-o"></i>
+        </a>
+    </li>
+
+    <!-- <li id="dba_save_next"><a href="#" title="Save and Load Next Record" class="disabled"><i class="fa fa-floppy-o"></i><i class="fa fa-angle-right"></i></a></li> -->
+    <li id="dba_cancel">
+        <a href="#" title="Cancel Edits" class="disabled">
+            <i class="fa fa-ban"></i>
+        </a>
+    </li>
+
+    <!-- Search Record -->
+    <li id="dba_search">
+        <a href="^HOME_SESSID^/DESCRIPTION?OPEN&DBOPTION=SEARCH&CLEAR=Y" title="Search">
+            <i class="fa fa-search"></i>
+        </a>
+    </li>
+
+    <!-- Edit Record -->
+    <li id="dba_edit">
+        <a href="^HOME_SESSID^/DESCRIPTION?OPEN&DBOPTION=CHANGE" title="Edit" id="dba_edit_link">
+            <i class="fa fa-edit"></i>
+        </a>
+    </li>
+
+    <!-- Copy Record -->
+    <li id="dba_copy"><a href="#" title="Copy" class="disabled"><i class="fa fa-copy"></i></a></li>
+    <!-- Report -->
+    <li id="dba_reports"  class="dropdown">
+      <a href="#" data-toggle="dropdown" class="dropdown-toggle" title="Reports"><i class="fa fa-newspaper-o"></i><b class="caret"></b></a>
+    <ul class="dropdown-menu" style="background: white">
+        <li>
+          <a href="#" class="db_report" id="find_aid">Finding Aid</a>
+        </li>
+    </ul>
+    </li>
+    <!-- Print -->
+    <li id="dba_print"><a href="#" title="Print"><i class="fa fa-print"></i></a></li>
+    <!-- Global Change -->
+    <li id="dba_global_change"><a
+        href="^HOME_SESSID^?QUERYFORM&SEARCHFORM=[CAMS_APP]/144/search%5cdes_gc.html&DATABASE=DESCRIPTION&DBOPTION=SEARCH"
+        title="Perform Global Change"><i class="fa fa-globe"></i></a></li>
+    <!-- Movement KN 2021-01-29 -->
+    <li id="dba_plan"><a href="#" title="Plan Movement"><i class="fa fa-calendar"></i></a></li>
+    <li id="dba_move"><a href="#" title="Move Multiple Objects"><i class="fa fa-truck"></i></a></li>
+  </ul>
+  <hr>
+</nav>

@@ -1,0 +1,1175 @@
+<span class="hidden current_page" id="main"></span>
+
+<fieldset class="logical_group">
+  <legend>Step One - Select Client</legend>
+  <div class="borderless form_row">
+    <div class="small client_validated_field field_container" data-map="client_object">
+      <label for="REQ_PATRON_ID">Client ID</label>
+      <input type="text" id="REQ_PATRON_ID" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="REQ_AOR_CARD_NO">Former AOR Card No.</label>
+      <input type="text" id="REQ_AOR_CARD_NO">
+    </div>
+
+      <div class="medium field_container">
+        <label for="REQ_PATRON_NAME">Client Name</label>
+        <input type="text" id="REQ_PATRON_NAME" class="mandatory_check" data-mandatory="$$">
+      </div>
+  </div>
+
+  <div class="borderless form_row">
+      <div class="small field_container">
+        <label for="REQ_PATRON_EMAIL">Client Email</label>
+        <input type="text" id="REQ_PATRON_EMAIL" class="mandatory_check" data-mandatory="$$">
+      </div>
+
+    <div class="large field_container">
+      <label for="REQ_AFFILIATE">Client Affiliation</label>
+      <input type="text" id="REQ_AFFILIATE">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Step Two (Optional) - Select Item</legend>
+  <div class="borderless form_row">
+    <div class="medium container_validated_field m2a_validated_field lib_validated_field m3_validated_field field_container no_view_link"
+      data-map-m2a="m2a_request_object"
+      data-map-m3="m3_request_object"
+      data-map-container="container_request_object"
+      data-map-lib="lib_request_object"
+    >
+      <label for="REQ_ITEM_ID">
+        <a class="view_authority_record"
+          data-view="container=CONTAINER,m2a=DESCRIPTION,lib=LIBRARY,m3=COLLECTION"
+          data-source="REQ_DB_NAME"
+          data-recid="REQ_ITEM_ID">
+          <i class="fa fa-info-circle fa-lg" style="color: #798ca4"></i>
+        </a>&nbsp;Item ID
+      </label>
+      <input type="text" id="REQ_ITEM_ID" class="get_item_info">  <!-- RL-20220913 -->
+      <input type="hidden" id="REQ_LOC_CODE" readonly class="lookup_exit"
+        data-lookup="LOCATION_AUTHORITY,LOC_CODE,BUILDING,REQ_BUILDING_COD,FLOOR,REQ_FLOOR,ROOM,REQ_ROOM,STREET,REQ_STREET,MANAGED_SPACE,REQ_MANAGED_SP,BOX,REQ_CONTAINER_ID,BUILDING,REQ_HOLD_CENTRE">
+      <input type="hidden" id="REQ_CHILD_ID" class="lookup_container">
+    </div>
+
+    <div class="small field_container">
+      <label for="REQ_DB_NAME">Item Source</label>
+      <input type="text" id="REQ_DB_NAME" readonly>
+    </div>
+
+    <div class="small field_container">
+      <label for="REQ_WAIT_TIME">Delivery Time in Days</label>
+      <input type="number" id="REQ_WAIT_TIME" min="0" step="1">
+    </div>
+  </div>
+  <div class="borderless form_row">
+    <div class="full field_container">
+      <label for="REQ_ITEM_TITLE">Item Title</label>
+      <input type="text" id="REQ_ITEM_TITLE" readonly>
+    </div>
+  </div>
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <label for="REQ_LOC_TYPE">Location Type</label>
+      <input type="text" id="REQ_LOC_TYPE" readonly class="generate_field_exit"
+        data-generate1"'REQ_LOC_TYPE ''OFFSITESTD''',REQ_WAIT_TIME,'1'"
+        data-generate2="'REQ_LOC_TYPE ''OFFSITECOOL''',REQ_WAIT_TIME,'1'"
+        data-generate3="'REQ_LOC_TYPE ''OFFSITECOLD''',REQ_WAIT_TIME,'2'"
+      >
+    </div>
+    <div class="small field_container">
+      <label for="REQ_HOLD_CENTRE">Onsite Location</label>
+      <input type="text" id="REQ_HOLD_CENTRE" readonly>
+    </div>
+    <div class="small field_container">
+      <label for="REQ_MONITOR_FLAG">Monitor</label>
+      <input type="text" id="REQ_MONITOR_FLAG" readonly>
+    </div>
+    <div class="small field_container">
+      <label for="REQ_RESTR_ITEM">Restricted</label>
+      <input type="text" id="REQ_RESTR_ITEM" readonly>
+    </div>
+  </div>
+  <!-- RL-20220913 -->
+  <div class="borderless form_row">
+    <div class="medium field_container">
+      <label for="REQ_VOLUME_ID>Issue #/Copy #</label>
+      <input type="text" id="REQ_VOLUME_ID" />
+    </div>
+    <div class="medium field_container">
+      <label for="REQ_CALL_NUMBER">Item Call Number</label>
+      <input type="text" id="REQ_CALL_NUMBER" />
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Step Three - Fill Request Details</legend>
+  <div class="data-section" id="general" style="display: none;">
+    <fieldset class="logical_group indent_box">
+      <legend>General Information</legend>
+      <div class="borderless form_row">
+        <div class="full field_container">
+          <label for="REQ_TOPIC_GL">Additional Information</label>
+          <textarea id="REQ_TOPIC_GL"></textarea>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+  <div class="data-section" id="access_items" style="display: none;">
+    <fieldset class="logical_group indent_box">
+      <legend>Accessing Collection Items</legend>
+      <div class="borderless form_row">
+        <div class="full field_container">
+          <label for="REQ_TOPIC_ACI">Additional Information</label>
+          <textarea id="REQ_TOPIC_ACI"></textarea>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+  <div class="data-section" id="find_items" style="display: none;">
+    <fieldset class="logical_group indent_box">
+      <legend>Finding Collection Items</legend>
+      <div class="borderless form_row">
+        <div class="full field_container">
+          <label for="REQ_TOPIC_FCI">Additional Information</label>
+          <textarea id="REQ_TOPIC_FCI"></textarea>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+  <div class="data-section" id="reproduction" style="display: none;">
+    <fieldset class="logical_group indent_box">
+      <legend>Obtaining Reproductions</legend>
+      <div class="borderless form_row">
+        <div class="small field_container">
+          <label for="REQ_REPRO_TYPE">Type of Reproduction</label>
+          <select id="REQ_REPRO_TYPE">
+            <option></option>
+            <option>Digital Copy up to 18" x 25"</option>
+            <option>Digital Copy up to 18" x 56"</option>
+            <option>Hi-Resolution Copy</option>
+            <option>Sound & Moving Images</option>
+            <option>Print up to 11" x 17"</option>
+            <option>Print up to 11" x 36"</option>
+            <option>Certified Copies</option>
+          </select>
+        </div>
+        <div class="small field_container">
+          <label for="REQ_NUM_UNITS"># of Pages/Titles</label>
+          <input type="number" id="REQ_NUM_UNITS">
+        </div>
+        <div class="small field_container">
+          <label for="REQ_DELIVERY">Delivery Method</label>
+          <select id="REQ_DELIVERY">
+            <option></option>
+            <option>Courier</option>
+            <option>Digital Delivery</option>
+            <option>Email</option>
+            <option>FTP</option>
+            <option>In Person</option>
+            <option>Mail</option>
+          </select>
+        </div>
+        <div class="small field_container">
+          <label for="REQ_RUSH">Rush Job</label>
+          <input type="checkbox" id="REQ_RUSH">
+        </div>
+      </div>
+
+      <div class="borderless form_row">
+        <div class="medium field_container">
+          <label for="REQ_REPRO_HANDLR">Production Handled by</label>
+          <select id="REQ_REPRO_HANDLR">
+            <option></option>
+            <option>Custom Service</option>
+            <option>Reproduction Department</option>
+          </select>
+        </div>
+        <div class="medium field_container">
+          <label for="REQ_WAYBILL_NO">Courier Waybill No.</label>
+          <input type="text" id="REQ_WAYBILL_NO">
+        </div>
+      </div>
+
+      <fieldset class="repeating_group" data-group-title="Reproduction Item(s)" id="REQ_REPROD_FILES">
+        <div class="borderless form_row">
+          <div class="small field_container">
+            <label for="REPRO_ITEM_TYPE">Item Type</label>
+            <select id="REPRO_ITEM_TYPE">
+              <option></option>
+              <option>Audio</option>
+              <option>Video</option>
+              <option>Graphic</option>
+              <option>Text</option>
+            </select>
+          </div>
+
+          <div class="small field_container">
+            <label for="REQ_REPRO_TYPE">Type of Reproduction</label>
+            <select id="REQ_REPRO_TYPE">
+              <option></option>
+              <option>Digital Copy up to 18" x 25"</option>
+              <option>Digital Copy up to 18" x 56"</option>
+              <option>Hi-Resolution Copy</option>
+              <option>Sound & Moving Images</option>
+              <option>Print up to 11" x 17"</option>
+              <option>Print up to 11" x 36"</option>
+              <option>Certified Copies</option>
+            </select>
+          </div>
+
+          <div class="small field_container">
+            <label for="REQ_NUM_UNITS"># of Pages/Titles</label>
+            <input type="number" id="REQ_NUM_UNITS">
+          </div>
+
+          <div class="small field_container">
+            <label for="REPRO_COST">Cost</label>
+            <input type="number" id="REPRO_COST" step="0.01">
+          </div>
+        </div>
+
+        <div class="borderless form_row">
+          <div class="full field_container">
+            <label for="REPRO_ITEM_TITLE">Item Title</label>
+            <input type="text" id="REPRO_ITEM_TITLE">
+          </div>
+        </div>
+
+        <div class="borderless form_row">
+          <div class="full image file_attachment field_container">
+            <label for="REQ_REPROD_FILE">Reproduction File Path</label>
+            <input type="text" id="REQ_REPROD_FILE" readonly>
+          </div>
+        </div>
+
+        <div class="borderless form_row">
+          <div class="full field_container">
+            <label for="REPRO_ITEM_CAP">Item Caption</label>
+            <textarea id="REPRO_ITEM_CAP"></textarea>
+          </div>
+        </div>
+
+        <div class="borderless form_row">
+          <div class="small field_container">
+            <label for="REPRO_TO_DESC">Transfer to Description</label>
+            <input type="checkbox" id="REPRO_TO_DESC">
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="borderless form_row">
+        <div class="full field_container">
+          <label for="REQ_TOPIC_RP">Reproduction Notes</label>
+          <textarea id="REQ_TOPIC_RP"></textarea>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+  <div class="data-section" id="art_inquiries" style="display: none;">
+    <fieldset class="logical_group indent_box">
+      <legend>Art Collection Inquiries</legend>
+      <div class="borderless form_row">
+        <div class="full field_container">
+          <label for="REQ_TOPIC_ART">Additional Information</label>
+          <textarea id="REQ_TOPIC_ART"></textarea>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+  <div class="data-section" id="art_donation" style="display: none;">
+    <fieldset class="logical_group indent_box">
+      <legend>Donations - Art</legend>
+
+      <div >
+         <div class="full form_button field_container" style="margin: -5px 0 5px 0;">
+           <a href="#" onclick="hide_show_div('donation_general');" style=" border-radius: 5px 5px 0 0;"><i class="fa fa-arrows-alt"></i>General Information</a>
+         </div>
+      </div>
+
+      <div id="donation_general" class="show_as_is">
+        <div class="borderless form_row">
+          <div class="medium field_container">
+            <label for="R_DONOR_TYPE">Donor Type</label>
+            <input type="text" id="R_DONOR_TYPE">
+          </div>
+
+          <div class="medium field_container">
+            <label for="R_CREATOR">Creator</label>
+            <input type="text" id="R_CREATOR">
+          </div>
+        </div>
+
+        <div class="borderless form_row">
+          <div class="full field_container">
+            <label for="R_COLLECT_INFO">Collection Information</label>
+            <input type="text" id="R_COLLECT_INFO">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="medium repeating_field field_container">
+            <label for="R_MEDIA_TYPE">Media Type</label>
+            <select id="R_MEDIA_TYPE">
+              <option>Photographs</option>
+              <option>Maps</option>
+              <option>Drawings</option>
+              <option>Tapes</option>
+            </select>
+          </div>
+          <div class="medium field_container">
+            <label for="R_DATE_COLLECT">Dates of Collection</label>
+            <input type="text" id="R_DATE_COLLECT">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="medium field_container">
+            <label for="R_EXTENT_COLLECT">Extent of Collection</label>
+            <input type="text" id="R_EXTENT_COLLECT">
+          </div>
+          <div class="medium field_container">
+            <label for="R_SIZE_COLLECT">Size of Collection Items</label>
+            <input type="text" id="R_SIZE_COLLECT">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="medium field_container">
+            <label for="R_GEOG_LOC">Geographic Location</label>
+            <input type="text" id="R_GEOG_LOC">
+          </div>
+          <div class="small field_container">
+            <label for="R_PREV_DONATE">Previous Donations</label>
+            <input type="text" id="R_PREV_DONATE">
+          </div>
+          <div class="small field_container">
+            <label for="R_RECEIPT">Tax Receipt Required</label>
+            <select id="R_RECEIPT">
+              <option>Y</option>
+              <option>N</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div >
+         <div class="full form_button field_container" style="margin: -5px 0 5px 0;">
+           <a href="#" onclick="hide_show_div('donation_assessment');" style=" border-radius: 5px 5px 0 0;"><i class="fa fa-arrows-alt"></i>Assessment Report</a>
+         </div>
+      </div>
+
+      <div id="donation_assessment" class="show_as_is" style="display:none;">
+        <div class="borderless form_row">
+          <div class="full field_container">
+            <label for="RD_TITLE">Title</label>
+            <input type="text" id="RD_TITLE">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="medium field_container">
+            <label for="RD_REF_CODE">Reference Code/Collection Group</label>
+            <input type="text" id="RD_REF_CODE">
+          </div>
+          <div class="medium date field_container">
+            <label for="RD_DATE_CREATE">Date of Creation</label>
+            <input type="text" id="RD_DATE_CREATE">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="full field_container">
+            <label for="RD_PHY_DESC">Physical Description</label>
+            <input type="text" id="RD_PHY_DESC">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="full field_container">
+            <label for="RD_BIB_INFO">History/Bibliographical Information</label>
+            <input type="text" id="RD_BIB_INFO">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="full field_container">
+            <label for="RD_SCOPE">Scope & Content</label>
+            <input type="text" id="RD_SCOPE">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="medium field_container">
+            <label for="RD_ACC_REST">Access Restrictions</label>
+            <input type="text" id="RD_ACC_REST">
+          </div>
+          <div class="medium field_container">
+            <label for="RD_COPYRIGHT">Copyright</label>
+            <input type="text" id="RD_COPYRIGHT">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="medium field_container">
+            <label for="RD_PHY_COND">Physical Condition</label>
+            <input type="text" id="RD_PHY_COND">
+          </div>
+          <div class="medium field_container">
+            <label for="RD_RECOMMEND">Recommendation</label>
+            <input type="text" id="RD_RECOMMEND">
+          </div>
+        </div>
+      </div>
+
+      <div>
+         <div class="full form_button field_container" style="margin: -5px 0 5px 0;">
+           <a href="#" onclick="hide_show_div('donation_accessioning');" style=" border-radius: 5px 5px 0 0;"><i class="fa fa-arrows-alt"></i>Accessioning Information</a>
+         </div>
+      </div>
+
+      <div id="donation_accessioning" class="show_as_is" style="display:none;">
+        <div class="borderless form_row">
+          <div class="medium field_container">
+            <label for="RD_ACC_ID">Accession ID</label>
+            <input type="text" id="RD_ACC_ID">
+          </div>
+          <div class="medium field_container">
+            <label for="RD_SRC_TYPE">Source Type</label>
+            <input type="text" id="RD_SRC_TYPE">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="medium field_container">
+            <label for="RD_SRC_NAME">Source Name</label>
+            <input type="text" id="RD_SRC_NAME">
+          </div>
+          <div class="medium field_container">
+            <label for="RD_SRC_CONTACT">Contact</label>
+            <input type="text" id="RD_SRC_CONTACT">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="medium field_container">
+            <label for="RD_SRC_ROLE">Role</label>
+            <input type="text" id="RD_SRC_ROLE">
+          </div>
+          <div class="medium field_container">
+            <label for="RD_SRC_CONFID">Confidentiality</label>
+            <input type="text" id="RD_SRC_CONFID">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="full field_container">
+            <label for="RD_SRC_NOTE">Note</label>
+            <input type="text" id="RD_SRC_NOTE">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="medium date field_container">
+            <label for="RD_DATE_MAT">Date of Materials</label>
+            <input type="text" id="RD_DATE_MAT">
+          </div>
+          <div class="medium field_container">
+            <label for="RD_EXT_TYPE">Extent Type</label>
+            <input type="text" id="RD_EXT_TYPE">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="medium field_container">
+            <label for="RD_QTY_UNIT">Quantity and Unit of Measure</label>
+            <input type="text" id="RD_QTY_UNIT">
+          </div>
+          <div class="medium field_container">
+            <label for="RD_CONT_TYPE">Content Type</label>
+            <input type="text" id="RD_CONT_TYPE">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="medium field_container">
+            <label for="RD_CARRIER_TYPE">Carrier Type</label>
+            <input type="text" id="RD_CARRIER_TYPE">
+          </div>
+          <div class="medium field_container">
+            <label for="RD_EXT_NOTE">Extent Note</label>
+            <input type="text" id="RD_EXT_NOTE">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="medium field_container">
+            <label for="RD_EVENT_TYPE">Event Type</label>
+            <input type="text" id="RD_EVENT_TYPE">
+          </div>
+          <div class="medium date field_container">
+            <label for="RD_EVENT_DATE">Event Date</label>
+            <input type="text" id="RD_EVENT_DATE">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="medium field_container">
+            <label for="RD_EVENT_AGENT">Event Agent</label>
+            <input type="text" id="RD_EVENT_AGENT">
+          </div>
+          <div class="medium field_container">
+            <label for="RD_EVENT_NOTE">Event Note</label>
+            <input type="text" id="RD_EVENT_NOTE">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="medium field_container">
+            <label for="RD_REV_TYPE">Creation/Revision Type</label>
+            <input type="text" id="RD_REV_TYPE">
+          </div>
+          <div class="medium date field_container">
+            <label for="RD_REV_DATE">Creation/Revision Date</label>
+            <input type="text" id="RD_REV_DATE">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="medium field_container">
+            <label for="RD_REV_AGENT">Creation/Revision Agent</label>
+            <input type="text" id="RD_REV_AGENT">
+          </div>
+          <div class="medium field_container">
+            <label for="RD_REV_NOTE">Creation/Revision Note</label>
+            <input type="text" id="RD_REV_NOTE">
+          </div>
+        </div>
+      </div>
+
+      <div>
+         <div class="full form_button field_container" style="margin: -5px 0 5px 0;">
+           <a href="#" onclick="hide_show_div('donation_acquisition');" style=" border-radius: 5px 5px 0 0;"><i class="fa fa-arrows-alt"></i>Acquisition/Catalogue Information</a>
+         </div>
+      </div>
+
+      <div id="donation_acquisition" class="show_as_is" style="display:none;">
+        <fieldset class="repeating_group" data-group-title="Collection Items" id="RD_ACQ">
+        <div class="borderless form_row">
+          <div class="full field_container">
+            <label for="RD_ACQ_TITLE">Title</label>
+            <input type="text" id="RD_ACQ_TITLE">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="full field_container">
+            <label for="RD_ACQ_AUTHOR">Authors</label>
+            <input type="text" id="RD_ACQ_AUTHOR">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="medium field_container">
+            <label for="RD_ACQ_ISBN">ISBN</label>
+            <input type="text" id="RD_ACQ_ISBN">
+          </div>
+          <div class="medium field_container">
+            <label for="RD_ACQ_PRICE">Purchase Price</label>
+            <input type="text" id="RD_ACQ_PRICE">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="full field_container">
+            <label for="RD_ACQ_AGREE">Purchase Agreement</label>
+            <input type="text" id="RD_ACQ_AGREE">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="medium field_container">
+            <label for="RD_ACQ_SUBSCRIPT">Subscription</label>
+            <input type="text" id="RD_ACQ_SUBSCRIPT">
+          </div>
+          <div class="medium field_container">
+            <label for="RD_ACQ_VENDOR">Vendor</label>
+            <input type="text" id="RD_ACQ_VENDOR">
+          </div>
+        </div>
+        </fieldset>
+      </div>
+    </fieldset>
+  </div>
+
+  <div class="data-section" id="education" style="display: none;">
+    <fieldset class="logical_group indent_box">
+      <legend>Educational Resources and Workshops</legend>
+      <div class="borderless form_row">
+        <div class="full field_container">
+          <label for="REQ_TOPIC_ED">Additional Information</label>
+          <textarea id="REQ_TOPIC_ED"></textarea>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+  <div class="data-section" id="loan_digitization" style="display: none;">
+    <fieldset class="logical_group indent_box">
+      <legend>Loans - Digitization</legend>
+      <div class="borderless form_row">
+        <div class="full field_container">
+          <label for="REQ_TOPIC_DIG">Additional Information</label>
+          <textarea id="REQ_TOPIC_DIG"></textarea>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+  <div class="data-section" id="tour_event" style="display: none;">
+    <fieldset class="logical_group indent_box">
+      <legend>Tours and Events</legend>
+      <div class="borderless form_row">
+        <div class="full field_container">
+          <label for="REQ_TOPIC_TOUR">Additional Information</label>
+          <textarea id="REQ_TOPIC_TOUR"></textarea>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+  <div class="data-section" id="exhibits" style="display: none;">
+    <fieldset class="logical_group indent_box">
+      <legend>Exhibits</legend>
+      <div class="borderless form_row">
+        <div class="full field_container">
+          <label for="REQ_TOPIC_EXH">Detailed Information</label>
+          <textarea id="REQ_TOPIC_EXH"></textarea>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+  <div class="data-section" id="website" style="display: none;">
+    <fieldset class="logical_group indent_box">
+      <legend>Website Technical Issues</legend>
+      <div class="borderless form_row">
+        <div class="full field_container">
+          <label for="REQ_TOPIC_WS">Additional Information</label>
+          <textarea id="REQ_TOPIC_WS"></textarea>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+  <div class="data-section" id="collect_desc" style="display: none;">
+    <fieldset class="logical_group indent_box">
+      <legend>Corrections to Descriptions</legend>
+      <div class="borderless form_row">
+        <div class="full field_container">
+          <label for="REQ_TOPIC_CD">Additional Information</label>
+          <textarea id="REQ_TOPIC_CD"></textarea>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+  <div class="data-section" id="loan_exhibition" style="display: none;">
+    <fieldset class="logical_group indent_box">
+      <legend>Loans - Exhibition</legend>
+      <div style="padding-bottom: 5px; margin-top: -30px;">
+         <div class="full form_button field_container">
+           <a href="#" onclick="hide_show_div('loan_general');" style=" border-radius: 5px 5px 0 0;"><i class="fa fa-arrows-alt"></i>General Information</a>
+         </div>
+      </div>
+
+      <div id="loan_general" class="show_as_is">
+        <div class="borderless form_row">
+          <div class="small field_container">
+            <label for="R_LOAN_TYPE">Loan Type</label>
+            <select id="R_LOAN_TYPE">
+              <option>Outgoing Loan </option>
+              <option>Internal Exhibition</option>
+              <option>Exhibition</option>
+            </select>
+          </div>
+          <div class="small  date field_container">
+            <label for="R_PROPOSED_DATE">Proposed Date</label>
+            <input type="text" id="R_PROPOSED_DATE">
+          </div>
+          <div class="small field_container">
+            <label for="R_RELOC_YN">Relocation</label>
+            <select id="R_RELOC_YN">
+              <option>Y</option>
+              <option>N</option>
+            </select>
+          </div>
+          <div class="small field_container">
+            <label for="R_REMOVE_YN">Removal</label>
+            <select id="R_REMOVE_YN">
+              <option>Y</option>
+              <option>N</option>
+            </select>
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="medium org_validated_field field_container" data-map="req_loan_org">
+            <label for="R_LOAN_ORG">Institution / Owner</label>
+            <input type="text" id="R_LOAN_ORG">
+            <input type="hidden" id="R_LOAN_ORG_ID">
+          </div>
+          <div class="medium people_validated_field field_container" data-map="req_exh_contact">
+            <label for="R_EXH_CONTACT">EXhibit Contact</label>
+            <input type="text" id="R_EXH_CONTACT">
+            <input type="hidden" id="R_EXH_CONTACT_ID">
+          </div>
+        </div>
+
+        <div class="borderless form_row">
+          <div class="medium people_validated_field field_container" data-map="req_int_contact">
+            <label for="R_INT_CONTACT">Inhouse Contact</label>
+            <input type="text" id="R_INT_CONTACT">
+            <input type="hidden" id="R_INT_CONTACT_ID">
+          </div>
+          <div class="medium people_validated_field field_container" data-map="req_return_to">
+            <label for="R_RETURN_TO">Return Contact</label>
+            <input type="text" id="R_RETURN_TO">
+            <input type="hidden" id="R_RETURN_TO_ID">
+          </div>
+        </div>
+      </div>
+
+      <div style="padding-bottom: 5px;">
+         <div class="full form_button field_container" style="margin: -5px 0 0px 0;">
+           <a href="#" onclick="hide_show_div('exhibit_loan_form');" style=" border-radius: 5px 5px 0 0;"><i class="fa fa-arrows-alt"></i>Exhibit Loan Form</a>
+         </div>
+      </div>
+
+      <div id="exhibit_loan_form" class="show_as_is" style="display:none;">
+        <!-- <div class="borderless form_row">
+          <div class="full field_container">
+            <label for="ED_TITLE">Title</label>
+            <input type="text" id="ED_TITLE">
+          </div>
+        </div> -->
+        <div class="borderless form_row">
+          <div class="medium repeating_field field_container">
+            <label for="R_REVIEWERS">Reviewers</label>
+            <input type="text" id="R_REVIEWERS">
+          </div>
+          <div class="medium date field_container">
+            <label for="R_REV_DATE">Date of Review</label>
+            <input type="text" id="R_REV_DATE">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="full field_container">
+            <label for="R_LOAN_REST">Restriction</label>
+            <input type="text" id="R_LOAN_REST">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="full field_container">
+            <label for="R_CONSERV_DETAIL">Conservation Issues</label>
+            <input type="text" id="R_CONSERV_DETAIL">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="full field_container">
+            <label for="R_LOAN_COMMENT">Comments</label>
+            <input type="text" id="R_LOAN_COMMENT">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="medium field_container">
+            <label for="R_PROCESS_STATUS">Status of Processing</label>
+            <input type="text" id="R_PROCESS_STATUS">
+          </div>
+          <div class="medium field_container">
+            <label for="R_LOAN_OK">Recommendation for Loan</label>
+            <select id="R_LOAN_OK">
+              <option>Y</option>
+              <option>N</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div style="padding-bottom: 5px;">
+         <div class="full form_button field_container" style="margin:-5px 0 5px 0;">
+           <a href="#" onclick="hide_show_div('monetary_appraisal');" style=" border-radius: 5px 5px 0 0;"><i class="fa fa-arrows-alt"></i>Monetary Appraisal</a>
+         </div>
+      </div>
+
+      <div id="monetary_appraisal" class="show_as_is" style="display:none;">
+        <div class="borderless form_row">
+          <div class="medium field_container">
+            <label for="R_MARKET_VALUE">Fair Market Value</label>
+            <input type="number" id="R_MARKET_VALUE" step="0.01">
+          </div>
+          <div class="medium repeating_field field_container">
+            <label for="R_APPRAISER">Appraiser Names</label>
+            <input type="text" id="R_APPRAISER">
+          </div>
+        </div>
+      </div>
+
+      <div style="padding-bottom: 5px;">
+         <div class="full form_button field_container" style="margin: -5-5px 0 5px 0;">
+           <a href="#" onclick="hide_show_div('exhibit_condition');" style=" border-radius: 5px 5px 0 0;"><i class="fa fa-arrows-alt"></i>Exhibit Condition Report</a>
+         </div>
+      </div>
+
+      <div id="exhibit_condition" class="show_as_is" style="display:none;">
+        <div class="borderless form_row">
+          <div class="medium field_container">
+            <label for="R_EXAMINER">Examiner</label>
+            <input type="text" id="R_EXAMINER">
+          </div>
+          <div class="medium date field_container">
+            <label for="R_EXAM_DATE">Date of Examination</label>
+            <input type="text" id="R_EXAM_DATE">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="full field_container">
+            <label for="R_LOAN_ORG">Institution / Owner</label>
+            <input type="text" id="R_LOAN_ORG">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="medium date field_container">
+            <label for="R_EXH_START_DATE">Exhibition Start Date</label>
+            <input type="text" id="R_EXH_START_DATE">
+          </div>
+          <div class="medium date field_container">
+            <label for="R_EXH_END_DATE">Exhibition End Date</label>
+            <input type="text" id="R_EXH_END_DATE">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="full field_container">
+            <label for="R_EXH_LOCATION">Exhibit Location</label>
+            <input type="text" id="R_EXH_LOCATION">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="full field_container">
+            <label for="R_EXH_TITLE">Exhibit Title</label>
+            <input type="text" id="R_EXH_TITLE">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="full field_container">
+            <label for="R_EXH_DESC">Exhibit Description</label>
+            <input type="text" id="R_EXH_DESC">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="full field_container">
+            <label for="R_EXH_DESC">Exhibit Description</label>
+            <input type="text" id="R_EXH_DESC">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="full field_container">
+            <label for="R_EXH_CONDITION">Exhibit Condition</label>
+            <input type="text" id="R_EXH_CONDITION">
+          </div>
+        </div>
+        <div class="borderless form_row">
+          <div class="full field_container">
+            <label for="R_ADD_COMMENTS">Additional comments</label>
+            <input type="text" id="R_ADD_COMMENTS">
+          </div>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+  <div class="data-section" id="donation_arch_lib" style="display: none;">
+    <fieldset class="logical_group indent_box">
+      <legend>Donations - Archival and Library</legend>
+      <div class="borderless form_row">
+        <div class="full field_container">
+          <label for="REQ_TOPIC_LIB">Additional Information</label>
+          <textarea id="REQ_TOPIC_LIB"></textarea>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+  <div class="data-section" id="other" style="display: none;">
+    <fieldset class="logical_group indent_box">
+      <legend>Other</legend>
+      <div class="borderless form_row">
+        <div class="full field_container">
+          <label for="REQ_TOPIC_OH">Additional Information</label>
+          <textarea id="REQ_TOPIC_OH"></textarea>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <label for="REQ_ACTION">Action</label>
+      <select id="REQ_ACTION">
+        <option></option>
+        <option>Collection Search</option>
+        <option>Consultation</option>
+        <option>Identify Resources</option>
+        <option>Other</option>
+        <option>Refer</option>
+        <option>Respond</option>
+      </select>
+    </div>
+    <div class="large field_container">
+      <label for="REQ_ACT_RESPONSE">Response</label>
+      <textarea id="REQ_ACT_RESPONSE"></textarea>
+    </div>
+  </div>
+
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <label for="REQ_REPRO">Reproduction</label>
+      <select id="REQ_REPRO" class="protect_field_exit unprotect_field_exit"
+        data-protect1="'REQ_REPRO N',REQ_DELIVERY"
+        data-unprotect1="'REQ_REPRO Y',REQ_DELIVERY" >
+        <option></option>
+        <option>Y</option>
+        <option>N</option>
+      </select>
+    </div>
+    <div class="small field_container">
+      <label for="REQ_CONSERVE">Conservation</label>
+      <select id="REQ_CONSERVE">
+        <option></option>
+        <option>Y</option>
+        <option>N</option>
+      </select>
+    </div>
+    <div class="medium form_button field_container" style="font-size: 1rem; margin-top: 3px;">
+      <a href="#" class="toggle_data_section" data-section="more_step3"><i class="fa fa-refresh"></i>More Options</a>
+    </div>
+  </div>
+
+  <div id="more_step3" style="display: none;">
+    <div class="borderless form_row">
+      <div class="small field_container">
+        <label for="REQ_TIME_SPENT">Time Spent in quarter of the hour</label>
+        <input type="number" id="REQ_TIME_SPENT" min="0" step="0.25">
+      </div>
+      <div class="small field_container">
+        <label for="REQ_HOURLY_RATE">Hourly Rate</label>
+        <select id="REQ_HOURLY_RATE">
+          <option>0.00</option>
+          <option>10.00</option>
+          <option>30.00</option>
+        </select>
+      </div>
+      <div class="small field_container">
+        <label for="REQ_FREE">Free Request ?</label>
+        <select id="REQ_FREE">
+          <option></option>
+          <option>Y</option>
+          <option>N</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="small field_container">
+        <label for="REQ_TIME_UNITS">Reserved Period in Days</label>
+        <input type="text" id="REQ_TIME_UNITS" class="generate_field_exit"
+          data-generate1="'REQ_TIME_UNITS !+',END_DATE_NEEDED,''"
+        />
+      </div>
+
+      <div class="small date field_container">
+        <label for="ITEM_REQ_DATE">Request Start Date (Optional)</label>
+        <input type="text" id="ITEM_REQ_DATE">
+      </div>
+
+      <div class="small date field_container">
+        <label for="END_DATE_NEEDED">Request End Date (Optional)</label>
+        <input type="text" id="END_DATE_NEEDED" class="generate_field_exit"
+          data-generate1="'END_DATE_NEEDED !+',REQ_TIME_UNITS,''"
+        />
+      </div>
+
+      <div class="small field_container">
+        <label for="ITEM_REQ_TIME">Request Time (Optional)</label>
+        <input type="text" id="ITEM_REQ_TIME">
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="small field_container">
+        <label for="REQ_CHARGE_AMT">Charge Amount</label>
+        <input type="number" id="REQ_CHARGE_AMT" step="0.01">
+      </div>
+      <div class="small field_container">
+        <label for="REQ_TAX_PERCENT">Tax Percentage</label>
+        <input type="number" id="REQ_TAX_PERCENT" step="1">
+      </div>
+      <div class="small field_container">
+        <label for="REQ_HANDLING">Shipping/Handling</label>
+        <input type="number" id="REQ_HANDLING" step="0.01">
+      </div>
+      <div class="small field_container">
+        <label for="REQ_PAID_AMT">Total Amount</label>
+        <input type="number" id="REQ_PAID_AMT" step="0.01" readonly>
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="small field_container">
+        <label for="REQ_WAIVE_AMT">Waive Charge</label>
+        <input type="checkbox" id="REQ_WAIVE_AMT" class="generate_field_exit protect_field_exit unprotect_field_exit"
+          data-protect1="'REQ_WAIVE_AMT X',REQ_CHARGE_AMT"
+          data-generate1="'REQ_WAIVE_AMT X',REQ_CHARGE_AMT,''"
+          data-unprotect1="'REQ_WAIVE_AMT !-',REQ_CHARGE_AMT"
+        >
+      </div>
+      <div class="small field_container">
+        <label for="REQ_WAIVE_TAX">Waive Tax</label>
+        <input type="checkbox" id="REQ_WAIVE_TAX" step="0.01" class="generate_field_exit protect_field_exit unprotect_field_exit"
+          data-protect1="'REQ_WAIVE_TAX X',REQ_TAX_PERCENT"
+          data-generate1="'REQ_WAIVE_TAX X',REQ_TAX_PERCENT,''"
+          data-unprotect1="'REQ_WAIVE_TAX !-',REQ_TAX_PERCENT"
+        >
+      </div>
+      <div class="small field_container">
+        <label for="REQ_WAIVE_HDL">Waive Shipping/Handling</label>
+        <input type="checkbox" id="REQ_WAIVE_HDL" class="generate_field_exit protect_field_exit unprotect_field_exit"
+          data-protect1="'REQ_WAIVE_HDL X',REQ_HANDLING"
+          data-generate1="'REQ_WAIVE_HDL X',REQ_HANDLING,''"
+          data-unprotect1="'REQ_WAIVE_HDL !-',REQ_HANDLING"
+        >
+      </div>
+    </div>
+
+    <div class="borderless form_row">
+      <div class="small field_container">
+        <label for="REQ_PAY_TYPE">Payment Type</label>
+        <select id="REQ_PAY_TYPE">
+          <option>Cash</option>
+          <option>Cheque</option>
+          <option>Credit Card</option>
+          <option>Debit Card</option>
+        </select>
+      </div>
+      <div class="small field_container">
+        <label for="REQ_PAID">Paid in Full</label>
+        <input type="text" id="REQ_PAID" readonly>
+      </div>
+      <div class="small field_container">
+        <label for="REQ_PAY_ON">Paid On</label>
+        <input type="text" id="REQ_PAY_ON" readonly>
+      </div>
+      <div class="small field_container">
+        <label for="REQ_PARTIAL_PAID">Deposit Amount</label>
+        <input type="number" id="REQ_PARTIAL_PAID" step="0.01">
+      </div>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Step Four - Finalize Request</legend>
+  <div class="borderless form_row">
+    <div class="small form_button field_container" style="font-size: 1rem; margin-top: 3px;" id="APPROVED_BUTTON">
+      <a href="#" onclick="approveRequest($(this));"><i class="fa fa-check"></i> Approved</a>
+    </div>
+    <div class="small field_container">
+      <label for="REQ_PROCESS_DATE">Approved On</label>
+      <input type="text" id="REQ_PROCESS_DATE" readonly>
+    </div>
+    <div class="medium field_container">
+      <label for="LOAN_PERIOD">Loan Period</label>
+      <input type="text" id="LOAN_PERIOD" readonly>
+    </div>
+  </div>
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <label for="REQ_STATUS">Request Status</label>
+      <select id="REQ_STATUS">
+        <option>Prepare</option>
+        <option>Retrieve</option>
+        <option>Shelf</option>
+        <option>Requested</option>
+        <option>Collection Point</option>
+        <option>User</option>
+        <option>Returned</option>
+        <option>Kept out for user</option>
+        <option>Image and Design</option>
+        <option>Conservation</option>
+        <option>DPQ - not on shelf</option>
+        <option>DPQ - incorrect ref</option>
+        <option>DPQ - other</option>
+        <option>In transit</option>
+        <option>Pickup Ready</option>
+        <option>Picked Up</option>
+        <option>Wait</option>
+        <option>Hold</option>
+        <option>Update</option>
+      </select>
+    </div>
+    <div class="small field_container">
+      <label for="REQ_HOLD_UTIL">Hold Until</label>
+      <input type="text" id="REQ_HOLD_UTIL" readonly>
+    </div>
+    <div class="medium field_container">
+      <label for="REQ_PDQ_NOTE">PDQ Notes</label>
+      <textarea id="REQ_PDQ_NOTE" rows="3"></textarea>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="logical_group">
+  <legend>Actions taken on record</legend>
+
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <span class="title_text">Entered On / By</span>
+    </div>
+    <div class="small field_container">
+      <span class="title_text">Completed On / By</span>
+    </div>
+    <div class="small field_container">
+      <span class="title_text">Due On</span>
+    </div>
+    <div class="small field_container">
+      <span class="title_text">Return On</span>
+    </div>
+  </div>
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <input type="text" id="CREATE_DATE" readonly>
+    </div>
+    <div class="small field_container">
+      <input type="text" id="REG_COMPLETE_DAT" readonly>
+    </div>
+    <div class="small date field_container">
+      <input type="text" id="REQ_DUE_DATE">
+    </div>
+    <div class="small field_container">
+      <input type="text" id="REQ_RETURN_DATE" readonly>
+    </div>
+  </div>
+  <div class="borderless form_row">
+    <div class="small field_container">
+      <input type="text" id="REQUESTOR_NAME" readonly>
+    </div>
+    <div class="small field_container">
+      <input type="text" id="REG_COMPLETE_ID" readonly>
+    </div>
+  </div>
+</fieldset>
+
+<!-- call initalization user routine -->
+<input type="hidden" class="init_call_exit protect_field_exit unprotect_field_exit show_optional_data_exit generate_field_exit"
+   data-protect1="'REQ_STATUS <> ''PREPARE''',APPROVED_BUTTON"
+   data-protect2="'R_DISPOSE_HOLD !-',R_HOLD_DETAILS"
+   data-protect3="'REQ_WAIVE_AMT X',REQ_CHARGE_AMT"
+   data-protect4="'REQ_WAIVE_TAX X',REQ_TAX_PERCENT"
+   data-protect5="'REQ_WAIVE_HDL X',REQ_HANDLING"
+   data-unprotect1="'REQ_REPRO Y',REQ_DELIVERY"
+   data-source_value="REQ_TOPIC"
+   data-generate1="'REQ_TOPIC ''Donations - Art'' + REQ_TOPIC ''Donations - Archival and Library''',REQ_FREE,'N'"
+   data-generate2="'REQ_TOPIC <> ''Donations - Art'' * REQ_TOPIC <> ''Donations - Archival and Library''',REQ_FREE,'Y'"
+   data-generate3="'REQ_TOPIC ''Donations - Art''',REQ_REPRO,'Y'"
+   data-generate4="'REQ_TOPIC <> ''Donations - Art''',REQ_REPRO,'N'"
+/>
+
+<!-- call record wrapup user routine -->
+<input type="hidden" class="wrapup_user_exit"
+  data-exit="wrapupRequest"
+/>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>File Upload</title>
+    <link rel="stylesheet" href="/144/assets/css/app.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/144/assets/js/vendor/jquery.colorbox-min.js"></script>
+    <script src="/144/upload_util.js"></script>
+    <!-- RL-2020-09-29 -->
+    <!-- include virtual="/144/upload_script.txt" -->
+</head>
+
+<body class="file_upload">
+    <div id="upload-form-body">
+        <!-- RL-2020-11-10 -->
+        <h2>Please locate BATCHIN file in local drive to import.</h2>
+        <form method="post" enctype="multipart/form-data" id="fileUploadForm" action="#">
+            <label for="file"><span style="font-size: 14px"><b>Description Import File </b></span></label>
+            <label for="file" class="custom-file-upload">
+          <i class="fa fa-cloud-upload"></i> Browse
+        </label>
+            <input type="file" id="real-file" /><br />
+            <input type="submit" name="submit" value="Upload" id="btnSubmit" />
+        </form>
+        <div class="loading" style="display:none;" id="upload-waiting">
+            <i class="fa fa-spin fa-gear fa-4x"></i>
+        </div>
+    </div>
+
+    <script language="JavaScript">
+        // set up event handler
+        $(document).ready(function() {
+            $('#btnSubmit').prop('disabled', false)
+
+            $('#btnSubmit').click(function(event) {
+                // stop submit the form, we will post it manually.
+                event.preventDefault()
+
+                // disabled the submit button
+                $('#btnSubmit').prop('disabled', true)
+
+                // upload media file
+                var home_sessid = getMyCookie('HOME_SESSID')
+                if (home_sessid != '') {
+                    m2a_upload_file(home_sessid)
+                } else {
+                    alert('File is not uploaded because MWI session is absent.')
+                    $('#btnSubmit').prop('disabled', false)
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

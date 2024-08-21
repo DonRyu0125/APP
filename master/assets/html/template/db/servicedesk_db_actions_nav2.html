@@ -1,0 +1,24 @@
+<nav id="database_actions">
+  <ul>
+    <li id="dba_search_auto"><a href="^HOME_SESSID^/SERVICEDESK_SUMMARY?OPEN&DBOPTION=SEARCH&CLEAR=Y" title="Request Summary"><i class="fa fa-list-ul"></i></a></li>
+    <li id="dba_search_hold"><a href="^HOME_SESSID^/SERVICEDESK_HOLD?OPEN&DBOPTION=SEARCH&CLEAR=Y" title="Hold/Pickup List"><i class="fa fa-list-alt"></i></a></li>
+    <li id="dba_search_checkin"><a href="^HOME_SESSID^/SERVICEDESK_CHECKIN?OPEN&DBOPTION=SEARCH&CLEAR=Y" title="Check in Items"><i class="fa fa-sign-in"></i></a></li>
+    <li id="dba_search_return"><a href="^HOME_SESSID^/SERVICEDESK_RETURN?OPEN&DBOPTION=SEARCH&CLEAR=Y" title="Returned Item List"><i class="fa fa-th-list"></i></a></li>
+    <li id="dba_search_checkout"><a href="^HOME_SESSID^/SERVICEDESK_CHECKOUT?OPEN&DBOPTION=SEARCH&CLEAR=Y" title="Check out Items"><i class="fa fa-sign-out"></i></a></li>
+    <li id="dba_search_reprod"><a href="^HOME_SESSID^/SERVICEDESK_REPRODUCTION?OPEN&DBOPTION=SEARCH&CLEAR=Y" title="Reproduction"><i class="fa fa-clone"></i></a></li>
+    <li id="dba_new"><a href="^HOME_SESSID^/SERVICEDESK?OPEN&DBOPTION=ADD&RECORD_DEFAULT=Y&NAME1=REQ_STATUS&VALUE1=Prepare&NAME2=REQ_TIME_UNITS&VALUE2=14&NAME3=METHOD_REQUEST&VALUE3=Web" title="Create New Request"><i class="fa fa-file-o"></i></a></li>
+    <li id="dba_search"><a href="^HOME_SESSID^/SERVICEDESK?OPEN&DBOPTION=SEARCH&CLEAR=Y" title="Request Search"><i class="fa fa-search"></i></a></li>
+    <li id="dba_reports" class="dropdown">
+      <a href="#" data-toggle="dropdown" class="dropdown-toggle" title="Reports"><i class="fa fa-newspaper-o"></i><b class="caret"></b></a>
+      <ul class="dropdown-menu" style="background: white">
+        <li>
+          <a href="#" class="db_report" id="Send_request">Send Request List</a>
+        </li>
+        <li>
+          <a href="#" class="db_report" id="print_request">Print Request List</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <hr>
+</nav>

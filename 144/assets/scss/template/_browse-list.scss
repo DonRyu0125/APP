@@ -1,0 +1,47 @@
+body.browse {
+  min-width: 500px;
+  text-align: center;
+
+  a#addkeys {
+    display: inline-block;
+    background: $base;
+    border-radius: $roundness;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  form#keys {
+    ul {
+      padding: 0;
+      margin: 0 0 1.5rem 0;
+
+      li {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        margin: 0 -0.2rem;
+        border: 1px solid darken($base, 10%);
+        background: $base;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+
+        &:first-child {
+          border-radius: $roundness 0 0 $roundness;
+        }
+
+        &:last-child {
+          border-radius: 0 $roundness $roundness 0;
+        }
+      }
+    }
+
+    select {
+      width: 85%;
+      margin: 0.25rem auto;
+    }
+  }
+}
